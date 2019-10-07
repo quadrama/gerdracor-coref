@@ -25,6 +25,14 @@ We provide several formats to represent the corefence annotations:
 
 For the texts that have not been fully annotated, we only provide CoNLL output for the parts that have been annotated. The XMI and TEI output always contain the full text.
 
+### XMI
+
+As the XMI files can become quite large, they have been compressed using `gzip`. Uncompress them by going into a command line and run
+
+```sh
+$ gzip -d <FILENAME>.xmi.gz
+```
+
 ## Organization
 
 The annotations are sorted into folders according to the different output formats.
@@ -46,3 +54,7 @@ $ tree -d
 $ git branch
 * gold
 ```
+
+## Contribution
+
+We appreciate contributions regarding extensions, bug fixes and the like. Please feel free to create issues or pull requests.
