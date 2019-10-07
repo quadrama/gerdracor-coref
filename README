@@ -1,0 +1,48 @@
+# German Drama Coreference Annotations
+
+## General Information
+
+
+### File Naming
+
+The names of the files are composed of a short form of the title of the play and an appropiate file ending indicating the format, e.g. `Rosenkavalier.xmi`, `Rosenkavalier.xml`, `Rosenkavalier.conll` for "Der Rosenkavalier" by Hugo von Hofmannsthal. A full list of file names and their corresponding play is given in `plays.csv`.
+
+### Partial Annotations
+
+Some texts have not been fully annotated, but only one or more acts. The act(s) annotated are indicated in the filename, e.g. `Manuscript_Act5.xmi`. If the full text was annotated, no special marker is applied, e.g. `Sara.xmi`.
+
+### Parallel Annotations
+
+In order to make Inter-Annotator agreement studies possible, we carried out parallel annotations of single acts, annotated by distinct annotators. These annotations are located in separate branches and the annotator and act is additionally indicated in the filename, e.g. `Sara_AS_Act1`. `gold` annotations are not specially marked in the filename.
+
+## Formats
+
+We provide several formats to represent the corefence annotations:
+
+- XMI
+- TEI
+- CoNLL 2012
+
+For the texts that have not been fully annotated, we only provide CoNLL output for the parts that have been annotated. The XMI and TEI output always contain the full text.
+
+## Organization
+
+The annotations are sorted into folders according to the different output formats.
+Parallel annotations by different annotators are organized into branches in the git tree. The main annotations are located in the `gold` branch.
+
+### Folder structure
+
+```
+$ tree -d
+.
+├── conll
+├── tei
+└── xmi
+```
+
+### Branches
+
+```
+$ git branch
+* gold
+```
