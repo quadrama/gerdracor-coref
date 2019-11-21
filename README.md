@@ -2,7 +2,7 @@
 
 ## General Information
 
-The GerDraCor-Coref (German Drama Corpus for Coreference) is a fork of the [GerDraCor](https://github.com/dracor-org/gerdracor) and contains coreference annotations for a part of these texts. The texts are all German dramatic texts, written between 1730 and 1920. Annotated are all noun phrases, singletons were removed though. Additionally, generic entities, abstract anaphora and amiguous mentions are also marked explicitely. In case of the latter two, only a part of the corpus has been annotated.
+The GerDraCor-Coref (German Drama Corpus for Coreference) is a fork of the [GerDraCor](https://github.com/dracor-org/gerdracor) and contains coreference annotations for a subset of the GerDraCor texts. The texts are all German dramatic texts, written between 1730 and 1920. Annotated are all noun phrases, singletons were removed though. Additionally, generic entities, abstract anaphora and amiguous mentions are also marked explicitely. In case of the latter two, only a part of the corpus has been annotated.
 
 ### File Naming
 
