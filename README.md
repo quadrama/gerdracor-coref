@@ -29,7 +29,7 @@ We provide several formats to represent the coreference annotations:
 - CoNLL 2012
 - DIRNDL
 
-For the texts that have not been fully annotated, we also provide TEI output only for the parts that have been annotated. The CoNLL output always only contains the annotated parts. The XMI output always contains the full text.
+For the texts that have not been fully annotated, we additionally provide TEI output only for the parts that have been annotated. The CoNLL output always only contains the annotated parts. The XMI output always contains the full text.
 
 ### XMI
 
@@ -50,11 +50,11 @@ Parallel annotations by different annotators are organized into branches in the 
 
 ### Folder structure
 
-```
+```sh
 $ tree -d
 .
 ├── conll
-├── csv
+│   └── part
 ├── tei
 │   └── part
 └── xmi
@@ -62,7 +62,7 @@ $ tree -d
 
 ### Branches
 
-```
+```sh
 $ git branch
 * gold
 ```
