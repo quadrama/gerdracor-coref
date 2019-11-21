@@ -1,7 +1,8 @@
-# German Drama Coreference Annotations
+# GerDraCor-Coref
 
 ## General Information
 
+The GerDraCor-Coref (German Drama Corpus for Coreference) is a fork of the (GerDraCor)[https://github.com/dracor-org/gerdracor] and contains coreference annotations for a part of these texts. The texts are all German dramatic texts, written between 1730 and 1920. Annotated are all noun phrases, singletons were removed though. Additionally, generic entities, abstract anaphora and amiguous mentions are also marked explicitely. In case of the latter two, only a part of the corpus has been annotated.
 
 ### File Naming
 
@@ -13,7 +14,7 @@ Some texts have not been fully annotated, but only one or more acts. The act(s) 
 
 ### Parallel Annotations
 
-In order to make Inter-Annotator agreement studies possible, we carried out parallel annotations of single acts, annotated by distinct annotators. These annotations are located in separate branches and the annotator and act is additionally indicated in the filename, e.g. `Sara_AS_Act1`. `gold` annotations are not specially marked in the filename.
+In order to make Inter-Annotator agreement studies possible, we carried out parallel annotations of single acts, annotated by distinct annotators. These annotations are located in separate branches and the annotator and act is additionally indicated in the filename, e.g. `Sara_AS_Act1`. `gold` annotations are not specially marked in the filename. (ToDo)
 
 ### Encoding
 
@@ -26,8 +27,9 @@ We provide several formats to represent the coreference annotations:
 - XMI
 - TEI
 - CoNLL 2012
+- DIRNDL
 
-For the texts that have not been fully annotated, we only provide CoNLL output for the parts that have been annotated. The XMI and TEI output always contain the full text.
+For the texts that have not been fully annotated, we also provide TEI output only for the parts that have been annotated. The CoNLL output always only contains the annotated parts. The XMI output always contains the full text.
 
 ### XMI
 
@@ -37,10 +39,14 @@ As the XMI files can become quite large, they have been compressed using `gzip`.
 $ gzip -d <FILENAME>.xmi.gz
 ```
 
+### DIRNDL
+
+DIRNDL is a file format based on the CoNLL format, but additionally also contains a speaker column (among others).
+
 ## Organization
 
 The annotations are sorted into folders according to the different output formats.
-Parallel annotations by different annotators are organized into branches in the git tree. The main annotations are located in the `gold` branch.
+Parallel annotations by different annotators are organized into branches in the git tree. The main annotations are located in the `gold` branch. Partial annotations are sorted under the main folder in a folder called `part`.
 
 ### Folder structure
 
@@ -48,7 +54,9 @@ Parallel annotations by different annotators are organized into branches in the 
 $ tree -d
 .
 ├── conll
+├── csv
 ├── tei
+│   └── part
 └── xmi
 ```
 
