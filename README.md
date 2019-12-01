@@ -2,7 +2,7 @@
 
 ## General Information
 
-The GerDraCor-Coref (German Drama Corpus for Coreference) is a fork of the [GerDraCor](https://github.com/dracor-org/gerdracor) and contains coreference annotations for a subset of the GerDraCor texts. The texts are all German dramatic texts, written between 1730 and 1920. Annotated are all noun phrases, singletons were removed though. Additionally, generic entities, abstract anaphora and amiguous mentions are also marked explicitely. In case of the latter two, only a part of the corpus has been annotated.
+The GerDraCor-Coref (German Drama Corpus for Coreference) is a fork of the [GerDraCor](https://github.com/dracor-org/gerdracor) and contains coreference annotations for a subset of the GerDraCor texts. The texts are all German dramatic texts, written between 1730 and 1920. Annotated are all noun phrases, singletons were removed. Additionally, generic entities, abstract anaphora and amiguous mentions are also marked explicitely. In case of the latter two, only a part of the corpus has been annotated.
 
 ### File Naming
 
@@ -33,7 +33,7 @@ For the texts that have not been fully annotated, we additionally provide TEI ou
 
 ### XMI
 
-As the XMI files can become quite large, they have been compressed using `gzip`. Uncompress them by going into a command line and run
+As the XMI files can become quite large, they have been compressed using `gzip`. Uncompress them by entering a command line and run
 
 ```sh
 $ gzip -d <FILENAME>.xmi.gz
@@ -46,7 +46,7 @@ DIRNDL is a file format based on the CoNLL format, but additionally also contain
 ## Organization
 
 The annotations are sorted into folders according to the different output formats.
-Parallel annotations by different annotators are organized into branches in the git tree. The main annotations are located in the `gold` branch. Partial annotations are sorted under the main folder in a folder called `part`.
+Parallel annotations by different annotators are organized into branches in the git tree. The main annotations are located in the `gold` branch. Partial annotations are sorted under the main folder in a subfolder called `part`.
 
 ### Folder structure
 
