@@ -1,3 +1,6 @@
+[![release](https://img.shields.io/github/release-pre/quadrama/gerdracor-coref.svg)](https://github.com/quadrama/gerdracor-coref/releases/latest)
+[![DOI](https://zenodo.org/badge/223186468.svg)](https://zenodo.org/badge/latestdoi/223186468)
+
 # GerDraCor-Coref
 
 ## General Information
