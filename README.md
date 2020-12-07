@@ -71,6 +71,25 @@ $ git branch
 * gold
 ```
 
+## Citing
+
+If you are using GerDraCor-Coref for a publication, please refer to the following paper:
+
+- Janis Pagel, Nils Reiter. GerDraCor-Coref: A Coreference Corpus for Dramatic Texts in German. In *Proceedings of the Language Resources and Evaluation Conference (LREC)*, pp. 55-64, Marseille, France, May 2020. Url: http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.7.pdf. 
+ 
+```
+@inproceedings{gerdracorcoref,
+   author    = {Janis Pagel and Nils Reiter},
+   booktitle = {{Proceedings of the Language Resources and Evaluation Conference (LREC)}},
+   location  = {Marseille, France},
+   month     = {5},
+   pages     = {55--64},
+   title     = {{GerDraCor-Coref: A Coreference Corpus for Dramatic Texts in German}},
+   url       = {http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.7.pdf},
+   year      = {2020},
+}
+```
+
 ## License
 
 Like [GerDraCor](https://github.com/dracor-org/gerdracor), GerDraCor-Coref is released under the [Creative Commons Zero copyright waiver CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
