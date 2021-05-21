@@ -111,3 +111,7 @@ Like [GerDraCor](https://github.com/dracor-org/gerdracor), GerDraCor-Coref is re
 
 We appreciate contributions regarding extensions, bug fixes and the like.
 Please feel free to create issues or pull requests.
+
+## Version
+
+1.1.0
