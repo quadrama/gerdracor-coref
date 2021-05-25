@@ -114,4 +114,4 @@ Please feel free to create issues or pull requests.
 
 ## Version
 
-1.2.0
+1.2.1
