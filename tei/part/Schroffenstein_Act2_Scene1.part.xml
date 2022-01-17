@@ -1,0 +1,782 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <div type="scene">
+          <head>Erste Szene</head>
+          <stage><rs ref="#Gegend-im-Gebirge">Gegend <rs ref="#das-Gebirge">im Gebirge</rs></rs>. Im Vordergrunde <rs ref="#die-Höhle">eine Höhle</rs>. <rs ref="#agnes">Agnes</rs> sitzt an der Erde und knüpft
+            Kränze. <rs ref="#ottokar">Ottokar</rs> tritt auf, und betrachtet <rs ref="#agnes">sie</rs> mit Wehmut. Dann wendet <rs ref="#ottokar">er</rs> <rs ref="#ottokar">sich</rs> mit <rs ref="#einer-------------schmerzvollen-Bewegung">einer
+            schmerzvollen Bewegung</rs>, während <rs ref="#einer-------------schmerzvollen-Bewegung">welcher</rs> <rs ref="#agnes">Agnes</rs> <rs ref="#ottokar">ihn</rs> wahrnimmt, <rs ref="#agnes">welche</rs> dann zu knüpfen
+            fortfährt, als hätte <rs ref="#agnes">sie</rs> <rs ref="#ottokar">ihn</rs> nicht gesehen.</stage>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l><rs ref="#belauschen">'s</rs> ist doch ein häßliches Geschäft: <rs ref="#belauschen">belauschen</rs>;</l>
+              <l>Und weil <rs ref="#ein-rein-Gemüt">ein rein Gemüt</rs> <rs ref="#belauschen">es</rs> stets verschmäht,</l>
+              <l>So wird nur <rs ref="#ein-rein-Gemüt">dieses</rs> grade stets belauscht.</l>
+              <l>Drum ist das Schlimmste noch, daß es <rs ref="#den-Lauscher">den Lauscher</rs>,</l>
+              <l>Statt <rs ref="#den-Lauscher">ihn</rs> zu strafen, lohnt. Denn statt <rs ref="#des-Bösen,---------------Das-er-verdiente-zu-entdecken">des Bösen,</l>
+              <l><rs ref="#des-Bösen,---------------Das-er-verdiente-zu-entdecken">Das</rs> <rs ref="#den-Lauscher">er</rs> verdiente zu entdecken</rs>, findet</l>
+              <l><rs ref="#den-Lauscher">Er</rs> wohl sogar ein still Bemühen noch</l>
+              <l>Für <rs ref="#den-Lauscher">sein</rs> Bedürfnis, oder <rs ref="#den-Lauscher">seine</rs> Laune.</l>
+              <l>Da ist, zum Beispiel, heimlich jetzt <rs ref="#ottokar">ein Jüngling</rs></l>
+              <l>– Wie heißt <rs ref="#ottokar">er</rs> doch? Ich kenn <rs ref="#ottokar">ihn</rs> wohl. <rs ref="#Ottokars-Gesicht"><rs ref="#ottokar">Sein</rs> Antlitz</rs></l>
+              <l>Gleicht einem milden Morgenungewitter,</l>
+              <l><rs ref="#ottokar">Sein</rs> Aug dem Wetterleuchten auf den Höhn,</l>
+              <l><rs ref="#ottokar">Sein</rs> Haar <rs ref="#den-Wolken,-welche-Blitze-bergen">den Wolken, <rs ref="#den-Wolken,-welche-Blitze-bergen">welche</rs> Blitze bergen</rs>,</l>
+              <l><rs ref="#ottokar">Sein</rs> Nahen ist ein Wehen aus der Ferne,</l>
+              <l><rs ref="#ottokar">Sein</rs> Reden wie ein Strömen von den Bergen</l>
+              <l>Und <rs ref="#ottokar">sein</rs> Umarmen – Aber still! Was wollt</l>
+              <l>Ich schon? Ja, <rs ref="#ottokar">dieser Jüngling</rs>, wollt ich sagen,</l>
+              <l>Ist heimlich nun herangeschlichen, plötzlich,</l>
+              <l>Unangekündigt, wie <rs ref="#die-Sommersonne">die Sommersonne</rs>,</l>
+              <l>Will <rs ref="#die-Sommersonne">sie</rs> ein nächtlich Liebesfest belauschen.</l>
+              <l>Nun wär mir's recht, <rs ref="#ottokar">er</rs> hätte, was <rs ref="#ottokar">er</rs> sucht,</l>
+              <l><pb n="125"/> Bei mir gefunden, und <rs ref="#die-Eifersucht,---------------Der-Liebe-Jugendstachel">die Eifersucht,</l>
+              <l><rs ref="#Liebe">Der Liebe</rs> Jugendstachel</rs> hätte, selbst</l>
+              <l><rs ref="#die-Eifersucht,---------------Der-Liebe-Jugendstachel">Sich</rs> stumpfend, <rs ref="#ottokar">ihn</rs> hinausgejagt ins Feld,</l>
+              <l>Gleich <rs ref="#einem-jungen-Rosse,-das-zuletzt---------------Doch-heimkehrt-zu-dem-Stall,-der-ihn-ernährt">einem jungen Rosse, <rs ref="#einem-jungen-Rosse,-das-zuletzt---------------Doch-heimkehrt-zu-dem-Stall,-der-ihn-ernährt">das</rs> zuletzt</l>
+              <l>Doch heimkehrt zu <rs ref="#dem-Stall,-der-ihn-ernährt">dem Stall, <rs ref="#dem-Stall,-der-ihn-ernährt">der</rs> <rs ref="#einem-jungen-Rosse,-das-zuletzt---------------Doch-heimkehrt-zu-dem-Stall,-der-ihn-ernährt">ihn</rs> ernährt</rs></rs>.</l>
+              <l>Statt dessen ist kein andrer Nebenbuhler</l>
+              <l>Jetzt grade um mich, als <rs ref="#Ottokars-Geist"><rs ref="#ottokar">sein</rs> Geist</rs>. Und <rs ref="#Ottokars-Geist">der</rs></l>
+              <l>Singt mir <rs ref="#ottokar">sein</rs> Lied zur Zither vor, wofür</l>
+              <l>Ich <rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">diesen Kranz</rs> <rs ref="#ottokar">ihm</rs> winde.</l>
+            </lg>
+            <stage><rs ref="#agnes">Sie</rs> sieht <rs ref="#agnes">sich</rs> um.</stage>
+            <l>Fehlt <rs ref="#ottokar">dir</rs> was?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Jetzt nichts.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>So setz <rs ref="#ottokar">dich</rs> nieder, daß ich sehe,</l>
+              <l>Wie <rs ref="#ottokar">dir</rs> <rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">der Kranz</rs> steht. Ist <rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">er</rs> hübsch?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Recht hübsch.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Wahrhaftig? Sieh einmal <rs ref="#Agnes'-Finger-(Plural)">die Finger</rs> an.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Sie-bluten"><rs ref="#Agnes'-Finger-(Plural)">Sie</rs> bluten</rs>. –</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l><rs ref="#Sie-bluten">Das</rs> bekam ich, als ich aus den Dornen</l>
+              <l>Die Blumen pflückte.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#agnes">Armes Kind</rs>.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <rs ref="#ein-Weib"><l>Ein Weib</l></rs>
+              <l>Scheut keine Mühe. Stundenlang hab ich</l>
+              <l>Gesonnen, wie ein jedes einzeln Blümchen</l>
+              <l>Zu stellen, wie das unscheinbarste selbst</l>
+              <l>Zu nutzen sei, damit Gestalt und Farbe</l>
+              <l>Des Ganzen seine Wirkung tue. – Nun</l>
+              <l><rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">Der Kranz</rs> ist ein vollendet Weib. Da, nimm</l>
+              <l><rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">Ihn</rs> hin. Sprich: <rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">er</rs> gefällt <rs ref="#ottokar">mir</rs>; so ist <rs ref="#der-Kranz-den-Agnes-Ottokar-gibt">er</rs></l>
+              <l>Bezahlt.</l>
+            </lg>
+            <stage><rs ref="#agnes">Sie</rs> sieht <rs ref="#agnes">sich</rs> wieder um.</stage>
+            <l>Was fehlt <rs ref="#ottokar">dir</rs> denn?</l>
+            <stage><rs ref="#agnes">Sie</rs> steht auf; <rs ref="#ottokar">Ottokar</rs> faßt <rs ref="#Agnes'-Hand"><rs ref="#agnes">ihre</rs> Hand</rs>.</stage>
+            <lg>
+              <l><rs ref="#ottokar">Du</rs> bist so seltsam,</l>
+              <l>So feierlich – bist unbegreiflich mir.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Und mir <rs ref="#agnes">du</rs>.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Liebst <rs ref="#ottokar">du</rs> mich, so sprich sogleich</l>
+              <l><rs ref="#Ein-Wort,-das-mich-beruhigt">Ein Wort, <rs ref="#Ein-Wort,-das-mich-beruhigt">das</rs> mich beruhigt</rs>.</l>
+              <pb n="126"/>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Erst sprich <rs ref="#agnes">du</rs>.</l>
+              <l>Wie hast <rs ref="#heute,---------------Von-deinem-Vaterhaus-dich-zu-entfernen"><rs ref="#agnes">du's</rs></rs> <rs ref="#heute-2.1">heute</rs> wagen können, <rs ref="#heute,---------------Von-deinem-Vaterhaus-dich-zu-entfernen"><rs ref="#heute-2.1">heute</rs>,</l>
+              <l>Von <rs ref="#Das-Haus-Sylvesters,-Das-Haus-von-Warwand"><rs ref="#agnes">deinem</rs> Vaterhaus</rs> <rs ref="#agnes">dich</rs> zu entfernen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#Das-Haus-Sylvesters,-Das-Haus-von-Warwand">meinem Vaterhause</rs>? Kennst <rs ref="#ottokar"><rs ref="#Das-Haus-Sylvesters,-Das-Haus-von-Warwand">du's</rs></rs> denn?</l>
+              <l>Hab ich nicht stets gewünscht, <rs ref="#agnes">du</rs> möchtest <rs ref="#Das-Haus-Sylvesters,-Das-Haus-von-Warwand">es</rs></l>
+              <l>Nicht zu erforschen streben?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>O verzeih!</l>
+              <l>Nicht meine Schuld <rs ref="#daß-ich's-weiß">ist's</rs>, <rs ref="#daß-ich's-weiß">daß <rs ref="#dass-Agnes-aus-dem-Hause-Warwand-kommt">ich's</rs> weiß</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l><rs ref="#ottokar">Du</rs> <rs ref="#dass-Agnes-aus-dem-Hause-Warwand-kommt">weißt's</rs>?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Ich weiß <rs ref="#dass-Agnes-aus-dem-Hause-Warwand-kommt">es</rs>, fürchte nichts! Denn <rs ref="#agnes">deinem</rs> Engel</l>
+              <l>Kannst <rs ref="#agnes">du</rs> <rs ref="#agnes">dich</rs> sichrer nicht vertraun, als mir.</l>
+              <l>Nun sage mir, wie konntest <rs ref="#agnes">du</rs> es wagen,</l>
+              <l>So einsam <rs ref="#das-Gebirge">dies Gebirge</rs> zu betreten,</l>
+              <l>Da doch <rs ref="#der-Familienzweig-aus-Rossitz">ein mächt'ger Nachbar</rs> <rs ref="#der-Familienzweig-aus-Warwand">all die <rs ref="#agnes">Deinen</rs></rs></l>
+              <l>In <rs ref="#der-Krieg-zwischen-den-Häusern">blut'ger Rachefehd</rs> verfolgt?</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>In <rs ref="#der-Krieg-zwischen-den-Häusern">Fehde</rs>?</l>
+              <l>In <rs ref="#sylvester">meines Vaters</rs> Sälen liegt der Staub</l>
+              <l>Auf allen Rüstungen, und niemand ist</l>
+              <l><rs ref="#der-Familienzweig-aus-Warwand">Uns</rs> feindlich, als <rs ref="#der-Marder">der Marder</rs> höchstens, <rs ref="#der-Marder">der</rs></l>
+              <l>In <rs ref="#der-Familienzweig-aus-Warwand">unsre</rs> Hühnerställe bricht.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wie sagst <rs ref="#agnes">du</rs>?</l>
+              <rs ref="#Ihr-wärt-in-Frieden-mit-den-Nachbarn?-Wärt---------------In-Frieden-mit-euch-selbst?"><l><rs ref="#der-Familienzweig-aus-Warwand">Ihr</rs> wärt in <rs ref="#der-Frieden-zwischen-den-Häusern">Frieden mit <rs ref="#der-Familienzweig-aus-Rossitz">den Nachbarn</rs></rs>? Wärt</l>
+              <l>In Frieden mit <rs ref="#der-Familienzweig-aus-Warwand">euch</rs> selbst?</l></rs>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l><rs ref="#ottokar">Du</rs> hörst <rs ref="#Ihr-wärt-in-Frieden-mit-den-Nachbarn?-Wärt---------------In-Frieden-mit-euch-selbst?">es</rs>, ja.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>O Gott! Ich danke <rs ref="#agnes">dir</rs> <rs ref="#Ottokars-Leben">mein Leben</rs> nur</l>
+              <l>Um <rs ref="#Ihr-wärt-in-Frieden-mit-den-Nachbarn?-Wärt---------------In-Frieden-mit-euch-selbst?">dieser Kunde</rs>! – <rs ref="#agnes">Mädchen</rs>! <rs ref="#agnes">Mädchen</rs>! O</l>
+              <l>Mein Gott, so brauch ich <rs ref="#agnes">dich</rs> ja nicht zu morden!</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Morden?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>O komm!</l>
+            <stage><rs ref="#ottokar-/-agnes">Sie</rs> setzen <rs ref="#ottokar-/-agnes">sich</rs>.</stage>
+            <lg>
+              <l>Nun will ich heiter, offen, wahr,</l>
+              <l>Wie <rs ref="#Agnes'-Seele"><rs ref="#agnes">deine</rs> Seele</rs> mit <rs ref="#agnes">dir</rs> reden. Komm!</l>
+              <l>Es darf kein Schatten mehr <rs ref="#agnes">dich</rs> decken, nicht</l>
+              <l>Der mindeste, ganz klar will ich <rs ref="#agnes">dich</rs> sehen.</l>
+              <l><rs ref="#agnes">Dein</rs> Innres ist's mir schon, die neugebornen</l>
+              <l>Gedanken kann ich wie <rs ref="#agnes">dein</rs> Gott erraten.</l>
+              <l><rs ref="#agnes">Dein</rs> Zeichen nur, die freundliche Erfindung</l>
+              <pb n="127"/>
+            </lg>
+            <lg>
+              <l>Mit einer Silbe das Unendliche</l>
+              <l>Zu fassen, nur <rs ref="#der-Name-des-Mädchens,-das-Johann-rettete-(Agnes'-Name)">den Namen</rs> sage mir.</l>
+              <l><rs ref="#agnes">Dir</rs> sag ich meinen gleich, denn nur ein Scherz</l>
+              <l>War es, <rs ref="#agnes">dir</rs> zu verweigern, was <rs ref="#agnes">du</rs> mir.</l>
+              <l>Ich hätte <rs ref="#agnes"><rs ref="#der-Name-des-Mädchens,-das-Johann-rettete-(Agnes'-Name)">deinen</rs></rs> längst erforscht, wenn nicht</l>
+              <l>Sogar <rs ref="#agnes">dein</rs> unverständliches Gebot</l>
+              <l>Mir heilig. Aber nun frag ich <rs ref="#agnes">dich</rs> selbst.</l>
+              <l>Nichts Böses bin ich mir bewußt, ich fühle</l>
+              <l><rs ref="#agnes">Du</rs> gehst mir über alles Glück <rs ref="#die-Welt">der Welt</rs></l>
+              <l>Und nicht <rs ref="#Ottokars-Leben">ans Leben</rs> bin ich so gebunden,</l>
+              <l>So gern nicht, und so fest nicht, wie an <rs ref="#agnes">dich</rs>.</l>
+              <l>Drum will ich, daß <rs ref="#agnes">du</rs> nichts mehr vor mir birgst</l>
+              <l>Und fordre ernst <rs ref="#agnes">dein</rs> unumschränkt Vertrauen.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Ich kann nicht reden, <rs ref="#ottokar">Ottokar</rs>. –</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Was ängstigt <rs ref="#agnes">dich</rs>?</l>
+              <l>Ich will <rs ref="#agnes">dir</rs> jeden falschen Wahn benehmen.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>– <rs ref="#ottokar">Du</rs> sprachst von <rs ref="#Mord-an-Agnes">Mord</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Von <rs ref="#Ottokars-Liebe-zu-Agnes">Liebe</rs> sprach ich nur.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#Ottokars-Liebe-zu-Agnes">Liebe</rs>, hör ich wohl, sprachst <rs ref="#ottokar">du</rs> mit mir,</l>
+              <l>Doch sage mir, mit wem sprachst <rs ref="#ottokar">du</rs> <rs ref="#Mord-an-Agnes">vom Morde</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#agnes">Du</rs> hörst <rs ref="#es-war-ein-böser-Irrtum,---------------Den-mir-ein-selbst-getäuschter-Freund-erweckt">es</rs> ja, <rs ref="#es-war-ein-böser-Irrtum,---------------Den-mir-ein-selbst-getäuschter-Freund-erweckt"><rs ref="#Mord-an-Agnes">es</rs> war <rs ref="#ein-böser-Irrtum,---------------Den-mir-ein-selbst-getäuschter-Freund-erweckt">ein böser Irrtum,</l>
+              <l><rs ref="#ein-böser-Irrtum,---------------Den-mir-ein-selbst-getäuschter-Freund-erweckt">Den</rs> mir <rs ref="#johann">ein selbst getäuschter Freund</rs> erweckt</rs></rs>.</l>
+            </lg>
+            <stage><rs ref="#johann">Johann</rs> zeigt <rs ref="#johann">sich</rs> im Hintergrunde.</stage>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Dort steht <rs ref="#johann">ein Mensch, <rs ref="#johann">den</rs> kenn ich</rs>.</l>
+            <stage><rs ref="#agnes">Sie</rs> steht auf.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Kennst <rs ref="#agnes">du</rs> <rs ref="#johann">ihn</rs>?</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Leb wohl.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Um Gotteswillen, nein, <rs ref="#agnes">du</rs> irrst <rs ref="#agnes">dich</rs>.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Ich irre nicht. – Laß mich. – Wollt <rs ref="#johann-/-ottokar">ihr</rs> mich morden?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#agnes">Dich</rs> morden? – Frei bist <rs ref="#agnes">du</rs>, und willst <rs ref="#agnes">du</rs> <rs ref="#gehen">gehen</rs>,</l>
+              <l><rs ref="#agnes">Du</rs> kannst <rs ref="#gehen">es</rs> unberührt, wohin <rs ref="#agnes">du</rs> willst.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>So leb denn wohl.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Und kehrst nicht wieder?</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Niemals,</l>
+              <l>Wenn <rs ref="#ottokar">du</rs> nicht gleich <rs ref="#mir-deinen-Namen-sagst">mir <rs ref="#Ottokars-Name"><rs ref="#ottokar">deinen</rs> Namen</rs> sagst</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#mir-deinen-Namen-sagst">Das</rs> soll ich jetzt – vor <rs ref="#johann">diesem Fremden</rs> –</l>
+            <pb n="128"/>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>So</l>
+              <l>Leb wohl auf ewig.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#agnes"><rs ref="#Maria-(der-Name,-den-Ottokar-Agnes-gibt)">Maria</rs></rs>! Willst <rs ref="#agnes">du</rs> nicht besser von</l>
+              <l>Mir denken lernen?</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Zeigen kann mir <rs ref="#jeder">jeder</rs></l>
+              <l>Gleich, wer <rs ref="#jeder">er</rs> ist.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ich will <rs ref="#mir-deinen-Namen-sagst">es</rs> heut noch. Kehre wieder.</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <l>Soll ich <rs ref="#dir-traun,-wenn-du-nicht-mir"><rs ref="#ottokar">dir</rs> traun, wenn <rs ref="#ottokar">du</rs> nicht mir</rs>?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Tu <rs ref="#dir-traun,-wenn-du-nicht-mir">es</rs></l>
+              <l>Auf die Gefahr.</l>
+            </lg>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES.</speaker></rs>
+            <lg>
+              <l>Es sei! Und irr ich mich,</l>
+              <l>Nicht eine Träne kosten soll <rs ref="#dir-traun,-wenn-du-nicht-mir">es</rs> mich.</l>
+            </lg>
+            <stage>Ab.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#johann">Johann</rs>, komm her, <rs ref="#johann">du</rs> siehst, <rs ref="#agnes">sie</rs> ist <rs ref="#die,-die-Johann-gerettet-hat">es</rs> wohl,</l>
+              <l>Es ist kein Zweifel mehr, nicht wahr?</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Es">Es</rs> mag</l>
+              <l>Wie's scheint, <rs ref="#ottokar">dir</rs> wohl an keinem Aufschluß mangeln,</l>
+              <l>Den ich <rs ref="#ottokar">dir</rs> geben könnte.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wie <rs ref="#Es"><rs ref="#johann">du's</rs></rs> nimmst.</l>
+              <l>Zwei Werte hat ein jeder Mensch; den einen</l>
+              <l>Lernt <rs ref="#man-(generic)">man</rs> nur kennen aus <rs ref="#man-(generic)">sich</rs> selbst, den andern</l>
+              <l>Muß <rs ref="#man-(generic)">man</rs> erfragen.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Hast <rs ref="#ottokar">du</rs> nur den Kern,</l>
+              <l><rs ref="#Die-Schale">Die Schale</rs> gibt <rs ref="#Die-Schale">sich</rs> dann als eine Zugab.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Ich sage <rs ref="#johann">dir</rs>, <rs ref="#agnes">sie</rs> weigert mir, wie <rs ref="#johann">dir</rs>,</l>
+              <l><rs ref="#der-Name-des-Mädchens,-das-Johann-rettete-(Agnes'-Name)">Den Namen</rs>, und wie <rs ref="#johann">dich</rs>, so flieht sie mich</l>
+              <l>Schon bei der Ahndung bloß, ich sei aus <rs ref="#Rossitz">Rossitz</rs>.</l>
+              <l><rs ref="#johann">Du</rs> sahst <rs ref="#gleich-einem-Geist-erscheint---------------Und-schwindet-sie-uns-beiden">es</rs> selbst, <rs ref="#gleich-einem-Geist-erscheint---------------Und-schwindet-sie-uns-beiden">gleich einem Geist erscheint</l>
+              <l>Und schwindet <rs ref="#agnes">sie</rs> <rs ref="#johann-/-ottokar">uns beiden</rs></rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l><rs ref="#johann-/-ottokar">Beiden</rs>? Ja.</l>
+              <l>Doch mit dem Unterschied, daß <rs ref="#ottokar">dir</rs> <rs ref="#ihn-zu-rufen">das eine</l>
+              <l>Talent</rs> geworden, <rs ref="#ihn-zu-rufen"><rs ref="#der-Geist-(symbolisch-für-Agnes)">ihn</rs> zu rufen</rs>, mir</l>
+              <l><rs ref="#den-Geist-zu-bannen">Das andre</rs> bloß, <rs ref="#den-Geist-zu-bannen"><rs ref="#der-Geist-(symbolisch-für-Agnes)">den Geist</rs> zu bannen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#johann">Johann</rs>!</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Pah! – Die Schuld liegt an der Spitze meiner Nase</l>
+              <l>Und etwa noch an meinen Ohrenzipfeln.</l>
+              <l>Was sonst an mir kann so voll Greuel sein,</l>
+              <l><pb n="129"/> Daß es <rs ref="#Agnes'-Blut">das Blut</rs> aus <rs ref="#agnes">ihren</rs> Wangen jagt,</l>
+              <l>Und, bis aufs Fliehen, jede Kraft <rs ref="#agnes">ihr</rs> nimmt?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#johann">Johann</rs>, ich kenne <rs ref="#johann">dich</rs> nicht mehr.</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <l>Ich aber <rs ref="#ottokar">dich</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Ich will im voraus <rs ref="#jede-Kränkung">jede Kränkung</rs> <rs ref="#johann">dir</rs></l>
+              <l>Vergeben, wenn <rs ref="#jede-Kränkung">sie</rs> <rs ref="#jede-Kränkung">sich</rs> nur edel zeigt.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Nicht übern Preis will ich <rs ref="#ottokar">dir</rs> zahlen. – Sprich.</l>
+              <rs ref="#Wenn-einer-mir-vertraut',-er-wiss'-ein-Roß,---------------Das-ihm-bequem-sei,-und-er-kaufen-wolle,---------------Und-ich,-ich-ginge-heimlich-hin-und-kauft's---------------Mir-selbst"><l>Wenn <rs ref="#einer-(generic)">einer</rs> mir vertraut', <rs ref="#einer-(generic)">er</rs> wiss' <rs ref="#ein-Roß,---------------Das-ihm-bequem-sei">ein Roß,</l>
+              <l><rs ref="#ein-Roß,---------------Das-ihm-bequem-sei">Das</rs> <rs ref="#einer-(generic)">ihm</rs> bequem sei</rs>, und <rs ref="#einer-(generic)">er</rs> kaufen wolle,</l>
+              <l>Und ich, ich ginge heimlich hin und <rs ref="#ein-Roß,---------------Das-ihm-bequem-sei">kauft's</rs></l>
+              <l>Mir selbst</rs> – was meinst <rs ref="#ottokar">du</rs>, wäre <rs ref="#Wenn-einer-mir-vertraut',-er-wiss'-ein-Roß,---------------Das-ihm-bequem-sei,-und-er-kaufen-wolle,---------------Und-ich,-ich-ginge-heimlich-hin-und-kauft's---------------Mir-selbst">das</rs> wohl edel?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Sehr schief wählst <rs ref="#johann">du</rs> <rs ref="#Wenn-einer-mir-vertraut',-er-wiss'-ein-Roß,---------------Das-ihm-bequem-sei,-und-er-kaufen-wolle,---------------Und-ich,-ich-ginge-heimlich-hin-und-kauft's---------------Mir-selbst"><rs ref="#johann">dein</rs> Gleichnis</rs>.</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Sage bitter;</l>
+              <rs ref="#Und-doch-ist's-Honig-gegen-mein-Gefühl."><l>Und doch <rs ref="#Wenn-einer-mir-vertraut',-er-wiss'-ein-Roß,---------------Das-ihm-bequem-sei,-und-er-kaufen-wolle,---------------Und-ich,-ich-ginge-heimlich-hin-und-kauft's---------------Mir-selbst">ist's</rs> Honig gegen mein Gefühl.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Und-doch-ist's-Honig-gegen-mein-Gefühl."><rs ref="#johann">Dein</rs> Irrtum</rs> ist <rs ref="#johann">dir</rs> lieb, weil <rs ref="#er-mich-kränkt"><rs ref="#Und-doch-ist's-Honig-gegen-mein-Gefühl.">er</rs> mich kränkt</rs>.</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Kränkt? Ja, <rs ref="#das-ist-mir-lieb,-und-ist's-ein-Irrtum,---------------Just-darum-will-ich-zähe-fest-ihn-halten"><rs ref="#er-mich-kränkt">das</rs> ist mir lieb, und <rs ref="#Und-doch-ist's-Honig-gegen-mein-Gefühl.">ist's</rs> <rs ref="#ein-Irrtum">ein Irrtum</rs>,</l>
+              <l>Just darum will ich zähe fest <rs ref="#Und-doch-ist's-Honig-gegen-mein-Gefühl.">ihn</rs> halten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Nicht viele Freude wird <rs ref="#johann">dir</rs> <rs ref="#das-ist-mir-lieb,-und-ist's-ein-Irrtum,---------------Just-darum-will-ich-zähe-fest-ihn-halten">das</rs> gewähren,</l>
+              <l>Denn still verschmerzen werd ich, was <rs ref="#johann">du</rs> tust.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Da hast <rs ref="#ottokar">du</rs> recht. Nichts würd mich mehr verdrießen,</l>
+              <l>Als wenn <rs ref="#Ottokars-Herz"><rs ref="#ottokar">dein</rs> Herz</rs> wie <rs ref="#eine-Kröte">eine Kröte</rs> wär,</l>
+              <l><rs ref="#eine-Kröte">Die</rs> ein verwundlos steinern Schild beschützt,</l>
+              <l>Denn weiter keine Lust bleibt mir auf Erden,</l>
+              <l>Als einer Bremse gleich <rs ref="#ottokar">dich</rs> zu verfolgen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#johann">Du</rs> bist weit besser als der Augenblick.</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l><rs ref="#ottokar">Du Tor</rs>! <rs ref="#ottokar">Du Tor</rs>! Denkst <rs ref="#ottokar">du</rs> mich so zu fassen?</l>
+              <l>Weil ich mich <rs ref="#edel">edel</rs> nicht erweise, nicht</l>
+              <l>Erweisen will, machst <rs ref="#ottokar">du</rs> mir weis, ich <rs ref="#edel">sei's</rs>,</l>
+              <l>Damit <rs ref="#die-unverdiente-Ehre">die unverdiente Ehre</rs> mich</l>
+              <l>Bewegen soll, in <rs ref="#die-unverdiente-Ehre">ihrem</rs> Sinn zu handeln?</l>
+              <l>Vor <rs ref="#Ottokars-Füße"><rs ref="#ottokar">deine</rs> Füße</rs> werf ich <rs ref="#ottokar">deine</rs> Achtung. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#johann">Du</rs> willst <rs ref="#mich-reizen">mich reizen</rs>, doch <rs ref="#johann">du</rs> kannst <rs ref="#mich-reizen">es</rs> nicht;</l>
+              <l>Ich weiß, <rs ref="#johann">du</rs> selbst, <rs ref="#johann">du</rs> wirst mich morgen rächen.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Nein, wahrlich, nein, dafür will ich schon sorgen.</l>
+              <l>Denn in <rs ref="#Johanns-Brust">die Brust</rs> schneid ich mir <rs ref="#eine-Wunde">eine Wunde</rs>,</l>
+              <l><pb n="130"/> <rs ref="#eine-Wunde">Die</rs> reiz ich stets mit Nadeln, halte stets</l>
+              <l><rs ref="#eine-Wunde">Sie</rs> offen, daß es mir recht sinnlich bleibe.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Es2">Es</rs> ist nicht möglich, ach, <rs ref="#Es2">es</rs> ist nicht möglich!</l>
+              <l>Wie könnte <rs ref="#johann">dein</rs> Gemüt so häßlich sein,</l>
+              <l>Da <rs ref="#johann">du</rs> doch <rs ref="#agnes">Agnes</rs>, <rs ref="#agnes">Agnes</rs> lieben kannst!</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Und daran noch erinnerst <rs ref="#ottokar">du</rs> mich, o</l>
+              <l><rs ref="#ottokar">Du Ungeheuer</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Lebe wohl, <rs ref="#johann">Johann</rs>.</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <l>Nein, halt! <rs ref="#ottokar">Du</rs> denkst, ich habe bloß gespaßt.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Was willst <rs ref="#johann">du</rs>?</l>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Gerad heraus. <rs ref="#Johanns-Leben">Mein Leben</rs></l>
+              <l>Und <rs ref="#ottokar"><rs ref="#Ottokars-Leben">deines</rs></rs> sind wie zwei Spinnen in der Schachtel.</l>
+              <l>Drum zieh!</l>
+            </lg>
+            <stage><rs ref="#johann">Er</rs> zieht.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Gewiß nicht. Fallen will ich anders</l>
+              <l>Von <rs ref="#johann">deiner</rs> Hand nicht, als gemordet.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN.</speaker></rs>
+            <lg>
+              <l>Zieh,</l>
+              <l><rs ref="#ottokar">Du Memme</rs>! Nicht nach <rs ref="#Ottokars-Tod"><rs ref="#ottokar">deinem</rs> Tod</rs>, nach <rs ref="#Johanns-Tod">meinem</rs>,</l>
+              <l>Nach <rs ref="#Johanns-Tod">meinem</rs> nur gelüstet's mir.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>umarmt <rs ref="#johann">ihn</rs>.</stage>
+            <lg>
+              <l><rs ref="#johann">Johann</rs>!</l>
+              <l><rs ref="#johann">Mein Freund</rs>! Ich <rs ref="#johann">dich</rs> ermorden.</l>
+            </lg>
+          </sp>
+          <sp who="#johann">
+            <rs ref="#johann"><speaker>JOHANN</speaker></rs>
+            <stage>stößt <rs ref="#ottokar">ihn</rs> fort.</stage>
+            <lg>
+              <l>Fort, <rs ref="#ottokar">du Schlange</rs>!</l>
+              <l>Nicht stechen will <rs ref="#ottokar">sie</rs>, nur mit <rs ref="#ottokar">ihrem</rs> Anblick</l>
+              <l>Mich langsam töten. – Gut.</l>
+            </lg>
+            <stage><rs ref="#johann">Er</rs> steckt <rs ref="#Johanns-Schwert">das Schwert</rs> ein.</stage>
+            <l>Noch gibt's ein andres Mittel.</l>
+            <stage><rs ref="#johann-/-ottokar">Beide</rs> von verschiedenen Seiten ab.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,364 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Erster Akt</head>
+        <div type="scene">
+          <head>Dritte Szene</head>
+          <stage><rs ref="#majorin">Der Majorin</rs> Zimmer.</stage>
+          <stage><rs ref="#majorin">Frau Majorin</rs> auf <rs ref="#einem-Kanapee-(majorins-zimmer-Insterburg)">einem Kanapee</rs>. <rs ref="#laeuffer-ccc">Läuffer</rs> in sehr demütiger Stellung neben <rs ref="#majorin">ihr</rs>
+            sitzend. <rs ref="#leopold,-sohn-von-major">Leopold</rs> steht.</stage>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Ich habe mit <rs ref="#pastor-(läuffers-vater)"><rs ref="#laeuffer-ccc">Ihrem</rs> Herrn Vater</rs> gesprochen und von <rs ref="#dreihundert-Dukaten-(lohn-für-majors-hofmeister-jährlich)">den dreihundert Dukaten stehenden
+              Gehalts</rs> sind wir bis auf hundert und funfzig einig worden. <rs ref="#Dafür-(lohn-läuffer-300-dukaten-abzüglich-150,-entspricht-150-Dukaten">Dafür</rs> verlang ich aber auch
+              <rs ref="#laeuffer-ccc">Herr</rs> – Wie heißen <rs ref="#laeuffer-ccc">Sie</rs>? – Herr Läuffer, daß Sie <rs ref="#laeuffer-ccc">sich</rs> in Kleidern sauber halten und
+              <rs ref="#unserm-Hause-(der-majors-in-insterburg)"><rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">unserm</rs> Hause</rs> keine Schande machen. Ich weiß, daß <rs ref="#laeuffer-ccc">Sie</rs> Geschmack haben; ich habe schon
+              von <rs ref="#laeuffer-ccc">Ihnen</rs> gehört, als <rs ref="#laeuffer-ccc">Sie</rs> noch in <rs ref="#Leipzig">Leipzig</rs> waren. <rs ref="#laeuffer-ccc">Sie</rs> wissen, daß <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">heut zu Tage</rs> auf
+              nichts in <rs ref="#der-Welt-(irdische-welt,-meint-ihre-bestandteile)">der Welt</rs> so sehr sieht, als ob <rs ref="#ein-Mensch-xxx">ein Mensch</rs> <rs ref="#ein-Mensch-xxx">sich</rs> zu führen wisse.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich hoff, <rs ref="#majorin">Euer Gnaden</rs> werden mit mir zufrieden sein. Wenigstens hab ich in <rs ref="#Leipzig">Leipzig</rs>
+              keinen Ball ausgelassen und wohl über die funfzehn Tanzmeister in meinem Leben
+              gehabt.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>So? lassen <rs ref="#laeuffer-ccc">Sie</rs> doch sehen. <stage><rs ref="#laeuffer-ccc">Läuffer</rs> steht auf.</stage> Nicht furchtsam, <rs ref="#laeuffer-ccc">Herr
+              ... Läuffer!</rs> nicht furchtsam! <rs ref="#leopold,-sohn-von-major">Mein Sohn</rs> ist buschscheu genug; wenn <rs ref="#leopold,-sohn-von-major">der</rs> <rs ref="#einen-Hofmeister-(unbest.)">einen blöden
+                <pb n="13"/> Hofmeister</rs> bekommt, so ist's aus mit <rs ref="#leopold,-sohn-von-major">ihm</rs>. Versuchen <rs ref="#laeuffer-ccc">Sie</rs> doch einmal,
+              mir ein Kompliment aus der Menuet zu machen; zur Probe nur, damit ich doch sehe. –
+              Nun, nun, <rs ref="#viel-----------------freundlichen-Scharrfüßen-(verbeugungen-läuffers)">das</rs> geht schon an! <rs ref="#leopold,-sohn-von-major">Mein Sohn</rs> braucht vor der Hand keinen Tanzmeister! Auch
+              einen Pas, wenn's <rs ref="#laeuffer-ccc">Ihnen</rs> beliebt. – <rs ref="#Es-(Tanzsfähigkieten-läuffer)">Es</rs> wird schon gehen; <rs ref="#Es-(Tanzsfähigkieten-läuffer)">das</rs> wird <rs ref="#Es-(Tanzsfähigkieten-läuffer)">sich</rs> alles geben,
+              wenn <rs ref="#laeuffer-ccc">Sie</rs> einmal einer <rs ref="#Adel-(standespersonen)-xxx">unsrer</rs> Assembleen werden beigewohnt haben ... Sind <rs ref="#laeuffer-ccc">sie</rs>
+              musikalisch?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich spiele die Geige, und das Klavier zur Not.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Desto besser: wenn <rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">wir</rs> aufs Land gehn und Fräulein Milchzahn besuchen <rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">uns</rs> einmal; ich
+              habe bisher <rs ref="#die-guten-Kinder-(vermutlich-die-von-fäulein-milchzahn)">ihnen</rs> immer was vorsingen müssen, wenn <rs ref="#die-guten-Kinder-(vermutlich-die-von-fäulein-milchzahn)">die guten Kinder</rs> Lust bekamen zu
+              tanzen: aber besser ist besser.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#majorin">Euer Gnaden</rs> setzen mich außer mich: wo wär <rs ref="#ein-Virtuos-(künstler,-musiker)">ein Virtuos</rs> auf <rs ref="#Welt-(meint-verschiedene-Orte-in-der-Welt))">der Welt</rs>, <rs ref="#ein-Virtuos-(künstler,-musiker)">der</rs> auf <rs ref="#ein-Virtuos-(künstler,-musiker)">seinem</rs>
+              Instrument <rs ref="#majorin">Euer Gnaden</rs> Stimme zu erreichen hoffen dürfte.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Ha ha ha, <rs ref="#laeuffer-ccc">Sie</rs> haben mich ja noch nicht gehört ... Warten <rs ref="#laeuffer-ccc">Sie</rs>; ist <rs ref="#laeuffer-ccc">Ihnen</rs> die Menuet
+              bekannt?</p>
+            <stage>Singt.</stage>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>O ... o ... verzeihen <rs ref="#majorin">Sie</rs> dem Entzücken, <rs ref="#dem-Enthusiasmus,-der-mich-hinreißt-(läuffer-ggü-majorin)">dem Enthusiasmus, <rs ref="#dem-Enthusiasmus,-der-mich-hinreißt-(läuffer-ggü-majorin)">der</rs> mich hinreißt</rs>.</p>
+            <stage>Küßt <rs ref="#majorin">ihr</rs> die Hand.</stage>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Und ich bin doch enrhumiert dazu; ich muß heut krähen wie ein Rabe. <rs ref="#laeuffer-ccc">Vous</rs> parlez
+              français, sans doute?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Un peu, <rs ref="#majorin">Madame</rs>.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>
+              <emph>Avez-<rs ref="#laeuffer-ccc">vous</rs> déjà fait <rs ref="#laeuffer-ccc">votre</rs> tour de <rs ref="#France-(frankreich)">France</rs>?</emph>
+            </p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>
+              <emph>Non <rs ref="#majorin">Madame</rs> ... Oui <rs ref="#majorin">Madame</rs>.</emph>
+            </p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Vous</rs> devez donc savoir, qu'en <rs ref="#France-(frankreich)">France</rs> <rs ref="#ein-Mensch-xxx">on</rs> ne baise pas les mains, <rs ref="#laeuffer-ccc">mon cher</rs>! ...</p>
+          </sp>
+          <sp who="#bedienter">
+            <speaker>BEDIENTER</speaker>
+            <stage>tritt herein.</stage>
+            <p><rs ref="#graf_wermuth-ccc">Der Graf Wermuth</rs> ...</p>
+            <stage><rs ref="#graf_wermuth-ccc">Graf Wermuth</rs> tritt herein.</stage>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF</speaker></rs>
+            <stage>nach einigen stummen Komplimenten setzt <rs ref="#graf_wermuth-ccc">sich</rs> <rs ref="#majorin">zur Majorin</rs> <rs ref="#einem-Kanapee-(majorins-zimmer-Insterburg)">aufs Kanapee</rs>. <rs ref="#laeuffer-ccc">Läuffer</rs>
+              bleibt verlegen stehen.</stage>
+            <p>Haben <rs ref="#majorin">Euer Gnaden</rs> <rs ref="#den-neuen-Tanzmeister-(pintinello)">den neuen Tanzmeister</rs> schon gesehn, <rs ref="#den-neuen-Tanzmeister-(pintinello)">der</rs> aus <rs ref="#Dresden">Dresden</rs> angekommen? <rs ref="#den-neuen-Tanzmeister-(pintinello)">Er</rs>
+              ist ein Marchese aus Florenz und heißt ... Aufrichtig: ich habe nur <rs ref="#zwei">zwei</rs> auf meinen
+              Reisen angetroffen, <rs ref="#zwei">die</rs> <rs ref="#den-neuen-Tanzmeister-(pintinello)">ihm</rs> vorzuziehen waren.</p>
+            <pb n="14"/>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Das gesteh ich, nur <rs ref="#zwei">zwei</rs>! In <rs ref="#der-Tat-(tatsächlich,-wirklich-floskelhaft)">der Tat</rs>, <rs ref="#graf_wermuth-ccc">Sie</rs> machen mich neugierig; ich weiß, welchen
+              verzärtelten Geschmack <rs ref="#graf_wermuth-ccc">der Graf Wermuth</rs> hat.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#den-neuen-Tanzmeister-(pintinello)">Pintinello</rs> ... nicht wahr? ich hab <rs ref="#den-neuen-Tanzmeister-(pintinello)">ihn</rs> in <rs ref="#Leipzig">Leipzig</rs> auf <rs ref="#dem-Theater-(in-leipzig)">dem Theater</rs> tanzen sehen; <rs ref="#den-neuen-Tanzmeister-(pintinello)">er</rs>
+              tanzt nicht sonderlich ...</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p><rs ref="#den-neuen-Tanzmeister-(pintinello)">Er</rs> tanzt – <rs ref="#ein-Mensch-xxx">on</rs> ne peut pas mieux. – Wie ich <rs ref="#majorin">Ihnen</rs> sage, gnädige Frau, in <rs ref="#Petersburg">Petersburg</rs>
+              hab ich <rs ref="#einen-Beluzzi">einen Beluzzi</rs> gesehn, <rs ref="#einen-Beluzzi">der</rs> <rs ref="#den-neuen-Tanzmeister-(pintinello)">ihm</rs> vorzuziehen war: aber <rs ref="#den-neuen-Tanzmeister-(pintinello)">dieser</rs> hat eine
+              Leichtigkeit in <rs ref="#den-neuen-Tanzmeister-(pintinello)">seinen</rs> Füßen, so etwas Freies, Göttlichnachlässiges in <rs ref="#den-neuen-Tanzmeister-(pintinello)">seiner</rs>
+              Stellung, in <rs ref="#den-neuen-Tanzmeister-(pintinello)">seinen</rs> Armen, in <rs ref="#den-neuen-Tanzmeister-(pintinello)">seinen</rs> Wendungen – –</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#dem-Theater-(in-leipzig)">Auf dem Kochischen Theater</rs> ward <rs ref="#den-neuen-Tanzmeister-(pintinello)">er</rs> ausgepfiffen, als <rs ref="#den-neuen-Tanzmeister-(pintinello)">er</rs> <rs ref="#den-neuen-Tanzmeister-(pintinello)">sich</rs> das letztemal sehen
+              ließ.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Merk <rs ref="#laeuffer-ccc">Er</rs> <rs ref="#laeuffer-ccc">sich</rs>, mein Freund! daß <rs ref="#Domestiken-(angestellte)">Domestiken</rs> in <rs ref="#Gesellschaften-von-Standespersonen-(treffen-von-standespersonen)">Gesellschaften von <rs ref="#Adel-(standespersonen)-xxx">Standespersonen</rs></rs> nicht
+              mitreden. Geh <rs ref="#laeuffer-ccc">Er</rs> auf <rs ref="#Sein-Zimmer-(läuffers-bei-majors)"><rs ref="#laeuffer-ccc">Sein</rs> Zimmer</rs>. Wer hat <rs ref="#laeuffer-ccc">Ihn</rs> gefragt?</p>
+            <stage><rs ref="#laeuffer-ccc">Läuffer</rs> tritt einige Schritte zurück.</stage>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Vermutlich <rs ref="#der-Hofmeister,-den-Sie-dem-jungen-Herrn-bestimmt-(prädikativ-läuffer)">der Hofmeister, <rs ref="#der-Hofmeister,-den-Sie-dem-jungen-Herrn-bestimmt-(prädikativ-läuffer)">den</rs> <rs ref="#majorin">Sie</rs> <rs ref="#leopold,-sohn-von-major">dem jungen Herrn</rs> bestimmt</rs>? ...</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Er</rs> kommt ganz frisch von <rs ref="#der-hohen-Schule-(läuffers-in-leipzig)">der hohen Schule</rs>. – Geh <rs ref="#laeuffer-ccc">Er</rs> nur! <rs ref="#laeuffer-ccc">Er</rs> hört ja, daß <rs ref="#majorin-/-graf_wermuth">man</rs> von <rs ref="#laeuffer-ccc">Ihm</rs>
+              spricht; desto weniger schickt <rs ref="#es2">es</rs> <rs ref="#es2">sich</rs>, <rs ref="#es2">stehen zu bleiben</rs>. <stage><rs ref="#laeuffer-ccc">Läuffer</rs> geht mit
+                <rs ref="#viel-----------------freundlichen-Scharrfüßen-(verbeugungen-läuffers)">einem steifen Kompliment</rs> ab.</stage> <rs ref="#Es">Es</rs> ist was Unerträgliches, <rs ref="#Es">daß <rs ref="#Adel-(standespersonen)-xxx">man</rs> für <rs ref="#sein---------------Geld-(das-gehalt-das-man-einem-hofmeister-zahlt"><rs ref="#Adel-(standespersonen)-xxx">sein</rs>
+              Geld</rs> keinen rechtschaffenen Menschen mehr antreffen kann</rs>. <rs ref="#major-ccc">Mein Mann</rs> hat wohl dreimal
+              an einen dasigen Professor geschrieben, und <rs ref="#laeuffer-ccc">dies</rs> soll doch noch der galanteste Mensch
+              auf <rs ref="#der-hohen-Schule-(läuffers-in-leipzig)">der ganzen Akademie</rs> gewesen sein. <rs ref="#graf_wermuth-ccc">Sie</rs> sehen's auch wohl an <rs ref="#laeuffer-ccc">seinem</rs> links bordierten
+              Kleide. Stellen <rs ref="#graf_wermuth-ccc">Sie</rs> <rs ref="#graf_wermuth-ccc">sich</rs> vor, von <rs ref="#Leipzig">Leipzig</rs> bis <rs ref="#Insterburg-in-Preußen">Insterburg</rs> <rs ref="#das-(reisegeld-majors-an-läuffer)">zweihundert Dukaten Reisegeld
+              und jährliches Gehalt fünfhundert Dukaten</rs>, ist <rs ref="#das-(reisegeld-majors-an-läuffer)">das</rs> nicht erschröcklich?</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Ich glaube, <rs ref="#es3"><rs ref="#pastor-(läuffers-vater)"><rs ref="#laeuffer-ccc">sein</rs> Vater</rs> ist der Prediger hier aus <rs ref="#Insterburg-in-Preußen">dem Ort</rs></rs> ...</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Ich weiß nicht – <rs ref="#es3">es</rs> kann sein – ich habe nicht <pb n="15"/> darnach gefragt, ja doch,
+              ich glaub <rs ref="#es3">es</rs> fast: <rs ref="#pastor-(läuffers-vater)">er</rs> heißt ja auch Läuffer; nun denn ist <rs ref="#laeuffer-ccc">er</rs> freilich noch artig
+              genug. Denn <rs ref="#pastor-(läuffers-vater)">das</rs> ist ein rechter Bär, wenigstens hat <rs ref="#pastor-(läuffers-vater)">er</rs> mich ein für allemal aus der
+              Kirche gebrüllt.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p><rs ref="#pastor-(läuffers-vater)">Ist's</rs> ein Katholik?</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Nein doch, <rs ref="#graf_wermuth-ccc">Sie</rs> wissen ja, daß in <rs ref="#Insterburg-in-Preußen">Insterburg</rs> keine katholische Kirche ist: <rs ref="#pastor-(läuffers-vater)">er</rs> ist
+              lutherisch, oder protestantisch wollt ich sagen; <rs ref="#pastor-(läuffers-vater)">er</rs> ist protestantisch.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p><rs ref="#den-neuen-Tanzmeister-(pintinello)">Pintinello</rs> tanzt ... Es ist wahr, ich habe mir mein Tanzen einige dreißig tausend
+              Gulden kosten lassen, aber noch einmal so viel gäb ich drum, wenn ...</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

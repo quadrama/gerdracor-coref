@@ -1,0 +1,381 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Aufzug</head>
+        <stage>Vorzimmer <rs ref="#herzog">des Herzogs</rs>, prächtig, modern.</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage><rs ref="#sekretaer">Sekretär</rs>. <rs ref="#weltgeistlicher">Weltgeistlicher</rs>.</stage>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Tritt still herein in diese Totenstille!</l>
+              <l>Wie ausgestorben findest <rs ref="#weltgeistlicher">du</rs> <rs ref="#meines-Hauses-(herzog)">das Haus</rs>,</l>
+              <l><rs ref="#herzog">Der Herzog</rs> schläft, und alle Diener stehen,</l>
+              <l>Von <rs ref="#herzog">seinem</rs> Schmerz durchdrungen, stumm gebeugt.</l>
+              <l><rs ref="#herzog">Er</rs> schläft! Ich segnet' <rs ref="#herzog">ihn</rs>, als ich <rs ref="#herzog">ihn</rs> sah</l>
+              <l>Bewußtlos auf dem Pfühle ruhig atmen.</l>
+              <l><rs ref="#Das-Übermaß-der-Schmerzen">Das Übermaß <rs ref="#Schmerz">der Schmerzen</rs></rs> löste <rs ref="#Das-Übermaß-der-Schmerzen">sich</rs></l>
+              <l>In der Natur balsam'scher Wohltat auf.</l>
+              <l><rs ref="#Den-Augenblick">Den Augenblick</rs> befürcht' ich, <rs ref="#Den-Augenblick">der</rs> <rs ref="#herzog">ihn</rs> weckt:</l>
+              <l><rs ref="#weltgeistlicher">Euch</rs> wird ein jammervoller Mann erscheinen</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Darauf bin ich bereitet, zweifelt nicht.</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Vor wenig Stunden kam die Nachricht an,</l>
+              <l><rs ref="#eugenie">Eugenie</rs> sei tot! <rs ref="#Vom-Pferd">Vom Pferd</rs> gestürzt!</l>
+              <l>An <rs ref="#eurem-Orte"><rs ref="#weltgeistlicher">eurem</rs> Orte</rs> sei <rs ref="#eugenie">sie</rs> beigesetzt,</l>
+              <l>Als an <rs ref="#eurem-Orte">dem nächsten Platz</rs>, wohin <rs ref="#Man">man</rs> <rs ref="#eugenie">sie</rs></l>
+              <l>Aus jenem Felsendickicht bringen können,</l>
+              <l>Wo <rs ref="#eugenie">sie</rs> verwegen <rs ref="#eugenie">sich</rs> <rs ref="#des-Todes">den Tod</rs> erstürmt.</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Und <rs ref="#eugenie">sie</rs> indessen ist schon weit entfernt?</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Mit rascher Eile wird <rs ref="#eugenie">sie</rs> weggeführt.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Und wem vertraut <rs ref="#sekretaer">ihr</rs> solch ein schwer Geschäft?</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#hofmeisterin">Dem klugen Weibe, <rs ref="#hofmeisterin">das</rs> <rs ref="#weltgeistlicher-/-sekretaer">uns</rs> angehört</rs>.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>In welche Gegend habt <rs ref="#sekretaer">ihr</rs> <rs ref="#hofmeisterin">sie</rs> geschickt?</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Zu <rs ref="#dieses-Reiches-letztem-Hafenplatz"><rs ref="#dieses-Reiches-(HERZOG)">dieses Reiches</rs> letztem Hafenplatz</rs>.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Von dorten soll <rs ref="#hofmeisterin">sie</rs> in das fernste Land?</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#hofmeisterin">Sie</rs> führt ein günst'ger Wind sogleich davon.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Und hier auf ewig gelte <rs ref="#eugenie">sie</rs> für tot!</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Auf <rs ref="#weltgeistlicher">deiner</rs> Fabel Vortrag kommt es an.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l><rs ref="#Der-Irrtum">Der Irrtum</rs> soll im ersten Augenblick,</l>
+              <l>Auf alle künft'ge Zeit, gewaltig wirken.</l>
+              <l>An <rs ref="#eugenie">ihrer</rs> Gruft, an <rs ref="#eugenie">ihrer</rs> Leiche soll</l>
+              <l><rs ref="#Phantasie">Die Phantasie</rs> erstarren. Tausendfach</l>
+              <pb n="249"/>
+            </lg>
+            <lg>
+              <l>Zerreiß' ich das geliebte Bild und grabe:.</l>
+              <l>Dem Sinne des entsetzten Hörenden</l>
+              <l>Mit Feuerzügen dieses Unglück ein.</l>
+              <l><rs ref="#eugenie">Sie</rs> ist dahin für alle, <rs ref="#eugenie">sie</rs> verschwindet</l>
+              <l>Ins Nichts <rs ref="#der-Asche">der Asche</rs>. <rs ref="#jeder">Jeder</rs> kehret schnell</l>
+              <l>Den Blick <rs ref="#des-Lebens">zum Leben</rs> und vergißt, im Taumel</l>
+              <l>Der treibenden Begierden, daß auch <rs ref="#eugenie">sie</rs></l>
+              <l><rs ref="#dem-Kreise-der-Lebend'gen">Im Reihen <rs ref="#der-Lebendigen">der Lebendigen</rs></rs> geschwebt.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#weltgeistlicher">Du</rs> trittst mit vieler Kühnheit ans Geschäft;</l>
+              <l>Besorgst <rs ref="#weltgeistlicher">du</rs> keine Reue hintennach?</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Welch eine Frage tust <rs ref="#sekretaer">du</rs>? <rs ref="#weltgeistlicher-/-sekretaer">Wir</rs> sind fest!</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-innres-Unbehagen">Ein innres Unbehagen</rs> fügt <rs ref="#Ein-innres-Unbehagen">sich</rs> oft,</l>
+              <l>Auch wider <rs ref="#weltgeistlicher-/-sekretaer">unsern</rs> Willen, an <rs ref="#die-Tat">die Tat</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Was hör' ich? <rs ref="#sekretaer">du</rs> bedenklich? oder willst</l>
+              <l><rs ref="#sekretaer">Du</rs> mich nur prüfen, ob es <rs ref="#sekretaer">euch</rs> gelang,</l>
+              <l>Mich, <rs ref="#sekretaer">euern</rs> Schüler, völlig auszubilden?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Das Wichtige bedenkt <rs ref="#Man">man</rs> nie genug.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l>Bedenke <rs ref="#Man">man</rs>, eh noch <rs ref="#die-Tat">die Tat</rs> beginnt.</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Auch in <rs ref="#die-Tat">der Tat</rs> ist Raum für Überlegung.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Für mich ist nichts zu überlegen mehr!</l>
+              <l>Da wär' es Zeit gewesen, als ich noch</l>
+              <l><rs ref="#Der-freud'gen-Überraschung">Im Paradies beschränkter Freuden</rs> weilte,</l>
+              <l>Als, von des Gartens engem Hag umschlossen,</l>
+              <l>Ich selbstgesäte Bäume selber pfropfte,</l>
+              <l>Aus wenig Beeten meinen Tisch versorgte,</l>
+              <l>Als noch <rs ref="#Zufriedenheit">Zufriedenheit</rs> im kleinen Hause</l>
+              <l>Gefühl des Reichtums über alles goß,</l>
+              <l>Und ich, nach meiner Einsicht, zur Gemeinde</l>
+              <l>Als <rs ref="#ein-Freund">Freund</rs>, als <rs ref="#Des-Vaters">Vater</rs> aus <rs ref="#Herz">dem Herzen</rs> sprach,</l>
+              <l>Dem Guten fördernd meine Hände reichte,</l>
+              <l>Dem Bösen wie <rs ref="#dem-Übel">dem Übel</rs> widerstritt.</l>
+              <l>O hätte damals ein wohltät'ger Geist</l>
+              <l>Vor <rs ref="#meiner-Türe">meiner Türe</rs> <rs ref="#sekretaer">dich</rs> vorbeigewiesen,</l>
+              <l>An <rs ref="#meiner-Türe">der</rs> <rs ref="#sekretaer">du</rs> müde, durstig von <rs ref="#der-Jagd">der Jagd</rs></l>
+              <l>Zu klopfen kamst, mit schmeichlerischem Wesen,</l>
+              <l>Mit süßem Wort mich zu bezaubern wußtest.</l>
+              <l><rs ref="#Der-Gastfreundschaft-geweihter,-schöner-Tag">Der Gastfreundschaft geweihter, schöner Tag</rs>,</l>
+              <l><rs ref="#Der-Gastfreundschaft-geweihter,-schöner-Tag">Er</rs> war der letzte reingenoßnen Friedens.</l>
+              <pb n="250"/>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#Wir-(sekretär)">Wir</rs> brachten <rs ref="#weltgeistlicher">dir</rs> so <rs ref="#Freude">manche Freude</rs> zu.</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Und dranget mir so <rs ref="#manch-Bedürfnis">manch Bedürfnis</rs> auf.</l>
+              <l>Nun war ich arm, als ich <rs ref="#des-Reichen">die Reichen</rs> kannte;.</l>
+              <l>Nun war ich sorgenvoll, denn mir gebrach's;</l>
+              <l>Nun hatt' ich <rs ref="#der-Not">Not</rs>, ich brauchte fremde Hilfe.</l>
+              <l><rs ref="#Ihr-wart-mir-hilfreich"><rs ref="#Wir-(sekretär)">Ihr</rs> wart mir hilfreich</rs>, teuer büß' ich <rs ref="#Ihr-wart-mir-hilfreich">das</rs>.</l>
+              <l><rs ref="#Wir-(sekretär)">Ihr</rs> nahmt mich zum Genossen <rs ref="#Wir-(sekretär)">eures</rs> Glücks,</l>
+              <l>Mich zum Gesellen <rs ref="#Wir-(sekretär)">eurer</rs> Taten auf.</l>
+              <l>Zum Sklaven, sollt' ich sagen, dingtet <rs ref="#Wir-(sekretär)">ihr</rs></l>
+              <l><rs ref="#Den-sonst-so-freien,-jetzt-bedrängten-Mann">Den sonst so freien, jetzt bedrängten Mann</rs>.</l>
+              <l><rs ref="#Wir-(sekretär)">Ihr</rs> lohnt <rs ref="#Den-sonst-so-freien,-jetzt-bedrängten-Mann">ihm</rs> zwar, doch immer noch versagt</l>
+              <l><rs ref="#Wir-(sekretär)">Ihr</rs> <rs ref="#Den-sonst-so-freien,-jetzt-bedrängten-Mann">ihm</rs> <rs ref="#den-Lohn,-den-er-verlangen-darf">den Lohn, <rs ref="#den-Lohn,-den-er-verlangen-darf">den</rs> <rs ref="#Den-sonst-so-freien,-jetzt-bedrängten-Mann">er</rs> verlangen darf</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <rs ref="#Vertraue,-daß-wir-dich-in-kurzer-Zeit---------------Mit-Gütern,-Ehren,-Pfründen-überhäufen"><l>Vertraue, daß <rs ref="#Wir-(sekretär)">wir</rs> <rs ref="#weltgeistlicher">dich</rs> in kurzer Zeit</l>
+              <l>Mit Gütern, Ehren, Pfründen überhäufen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <l><rs ref="#Vertraue,-daß-wir-dich-in-kurzer-Zeit---------------Mit-Gütern,-Ehren,-Pfründen-überhäufen">Das</rs> ist es nicht, was ich erwarten muß.</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>Und welche neue Fordrung bildest <rs ref="#weltgeistlicher">du</rs>?</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Als ein gefühllos Werkzeug braucht <rs ref="#Wir-(sekretär)">ihr</rs> mich</l>
+              <l>Auch diesmal wieder. <rs ref="#eugenie">Dieses holde Kind</rs></l>
+              <l>Verstoßt <rs ref="#Wir-(sekretär)">ihr</rs> aus <rs ref="#dem-Kreise-der-Lebend'gen">dem Kreise <rs ref="#der-Lebendigen">der Lebend'gen</rs></rs>;</l>
+              <l>Ich soll <rs ref="#die-Tat">die Tat</rs> beschönen, <rs ref="#die-Tat">sie</rs> bedecken,</l>
+              <l>Und <rs ref="#Wir-(sekretär)">ihr</rs> beschließt, begeht <rs ref="#die-Tat">sie</rs> ohne mich.</l>
+              <l>Von nun an fordr' ich, mit <rs ref="#im-Rat">im Rat</rs> zu sitzen</l>
+              <l>Wo Schreckliches beschlossen wird, wo <rs ref="#jeder">jeder</rs>,</l>
+              <l>Auf <rs ref="#jeder">seinen</rs> Sinn, auf <rs ref="#jeder">seine</rs> Kräfte stolz,</l>
+              <l>Zum unvermeidlich Ungeheuren stimmt.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Daß <rs ref="#weltgeistlicher">du</rs> auch diesmal <rs ref="#weltgeistlicher">dich</rs> mit <rs ref="#Wir-(sekretär)">uns</rs> verbunden,</l>
+              <l>Erwirbt aufs neue <rs ref="#weltgeistlicher">dir</rs> <rs ref="#ein-großes-Recht">ein großes Recht</rs>.</l>
+              <l>Gar <rs ref="#vom-Geheimnis">manch Geheimnis</rs> wirst <rs ref="#weltgeistlicher">du</rs> bald vernehmen –</l>
+              <l>Dahin gedulde <rs ref="#weltgeistlicher">dich</rs> und sei gefaßt.</l>
+            </lg>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Ich bin's und bin noch weiter, als <rs ref="#Wir-(sekretär)">ihr</rs> denkt;</l>
+              <l>In <rs ref="#Wir-(sekretär)">eure</rs> Plane schaut' ich längst hinein.</l>
+              <l><rs ref="#Der">Der</rs> nur verdient <rs ref="#geheimnisvolle-Weihe">geheimnisvolle Weihe</rs>,</l>
+              <l><rs ref="#Der">Der</rs> <rs ref="#geheimnisvolle-Weihe">ihr</rs> durch Ahnung vorzugreifen weiß.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#Was-ahnest-du">Was ahnest <rs ref="#weltgeistlicher">du</rs></rs>? <rs ref="#Was-ahnest-du">was weißt <rs ref="#weltgeistlicher">du</rs></rs>?</l>
+          </sp>
+          <sp who="#weltgeistlicher">
+            <rs ref="#weltgeistlicher"><speaker>WELTGEISTLICHER.</speaker></rs>
+            <lg>
+              <l>Laß <rs ref="#weltgeistlicher-/-sekretaer">uns</rs> <rs ref="#Was-ahnest-du">das</rs></l>
+              <l>Auf ein Gespräch der Mitternacht versparen.</l>
+              <l><pb n="251"/> O <rs ref="#eugenie">dieses Mädchens</rs> trauriges Geschick</l>
+              <l>Verschwindet, wie <rs ref="#Bach">ein Bach</rs> <rs ref="#Im-Ozean">im Ozean</rs>,</l>
+              <l>Wenn ich bedenke, wie, verborgen, <rs ref="#geheimnisvolle-Weihe">ihr</rs></l>
+              <l>Zu mächtiger Parteigewalt <rs ref="#geheimnisvolle-Weihe">euch</rs> hebt</l>
+              <l>Und an die Stelle der Gebietenden</l>
+              <l>Mit frecher List <rs ref="#geheimnisvolle-Weihe">euch</rs> einzudrängen hofft.</l>
+              <l>Nicht <rs ref="#geheimnisvolle-Weihe">ihr</rs> allein; denn <rs ref="#andre">andre</rs> streben auch,</l>
+              <l><rs ref="#geheimnisvolle-Weihe">Euch</rs> widerstrebend, nach demselben Zweck.</l>
+              <l>So untergrabt <rs ref="#geheimnisvolle-Weihe">ihr</rs> <rs ref="#Vaterland">Vaterland</rs> und <rs ref="#Am-Throne">Thron</rs>;</l>
+              <l><rs ref="#Wer3">Wer</rs> soll <rs ref="#Wer3">sich</rs> retten, wenn das Ganze stürzt?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Ich höre kommen! Tritt hier an die Seite!</l>
+              <l>Ich führe <rs ref="#weltgeistlicher">dich</rs> zu rechter Zeit herein.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

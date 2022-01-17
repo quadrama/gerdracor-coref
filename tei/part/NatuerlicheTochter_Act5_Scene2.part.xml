@@ -1,0 +1,323 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Platz <rs ref="#am-Hafen">am Hafen</rs>.</stage>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#hofmeisterin-/-eugenie">Die Vorigen</rs>. <rs ref="#gouverneur">Der Gouverneur</rs>. Adjutanten.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#gouverneur">Dir</rs> in den Weg zu treten, darf ich's wagen?</l>
+              <l>Wirst <rs ref="#gouverneur">du</rs> der kühnen Fremden auch verzeihn?</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR</speaker></rs>
+            <stage>nachdem <rs ref="#gouverneur">er</rs> <rs ref="#eugenie">sie</rs> aufmerksam betrachtet.</stage>
+            <lg>
+              <l><rs ref="#Wer5">Wer</rs> <rs ref="#Wer5">sich</rs>, wie <rs ref="#eugenie">du</rs>, <rs ref="#Dem-ersten-Blick">dem ersten Blick</rs> empfiehlt,</l>
+              <l><rs ref="#Wer5">Der</rs> ist gewiß des freundlichsten Empfangs.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Nicht froh und freundlich ist <rs ref="#es,-was-ich-bringe">es, <rs ref="#es,-was-ich-bringe">was</rs> ich bringe</rs>,</l>
+              <l>Entgegen treibt mich <rs ref="#gouverneur">dir</rs> <rs ref="#die-höchste-Not">die höchste Not</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l>Ist, <rs ref="#die-höchste-Not">sie</rs> zu heben, möglich, sei mir's Pflicht;</l>
+              <l>Ist <rs ref="#die-höchste-Not">sie</rs> auch nur zu lindern, soll's geschehn.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Von-hohem-Haus">Von hohem Haus</rs> entsproß <rs ref="#die-Bittende">die Bittende</rs>;</l>
+              <l>Doch leider ohne Namen tritt <rs ref="#die-Bittende">sie</rs> auf.</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Den-Namen">Ein Name</rs> wird vergessen; <rs ref="#dem-Gedächtnis">dem Gedächtnis</rs></l>
+              <l>Schreibt solch ein Bild <rs ref="#dem-Gedächtnis">sich</rs> unauslöschlich ein.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Gewalt">Gewalt</rs> und <rs ref="#List">List</rs> entreißen, führen, drängen</l>
+              <l>Mich von <rs ref="#meiner-Brust-(herzog)"><rs ref="#herzog">des Vaters</rs> Brust</rs> <rs ref="#wildes-Meer">ans wilde Meer</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Wer6">Wer</rs> durfte <rs ref="#Wer6">sich</rs> an diesem Friedensbild</l>
+              <l>Mit ungeweihter Feindeshand vergreifen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ich selbst vermute nur! Mich überrascht</l>
+              <l>Aus <rs ref="#meines-Hauses-(herzog)">meinem eignen Hause</rs> dieser Schlag.</l>
+              <l>Von Eigennutz und bösem Rat geleitet,</l>
+              <l>Sann mir <rs ref="#Prinz-/-Sohn-(Herzog)">ein Bruder</rs> dies Verderben aus,</l>
+              <l><pb n="284"/> Und <rs ref="#hofmeisterin">diese</rs> hier, <rs ref="#hofmeisterin">die</rs> mich erzogen, steht,</l>
+              <l>Mir unbegreiflich, meinen Feinden bei.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Ihr</rs> steh' ich bei und mildre <rs ref="#Ein-großes-Übel">großes Übel,</l>
+              <l><rs ref="#Ein-großes-Übel">Das</rs> ich zu heilen, leider, nicht vermag</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ich soll zu <rs ref="#Schiff">Schiffe</rs> steigen, fordert <rs ref="#hofmeisterin">sie</rs>!</l>
+              <l>Nach jenen Ufern führt <rs ref="#hofmeisterin">sie</rs> mich hinüber!</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Geb' ich auf solchem Weg <rs ref="#eugenie">ihr</rs> das Geleit,</l>
+              <l>So zeigt es <rs ref="#Zur-Liebe">Liebe</rs>, Muttersorgfalt an.</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l>Verzeiht, <rs ref="#hofmeisterin-/-eugenie">geschätzte Frauen</rs>, wenn <rs ref="#Mann">ein Mann,</l>
+              <l><rs ref="#Mann">Der</rs>, jung an Jahren, manches in der Welt</l>
+              <l>Gesehn und überlegt</rs>, <rs ref="#im-Augenblick">im Augenblick,</l>
+              <l><rs ref="#im-Augenblick">Da</rs> <rs ref="#Mann">er</rs> <rs ref="#hofmeisterin-/-eugenie">euch</rs> sieht und hört</rs>, bedenklich stutzt.</l>
+              <l>Vertrauen scheint <rs ref="#hofmeisterin-/-eugenie">ihr</rs> beide zu verdienen,</l>
+              <l>Und <rs ref="#hofmeisterin-/-eugenie">ihr</rs> mißtraut einander beide selbst,</l>
+              <l>So scheint es wenigstens. Wie soll ich nun</l>
+              <l>Des wunderbaren Knotens <rs ref="#Rätselschlinge,---------------Die-euch-umstrickt">Rätselschlinge,</l>
+              <l><rs ref="#Rätselschlinge,---------------Die-euch-umstrickt">Die</rs> <rs ref="#hofmeisterin-/-eugenie">euch</rs> umstrickt</rs>, zu lösen übernehmen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Wenn <rs ref="#gouverneur">du</rs> mich hören willst, vertrau' ich mehr.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Auch ich vermöchte manches zu erklären.</l>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l>Daß <rs ref="#uns-/-wir">uns</rs> mit <rs ref="#Fabeln">Fabeln</rs> oft <rs ref="#Fremde">ein Fremder</rs> täuscht,</l>
+              <l>Muß auch der Wahrheit schaden, wenn <rs ref="#uns-/-wir">wir</rs> <rs ref="#Fabeln">sie</rs></l>
+              <l>In abenteuerlicher Hülle sehn.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Mißtraust <rs ref="#gouverneur">du</rs> mir, so bin ich ohne Hilfe.</l>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <l>Und traut' ich auch, ist doch zu helfen schwer.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Nur zu den Meinen sende mich zurück.</l>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l>Verlorne Kinder aufzunehmen, gar</l>
+              <l>Entwendete, verstoßne zu beschützen,</l>
+              <l>Bringt wenig Dank dem wohlgesinnten Mann.</l>
+              <l>Um Gut und Erbe wird sogleich ein Streit,</l>
+              <l>Um <rs ref="#die-Person">die Person</rs>, ob <rs ref="#die-Person">sie</rs> die rechte sei,</l>
+              <l>Gehässig aufgeregt, und wenn Verwandte</l>
+              <l>Ums Mein und Dein gefühllos hadern, trifft</l>
+              <l><rs ref="#Den-Fremden,-der-sich-eingemischt">Den Fremden, <rs ref="#Den-Fremden,-der-sich-eingemischt">der</rs> <rs ref="#Den-Fremden,-der-sich-eingemischt">sich</rs> eingemischt</rs>, der Haß</l>
+              <l>Von beiden Teilen, und nicht selten gar,</l>
+              <l>Weil <rs ref="#Den-Fremden,-der-sich-eingemischt">ihm</rs> der strengere Beweis nicht glückt,</l>
+              <l>Steht <rs ref="#Den-Fremden,-der-sich-eingemischt">er</rs> zuletzt auch vor <rs ref="#im-Gericht">Gericht</rs> beschämt.</l>
+              <l>Verzeih mir also, wenn ich nicht sogleich</l>
+              <l>Mit <rs ref="#Hoffnung">Hoffnung</rs> <rs ref="#eugenie">dein</rs> Gesuch erwidern kann.</l>
+              <pb n="285"/>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ziemt eine solche Furcht <rs ref="#ein-edler-Mann">dem edlen Mann</rs>,</l>
+              <l>Wohin soll <rs ref="#ein-Unterdrückter">sich</rs> <rs ref="#ein-Unterdrückter">ein Unterdrückter</rs> wenden?</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR.</speaker></rs>
+            <lg>
+              <l>Doch wenigstens entschuldigst <rs ref="#eugenie">du</rs> gewiß</l>
+              <l><rs ref="#Im-Augenblick,-wo-ein-Geschäft-mich-ruft">Im Augenblick, <rs ref="#Im-Augenblick,-wo-ein-Geschäft-mich-ruft">wo</rs> ein Geschäft mich ruft</rs>,</l>
+              <l>Wenn ich auf morgen frühe <rs ref="#eugenie">dich</rs> hinein</l>
+              <l>In meine Wohnung lade, dort genauer</l>
+              <l><rs ref="#Das-Schicksal-(EUGENIE-Verbannung)">Das Schicksal</rs> zu erfahren, <rs ref="#Das-Schicksal-(EUGENIE-Verbannung)">das</rs> <rs ref="#eugenie">dich</rs> drängt.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mit <rs ref="#Freude">Freuden</rs> werd' ich kommen. Nimm voraus</l>
+              <l>Den lauten Dank für <rs ref="#deine-Rettung-EUGENIE">meine Rettung</rs> an!</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage><rs ref="#hofmeisterin">die</rs> <rs ref="#gouverneur">ihm</rs> <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">ein Papier</rs> überreicht.</stage>
+            <lg>
+              <l>Wenn <rs ref="#hofmeisterin-/-eugenie">wir</rs> auf <rs ref="#gouverneur">deine</rs> Ladung nicht erscheinen,</l>
+              <l>So ist <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">dies Blatt</rs> Entschuldigung genug.</l>
+            </lg>
+          </sp>
+          <sp who="#gouverneur">
+            <rs ref="#gouverneur"><speaker>GOUVERNEUR</speaker></rs>
+            <stage><rs ref="#gouverneur">der</rs> <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">es</rs> aufmerksam eine Weile angesehn, <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">es</rs> zurückgebend.</stage>
+            <lg>
+              <l>So kann ich freilich nur beglückte Fahrt,</l>
+              <l>Ergebung <rs ref="#Geschick">ins Geschick</rs> und <rs ref="#Hoffnung">Hoffnung</rs> wünschen.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

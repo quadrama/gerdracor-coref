@@ -1,0 +1,626 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <rs ref="#Dritte-Szene-[META]"><head>Dritte Szene</head></rs>
+          <stage><rs ref="#Bauernküche">Bauernküche</rs>. <rs ref="#barnabe">Barnabe</rs> <rs ref="#Barnabes-Herd">am Herd</rs>.</stage>
+          <stage><rs ref="#barnabe">Sie</rs> rührt <rs ref="#einen-Kessel,-der-über-Feuer-steht">einen Kessel, <rs ref="#einen-Kessel,-der-über-Feuer-steht">der</rs> über Feuer steht</rs>.</stage>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Zuerst <rs ref="#der-Vater-(Barnabes-Wünsche)">dem Vater</rs>:</l>
+              <l>Ruh in <rs ref="#die-Gruft">der Gruft</rs>; daß <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> <rs ref="#ein-Frevlerarm">ein Frevlerarm</rs> nicht</l>
+              <l>Über <rs ref="#das-Feld">das Feld</rs> trage die Knochen umher.</l>
+              <l><pb n="181"/> Leichtes Erstehn; daß <rs ref="#der-Vater-(Barnabes-Wünsche)">er</rs> hoch jauchzend das Haupt</l>
+              <l>Dränge durchs Grab, wenn die Posaune <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> ruft.</l>
+              <l>Ewiges Glück: daß <rs ref="#die-Pforte">sich</rs> <rs ref="#die-Pforte">die Pforte</rs> <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> weit</l>
+              <l>Öffne, des Lichts Glanzstrom entgegen <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> wog.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA</speaker></rs>
+            <stage>außerhalb <rs ref="#Dritte-Szene-[META]">der Szene</rs>.</stage>
+            <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Barnabe</rs>! Rührst <rs ref="#barnabe">du</rs> <rs ref="#einen-Kessel,-der-über-Feuer-steht">den Kessel</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja, mit beiden Händen;</l>
+              <l>Ich wollt ich könnt die Füß auch brauchen.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Aber</l>
+              <l><rs ref="#Du-sprichst-nicht-die-drei-Wünsche"><rs ref="#barnabe">Du</rs> sprichst nicht <rs ref="#die-drei-Wünsche">die drei Wünsche</rs></rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun, <rs ref="#Du-sprichst-nicht-die-drei-Wünsche">das</rs> gesteh ich!</l>
+              <l>Wenn <rs ref="#Gott">unser Herrgott</rs> taub, wie <rs ref="#ursula">du</rs>, so hilft</l>
+              <l>Es alles nichts. – Dann <rs ref="#die-Mutter-(Barnabes-Wünsche)">der Mutter</rs>:</l>
+              <l>Alles Gedeihn; daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> die Landhexe nicht</l>
+              <l>Giftigen Blicks töte das Kalb in der Kuh.</l>
+              <l>Heil an dem Leibe: daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> <rs ref="#der-Krebs">der Krebs</rs> mit dem Blut –</l>
+              <l>Läppchen im Schutt schwinde geschwinde dahin,</l>
+              <l><rs ref="#das-Leben">Leben</rs> <rs ref="#der-Tod">im Tod</rs>: daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> kein Teufel die Zung</l>
+              <l>Strecke heraus, wenn <rs ref="#die-Mutter-(Barnabes-Wünsche)">sie</rs> an <rs ref="#Gott">Gott</rs> <rs ref="#die-Mutter-(Barnabes-Wünsche)">sich</rs> empfiehlt.</l>
+              <l>Nun für mich:</l>
+              <l>Freuden vollauf: daß mich ein stattlicher Mann</l>
+              <l>Ziehe mit Kraft kühn ins hochzeitliche Bett.</l>
+              <l>Gnädiger Schmerz: daß sich –</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Böses Mädel</rs>! Hast <rs ref="#den-Blumenstaub">den Blumenstaub</rs></l>
+              <l>Vergessen und die Wolfkrautskeime.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nein</l>
+              <l>Doch, nein, 's ist <rs ref="#den-Blumenstaub">alles</rs> schon hinein. <rs ref="#Der-Brei">Der Brei</rs></l>
+              <l>Ist dick, daß schon die Kelle stehet.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Aber</l>
+              <l>Die ungelegten Eier aus dem Hechtsbauch?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Schneid ich noch einen auf?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Nein, warte noch.</l>
+              <l>Ich will erst Fliederblüte zubereiten.</l>
+              <l>Laß <rs ref="#barnabe">du</rs> nur keinen in <rs ref="#Bauernküche">die Küche</rs>, hörst <rs ref="#barnabe">du</rs>?</l>
+              <l><pb n="182"/> Und rühre fleißig, hörest <rs ref="#barnabe">du</rs>? Und sag</l>
+              <l><rs ref="#die-drei-Wünsche">Die Wünsche</rs>, hörst <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja. – Wo blieb</l>
+              <l>Ich stehn? Freuden vollauf – Nein, das ist schon vorbei.</l>
+              <l>Gnädiger Schmerz: daß <rs ref="#die-liebliche-Frucht">sich</rs> <rs ref="#die-liebliche-Frucht">die liebliche Frucht</rs></l>
+              <l>Winde vom Schoß o nicht mit Ach! mir und Weh!</l>
+              <l>Weiter mir nichts, bleibt mir ein Wünschen noch frei,</l>
+              <l><rs ref="#Gott">Gütiger Gott</rs> mache <rs ref="#die-Mutter-(Barnabes-Wünsche)">die Mutter</rs> gesund.</l>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> hält wie ermüdet inne.</stage>
+            <lg>
+              <rs ref="#Ja,-lieber-Gott!-–-Wenn's-Glück-so-süß-nicht-wär,---------------Wer-würd-so-sauer-sich-darum-bemühn?-–---------------Von-vorn.-Zuerst-dem-Vater:---------------Ruh-in-der-Gruft:-daß-ihm-ein-Frevlerarm-nicht---------------Über-das-Feld-–-–-Ah!"><l>Ja, lieber Gott! – Wenn's Glück so süß nicht wär,</l>
+              <l><rs ref="#Wer">Wer</rs> würd so sauer <rs ref="#Wer">sich</rs> darum bemühn? –</l>
+              <l>Von vorn. Zuerst <rs ref="#der-Vater-(Barnabes-Wünsche)">dem Vater</rs>:</l>
+              <l>Ruh in <rs ref="#die-Gruft">der Gruft</rs>: daß <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> <rs ref="#ein-Frevlerarm">ein Frevlerarm</rs> nicht</l>
+              <l>Über <rs ref="#das-Feld">das Feld</rs> – – Ah!</l></rs>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> erblickt <rs ref="#ottokar">Ottokar, <rs ref="#ottokar">der</rs> bei <rs ref="#Ja,-lieber-Gott!-–-Wenn's-Glück-so-süß-nicht-wär,---------------Wer-würd-so-sauer-sich-darum-bemühn?-–---------------Von-vorn.-Zuerst-dem-Vater:---------------Ruh-in-der-Gruft:-daß-ihm-ein-Frevlerarm-nicht---------------Über-das-Feld-–-–-Ah!">den letzten Worten</rs> hereingetreten ist</rs>.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Was sprichst <rs ref="#barnabe">du</rs> mit</l>
+              <l><rs ref="#einen-Kessel,-der-über-Feuer-steht">Dem Kessel</rs>, <rs ref="#barnabe">Mädchen</rs>? Bist <rs ref="#barnabe">du</rs> <rs ref="#eine-Hexe">eine Hexe</rs>,</l>
+              <l><rs ref="#barnabe">Du</rs> bist <rs ref="#die-lieblichste,-die-ich-gesehn">die lieblichste, <rs ref="#die-lieblichste,-die-ich-gesehn">die</rs> ich gesehn</rs>,</l>
+              <l>Und tust, ich wette, keinem Böses, der</l>
+              <l><rs ref="#barnabe">Dir</rs> gut.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Geh h'raus, <rs ref="#ottokar">du lieber Herr</rs>, ich bitte <rs ref="#ottokar">dich</rs>.</l>
+              <l>In <rs ref="#Bauernküche">dieser Küche</rs> darf jetzt niemand sein,</l>
+              <l><rs ref="#ursula">Die Mutter</rs> selbst nicht, außer ich.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Warum</l>
+              <l>Denn just nur <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Was weiß ich? Weil ich eine Jungfrau bin.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Ja darauf schwör ich. Und wie heißt <rs ref="#barnabe">du</rs> denn,</l>
+              <l><rs ref="#barnabe">Du liebe Jungfrau</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l><rs ref="#Barnabes-Name">Barnabe</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>So? <rs ref="#barnabe">Deine</rs> Stimme</l>
+              <l>Klingt schöner, als <rs ref="#Barnabes-Name"><rs ref="#barnabe">dein</rs> Name</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Barnabe</rs>!</l>
+              <rs ref="#Wer-spricht-denn-in-der-Küch?"><l>Wer spricht denn in <rs ref="#Bauernküche">der Küch</rs>?</l></rs>
+            </lg>
+            <stage><rs ref="#ottokar">Ottokar</rs> macht ein bittend Zeichen.</stage>
+            <pb n="183"/>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Was sagst <rs ref="#ursula">du</rs>, <rs ref="#ursula">Mutter</rs>?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <l>Bist <rs ref="#barnabe">du</rs> <rs ref="#Wer-spricht-denn-in-der-Küch?">es</rs>? Sprichst <rs ref="#barnabe">du</rs> <rs ref="#die-drei-Wünsche">die drei Wünsche</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja,</l>
+              <l>Sei doch nur ruhig.</l>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> fängt wieder an, <rs ref="#einen-Kessel,-der-über-Feuer-steht">im Kessel</rs> zu rühren.</stage>
+            <lg>
+              <l>Aber nun geh fort,</l>
+              <l><rs ref="#ottokar">Du lieber Herr</rs>. Denn <rs ref="#ursula">meine Mutter</rs> sagt,</l>
+              <l>Wenn ein Unreiner zusieht, taugt <rs ref="#Der-Brei">der Brei</rs> nicht.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser"><l>Doch wenn ein Reiner zusieht, wird <rs ref="#Der-Brei">er</rs> um</l>
+              <l>So besser</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Davon hat <rs ref="#ursula">sie</rs> nichts gesagt.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Weil's-sich-von-selbst-ergibt"><rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">Weil's</rs> <rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">sich</rs> von selbst ergibt</rs>.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun freilich wohl,</l>
+              <l><rs ref="#Weil's-sich-von-selbst-ergibt">Es</rs> scheint mir auch. Ich will <rs ref="#ursula">die Mutter</rs> fragen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wozu? <rs ref="#Weil's-sich-von-selbst-ergibt"><rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">Das</rs></rs> wirst <rs ref="#barnabe">du</rs> selber ja verstehn.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun störe mich nur nicht. 's ist <rs ref="#Der-Brei"><rs ref="#ursula-/-barnabe">unser</rs> Glücksbrei</rs>,</l>
+              <l>Und ich muß <rs ref="#die-drei-Wünsche">die drei Wünsche</rs> dazu sagen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Was kochst <rs ref="#barnabe">du</rs> denn?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ich? – <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Einen Kindesfinger</rs>.</l>
+              <l>Ha! ha! Nun denkst <rs ref="#ottokar">du</rs>, ich sei <rs ref="#eine-Hexe">eine Hexe</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Kin – Kindesfinger</rs>?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Du böses Mädel</rs>!</l>
+              <l>Was lachst <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ei, was lach ich? Ich bin lustig,</l>
+              <l>Und sprech <rs ref="#die-drei-Wünsche">die Wünsche</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <l>Meinen auch <rs ref="#der-Krebs">vom Krebse</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ja, ja. Auch den vom Kalbe.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Sag mir – ? Hab</l>
+              <l>Ich recht gehört – ?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nein sieh, ich plaudre nicht.</l>
+              <l>Ich muß <rs ref="#die-drei-Wünsche">die Wünsche</rs> sprechen, laß mich sein.</l>
+              <l>Sonst schilt <rs ref="#ursula">die Mutter</rs> und <rs ref="#Der-Brei">der Brei</rs> verdirbt.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Hör, weißt <rs ref="#barnabe">du</rs> was? Bring <rs ref="#diesen-Beutel">diesen Beutel</rs> <rs ref="#ursula"><rs ref="#ottokar">deiner</rs> Mutter</rs>,</l>
+              <l><rs ref="#diesen-Beutel">Er</rs> sei <rs ref="#barnabe">dir</rs> auf <rs ref="#Barnabes-Herd">den Herd</rs> gefallen, sprich,</l>
+              <l>Und komm schnell wieder.</l>
+              <pb n="184"/>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l><rs ref="#diesen-Beutel">Diesen Beutel</rs>? 's ist</l>
+              <l>Ja <rs ref="#Geld-aus-dem-Beutel">Geld</rs> darin. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Geld-aus-dem-Beutel">Gib's</rs> nur <rs ref="#ursula">der Mutter</rs> dreist,</l>
+              <l>Jedoch <rs ref="#von-wem-er-kommt">verschweig's</rs>, <rs ref="#von-wem-er-kommt">von wem <rs ref="#diesen-Beutel">er</rs> kommt</rs>. Nun geh.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Du lieber Gott, bist <rs ref="#ottokar">du</rs> <rs ref="#ein-Engel">ein Engel</rs>?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Fort! Und komm bald wieder.</l>
+            <stage><rs ref="#ottokar">Er</rs> schiebt <rs ref="#barnabe">sie</rs> sanft ins Nebenzimmer; lebhaft auf und nieder gehend.</stage>
+            <lg>
+              <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Ein Kindesfinger</rs>! <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Wenn's</rs> <rs ref="#Peters-kleiner-Finger">der kleine</rs> wäre!</l>
+              <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Wenn's</rs> <rs ref="#Peters-kleiner-Finger">Peters kleiner Finger</rs> wäre! Wiege</l>
+              <l>Mich, <rs ref="#Hoffnung">Hoffnung</rs>, einer Schaukel gleich, und gleich</l>
+              <l>Als spielt' geschloßnen Auges schwebend mir</l>
+              <l>Ein Windzug um <rs ref="#Ottokars-Brust">die offne Brust</rs>, so wende</l>
+              <l><rs ref="#Ottokarts-Innerstes">Mein Innerstes</rs> <rs ref="#Ottokarts-Innerstes">sich</rs> vor Entzücken. – Wie</l>
+              <l>Gewaltig, Glück, klopft <rs ref="#Hoffnung">deine</rs> Ahndung an</l>
+              <l><rs ref="#Ottokars-Brust">Die Brust</rs>! <rs ref="#Hoffnung">Dich</rs> selbst, o Übermaß, wie werd</l>
+              <l>Ich <rs ref="#Hoffnung">dich</rs> ertragen. – Horch! <rs ref="#barnabe">Sie</rs> kommt! Jetzt werd ich's hören!</l>
+            </lg>
+            <stage><rs ref="#barnabe">Barnabe</rs> tritt auf, <rs ref="#ottokar">er</rs> geht <rs ref="#barnabe">ihr</rs> entgegen und führt <rs ref="#barnabe">sie</rs> in den Vordergrund.</stage>
+            <l>Nun sage mir, wie kommt <rs ref="#ursula-/-barnabe">ihr</rs> zu <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">dem Finger</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ich hab mit <rs ref="#ursula">Muttern</rs> kürzlich <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">ihn</rs> gefunden.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Gefunden bloß? <rs ref="#Auf-welche-Art">Auf welche Art</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun <rs ref="#ottokar">dir</rs></l>
+              <l>Will <rs ref="#Auf-welche-Art">ich's</rs> schon <rs ref="#sagen">sagen</rs>, <rs ref="#sagen">wenn's</rs> gleich <rs ref="#ursula">Mutter</rs> mir</l>
+              <l>Verboten.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ja, <rs ref="#sagen">das</rs> tu.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l><rs ref="#ursula-/-barnabe">Wir</rs> suchten Kräuter</l>
+              <l>Am Waldstrom <rs ref="#das-Gebirge">im Gebirg</rs>, da schleifte <rs ref="#ursula-/-barnabe">uns</rs></l>
+              <l>Das Wasser <rs ref="#Peter">ein ertrunken Kind</rs> ans Ufer.</l>
+              <l><rs ref="#ursula-/-barnabe">Wir</rs> <rs ref="#Peter">zogen's</rs> drauf heraus, bemühten viel</l>
+              <l><rs ref="#ursula-/-barnabe">Uns</rs> um <rs ref="#Peter">das arme Wurm</rs>; vergebens, <rs ref="#Peter">es</rs></l>
+              <l>Blieb tot. Drauf <rs ref="#schnitt">schnitt</rs> <rs ref="#ursula">die Mutter</rs> <rs ref="#schnitt"><rs ref="#ursula">die's</rs></rs> versteht,</l>
+              <l><rs ref="#Peter">Dem Kinde</rs> <rs ref="#Peters-linker-kleiner-Finger">einen kleinen Finger</rs> ab;</l>
+              <l>Denn <rs ref="#Peters-linker-kleiner-Finger">der</rs> tut nach <rs ref="#der-Tod">dem Tod</rs> mehr Gutes noch,</l>
+              <l><pb n="185"/> Als <rs ref="#eines-Auferwachsnen">eines Auferwachsnen</rs> ganze Hand</l>
+              <l>In <rs ref="#eines-Auferwachsnen">seinem</rs> Leben. – Warum stehst <rs ref="#ottokar">du</rs> so</l>
+              <l>Tiefsinnig? Woran denkest <rs ref="#ottokar">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>An <rs ref="#Gott">Gott</rs>.</l>
+              <l>Erzähle mehr noch. <rs ref="#barnabe">Du</rs> und <rs ref="#ursula"><rs ref="#barnabe">deine</rs> Mutter</rs> –</l>
+              <l>War niemand sonst dabei?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Gar niemand.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <rs ref="#Als-wir-den-Finger-abgelöset,-kamen---------------Zwei-Männer-her-aus-Warwand,-welche-sich---------------Den-von-der-Rechten-lösen-wollten.-Der---------------Hilft-aber-nichts,-wir-machten-uns-davon,---------------Und-weiter-weiß-ich-nichts."><l>Als <rs ref="#ursula-/-barnabe">wir</rs> <rs ref="#Peters-linker-kleiner-Finger">den Finger</rs> abgelöset, kamen</l>
+              <l><rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">Zwei Männer</rs> her aus <rs ref="#Warwand">Warwand</rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">welche</rs> <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sich</rs></l>
+              <l><rs ref="#Peters-rechter-kleiner-Finger">Den von der Rechten</rs> lösen wollten. <rs ref="#Peters-rechter-kleiner-Finger">Der</rs></l>
+              <l>Hilft aber nichts, <rs ref="#ursula-/-barnabe">wir</rs> machten <rs ref="#ursula-/-barnabe">uns</rs> davon,</l>
+              <l>Und weiter weiß ich nichts.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Als-wir-den-Finger-abgelöset,-kamen---------------Zwei-Männer-her-aus-Warwand,-welche-sich---------------Den-von-der-Rechten-lösen-wollten.-Der---------------Hilft-aber-nichts,-wir-machten-uns-davon,---------------Und-weiter-weiß-ich-nichts.">Es</rs> ist genug.</l>
+              <rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt"><l><rs ref="#barnabe">Du</rs> hast gleich einer heil'gen Offenbarung</l>
+              <l>Das Unbegriffne mir erklärt</rs>. <rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt">Das</rs> kannst</l>
+              <l><rs ref="#barnabe">Du</rs> nicht verstehn, doch sollst <rs ref="#barnabe"><rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt">du's</rs></rs> bald. – Noch eins.</l>
+              <l><rs ref="#Warwand">Im Warwand</rs> ist <rs ref="#agnes">ein Mädchen, <rs ref="#agnes">dem</rs> ich auch</l>
+              <l>So gut, wie <rs ref="#ottokar">dir</rs></rs>. <rs ref="#Die-spräch-ich-gern-noch-heut---------------In-einer-Höhle,-die-ihr-wohlbekannt"><rs ref="#agnes">Die</rs> spräch ich gern noch heut</l>
+              <l>In <rs ref="#die-Höhle">einer Höhle, <rs ref="#die-Höhle">die</rs> <rs ref="#agnes">ihr</rs> wohlbekannt</rs></rs>.</l>
+              <l><rs ref="#agnes">Die Tochter</rs> ist es auf <rs ref="#Sylvesters-Schloss,-das-Schloss-Warwand">dem Schlosse</rs>, <rs ref="#agnes">Agnes</rs>,</l>
+              <l><rs ref="#barnabe">Du</rs> kannst nicht fehlen.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Soll ich <rs ref="#agnes">sie</rs> <rs ref="#ottokar">dir</rs> rufen?</l>
+              <l>Nun ja, <rs ref="#Die-spräch-ich-gern-noch-heut---------------In-einer-Höhle,-die-ihr-wohlbekannt">es</rs> wird <rs ref="#agnes">ihr</rs> Freude machen auch.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#barnabe">dir</rs>. <rs ref="#ottokar-/-agnes">Wir</rs> wollen's beide <rs ref="#barnabe">dir</rs> schon lohnen.</l>
+              <rs ref="#Doch-mußt-du's-selbst-ihr-sagen,-keinem-andern---------------Vertraun,-daß-dich-ein-Jüngling-abgeschickt"><l>Doch mußt <rs ref="#barnabe">du's</rs> selbst <rs ref="#agnes">ihr</rs> sagen, keinem andern</l>
+              <l>Vertraun, daß <rs ref="#barnabe">dich</rs> <rs ref="#ottokar">ein Jüngling</rs> abgeschickt</rs>,</l>
+              <l>Verstehst <rs ref="#barnabe">du</rs>? Nun, <rs ref="#Doch-mußt-du's-selbst-ihr-sagen,-keinem-andern---------------Vertraun,-daß-dich-ein-Jüngling-abgeschickt">das</rs> weißt <rs ref="#barnabe">du</rs> wohl. – Und daß</l>
+              <l><rs ref="#barnabe">Du</rs> Glauben finden mögest auch bei <rs ref="#agnes">ihr</rs>,</l>
+              <l>Nimm dieses Tuch, und diesen Kuß gib <rs ref="#agnes">ihr</rs>.</l>
+            </lg>
+            <stage>Ab. <rs ref="#barnabe">Barnabe</rs> sieht <rs ref="#ottokar">ihm</rs> nach, seufzt und geht ab.</stage>
+            <pb n="186"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

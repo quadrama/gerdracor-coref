@@ -1,0 +1,385 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt</head>
+        <div type="scene">
+          <head>Dritte Szene</head>
+          <stage><rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">Die Schule</rs>.</stage>
+          <stage><rs ref="#wenzeslaus">Wenzeslaus</rs>, <rs ref="#laeuffer-ccc">Läuffer</rs>, an <rs ref="#einem-Tisch-(wenzeslaus)">einem Tisch</rs> sitzend. <rs ref="#major-ccc">Der Major</rs>, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">der Geheime Rat</rs> und <rs ref="#graf_wermuth-ccc">Graf
+            Wermuth</rs> treten herein mit Bedienten.</stage>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS</speaker></rs>
+            <stage>läßt <rs ref="#die-Brill-(wenzeslaus)">die Brille</rs> fallen.</stage>
+            <p>Wer da?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR</speaker></rs>
+            <stage>mit gezogenem Pistol.</stage>
+            <p>Daß <rs ref="#laeuffer-ccc">dich</rs> <rs ref="#Das-Wetter">das Wetter</rs>! da sitzt <rs ref="#laeuffer-ccc">der Has</rs> im Kohl. <rs ref="#das47"><stage>Schießt und trifft <rs ref="#laeuffer-ccc">Läuffern</rs> in
+                <rs ref="#Arm-(läuffers)">Arm</rs>, <rs ref="#laeuffer-ccc">der</rs> vom Stuhl fällt.</stage></rs></p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT</speaker></rs>
+            <stage><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">der</rs> vergeblich versucht hat <rs ref="#major-ccc">ihn</rs> zurückzuhalten.</stage>
+            <p><rs ref="#major-ccc">Bruder</rs> – <stage>Stößt <rs ref="#major-ccc">ihn</rs> unwillig.</stage> So hab's denn darnach, <rs ref="#major-ccc">Tollhäusler</rs>!</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Was? ist <rs ref="#laeuffer-ccc">er</rs> tot? <stage>Schlägt <rs ref="#major-ccc">sich</rs> <rs ref="#mein---------------Gesicht-(major)">vors Gesicht</rs>.</stage> Was hab ich getan? Kann <rs ref="#laeuffer-ccc">Er</rs>
+              mir keine Nachricht mehr von <rs ref="#gustchen-(tochter-majors)">meiner Tochter</rs> geben?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Ihr Herren</rs>! Ist das Jüngste Gericht nahe, oder sonst etwas? Was ist <rs ref="#das47">das</rs>? <stage>Zieht
+                an <rs ref="#meiner-Schelle-(wenzeslaus-schule)"><rs ref="#wenzeslaus">seiner</rs> Schelle</rs>.</stage> Ich will <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Euch</rs> lehren, <rs ref="#einen-ehrlichen-Mann">einen ehrlichen Mann</rs> in <rs ref="#sein-Haus-(ehrlicher-leute)"><rs ref="#einen-ehrlichen-Mann">seinem</rs>
+              Hause</rs> überfallen.</p>
+            <pb n="65"/>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich beschwör <rs ref="#wenzeslaus">Euch</rs>: schellt nicht! – <rs ref="#major-ccc">Es</rs> ist der Major; ich <rs ref="#das47">hab's</rs> an <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">seiner</rs> Tochter</rs>
+              verdient.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ist kein Chirurgus <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">im Dorf</rs>, <rs ref="#wenzeslaus">ehrlicher Schulmeister</rs>! <rs ref="#das48"><rs ref="#laeuffer-ccc">Er</rs> ist nur <rs ref="#Arm-(läuffers)">am Arm</rs> verwundet</rs>, ich
+              will <rs ref="#laeuffer-ccc">ihn</rs> kurieren lassen.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <rs ref="#das-Geschwätz"><p>Ei was kurieren lassen! <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Straßenräuber</rs>! schießt <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#Leute-(irgendwelche)">Leute</rs> übern Haufen, weil <rs ref="#ein-Mensch-xxx">man</rs> so
+              viel hat, daß <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#Leute-(irgendwelche)">sie</rs> kurieren lassen kann? <rs ref="#laeuffer-ccc">Er</rs> ist <rs ref="#zum-Kollaborator-(prädikativ-läuffer-als-mitarbeiter-wenzeslaus)">mein Kollaborator</rs>; <rs ref="#laeuffer-ccc">er</rs> ist eben <rs ref="#Ein-ganzes-Jahr-(seit-gustchen-weg-ist)">ein
+              Jahr</rs> in <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">meinem Hause</rs>: <rs ref="#Das9"><rs ref="#laeuffer-ccc">ein stiller, friedfertiger, fleißiger Mensch</rs>, und <rs ref="#Ein-ganzes-Jahr-(seit-gustchen-weg-ist)"><rs ref="#laeuffer-ccc">sein</rs> Tage</rs> hat
+              <rs ref="#ein-Mensch-xxx">man</rs> nichts von <rs ref="#laeuffer-ccc">ihm</rs> gehört, und <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihr</rs> kommt und erschießt mir <rs ref="#laeuffer-ccc">meinen Kollaborator</rs> in
+              <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">meinem eignen Hause</rs>!</rs> – <rs ref="#Das9">Das</rs> soll gerochen werden, oder ich will nicht selig sterben.
+              Seht <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihr</rs> <rs ref="#das48">das</rs>!</p></rs>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT</speaker></rs>
+            <stage>bemüht <rs ref="#laeuffer-ccc">Läuffern</rs> zu verbinden.</stage>
+            <p>Wozu <rs ref="#das-Geschwätz">das Geschwätz</rs>, <rs ref="#wenzeslaus">lieber Mann</rs>? <rs ref="#das48">Es</rs> tut <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">uns</rs> leid genug – Aber <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> könnte <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">sich</rs>
+              verbluten, schafft uns nur <rs ref="#einen-Chirurgus-(ein-arzt)">einen Chirurgus</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ei was! Wenn <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Ihr</rs> <rs ref="#Wunden">Wunden</rs> macht, so mögt <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Ihr</rs> <rs ref="#Wunden">sie</rs> auch heilen, <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">Straßenräuber</rs>! Ich muß
+              doch nur <rs ref="#schoepsen">zum Gevatter Schöpsen</rs> gehen.</p>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR</speaker></rs>
+            <stage>zu <rs ref="#laeuffer-ccc">Läuffern</rs>.</stage>
+            <p><rs ref="#es21">Wo ist <rs ref="#gustchen-(tochter-majors)">meine Tochter</rs></rs>?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich weiß <rs ref="#es21">es</rs> nicht.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Du</rs> weißt nicht?</p>
+            <stage>Zieht noch <rs ref="#eine-Pistol-(zweite-pistole-majors)">eine Pistol</rs> hervor.</stage>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT</speaker></rs>
+            <stage>entreißt <rs ref="#eine-Pistol-(zweite-pistole-majors)">sie</rs> <rs ref="#major-ccc">ihm</rs> und schießt <rs ref="#eine-Pistol-(zweite-pistole-majors)">sie</rs> aus dem Fenster ab.</stage>
+            <p>Sollen wir <rs ref="#major-ccc">dich</rs> mit Ketten binden lassen, <rs ref="#major-ccc">du –</rs></p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#das49">Ich habe <rs ref="#gustchen-(tochter-majors)">sie</rs> nicht gesehen, seit ich aus <rs ref="#Ihrem-Hause-(geheimer-rat,-bergs-in-heidelbrunn,-wo-vermutlich-gustchen-unterrichtet-wird))"><rs ref="#major-ccc">Ihrem</rs> Hause</rs> geflüchtet bin</rs>; <rs ref="#das49">das</rs> bezeug ich
+              vor <rs ref="#Gottes-(christlich)">Gott</rs>, vor <rs ref="#Gottes-Gericht"><rs ref="#Gottes-(christlich)">dessen</rs> Gericht</rs> ich vielleicht bald erscheinen werde.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Also ist <rs ref="#gustchen-(tochter-majors)">sie</rs> nicht mit <rs ref="#laeuffer-ccc">dir</rs> gelaufen?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Nein.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Nun denn; so wieder <rs ref="#eine-Ladung-Pulver">eine Ladung Pulver</rs> umsonst verschossen! Ich wollt, <rs ref="#eine-Ladung-Pulver">sie</rs> wäre <rs ref="#laeuffer-ccc">dir</rs>
+              durch <rs ref="#beim-Kopf-(läuffers)">den Kopf</rs> gefahren, da <rs ref="#laeuffer-ccc">du</rs> kein gescheutes Wort zu reden weißt Lumpenhund! Laßt
+              <rs ref="#laeuffer-ccc">ihn</rs> liegen und kommt bis ans Ende <rs ref="#der-Welt-(irdische-welt-als-raum)">der Welt</rs>. Ich muß <rs ref="#gustchen-(tochter-majors)">meine Tochter</rs> wieder haben, und
+                <pb n="66"/> wenn nicht in <rs ref="#seinem-Leben-(majors)">diesem Leben</rs>, doch in jener Welt, und da soll <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">mein
+              hochweiser Bruder</rs> und <rs ref="#majorin">mein hochweiseres Weib</rs> mich wahrhaftig nicht von abhalten.</p>
+            <stage>Läuft fort.</stage>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich darf <rs ref="#major-ccc">ihn</rs> nicht aus den Augen lassen. <stage>Wirft <rs ref="#laeuffer-ccc">Läuffern</rs> <rs ref="#einen-Beutel">einen Beutel</rs>
+                zu.</stage> Lassen <rs ref="#laeuffer-ccc">Sie</rs> <rs ref="#laeuffer-ccc">sich</rs> davon kurieren, und bedenken <rs ref="#laeuffer-ccc">Sie</rs>, daß <rs ref="#laeuffer-ccc">Sie</rs> <rs ref="#major-ccc">meinen Bruder</rs>
+              weit gefährlicher verwundet haben als <rs ref="#major-ccc">er</rs> <rs ref="#laeuffer-ccc">Sie</rs>. Es ist <rs ref="#ein-Bankozettel-(für-läuffer-von-geheimer-rat-wegen-armschuss)">ein Bankozettel</rs> drin, geben <rs ref="#laeuffer-ccc">Sie</rs>
+              <rs ref="#Acht-(achtung-geben,-in-acht-nehmen,-läuffers-Achtsamkeit)">Acht</rs> drauf und machen <rs ref="#ein-Bankozettel-(für-läuffer-von-geheimer-rat-wegen-armschuss)">ihn</rs> <rs ref="#laeuffer-ccc">sich</rs> zu Nutz so gut <rs ref="#laeuffer-ccc">Sie</rs> können.</p>
+            <stage>Gehn <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">alle</rs> ab.</stage>
+            <stage><rs ref="#wenzeslaus">Wenzeslaus</rs> kömmt mit <rs ref="#schoepsen">dem Barbier Schöpsen</rs> und <rs ref="#ein-halb-Dutzend-handfester-Bauerkerle">einigen Bauerkerlen</rs>.</stage>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Wo ist <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">das Otterngezüchte</rs>? Redet!</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich bitt <rs ref="#wenzeslaus">Euch</rs>, seid ruhig. Ich habe weit weniger bekommen, als meine Taten wert
+              waren. <rs ref="#schoepsen">Meister Schöpsen</rs>, ist <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">meine Wunde</rs> gefährlich?</p>
+            <stage><rs ref="#schoepsen">Schöpsen</rs> besieht <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">sie</rs>.</stage>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Was denn? Wo sind <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">sie</rs>? <rs ref="#Das9">Das</rs> leid ich nicht; nein, <rs ref="#Das9">das</rs> leid ich nicht, und sollt es
+              mich <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">Schul</rs> und Amt und Haar und Bart kosten. Ich will <rs ref="#major-ccc-/-geheimer_rat-(bruder…-+-2">sie</rs> zu <rs ref="#tausendmillionen-Stücken-(in-stücke-zerbrechen)">Morsch</rs> schlagen, die
+              Hunde – Stellen <rs ref="#schoepsen">Sie</rs> <rs ref="#schoepsen">sich</rs> vor, Herr Gevatter; wo ist <rs ref="#das50">das</rs> in <rs ref="#der-Welt-(irdische-welt-als-raum)">aller Welt</rs> in iure <rs ref="#naturae-(natur)">naturae</rs>
+              und in iure civili und im iure <rs ref="#canonico-(kirchl.-werte-kanon)">canonico</rs> und im iure gentium und wo <rs ref="#schoepsen">Sie</rs> wollen, wo ist
+              <rs ref="#das50">das</rs> erhört, <rs ref="#das50">daß man <rs ref="#einen-ehrlichen-Mann">einem ehrlichen Mann</rs> in <rs ref="#sein-Haus-(ehrlicher-leute)"><rs ref="#einen-ehrlichen-Mann">sein</rs> Haus</rs> fällt und in <rs ref="#zur-öffentlichen-Schul">eine Schule</rs> dazu</rs>;
+              an <rs ref="#zur-öffentlichen-Schul">heiliger Stätte</rs>. – <rs ref="#Ist's">Gefährlich</rs>; nicht wahr? Haben <rs ref="#schoepsen">Sie</rs> sondiert? <rs ref="#Ist's">Ist's</rs>?</p>
+          </sp>
+          <sp who="#schoepsen">
+            <rs ref="#schoepsen"><speaker>SCHÖPSEN.</speaker></rs>
+            <p><rs ref="#Es10">Es</rs> ließe <rs ref="#Es10">sich</rs> viel drüber sagen – nun doch <rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">wir</rs> wollen sehen – <rs ref="#das51"><rs ref="#am-Ende-(der-geschichte-läuffers-mit-gustchen-und-dem-anschuss)">am Ende</rs> wollen <rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">wir</rs>
+              schon sehen</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ja <rs ref="#schoepsen">Herr</rs>, he he, <rs ref="#am-Ende-(der-geschichte-läuffers-mit-gustchen-und-dem-anschuss)">in fine</rs> <rs ref="#das-Dings">videbitur</rs> cuius toni; <rs ref="#das51">das</rs> heißt, wenn <rs ref="#laeuffer-ccc">er</rs> wird tot sein, oder
+              wenn <rs ref="#laeuffer-ccc">er</rs> völlig gesund sein wird, da wollen <rs ref="#schoepsen">Sie</rs> <rs ref="#laeuffer-als-mandel/-wenzeslaus">uns</rs> erst sagen, <rs ref="#das-Dings">ob <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> gefährlich
+              war oder nicht</rs>: <rs ref="#das51">das</rs> ist aber nicht medizinisch gesprochen; verzeih <rs ref="#schoepsen">Er</rs> mir. <rs ref="#einen-Chirurgus-(ein-arzt)">Ein
+              tüchtiger Arzt</rs> muß <rs ref="#das-Dings">das Dings</rs> vorher wissen, sonst sag ich <rs ref="#einen-Chirurgus-(ein-arzt)">ihm</rs> ins Gesicht: <rs ref="#einen-Chirurgus-(ein-arzt)">er</rs> hat
+              <rs ref="#einen-Chirurgus-(ein-arzt)">seine</rs> Pathologie oder Chirurgie nur so halbwege studiert und ist mehr in die Bordells
+                <pb n="67"/> gangen als in <rs ref="#Universitäten">die Kollegia</rs>: denn <rs ref="#das52">in <rs ref="#amore-(oliebe,-hier-wahrscheinlich-die-körperliche)">amore</rs> <rs ref="#ein-Mensch-xxx">omnia</rs> insunt <rs ref="#vitia-(fehler-schaden-laster)">vitia</rs>, und wenn
+              ich <rs ref="#einen-Ignoranten">einen Ignoranten</rs> sehe, <rs ref="#einen-Ignoranten">er</rs> mag sein aus was für <rs ref="#Universitäten">einer Fakultät</rs> <rs ref="#einen-Ignoranten">er</rs> wolle, so sag ich
+              immer: <rs ref="#einen-Ignoranten">er</rs> ist <rs ref="#ein-Jungfernknech-(prädikativ-alle-Ignoranten)t">ein Jungfernknecht</rs> gewesen; <rs ref="#ein-Jungfernknech-(prädikativ-alle-Ignoranten)t">ein Hurenhengst</rs></rs>; <rs ref="#das52">das</rs> laß ich mir nicht
+              ausreden.</p>
+          </sp>
+          <sp who="#schoepsen">
+            <rs ref="#schoepsen"><speaker>SCHÖPSEN</speaker></rs>
+            <stage>nachdem <rs ref="#schoepsen">er</rs> <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> noch einmal besichtigt.</stage>
+            <p>Ja <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> ist, nachdem <rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">man</rs> <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">sie</rs> nimmt – <rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">Wir</rs> wollen sehen, <rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">wir</rs> wollen sehen.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Hier, <rs ref="#wenzeslaus">Herr Schulmeister</rs>! hat mir <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><rs ref="#major-ccc">des Majors</rs> Bruder</rs> <rs ref="#einen-Beutel">einen Beutel</rs> gelassen, <rs ref="#einen-Beutel">der</rs> ganz
+              schwer von <rs ref="#Geld">Dukaten</rs> ist und obenein ist <rs ref="#ein-Bankozettel-(für-läuffer-von-geheimer-rat-wegen-armschuss)">ein Bankozettel</rs> drin – Da sind <rs ref="#laeuffer-als-mandel/-wenzeslaus">wir</rs> auf <rs ref="#eine-Weile-(längerer-zeitraum)">viel
+              Jahre</rs> geholfen.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS</speaker></rs>
+            <stage>hebt <rs ref="#einen-Beutel">den Beutel</rs>.</stage>
+            <p>Nun <rs ref="#einen-Beutel">das</rs> ist etwas – Aber Hausgewalt bleibt doch Hausgewalt und Kirchenraub
+              Kirchenraub – Ich will <rs ref="#major-ccc">ihm</rs> <rs ref="#einen-Brief-(wenzeslaus-an-major)">einen Brief</rs> schreiben, dem Herrn Major, <rs ref="#einen-Brief-(wenzeslaus-an-major)">den</rs> <rs ref="#major-ccc">er</rs> nicht ins
+              Fenster stecken soll.</p>
+          </sp>
+          <sp who="#schoepsen">
+            <rs ref="#schoepsen"><speaker>SCHÖPSEN</speaker></rs>
+            <stage><rs ref="#schoepsen">der</rs> sich die Weil über vergessen und eifrig nach <rs ref="#einen-Beutel">dem Beutel</rs> gesehen, fällt wieder
+              über <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> her.</stage>
+            <p><rs ref="#Das10"><rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">Sie</rs> wird <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">sich</rs> endlich schon kurieren lassen, aber sehr schwer</rs>, hoff ich, sehr schwer
+              –</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#Das10">Das</rs> hoff ich nicht, <rs ref="#schoepsen">Herr Gevatter Schöpsen</rs>; <rs ref="#Das10">das</rs> fürcht ich, <rs ref="#Das10">das</rs> fürcht ich – aber ich
+              will <rs ref="#schoepsen">Ihm</rs> nur zum voraus sagen, daß wenn <rs ref="#schoepsen">Er</rs> <rs ref="#die-Wunde-(oläuffers-angeschossenner-arm)">die Wunde</rs> langsam kuriert, so kriegt <rs ref="#schoepsen">Er</rs>
+              auch langsame Bezahlung; wenn <rs ref="#schoepsen">Er</rs> <rs ref="#laeuffer-ccc">ihn</rs> aber in zwei Tagen wieder auf <rs ref="#Gesundheit-(läuffers)">frischen Fuß</rs>
+              stellt, so soll <rs ref="#schoepsen">Er</rs> auch frisch bezahlt werden; darnach kann <rs ref="#schoepsen">Er</rs> <rs ref="#schoepsen">sich</rs> richten.</p>
+          </sp>
+          <sp who="#schoepsen">
+            <rs ref="#schoepsen"><speaker>SCHÖPSEN.</speaker></rs>
+            <p><rs ref="#wenzeslaus-/-laeuffer-ccc-+-1">Wir</rs> wollen sehen.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

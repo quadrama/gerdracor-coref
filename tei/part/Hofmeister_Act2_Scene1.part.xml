@@ -1,0 +1,444 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Akt</head>
+        <div type="scene">
+          <head>Erste Szene</head>
+          <stage><rs ref="#pastor-(läuffers-vater)">Pastor Läuffer</rs>. <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Der Geheimer Rat</rs>.</stage>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich bedaure <rs ref="#major-ccc">ihn</rs> – und <rs ref="#pastor-(läuffers-vater)">Sie</rs> noch vielmehr, Herr Pastor, daß <rs ref="#pastor-(läuffers-vater)">Sie</rs> <rs ref="#laeuffer-ccc">solchen Sohn</rs> haben.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Verzeihen <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Euer Gnaden</rs>, ich kann mich über <rs ref="#laeuffer-ccc">meinen Sohn</rs> nicht beschweren; <rs ref="#das12"><rs ref="#laeuffer-ccc">er</rs> ist <rs ref="#ein-ganz-artiges-Männichen-(prädikativ-läuffer)">ein
+              sittsamer und geschickter Mensch</rs></rs>, <rs ref="#die-ganze-Welt-(menschen-von-ganz-verschiedenen-orten,-gesellshaftliche-welt)">die ganze Welt</rs> und <rs ref="#major-ccc">Dero Herr Bruder</rs> und <rs ref="#majorin">Frau
+              Schwägerin</rs> selbst werden <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#das12">das</rs> eingestehen müssen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich sprech <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#das12">das</rs> all nicht ab, aber <rs ref="#laeuffer-ccc">er</rs> ist <rs ref="#ein-Tor-(prädikativ-läuffer)">ein Tor</rs> und hat alle sein Mißvergnügen
+              <rs ref="#laeuffer-ccc">sich</rs> selber zu danken. <rs ref="#laeuffer-ccc">Er</rs> sollte <rs ref="#den-Sternen-(als-anzusprechende-instanz,-schicksal-o-dgl)">den Sternen</rs> danken, daß <rs ref="#major-ccc">meinem Bruder</rs> <pb n="24"/>
+              <rs ref="#-Gehalt-(läuffers-lohn-allg)">das Geld, <rs ref="#-Gehalt-(läuffers-lohn-allg)">das</rs> <rs ref="#major-ccc">er</rs> für <rs ref="#einen-Hofmeister-(unbest.)">den Hofmeister</rs> zahlt</rs>, einmal anfängt zu lieb zu werden.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Aber bedenken <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> doch: nichts mehr als <rs ref="#hundert-Dukaten-(lohn-den-läuffer-tatsächlich-im-zweiten-jahr-erhalten-hat)">hundert Dukaten</rs>; <rs ref="#hundert-Dukaten-(lohn-den-läuffer-tatsächlich-im-zweiten-jahr-erhalten-hat)">hundert arme Dukätchen</rs>; und
+              <rs ref="#Das4"><rs ref="#dreihundert-Dukaten-(lohn-für-majors-hofmeister-jährlich)">dreihundert</rs> hatt <rs ref="#major-ccc">er</rs> <rs ref="#laeuffer-ccc">ihm</rs> doch <rs ref="#im-ersten-Jahr-(erstes-jahr-läuffers-bei-majors)">im ersten Jahr</rs> versprochen: aber beim Schluß <rs ref="#im-ersten-Jahr-(erstes-jahr-läuffers-bei-majors)">desselben</rs>
+              nur <rs ref="#Hundert---------------und-vierzig-Dukaten-(tatsächlicher-lohn-für-majors-hofmeister-jährl,-wird-aber-nur-im-ersten-jahr-ausgezahlt)">hundert und vierzig</rs> ausgezahlt, jetzt beim Beschluß <rs ref="#des-zweiten-(zweites-jahr-läuffers-bei-majors)">des zweiten</rs>, da doch die
+              Arbeit <rs ref="#laeuffer-ccc">meines Sohnes</rs> immer zunimmt, zahlt' <rs ref="#major-ccc">er</rs> ihm <rs ref="#hundert-Dukaten-(lohn-den-läuffer-tatsächlich-im-zweiten-jahr-erhalten-hat)">hundert</rs>, und nun beim Anfang <rs ref="#des---------------dritten-(drittes-jahr-läuffer-bei-majors)">des
+              dritten</rs> wird <rs ref="#major-ccc">ihm</rs> auch <rs ref="#hundert-Dukaten-(lohn-den-läuffer-tatsächlich-im-zweiten-jahr-erhalten-hat)">das</rs> zu viel</rs>. – <rs ref="#Das4">Das</rs> ist wider <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">alle Billigkeit</rs>! Verzeihn <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs>
+              mir.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Laß <rs ref="#es-(anstellung-läuffers-durch-major-als-freundschaftsdiest-für-läuffers-vater)-iii">es</rs> doch – <rs ref="#Das4">Das</rs> hätt ich <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch Leuten</rs> voraussagen wollen, und doch sollt <rs ref="#laeuffer-ccc"><rs ref="#pastor-(läuffers-vater)">Ihr</rs> Sohn</rs>
+              <rs ref="#Gottes-(christlich)">Gott</rs> danken, wenn <rs ref="#laeuffer-ccc">ihn</rs> nur <rs ref="#major-ccc">der Major</rs> <rs ref="#beim-Kopf-(läuffers)">beim Kopf</rs> nähm und aus <rs ref="#Ihres-gnädigen-Onkels-Hause-(das-adelshaus-der-majors-als-konzept,-nicht-best-haus)">dem Hause</rs> würfe. Was soll
+              <rs ref="#laeuffer-ccc">er</rs> da, sagen <rs ref="#pastor-(läuffers-vater)">Sie</rs> mir Herr? Wollen <rs ref="#pastor-(läuffers-vater)">Sie</rs> ein Vater für <rs ref="#laeuffer-ccc"><rs ref="#pastor-(läuffers-vater)">Ihr</rs> Kind</rs> sein und schließen so
+              <rs ref="#Augen-(wahrnehmung-pastor-läuffer)">Augen</rs>, Mund und Ohren für <rs ref="#Sein-Glück-(lebensglück-läuffer)"><rs ref="#laeuffer-ccc">seine</rs> ganze Glückseligkeit</rs> zu? Tagdieben und <rs ref="#laeuffer-ccc">sich</rs> <rs ref="#-Gehalt-(läuffers-lohn-allg)">Geld</rs> dafür
+              bezahlen lassen? <rs ref="#das13">Die edelsten Stunden des Tages bei <rs ref="#leopold,-sohn-von-major">einem jungen Herrn</rs> versitzen, <rs ref="#leopold,-sohn-von-major">der</rs>
+              nichts lernen mag und mit <rs ref="#leopold,-sohn-von-major">dem</rs> <rs ref="#laeuffer-ccc">er's</rs> doch nicht verderben darf, und <rs ref="#die-übrigen-Stunden">die übrigen Stunden,
+              <rs ref="#die-übrigen-Stunden">die</rs> der Erhaltung <rs ref="#seines-Lebens-(läuffers)"><rs ref="#laeuffer-ccc">seines</rs> Lebens</rs>, den Speisen und dem Schlaf geheiligt sind</rs>, an <rs ref="#kondition-(läuffers-leben-in-unfreiheit-als-bedienter)">einer
+              Sklavenkette</rs> verseufzen</rs>; an den Winken <rs ref="#majorin">der gnädigen Frau</rs> hängen und <rs ref="#laeuffer-ccc">sich</rs> in die Falten
+              des gnädigen Herrn hineinstudieren; essen, wenn <rs ref="#laeuffer-ccc">er</rs> satt ist, und fasten, wenn <rs ref="#laeuffer-ccc">er</rs>
+              hungrig ist, <rs ref="#Punsch">Punsch</rs> trinken, wenn <rs ref="#laeuffer-ccc">er</rs> p-ss-n möchte, und Karten spielen, wenn <rs ref="#laeuffer-ccc">er</rs> das
+              Laufen hat. Ohne Freiheit geht <rs ref="#das-Leben">das Leben</rs> bergab rückwärts, <rs ref="#Freiheit">Freiheit</rs> ist das Element
+              des Menschen wie <rs ref="#das-Wasser-(als-element)">das Wasser</rs> des Fisches, und <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">ein Mensch <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">der</rs> <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">sich</rs> <rs ref="#Freiheit">der Freiheit</rs> begibt</rs>,
+              vergiftet <rs ref="#die-edelsten-Geister-seines-Bluts-(der-geist-der-freiheit-und-was-er-hervorbringt,-eigene-idee,-eigene-grundsätze)">die edelsten Geister <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">seines</rs> Bluts</rs>, erstickt <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">seine</rs> süßesten Freuden <rs ref="#das-Leben">des
+              Lebens</rs> in der Blüte und ermordet <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">sich</rs> selbst.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Aber – Oh! erlauben <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> mir; <rs ref="#das13">das</rs> muß <rs ref="#einen-Hofmeister-(unbest.)">sich</rs> ja <rs ref="#einen-Hofmeister-(unbest.)">jeder Hofmeister</rs> gefallen lassen; <rs ref="#das14"><rs ref="#ein-Mensch-xxx">man</rs>
+              kann nicht immer <rs ref="#ein-Mensch-xxx">seinen</rs> Willen haben</rs>, und <rs ref="#das14">das</rs> läßt <rs ref="#laeuffer-ccc">sich</rs> <rs ref="#laeuffer-ccc">mein Sohn</rs> auch gern gefallen,
+              nur –</p>
+            <pb n="25"/>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Desto schlimmer, wenn <rs ref="#laeuffer-ccc">er</rs> <rs ref="#das14"><rs ref="#laeuffer-ccc">sich's</rs></rs> gefallen läßt, desto schlimmer; <rs ref="#laeuffer-ccc">er</rs> hat den Vorrechten
+              <rs ref="#ein-Mensch-xxx">eines Menschen</rs> entsagt, <rs ref="#ein-Mensch-xxx">der</rs> nach <rs ref="#seinen-Grundsätzen-(die-jeweils-eigenen-eines-menschen)"><rs ref="#ein-Mensch-xxx">seinen</rs> Grundsätzen</rs> muß leben können, sonst bleibt <rs ref="#ein-Mensch-xxx">er</rs>
+              kein Mensch. Mögen <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">die Elenden, <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">die</rs> <rs ref="#die-edelsten-Geister-seines-Bluts-(der-geist-der-freiheit-und-was-er-hervorbringt,-eigene-idee,-eigene-grundsätze)"><rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">ihre</rs> Ideen</rs> nicht zu höherer Glückseligkeit zu
+              erheben wissen, als zu essen und zu trinken</rs>, mögen <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">die</rs> <rs ref="#ein-Mensch-der-sich-der-Freiheit-begibt-">sich</rs> im Käfigt zu <rs ref="#Tode">Tode</rs> füttern
+              lassen, aber <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">ein Gelehrter, ein Mensch, <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">der</rs> den Adel <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">seiner</rs> Seele fühlt, <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">der</rs> <rs ref="#Tode">den Tod</rs>
+              nicht so scheuen sollt als <rs ref="#eine-Handlung,-die-wider-seine-Grundsätze-läuft">eine Handlung, <rs ref="#eine-Handlung,-die-wider-seine-Grundsätze-läuft">die</rs> wider <rs ref="#seinen-Grundsätzen-(die-jeweils-eigenen-eines-menschen)"><rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">seine</rs> Grundsätze</rs> läuft</rs></rs> ...</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Aber was ist zu machen in <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">der Welt</rs>? Was wollte <rs ref="#laeuffer-ccc">mein Sohn</rs> anfangen, wenn <rs ref="#major-ccc">Dero Herr
+              Bruder</rs> <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#es-(anstellung-läuffers-durch-major-als-freundschaftsdiest-für-läuffers-vater)-iii">die Kondition</rs> aufsagten?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Laßt <rs ref="#laeuffer-ccc">den Burschen</rs> was lernen, daß <rs ref="#laeuffer-ccc">er</rs> <rs ref="#dem-allgemeinen-Besten-(dem-staat-als-institution-d-gemeinwesen-und-arbeitgeber-öffentlicher-dienst)">dem Staat</rs> nützen kann. Potz hundert <rs ref="#pastor-(läuffers-vater)">Herr Pastor,
+              Sie</rs> haben <rs ref="#laeuffer-ccc">ihn</rs> doch nicht <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">zum Bedienten</rs> aufgezogen, und was ist <rs ref="#laeuffer-ccc">er</rs> anders als
+              <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">Bedienter</rs>, wenn <rs ref="#laeuffer-ccc">er</rs> <rs ref="#laeuffer-ccc">seine</rs> Freiheit <rs ref="#majorin-/-major">einer Privatperson</rs> für <rs ref="#-Gehalt-(läuffers-lohn-allg)">einige Handvoll Dukaten</rs>
+              verkauft? <rs ref="#das15"><rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">Sklav</rs> ist <rs ref="#laeuffer-ccc">er</rs>, über <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">den</rs> <rs ref="#majorin-/-major">die <rs ref="#das15">Herrschaft</rs> unumschränkte Gewalt hat, nur <rs ref="#das16">daß <rs ref="#laeuffer-ccc">er</rs>
+              so viel auf <rs ref="#der-hohen-Schule-(läuffers-in-leipzig)">der Akademie</rs> gelernt haben muß, <rs ref="#es-(anstellung-läuffers-durch-major-als-freundschaftsdiest-für-läuffers-vater)-iii"><rs ref="#majorin-/-major">ihren</rs> unbesonnenen Anmutungen</rs></rs> von weitem
+              zuvorzukommen und so einen Firnis über <rs ref="#kondition-(läuffers-leben-in-unfreiheit-als-bedienter)"><rs ref="#laeuffer-ccc">seine</rs> Dienstbarkeit</rs> zu streichen</rs>: <rs ref="#das16">das</rs> heißt
+              denn ein feiner artiger Mensch, ein unvergleichlicher Mensch; <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">ein unvergleichlicher
+              Schurke, <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">der</rs>, statt <rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">seine</rs> Kräfte und <rs ref="#seinen-Verstand-(läuffers)"><rs ref="#zum-Bedienten-(prädikativ-läuffer)-ll">seinen</rs> Verstand</rs> <rs ref="#dem-allgemeinen-Besten-(dem-staat-als-institution-d-gemeinwesen-und-arbeitgeber-öffentlicher-dienst)">dem allgemeinen Besten</rs>
+              aufzuopfern, damit die Rasereien <rs ref="#majorin">einer dampfigten Dame</rs> und <rs ref="#major-ccc">eines abgedämpften
+              Offiziers</rs> unterstützt, <rs ref="#majorin-/-major">die</rs> denn täglich weiter um <rs ref="#majorin-/-major">sich</rs> fressen wie ein Krebsschaden
+              und zuletzt unheilbar werden</rs>. Und was ist der ganze Gewinst am Ende? <rs ref="#Alle-Tage-(immer)">Alle Mittag</rs>
+              <rs ref="#Braten">Braten</rs> und <rs ref="#Alle-Tage-(immer)">alle Abend</rs> <rs ref="#Punsch">Punsch</rs>, und <rs ref="#eine-große-Portion-Galle,-die-ihm-Tags-über-ins-Maul---------------gestiegen,-abends,-wenn-er-zu-Bett-liegt,-hinabgeschluckt-wie-Pillen">eine große Portion Galle, <rs ref="#eine-große-Portion-Galle,-die-ihm-Tags-über-ins-Maul---------------gestiegen,-abends,-wenn-er-zu-Bett-liegt,-hinabgeschluckt-wie-Pillen">die</rs> <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#Tag-(am-tag)">Tags</rs> über <rs ref="#ins-Maul-(mund-läuffer)">ins Maul</rs>
+              gestiegen, abends, wenn <rs ref="#laeuffer-ccc">er</rs> zu Bett liegt, hinabgeschluckt wie Pillen</rs></rs>; <rs ref="#das15">das</rs> macht
+              gesundes Blut, auf meine Ehr! und muß auch ein vortreffliches Herz auf die Länge
+              geben. <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">Ihr</rs> beklagt <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch</rs> so viel übern <rs ref="#Adel-(standespersonen)-xxx">Adel</rs> und über <rs ref="#ihren-Stolz-(adliger-standespersonen)"><rs ref="#Adel-(standespersonen)-xxx">seinen</rs> Stolz</rs>, <pb n="26"/> <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">die
+              Leute</rs> sähn <rs ref="#einen-Hofmeister-(unbest.)">Hofmeister</rs> wie <rs ref="#Domestiken-(angestellte)">Domestiken</rs> an, <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">Narren</rs>! was sind <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">sie</rs> denn anders? Stehn <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">sie
+</rs>              nicht in Lohn und Brod bei <rs ref="#Adel-(standespersonen)-xxx">ihnen</rs> wie <rs ref="#einen-Hofmeister-(unbest.)">jene</rs>? Aber wer heißt <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch</rs> <rs ref="#ihren-Stolz-(adliger-standespersonen)"><rs ref="#Adel-(standespersonen)-xxx">ihren</rs> Stolz</rs> nähren? Wer
+              heißt <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch</rs> Domestiken werden, wenn <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">ihr</rs> was gelernt habt, und <rs ref="#Adel-(standespersonen)-xxx">einem starrköpfischen
+              Edelmann</rs> zinsbar werden, <rs ref="#Adel-(standespersonen)-xxx">der</rs> <rs ref="#Adel-(standespersonen)-xxx">sein</rs> Tage von <rs ref="#Domestiken-(angestellte)"><rs ref="#Adel-(standespersonen)-xxx">seinen</rs> Hausgenossen</rs> nichts anders gewohnt
+              war als sklavische Unterwürfigkeit?</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Aber <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Herr Geheimer Rat</rs> – <rs ref="#Gottes-willen-(eher-sprichwörtl)">Gütiger Gott</rs>! es ist in <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">der Welt</rs> nicht anders: <rs ref="#Possen"><rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">man</rs> muß <rs ref="#eine---------------Warte">eine
+              Warte</rs> haben, von <rs ref="#eine---------------Warte">der</rs> <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">man</rs> <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">sich</rs> nach einem öffentlichen Amt umsehen kann, wenn <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">man</rs> von
+              <rs ref="#Universitäten">Universitäten</rs> kommt; <rs ref="#pastor-(läuffers-vat…-/-laeuffer">wir</rs> müssen den göttlichen Ruf erst abwarten, und <rs ref="#Adel-(standespersonen)-xxx">ein Patron</rs> ist
+              sehr oft das Mittel zu <rs ref="#pastor-(läuffers-vat…-/-laeuffer">unserer</rs> Beförderung</rs>: wenigstens ist es mir so gegangen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Schweigen <rs ref="#pastor-(läuffers-vater)">Sie, Herr Pastor</rs>, ich bitt <rs ref="#pastor-(läuffers-vater)">Sie</rs>, schweigen <rs ref="#pastor-(läuffers-vater)">Sie</rs>. Das gereicht <rs ref="#pastor-(läuffers-vater)">Ihnen</rs> nicht <rs ref="#zur---------------Ehr">zur
+              Ehr</rs>. Man weiß ja doch, daß <rs ref="#pastor-(läuffers-vater)">Ihre</rs> selige Frau <rs ref="#pastor-(läuffers-vater)">Ihr</rs> göttlicher Ruf war, sonst säßen <rs ref="#pastor-(läuffers-vater)">Sie</rs>
+              noch itzt <rs ref="#beim-Herrn-von-Tiesen-(bei-dem-pastor-läuffer-ehemals-acker-düngte)">beim Herrn von Tiesen</rs> und düngten <rs ref="#beim-Herrn-von-Tiesen-(bei-dem-pastor-läuffer-ehemals-acker-düngte)">ihm</rs> <rs ref="#beim-Herrn-von-Tiesen-(bei-dem-pastor-läuffer-ehemals-acker-düngte)">seinen</rs> Acker. Jemine! daß <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">ihr Herrn</rs>
+              <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">uns</rs> doch immer einen so ehrwürdigen schwarzen Dunst vor Augen machen wollt. <rs ref="#Das5">Noch nie
+              hat <rs ref="#Adel-(standespersonen)-xxx">ein Edelmann</rs> <rs ref="#einen-Hofmeister-(unbest.)">einen Hofmeister</rs> angenommen, wo <rs ref="#Adel-(standespersonen)-xxx">er</rs> <rs ref="#einen-Hofmeister-(unbest.)">ihm</rs> nicht hinter <rs ref="#eine-Allee-von---------------acht-neun-Sklavenjahren-(zeitraum-nach-dem-einem-hofmeister-eine-beförderung-in-aussicht-gestellt-wird)">eine Allee von
+              acht neun Sklavenjahren</rs> <rs ref="#ein-schön-Gemälde-von-Beförderung-(die-aussicht-auf-beförderung)">ein schön Gemälde von Beförderung</rs> gestellt hat, und wenn <rs ref="#einen-Hofmeister-(unbest.)">ihr</rs>
+              <rs ref="#eine-Allee-von---------------acht-neun-Sklavenjahren-(zeitraum-nach-dem-einem-hofmeister-eine-beförderung-in-aussicht-gestellt-wird)">acht Jahr</rs> gegangen waret, so macht' <rs ref="#Adel-(standespersonen)-xxx">er's</rs> wie Laban und rückte <rs ref="#ein-schön-Gemälde-von-Beförderung-(die-aussicht-auf-beförderung)">das Bild</rs> um noch einmal
+              so weit vorwärts. <rs ref="#Possen">Possen</rs>! lernt etwas und seid brave Leut. <rs ref="#dem-allgemeinen-Besten-(dem-staat-als-institution-d-gemeinwesen-und-arbeitgeber-öffentlicher-dienst)">Der Staat</rs> wird <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch</rs> nicht
+              lang am Markt stehen lassen. <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">Brave Leut</rs> sind allenthalben zu brauchen, aber <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">Schurken,
+              <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">die</rs> den Namen vom Gelehrten nur auf den Zettel tragen und im Kopf ist leer Papier</rs></rs>
+              ...</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p><rs ref="#Das5">Das</rs> ist sehr allgemein gesprochen, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Herr Rat</rs>! – Es müssen doch, <rs ref="#Gottes-willen-(eher-sprichwörtl)">bei Gott</rs>! auch
+              <rs ref="#einen-Hofmeister-(unbest.)">Hauslehrer</rs> in <rs ref="#der-Welt-(irdische-welt-als-raum)">der Welt</rs> sein; nicht jedermann kann gleich Geheimer Rat werden, und wenn
+              <rs ref="#ein-Mensch-xxx">er</rs> gleich ein Hugo Grotius wär. Es gehören <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">heutiges Tags</rs> andere Sachen dazu als
+              Gelehrsamkeit.</p>
+            <pb n="27"/>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#pastor-(läuffers-vater)">Sie</rs> werden warm, Herr Pastor! – <rs ref="#pastor-(läuffers-vater)">Lieber, werter Herr Pastor</rs>, lassen Sie <rs ref="#pastor-(läuffers-vat…-/-geheimer_rat-(bruder…">uns</rs> den Faden
+              <rs ref="#unsers-Streits-(pastor-geheimer-rat)"><rs ref="#pastor-(läuffers-vat…-/-geheimer_rat-(bruder…">unsers</rs> Streits</rs> nicht verlieren. Ich behaupt: es müssen keine Hauslehrer in <rs ref="#der-Welt-(irdische-welt-als-raum)">der Welt</rs>
+              sein! <rs ref="#einen-Hofmeister-(unbest.)">das Geschmeiß</rs> taucht <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">den Teufel</rs> zu nichts.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Ich bin nicht hergekommen mir <rs ref="#Freiheiten-(in-den-äußerungen-geheimer-rats)">Grobheiten</rs> sagen zu lassen: ich bin auch Hauslehrer
+              gewesen. Ich habe die Ehre – –</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Warten <rs ref="#pastor-(läuffers-vater)">Sie</rs>; bleiben <rs ref="#pastor-(läuffers-vater)">Sie, lieber Herr Pastor</rs>! Behüte mich <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">der Himmel</rs>! Ich habe <rs ref="#pastor-(läuffers-vater)">Sie</rs>
+              nicht <rs ref="#wenn's">beleidigen</rs> wollen, und <rs ref="#wenn's">wenn's</rs> wider meinen Willen geschehen ist, so bitt ich <rs ref="#pastor-(läuffers-vater)">Sie</rs>
+              tausendmal um Verzeihung. Es ist einmal meine üble Gewohnheit, daß ich gleich in <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">Feuer</rs>
+              gerate, wenn mir <rs ref="#ein-Gespräch">ein G<rs ref="#laeuffer-ccc"/>espräch</rs> interessant wird: alles übrige verschwindt mir denn aus
+              <rs ref="#seinem--------------Gesicht-(geheimer-rats)">dem Gesicht</rs> und ich sehe nur den Gegenstand, von dem ich spreche.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> schütten – verzeihen <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> mir, ich bin auch ein Cholerikus und rede gern von der
+              Lunge ab – <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> schütten das Kind mit dem Bade aus. <rs ref="#das17"><rs ref="#einen-Hofmeister-(unbest.)">Hauslehrer</rs> taugen zu nichts</rs> – wie
+              können <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> mir <rs ref="#das17">das</rs> beweisen? Wer soll <rs ref="#Adel-(standespersonen)-xxx">euch jungen Herrn</rs> denn <rs ref="#Verstand-yyy">Verstand</rs> und <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">gute Sitten</rs>
+              beibringen! Was wär aus <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihnen</rs> geworden, mein werter Herr Geheimer Rat, wenn <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> keinen
+              Hauslehrer gehabt hätten?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich bin von <rs ref="#meinem-Vater-(geheimer-rats-vater)">meinem Vater</rs> <rs ref="#zur-öffentlichen-Schul">zur öffentlichen Schul</rs> gehalten worden und segne <rs ref="#meinem-Vater-(geheimer-rats-vater)">seine</rs> Asche
+              dafür, und so, hoff ich, wird <rs ref="#fritz-(berg-sohn-geheimer-rat)">mein Sohn Fritz</rs> auch dereinst tun.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Ja – da ist aber noch viel drüber zu sagen <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Herr</rs>! Ich meinerseits bin <rs ref="#Ihrer-Meinung-(haltung-geheimer-rat-zu-hofmeistern)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihrer</rs> Meinung</rs>
+              nicht; ja wenn <rs ref="#zur-öffentlichen-Schul">die öffentlichen Schulen</rs> das wären, was <rs ref="#zur-öffentlichen-Schul">sie</rs> sein sollten – Aber <rs ref="#die---------------nüchternen-Subjecta-(lehrer-in-den-öffentlichen-schulen,-klassenpräzeptoren)">die
+              nüchternen Subjecta</rs>, so oft den Klassen vorstehen; <rs ref="#die-pedantischen-Methoden,-die-sie---------------brauchen-(der-lehrer-in-den-öffentlichen-schulen)">die pedantischen Methoden, <rs ref="#die-pedantischen-Methoden,-die-sie---------------brauchen-(der-lehrer-in-den-öffentlichen-schulen)">die</rs> <rs ref="#die---------------nüchternen-Subjecta-(lehrer-in-den-öffentlichen-schulen,-klassenpräzeptoren)">sie</rs>
+              brauchen</rs>, <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">die unter <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">der Jugend</rs> eingerissenen verderbten Sitten</rs> –</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Wes ist die Schuld? Wer ist schuld dran, als <rs ref="#einen-Hofmeister-(unbest.)">ihr <pb n="28"/> Schurken von
+              Hauslehrern</rs>? Würde <rs ref="#Adel-(standespersonen)-xxx">der Edelmann</rs> nicht von <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">euch</rs> in <rs ref="#der-Grille-(der-gedanke-des-adels,-sich-von-anderen-bedienen-zu-lassen-und-hofmeister-anzustellen)">der Grille</rs> gestärkt, <rs ref="#einen-kleinen---------------Hof-(des-adels)">einen kleinen
+              Hof</rs> anzulegen, wo <rs ref="#Adel-(standespersonen)-xxx">er</rs> als Monarch oben auf dem Thron sitzt und <rs ref="#Adel-(standespersonen)-xxx">ihm</rs> <rs ref="#einen-Hofmeister-(unbest.)">Hofmeister</rs> und
+              Mamsell und ein ganzer Wisch von Tagdieben huldigen, so würd <rs ref="#Adel-(standespersonen)-xxx">er</rs> <rs ref="#seine--(kinder-des-adels)"><rs ref="#Adel-(standespersonen)-xxx">seine</rs> Jungen</rs> in <rs ref="#zur-öffentlichen-Schul">die
+              öffentliche Schule</rs> tun müssen; <rs ref="#Adel-(standespersonen)-xxx">er</rs> würde <rs ref="#sein---------------Geld-(das-gehalt-das-man-einem-hofmeister-zahlt">das Geld, von <rs ref="#sein---------------Geld-(das-gehalt-das-man-einem-hofmeister-zahlt">dem</rs> <rs ref="#Adel-(standespersonen)-xxx">er</rs> jetzt <rs ref="#seine--(kinder-des-adels)"><rs ref="#Adel-(standespersonen)-xxx">seinen</rs> Sohn</rs> zum
+              hochadlichen Dummkopf aufzieht</rs>, zum Fonds der Schule schlagen: davon könnten denn
+              <rs ref="#ein-Gelehrter,-ein-Mensch,-der-den-Adel-seiner-Seele-fühlt,-(ein-freier-mensch-der-eigenen-grundsätzen-folgt)">gescheite Leute</rs> salariert werden und alles würde seinen guten Gang gehn; <rs ref="#euch-Herren-Gelehrten-(intelektuelle,-studierte)">das
+              Studentchen</rs> müßte was lernen, um bei einer solchen Anstalt brauchbar zu werden, und
+              <rs ref="#seine--(kinder-des-adels)">das junge Herrchen</rs>, anstatt <rs ref="#seine--(kinder-des-adels)">seine</rs> Faulenzerei vor den Augen <rs ref="#Adel-(standespersonen)-xxx"><rs ref="#des-Papas-(ein-Vater-eines-Kindes-des-adels)">des Papas</rs> und der Tanten,
+              die <rs ref="#Adel-(standespersonen)-xxx">alle</rs> keine Argusse sind</rs>, künstlich und manierlich zu verstecken, würde <rs ref="#seine--(kinder-des-adels)">seinen</rs> Kopf
+              anstrengen müssen, um es <rs ref="#den-bürgerlichen-Jungen">den bürgerlichen Jungen</rs> zuvorzutun, wenn <rs ref="#seine--(kinder-des-adels)">es</rs> <rs ref="#seine--(kinder-des-adels)">sich</rs> doch von
+              <rs ref="#den-bürgerlichen-Jungen">ihnen</rs> unterscheiden will. – Was <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">die Sitten</rs> anbetrifft, <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">das</rs> findt <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">sich</rs> wahrhaftig –
+              wenn <rs ref="#seine--(kinder-des-adels)">er</rs> gleich nicht wie <rs ref="#seine--(kinder-des-adels)">seine</rs> hochadliche Vettern <rs ref="#ihren-Stolz-(adliger-standespersonen)">die Nase</rs> von Kindesbeinen an höher
+              tragen lernt als <rs ref="#ein-Mensch-xxx">andere</rs> und in einem nachlässigen Ton von oben herab Unsinn sagen und
+              <rs ref="#ein-Mensch-xxx">Leuten</rs> ins Gesicht sehen, wenn <rs ref="#ein-Mensch-xxx">sie</rs> <rs ref="#den-Hut">den Hut</rs> vor <rs ref="#seine--(kinder-des-adels)">ihm</rs> abziehen, um <rs ref="#ein-Mensch-xxx">ihnen</rs> dadurch
+              anzudeuten, daß <rs ref="#ein-Mensch-xxx">sie</rs> auf kein Gegenkompliment warten sollen. <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">Die feinen Sitten</rs> hol <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">der
+              Teufel</rs>! Man kann <rs ref="#seine--(kinder-des-adels)">dem Jungen</rs> Tanzmeister auf <rs ref="#einen-kleinen---------------Hof-(des-adels)">der Stube</rs> halten und <rs ref="#seine--(kinder-des-adels)">ihn</rs> in <rs ref="#Gesellschaften-von-Standespersonen-(treffen-von-standespersonen)">artige
+              Gesellschaften</rs> führen, aber <rs ref="#seine--(kinder-des-adels)">er</rs> muß durchaus nicht aus der Sphäre <rs ref="#den-bürgerlichen-Jungen"><rs ref="#seine--(kinder-des-adels)">seiner</rs> Schulkamraden</rs>
+              herausgehoben und in <rs ref="#ihren-Stolz-(adliger-standespersonen)">der Meinung</rs> gestärkt werden, <rs ref="#seine--(kinder-des-adels)">er</rs> sei eine bessere Kreatur als
+              <rs ref="#ein-Mensch-xxx">andere</rs>.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Ich habe nicht Zeit, <stage>Zieht die Uhr heraus.</stage> mich in <rs ref="#unsers-Streits-(pastor-geheimer-rat)">den Disput</rs> weiter
+              mit <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihnen</rs> einzulassen, gnädiger Herr; aber so viel weiß ich, daß <rs ref="#Adel-(standespersonen)-xxx">der Adel</rs> überall
+              nicht <rs ref="#Ihrer-Meinung-(haltung-geheimer-rat-zu-hofmeistern)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihrer</rs> Meinung</rs> sein wird.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>So sollten <rs ref="#euch-Leuten-(-leute-die-ihre-kinder-zu-hofmeistern-und-bediensteten-machen,-bürger-die-nicht-nach-eigenen-grundsätzen-leben-xxx)">die Bürger</rs> <rs ref="#Ihrer-Meinung-(haltung-geheimer-rat-zu-hofmeistern)">meiner Meinung</rs> sein – Die Not würde <rs ref="#Adel-(standespersonen)-xxx">den Adel</rs> schon auf andere
+              Gedanken bringen, und <rs ref="#pastor-(läuffers-vat…-/-geheimer_rat-(bruder…">wir</rs> könnten <rs ref="#pastor-(läuffers-vat…-/-geheimer_rat-(bruder…">uns</rs> <rs ref="#die-Zeiten-(die-gepflogenheiten-einer-zeit,-evtl-sind-auch-hier-die-sitten-gemeint)">bessere Zeiten</rs> versprechen. <pb n="29"/>
+              Sapperment, was kann aus <rs ref="#Adel-(standespersonen)-xxx"><rs ref="#ein-Mensch-xxx">unserm</rs> Adel</rs> werden, wenn <rs ref="#einen-Hofmeister-(unbest.)">ein einziger Mensch</rs> das Faktotum bei
+              dem Kinde sein soll, ich setz auch den unmöglichen Fall, daß <rs ref="#einen-Hofmeister-(unbest.)">er</rs> ein Polyhistor wäre,
+              wo will <rs ref="#einen-Hofmeister-(unbest.)">der eine Mann</rs> <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">Feuer</rs> und Mut und Tätigkeit hernehmen, wenn <rs ref="#einen-Hofmeister-(unbest.)">er</rs> alle <rs ref="#einen-Hofmeister-(unbest.)">seine</rs> Kräfte
+              auf <rs ref="#seine--(kinder-des-adels)">einen Schafskopf</rs> konzentrieren soll, besonders wenn <rs ref="#des-Papas-(ein-Vater-eines-Kindes-des-adels)">Vater</rs> und Mutter sich kreuz
+              und die Quer immer mit in <rs ref="#die-Erziehung-(unterricht-eines-hofmeisters)">die Erziehung</rs> mengen und <rs ref="#seine--(kinder-des-adels)">dem Faß, in welches <rs ref="#einen-Hofmeister-(unbest.)">er</rs> füllt</rs>, <rs ref="#die-Erziehung-(unterricht-eines-hofmeisters)">den
+              Boden</rs> immer wieder ausschlagen?</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Ich bin um zehn Uhr zu einem Kranken bestellt. <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> werden mir verzeihen. – <stage>Im
+                Abgehen wendt <rs ref="#pastor-(läuffers-vater)">er</rs> <rs ref="#pastor-(läuffers-vater)">sich</rs> um.</stage> Aber wär's nicht möglich, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">gnädiger Herr</rs>, daß Sie
+              <rs ref="#es6"><rs ref="#Ihren-zweiten-Sohn-(geheimer-rats,-karl)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihren</rs> zweiten Sohn</rs> nur auf <rs ref="#Im-halben-Jahr-(Zeitraum-unabhängig-vom-zeitpunkt)">ein halb Jährchen</rs> <rs ref="#major-ccc">zum Herrn Major</rs> in <rs ref="#die-Kost-(unterricht-läuffers-bei-majors)">die Kost</rs> täten</rs>? <rs ref="#laeuffer-ccc">Mein
+              Sohn</rs> will gern mit achtzig Dukaten zufrieden sein, aber mit <rs ref="#sechzigen,-die-ihm-der---------------Herr-Bruder-geben-wollen">sechzigen, <rs ref="#sechzigen,-die-ihm-der---------------Herr-Bruder-geben-wollen">die</rs> <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#major-ccc">der
+              Herr Bruder</rs> geben wollen</rs>, da kann <rs ref="#laeuffer-ccc">er</rs> nicht von subsistieren.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Laß <rs ref="#laeuffer-ccc">ihn</rs> quittieren – Ich tu <rs ref="#es6">es</rs> nicht, <rs ref="#pastor-(läuffers-vater)">Herr Pastor</rs>! Davon bin ich nicht abzubringen.
+              Ich will <rs ref="#laeuffer-ccc"><rs ref="#pastor-(läuffers-vater)">Ihrem</rs> Herrn Sohn</rs> <rs ref="#die-dreißig-Dukaten-(gehaltszuschuss,-den-geheimer-rat-an-läuffer-zahlt-zu-den-60-von-major)">die dreißig Dukaten</rs> lieber schenken; aber <rs ref="#Ihren-zweiten-Sohn-(geheimer-rats,-karl)">meinen Sohn</rs> geb
+              ich zu keinem Hofmeister. <stage><rs ref="#pastor-(läuffers-vater)">Der Pastor</rs> hält <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">ihm</rs> <rs ref="#einen-Brief-(läuffer-an-pastor-läuffer)">einen Brief</rs> hin.</stage> Was soll
+              ich damit? Es ist alles umsonst, sag ich <rs ref="#pastor-(läuffers-vater)">Ihnen</rs>.</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Lesen <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> – lesen <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> nur. –</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Je nun, <rs ref="#laeuffer-ccc">Ihm</rs> ist nicht – <stage>Liest.</stage> »– – wenden <rs ref="#pastor-(läuffers-vater)">Sie</rs> doch alles an, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">den
+              Herrn Geheimen Rat</rs> dahin zu vermögen – <rs ref="#Dem"><rs ref="#pastor-(läuffers-vater)">Sie</rs> können <rs ref="#pastor-(läuffers-vater)">sich</rs> nicht vorstellen, wie elend es
+              <rs ref="#laeuffer-ccc">mir</rs> hier geht; nichts wird mir gehalten, was <rs ref="#laeuffer-ccc">mir</rs> ist versprochen worden. <rs ref="#laeuffer-ccc">Ich</rs> speise
+              nur mit <rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">der Herrschaft</rs>, wenn keine Fremde da sind – – das ärgste ist, daß <rs ref="#laeuffer-ccc">ich</rs> gar
+              nicht von hier komme und in <rs ref="#des-zweiten-(zweites-jahr-läuffers-bei-majors)">einem ganzen Jahr</rs> meinen Fuß nicht aus <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">Heidelbrunn</rs> habe
+              setzen – <rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">man</rs> hatte <rs ref="#laeuffer-ccc">mir</rs> <rs ref="#es7">ein Pferd</rs> versprochen, alle viertel Jahr einmal nach <rs ref="#Königsberg">Königsberg</rs>
+              zu reisen, als <rs ref="#laeuffer-ccc">ich</rs> <rs ref="#es7">es</rs> foderte, fragte <rs ref="#laeuffer-ccc">mich</rs> <rs ref="#majorin">die gnädige Frau</rs>, ob <rs ref="#laeuffer-ccc">ich</rs> nicht lieber zum
+              Karneval nach Venedig wollte –«</rs> <stage>Wirft <rs ref="#einen-Brief-(läuffer-an-pastor-läuffer)">den Brief</rs> an <rs ref="#die-Erde-(der-bühnenboden)">die Erde</rs>.</stage>
+              <pb n="30"/> Je nun, <rs ref="#das18">laß <rs ref="#laeuffer-ccc">ihn</rs> quittieren; warum ist <rs ref="#laeuffer-ccc">er</rs> <rs ref="#ein-Tor-(prädikativ-läuffer)">ein Narr</rs> und bleibt da</rs>?</p>
+          </sp>
+          <sp who="#pastor">
+            <rs ref="#pastor-(läuffers-vater)"><speaker>PASTOR.</speaker></rs>
+            <p>Ja <rs ref="#das18">das</rs> ist eben die Sache. <stage>Hebt <rs ref="#einen-Brief-(läuffer-an-pastor-läuffer)">den Brief</rs> auf.</stage> Belieben <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> doch nur
+              auszulesen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Was ist da zu lesen? – <stage>Liest.</stage> »<rs ref="#Dem">Dem</rs> ohngeachtet kann ich <rs ref="#es8"><rs ref="#unserm-Hause-(der-majors-in-insterburg)">dies Haus</rs>
+              nicht verlassen</rs>, und sollt <rs ref="#es8">es</rs> mich <rs ref="#seines-Lebens-(läuffers)">Leben</rs> und <rs ref="#Gesundheit-(läuffers)">Gesundheit</rs> kosten. So viel darf ich <rs ref="#pastor-(läuffers-vater)">Ihnen</rs>
+              sagen, daß <rs ref="#die-Aussichten-in-eine-selige-Zukunft-(läuffers)">die Aussichten in <rs ref="#Sein-Glück-(lebensglück-läuffer)">eine selige Zukunft</rs></rs> mir alle die Mühseligkeiten meines
+              gegenwärtigen Standes« – Ja, <rs ref="#die-Aussichten-in-eine-selige-Zukunft-(läuffers)">das</rs> sind vielleicht Aussichten in <rs ref="#die-selige-Ewigkeit-(läuffers,-vermutl-tod)">die selige Ewigkeit</rs>,
+              sonst weiß ich keine Aussichten, die <rs ref="#major-ccc">mein Bruder</rs> <rs ref="#laeuffer-ccc">ihm</rs> eröffnen könnte. <rs ref="#mir's2"><rs ref="#laeuffer-ccc">Er</rs> betrügt <rs ref="#laeuffer-ccc">sich</rs></rs>,
+              glauben <rs ref="#pastor-(läuffers-vater)">Sie</rs> <rs ref="#mir's2">mir's</rs>; schreiben <rs ref="#pastor-(läuffers-vater)">Sie</rs> <rs ref="#laeuffer-ccc">ihm</rs> zurück, daß <rs ref="#laeuffer-ccc">er</rs> <rs ref="#ein-Tor-(prädikativ-läuffer)">ein Tor</rs> ist. <rs ref="#die-dreißig-Dukaten-(gehaltszuschuss,-den-geheimer-rat-an-läuffer-zahlt-zu-den-60-von-major)">Dreißig Dukaten</rs> will
+              ich <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#des---------------dritten-(drittes-jahr-läuffer-bei-majors)">dies Jahr</rs> aus meinem Beutel Zulage geben, aber <rs ref="#laeuffer-ccc">ihn</rs> auch zugleich gebeten
+              haben, mich mit <rs ref="#allen-fernern-Anwerbungen-um-meinen-Karl">allen fernern Anwerbungen um <rs ref="#Ihren-zweiten-Sohn-(geheimer-rats,-karl)">meinen Karl</rs></rs> zu verschonen: denn <rs ref="#laeuffer-ccc">ihm</rs> zu
+              Gefallen werd ich <rs ref="#allen-fernern-Anwerbungen-um-meinen-Karl">mein Kind</rs> nicht verwahrlosen.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

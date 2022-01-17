@@ -1,0 +1,707 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die verhängnisvolle Gabel</title>
+        <title type="sub">Ein Lustspiel in 5 Akten</title>
+        <author key="pnd:118594869">Platen, August von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000074</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q42197205</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:t2z2.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>August von Platen: Die verhängnisvolle Gabel / Der romantische Ödipus. Neudruck
+              der Erstausgaben, herausgegeben von Irmgard Denkler und Horst Denkler, Stuttgart:
+              Philipp Reclam jun., 1979 [Universal-Bibliothek Nr. 118 [4]].</title>
+            <date type="print" when="1826"/>
+            <date type="premiere"/>
+            <date type="written" when="1826">März bis April 1826</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="damon" sex="MALE">
+            <persName>Damon</persName>
+          </person>
+          <person xml:id="phyllis" sex="FEMALE">
+            <persName>Phyllis</persName>
+          </person>
+          <person xml:id="sirmio" sex="MALE">
+            <persName>Sirmio</persName>
+          </person>
+          <person xml:id="schmuhl" sex="MALE">
+            <persName>Schmuhl</persName>
+          </person>
+          <person xml:id="mopsus" sex="MALE">
+            <persName>Mopsus</persName>
+          </person>
+          <person xml:id="salome" sex="FEMALE">
+            <persName>Salome</persName>
+          </person>
+          <person xml:id="wirth" sex="MALE">
+            <persName>Der Wirth</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#phyllis #mopsus"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Lustspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-01-22">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>August von Platen</head>
+        <head>Die verhängnißvolle Gabel</head>
+        <head>Ein Lustspiel in 5 Akten</head>
+      </div>
+      <div type="epigraph">
+        <head>[Motto]</head>
+        <l><pb n="36"/> Χαίρων εὖ τελέσειας ὁδὸν μεγάλου διὰ πόντου,</l>
+        <l>Καί σε Ποσειδάων χάρμα φίλοις ἀγάγοι!</l>
+        <pb n="37"/>
+      </div>
+      <castList>
+        <head>Personen.</head>
+        <castItem>Damon, Schultheiß von Arkadien.</castItem>
+        <castItem>Mopsus, ein Schäfer.</castItem>
+        <castItem>Schmuhl, ein Jude und Chorus der Comödie.</castItem>
+        <castItem>Sirmio, Amtsdiener.</castItem>
+        <castItem>Der Wirth zur Gabel.</castItem>
+        <castItem>Phyllis, der Mopsus Gattin.</castItem>
+        <castItem>Salome, ein Gespenst.</castItem>
+        <pb n="37"/>
+        <pb n="39"/>
+      </castList>
+    </front>
+    <body>
+      <div type="Dramatis_Personae"> </div>
+      <div type="act">
+        <head><pb n="91"/> Fünfter Akt.</head>
+        <stage><rs ref="#Saal">Saal</rs> <rs ref="#im-Gasthof-zur-Gabel">im Gasthof <rs ref="#zur-Gabel">zur Gabel</rs></rs>.</stage>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>DER WIRTH</speaker></rs>
+          <stage>allein.</stage>
+          <lg>
+            <l>Verdächtig kommt mir <rs ref="#mopsus2">diese fremde Lady</rs> vor,</l>
+            <l><rs ref="#mopsus2">Die</rs> nie <rs ref="#den-Schleier">den Schleier</rs> lüftet und so wenig spricht.</l>
+            <l>Reich mag <rs ref="#mopsus2">sie</rs> seyn, nach Allem, was der Diener sagt,</l>
+            <l>Steinreich; doch eine Fledermaus an Häßlichkeit,</l>
+            <l>Wenn nicht was Fürchterlich'res noch dahintersteckt,</l>
+            <l>Man hat Exempel in <rs ref="#der-Zeit">der Zeit</rs>, daß Affen selbst</l>
+            <l>Auf Reisen gingen, <rs ref="#Urangutangs">Urangutangs</rs> <rs ref="#Urangutangs">ihren</rs> Geist</l>
+            <l>Ausbildeten und hie und da schriftstellerten.</l>
+            <l>Doch bergen <rs ref="#Urangutangs2">Solche</rs> mit Bedacht <rs ref="#Urangutangs2">ihr</rs> Angesicht,</l>
+            <l>Und bleiben stets, wie Recensenten, anonym.</l>
+            <l>Vielleicht auch ist <rs ref="#mopsus2">die Lady</rs> <rs ref="#die-berüchtigte-------------Prinzessin">die berüchtigte</l>
+            <l>Prinzessin</rs> mit dem Schweinerüssel, <rs ref="#die-berüchtigte-------------Prinzessin">welche</rs> <rs ref="#die-berüchtigte-------------Prinzessin">sich</rs></l>
+            <l>Vormals in <rs ref="#Deutschland">Deutschland</rs> sehen ließ, wiewohl <rs ref="#man">man</rs> glaubt,</l>
+            <l>Daß eine blos symbolische Person <rs ref="#die-berüchtigte-------------Prinzessin">sie</rs> war,</l>
+            <l>Des deutschen Nationalgeschmacks Versinnlichung;</l>
+            <l>Denn blos <rs ref="#Gemeines">Gemeines</rs> nutzt <rs ref="#Gemeines">sich</rs> ab in der Hand <rs ref="#des-Volks">des Volks</rs>,</l>
+            <l>Wie würde gang und gäbe das Erhabene?</l>
+            <l>Auch fällt noch eine dritte Möglichkeit mir ein:</l>
+            <l>Vielleicht, daß einst <rs ref="#der-guten-Lady-Mutter"><rs ref="#mopsus2">der guten Lady</rs> Mutter</rs> <rs ref="#der-guten-Lady-Mutter">sich</rs></l>
+            <l>An Herrn von X versehen hat, und hinter drein</l>
+            <rs ref="#mopsus"><l>Ein Demagogenriechernashornsangesicht</l></rs>
+            <l><rs ref="#Zur-Welt">Zur Welt</rs> gebracht, ein immerwährend schnüffelndes.</l>
+          </lg>
+          <stage><rs ref="#wirth">Wirth</rs>. <rs ref="#schmuhl">Schmuhl</rs>.</stage>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Hat man <rs ref="#mopsus2">der Lady</rs> Thee servirt?</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l><rs ref="#Drei-Kannen">Drei Kannen</rs> voll;</l>
+            <l><rs ref="#Drei-Kannen">Reicht's</rs> hin?</l>
+          </lg>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l><rs ref="#Drei-Kannen">Es</rs> reicht. Doch zündet jetzt die Lichter an.</l>
+          <pb n="92"/>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l>Sogleich!</l>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Da steht <rs ref="#der-verwünschte-Schatzbehälter">der verwünschte Schatzbehälter</rs> noch,</l>
+            <l>Zwar uneröffnet, aber schwer wie Blei. Ich ließ</l>
+            <l>Hier in <rs ref="#Saal">den Vorsaal</rs> setzen <rs ref="#der-verwünschte-Schatzbehälter">ihn</rs> geflissentlich:</l>
+            <l>Vielleicht gelingt mir's heute <rs ref="#Nacht">Nacht</rs> im Mondenschein</l>
+            <l><rs ref="#der-verwünschte-Schatzbehälter">Ihn</rs> fortzuschaffen, während <rs ref="#mopsus2"><rs ref="#schmuhl2">unsre</rs> Lady</rs> schnarcht,</l>
+          </lg>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH</speaker></rs>
+          <stage>zurückkommend.</stage>
+          <l><rs ref="#mopsus2">Die Dame</rs> sitzt ja stets <rs ref="#den-Schleier">im Schleier</rs>. Ist <rs ref="#mopsus2">sie</rs> schön?</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Nicht eben blendend.</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l>Aber doch auffallend?</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Ja,</l>
+            <l>So ziemlich.</l>
+          </lg>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l>Das vermuth' ich. Wird <rs ref="#mopsus2">sie</rs> reich geschätzt?</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Was meint <rs ref="#wirth">ihr</rs>, daß dem Postillon Trinkgeld <rs ref="#mopsus2">sie</rs> gab?</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Je nun, vielleicht dasselbige was Geliert einst,</l>
+            <l>Um das Rhinoceros zu sehen, eingesteckt?</l>
+          </lg>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Ein Stück Papier als unbegränzten Wechselbrief,</l>
+            <l>Zahlbar für <rs ref="#Jeden">Jeden</rs>, und einige Besitzungen</l>
+            <l>Im Norden Grönlands.</l>
+          </lg>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l><rs ref="#mopsus2">Himmlische Verschwenderin</rs>!</l>
+            <l><rs ref="#Den-Göttern">Den Göttern</rs> dank' ich, daß <rs ref="#Den-Göttern">sie</rs> <rs ref="#mopsus2">dich</rs> <rs ref="#im-Gasthof-zur-Gabel">ins Haus</rs> geführt!</l>
+          </lg>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Vielleicht, wenn etwa morgen <rs ref="#wirth">ihr</rs> die Zeche macht,</l>
+            <l>Gibt <rs ref="#mopsus2">sie</rs> zum Angedenken <rs ref="#wirth">euch</rs> Australien.</l>
+          </lg>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Wie konnte <rs ref="#mopsus2">sie</rs> so Vieles denn erübrigen,</l>
+            <l>Wofern <rs ref="#mopsus2">sie</rs> nicht aus fürstlichem Geblüte stammt?</l>
+          </lg>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Das fragt bei Rothschilds, oder sonst in Israel.</l>
+            <l>Ich lege nachgerade mich zu Bette jetzt.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Schlaft wohl! – das nenn' ich einmal <rs ref="#mopsus2">eine Reisende</rs>!</l>
+            <l><pb n="93"/> Wenn aber <rs ref="#mopsus2">diese Lady</rs> nicht ein Töchterchen</l>
+            <l>Von <rs ref="#einem-Dalai-Lama">einem Dalai Lama</rs>, ja, Großmogul, ist,</l>
+            <l>So will ich nicht der Speisewirth <rs ref="#im-Gasthof-zur-Gabel">zur Gabel</rs> seyn!</l>
+            <l><rs ref="#mopsus2">Sie</rs> ist vielleicht <rs ref="#dieselbe-Tibetanerin">dieselbe Tibetanerin</rs>,</l>
+            <l>Von <rs ref="#dieselbe-Tibetanerin">welcher</rs> neulich mitgetheilt ein Reisender,</l>
+            <l>Daß <rs ref="#dieselbe-Tibetanerin">sie</rs> die künft'ge Heldin <rs ref="#eines-Trauerspiels-------------Des-Dichters">eines Trauerspiels</l>
+            <l><rs ref="#Des-Dichters">Des Dichters</rs></rs> wäre, <rs ref="#Des-Dichters">der</rs> die Schuld geschneidert hat,</l>
+            <l><rs ref="#eines-Trauerspiels-------------Des-Dichters">Die Geschichte</rs> war höchst tragisch, ungefähr wie folgt:</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Ein frommer Taschenspieler</rs> ging als Missionär</l>
+            <l>Nach Asien und verliebte <rs ref="#Ein-frommer-Taschenspieler">sich</rs> mit Leidenschaft</l>
+            <l>In <rs ref="#eine-junge,-tibetanische-Person">eine junge, tibetanische Person</rs>,</l>
+            <l>Hübsch, reich, ein wahres Muster von Vollkommenheit.</l>
+            <l>Doch um <rs ref="#eine-junge,-tibetanische-Person">sie</rs> zu besitzen, soll <rs ref="#Ein-frommer-Taschenspieler">der Bräutigam</rs></l>
+            <l>Den Glauben wechseln, eine Sache, die vorerst</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Ihm</rs> nur geringe Skrupel macht. <rs ref="#Ein-frommer-Taschenspieler">Er</rs> dachte so:</l>
+            <l>Da doch auf keine Weise <rs ref="#das-Christenthum">sich</rs> <rs ref="#das-Christenthum">das Christenthum</rs></l>
+            <l>Anheischig macht, in <rs ref="#Zur-Welt">dieser Welt</rs> die Herzen schon</l>
+            <l>Zu beglücken, durch harmonische Befriedigung in</l>
+            <l>Des ganzen Menschen, wie es <rs ref="#das-Heidenthum">das Heidenthum</rs> gethan,</l>
+            <l>Da <rs ref="#das-Heidenthum">es</rs> höchst naiv jenseitiges Glück allein verspricht,</l>
+            <l>So reicht's ja hin, in der andern Welt ein Christ zu seyn</l>
+            <l>In <rs ref="#Zur-Welt">dieser</rs> blos ein Glücklicher, was <rs ref="#Jeden">Jeder</rs> wünscht.</l>
+            <l>So dachte <rs ref="#Ein-frommer-Taschenspieler">dieser Philosoph</rs> und <rs ref="#Ein-frommer-Taschenspieler">Proselyt</rs>.</l>
+            <l>Nun aber kam das Schwerste, was <rs ref="#Ein-frommer-Taschenspieler">er</rs> nicht bestand:</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Er</rs> soll, um zu bewähren <rs ref="#Ein-frommer-Taschenspieler">sich</rs> als Gläubiger,</l>
+            <l>Verzehren <rs ref="#eine-Speise,-die,-bereits-verdaut,-------------Im-Darm-des-Dalai-Lama-schon-gewesen-war">eine Speise, die, bereits verdaut,</l>
+            <l>Im Darm <rs ref="#einem-Dalai-Lama">des Dalai Lama</rs> schon gewesen war</rs>.</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Er</rs> stutzt, <rs ref="#Ein-frommer-Taschenspieler">er</rs> kommt auf keine Weise zum Entschluß:</l>
+            <l>Umsonst beschwört der Priester <rs ref="#Ein-frommer-Taschenspieler">ihn</rs>, <rs ref="#einem-Dalai-Lama">der Lama</rs> selbst,</l>
+            <l><rs ref="#eine-junge,-tibetanische-Person">Die Geliebte</rs> läßt <rs ref="#Ein-frommer-Taschenspieler">ihn</rs> <rs ref="#eine-junge,-tibetanische-Person">ihre</rs> Reize hoffend schau'n,</l>
+            <l>Und bringt auf goldnem Teller <rs ref="#Ein-frommer-Taschenspieler">ihm</rs> <rs ref="#eine-Speise,-die,-bereits-verdaut,-------------Im-Darm-des-Dalai-Lama-schon-gewesen-war">die Süßigkeit</rs>.</l>
+            <l>Vergebens! Stets noch zaudert <rs ref="#Ein-frommer-Taschenspieler">er</rs>, und kehrt <rs ref="#Ein-frommer-Taschenspieler">sich</rs> ab,</l>
+            <l>Und Eckel frißt der Seele tiefstes Mark <rs ref="#Ein-frommer-Taschenspieler">ihm</rs> auf.</l>
+            <l>(Wie wird <rs ref="#Des-Dichters">der große Dichter</rs> <rs ref="#diesen-großen-Kampf">diesen großen Kampf</rs></l>
+            <l><rs ref="#wirth2">Uns</rs> conterfei'n, <rs ref="#diesen-großen-Kampf">den ärgsten, den <rs ref="#ein-Mensch">ein Mensch</rs> gekämpft</rs>,</l>
+            <l>In einem wahren Meisterstück von Monolog!)</l>
+            <l><pb n="94"/> Beleidigt tritt <rs ref="#eine-junge,-tibetanische-Person">die Tibetanerin</rs> zuletzt</l>
+            <l>Von <rs ref="#Ein-frommer-Taschenspieler">ihm</rs> zurück, um <rs ref="#einem-Eingeborenen">einem Eingeborenen</rs></l>
+            <l>Die Hand zu reichen. <rs ref="#einem-Eingeborenen">Dieser</rs> führt <rs ref="#eine-junge,-tibetanische-Person">sie</rs> zum Altar.</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Der Missionär</rs> verzweifelt, krampfhaft windet <rs ref="#sich">sich</rs></l>
+            <l><rs ref="#sich"><rs ref="#Ein-frommer-Taschenspieler">Sein</rs> Innerstes</rs>, von eifersüchtiger Qual bewegt.</l>
+            <l>Und horch! Auf einmal jubelt es im Tempel auf:</l>
+            <l>Halt! Halt! <rs ref="#Ein-frommer-Taschenspieler">Er</rs> hat gegessen <rs ref="#eine-Speise,-die,-bereits-verdaut,-------------Im-Darm-des-Dalai-Lama-schon-gewesen-war">das Geheiligte</rs>,</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Er</rs> ist der Sieger <rs ref="#Ein-frommer-Taschenspieler">seiner</rs> selbst, bekrönet <rs ref="#Ein-frommer-Taschenspieler">ihn</rs>!</l>
+            <l>Doch ach, zu spät! <rs ref="#einem-Eingeborenen-/-eine-junge,-tibetani…">die Beiden</rs> waren schon vermählt.</l>
+            <l>Welch eine Lage! Wehe! Welch ein tragisches</l>
+            <l>Geschick für <rs ref="#Ein-frommer-Taschenspieler"><rs ref="#wirth2">unsern</rs> Helden</rs>! Mit den Zähnen knirscht</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Er</rs> laut, und schlägt die Stirne <rs ref="#Ein-frommer-Taschenspieler">sich</rs>, und flucht <rs ref="#Ein-frommer-Taschenspieler">sich</rs> selbst,</l>
+            <l>Umsonst vollbracht' ich, heulet <rs ref="#Ein-frommer-Taschenspieler">er</rs>, das Gräßliche!</l>
+            <l>O wehe, wehe, wehe, wenn <rs ref="#Den-andern-Pol-/-des-einen-Pols">die Pole</rs> <rs ref="#Den-andern-Pol-/-des-einen-Pols">sich</rs></l>
+            <l>Berühren, und <rs ref="#des-einen-Pols">des einen Pols</rs> Produkte durch</l>
+            <l><rs ref="#Den-andern-Pol">Den andern Pol</rs> verschlungen werden, wehe dann!</l>
+            <l><rs ref="#Ein-frommer-Taschenspieler">Er</rs> spricht's, und nun, in jenen widersinnigen,</l>
+            <l>Hiatusreichen Halbtrochä'n, die <rs ref="#Jeden">Jeder</rs> kennt,</l>
+            <l>Wo bald <rs ref="#ein-Reim">ein Reim</rs> <rs ref="#ein-Reim">sich</rs> findet, bald auch wieder nicht,</l>
+            <l>Bricht <rs ref="#Ein-frommer-Taschenspieler"><rs ref="#wirth2">unser</rs> Missionarius</rs> <rs ref="#den-Geist">den Geist</rs> heraus,</l>
+            <l>Versteht sich, blos <rs ref="#den-Geist">den Müllnerischen</rs>, doch vermischt</l>
+            <l>Mit <rs ref="#eine-Speise,-die,-bereits-verdaut,-------------Im-Darm-des-Dalai-Lama-schon-gewesen-war"><rs ref="#einem-Dalai-Lama">eines Lama's</rs> heiligem Ingrediens</rs>.</l>
+          </lg>
+          <stage><rs ref="#wirth">Wirth</rs>, <rs ref="#damon">Damon</rs>.</stage>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Seyd <rs ref="#wirth">ihr</rs> <rs ref="#wirth">der Wirth</rs> <rs ref="#im-Gasthof-zur-Gabel">zur Gabel</rs>?</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l>Ja, zu dienen, <rs ref="#damon">Herr</rs>!</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Kann ich ein Obdach finden hier, für <rs ref="#Nacht">diese Nacht</rs>?</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Die Stuben zwar sind schon besetzt; doch wollt <rs ref="#damon">ihr</rs> hier</l>
+            <l><rs ref="#Saal">Im Saale</rs> bleiben, schaff' ich eine Streu herein!</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Ich ziehe vor, zu schlafen auf dem Kanapee.</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Wie's <rs ref="#damon">euch</rs> beliebt. Doch bitt' ich, schnarcht mir nicht zu laut!</l>
+            <l><pb n="95"/> Hierneben schläft <rs ref="#mopsus2">die reichste Lady</rs> von <rs ref="#Zur-Welt">der Welt</rs>.</l>
+            <l>Seht hier <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">die Kiste, welche voll von <rs ref="#Louisd'ors">Louisd'ors</rs></rs>,</l>
+            <l>Doch ist <rs ref="#Louisd'ors">das</rs> nichts, verglichen mit <rs ref="#dem-Uebrigen">dem Uebrigen</rs>!</l>
+            <l>Zwar ganz geheuer ist <rs ref="#mopsus2">sie</rs> nicht, <rs ref="#den-Schleier">den Schleier</rs> legt</l>
+            <l><rs ref="#mopsus2">Sie</rs> nie von <rs ref="#mopsus2">sich</rs>, und <rs ref="#der-guten-Lady-Mutter"><rs ref="#mopsus2">ihre</rs> Mutter</rs> hat vielleicht</l>
+            <l><rs ref="#der-guten-Lady-Mutter">Sich</rs> in Berlin, wie's häufig dort geschieht, versehn.</l>
+            <l>Doch geht <rs ref="#man">man</rs> leicht darüber weg, ein Billionär</l>
+            <l>Darf bis auf einen gewissen Grad unleidlich seyn.</l>
+            <l>Doch seyd <rs ref="#damon">ihr</rs> müde, wie mir scheint, gehabt <rs ref="#damon">euch</rs> wohl,</l>
+            <l>Und macht <rs ref="#damon">euch</rs> hier, so gut <rs ref="#damon">ihr</rs> könnt, <rs ref="#Saal">im Saal</rs> zurecht;</l>
+            <l>Bis morgen räumt <rs ref="#mopsus2">die Lady</rs> dort <rs ref="#das-Kabinet">das Kabinet</rs>.</l>
+          </lg>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Hier wär' ich nun wohl vom Galgen befreit; doch hungrig und ärmer als Hiob!</l>
+            <l>Wie werd' ich <rs ref="#Nacht">die Nacht</rs>, und den kommenden Tag, und die kommenden Tage
+              verbringen?</l>
+            <l>Nichts könnt' ich mit mir fortnehmen, ja nicht einmal die gelehrten Excerpten,</l>
+            <l>Die in <rs ref="#Deutschland">Deutschland</rs> kein Buchhändler verschmäht und verabsäumt hätte, das weiß
+              ich:</l>
+            <l>Was recht schwerfällig und ledern erscheint, das halten <rs ref="#die-Deutschen">die Deutschen</rs> für
+              gründlich,</l>
+            <l>Denn <rs ref="#diese-Nation">diese Nation</rs> saalbadert so gern, saalbadert herab von der Kanzel,</l>
+            <l>Saalbadert zu Haus, saalbadert sodann vor Gericht, saalbadert im Schauspiel;</l>
+            <l>Drum sind auch blos <rs ref="#Saalbader">Saalbader</rs> in Gunst bei <rs ref="#diese-Nation">ihr</rs>, <rs ref="#Saalbader">Saalbader</rs> in Achtung;</l>
+            <l>Drum liest <rs ref="#diese-Nation">sie</rs> nur <rs ref="#saalbadernder-Clauren">dich</rs>, statt Goethe und statt Jean Paul, <rs ref="#saalbadernder-Clauren">saalbadernder Clauren</rs>,</l>
+            <l>Und blättert, anstatt in der Bibel, in <rs ref="#euch">euch</rs>, <rs ref="#euch">saalbadernde Stunden der Andacht</rs>!</l>
+            <l>Ach, während <rs ref="#wirth">der Wirth</rs> mir erzählte, befiel mich <rs ref="#im-Herzen">im Herzen</rs> die stärkste
+              Versuchung:</l>
+            <l>O hätt' ich doch nur die geringste Partie <rs ref="#Louisd'ors-/-dem-Uebrigen">vom Riesenvermögen</rs> <rs ref="#mopsus2">der Lady</rs>!</l>
+            <l><pb n="96"/> <rs ref="#mopsus2">Sie</rs> könnte mir wohl abtreten <rs ref="#ein-Theil">ein Theil</rs>, nur <rs ref="#ein-Theil">ein Röllchen Dukaten</rs> als
+              Zehrgeld:</l>
+            <l>Es erfordert ja doch ein gerechtes Gesetz gleichmäßige Gütervertheilung!</l>
+            <l>O könnt' ich doch nur aufsprengen dahier <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">die gewaltige Kiste</rs> von Eisen!</l>
+            <l>Aber das ist ganz unmöglich, scheint's, da zu stark und fest <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">sie</rs> verwahrt ist.</l>
+            <l>Mag seyn, daß drinnen <rs ref="#das-Kabinet">im Schlafkabinet</rs> zur Seite <rs ref="#mopsus2">der Lady</rs> <rs ref="#die-Börse">die Börse</rs></l>
+            <l>Auf dem Nachttisch liegt, <rs ref="#die-Börse">die</rs> könnt' ich ja wohl, ganz ohne Gefährde, stipitzen.</l>
+            <l>Doch würde mir wach <rs ref="#mopsus2">die Britannierin</rs>? Dann müßt' ich verstopfen den Mund <rs ref="#mopsus2">ihr</rs>.</l>
+            <l>Wie verhängnißvoll, daß gerad' ich noch mithabe <rs ref="#die-Gabel-des-Mopsus">die Gabel <rs ref="#mopsus">des Mopsus</rs></rs>!</l>
+            <l>Nur ein Stich, so spaziert noch heute mir durch elysäische Felder <rs ref="#mopsus2">die Lady</rs>:</l>
+            <l>Glückseliges Loos! Auch sagte <rs ref="#wirth">der Wirth</rs>, <rs ref="#mopsus2">sie</rs> wäre vermuthlich <rs ref="#ein-Scheusal">ein Scheusal</rs>.</l>
+            <l>Hat Herkules nicht von <rs ref="#ein-Scheusal">solchem Gethüm</rs> die gesäuberten Länder befreit einst?</l>
+            <l>Und thu' ich es auch, kann seyn, daß sie mir auch Tempel errichten und Statuen.</l>
+            <l>Nun will ich hinein, doch horch! mir scheint, daß eben <rs ref="#mopsus2">die Lady</rs> heraus will.</l>
+          </lg>
+          <stage><rs ref="#damon">Damon</rs>, <rs ref="#mopsus">Mopsus</rs>.</stage>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l>Was fliehst <rs ref="#du">du</rs> mich, <rs ref="#du">Schlaf</rs>? <rs ref="#Ihr-Ahnungen">Ihr Ahnungen</rs>, ach! was legt <rs ref="#Ihr-Ahnungen">ihr</rs> <rs ref="#Ihr-Ahnungen">euch</rs> über die Brust
+              mir,</l>
+            <l>Wie <rs ref="#ein-Alp,-der-fest-sich-die-Klau'n-einklemmt-in-den-athmenden-Busen-des---------------Mägdleins">ein Alp, der fest <rs ref="#ein-Alp,-der-fest-sich-die-Klau'n-einklemmt-in-den-athmenden-Busen-des---------------Mägdleins">sich</rs> die Klau'n einklemmt in den athmenden Busen <rs ref="#des---------------Mägdleins">des
+              Mägdleins</rs></rs>?</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Das wundert mich sehr, daß <rs ref="#mopsus2">sie</rs> <rs ref="#des---------------Mägdleins">Mägdlein</rs> ist annoch; doch sagt <rs ref="#mopsus2">sie</rs> es selbst ja.</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <l>O mußte denn auch <rs ref="#im-Gasthof-zur-Gabel"><emph>der</emph> Gasthof</rs> just <rs ref="#zur-Gabel">zur goldenen Gabel</rs> getauft seyn!</l>
+          <pb n="97"/>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Was flüstert <rs ref="#mopsus2">sie</rs> da von <rs ref="#die-Gabel-des-Mopsus2">der Gabel</rs>, <rs ref="#mopsus2">sie</rs> hat mich am Ende belauscht, <rs ref="#mopsus2">die
+            Verschmitzte</rs>.</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l><rs ref="#Abscheulicher-Traum">Abscheulicher Traum</rs>, wie quältest <rs ref="#Abscheulicher-Traum">du</rs> mich! Ich sah <rs ref="#den-lebendigen-Satan">den lebendigen Satan</rs>;</l>
+            <l>Zwar Anfangs wand' <rs ref="#den-lebendigen-Satan">er</rs> den Rücken mir zu; doch plötzlich steckte den Kopf <rs ref="#den-lebendigen-Satan">er</rs></l>
+            <l><rs ref="#den-lebendigen-Satan">Sich</rs> zwischen die Beine hindurch und besah mich in dieser entsetzlichen Stellung,</l>
+            <l>Mit funkelndem Blick, und loderndem Bart, und feurigen Zähnen im Rachen.</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Wenn <rs ref="#mopsus2">sie</rs> lange so fort <rs ref="#den-lebendigen-Satan">vom Teufel</rs> erzählt, gleich fällt in die Hose <rs ref="#im-Herzen">das Herz</rs> mir.</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <l>Dann sah ich <rs ref="#den-Tod">den Tod</rs> mit der Sense vor mir, und <rs ref="#den-Tod">er</rs> mähte mich unter die Bettstatt.</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Jetzt siehst du <rs ref="#den-Tod-/-damon">den Tod</rs> mit <rs ref="#die-Gabel-des-Mopsus2">der Gabel</rs> vor <rs ref="#mopsus2">dir</rs>, gib drein <rs ref="#mopsus2">dich</rs>, oder <rs ref="#mopsus2">du</rs> stirbst
+            doch!</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l>Wie wird mir, o <rs ref="#Gott">Gott</rs>! Ist's <rs ref="#damon">Damon</rs> nicht? Ist's nicht <rs ref="#damon">mein Richter</rs> und <rs ref="#damon">Schultheiß</rs>?</l>
+            <l>Mit <rs ref="#die-Gabel-des-Mopsus2">der Gabel</rs>, o weh! Jetzt bin ich dahin, jetzt hat mir geschlagen das
+              Stündlein!</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Was lispelt <rs ref="#mopsus2">sie</rs> da?</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l>Stich zu! Stich zu! Gern ruf' ich</l>
+            <l><rs ref="#dem-Leben">dem Leben</rs> Ade zu!</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Wie entschlossen! Das ist <rs ref="#mopsus2">kein weibisches Weib</rs>, <rs ref="#mopsus2">die</rs> ist, wie Johanne, die Päpstin.</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <l>Stich zu! Stich zu!</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Ich getraue mich nicht, stich selbst,</l>
+            <l>hier hast <rs ref="#mopsus2">du</rs> <rs ref="#die-Gabel-des-Mopsus2">die Gabel</rs>!</l>
+          </lg>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l>Ja, ich sterbe, ja, mich Arme drückt die Schuld und kneipt die Sünde,</l>
+            <l><rs ref="#Meine-Kinder">Meine Kinder</rs> stach ich selbst ab, wie <rs ref="#die-Gräfin-Orlamünde">die Gräfin Orlamünde</rs>:</l>
+            <l><rs ref="#die-Gräfin-Orlamünde">Diese</rs> läßt als weiße Frau nun <rs ref="#die-Gräfin-Orlamünde">ihre</rs> Schlüsselbündel kollern,</l>
+            <l><pb n="98"/> Wenn <rs ref="#ein-Fleck">ein Fleck</rs> <rs ref="#ein-Fleck">sich</rs> soll verdunkeln an der Sonne Hohenzollern!</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Sagt' ich's nicht? <rs ref="#man">Man</rs> wird poetisch auf <rs ref="#dem-Leben">des Lebens</rs> letzten Stadien.</l>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <l>Sieh mich sterben; aber wisse, daß ich Mopsus aus <rs ref="#Arkadien">Arkadien</rs>!</l>
+          <stage><rs ref="#mopsus">Er</rs> ersticht <rs ref="#mopsus">sich</rs>.</stage>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Ist es möglich? Ja, die Stimme fiel mir auf, ich ruf' um Rettung:</l>
+            <l>Hülfe, Hülfe her!</l>
+          </lg>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <lg>
+            <l>Vergebens! Dieß ist des Geschicks Verkettung,</l>
+            <l>Nichts errettet mich.</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Mir ist es blos zu thun um <rs ref="#dein-Vermächtniß"><rs ref="#mopsus">dein</rs> Vermächtniß</rs>,</l>
+            <l>Schenke mir vor ein'gen Zeugen <rs ref="#Louisd'ors-/-dem-Uebrigen"><rs ref="#mopsus">deine</rs> Gelder</rs> zum Gedächtniß!</l>
+            <l>Hülfe! Hülfe!</l>
+          </lg>
+          <stage><rs ref="#damon-/-mopsus">Die Vorigen</rs>, <rs ref="#schmuhl">Schmuhl</rs>, <rs ref="#wirth">der Wirth</rs>, <rs ref="#Dienerschaft">Dienerschaft</rs>.</stage>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Nun, was gibt es?</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l><rs ref="#mopsus">Mopsus</rs> hat <rs ref="#mopsus">sich</rs> selbst erstochen.</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l><rs ref="#damon">Du</rs> hier, <rs ref="#damon">Damon</rs>?</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l><rs ref="#schmuhl">Schmuhl</rs>, und <rs ref="#schmuhl">du</rs> hier?</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l>Kommt <rs ref="#mopsus2">die Hoheit</rs> in die Wochen?</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Nein, <rs ref="#mopsus2">sie</rs> stirbt, doch mir vermacht <rs ref="#mopsus2">sie</rs> <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">diese mächtige Schatulle</rs>.</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <l><rs ref="#dein-Vermächtniß">Solch ein Testament</rs> ist wirklich eine wahre goldne Bulle.</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Mir gehört <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">die Kiste</rs>, <rs ref="#mopsus">Mopsus</rs>!</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Daß der Böse <rs ref="#schmuhl">dich</rs> verderbe!</l>
+            <l>Mir gehört <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">sie</rs>.</l>
+          </lg>
+        </sp>
+        <sp who="#mopsus">
+          <rs ref="#mopsus"><speaker>MOPSUS.</speaker></rs>
+          <l>Theilt <rs ref="#schmuhl-/-damon">euch beide</rs> brüderlich darein, ich sterbe.</l>
+          <stage><rs ref="#mopsus">Er</rs> stirbt.</stage>
+          <pb n="99"/>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Her <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">die Kiste</rs>!</l>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Her <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">die Kiste</rs>!</l>
+        </sp>
+        <sp who="#wirth">
+          <rs ref="#wirth"><speaker>WIRTH.</speaker></rs>
+          <lg>
+            <l>Was rumort denn drin <rs ref="#die-Kiste,-welche-voll-von-Louisd'ors">im Kasten</rs>?</l>
+            <l>Horch, es kracht, es springt <rs ref="#der-Deckel">der Deckel</rs>, wie emporgesprengte Lasten!</l>
+          </lg>
+          <stage><rs ref="#der-Deckel">Der Deckel</rs> springt auf, <rs ref="#salome">Salome</rs> erscheint in einer Glorie.</stage>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Was? <rs ref="#salome">Ein Geist</rs>, anstatt <rs ref="#Louisd'ors">des Geldes</rs>? Schafft mir solche Schätze weiter!</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Das ist <rs ref="#salome">Salome</rs>, doch jetzo scheint <rs ref="#salome">sie</rs> ganz verklärt und heiter.</l>
+        </sp>
+        <sp who="#salome">
+          <rs ref="#salome"><speaker>SALOME.</speaker></rs>
+          <lg>
+            <l>Ja, gekommen ist die Stunde, <rs ref="#diese-Brut">diese Brut</rs> ist ausgerottet,</l>
+            <l>Und <rs ref="#Dienerschaft-/-schmuhl-+-2">ihr</rs> seht den Geist erlöset, welcher nun der Bande spottet,</l>
+            <l>Welcher, da <rs ref="#diese-Brut">dieß fratzenhafte, mördrische Geschlecht</rs> bezwungen,</l>
+            <l>Seinen Fittich stolz erhebet von der Erde Niederungen.</l>
+            <l>Folget seinem Flug und lasset unter <rs ref="#Dienerschaft-/-schmuhl-+-2">euch</rs> der Sorgen jede,</l>
+            <l>Und mit Adlerklau'n zum Himmel trägt er <rs ref="#Dienerschaft-/-schmuhl-+-2">euch</rs> als Ganymede!</l>
+            <l>Wo die Schönheit mit verschämtem Lächeln senkt <rs ref="#den-Blick">den Blick</rs>, <rs ref="#den-Blick">den süßen</rs>,</l>
+            <l>Und von stäter Jugend träumet zu <rs ref="#Gott">des ew'gen Vaters</rs> Füßen;</l>
+            <l>Wo ein holder Wonnetaumel spielt in alle Seelentriebe,</l>
+            <l>Holder als <rs ref="#ein-menschlich-Auge">ein menschlich Auge</rs>, wenn <rs ref="#ein-menschlich-Auge">es</rs> blickt den Blick <rs ref="#der-Liebe">der Liebe</rs>!</l>
+            <l>Dort, wo Friede wohnet, mögt <rs ref="#Dienerschaft-/-schmuhl-+-2">ihr</rs> seligen Gesängen lauschen;</l>
+            <l>Aber lebet wohl, es fangen meine Flügel an zu rauschen!</l>
+          </lg>
+          <stage><rs ref="#salome">Sie</rs> verschwindet.</stage>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Hast <rs ref="#schmuhl">du</rs> vom Galimathias <rs ref="#salome">dieses Geists</rs> ein Wort verstanden?</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Wenig gilt ein Wort <rs ref="#dem-Leben">im Leben</rs>, wäre nur <rs ref="#Louisd'ors">das Geld</rs> vorhanden!</l>
+          <pb n="100"/>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <l>Dürfen Geister denn betrügen? Welch ein schändliches Verfahren!</l>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <lg>
+            <l>Freilich, doch <rs ref="#die-Menschen">die Menschen</rs> ködert <rs ref="#man">man</rs> so selten mit dem Wahren;</l>
+            <l>Darum lenkt als <rs ref="#Arzt">Arzt</rs> <rs ref="#der-Comödiendichter">der Dichter</rs> noch am ersten <rs ref="#die-Menschen">ihren</rs> Willen,</l>
+            <l>Denn in Süßes eingewickelt reicht <rs ref="#Arzt">er</rs> die verhaßten Pillen.</l>
+          </lg>
+        </sp>
+        <sp who="#damon">
+          <rs ref="#damon"><speaker>DAMON.</speaker></rs>
+          <lg>
+            <l>Wenigstens zufrieden bin ich, daß ich vom Verdacht gereinigt,</l>
+            <l>Und <rs ref="#sirmio">kein Sirmio</rs> mit einem peinlichen Prozeß mich peinigt;</l>
+            <l>Alle ruf' ich hier zu Zeugen wider eine solche Fabel!</l>
+            <l>Aber im Archiv bewahren werd' ich <rs ref="#die-Gabel-des-Mopsus">diese Wundergabel</rs>.</l>
+            <l>Jetzo geh' ich nach <rs ref="#Arkadien">Arkadien</rs>, wo ich meine Schweine mäste,</l>
+            <l>Unterdessen <rs ref="#Gott">Gott</rs> befohlen!</l>
+          </lg>
+          <stage>Ab mit <rs ref="#Dienerschaft-/-wirth">den Uebrigen, die <rs ref="#mopsus">den Leichnam</rs> wegtragen</rs>.</stage>
+        </sp>
+        <sp who="#schmuhl">
+          <rs ref="#schmuhl"><speaker>SCHMUHL.</speaker></rs>
+          <l>Nun beginnt, ihr Anapäste!</l>
+          <stage><rs ref="#schmuhl">Er</rs> tritt vor.</stage>
+          <lg>
+            <l><rs ref="#der-Comödiendichter">Sein</rs> Abschiedswort thut <rs ref="#euch2">euch</rs> durch mich <rs ref="#der-Comödiendichter">der Comödiendichter</rs> zu wissen,</l>
+            <l><rs ref="#der-Comödiendichter">Der</rs> oftmals schon, im Laufe <rs ref="#des-Stücks">des Stücks</rs>, vortrat aus <rs ref="#der-Comödiendichter">seinen</rs> Coulissen!</l>
+            <l>Ueberseht huldreich die Gebrechen an <rs ref="#der-Comödiendichter">ihm</rs>, laßt <rs ref="#euch2">euch</rs> durchs Gute bestechen!</l>
+            <l><rs ref="#man">Man</rs> liebt <rs ref="#des-Stücks">ein Gedicht</rs>, wie <rs ref="#den-Freund">den Freund</rs> <rs ref="#man">man</rs> liebt, <rs ref="#den-Freund">ihn</rs> selbst mit jedem Gebrechen;</l>
+            <l>Denn, wolltet <rs ref="#euch2">ihr</rs> was abziehen von <rs ref="#den-Freund">ihm</rs>, dann wär' es derselbe ja nicht mehr,</l>
+            <l>Und <rs ref="#ein-Mensch,-der-nichts-zu-verzeihen-vermag">ein Mensch, der nichts zu verzeihen vermag</rs>, nie seh' <rs ref="#ein-Mensch,-der-nichts-zu-verzeihen-vermag">er</rs> ein Menschengesicht
+              mehr!</l>
+            <l>Wohl weiß <rs ref="#der-Comödiendichter">der Poet</rs>, daß <rs ref="#des-Stücks">dieses Gedicht</rs> <rs ref="#der-Comödiendichter">ihm</rs> Tausende werden verketzern,</l>
+            <l>Ja, daß <rs ref="#des-Stücks">es</rs> vielleicht <rs ref="#ein-Mensch">Niemanden</rs> gefällt, als etwa den Druckern und Setzern:</l>
+            <l>Es verleidet <rs ref="#der-Comödiendichter">ihm</rs> auch wohl ein Freund <rs ref="#des-Stücks"><rs ref="#der-Comödiendichter">sein</rs> Werk</rs>, und des Kritikers Laune verneint
+              <rs ref="#des-Stücks">es</rs>,</l>
+            <l><pb n="101"/> Und <rs ref="#der-Pfuscher">der Pfuscher</rs> vermeint, <rs ref="#der-Pfuscher">er</rs> könne das auch; doch irrt sich der Gute,
+              so scheint es.</l>
+            <l>Durch <rs ref="#Deutschland">Deutschland</rs> ist, die Latern' in der Hand, nach <rs ref="#die-Menschen">Menschen</rs> zu suchen so
+              mißlich;</l>
+            <l>Wohlwollende triffst du gewiß niemals, kurzsichtige Tadler gewißlich.</l>
+            <l>Zwar möchte <rs ref="#die-Deutschen">das Volk</rs>, aus eitler Begier, an <rs ref="#">poetischen Genien</rs> reich seyn,</l>
+            <l>Doch sollen <rs ref="#">sie</rs> auch Bußprediger, ja, Betschwestern und Alles zugleich seyn!</l>
+            <l>Doch, reichten <rs ref="#">sie</rs> nichts als milchige Kost, als ganz unschuldige Speise,</l>
+            <l>Dann wären <rs ref="#">sie</rs> wohl viel weiser als <rs ref="#Gott">Gott, der Thoren geschaffen und Weise</rs>.</l>
+            <l><rs ref="#Was">Was</rs> <rs ref="#Jeden">Jedem</rs> geziemt, <rs ref="#Was">das</rs> üb' <rs ref="#Jeden">er</rs> getrost, mit dem <rs ref="#Jeden">Seinen</rs> bescheide <rs ref="#Jeden">sich</rs> <rs ref="#Jeden">Jeder</rs>:</l>
+            <l>Im Sonnensystem ist Raum für mehr, als für des Zeloten Katheder!</l>
+            <l><rs ref="#schmuhl3">Wir</rs> schelten es nicht, will <rs ref="#ein-Mensch">Einer</rs> <rs ref="#Zur-Welt">die Welt</rs> und die weltlichen Dinge verpönen,</l>
+            <l>Doch <rs ref="#ein-Mensch">wer</rs> anschaut die Gebilde <rs ref="#der-Kunst">der Kunst</rs>, geh' unter im Geiste des Schönen!</l>
+            <l><rs ref="#Ein-Pedant,-den-nichts-zu-begeistern-im-Stand">Ein Pedant, den nichts zu begeistern im Stand</rs>, armselig steht <rs ref="#Ein-Pedant,-den-nichts-zu-begeistern-im-Stand">er</rs> und einsam,</l>
+            <l>Zwar hat <rs ref="#Ein-Pedant,-den-nichts-zu-begeistern-im-Stand">er</rs> vielleicht mit den Thieren den Fleiß, doch nichts mit <rs ref="#die-Menschen">den Menschen</rs>
+              gemeinsam!</l>
+            <l>Glaubt nicht, daß <rs ref="#der-Comödiendichter"><rs ref="#schmuhl3">unser</rs> Poet, der gern, was krank ist, sähe geheilet</rs>,</l>
+            <l>Mißgünstigen Sinns Eingebungen folgt, wenn <rs ref="#der-Comödiendichter">er</rs> auch Ohrfeigen vertheilet:</l>
+            <l><rs ref="#ein-Mensch">Wer</rs> Haß im Gemüth und Bosheit trägt und <rs ref="#ein-Mensch">wer</rs> unlautere Regung,</l>
+            <l><rs ref="#ein-Mensch">Dem</rs> weigert <rs ref="#der-Kunst">die Kunst</rs> jedweden Gehalt und die Grazie jede Bewegung.</l>
+            <l><rs ref="#ein-Mensch">Wen</rs> kümmert es, was <rs ref="#der-Comödiendichter">ein Poet</rs> urtheilt? Doch, zeigte <rs ref="#ein-Mensch">sich</rs> <rs ref="#ein-Mensch">Einer</rs> empfindlich,</l>
+            <l><pb n="102"/> Uebertreff' <rs ref="#ein-Mensch">er</rs> <rs ref="#der-Comödiendichter">ihn</rs> auch, denn <rs ref="#ein-Mensch">er</rs> macht <rs ref="#ein-Mensch">sich</rs> dadurch zu gediegneren
+              Worten verbindlich.</l>
+            <l>Doch, kommt <rs ref="#ein-Mensch">er</rs> kutschirt mit leichtem Gepäck und gekritzelter Stümperdepesche,</l>
+            <l>Gleich schicke man <rs ref="#ein-Mensch">ihn</rs> über Schilda zurück, in des Nicolai Kalesche!</l>
+            <l><rs ref="#euch2">Euch</rs> aber, zur Gunst und <rs ref="#der-Liebe">zur Liebe</rs> geneigt, weissage <rs ref="#der-Comödiendichter">der Dichter</rs> vertraulich</l>
+            <l><rs ref="#des-Stücks">Des Gedichts</rs> Vorzug, wie <rs ref="#der-Comödiendichter">er</rs> selbst <rs ref="#des-Stücks">es</rs> versteht, denn <rs ref="#der-Comödiendichter">er</rs> hält <rs ref="#des-Stücks">es</rs> für hübsch und
+              erbaulich:</l>
+            <l><rs ref="#euch2">Ihr</rs> findet darin, bei sonstigem Spaß, auch Rath und nützliche Lehre,</l>
+            <l>Und Alles zum Trotz dem Verkehrten <rs ref="#der-Zeit">der Zeit</rs> und dem Trefflichen Alles zur Ehre.</l>
+            <l><rs ref="#euch2">Ihr</rs> findet darin manch witziges Wort und manche gefällige Wendung,</l>
+            <l>Und erfindende Kraft und Leichtigkeit und eine gewisse Vollendung;</l>
+            <l>Denn, wie <rs ref="#es">sich</rs> enthüllt jemaliger Zeit Volksthum in den epischen Liedern,</l>
+            <l>So spiegelt <rs ref="#es">es</rs> auch in Comödien <rs ref="#es">sich</rs>, mit allen Gelenken und Gliedern;</l>
+            <l>Drum hat <rs ref="#der-Comödiendichter">der Poet</rs> <rs ref="#euch2">euch</rs> <rs ref="#Deutschland">Deutschland</rs> selbst, <rs ref="#euch2">euch</rs> deutsche Gebrechen geschildert,</l>
+            <l>Doch hat <rs ref="#der-Comödiendichter">er</rs> den Spott durch freundlichen Scherz, durch hüpfende Verse gemildert.</l>
+            <l>Nicht wirkungslos bleibt <rs ref="#des-Stücks">dieses Gedicht</rs>, das glaubt nur meiner Betheurung,</l>
+            <l>Und der wahren Comödie Sternbild steht im erfreulichen Licht der Erneu'rung.</l>
+            <l>Der Aesthetiker wird's, da <rs ref="#des-Stücks">es</rs> nun da ist, als ganz alltäglich ermessen,</l>
+            <l>Doch bitt' ich, <rs ref="#euch2">ihr Herrn</rs>, des Columbus Ei nicht ganz und gar zu vergessen!</l>
+            <l><rs ref="#Liebhaber">Liebhaber</rs> jedoch, gern werden <rs ref="#Liebhaber">sie</rs> <rs ref="#des-Stücks">es</rs> anhören; und gern <rs ref="#des-Stücks">es</rs> in Lettern</l>
+            <l><pb n="103"/> Anschauen sofort, auch würden <rs ref="#Liebhaber">sie</rs> gern <rs ref="#des-Stücks">es</rs> vernehmen herab von den
+              Brettern;</l>
+            <l>Laut heischten <rs ref="#Liebhaber">sie</rs> dann, mit Heroldsruf, nach Weise der alten Thesiden:</l>
+            <l>Es erscheine <rs ref="#der-Chor">der Chor</rs>, es erscheine <rs ref="#der-Chor">der Chor <rs ref="#des-geliebten-Aristophaniden">des geliebten Aristophaniden</rs></rs>!</l>
+            <l>Wie bedarf <rs ref="#des-geliebten-Aristophaniden">er</rs> <rs ref="#des-Ruhms">des Ruhms</rs> und <rs ref="#der-Liebe">der Liebe</rs> so sehr, im Bewußtseyn gährender Triebe,</l>
+            <l><rs ref="#des-geliebten-Aristophaniden">Ihm</rs> werde zum Ruhm der Befreundeten Gunst; denn <rs ref="#des-Ruhms">Ruhm</rs> ist werdende Liebe.</l>
+            <l>Nun sey es genug! Stets reiht an <rs ref="#die-Zeit">die Zeit des musikaufwirbelnden Reigens</rs></l>
+            <l><rs ref="#die-Stunde-des-Ruh'ns">Sich</rs> <rs ref="#die-Stunde-des-Ruh'ns">die Stunde des Ruh'ns</rs> und ich lege sogleich an die Lippe den Finger des
+              Schweigens;</l>
+            <l>Denn <rs ref="#die-Zeit">die Zeit</rs> ist um, nun schlendert nach Haus, doch ja nicht rümpfet die Nasen,</l>
+            <l>Und begnügt <rs ref="#euch2">euch</rs> hübsch mit dem Lustspiel selbst, und den zierlichen
+              Schlußparabasen!</l>
+          </lg>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

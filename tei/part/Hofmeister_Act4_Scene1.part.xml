@@ -1,0 +1,326 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt</head>
+        <div type="scene">
+          <head>Erste Szene</head>
+          <stage>Zu <rs ref="#Insterburg-in-Preußen">Insterburg</rs>.</stage>
+          <stage><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Geheimer Rat</rs>. <rs ref="#major-ccc">Major</rs>.</stage>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Hier <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Bruder</rs> – Ich schweife wie Kain herum, unstät und flüchtig – Weißt <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">du</rs> was? <rs ref="#Die---------------Russen">Die
+              Russen</rs> sollen Krieg mit <rs ref="#den-Türken">den Türken</rs> haben; ich will nach <rs ref="#Königsberg">Königsberg</rs> gehn, um nähere
+              Nachrichten einzuziehen: ich will <rs ref="#majorin">mein Weib</rs> verlassen und in der Türkei sterben.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#major-ccc">Deine</rs> Ausschweifungen schlagen mich vollends zu <rs ref="#Boden-(zu-boden-schlagen)">Boden</rs>. – <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">O Himmel</rs>, muß <rs ref="#Strafen-(des-himmels,-ggü-d-familien-berg)">es</rs> denn von
+              allen Seiten stürmen? – Da lies den Brief vom <rs ref="#Professor-M-r">Professor M-r</rs>.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Ich kann nicht mehr lesen; ich hab <rs ref="#Ihren---------------Augen-(majors-phys)">meine Augen</rs> fast blind geweint.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>So will ich <rs ref="#major-ccc">dir</rs> vorlesen, damit <rs ref="#major-ccc">du</rs> siehst, daß <rs ref="#major-ccc">du</rs> nicht der einzige Vater seist, der
+              sich zu beklagen hat: »<rs ref="#fritz-(berg-sohn-geheimer-rat)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihr</rs> Sohn</rs> ist vor einiger Zeit wegen Bürgschaft gefänglich
+              eingezogen worden: <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> hat, wie <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> <rs ref="#Professor-M-r">mir</rs> vorgestern mit Tränen gestanden, nach fünf
+              vergeblich geschriebenen Briefen keine Hoffnung mehr, von <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Eurer Excellenz</rs> <pb n="61"/>
+              Verzeihung zu erhalten. <rs ref="#Professor-M-r">Ich</rs> redte <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> zu, <rs ref="#es20"><rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> zu beruhigen, bis <rs ref="#Professor-M-r">ich</rs> gleichfalls in
+              dieser Sache <rs ref="#Professor-M-r">mich</rs> vermittelt hätte</rs>: <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> versprach <rs ref="#es20">es</rs> <rs ref="#Professor-M-r">mir</rs>, ist aber ungeachtet <rs ref="#es20">dieses
+              Versprechens</rs> noch in derselben Nacht heimlich aus <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">dem Gefängnis</rs> entwischt. <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">Die
+              Schuldner</rs> haben <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> Steckbriefe nachsenden und <rs ref="#seinen-Namen-(fritz-berg)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">seinen</rs> Namen</rs> in <rs ref="#allen-Zeitungen">allen Zeitungen</rs> bekannt
+              machen wollen; <rs ref="#Professor-M-r">ich</rs> habe <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">sie</rs> aber dran verhindert und für <rs ref="#das-Geld-(ablösesummer-fritz-pätus-gefängnisstrafe)">die Summe</rs> gutgesagt, weil <rs ref="#Professor-M-r">ich</rs>
+              viel zu sehr überzeugt bin, daß <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Eure Excellenz</rs> diesen Schimpf nicht werden auf <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Dero</rs>
+              Familie</rs> kommen lassen. Übrigens habe die Ehre, in Erwartung <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Dero</rs> Entschlusses <rs ref="#Professor-M-r">mich</rs> mit
+              vollkommenster ...«</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Schreib <rs ref="#Professor-M-r">ihm</rs> zurück: <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">sie</rs> sollen <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> hängen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <rs ref="#Narrenspossen!"><p>Und <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)">die Familie</rs> –</p></rs>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Lächerlich! Es gibt keine Familie; wir haben keine Familie. <rs ref="#Narrenspossen!">Narrenspossen!</rs> <rs ref="#Die---------------Russen">Die Russen</rs>
+              sind meine Familie: ich will Griechisch werden.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Und noch keine Spur von <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">deiner</rs> Tochter</rs>?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Was sagst <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">du</rs>?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Hast nicht <rs ref="#die-geringste-Nachricht-von-deiner-Tochter">die geringste Nachricht von <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">deiner</rs> Tochter</rs></rs>?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Laß mich zufrieden.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#Es8">Es</rs> ist doch <rs ref="#major-ccc">dein</rs> Ernst nicht, <rs ref="#Es8">nach <rs ref="#Königsberg">Königsberg</rs> zu reisen</rs>?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Wenn mag doch die Post abgehn von <rs ref="#Königsberg">Königsberg</rs> nach Warschau?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich werde <rs ref="#major-ccc">dich</rs> nicht fortlassen; <rs ref="#Es8">es</rs> ist nur umsonst. Meinst <rs ref="#major-ccc">du</rs>, <rs ref="#vernünftige-Leute">vernünftige Leute</rs>
+              werden <rs ref="#vernünftige-Leute">sich</rs> von <rs ref="#die-lächerliche-Seite-von-meinem---------------Mann-(charakterzüge,-gefühlnahes-temperament-major)"><rs ref="#major-ccc">deinen</rs> Phantasien</rs> übertölpeln lassen? Ich kündige <rs ref="#major-ccc">dir</rs> hiermit
+              Hausarrest an. Gegen <rs ref="#ein-Mann-wie-der-Herr-Major-von-Berg-(mann-vom-typ-majors)">Leute, wie du bist</rs>, muß <rs ref="#ein-Mensch-xxx">man</rs> Ernst gebrauchen, sonst verwandelt
+              <rs ref="#ihr-Gram-(kummer-leid-von-menschen-des-typ-majors)">sich</rs> <rs ref="#ihr-Gram-(kummer-leid-von-menschen-des-typ-majors)"><rs ref="#ein-Mann-wie-der-Herr-Major-von-Berg-(mann-vom-typ-majors)">ihr</rs> Gram</rs> in Narrheit.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR</speaker></rs>
+            <stage>weint.</stage>
+            <p><rs ref="#Ein-ganzes-Jahr-(seit-gustchen-weg-ist)">Ein ganzes Jahr</rs> – <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Bruder Geheimer Rat</rs> – <rs ref="#Ein-ganzes-Jahr-(seit-gustchen-weg-ist)">Ein ganzes Jahr</rs> – und niemand weiß, wohin <rs ref="#gustchen-(tochter-majors)">sie</rs>
+              gestoben oder geflogen ist.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Vielleicht tot –</p>
+            <pb n="62"/>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Vielleicht? – Gewiß tot – und wenn ich nur den Trost haben könnte, <rs ref="#gustchen-(tochter-majors)">sie</rs> noch zu
+              begraben – aber <rs ref="#gustchen-(tochter-majors)">sie</rs> muß <rs ref="#gustchen-(tochter-majors)">sich</rs> selbst umgebracht haben, weil mir niemand <rs ref="#die-geringste-Nachricht-von-deiner-Tochter">Anzeige</rs> von <rs ref="#gustchen-(tochter-majors)">ihr</rs>
+              geben kann. – <rs ref="#das44"><rs ref="#die-erste-beste---------------Kugel">Eine Kugel</rs> durch <rs ref="#den-Kopf-(majors-phys)">den Kopf</rs>, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Berg</rs>, oder einen Türkenpallasch</rs>; <rs ref="#das44">das</rs> wär eine
+              Victorie.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#Es9">Es</rs> ist ja eben so wohl möglich, <rs ref="#Es9">daß <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#laeuffer-ccc">den Läuffer</rs> irgendwo angetroffen und mit <rs ref="#laeuffer-ccc">dem</rs>
+              aus <rs ref="#Preußen">dem Lande</rs> gegangen</rs>. Gestern hat mich <rs ref="#graf_wermuth-ccc">Graf Wermuth</rs> besucht und hat mir gesagt, <rs ref="#graf_wermuth-ccc">er</rs>
+              sei <rs ref="#den--Abend-(als-läuffer-zu-wenzeslaus-kommt,-3,2)">denselben Abend</rs> noch in <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">eine Schule</rs> gekommen, wo <rs ref="#graf_wermuth-ccc">ihn</rs> <rs ref="#wenzeslaus">der Schulmeister</rs> nicht hab in
+              <rs ref="#eine-Kammer-(bei-wenzeslaus)">die Kammer</rs> lassen wollen: <rs ref="#graf_wermuth-ccc">er</rs> vermutet immer noch, <rs ref="#laeuffer-ccc">der Hofmeister</rs> habe drin gesteckt,
+              vielleicht <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">deine</rs> Tochter</rs> bei <rs ref="#laeuffer-ccc">ihm</rs>.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Wo ist <rs ref="#wenzeslaus">der Schulmeister</rs>? Wo ist <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">das Dorf</rs>? Und <rs ref="#graf_wermuth-ccc">der Schurke von Grafen</rs> ist nicht mit
+              Gewalt in <rs ref="#eine-Kammer-(bei-wenzeslaus)">die Kammer</rs> eingedrungen? Komm: wo ist <rs ref="#graf_wermuth-ccc">der Graf</rs>?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#graf_wermuth-ccc">Er</rs> wird wohl wieder im Hecht abgestiegen sein, wie gewöhnlich.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#Das8">O wenn ich <rs ref="#gustchen-(tochter-majors)">sie</rs> auffände – Wenn ich nur hoffen könnte, <rs ref="#gustchen-(tochter-majors)">sie</rs> noch einmal wieder zu sehen
+              – Hol mich <rs ref="#der-Teufel">der Kuckuck</rs>, so alt wie ich bin und abgegrämt und wahnwitzig; ja hol mich
+              <rs ref="#der-Teufel">der Teufel</rs>, dann wollt ich doch noch in <rs ref="#seinem-Leben-(majors)">meinem Leben</rs> wieder einmal lachen, das
+              letztemal laut lachen und <rs ref="#den-Kopf-(majors-phys)">meinen Kopf</rs> in <rs ref="#gustchen-(tochter-majors)">ihren</rs> entehrten Schoß legen und denn wieder
+              einmal heulen und denn – Adieu <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Berg</rs></rs>! <rs ref="#Das8">Das</rs> wäre mir gestorben, <rs ref="#Das8">das</rs> hieß' mir sanft und
+              selig <rs ref="#Gottes-(christlich)">im Herrn</rs> entschlafen. – Komm <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Bruder</rs>, <rs ref="#das45"><rs ref="#fritz-(berg-sohn-geheimer-rat)">dein Junge</rs> ist nur <rs ref="#ein-Spitzbube-(prädikativ-fritz)">ein Spitzbube</rs> geworden</rs>:
+              <rs ref="#das45">das</rs> ist nur Kleinigkeit; an allen Höfen gibt's <rs ref="#Spitzbuben">Spitzbuben</rs>; aber <rs ref="#das46"><rs ref="#gustchen-(tochter-majors)">meine Tochter</rs> ist <rs ref="#zur-Hure-(prädikativ-gustchen)">eine
+              Gassenhure</rs></rs>, <rs ref="#das46">das</rs> heiß ich <rs ref="#einem-Vater">einem Vater</rs> Freud machen: vielleicht hat <rs ref="#gustchen-(tochter-majors)">sie</rs> schon drei
+              Lilien auf dem Rücken. – Vivat <rs ref="#einen-Hofmeister-(unbest.)">die Hofmeister</rs> und daß <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">der Teufel</rs> <rs ref="#einen-Hofmeister-(unbest.)">sie</rs> holt! Amen.
+                <stage>Gehn ab.</stage></p>
+            <pb n="63"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

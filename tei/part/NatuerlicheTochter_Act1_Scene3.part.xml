@@ -1,0 +1,212 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug</head>
+        <stage>Dichter Wald.</stage>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#koenig">König</rs>. <rs ref="#graf">Graf</rs>.</stage>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <l>Kennst <rs ref="#graf">du</rs> den Anlaß <rs ref="#der-Begebenheit">der Begebenheit</rs>?</l>
+          </sp>
+          <sp who="#graf">
+            <rs ref="#graf"><speaker>GRAF.</speaker></rs>
+            <lg>
+              <l>Vor meinen Augen hat <rs ref="#der-Begebenheit">sie</rs> <rs ref="#der-Begebenheit">sich</rs> ereignet.</l>
+              <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn"><l>Ein starker Trupp von Reitern, <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">welcher</rs> <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">sich</rs></l>
+              <l>Durch <rs ref="#Zufall">Zufall</rs> von <rs ref="#der-Jagd">der Jagd</rs> getrennt gesehn</rs>,</l>
+              <l>Geführt von <rs ref="#eugenie">dieser Schönen</rs>, zeigte <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">sich</rs></l>
+              <l>Auf jener Klippen waldbewachsner Höhe.</l>
+              <l><rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">Sie</rs> hören, sehen unten in <rs ref="#Tal">dem Tal</rs></l>
+              <l>Den Jagdgebrauch vollendet. Sehn <rs ref="#Der-edle-Hirsch">den Hirsch</rs></l>
+              <l>Als Beute liegen <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn"><rs ref="#Der-edle-Hirsch">seiner</rs> kläffenden</l>
+              <l>Verfolger</rs>. Schnell zerstreuet <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">sich</rs> <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">die Schar</rs>,</l>
+              <l>Und <rs ref="#jeder">jeder</rs> sucht <rs ref="#jeder">sich</rs> einzeln <rs ref="#jeder">seinen</rs> Pfad,</l>
+              <l>Hier oder dort, mehr oder weniger</l>
+              <l>Durch einen Umweg. <rs ref="#eugenie">Sie</rs> allein besinnt</l>
+              <l><rs ref="#eugenie">Sich</rs> keinen Augenblick und nötiget</l>
+              <l><rs ref="#raschem-Pferde"><rs ref="#eugenie">Ihr</rs> Pferd</rs> von <rs ref="#Klipp">Klipp</rs>' zu <rs ref="#Klipp">Klippe</rs>, grad herein.</l>
+              <l><rs ref="#Des-Frevels">Des Frevels</rs> Glück betrachten <rs ref="#uns-/-wir">wir</rs> erstaunt;</l>
+              <l>Denn <rs ref="#eugenie">ihr</rs> gelingt es eine Weile, doch</l>
+              <l>Am untern steilen Abhang gehn <rs ref="#raschem-Pferde">dem Pferde</rs></l>
+              <l>Die letzten, schmalen Klippenstufen aus,</l>
+              <l><rs ref="#raschem-Pferde">Es</rs> stürzt herunter, <rs ref="#eugenie">sie</rs> mit <rs ref="#raschem-Pferde">ihm</rs>. So viel</l>
+              <l>Konnt' ich bemerken, eh' <rs ref="#der-Menge-Drang">der Menge Drang</rs></l>
+              <l><rs ref="#eugenie">Sie</rs> mir verdeckte. Doch ich hörte bald</l>
+              <l>Nach <rs ref="#deinen-Wundarzt"><rs ref="#koenig">deinem</rs> Arzte</rs> rufen. So erschein' ich nun</l>
+              <l>Auf <rs ref="#koenig">deinen</rs> Wink, <rs ref="#der-Begebenheit">den Vorfall</rs> zu berichten.</l>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <lg>
+              <l>O möge <rs ref="#eugenie">sie</rs> <rs ref="#herzog">ihm</rs> bleiben! Fürchterlich</l>
+              <l>Ist <rs ref="#einer,-der-nichts-zu-verlieren-hat">einer, <rs ref="#einer,-der-nichts-zu-verlieren-hat">der</rs> nichts zu verlieren hat</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#graf">
+            <rs ref="#graf"><speaker>GRAF.</speaker></rs>
+            <lg>
+              <l>So hat <rs ref="#herzog">ihm</rs> dieser Schrecken <rs ref="#das-Geheimnis-(herzog-koenig)">das Geheimnis</rs></l>
+              <l>Auf einmal abgezwungen, <rs ref="#das-Geheimnis-(herzog-koenig)">das</rs> <rs ref="#herzog">er</rs> sonst</l>
+              <l>Mit so viel Klugheit zu verbergen strebte?</l>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <l><rs ref="#herzog">Er</rs> hatte schon <rs ref="#herzog">sich</rs> völlig mir vertraut.</l>
+          </sp>
+          <sp who="#graf">
+            <rs ref="#graf"><speaker>GRAF.</speaker></rs>
+            <lg>
+              <l>Die Lippen öffnet <rs ref="#herzog">ihm</rs> <rs ref="#der-Fürstin-Tod"><rs ref="#Die-Fürstin-(eugenie-Mutter)">der Fürstin</rs> Tod</rs>,</l>
+              <l>Nun zu bekennen, was für <rs ref="#dein-Hof-(könig)">Hof</rs> und <rs ref="#Stadt">Stadt</rs></l>
+              <l><rs ref="#vom-Geheimnis">Ein offenbar Geheimnis</rs> lange war.</l>
+              <l>Es ist ein eigner, grillenhafter Zug,</l>
+              <l>Daß <rs ref="#uns-/-wir">wir</rs> durch Schweigen das Geschehene</l>
+              <l>Für <rs ref="#uns-/-wir">uns</rs> und <rs ref="#andre">andre</rs> zu vernichten glauben.</l>
+              <pb n="220"/>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <lg>
+              <l>O laß <rs ref="#dem-Menschen">dem Menschen</rs> diesen edlen Stolz.</l>
+              <l>Gar vieles kann, gar vieles muß geschehn,</l>
+              <l>Was <rs ref="#Man">man</rs> mit <rs ref="#Worten">Worten</rs> nicht bekennen darf.</l>
+            </lg>
+          </sp>
+          <sp who="#graf">
+            <rs ref="#graf"><speaker>GRAF.</speaker></rs>
+            <l><rs ref="#Man">Man</rs> bringt <rs ref="#eugenie">sie</rs>, fürcht' ich, ohne Leben her!</l>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <l>Welch unerwartet, schreckliches Ereignis!</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

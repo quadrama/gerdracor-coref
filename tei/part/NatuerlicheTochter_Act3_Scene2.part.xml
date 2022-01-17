@@ -1,0 +1,393 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Aufzug</head>
+        <stage>Vorzimmer <rs ref="#herzog">des Herzogs</rs>, prächtig, modern.</stage>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#herzog">Herzog</rs>. <rs ref="#sekretaer">Sekretär</rs>.</stage>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#ans-Licht">Unsel'ges Licht</rs>! <rs ref="#ans-Licht">du</rs> rufst mich auf <rs ref="#des-Lebens">zum Leben</rs>,</l>
+              <l>Mich zum Bewußtsein <rs ref="#Welt">dieser Welt</rs> zurück</l>
+              <l>Und meiner selbst. Wie öde, hohl und leer</l>
+              <l>Liegt alles vor mir da, und ausgebrannt,</l>
+              <l>Ein großer Schutt, die Stätte <rs ref="#meines-Glücks-(herzog)">meines Glücks</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#jeder-von-den-Deinen,-die-um-dich---------------In-dieser-Stunde-leiden">jeder von den Deinen, <rs ref="#jeder-von-den-Deinen,-die-um-dich---------------In-dieser-Stunde-leiden">die</rs> um <rs ref="#herzog">dich</rs></l>
+              <l>In dieser Stunde leiden</rs>, einen Teil</l>
+              <l>Von <rs ref="#deinen-Schmerzen-(herzog)"><rs ref="#herzog">deinen</rs> Schmerzen</rs> übertragen könnte,</l>
+              <l><rs ref="#herzog">Du</rs> fühltest <rs ref="#herzog">dich</rs> erleichtert und gestärkt.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#Der-Schmerz-um-Liebe">Der Schmerz um <rs ref="#Zur-Liebe">Liebe</rs></rs>, wie <rs ref="#Zur-Liebe">die Liebe</rs>, bleibt</l>
+              <l>Unteilbar und unendlich. Fühl' ich doch,</l>
+              <l>Welch ungeheures Unglück <rs ref="#den">den</rs> betrifft,</l>
+              <l><rs ref="#den">Der</rs> <rs ref="#den">seines</rs> Tags gewohntes Gut vermißt.</l>
+              <l>Warum o! laßt <rs ref="#eugenie">ihr</rs> <rs ref="#die-bekannten-Wände">die bekannten Wände</rs></l>
+              <l>Mit Farb' und Gold mir noch entgegenscheinen,</l>
+              <l><rs ref="#die-bekannten-Wände">Die</rs> mich an gestern, mich an ehegestern,</l>
+              <l>An jenen Zustand meines vollen Glücks</l>
+              <l>Mich kalt erinnern! O warum verhüllet</l>
+              <l><rs ref="#sekretaer">Ihr</rs> nicht Gemach und <rs ref="#dieser-Saal">Saal</rs> mit schwarzem Krepp!</l>
+              <l>Daß, finster wie mein Innres, auch von außen</l>
+              <l>Ein ewig nächt'ger Schatten mich umfange.</l>
+              <pb n="252"/>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>O möchte doch <rs ref="#das-viele,-das-dir-bleibt---------------Nach-dem-Verlust">das viele, <rs ref="#das-viele,-das-dir-bleibt---------------Nach-dem-Verlust">das</rs> <rs ref="#herzog">dir</rs> bleibt</l>
+              <l>Nach <rs ref="#dem-Verlust">dem Verlust</rs></rs>, als etwas <rs ref="#herzog">dir</rs> erscheinen.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Ein geistverlaßner, körperlicher Traum!</l>
+              <l><rs ref="#eugenie">Sie</rs> war die Seele <rs ref="#meines-Hauses-(herzog)">dieses ganzen Hauses</rs>.</l>
+              <l>Wie schwebte beim Erwachen sonst <rs ref="#das-Bild---------------Des-holden-Kindes">das Bild</l>
+              <l><rs ref="#eugenie">Des holden Kindes</rs></rs> dringend mir entgegen!</l>
+              <l>Hier fand ich oft <rs ref="#das-Bild---------------Des-holden-Kindes">ein Blatt von <rs ref="#deine-Hand-(eugenie)"><rs ref="#eugenie">ihrer</rs> Hand</rs></rs>,</l>
+              <l><rs ref="#das-Bild---------------Des-holden-Kindes">Ein geistreich, herzlich Blatt</rs>, zum Morgengruß.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Wie drückte nicht <rs ref="#der-Wunsch">der Wunsch</rs>, <rs ref="#herzog">dich</rs> zu ergetzen,</l>
+              <l><rs ref="#der-Wunsch">Sich</rs> dichtrisch oft in frühen Reimen aus.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#Hoffnung">Die Hoffnung</rs>, <rs ref="#eugenie">sie</rs> zu sehen, gab den Stunden</l>
+              <l>Des mühevollen Tags den einz'gen Reiz.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Wie oft bei Hindernis und Zögrung hat</l>
+              <l><rs ref="#Man">Man</rs> ungeduldig, wie nach der Geliebten</l>
+              <l>Den raschen Jüngling, <rs ref="#herzog">dich</rs> nach <rs ref="#eugenie">ihr</rs> gesehn.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Vergleiche doch <rs ref="#die-jugendliche-Glut,---------------Die-selbstischen-Besitz-verzehrend-hascht">die jugendliche Glut,</l>
+              <l><rs ref="#die-jugendliche-Glut,---------------Die-selbstischen-Besitz-verzehrend-hascht">Die</rs> selbstischen Besitz verzehrend hascht</rs>,</l>
+              <l>Nicht <rs ref="#dem-Gefühl-des-Vaters">dem Gefühl <rs ref="#Des-Vaters">des Vaters</rs>, <rs ref="#Des-Vaters">der</rs> entzückt</rs>,</l>
+              <l>In heil'gem Anschaun stille hingegeben,</l>
+              <l><rs ref="#dem-Gefühl-des-Vaters">Sich</rs> an Entwicklung wunderbarer Kräfte,</l>
+              <l><rs ref="#dem-Gefühl-des-Vaters">Sich</rs> an der Bildung Riesenschritten freut.</l>
+              <l><rs ref="#Zur-Liebe">Der Liebe</rs> Sehnsucht fordert Gegenwart;</l>
+              <l>Doch <rs ref="#Zukunft">Zukunft</rs> ist <rs ref="#Des-Vaters">des Vaters</rs> Eigentum.</l>
+              <l>Dort liegen <rs ref="#Des-Vaters">seiner</rs> Hoffnung weite Felder,</l>
+              <l>Dort <rs ref="#Des-Vaters">seiner</rs> Saaten keimender Genuß.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>O Jammer! diese grenzenlose Wonne,</l>
+              <l><rs ref="#Dies-ewig-frische-Glück">Dies ewig frische Glück</rs> verlorst <rs ref="#herzog">du</rs> nun.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Verlor ich's? War <rs ref="#Dies-ewig-frische-Glück">es</rs> doch <rs ref="#im-Augenblick">im Augenblick</rs></l>
+              <l>Vor meiner Seele noch im vollen Glanz.</l>
+              <l>Ja, ich verlor's! <rs ref="#sekretaer">du</rs> rufst's, <rs ref="#sekretaer">Unglücklicher</rs>,</l>
+              <l>Die öde Stunde ruft mir's wieder zu.</l>
+              <l>Ja, ich verlor's! So strömt, <rs ref="#ihr">ihr</rs> <rs ref="#ihr">Klagen</rs>, denn!</l>
+              <l>Zerstöre, <rs ref="#Jammer">Jammer</rs>, <rs ref="#diesen-festen-Bau,---------------Den-ein-zu-günstig-Alter-noch-verschont">diesen festen Bau,</l>
+              <l><rs ref="#diesen-festen-Bau,---------------Den-ein-zu-günstig-Alter-noch-verschont">Den</rs> ein zu günstig Alter noch verschont</rs>.</l>
+              <l>Verhaßt sei mir <rs ref="#das-Bleibende">das Bleibende</rs>, verhaßt,</l>
+              <l>Was mir in <rs ref="#das-Bleibende">seiner</rs> Dauer <rs ref="#Stolz">Stolz</rs> erscheint,</l>
+              <l>Erwünscht, was fließt und schwankt. <rs ref="#Ihr">Ihr</rs> <rs ref="#Ihr">Fluten</rs>, schwellt,</l>
+              <l>Zerreißt die Dämme, wandelt Land in <rs ref="#Seen">See</rs>!</l>
+              <l><pb n="253"/> Eröffne <rs ref="#wildes-Meer">deine</rs> Schlünde, <rs ref="#wildes-Meer">wildes Meer</rs>,</l>
+              <l>Verschlinge <rs ref="#Schiff">Schiff</rs> und <rs ref="#Mann">Mann</rs> und <rs ref="#Schätze">Schätze</rs>! Weit</l>
+              <l>Verbreitet <rs ref="#kriegerischen-Reihen">euch</rs>, <rs ref="#kriegerischen-Reihen">ihr</rs> <rs ref="#kriegerischen-Reihen">kriegerischen Reihen</rs>,</l>
+              <l>Und häuft auf blut'gen Fluren <rs ref="#des-Todes">Tod</rs> auf <rs ref="#des-Todes">Tod</rs>!</l>
+              <l>Entzünde, <rs ref="#Strahl-des-Himmels">Strahl <rs ref="#Himmel-(göttliche-Sphäre)">des Himmels</rs></rs>, <rs ref="#Strahl-des-Himmels">dich</rs> <rs ref="#Leere">im Leeren</rs></l>
+              <l>Und triff <rs ref="#der-kühnen-Türme-sichres-Haupt">der kühnen Türme sichres Haupt</rs>!</l>
+              <l>Zertrümmr', entzünde <rs ref="#der-kühnen-Türme-sichres-Haupt">sie</rs> und geißle weit</l>
+              <l>Im Stadtgedräng der Flamme Wut umher,</l>
+              <l>Daß ich, von <rs ref="#Jammer">allem Jammer</rs> rings umfangen,</l>
+              <l><rs ref="#Dem-Schicksal-(herzog)">Dem Schicksal</rs> mich ergebe, <rs ref="#Dem-Schicksal-(herzog)">das</rs> mich traf!</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Das ungeheuer Unerwartete</l>
+              <l>Bedrängt <rs ref="#herzog">dich</rs> fürchterlich, <rs ref="#herzog">erhabner Mann</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Wohl unerwartet kam's, nicht ungewarnt.</l>
+              <l>In <rs ref="#meinen-Armen-(herzog)">meinen Armen</rs> ließ ein guter Geist</l>
+              <l><rs ref="#eugenie">Sie</rs> von <rs ref="#der-Toten">den Toten</rs> wieder auferstehn</l>
+              <l>Und zeigte mir gelind, vorübereilend,</l>
+              <l>Ein Schreckliches, nun ewig Bleibendes.</l>
+              <l>Da sollt' ich strafen <rs ref="#Verwegenheit">die Verwegenheit</rs>,</l>
+              <l>Dem Übermut mich scheltend widersetzen,</l>
+              <l>Verbieten <rs ref="#jene-Raserei,-die,-sich---------------Unsterblich,-unverwundbar-wähnend,-blind,---------------Wetteifernd-mit-dem-Vogel,-sich-durch-Wald---------------Und-Fluß-und-Sträuche-von-dem-Felsen-stürzt">jene Raserei, <rs ref="#jene-Raserei,-die,-sich---------------Unsterblich,-unverwundbar-wähnend,-blind,---------------Wetteifernd-mit-dem-Vogel,-sich-durch-Wald---------------Und-Fluß-und-Sträuche-von-dem-Felsen-stürzt">die</rs>, <rs ref="#jene-Raserei,-die,-sich---------------Unsterblich,-unverwundbar-wähnend,-blind,---------------Wetteifernd-mit-dem-Vogel,-sich-durch-Wald---------------Und-Fluß-und-Sträuche-von-dem-Felsen-stürzt">sich</rs></l>
+              <l>Unsterblich, unverwundbar wähnend, blind,</l>
+              <l>Wetteifernd mit <rs ref="#ein-Vogel">dem Vogel</rs>, <rs ref="#jene-Raserei,-die,-sich---------------Unsterblich,-unverwundbar-wähnend,-blind,---------------Wetteifernd-mit-dem-Vogel,-sich-durch-Wald---------------Und-Fluß-und-Sträuche-von-dem-Felsen-stürzt">sich</rs> durch <rs ref="#Wald">Wald</rs></l>
+              <l>Und <rs ref="#Fluß">Fluß</rs> und Sträuche von <rs ref="#Vom-Felsen">dem Felsen</rs> stürzt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Was oft und glücklich <rs ref="#uns-/-wir">unsre</rs> Besten tun,</l>
+              <l>Wie sollt' es <rs ref="#herzog">dir</rs> <rs ref="#des-Unglücks-Ahnung">des Unglücks Ahnung</rs> bringen?</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#des-Unglücks-Ahnung">Die Ahnung dieser Leiden</rs> fühlt' ich wohl,</l>
+              <l>Als ich zum letztenmal – Zum letztenmal!</l>
+              <l><rs ref="#sekretaer">Du</rs> sprichst es aus, <rs ref="#das-fürchterliche-Wort,---------------Das-deinen-Weg-mit-Finsternis-umzieht">das fürchterliche Wort,</l>
+              <l><rs ref="#das-fürchterliche-Wort,---------------Das-deinen-Weg-mit-Finsternis-umzieht">Das</rs> <rs ref="#du">deinen</rs> Weg mit Finsternis umzieht</rs>.</l>
+              <l>O hätt' ich <rs ref="#eugenie">sie</rs> nur einmal noch gesehn!</l>
+              <l>Vielleicht war dieses Unglück abzuleiten.</l>
+              <l>Ich hätte flehentlich gebeten, <rs ref="#eugenie">sie</rs> als <rs ref="#Des-Vaters">Vater</rs></l>
+              <l>Zum treulichsten ermahnt, <rs ref="#eugenie">sich</rs> mir zu schonen</l>
+              <l>Und von der Wut tollkühner Reiterei</l>
+              <l>Um <rs ref="#herzog-/-eugenie">unsres</rs> Glückes willen abzustehn.</l>
+              <l>Ach, diese Stunde war mir nicht gegönnt.</l>
+              <l>Und nun vermiss' ich <rs ref="#eugenie">mein geliebtes Kind</rs>!</l>
+              <l><rs ref="#eugenie">Sie</rs> ist dahin! Verwegner ward <rs ref="#eugenie">sie</rs> nur</l>
+              <l>Durch <rs ref="#diesem-Fall-(eugenie-ist-vom-Felsen-gefallen)">jenen Sturz, <rs ref="#diesem-Fall-(eugenie-ist-vom-Felsen-gefallen)">dem</rs> <rs ref="#eugenie">sie</rs> so leicht entrann</rs>.</l>
+              <l><pb n="254"/> Und niemand, <rs ref="#eugenie">sie</rs> zu warnen, <rs ref="#eugenie">sie</rs> zu leiten!</l>
+              <l>Entwachsen war <rs ref="#eugenie">sie</rs> dieser Frauenzucht.</l>
+              <l>In <rs ref="#welchen-Händen">welchen Händen</rs> ließ ich <rs ref="#eugenie">solchen Schatz</rs>?</l>
+              <l><rs ref="#welchen-Händen">Verzärtelnden, nachgieb'gen Weiberhänden</rs>.</l>
+              <l>Kein festes Wort, den Willen <rs ref="#eugenie">meines Kinds</rs></l>
+              <l>Zu mäßiger Vernünftigkeit zu lenken!</l>
+              <l>Zur unbedingten Freiheit ließ <rs ref="#Man">man</rs> <rs ref="#eugenie">ihr</rs>,</l>
+              <l>Zu jedem kühnen Wagnis offnes Feld.</l>
+              <l>Ich fühlt' <rs ref="#es">es</rs> oft und sagt' <rs ref="#es">es</rs> mir nicht klar:</l>
+              <l><rs ref="#hofmeisterin">Bei diesem Weibe</rs> war <rs ref="#eugenie">sie</rs> schlecht verwahrt.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>O! tadle nicht <rs ref="#hofmeisterin">die Unglückselige</rs>!</l>
+              <l>Vom tiefsten Schmerz begleitet, irrt <rs ref="#hofmeisterin">sie</rs> nun,</l>
+              <l>Wer weiß, in <rs ref="#das-Land-(Reich)">welche Lande</rs>, trostlos hin.</l>
+              <l><rs ref="#hofmeisterin">Sie</rs> ist entflohn. Denn <rs ref="#wer2">wer</rs> vermöchte <rs ref="#herzog">dir</rs></l>
+              <l>Ins Angesicht zu sehen, <rs ref="#wer2">der</rs> auch nur</l>
+              <l>Den fernsten Vorwurf zu befürchten hätte.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>O! laß mich ungerecht auf <rs ref="#andre">andre</rs> zürnen,</l>
+              <l>Daß ich mich nicht verzweifelnd selbst zerreiße.</l>
+              <l>Wohl trag' ich selbst <rs ref="#Schuld">die Schuld</rs> und trag' <rs ref="#Schuld">sie</rs> schwer.</l>
+              <l>Denn rief ich nicht mit törigem Beginnen</l>
+              <l><rs ref="#die-Gefahr">Gefahr</rs> und <rs ref="#des-Todes">Tod</rs> auf dieses teure Haupt?</l>
+              <l><rs ref="#Sie-überall-zu-sehn-als-Meisterin"><rs ref="#eugenie">Sie</rs> überall zu sehn als Meisterin</rs>,</l>
+              <l><rs ref="#Sie-überall-zu-sehn-als-Meisterin">Das</rs> war <rs ref="#mein-Stolz-(herzog)">mein Stolz</rs>! Zu teuer büß' ich <rs ref="#mein-Stolz-(herzog)">ihn</rs>.</l>
+              <l>Zu <rs ref="#Vom-Pferd">Pferde</rs> sollte <rs ref="#eugenie">sie</rs>, <rs ref="#im-Wagen">im Wagen</rs> <rs ref="#eugenie">sie</rs>,</l>
+              <l><rs ref="#Vom-Pferd">Die Rosse</rs> bändigend, als Heldin glänzen.</l>
+              <l>Ins Wasser tauchend, schwimmend, schien <rs ref="#eugenie">sie</rs> mir</l>
+              <l><rs ref="#Im-ird'schen-Element">Den Elementen</rs> göttlich zu gebieten.</l>
+              <l>So, hieß es, kann <rs ref="#eugenie">sie</rs> <rs ref="#die-Gefahr">jeglicher Gefahr</rs></l>
+              <l>Dereinst entgehen. Statt <rs ref="#eugenie">sie</rs> zu bewahren,</l>
+              <l>Gibt <rs ref="#Übung-des-Gefährlichen">Übung <rs ref="#die-Gefahr">zur Gefahr</rs></rs> <rs ref="#des-Todes">den Tod</rs> <rs ref="#eugenie">ihr</rs> nun.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Übung-ritterlicher-Tugend">Des edlen Pflichtgefühles Übung</rs> gibt,</l>
+              <l>Ach! <rs ref="#eugenie"><rs ref="#uns-/-wir">unsrer</rs> Unvergeßlichen</rs> <rs ref="#des-Todes">den Tod</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <l>Erkläre <rs ref="#sekretaer">dich</rs>!</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Und weck' ich <rs ref="#Der-Schmerz-um-Liebe">diesen Schmerz</rs></l>
+              <l>Durch Schildrung kindlich edlen Unternehmens?</l>
+              <rs ref="#Ihr-alter,-erster,-hochgeliebter-Freund"><l><rs ref="#eugenie">Ihr</rs> alter, erster, hochgeliebter Freund</l></rs>
+              <l>Und <rs ref="#Ihr-alter,-erster,-hochgeliebter-Freund">Lehrer</rs> wohnt von <rs ref="#Stadt">dieser Stadt</rs> entfernt,</l>
+              <l>Verschränkt in <rs ref="#Trübsinn">Trübsinn</rs>, Krankheit, Menschenhaß.</l>
+              <l>Nur <rs ref="#eugenie">sie</rs> allein vermocht' <rs ref="#Ihr-alter,-erster,-hochgeliebter-Freund">ihn</rs> zu erheitern;</l>
+              <l><pb n="255"/> Als Leidenschaft empfand <rs ref="#eugenie">sie</rs> diese Pflicht;</l>
+              <l>Nur allzu oft verlangte <rs ref="#eugenie">sie</rs> hinüber,</l>
+              <l>Und oft versagte <rs ref="#Man">man's</rs>. Nun hatte <rs ref="#eugenie">sie's</rs></l>
+              <l>Planmäßig angelegt: <rs ref="#eugenie">sie</rs> nutzte kühn</l>
+              <l>Des Morgenrittes abgemeßne Stunden</l>
+              <l>Mit ungeheurer Schnelligkeit, zum Zweck,</l>
+              <l><rs ref="#Ihr-alter,-erster,-hochgeliebter-Freund">Den alten, vielgeliebten Mann</rs> zu sehn.</l>
+              <l><rs ref="#Ein-einz'ger-Reitknecht">Ein einz'ger Reitknecht</rs> nur war <rs ref="#vom-Geheimnis">im Geheimnis</rs>,</l>
+              <l><rs ref="#Ein-einz'ger-Reitknecht">Er</rs> unterlegt' <rs ref="#eugenie">ihr</rs> jedesmal <rs ref="#Vom-Pferd">das Pferd</rs>,</l>
+              <l>Wie <rs ref="#uns-/-wir">wir</rs> vermuten; denn auch <rs ref="#Ein-einz'ger-Reitknecht">er</rs> ist fort.</l>
+              <l><rs ref="#Ein-einz'ger-Reitknecht">Der arme Mensch</rs> und <rs ref="#eugenie">jene Frau</rs> verloren</l>
+              <l>Aus <rs ref="#Furcht">Furcht</rs> vor <rs ref="#herzog">dir</rs> <rs ref="#eugenie">sich</rs> in <rs ref="#Welt">die weite Welt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#Die-Glücklichen,-die-noch-zu-fürchten-haben">Die Glücklichen, <rs ref="#Die-Glücklichen,-die-noch-zu-fürchten-haben">die</rs> noch zu fürchten haben</rs>,</l>
+              <l>Bei <rs ref="#Die-Glücklichen,-die-noch-zu-fürchten-haben">denen</rs> <rs ref="#Die-Glücklichen,-die-noch-zu-fürchten-haben">sich</rs> der Schmerz um <rs ref="#Die-Glücklichen,-die-noch-zu-fürchten-haben">ihres</rs> Herrn</l>
+              <l>Verlornes Heil in leicht verwundene,</l>
+              <l>In leicht gehobne Bangigkeit verwandelt!</l>
+              <l>Ich habe nichts zu fürchten! nichts zu hoffen!</l>
+              <l>Drum laß mich alles wissen; zeige mir</l>
+              <l>Den kleinsten Umstand an, ich bin gefaßt.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

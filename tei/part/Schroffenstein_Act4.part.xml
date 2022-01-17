@@ -1,0 +1,2048 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Erste Szene</head>
+          <stage><rs ref="#Rossitz">Rossitz</rs>. Zimmer <rs ref="#Schloss-in-Rossitz">im Schlosse</rs>.</stage>
+          <stage><rs ref="#rupert">Rupert</rs> und <rs ref="#santing">Santing</rs> treten auf.</stage>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l><rs ref="#daß-sich---------------Dem-Willen,-dem-leicht-widerruflichen,---------------Ein-Arm-gleich-beut,-der-fest-unwiderruflich---------------Die-Tat-ankettet">Das</rs> eben ist der Fluch der Macht, <rs ref="#daß-sich---------------Dem-Willen,-dem-leicht-widerruflichen,---------------Ein-Arm-gleich-beut,-der-fest-unwiderruflich---------------Die-Tat-ankettet">daß <rs ref="#Ein-Arm">sich</rs></l>
+              <l><rs ref="#Dem-Willen,-dem-leicht-widerruflichen">Dem Willen, <rs ref="#Dem-Willen,-dem-leicht-widerruflichen">dem</rs> leicht widerruflichen</rs>,</l>
+              <l><rs ref="#Ein-Arm">Ein Arm</rs> gleich beut, <rs ref="#Ein-Arm">der</rs> fest unwiderruflich</l>
+              <l><rs ref="#der-Tat">Die Tat</rs> ankettet</rs>. Nicht <rs ref="#ein-Zehnteil-des-Bösen">ein Zehnteil</rs> würd</l>
+              <l><rs ref="#Ein-Herr">Ein Herr</rs> <rs ref="#das-Böse">des Bösen</rs> tun, müßt <rs ref="#Ein-Herr">er</rs> <rs ref="#ein-Zehnteil-des-Bösen">es</rs> selbst</l>
+              <l>Mit <rs ref="#Ein-Herr">eignen</rs> Händen tun. Es heckt <rs ref="#Ein-Herr">sein</rs> bloßer</l>
+              <l>Gedanken Unheil aus, und <rs ref="#seiner-Knechte---------------Geringster"><rs ref="#Ein-Herr">seiner</rs> Knechte</l>
+              <l>Geringster</rs> hat den Vorteil über <rs ref="#Ein-Herr">ihn</rs>,</l>
+              <l>Daß <rs ref="#seiner-Knechte---------------Geringster">er</rs> <rs ref="#das-Böse">das Böse</rs> wollen darf.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Ich kann</l>
+              <l>Das Herrschen <rs ref="#rupert">dir</rs> nicht lehren, <rs ref="#rupert">du</rs> nicht das</l>
+              <l>Gehorchen mir. <rs ref="#Was-Dienen-ist">Was Dienen ist</rs>, <rs ref="#Was-Dienen-ist">das</rs> weiß</l>
+              <l>Ich auf ein Haar. Befiehl, daß ich <rs ref="#rupert">dir</rs> künftig</l>
+              <l>Nicht mehr gehorche, wohl so will ich <rs ref="#rupert">dir</rs></l>
+              <l>Gehorchen.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Dienen! Mir gehorchen! Dienen!</l>
+              <l>Sprichst <rs ref="#santing">du</rs> doch wie ein Neuling. Hast <rs ref="#santing">du</rs> mir</l>
+              <l>Gedient? Soll ich <rs ref="#santing">dir</rs> erklären, was</l>
+              <l><rs ref="#Ein-Dienst">Ein Dienst</rs> sei? Nützen, nützen soll <rs ref="#Ein-Dienst">er</rs>. – Was</l>
+              <l>Denn ist durch <rs ref="#santing">deinen</rs> mir geworden, als</l>
+              <l><rs ref="#Die-Reue">Der Reue</rs> ekelhaft Gefühl?</l>
+              <l><rs ref="#Es3">Es</rs> ist</l>
+              <l>Mir widerlich, ich <rs ref="#Es3">will's</rs> getan nicht haben.</l>
+              <l>Auf <rs ref="#santing">deine</rs> Kappe <rs ref="#Es3">nimm's</rs> – ich steck <rs ref="#santing">dich</rs> in</l>
+              <l><rs ref="#der-Schloßturm-(Rossitz)">Den Schloßturm</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Mich?</l>
+            <pb n="171"/>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Kommst <rs ref="#santing">du</rs> heraus, das schöne</l>
+              <l>Gebirgslehn wird <rs ref="#santing">dir</rs> nicht entgehn.</l>
+            </lg>
+            <stage><rs ref="#eustache">Eustache</rs> tritt auf.</stage>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf, zu <rs ref="#santing">Santing</rs>, halblaut.</stage>
+            <lg>
+              <l>Es bleibt</l>
+              <l>Dabei. In vierzehn Tagen bist <rs ref="#santing">du</rs> frei.</l>
+            </lg>
+            <stage>Zu <rs ref="#eustache">Eustache</rs>.</stage>
+            <l>Was willst <rs ref="#eustache">du</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>Stör ich?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>zu <rs ref="#santing">Santing</rs>.</stage>
+            <lg>
+              <l>Gehe! <rs ref="#Ruperts-Wille">Meinen Willen</rs></l>
+              <l>Weißt <rs ref="#santing">du</rs>. Solange ich kein Knecht, soll mir</l>
+              <l>Den Herrn ein andrer auf <rs ref="#Schloss-in-Rossitz">der Burg</rs> nicht spielen.</l>
+              <l>Den Zügel hab ich noch, sie sollen <rs ref="#die-Bevölkerung-von-Rossitz">sich</rs></l>
+              <l>Gelassen dran gewöhnen, müßten <rs ref="#die-Bevölkerung-von-Rossitz">sie</rs></l>
+              <l>Die Zähne <rs ref="#die-Bevölkerung-von-Rossitz">sich</rs> daran zerbeißen. Der</l>
+              <l>Zuerst <rs ref="#jeronimus">den Herold</rs> angetastet, hat</l>
+              <l><rs ref="#das-Beil">Das Beil</rs> verwirkt. – <rs ref="#santing">Dich</rs> steck ich in <rs ref="#der-Schloßturm-(Rossitz)">den Schloßturm</rs>.</l>
+              <l>– Kein Wort, sag ich, wenn <rs ref="#santing">dir</rs> <rs ref="#Santings-Leben"><rs ref="#santing">dein</rs> Leben</rs> lieb!</l>
+              <l><rs ref="#santing">Du</rs> hast ein Wort gedeutet, eigenmächtig,</l>
+              <l>Rebellisch <rs ref="#Ruperts-Wille"><rs ref="#rupert"><rs ref="#santing">deines</rs> Herren</rs> Willen</rs> mißbraucht –</l>
+              <l>– Ich schenk <rs ref="#santing">dir</rs> <rs ref="#Santings-Leben">'s Leben</rs>. Fort! Tritt ab.</l>
+            </lg>
+            <stage><rs ref="#santing">Santing</rs> ab. Zu <rs ref="#eustache">Eustache</rs>.</stage>
+            <l>Was willst <rs ref="#eustache">du</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l><rs ref="#rupert">Mein Herr</rs>, und <rs ref="#rupert">mein Gemahl</rs> –</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#eustache">du</rs></l>
+              <l><rs ref="#Eustaches-Rede,-die-in-3-2-anfing-">Die Rede, <rs ref="#Eustaches-Rede,-die-in-3-2-anfing-">die</rs> <rs ref="#eustache">du</rs> kürzlich hier begonnen</rs>,</l>
+              <l>Fortsetzen willst, so spar <rs ref="#Eustaches-Rede,-die-in-3-2-anfing-">es</rs> auf; <rs ref="#eustache">du</rs> siehst,</l>
+              <l>Ich bin soeben nicht gestimmt, <rs ref="#Eustaches-Rede,-die-in-3-2-anfing-">es</rs> an</l>
+              <l>Zu hören.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>Wenn ich <rs ref="#Unrecht">Unrecht</rs> <rs ref="#rupert">dir</rs> getan –</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>So werd ich mich vor <rs ref="#eustache">dir</rs> wohl reinigen müssen?</l>
+              <l>Soll ich etwa <rs ref="#das-Hofgesinde-Rossitz">das Hofgesinde</rs> rufen,</l>
+              <l>Und öffentlich <rs ref="#eustache">dir</rs> Rede stehn?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>O <rs ref="#rupert">mein</l>
+              <l>Gemahl</rs>, <rs ref="#ein-Weib">ein Weib</rs> glaubt gern an <rs ref="#ein-Weib">ihres</rs> Mannes</l>
+              <l>Unschuld, und küssen will ich <rs ref="#Ruperts-Hand"><rs ref="#rupert">deine</rs> Hand</rs></l>
+              <l><pb n="172"/> Mit Tränen, Freudentränen, wenn <rs ref="#Ruperts-Hand">sie</rs> rein</l>
+              <l>Von <rs ref="#der-Mord-an-Jeronimus">diesem Morde</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Wissen es <rs ref="#die-Bevölkerung-von-Rossitz">die Leute</rs>,</l>
+              <l><rs ref="#der-Mord-an-Jeronimus">Wie's</rs> zugegangen?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Selber spricht <rs ref="#der-Mord-an-Jeronimus">die Tat</rs>.</l>
+              <l><rs ref="#die-Bevölkerung-von-Rossitz">Das Volk</rs> war aufgehetzt von <rs ref="#santing">Santing</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Daß</l>
+              <l>Ich auf <rs ref="#Eustaches-Rufen"><rs ref="#eustache">dein</rs> Rufen</rs> an <rs ref="#das-Fenster-(Rossitz)">das Fenster</rs> nicht</l>
+              <l>Erschienen, ist mir selber unerklärlich,</l>
+              <l>Sehr schmerzhaft ist mir die Erinnerung.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Es würde fruchtlos doch gewesen sein.</l>
+              <l><rs ref="#jeronimus">Er</rs> sank so schleunig hin, daß jede Rettung,</l>
+              <l>Die schnellste selbst, zu spät gekommen wäre.</l>
+              <l>Auch ganz aus <rs ref="#die-Bevölkerung-von-Rossitz">seiner</rs> Schranke war <rs ref="#die-Bevölkerung-von-Rossitz">das Volk</rs>,</l>
+              <l>Und hätte nichts von <rs ref="#rupert">deinem</rs> Wort gehört.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Doch hätt ich mich gezeigt –</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>Nun freilich wohl.</l>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE</speaker></rs>
+            <stage>stürzt herein, umfaßt <rs ref="#eustache">Eustachens</rs> Füße.</stage>
+            <lg>
+              <l>Um <rs ref="#eustache">deine</rs> Hülfe, <rs ref="#eustache">Gnädigste</rs>! Erbarmung,</l>
+              <l><rs ref="#eustache">Gebieterin</rs>! Sie führen <rs ref="#Friedrich-(Mann-der-Kammerzofe)">ihn</rs> zum Tode,</l>
+              <l>Errettung von <rs ref="#der-Tod">dem Tod</rs>! Laß <rs ref="#Friedrich-(Mann-der-Kammerzofe)">ihn</rs>, laß mich,</l>
+              <l>Laß uns nicht aufgeopfert werden!</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#die_kammerzofe">Dich</rs>?</l>
+              <l>Bist <rs ref="#die_kammerzofe">du</rs> von Sinnen?</l>
+            </lg>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Friedrich-(Mann-der-Kammerzofe)">Meinen Friedrich</rs>. <rs ref="#Friedrich-(Mann-der-Kammerzofe)">Er</rs></l>
+              <l>Hat <rs ref="#jeronimus">ihn</rs> zuerst getroffen.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>Wen?</l>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <lg>
+              <rs ref="#jeronimus"><l>Den Ritter,</l>
+              <l><rs ref="#jeronimus">Den</rs> <rs ref="#rupert"><rs ref="#eustache">dein</rs> Gemahl</rs> geboten zu erschlagen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Geboten – ich! Den Teufel hab ich. – <rs ref="#santing">Santing</rs></l>
+              <l><rs ref="#der-Mord-an-Jeronimus">Hat's</rs> angestiftet!</l>
+            </lg>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE</speaker></rs>
+            <stage>steht auf.</stage>
+            <lg>
+              <l><rs ref="#santing">Santing</rs> <rs ref="#der-Mord-an-Jeronimus">hat's</rs> auf <rs ref="#Ruperts-Geheiß"><rs ref="#rupert">dein</rs></l>
+              <l>Geheiß</rs> gestiftet.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l><rs ref="#die_kammerzofe">Schlange, giftige</rs>!</l>
+              <l>Aus meinen Augen, fort!</l>
+            </lg>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <lg>
+              <l>Auf <rs ref="#Ruperts-Geheiß"><rs ref="#rupert">dein</rs> Geheiß</rs></l>
+              <l><pb n="173"/> <rs ref="#der-Mord-an-Jeronimus">Hat's</rs> <rs ref="#santing">Santing</rs> angestiftet. Selbst hab <rs ref="#wie-du's-dem-Santing-hast-befohlen">ich's</rs></l>
+              <l>Gehört, <rs ref="#wie-du's-dem-Santing-hast-befohlen">wie <rs ref="#rupert"><rs ref="#der-Mord-an-Jeronimus">du's</rs></rs> <rs ref="#santing">dem Santing</rs> hast befohlen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>– Gehört? – <rs ref="#die_kammerzofe">Du</rs> selbst?</l>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <lg>
+              <l>Ich stand im Schloßflur, stand</l>
+              <l>Dicht hinter <rs ref="#rupert">dir</rs>, ich hörte jedes Wort,</l>
+              <l>Doch <rs ref="#rupert">du</rs> warst blind vor Wut, und sahst mich nicht.</l>
+              <l>Es <rs ref="#wie-du's-dem-Santing-hast-befohlen">haben's</rs> außer mir noch zwei gehört.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>– 's ist gut. Tritt ab.</l>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <l>So schenkst <rs ref="#rupert">du</rs> <rs ref="#Friedrich-(Mann-der-Kammerzofe)">ihm</rs> das Leben?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>'s soll aufgeschoben sein.</l>
+          </sp>
+          <sp who="#die_kammerzofe">
+            <rs ref="#die_kammerzofe"><speaker>DIE KAMMERZOFE.</speaker></rs>
+            <lg>
+              <l>O Gott sei Dank!</l>
+              <l>Und <rs ref="#rupert">dir</rs> sei Dank, <rs ref="#rupert">mein bester Herr</rs>, <rs ref="#Friedrich-(Mann-der-Kammerzofe)">es</rs> ist</l>
+              <rs ref="#Ein-braver-Bursche,-der-sein-Leben-wird---------------An-deines-setzen"><l>Ein braver Bursche, <rs ref="#Ein-braver-Bursche,-der-sein-Leben-wird---------------An-deines-setzen">der</rs> <rs ref="#Ein-braver-Bursche,-der-sein-Leben-wird---------------An-deines-setzen">sein</rs> Leben wird</l>
+              <l>An <rs ref="#rupert">deines</rs> setzen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Gut, sag ich. Tritt ab.</l>
+            <stage><rs ref="#die_kammerzofe">Kammerzofe</rs> ab.</stage>
+            <stage><rs ref="#rupert">Rupert</rs> wirft <rs ref="#rupert">sich</rs> auf einen Sessel; <rs ref="#eustache">Eustache</rs> nähert <rs ref="#eustache">sich</rs> <rs ref="#rupert">ihm</rs>; Pause.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l><rs ref="#rupert">Mein teurer Freund</rs>. –</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Laß mich allein, <rs ref="#eustache">Eustache</rs>.</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>O laß mich bleiben. – O <rs ref="#dies-menschlich-schöne---------------Gefühl,-das-dich-bewegt">dies menschlich schöne</l>
+              <l>Gefühl, <rs ref="#dies-menschlich-schöne---------------Gefühl,-das-dich-bewegt">das</rs> <rs ref="#rupert">dich</rs> bewegt</rs>, löscht jeden Fleck,</l>
+              <l>Denn <rs ref="#Die-Reue">Reue</rs> ist die Unschuld der Gefallnen.</l>
+              <l>An <rs ref="#Die-Reue">ihrem</rs> Glanze weiden will ich mich,</l>
+              <l>Denn herrlicher bist <rs ref="#rupert">du</rs> mir nie erschienen,</l>
+              <l>Als jetzt.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l><rs ref="#Ein-Elender-bin-ich">Ein Elender bin ich</rs>. –</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#eustache">Du</rs> glaubst</l>
+              <l><rs ref="#Ein-Elender-bin-ich">Es</rs>. – Ah! <rs ref="#Der-Augenblick-nach-dem-Verbrechen---------------Ist-oft-der-schönste-in-dem-Menschenleben">Der Augenblick nach dem Verbrechen</l>
+              <l>Ist oft der schönste in dem Menschenleben</rs>,</l>
+              <l><rs ref="#du-weißt-es-nicht2"><rs ref="#rupert">Du</rs> <rs ref="#Der-Augenblick-nach-dem-Verbrechen---------------Ist-oft-der-schönste-in-dem-Menschenleben">weißt's</rs> nicht</rs> – ach, <rs ref="#du-weißt-es-nicht2"><rs ref="#rupert">du</rs> weißt <rs ref="#Der-Augenblick-nach-dem-Verbrechen---------------Ist-oft-der-schönste-in-dem-Menschenleben">es</rs> nicht</rs> und grade</l>
+              <l><rs ref="#du-weißt-es-nicht2">Das</rs> macht <rs ref="#rupert">dich</rs> herrlich. Denn nie besser ist</l>
+              <l><rs ref="#der-Mensch">Der Mensch</rs>, als wenn <rs ref="#der-Mensch">er</rs> <rs ref="#Wie-schlecht-er-ist">es</rs> recht innig fühlt,</l>
+              <l><rs ref="#Wie-schlecht-er-ist">Wie schlecht <rs ref="#der-Mensch">er</rs> ist</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Es kann mich keiner ehren,</l>
+              <l>Denn selbst ein Ekel bin ich mir.</l>
+              <pb n="174"/>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#der-sein-Urteil-selbst---------------Sich-spricht">Den</rs> soll</l>
+              <l>Kein Mensch verdammen, <rs ref="#der-sein-Urteil-selbst---------------Sich-spricht">der <rs ref="#der-sein-Urteil-selbst---------------Sich-spricht">sein</rs> Urteil selbst</l>
+              <l><rs ref="#der-sein-Urteil-selbst---------------Sich-spricht">Sich</rs> spricht</rs>. O hebe <rs ref="#rupert">dich</rs>! <rs ref="#rupert">Du</rs> bist so tief</l>
+              <l>Bei weitem nicht gesunken, als <rs ref="#rupert">du</rs> hoch</l>
+              <l><rs ref="#rupert">Dich</rs> heben kannst.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#wer-hat-mich-so-häßlich---------------Gemacht">wer hat mich so häßlich</l>
+              <l>Gemacht</rs>? O hassen will ich <rs ref="#wer-hat-mich-so-häßlich---------------Gemacht">ihn</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#rupert">Rupert</rs>!</l>
+              <l><rs ref="#rupert">Du</rs> könntest noch an <rs ref="#die-Rache">Rache</rs> denken?</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Ob</l>
+              <l>Ich an <rs ref="#die-Rache">die Rache</rs> denke? – Frage doch,</l>
+              <l>Ob ich noch lebe?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Ist es möglich? O</l>
+              <l>Nicht diesen Augenblick zum wenigsten</l>
+              <l>Wirst <rs ref="#rupert">du</rs> so bös beflecken – <rs ref="#Der-Teufel">Teufel</rs> nicht</l>
+              <l>In <rs ref="#rupert">deiner</rs> Seele dulden, wenn <rs ref="#ein-Engel">ein Engel</rs></l>
+              <l>Noch mit mir spricht aus <rs ref="#rupert">deinen</rs> Zügen.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Soll</l>
+              <l>Ich <rs ref="#eustache">dir</rs> etwa erzählen, daß <rs ref="#sylvester">Sylvester</rs></l>
+              <l><rs ref="#Viel-Böses">Viel Böses</rs> mir getan? Und soll <rs ref="#Viel-Böses">ich's</rs> <rs ref="#sylvester">ihm</rs></l>
+              <l>Verzeihn, als wär <rs ref="#Viel-Böses">es</rs> nur ein Weiberschmollen?</l>
+              <l><rs ref="#sylvester">Er</rs> hat mir freilich nur <rs ref="#Peter">den Sohn</rs> gemordet,</l>
+              <l><rs ref="#johann">Den Knaben</rs> auch, <rs ref="#johann">der</rs> lieb mir wie ein Sohn. –</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>O sprich's nicht aus! Wenn <rs ref="#rupert">dich</rs> <rs ref="#der-Mord-an-Jeronimus">die Tat</rs> gereut,</l>
+              <l>Die blutige, <rs ref="#der-Mord-an-Jeronimus">die</rs> <rs ref="#rupert">du</rs> gestiftet, wohl,</l>
+              <l>So zeig's, und ehre mindestens im Tode</l>
+              <l><rs ref="#jeronimus">Den Mann</rs>, mit <rs ref="#Jeronimus'-Leben"><rs ref="#jeronimus">dessen</rs> Leben</rs> <rs ref="#rupert">du</rs> gespielt.</l>
+              <l><rs ref="#jeronimus">Der Abgeschiedene</rs> hat <rs ref="#Unschuldig-ist-Sylvester">es</rs> beschworen:</l>
+              <l><rs ref="#Unschuldig-ist-Sylvester">Unschuldig ist <rs ref="#sylvester">Sylvester</rs></rs>!</l>
+            </lg>
+            <stage><rs ref="#rupert">Rupert</rs> sieht <rs ref="#eustache">ihr</rs> starr ins Gesicht.</stage>
+            <lg>
+              <rs ref="#So-unschuldig---------------An-Peters-Mord,-wie-wir-an-jenem-Anschlag---------------Auf-Agnes'-Leben"><l>So unschuldig</l>
+              <l>An <rs ref="#der-Mord-an-Peter"><rs ref="#Peter">Peters</rs> Mord</rs>, wie <rs ref="#eustache-/-rupert">wir</rs> an <rs ref="#Johanns-Übergriff-auf-Agnes">jenem Anschlag</l>
+              <l>Auf <rs ref="#Agnes'-Leben"><rs ref="#agnes">Agnes</rs>' Leben</rs></rs></rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Über <rs ref="#So-unschuldig---------------An-Peters-Mord,-wie-wir-an-jenem-Anschlag---------------Auf-Agnes'-Leben">die Vergleichung</rs>!</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Warum nicht <rs ref="#rupert">mein Gemahl</rs>? Denn <rs ref="#alles5">es</rs> liegt <rs ref="#alles5">alles</rs></l>
+              <l><pb n="175"/> Auf <rs ref="#Das-Haus-von-Rossitz-/-Das-Haus-Sylvesters,-Das-Haus-von-Warwand">beiden Seiten</rs> gleich, bis selbst auf die</l>
+              <l>Umstände noch der Tat. <rs ref="#rupert">Du</rs> fandst <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">Verdächt'ge</rs></l>
+              <l>Bei <rs ref="#Peters-Leiche"><rs ref="#rupert">deinem</rs> toten Kinde</rs>, so in <rs ref="#Warwand">Warwand</rs>;</l>
+              <l><rs ref="#rupert">Du</rs> hiebst <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sie</rs> nieder, so in <rs ref="#Warwand">Warwand</rs>; <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sie</rs></l>
+              <l>Gestanden Falsches, so in <rs ref="#Warwand">Warwand</rs>; <rs ref="#rupert">du</rs></l>
+              <l>Vertrautest <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">ihnen</rs>, so in <rs ref="#Warwand">Warwand</rs>. – Nein,</l>
+              <l><rs ref="#daß---------------Sylvester-selber-doch-dich-freispricht">Der einz'ge Umstand</rs> ist verschieden, <rs ref="#daß---------------Sylvester-selber-doch-dich-freispricht">daß</l>
+              <l><rs ref="#sylvester">Sylvester</rs> selber doch <rs ref="#rupert">dich</rs> freispricht</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>O</l>
+              <l>Gewendet, listig, haben <rs ref="#der-Familienzweig-aus-Warwand">sie</rs> das ganze</l>
+              <l>Verhältnis, mich, den Kläger, zum Verklagten</l>
+              <l>Gemacht. – Und um <rs ref="#das-Bubenstück,-Sylvesters-angeblicher-Plan">das Bubenstück, <rs ref="#das-Bubenstück,-Sylvesters-angeblicher-Plan">das</rs> mich</l>
+              <l>Der ganzen Welt als <rs ref="#ein-Mörder">Mörder</rs> zeigt</rs>, noch zu</l>
+              <l>Vollenden, so verzeiht <rs ref="#sylvester">er</rs> mir. –</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#rupert">Rupert</rs>!</l>
+              <l>O welch <rs ref="#ein-häßlicher-Verdacht,-der-schon---------------Die-Seele-schändet,-die-ihn-denkt">ein häßlicher Verdacht, <rs ref="#ein-häßlicher-Verdacht,-der-schon---------------Die-Seele-schändet,-die-ihn-denkt">der</rs> schon</l>
+              <l><rs ref="#Die-Seele,-die-ihn-denkt">Die Seele</rs> schändet, <rs ref="#Die-Seele,-die-ihn-denkt">die</rs> <rs ref="#ein-häßlicher-Verdacht,-der-schon---------------Die-Seele-schändet,-die-ihn-denkt">ihn</rs> denkt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <rs ref="#Verdacht"><l>Verdacht</l></rs>
+              <l>Ist's nicht in mir, es ist Gewißheit. Warum</l>
+              <l>Meinst <rs ref="#eustache">du</rs>, hätt <rs ref="#sylvester">er</rs> mir wohl verziehen, da</l>
+              <l>Der Anschein doch so groß, als nur, damit</l>
+              <l>Ich gleich gefällig mich erweise? <rs ref="#sylvester">Er</rs></l>
+              <l>Kann <rs ref="#sylvester">sich</rs> nicht <rs ref="#reinigen2">reinigen</rs>, <rs ref="#sylvester">er</rs> kann <rs ref="#reinigen2">es</rs> nicht,</l>
+              <l>Und nun, damit <rs ref="#der-Mord-an-Peter">ich's</rs> <rs ref="#sylvester">ihm</rs> erlaß, erläßt</l>
+              <l><rs ref="#sylvester"><rs ref="#Johanns-Übergriff-auf-Agnes">Er's</rs></rs> mir. – Nun, halb zum wenigsten soll <rs ref="#sylvester">ihm</rs></l>
+              <l><rs ref="#das-Bubenstück,-Sylvesters-angeblicher-Plan">Das Bubenstück</rs> gelingen nur. Ich nehme</l>
+              <l><rs ref="#Mord-an-Agnes">Den Mord</rs> auf mich – und <rs ref="#hätt-der-Jung-das-Mädchen---------------Erschlagen">hätt <rs ref="#johann">der Jung</rs> <rs ref="#agnes">das Mädchen</rs></l>
+              <l>Erschlagen</rs>, <rs ref="#hätt-der-Jung-das-Mädchen---------------Erschlagen">wär's</rs> mir recht.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#agnes">Das Mädchen</rs>? O</l>
+              <l>Mein Gott, <rs ref="#rupert">du</rs> wirst <rs ref="#agnes">das Mädchen</rs> doch nicht morden?</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das-Haus-von-Rossitz-/-Das-Haus-Sylvesters,-Das-Haus-von-Warwand">Die Stämme</rs> sind zu nah gepflanzet, <rs ref="#Das-Haus-von-Rossitz-/-Das-Haus-Sylvesters,-Das-Haus-von-Warwand">sie</rs></l>
+              <l>Zerschlagen <rs ref="#Das-Haus-von-Rossitz-/-Das-Haus-Sylvesters,-Das-Haus-von-Warwand">sich</rs> die Äste.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>zu <rs ref="#rupert">seinen</rs> Füßen.</stage>
+            <lg>
+              <l>O verschone,</l>
+              <l>Auf <rs ref="#Eustaches-Kniee">meinen Knien</rs> bitt ich <rs ref="#rupert">dich</rs> verschone</l>
+              <l><rs ref="#agnes">Das Mädchen</rs> – wenn <rs ref="#Peter"><rs ref="#rupert">dein</rs> eigner Sohn</rs> <rs ref="#rupert">dir</rs> lieb,</l>
+              <rs ref="#Wenn-seine-Liebe-lieb-dir,-wenn-auf-immer----------------Du-seinen-Fluch-dir-nicht-bereiten-willst,---------------Verschone-Agnes."><l>Wenn <rs ref="#Peter">seine</rs> Liebe lieb <rs ref="#rupert">dir</rs>, wenn auf immer</l>
+              <l><pb n="176"/> <rs ref="#rupert">Du</rs> <rs ref="#Peters-Fluch"><rs ref="#Peter">seinen</rs> Fluch</rs> <rs ref="#rupert">dir</rs> nicht bereiten willst,</l>
+              <l>Verschone <rs ref="#agnes">Agnes</rs>.</rs> –</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Welche <rs ref="#Wenn-seine-Liebe-lieb-dir,-wenn-auf-immer----------------Du-seinen-Fluch-dir-nicht-bereiten-willst,---------------Verschone-Agnes.">seltsame</l>
+              <l>Anwandlung</rs>? Mir <rs ref="#Peters-Fluch">den Fluch <rs ref="#Peter">des Sohnes</rs></rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Ja,</l>
+              <l>Es ist heraus – auf <rs ref="#Eustaches-Kniee">meinen Knien</rs> beschwöre</l>
+              <l>Ich <rs ref="#rupert">dich</rs>, bei <rs ref="#jener-ersten-Nacht,-die-ich---------------Am-Tage-vor-des-Priesters-Spruch-dir-schenkte">jener ersten Nacht, <rs ref="#jener-ersten-Nacht,-die-ich---------------Am-Tage-vor-des-Priesters-Spruch-dir-schenkte">die</rs> ich</l>
+              <l>Am Tage vor des Priesters Spruch <rs ref="#rupert">dir</rs> schenkte</rs>,</l>
+              <l>Bei <rs ref="#ottokar"><rs ref="#eustache-/-rupert">unserm</rs> einz'gen Kind</rs>, bei <rs ref="#Peter"><rs ref="#eustache-/-rupert">unserm</rs> letzten</l>
+              <l><rs ref="#Peter">Das</rs> <rs ref="#rupert">du</rs> hinopferst</rs>, und <rs ref="#Peter">das <rs ref="#rupert">du</rs> doch nicht</l>
+              <l>Geboren hast</rs>, wie ich, o mache <rs ref="#die-Fehde-zwischen-den-Häusern">diesem</l>
+              <l>Unselig-bösen Zwist</rs> ein Ende, <rs ref="#die-Fehde-zwischen-den-Häusern">der</rs></l>
+              <l>Bis auf den Namen selbst <rs ref="#der-ganze-Stamm-der-Schroffensteine">den ganzen Stamm</l>
+              <l>Der Schroffensteine</rs> auszurotten droht.</l>
+              <l><rs ref="#Gott">Gott</rs> zeigt den Weg selbst zur Versöhnung <rs ref="#rupert">dir</rs>.</l>
+              <l><rs ref="#Die-Kinder-lieben-sich"><rs ref="#ottokar-/-agnes">Die Kinder</rs> lieben <rs ref="#ottokar-/-agnes">sich</rs></rs>, ich habe sichre</l>
+              <l>Beweise. –</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l><rs ref="#Die-Kinder-lieben-sich">Lieben</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <rs ref="#Unerkannt-hat-Gott---------------In-dem-Gebirge-sie-vereint"><l>Unerkannt hat <rs ref="#Gott">Gott</rs></l>
+              <l>In <rs ref="#das-Gebirge">dem Gebirge</rs> <rs ref="#ottokar-/-agnes">sie</rs> vereint</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l><rs ref="#das-Gebirge">Gebirg</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Ich weiß <rs ref="#Unerkannt-hat-Gott---------------In-dem-Gebirge-sie-vereint">es</rs> von <rs ref="#jeronimus">Jeronimus, der Edle</rs>!</l>
+              <l><rs ref="#jeronimus">Vortreffliche</rs>! <rs ref="#Jeronismus'-Plan"><rs ref="#jeronimus">Sein</rs> eigner Plan</rs> war es</l>
+              <l><rs ref="#Das-Haus-von-Rossitz-/-Das-Haus-Sylvesters,-Das-Haus-von-Warwand">Die Stämme</rs> durch <rs ref="#eine-Heirat-zwischen-Ottokar-und-Agnes">die Heirat</rs> zu versöhnen,</l>
+              <l>Und selbst <rs ref="#jeronimus">sich</rs> opfernd, trat <rs ref="#jeronimus">er</rs> <rs ref="#agnes"><rs ref="#jeronimus">seine</rs> Braut</rs></l>
+              <l><rs ref="#ottokar">Dem Sohne <rs ref="#rupert"><rs ref="#jeronimus">seines</rs> Freundes</rs></rs> ab. – O ehre</l>
+              <l>Im Tode <rs ref="#jeronimus">seinen</rs> Willen, daß <rs ref="#Jeronismus'-Geist"><rs ref="#jeronimus">sein</rs> Geist</rs></l>
+              <l>In <rs ref="#rupert">deinen</rs> Träumen <rs ref="#rupert">dir</rs> nicht mit Entsetzen</l>
+              <l>Begegne. – Sprich, o sprich den Segen aus!</l>
+              <l>Mit Tränen küß ich <rs ref="#rupert">deine</rs> Kniee, küsse</l>
+              <l>Mit Inbrunst <rs ref="#Ruperts-Hand"><rs ref="#rupert">deine</rs> Hand</rs>, <rs ref="#Ruperts-Hand">die</rs> ach! noch schuldig</l>
+              <l>Was <rs ref="#Ruperts-Hand">sie</rs> <rs ref="#Altar-in-Rossitz">am Altar</rs> mir versprach – o brauche</l>
+              <l><rs ref="#Ruperts-Hand">Sie</rs> einmal doch zum Wohltun, gib <rs ref="#ottokar">dem Sohne</rs></l>
+              <l><rs ref="#agnes">Die Gattin, <rs ref="#agnes">die</rs> <rs ref="#Ottokars-Herz"><rs ref="#ottokar">sein</rs> Herz</rs> begehrt</rs>, und <rs ref="#rupert">dir</rs></l>
+              <l>Und mir und <rs ref="#der-Familienzweig-aus-Rossitz">allen <rs ref="#eustache-/-rupert">Unsrigen</rs></rs> <rs ref="#der-Frieden-zwischen-den-Häusern">den Frieden</rs>. –</l>
+              <pb n="177"/>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Nein, sag mir, hab ich recht gehört, <rs ref="#sie-sehen---------------Sich-im-Gebirge,-Ottokar-und-Agnes"><rs ref="#ottokar-/-agnes">sie</rs> sehen</l>
+              <l><rs ref="#ottokar-/-agnes">Sich</rs> <rs ref="#das-Gebirge">im Gebirge</rs>, <rs ref="#ottokar">Ottokar</rs> und <rs ref="#agnes">Agnes</rs></rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>steht auf.</stage>
+            <l>O Gott, mein Heiland, was hab ich getan?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf.</stage>
+            <l><rs ref="#sie-sehen---------------Sich-im-Gebirge,-Ottokar-und-Agnes">Das</rs> freilich ist ein Umstand von Bedeutung.</l>
+            <stage><rs ref="#rupert">Er</rs> pfeift; <rs ref="#zwei-Diener-4-1">zwei Diener</rs> erscheinen.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Wär's">Wär's</rs> möglich? Nein. – O Gott sei Dank! <rs ref="#Wär's">Das</rs> wäre</l>
+              <l>Ja selbst für <rs ref="#ein-Teufel">einen Teufel</rs> fast zu boshaft. –</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>zu <rs ref="#zwei-Diener-4-1">den Dienern</rs>.</stage>
+            <l>Ist noch <rs ref="#ottokar">der Graf</rs> zurück nicht vom Spaziergang?</l>
+          </sp>
+          <sp who="#ein_diener_4-1">
+            <rs ref="#ein_diener_4-1"><speaker>EIN DIENER.</speaker></rs>
+            <l>Nein, <rs ref="#rupert">Herr</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Wo ist <rs ref="#santing">der Santing</rs>?</l>
+          </sp>
+          <sp who="#ein_diener_4-1">
+            <rs ref="#ein_diener_4-1"><speaker>EIN DIENER.</speaker></rs>
+            <l>Bei <rs ref="#Jeronimus'-Leiche">der Leiche</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Führ mich zu <rs ref="#santing">ihm</rs>.</l>
+            <stage>Ab.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage><rs ref="#rupert">ihm</rs> nach.</stage>
+            <l><rs ref="#rupert">Rupert</rs>! <rs ref="#rupert">Rupert</rs>! O höre. –</l>
+            <stage>Alle ab.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweite Szene</head>
+          <stage><rs ref="#Warwand">Warwand</rs>; Zimmer <rs ref="#Sylvesters-Schloss,-das-Schloss-Warwand">im Schlosse</rs>. <rs ref="#sylvester">Sylvester</rs> tritt auf, öffnet ein Fenster, und bleibt
+            mit Zeichen einer tiefen Bewegung davor stehen. <rs ref="#gertrude">Gertrude</rs> tritt auf, und nähert <rs ref="#gertrude">sich</rs> <rs ref="#sylvester">ihm</rs>
+            mit verdecktem Gesicht.</stage>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <l>Weißt du <rs ref="#der-Mord-an-Jeronimus">es</rs>?</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES</speaker></rs>
+            <stage>tritt auf, noch an der Tür halblaut.</stage>
+            <l><rs ref="#gertrude">Mutter</rs>! <rs ref="#gertrude">Mutter</rs>!</l>
+            <stage><rs ref="#gertrude">Gertrude</rs> sieht <rs ref="#gertrude">sich</rs> um, <rs ref="#agnes">Agnes</rs> nähert <rs ref="#agnes">sich</rs> <rs ref="#gertrude">ihr</rs>.</stage>
+            <lg>
+              <l>Weißt <rs ref="#gertrude">du</rs> <rs ref="#der-Mord-an-Jeronimus">die</l>
+              <l>Entsetzenstat</rs>? <rs ref="#der-Mord-an-Jeronimus"><rs ref="#jeronimus">Jerome</rs> ist erschlagen</rs>.</l>
+            </lg>
+            <stage><rs ref="#gertrude">Gertrude</rs> gibt <rs ref="#agnes">ihr</rs> ein bejahendes Zeichen.</stage>
+            <l>Weiß <rs ref="#der-Mord-an-Jeronimus"><rs ref="#sylvester">er's</rs></rs>?</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE</speaker></rs>
+            <stage>wendet <rs ref="#gertrude">sich</rs> zu <rs ref="#sylvester">Sylvester</rs>.</stage>
+            <l><rs ref="#sylvester">Sylvester</rs>!</l>
+            <pb n="178"/>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER</speaker></rs>
+            <stage>ohne <rs ref="#sylvester">sich</rs> umzusehen.</stage>
+            <l>Bist <rs ref="#gertrude">du</rs> es <rs ref="#gertrude">Gertrude</rs>?</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Wenn</l>
+              <l>Ich wüßte, wie <rs ref="#sylvester">du</rs> jetzt gestimmt, viel hätt ich</l>
+              <l>Zu sagen <rs ref="#sylvester">dir</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Es ist ein trüber Tag</l>
+              <l>Mit Wind und Regen, viel Bewegung draußen. –</l>
+              <l>Es zieht ein unsichtbarer Geist, gewaltig,</l>
+              <l>Nach <emph>einer</emph> Richtung alles fort, den Staub,</l>
+              <l>Die Wolken, und die Wellen. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Willst <rs ref="#sylvester">du</rs> mich,</l>
+              <l><rs ref="#sylvester">Sylvester</rs>, hören?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Sehr beschäftigt mich</l>
+              <l>Dort <rs ref="#jener-Segel">jener Segel</rs> – siehst <rs ref="#gertrude">du</rs> <rs ref="#jener-Segel">ihn</rs>? <rs ref="#jener-Segel">Er</rs> schwankt</l>
+              <l>Gefährlich, übel ist <rs ref="#jener-Segel">sein</rs> Stand, <rs ref="#jener-Segel">er</rs> kann</l>
+              <l>Das Ufer nicht erreichen. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Höre mich,</l>
+              <l><rs ref="#sylvester">Sylvester</rs>, eine Nachricht hab ich <rs ref="#sylvester">dir</rs></l>
+              <l>Zu sagen von <rs ref="#jeronimus">Jerome</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Er</rs>, <rs ref="#jeronimus">er</rs> ist</l>
+              <l>Hinüber –</l>
+            </lg>
+            <stage><rs ref="#sylvester">Er</rs> wendet <rs ref="#sylvester">sich</rs>.</stage>
+            <l>Ich weiß <rs ref="#der-Mord-an-Jeronimus">alles</rs>.</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Weißt <rs ref="#der-Mord-an-Jeronimus"><rs ref="#sylvester">du's</rs></rs>? Nun</l>
+              <l>Was sagst <rs ref="#sylvester">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Wenig will ich sagen. Ist</l>
+              <l><rs ref="#theistiner">Theistin</rs> noch nicht zurück?</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>So willst <rs ref="#sylvester">du</rs> nun</l>
+              <l><rs ref="#Den-Krieg-beginnen"><rs ref="#der-Krieg-zwischen-den-Häusern">Den Krieg</rs> beginnen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <l>Kenn ich doch <rs ref="#rupert"><rs ref="#der-Familienzweig-aus-Rossitz">den Feind</rs></rs>.</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Nun freilich wie die Sachen stehn, so mußt</l>
+              <l><rs ref="#sylvester"><rs ref="#Den-Krieg-beginnen">Du's</rs></rs> wohl. Hat <rs ref="#rupert">er</rs> <rs ref="#jeronimus">den Vetter</rs> hingerichtet,</l>
+              <l><rs ref="#jeronimus">Der</rs> schuldlos war, so wird <rs ref="#rupert">er</rs> <rs ref="#sylvester">dich</rs> nicht schonen.</l>
+              <l><rs ref="#Die-Zweige-abzuhaun-des-ganzen-Stammes">Die Zweige abzuhaun <rs ref="#der-ganze-Stamm-der-Schroffensteine">des ganzen Stammes</rs></rs>,</l>
+              <l><rs ref="#Die-Zweige-abzuhaun-des-ganzen-Stammes">Das</rs> ist <rs ref="#rupert">sein</rs> überlegter Plan, damit</l>
+              <l>Das Mark <rs ref="#rupert">ihm</rs> <rs ref="#rupert">seinen</rs> Wipfel höher treibe.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <rs ref="#jeronimus"><l>Den Edelen, <rs ref="#jeronimus">der</rs> nicht einmal als <rs ref="#Der-Herold">Herold</rs></l>
+              <l>Gekommen, <rs ref="#jeronimus">der</rs> als Freund nur das Geschäft</l>
+              <l><pb n="179"/> Betrieb <rs ref="#der-Frieden">des Friedens</rs>, preiszugeben</rs> – <rs ref="#jeronimus"><emph>ihn</emph></rs></l>
+              <l>Um <rs ref="#rupert">sich</rs> an <emph>mir</emph> zu rächen, preiszugeben</l>
+              <l><rs ref="#die-Bevölkerung-von-Rossitz">Dem Volke</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Nun doch, endlich wirst <rs ref="#sylvester">du</rs> <rs ref="#rupert">ihn</rs></l>
+              <l>Nicht mehr verkennen?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Ihn</rs> hab ich verkannt,</l>
+              <l><rs ref="#jeronimus">Jeronimus</rs> – hab <rs ref="#jeronimus">ihn</rs> der Mitschuld heute</l>
+              <l>Geziehen, <rs ref="#jeronimus">der</rs> <rs ref="#jeronimus">sich</rs> heut für mich geopfert.</l>
+              <l>Denn wohl geahndet hat es <rs ref="#jeronimus">ihm</rs> – mich hielt</l>
+              <l><rs ref="#jeronimus">Er</rs> ab, und ging doch selbst nach <rs ref="#Rossitz">Rossitz</rs>, <rs ref="#jeronimus">der</rs></l>
+              <l>Nicht sichrer war, als ich. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Konnt <rs ref="#jeronimus">er</rs> denn anders?</l>
+              <l>Denn weil <rs ref="#sylvester">du</rs> <rs ref="#rupert">Rupert</rs> stets mit blinder Neigung</l>
+              <l>Hast freigesprochen, ja sogar gezürnt,</l>
+              <l>Wenn <rs ref="#man-(generic)">man</rs> es nur gewagt <rs ref="#rupert">ihm</rs> zu mißtraun,</l>
+              <l>So mußt <rs ref="#jeronimus">er</rs> freilich zu <rs ref="#rupert">ihm</rs> gehen. –</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Nun,</l>
+              <l>Beruh'ge <rs ref="#gertrude">dich</rs> – fortan kein anderes</l>
+              <l>Gefühl als nur <rs ref="#die-Rache">der Rache</rs> will ich kennen,</l>
+              <l>Und wie ich duldend einer Wolke gleich,</l>
+              <l><rs ref="#rupert">Ihm</rs> lange <rs ref="#Ruperts-Haupt">überm Haupt</rs> geschwebt, so fahr</l>
+              <l>Ich einem Blitze gleich jetzt über <rs ref="#rupert">ihn</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER</speaker></rs>
+            <stage>tritt auf.</stage>
+            <lg>
+              <l>Hier bin ich wieder, <rs ref="#sylvester">Herr</rs>, von meinem Zuge</l>
+              <l>Und bringe gleich <rs ref="#Sylvesters-sämtliche-Vasallen">die fünf Vasallen</rs> mit.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER</speaker></rs>
+            <stage>wendet <rs ref="#sylvester">sich</rs> schnell.</stage>
+            <l>Wo sind <rs ref="#Sylvesters-sämtliche-Vasallen">sie</rs>?</l>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l>Unten in dem Saale. <rs ref="#Der-Manso-/-Vitina-+-1">Drei</rs>,</l>
+              <l>Der Manso, Vitina, Paratzin, haben</l>
+              <l>Auf <rs ref="#Der-Manso-/-Vitina-+-1">ihren</rs> Kopf <rs ref="#ein-dreißig-Männer">ein dreißig Männer</rs> gleich</l>
+              <l>Nach <rs ref="#Warwand">Warwand</rs> mitgebracht.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#ein-dreißig-Männer">Ein dreißig Männer</rs>?</l>
+              <l>– Ein ungesprochner Wunsch ist mir erfüllt.</l>
+              <l>– Laßt mich allein <rs ref="#agnes-/-gertrude">ihr Weiber</rs>.</l>
+            </lg>
+            <stage><rs ref="#agnes-/-gertrude">Die Weiber</rs> ab.</stage>
+            <lg>
+              <l>Wenn <rs ref="#ein-dreißig-Männer">sie</rs> so</l>
+              <l><pb n="180"/> Ergeben <rs ref="#ein-dreißig-Männer">sich</rs> erweisen, sind <rs ref="#ein-dreißig-Männer">sie</rs> wohl</l>
+              <l>Gestimmt, daß <rs ref="#man-(generic)">man</rs> <rs ref="#ein-dreißig-Männer">sie</rs> schleunig brauchen kann?</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l>Wie den gespannten Bogen, <rs ref="#sylvester">Herr</rs>; <rs ref="#der-Mord-an-Jeronimus">der Mord</l>
+              <l><rs ref="#jeronimus">Jeromes</rs></rs> hat ganz wütend <rs ref="#ein-dreißig-Männer">sie</rs> gemacht.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>So wollen <rs ref="#theistiner-/-sylvester">wir</rs> die Witterung benutzen.</l>
+              <l><rs ref="#rupert">Er</rs> will <rs ref="#nach-meinem-Haupte-greifen">nach <rs ref="#Sylvesters-Haupt,-Kopf">meinem Haupte</rs> greifen</rs>, will</l>
+              <l><rs ref="#nach-meinem-Haupte-greifen">Es</rs> – nun, so greif ich schnell nach <rs ref="#Ruperts-Haupt"><rs ref="#rupert">seinem</rs></rs>. <rs ref="#ein-dreißig-Männer">Dreißig</rs></l>
+              <l>Sagst <rs ref="#theistiner">du</rs>, sind eben eingerückt, ein Zwanzig</l>
+              <l>Bring ich zusammen, <rs ref="#ein-Zwanzig-/-ein-dreißig-Männer">das</rs> ist mit <rs ref="#dem-Geiste,---------------Der-mit-uns-geht">dem Geiste,</l>
+              <l><rs ref="#dem-Geiste,---------------Der-mit-uns-geht">Der</rs> mit <rs ref="#theistiner-/-sylvester">uns</rs> geht</rs>, ein Heer – <rs ref="#theistiner">Theistin</rs>, was meinst <rs ref="#theistiner">du</rs>?</l>
+              <l>Noch <rs ref="#diese-Nacht-4-2,-5-1">diese Nacht</rs> will ich nach <rs ref="#Rossitz">Rossitz</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l><rs ref="#sylvester">Herr</rs>,</l>
+              <l>Gib mir <rs ref="#ein-Funfzehn-von-dem-Trupp">ein Funfzehn von <rs ref="#ein-Zwanzig-/-ein-dreißig-Männer">dem Trupp</rs></rs>, spreng ich</l>
+              <l><rs ref="#Die-Tore-von-Rossitz">Die Tore</rs> selbst und öffne <rs ref="#sylvester">dir</rs> den Weg.</l>
+              <l>Ich kenn <rs ref="#Rossitz">das Nest</rs> als wär's ein Dachsloch – noch</l>
+              <l>Erwarten <rs ref="#der-Familienzweig-aus-Rossitz">sie</rs> von <rs ref="#der-Familienzweig-aus-Warwand">uns</rs> nichts Böses, ich</l>
+              <l><rs ref="#die-sieben-Bürger-halten-Wache---------------Noch,-wie-in-Friedenszeiten">Beschwör's</rs>, <rs ref="#die-sieben-Bürger-halten-Wache---------------Noch,-wie-in-Friedenszeiten">die sieben Bürger halten Wache</l>
+              <l>Noch, wie in Friedenszeiten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>So <rs ref="#Du-nimmst-den-Vortrab.-Wenn-es-finster,-brechen---------------Wir-auf.">bleibt's</rs> dabei.</l>
+              <rs ref="#Du-nimmst-den-Vortrab.-Wenn-es-finster,-brechen---------------Wir-auf."><l><rs ref="#theistiner">Du</rs> nimmst <rs ref="#ein-Funfzehn-von-dem-Trupp">den Vortrab</rs>. Wenn es finster, brechen</l>
+              <l><rs ref="#theistiner-/-sylvester">Wir</rs> auf.</rs> Den ersten Zugang überrumpelst</l>
+              <l><rs ref="#theistiner">Du</rs>, selber folg ich auf dem Fuße, bei</l>
+              <l><rs ref="#Jeronimus'-Leiche"><rs ref="#jeronimus">Jeromes</rs> Leiche</rs> sehen <rs ref="#theistiner-/-sylvester">wir</rs> <rs ref="#theistiner-/-sylvester">uns</rs> wieder.</l>
+              <l>Ich will <rs ref="#jeronimus">ihm</rs> <rs ref="#eine-Totenfeier">eine Totenfeier</rs> halten,</l>
+              <l>Und <rs ref="#Rossitz">Rossitz</rs> soll wie Fackeln <rs ref="#eine-Totenfeier">sie</rs> beleuchten.</l>
+              <l>Nun fort zu <rs ref="#Sylvesters-sämtliche-Vasallen">den Vasallen</rs>.</l>
+            </lg>
+            <stage><rs ref="#theistiner-/-sylvester">Beide</rs> ab.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <rs ref="#Dritte-Szene-[META]"><head>Dritte Szene</head></rs>
+          <stage><rs ref="#Bauernküche">Bauernküche</rs>. <rs ref="#barnabe">Barnabe</rs> <rs ref="#Barnabes-Herd">am Herd</rs>.</stage>
+          <stage><rs ref="#barnabe">Sie</rs> rührt <rs ref="#einen-Kessel,-der-über-Feuer-steht">einen Kessel, <rs ref="#einen-Kessel,-der-über-Feuer-steht">der</rs> über Feuer steht</rs>.</stage>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Zuerst <rs ref="#der-Vater-(Barnabes-Wünsche)">dem Vater</rs>:</l>
+              <l>Ruh in <rs ref="#die-Gruft">der Gruft</rs>; daß <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> <rs ref="#ein-Frevlerarm">ein Frevlerarm</rs> nicht</l>
+              <l>Über <rs ref="#das-Feld">das Feld</rs> trage die Knochen umher.</l>
+              <l><pb n="181"/> Leichtes Erstehn; daß <rs ref="#der-Vater-(Barnabes-Wünsche)">er</rs> hoch jauchzend das Haupt</l>
+              <l>Dränge durchs Grab, wenn die Posaune <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> ruft.</l>
+              <l>Ewiges Glück: daß <rs ref="#die-Pforte">sich</rs> <rs ref="#die-Pforte">die Pforte</rs> <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> weit</l>
+              <l>Öffne, des Lichts Glanzstrom entgegen <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> wog.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA</speaker></rs>
+            <stage>außerhalb <rs ref="#Dritte-Szene-[META]">der Szene</rs>.</stage>
+            <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Barnabe</rs>! Rührst <rs ref="#barnabe">du</rs> <rs ref="#einen-Kessel,-der-über-Feuer-steht">den Kessel</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja, mit beiden Händen;</l>
+              <l>Ich wollt ich könnt die Füß auch brauchen.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Aber</l>
+              <l><rs ref="#Du-sprichst-nicht-die-drei-Wünsche"><rs ref="#barnabe">Du</rs> sprichst nicht <rs ref="#die-drei-Wünsche">die drei Wünsche</rs></rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun, <rs ref="#Du-sprichst-nicht-die-drei-Wünsche">das</rs> gesteh ich!</l>
+              <l>Wenn <rs ref="#Gott">unser Herrgott</rs> taub, wie <rs ref="#ursula">du</rs>, so hilft</l>
+              <l>Es alles nichts. – Dann <rs ref="#die-Mutter-(Barnabes-Wünsche)">der Mutter</rs>:</l>
+              <l>Alles Gedeihn; daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> die Landhexe nicht</l>
+              <l>Giftigen Blicks töte das Kalb in der Kuh.</l>
+              <l>Heil an dem Leibe: daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> <rs ref="#der-Krebs">der Krebs</rs> mit dem Blut –</l>
+              <l>Läppchen im Schutt schwinde geschwinde dahin,</l>
+              <l><rs ref="#das-Leben">Leben</rs> <rs ref="#der-Tod">im Tod</rs>: daß <rs ref="#die-Mutter-(Barnabes-Wünsche)">ihr</rs> kein Teufel die Zung</l>
+              <l>Strecke heraus, wenn <rs ref="#die-Mutter-(Barnabes-Wünsche)">sie</rs> an <rs ref="#Gott">Gott</rs> <rs ref="#die-Mutter-(Barnabes-Wünsche)">sich</rs> empfiehlt.</l>
+              <l>Nun für mich:</l>
+              <l>Freuden vollauf: daß mich ein stattlicher Mann</l>
+              <l>Ziehe mit Kraft kühn ins hochzeitliche Bett.</l>
+              <l>Gnädiger Schmerz: daß sich –</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Böses Mädel</rs>! Hast <rs ref="#den-Blumenstaub">den Blumenstaub</rs></l>
+              <l>Vergessen und die Wolfkrautskeime.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nein</l>
+              <l>Doch, nein, 's ist <rs ref="#den-Blumenstaub">alles</rs> schon hinein. <rs ref="#Der-Brei">Der Brei</rs></l>
+              <l>Ist dick, daß schon die Kelle stehet.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Aber</l>
+              <l>Die ungelegten Eier aus dem Hechtsbauch?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Schneid ich noch einen auf?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l>Nein, warte noch.</l>
+              <l>Ich will erst Fliederblüte zubereiten.</l>
+              <l>Laß <rs ref="#barnabe">du</rs> nur keinen in <rs ref="#Bauernküche">die Küche</rs>, hörst <rs ref="#barnabe">du</rs>?</l>
+              <l><pb n="182"/> Und rühre fleißig, hörest <rs ref="#barnabe">du</rs>? Und sag</l>
+              <l><rs ref="#die-drei-Wünsche">Die Wünsche</rs>, hörst <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja. – Wo blieb</l>
+              <l>Ich stehn? Freuden vollauf – Nein, das ist schon vorbei.</l>
+              <l>Gnädiger Schmerz: daß <rs ref="#die-liebliche-Frucht">sich</rs> <rs ref="#die-liebliche-Frucht">die liebliche Frucht</rs></l>
+              <l>Winde vom Schoß o nicht mit Ach! mir und Weh!</l>
+              <l>Weiter mir nichts, bleibt mir ein Wünschen noch frei,</l>
+              <l><rs ref="#Gott">Gütiger Gott</rs> mache <rs ref="#die-Mutter-(Barnabes-Wünsche)">die Mutter</rs> gesund.</l>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> hält wie ermüdet inne.</stage>
+            <lg>
+              <rs ref="#Ja,-lieber-Gott!-–-Wenn's-Glück-so-süß-nicht-wär,---------------Wer-würd-so-sauer-sich-darum-bemühn?-–---------------Von-vorn.-Zuerst-dem-Vater:---------------Ruh-in-der-Gruft:-daß-ihm-ein-Frevlerarm-nicht---------------Über-das-Feld-–-–-Ah!"><l>Ja, lieber Gott! – Wenn's Glück so süß nicht wär,</l>
+              <l><rs ref="#Wer">Wer</rs> würd so sauer <rs ref="#Wer">sich</rs> darum bemühn? –</l>
+              <l>Von vorn. Zuerst <rs ref="#der-Vater-(Barnabes-Wünsche)">dem Vater</rs>:</l>
+              <l>Ruh in <rs ref="#die-Gruft">der Gruft</rs>: daß <rs ref="#der-Vater-(Barnabes-Wünsche)">ihm</rs> <rs ref="#ein-Frevlerarm">ein Frevlerarm</rs> nicht</l>
+              <l>Über <rs ref="#das-Feld">das Feld</rs> – – Ah!</l></rs>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> erblickt <rs ref="#ottokar">Ottokar, <rs ref="#ottokar">der</rs> bei <rs ref="#Ja,-lieber-Gott!-–-Wenn's-Glück-so-süß-nicht-wär,---------------Wer-würd-so-sauer-sich-darum-bemühn?-–---------------Von-vorn.-Zuerst-dem-Vater:---------------Ruh-in-der-Gruft:-daß-ihm-ein-Frevlerarm-nicht---------------Über-das-Feld-–-–-Ah!">den letzten Worten</rs> hereingetreten ist</rs>.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Was sprichst <rs ref="#barnabe">du</rs> mit</l>
+              <l><rs ref="#einen-Kessel,-der-über-Feuer-steht">Dem Kessel</rs>, <rs ref="#barnabe">Mädchen</rs>? Bist <rs ref="#barnabe">du</rs> <rs ref="#eine-Hexe">eine Hexe</rs>,</l>
+              <l><rs ref="#barnabe">Du</rs> bist <rs ref="#die-lieblichste,-die-ich-gesehn">die lieblichste, <rs ref="#die-lieblichste,-die-ich-gesehn">die</rs> ich gesehn</rs>,</l>
+              <l>Und tust, ich wette, keinem Böses, der</l>
+              <l><rs ref="#barnabe">Dir</rs> gut.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Geh h'raus, <rs ref="#ottokar">du lieber Herr</rs>, ich bitte <rs ref="#ottokar">dich</rs>.</l>
+              <l>In <rs ref="#Bauernküche">dieser Küche</rs> darf jetzt niemand sein,</l>
+              <l><rs ref="#ursula">Die Mutter</rs> selbst nicht, außer ich.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Warum</l>
+              <l>Denn just nur <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Was weiß ich? Weil ich eine Jungfrau bin.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Ja darauf schwör ich. Und wie heißt <rs ref="#barnabe">du</rs> denn,</l>
+              <l><rs ref="#barnabe">Du liebe Jungfrau</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l><rs ref="#Barnabes-Name">Barnabe</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>So? <rs ref="#barnabe">Deine</rs> Stimme</l>
+              <l>Klingt schöner, als <rs ref="#Barnabes-Name"><rs ref="#barnabe">dein</rs> Name</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Barnabe</rs>!</l>
+              <rs ref="#Wer-spricht-denn-in-der-Küch?"><l>Wer spricht denn in <rs ref="#Bauernküche">der Küch</rs>?</l></rs>
+            </lg>
+            <stage><rs ref="#ottokar">Ottokar</rs> macht ein bittend Zeichen.</stage>
+            <pb n="183"/>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Was sagst <rs ref="#ursula">du</rs>, <rs ref="#ursula">Mutter</rs>?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <l>Bist <rs ref="#barnabe">du</rs> <rs ref="#Wer-spricht-denn-in-der-Küch?">es</rs>? Sprichst <rs ref="#barnabe">du</rs> <rs ref="#die-drei-Wünsche">die drei Wünsche</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ja doch, ja,</l>
+              <l>Sei doch nur ruhig.</l>
+            </lg>
+            <stage><rs ref="#barnabe">Sie</rs> fängt wieder an, <rs ref="#einen-Kessel,-der-über-Feuer-steht">im Kessel</rs> zu rühren.</stage>
+            <lg>
+              <l>Aber nun geh fort,</l>
+              <l><rs ref="#ottokar">Du lieber Herr</rs>. Denn <rs ref="#ursula">meine Mutter</rs> sagt,</l>
+              <l>Wenn ein Unreiner zusieht, taugt <rs ref="#Der-Brei">der Brei</rs> nicht.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser"><l>Doch wenn ein Reiner zusieht, wird <rs ref="#Der-Brei">er</rs> um</l>
+              <l>So besser</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Davon hat <rs ref="#ursula">sie</rs> nichts gesagt.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Weil's-sich-von-selbst-ergibt"><rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">Weil's</rs> <rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">sich</rs> von selbst ergibt</rs>.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun freilich wohl,</l>
+              <l><rs ref="#Weil's-sich-von-selbst-ergibt">Es</rs> scheint mir auch. Ich will <rs ref="#ursula">die Mutter</rs> fragen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wozu? <rs ref="#Weil's-sich-von-selbst-ergibt"><rs ref="#Doch-wenn-ein-Reiner-zusieht,-wird-er-um---------------So-besser">Das</rs></rs> wirst <rs ref="#barnabe">du</rs> selber ja verstehn.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun störe mich nur nicht. 's ist <rs ref="#Der-Brei"><rs ref="#ursula-/-barnabe">unser</rs> Glücksbrei</rs>,</l>
+              <l>Und ich muß <rs ref="#die-drei-Wünsche">die drei Wünsche</rs> dazu sagen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Was kochst <rs ref="#barnabe">du</rs> denn?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ich? – <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Einen Kindesfinger</rs>.</l>
+              <l>Ha! ha! Nun denkst <rs ref="#ottokar">du</rs>, ich sei <rs ref="#eine-Hexe">eine Hexe</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Kin – Kindesfinger</rs>?</l>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <lg>
+              <l><rs ref="#barnabe">Barnabe</rs>! <rs ref="#barnabe">Du böses Mädel</rs>!</l>
+              <l>Was lachst <rs ref="#barnabe">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Ei, was lach ich? Ich bin lustig,</l>
+              <l>Und sprech <rs ref="#die-drei-Wünsche">die Wünsche</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ursula">
+            <rs ref="#ursula"><speaker>URSULA.</speaker></rs>
+            <l>Meinen auch <rs ref="#der-Krebs">vom Krebse</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ja, ja. Auch den vom Kalbe.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Sag mir – ? Hab</l>
+              <l>Ich recht gehört – ?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nein sieh, ich plaudre nicht.</l>
+              <l>Ich muß <rs ref="#die-drei-Wünsche">die Wünsche</rs> sprechen, laß mich sein.</l>
+              <l>Sonst schilt <rs ref="#ursula">die Mutter</rs> und <rs ref="#Der-Brei">der Brei</rs> verdirbt.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Hör, weißt <rs ref="#barnabe">du</rs> was? Bring <rs ref="#diesen-Beutel">diesen Beutel</rs> <rs ref="#ursula"><rs ref="#ottokar">deiner</rs> Mutter</rs>,</l>
+              <l><rs ref="#diesen-Beutel">Er</rs> sei <rs ref="#barnabe">dir</rs> auf <rs ref="#Barnabes-Herd">den Herd</rs> gefallen, sprich,</l>
+              <l>Und komm schnell wieder.</l>
+              <pb n="184"/>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l><rs ref="#diesen-Beutel">Diesen Beutel</rs>? 's ist</l>
+              <l>Ja <rs ref="#Geld-aus-dem-Beutel">Geld</rs> darin. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Geld-aus-dem-Beutel">Gib's</rs> nur <rs ref="#ursula">der Mutter</rs> dreist,</l>
+              <l>Jedoch <rs ref="#von-wem-er-kommt">verschweig's</rs>, <rs ref="#von-wem-er-kommt">von wem <rs ref="#diesen-Beutel">er</rs> kommt</rs>. Nun geh.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Du lieber Gott, bist <rs ref="#ottokar">du</rs> <rs ref="#ein-Engel">ein Engel</rs>?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Fort! Und komm bald wieder.</l>
+            <stage><rs ref="#ottokar">Er</rs> schiebt <rs ref="#barnabe">sie</rs> sanft ins Nebenzimmer; lebhaft auf und nieder gehend.</stage>
+            <lg>
+              <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Ein Kindesfinger</rs>! <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Wenn's</rs> <rs ref="#Peters-kleiner-Finger">der kleine</rs> wäre!</l>
+              <l><rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">Wenn's</rs> <rs ref="#Peters-kleiner-Finger">Peters kleiner Finger</rs> wäre! Wiege</l>
+              <l>Mich, <rs ref="#Hoffnung">Hoffnung</rs>, einer Schaukel gleich, und gleich</l>
+              <l>Als spielt' geschloßnen Auges schwebend mir</l>
+              <l>Ein Windzug um <rs ref="#Ottokars-Brust">die offne Brust</rs>, so wende</l>
+              <l><rs ref="#Ottokarts-Innerstes">Mein Innerstes</rs> <rs ref="#Ottokarts-Innerstes">sich</rs> vor Entzücken. – Wie</l>
+              <l>Gewaltig, Glück, klopft <rs ref="#Hoffnung">deine</rs> Ahndung an</l>
+              <l><rs ref="#Ottokars-Brust">Die Brust</rs>! <rs ref="#Hoffnung">Dich</rs> selbst, o Übermaß, wie werd</l>
+              <l>Ich <rs ref="#Hoffnung">dich</rs> ertragen. – Horch! <rs ref="#barnabe">Sie</rs> kommt! Jetzt werd ich's hören!</l>
+            </lg>
+            <stage><rs ref="#barnabe">Barnabe</rs> tritt auf, <rs ref="#ottokar">er</rs> geht <rs ref="#barnabe">ihr</rs> entgegen und führt <rs ref="#barnabe">sie</rs> in den Vordergrund.</stage>
+            <l>Nun sage mir, wie kommt <rs ref="#ursula-/-barnabe">ihr</rs> zu <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">dem Finger</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ich hab mit <rs ref="#ursula">Muttern</rs> kürzlich <rs ref="#Ein-Kindesfinger-(unbestimmt-von-wem)">ihn</rs> gefunden.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Gefunden bloß? <rs ref="#Auf-welche-Art">Auf welche Art</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Nun <rs ref="#ottokar">dir</rs></l>
+              <l>Will <rs ref="#Auf-welche-Art">ich's</rs> schon <rs ref="#sagen">sagen</rs>, <rs ref="#sagen">wenn's</rs> gleich <rs ref="#ursula">Mutter</rs> mir</l>
+              <l>Verboten.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ja, <rs ref="#sagen">das</rs> tu.</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l><rs ref="#ursula-/-barnabe">Wir</rs> suchten Kräuter</l>
+              <l>Am Waldstrom <rs ref="#das-Gebirge">im Gebirg</rs>, da schleifte <rs ref="#ursula-/-barnabe">uns</rs></l>
+              <l>Das Wasser <rs ref="#Peter">ein ertrunken Kind</rs> ans Ufer.</l>
+              <l><rs ref="#ursula-/-barnabe">Wir</rs> <rs ref="#Peter">zogen's</rs> drauf heraus, bemühten viel</l>
+              <l><rs ref="#ursula-/-barnabe">Uns</rs> um <rs ref="#Peter">das arme Wurm</rs>; vergebens, <rs ref="#Peter">es</rs></l>
+              <l>Blieb tot. Drauf <rs ref="#schnitt">schnitt</rs> <rs ref="#ursula">die Mutter</rs> <rs ref="#schnitt"><rs ref="#ursula">die's</rs></rs> versteht,</l>
+              <l><rs ref="#Peter">Dem Kinde</rs> <rs ref="#Peters-linker-kleiner-Finger">einen kleinen Finger</rs> ab;</l>
+              <l>Denn <rs ref="#Peters-linker-kleiner-Finger">der</rs> tut nach <rs ref="#der-Tod">dem Tod</rs> mehr Gutes noch,</l>
+              <l><pb n="185"/> Als <rs ref="#eines-Auferwachsnen">eines Auferwachsnen</rs> ganze Hand</l>
+              <l>In <rs ref="#eines-Auferwachsnen">seinem</rs> Leben. – Warum stehst <rs ref="#ottokar">du</rs> so</l>
+              <l>Tiefsinnig? Woran denkest <rs ref="#ottokar">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>An <rs ref="#Gott">Gott</rs>.</l>
+              <l>Erzähle mehr noch. <rs ref="#barnabe">Du</rs> und <rs ref="#ursula"><rs ref="#barnabe">deine</rs> Mutter</rs> –</l>
+              <l>War niemand sonst dabei?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Gar niemand.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <rs ref="#Als-wir-den-Finger-abgelöset,-kamen---------------Zwei-Männer-her-aus-Warwand,-welche-sich---------------Den-von-der-Rechten-lösen-wollten.-Der---------------Hilft-aber-nichts,-wir-machten-uns-davon,---------------Und-weiter-weiß-ich-nichts."><l>Als <rs ref="#ursula-/-barnabe">wir</rs> <rs ref="#Peters-linker-kleiner-Finger">den Finger</rs> abgelöset, kamen</l>
+              <l><rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">Zwei Männer</rs> her aus <rs ref="#Warwand">Warwand</rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">welche</rs> <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sich</rs></l>
+              <l><rs ref="#Peters-rechter-kleiner-Finger">Den von der Rechten</rs> lösen wollten. <rs ref="#Peters-rechter-kleiner-Finger">Der</rs></l>
+              <l>Hilft aber nichts, <rs ref="#ursula-/-barnabe">wir</rs> machten <rs ref="#ursula-/-barnabe">uns</rs> davon,</l>
+              <l>Und weiter weiß ich nichts.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Als-wir-den-Finger-abgelöset,-kamen---------------Zwei-Männer-her-aus-Warwand,-welche-sich---------------Den-von-der-Rechten-lösen-wollten.-Der---------------Hilft-aber-nichts,-wir-machten-uns-davon,---------------Und-weiter-weiß-ich-nichts.">Es</rs> ist genug.</l>
+              <rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt"><l><rs ref="#barnabe">Du</rs> hast gleich einer heil'gen Offenbarung</l>
+              <l>Das Unbegriffne mir erklärt</rs>. <rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt">Das</rs> kannst</l>
+              <l><rs ref="#barnabe">Du</rs> nicht verstehn, doch sollst <rs ref="#barnabe"><rs ref="#Du-hast-gleich-einer-heil'gen-Offenbarung---------------Das-Unbegriffne-mir-erklärt">du's</rs></rs> bald. – Noch eins.</l>
+              <l><rs ref="#Warwand">Im Warwand</rs> ist <rs ref="#agnes">ein Mädchen, <rs ref="#agnes">dem</rs> ich auch</l>
+              <l>So gut, wie <rs ref="#ottokar">dir</rs></rs>. <rs ref="#Die-spräch-ich-gern-noch-heut---------------In-einer-Höhle,-die-ihr-wohlbekannt"><rs ref="#agnes">Die</rs> spräch ich gern noch heut</l>
+              <l>In <rs ref="#die-Höhle">einer Höhle, <rs ref="#die-Höhle">die</rs> <rs ref="#agnes">ihr</rs> wohlbekannt</rs></rs>.</l>
+              <l><rs ref="#agnes">Die Tochter</rs> ist es auf <rs ref="#Sylvesters-Schloss,-das-Schloss-Warwand">dem Schlosse</rs>, <rs ref="#agnes">Agnes</rs>,</l>
+              <l><rs ref="#barnabe">Du</rs> kannst nicht fehlen.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Soll ich <rs ref="#agnes">sie</rs> <rs ref="#ottokar">dir</rs> rufen?</l>
+              <l>Nun ja, <rs ref="#Die-spräch-ich-gern-noch-heut---------------In-einer-Höhle,-die-ihr-wohlbekannt">es</rs> wird <rs ref="#agnes">ihr</rs> Freude machen auch.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#barnabe">dir</rs>. <rs ref="#ottokar-/-agnes">Wir</rs> wollen's beide <rs ref="#barnabe">dir</rs> schon lohnen.</l>
+              <rs ref="#Doch-mußt-du's-selbst-ihr-sagen,-keinem-andern---------------Vertraun,-daß-dich-ein-Jüngling-abgeschickt"><l>Doch mußt <rs ref="#barnabe">du's</rs> selbst <rs ref="#agnes">ihr</rs> sagen, keinem andern</l>
+              <l>Vertraun, daß <rs ref="#barnabe">dich</rs> <rs ref="#ottokar">ein Jüngling</rs> abgeschickt</rs>,</l>
+              <l>Verstehst <rs ref="#barnabe">du</rs>? Nun, <rs ref="#Doch-mußt-du's-selbst-ihr-sagen,-keinem-andern---------------Vertraun,-daß-dich-ein-Jüngling-abgeschickt">das</rs> weißt <rs ref="#barnabe">du</rs> wohl. – Und daß</l>
+              <l><rs ref="#barnabe">Du</rs> Glauben finden mögest auch bei <rs ref="#agnes">ihr</rs>,</l>
+              <l>Nimm dieses Tuch, und diesen Kuß gib <rs ref="#agnes">ihr</rs>.</l>
+            </lg>
+            <stage>Ab. <rs ref="#barnabe">Barnabe</rs> sieht <rs ref="#ottokar">ihm</rs> nach, seufzt und geht ab.</stage>
+            <pb n="186"/>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierte Szene</head>
+          <stage>Eine andere Gegend <rs ref="#das-Gebirge">im Gebirge</rs>.</stage>
+          <stage><rs ref="#rupert">Rupert</rs> und <rs ref="#santing">Santing</rs>, treten auf.</stage>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Das soll gewöhnlich <rs ref="#der-Jäger">sein</rs> Spaziergang sein,</l>
+              <l>Sagt mir <rs ref="#der-Jäger">der Jäger</rs>. Selber hab ich <rs ref="#der-Jäger">ihn</rs></l>
+              <l>Zweimal und sehr erhitzt, auf dieser Straße</l>
+              <l>Begegnet. <rs ref="#im-Gebirge-sein">Ist</rs> <rs ref="#der-Jäger">er</rs> <rs ref="#das-Gebirge">im Gebirg</rs>, so <rs ref="#im-Gebirge-sein">ist's</rs></l>
+              <l>Auch <rs ref="#agnes">Agnes</rs>, und <rs ref="#rupert-/-santing">wir</rs> fangen beid zugleich.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>setzt <rs ref="#rupert">sich</rs> auf einen Stein.</stage>
+            <l><rs ref="#Es-ist-sehr-heiß-mir,-und-die-Zunge-trocken">Es ist sehr heiß mir, und <rs ref="#Ruperts-Zunge">die Zunge</rs> trocken</rs>.</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Der Wind geht kühl doch übers Feld.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Ich glaub,</l>
+              <l><rs ref="#Es-ist-sehr-heiß-mir,-und-die-Zunge-trocken">'s</rs> ist innerlich.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Fühlst <rs ref="#rupert">du</rs> nicht wohl <rs ref="#rupert">dich</rs>?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Nein.</l>
+              <l>Mich dürstet.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Komm an <rs ref="#der-Quell-4-4">diesen Quell</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Löscht <rs ref="#der-Quell-4-4">er</rs></l>
+              <l>Den Durst?</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Das Wasser mindestens ist klar,</l>
+              <l>Daß <rs ref="#rupert">du</rs> darin <rs ref="#rupert">dich</rs> spiegeln könntest. Komm!</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf, geht <rs ref="#der-Quell-4-4">zum Quell</rs>, neigt <rs ref="#rupert">sich</rs> über <rs ref="#der-Quell-4-4">ihn</rs>, und plötzlich mit der Bewegung
+              des Abscheus wendet <rs ref="#rupert">er</rs> <rs ref="#rupert">sich</rs>.</stage>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Was fehlt <rs ref="#rupert">dir</rs>?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Eines-Teufels-Antlitz"><rs ref="#ein-Teufel">Eines Teufels</rs> Antlitz</rs> sah</l>
+              <l>Mich aus der Welle an.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING</speaker></rs>
+            <stage>lachend.</stage>
+            <l><rs ref="#Eines-Teufels-Antlitz">Es</rs> war <rs ref="#Ruperts-Gesicht"><rs ref="#rupert">dein</rs> eignes</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Skorpion von <rs ref="#ein-Mensch">einem Menschen</rs>.</l>
+            <stage>Setzt <rs ref="#rupert">sich</rs> wieder.</stage>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE</speaker></rs>
+            <stage>tritt auf.</stage>
+            <l><rs ref="#diesem-Wege">Hier</rs> geht's nach <rs ref="#Warwand">Warwand</rs> doch, <rs ref="#santing">gestrenger Ritter</rs>?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Was hast <rs ref="#barnabe">du</rs> denn zu tun <rs ref="#Warwand">dort</rs>, <rs ref="#barnabe">schönes Kind</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Bestellungen an <rs ref="#agnes">Fräulein Agnes</rs>.</l>
+            <pb n="187"/>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>So?</l>
+              <l>Wenn <rs ref="#agnes">sie</rs> so schön wie <rs ref="#barnabe">du</rs>, so möcht ich mit <rs ref="#barnabe">dir</rs> gehn.</l>
+              <l>Was wirst <rs ref="#barnabe">du</rs> <rs ref="#agnes">ihr</rs> denn sagen?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Sagen? Nichts,</l>
+              <l>Ich führe <rs ref="#agnes">sie</rs> bloß <rs ref="#das-Gebirge">ins Gebirg</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l><rs ref="#Heut">Heut</rs> noch?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Kennst <rs ref="#santing">du</rs> <rs ref="#agnes">sie</rs>?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l><rs ref="#Wen'ger-noch,-als-dich">Wen'ger noch, als <rs ref="#barnabe">dich</rs></rs>,</l>
+              <l>Und <rs ref="#Wen'ger-noch,-als-dich">es</rs> betrübt mich wen'ger. – Also <rs ref="#Heut">heute</rs> noch?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ja gleich. – Und bin ich auf dem rechten Weg?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Wer schickt <rs ref="#barnabe">dich</rs> denn?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Wer? – <rs ref="#ursula">Meine Mutter</rs>.</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>So?</l>
+              <l>Nun geh nur, geh auf <rs ref="#diesem-Wege">diesem Wege</rs> fort,</l>
+              <l><rs ref="#barnabe">Du</rs> kannst nicht fehlen.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l><rs ref="#Gott">Gott</rs> behüte <rs ref="#santing">euch</rs>.</l>
+            <stage>Ab.</stage>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Hast <rs ref="#rupert"><rs ref="#Sie-kommt-noch-heut---------------In-das-Gebirg">du's</rs></rs> gehört <rs ref="#rupert">Rupert</rs>? <rs ref="#Sie-kommt-noch-heut---------------In-das-Gebirg"><rs ref="#agnes">Sie</rs> kommt noch heut</l>
+              <l>In <rs ref="#das-Gebirge">das Gebirg</rs></rs>. Ich wett, <rs ref="#barnabe">das Mädchen</rs> war</l>
+              <l>Von <rs ref="#ottokar">Ottokar</rs> geschickt.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf.</stage>
+            <lg>
+              <l>So führ ein Gott,</l>
+              <l>So führ <rs ref="#ein-Teufel">ein Teufel</rs> <rs ref="#agnes">sie</rs> mir in die Schlingen,</l>
+              <l>Gleichviel! <rs ref="#der-Familienzweig-aus-Warwand">Sie</rs> haben mich zu <rs ref="#ein-Mörder">einem Mörder</rs></l>
+              <l>Gebrandmarkt boshaft, im voraus. – Wohlan,</l>
+              <l>So sollen <rs ref="#der-Familienzweig-aus-Warwand">sie</rs> denn recht gehabt auch haben.</l>
+              <l>– Weißt <rs ref="#santing">du</rs> <rs ref="#den-Ort,-wo-sie-sich-treffen">den Ort, <rs ref="#den-Ort,-wo-sie-sich-treffen">wo</rs> <rs ref="#ottokar-/-agnes">sie</rs> <rs ref="#ottokar-/-agnes">sich</rs> treffen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Nein,</l>
+              <l><rs ref="#rupert-/-santing">Wir</rs> müssen <rs ref="#ottokar-/-agnes">ihnen</rs> auf die Fährte gehn.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>So komm.</l>
+            <stage><rs ref="#rupert-/-santing">Beide</rs> ab.</stage>
+            <pb n="188"/>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfte Szene</head>
+          <stage><rs ref="#Rossitz">Rossitz</rs>. <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">Ein Gefängnis <rs ref="#der-Schloßturm-(Rossitz)">im Turm</rs></rs>.</stage>
+          <stage><rs ref="#Die-Tür-vom-Gefängnis-4-5">Die Tür</rs> öffnet <rs ref="#Die-Tür-vom-Gefängnis-4-5">sich</rs>, <rs ref="#fintenring">Fintenring</rs> tritt auf.</stage>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>noch draußen.</stage>
+            <l><rs ref="#rupert">Mein Vater</rs> hat's befohlen?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>In der eigenen</l>
+              <l>Person, <rs ref="#ottokar">du</rs> möchtest gleich bei <rs ref="#ottokar">deinem</rs> Eintritt</l>
+              <l><rs ref="#Die-Tore-von-Rossitz">Ins Tor</rs> <rs ref="#der-Kerkermeister-/-fintenring">uns</rs> folgen nur, wohin <rs ref="#der-Kerkermeister-/-fintenring">wir</rs> <rs ref="#ottokar">dich</rs></l>
+              <l>Zu führen haben. Komm, <rs ref="#ottokar">du alter Junge</rs>,</l>
+              <l><rs ref="#Komm-h'rein">Komm h'rein</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Hör, <rs ref="#fintenring">Fintenring</rs>, <rs ref="#fintenring">du</rs> bist mit <rs ref="#fintenring">deinem</rs></l>
+              <l>Satyrngesicht verdammt verdächtig mir.</l>
+              <l>Nun, weil ich doch kein Mädchen, will <rs ref="#Komm-h'rein">ich's</rs> tun.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> tritt auf, <rs ref="#der-Kerkermeister">der Kerkermeister</rs> folgt <rs ref="#ottokar">ihm</rs>.</stage>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">Der Ort</rs> ist, siehst <rs ref="#ottokar">du</rs>, der unschuldigste.</l>
+              <l>Denn hier auf diesen Quadersteinen müßt's</l>
+              <l>Selbst einen Satyr frieren.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Statt der Rosen</l>
+              <l>Will <rs ref="#rupert">er</rs> mit Ketten mich und Banden mich</l>
+              <l>Umwinden – denn <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">die Grotte</rs>, merk ich wohl,</l>
+              <l>Ist ein Gefängnis.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Hör, das gibt vortreffliche</l>
+              <l>Gedanken, morgen, wett ich, <rs ref="#ist-dein-Geist---------------Fünf-Jahre-älter,-als-dein-Haupt">ist <rs ref="#Ottokars-Geist"><rs ref="#ottokar">dein</rs> Geist</rs></l>
+              <l>Fünf Jahre älter, als <rs ref="#ottokar">dein</rs> Haupt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wär ich</l>
+              <l>Wie <rs ref="#fintenring">du</rs>, ich nähm <rs ref="#ist-dein-Geist---------------Fünf-Jahre-älter,-als-dein-Haupt">es</rs> an. Denn <rs ref="#fintenring">deiner</rs> straft</l>
+              <l><rs ref="#Fintenrings-Haupt"><rs ref="#fintenring">Dein</rs> graues Haupt</rs> um dreißig Jahre Lügen.</l>
+              <l>– Nun komm, ich muß <rs ref="#rupert">zum Vater</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING</speaker></rs>
+            <stage>tritt <rs ref="#ottokar">ihm</rs> in <rs ref="#den-Weg">den Weg</rs>.</stage>
+            <lg>
+              <l>Nein, im Ernst,</l>
+              <l>Bleib <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">hier</rs>, und sei <rs ref="#so-lustig,-wie-du-kannst">so lustig, wie <rs ref="#ottokar">du</rs> kannst</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Bei <rs ref="#Ottokars-Leben">meinem Leben</rs>, ja, <rs ref="#so-lustig,-wie-du-kannst">das</rs> bin ich nie</l>
+              <l>Gewesen so wie jetzt, und möchte <rs ref="#fintenring">dir</rs></l>
+              <l>Die zähnelosen Lippen küssen, <rs ref="#fintenring">Alter</rs>.</l>
+              <l><pb n="189"/> <rs ref="#fintenring">Du</rs> gehst auch gern nicht in <rs ref="#Krieg">den Krieg</rs>, nun höre,</l>
+              <l>Sag <rs ref="#fintenring">deinem</rs> Weibe nur, ich bring <rs ref="#der-Frieden">den Frieden</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>Im Ernste?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Bei <rs ref="#Ottokars-Leben">meinem Leben</rs>, ja.</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Nun morgen</l>
+              <l>Mehr. Lebe wohl.</l>
+            </lg>
+            <stage><rs ref="#der-Kerkermeister">Zum Kerkermeister</rs>.</stage>
+            <lg>
+              <l>Verschließe hinter mir</l>
+              <l>Sogleich <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs>.</l>
+            </lg>
+            <stage>Zu <rs ref="#ottokar">Ottokar</rs>, da <rs ref="#ottokar">dieser</rs> <rs ref="#fintenring">ihm</rs> folgen will.</stage>
+            <lg>
+              <l>Nein, bei meinem Eid</l>
+              <l>Ich sag <rs ref="#ottokar">dir</rs>, <rs ref="#auf-Befehl-des-Vaters-bist---------------Du-ein-Gefangner">auf Befehl <rs ref="#rupert">des Vaters</rs> bist</l>
+              <l><rs ref="#ottokar">Du</rs> ein Gefangner</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Was sagst <rs ref="#fintenring">du</rs>?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Ich soll</l>
+              <l><rs ref="#ottokar">Dir</rs> weiter gar nichts sagen, außer <rs ref="#auf-Befehl-des-Vaters-bist---------------Du-ein-Gefangner">dies</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Nun?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>Ei, daß ich nichts sagen soll.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>O bei</l>
+              <l><rs ref="#Gott">Dem großen Gott des Himmels</rs>, sprechen muß</l>
+              <l>Ich gleich <rs ref="#rupert">ihn</rs> – <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">eine Nachricht von dem höchsten</l>
+              <l>Gewicht, <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">die</rs> keinen Aufschub duldet</rs>, muß</l>
+              <l>Ich mündlich gleich <rs ref="#rupert">ihm</rs> hinterbringen.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>So</l>
+              <l>Kannst <rs ref="#ottokar">du</rs> <rs ref="#ottokar">dich</rs> trösten mindestens, <rs ref="#rupert">er</rs> ist</l>
+              <l>Mit <rs ref="#santing">Santing</rs> fort, es weiß kein Mensch wohin.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ich muß sogleich <rs ref="#rupert">ihn</rs> suchen, laß mich. –</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING</speaker></rs>
+            <stage>tritt <rs ref="#ottokar">ihm</rs> in <rs ref="#den-Weg">den Weg</rs>.</stage>
+            <lg>
+              <l>Ei</l>
+              <l><rs ref="#ottokar">Du</rs> scherzest wohl.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Nein laß mich, nein, ich scherze</l>
+              <l>Bei meiner Ritterehre nicht mit <rs ref="#Fintenrings-Ritterehre"><rs ref="#fintenring">deiner</rs></rs>.</l>
+              <l>'s ist plötzlich mir so ernst zu Mut geworden,</l>
+              <l>Als wäre ein Gewitter in der Luft.</l>
+              <l>Es hat die höchste Eil mit <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">meiner Nachricht</rs>,</l>
+              <l>Und läßt <rs ref="#fintenring">du</rs> mich gutwillig nicht, so wahr</l>
+              <l>Ich leb, ich breche durch.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Durchbrechen, <rs ref="#ottokar">du</rs>?</l>
+              <l><pb n="190"/> Sprichst doch mit mir gleich wie mit <rs ref="#ein-Weib">einem Weibe</rs>!</l>
+              <l><rs ref="#ottokar">Du</rs> bist mir anvertraut auf <rs ref="#Fintenrings-Haupt">Haupt</rs> und <rs ref="#Fintenrings-Ritterehre">Ehre</rs>,</l>
+              <l>Tritt mich mit <rs ref="#Ottokars-Füße">Füßen</rs> erst, dann bist <rs ref="#ottokar">du</rs> frei.</l>
+              <l>– Nein, hör, ich wüßte <rs ref="#Gedulde-dich-ein-Stündchen,-führ-ich-selbst---------------Sobald-er-rückkehrt-deinen-Vater-zu-dir">was Gescheuteres</rs>.</l>
+              <rs ref="#Gedulde-dich-ein-Stündchen,-führ-ich-selbst---------------Sobald-er-rückkehrt-deinen-Vater-zu-dir"><l>Gedulde <rs ref="#ottokar">dich</rs> ein Stündchen, führ ich selbst</l>
+              <l>Sobald <rs ref="#rupert">er</rs> rückkehrt <rs ref="#rupert"><rs ref="#ottokar">deinen</rs> Vater</rs> zu <rs ref="#ottokar">dir</rs></rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Sag mir um <rs ref="#was-hab---------------Ich-Böses-denn-getan">'s</rs> <rs ref="#Der-Himmel-(religiös)">Himmels</rs> willen nur, <rs ref="#was-hab---------------Ich-Böses-denn-getan">was hab</l>
+              <l>Ich Böses denn getan</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Weiß nichts. – Noch mehr.</l>
+              <l>Ich schick <rs ref="#rupert">dem Vater</rs> Boten nach, daß <rs ref="#rupert">er</rs></l>
+              <l>So früher heimkehrt.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Nun denn, meinetwegen.</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>So lebe wohl.</l>
+            <stage><rs ref="#der-Kerkermeister">Zum Kerkermeister</rs>.</stage>
+            <l>Und <rs ref="#der-Kerkermeister">du</rs> tust <rs ref="#der-Kerkermeister">deine</rs> Pflicht.</l>
+            <stage><rs ref="#fintenring">Fintenring</rs> und <rs ref="#der-Kerkermeister">der Kerkermeister</rs> ab; <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Tür</rs> wird verschlossen.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>sieht <rs ref="#der-Kerkermeister-/-fintenring">ihnen</rs> nach.</stage>
+            <lg>
+              <l>Ich hätte doch nicht bleiben sollen. – <rs ref="#Gott">Gott</rs></l>
+              <l>Weiß, wann <rs ref="#rupert">der Vater</rs> wiederkehrt. – <rs ref="#der-Kerkermeister-/-fintenring">Sie</rs> wollten</l>
+              <l><rs ref="#rupert">Ihn</rs> freilich suchen. – Ach, es treibt <rs ref="#der-Geist">der Geist</rs></l>
+              <l><rs ref="#der-Kerkermeister-/-fintenring">Sie</rs> nicht, <rs ref="#der-Geist">der</rs> alles leistet. – – Was zum Henker,</l>
+              <l>Es geht ja nicht, ich muß hinaus, ich habe</l>
+              <l>Ja <rs ref="#agnes">Agnes</rs> <rs ref="#das-Gebirge">ins Gebirg</rs> beschieden. – <rs ref="#fintenring">Fintenring</rs>!</l>
+              <l><rs ref="#fintenring">Fintenring</rs>!</l>
+            </lg>
+            <stage>An <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs> klopfend.</stage>
+            <lg>
+              <l>Daß ein Donner, <rs ref="#fintenring">Tauber</rs>, das</l>
+              <l>Gehör <rs ref="#fintenring">dir</rs> öffnete! <rs ref="#fintenring">Fintenring</rs>! – – Schloß</l>
+              <l>Von <rs ref="#fintenring">einem Menschen, <rs ref="#fintenring">den</rs> kein Schlüssel schließt</rs>,</l>
+              <l>Als nur <rs ref="#rupert"><rs ref="#fintenring">sein</rs> Herr</rs>. <rs ref="#rupert">Dem</rs> dient <rs ref="#fintenring">er</rs> mit stockblinder</l>
+              <l>Dienstfertigkeit, und wenn <rs ref="#fintenring">sein</rs> Dienst auch zehnmal</l>
+              <l><rs ref="#fintenring">Ihm</rs> Schaden brächt, doch dient <rs ref="#fintenring">er</rs> <rs ref="#rupert">ihm</rs>. – Ich wollt</l>
+              <l><rs ref="#rupert">Ihn</rs> doch gewinnen, wenn <rs ref="#rupert">er</rs> nur erschiene.</l>
+              <l>Denn nichts besticht <rs ref="#rupert">ihn</rs>, außer daß <rs ref="#man-(generic)">man</rs> <rs ref="#rupert">ihm</rs></l>
+              <l>Das sagt. – – Zum mindsten wollt ich <rs ref="#rupert">ihn</rs> doch eher</l>
+              <l>Gewinnen, als <rs ref="#die-tauben-Wände">die tauben Wände</rs>! Himmel</l>
+              <l>Und Hölle! Daß ich einem Schäfer gleich</l>
+              <l><pb n="191"/> Mein Leid <rs ref="#die-tauben-Wände">den Felsen</rs> klagen muß! – – So will</l>
+              <l>Ich mich, <rs ref="#Geduld">Geduld</rs>, an <rs ref="#Geduld">dir</rs>, <rs ref="#Geduld">du Weibertugend</rs> üben.</l>
+              <l>– <rs ref="#mit-Anstand-viel---------------Zu-unterlassen">'s</rs> ist eine schnöde Kunst, <rs ref="#mit-Anstand-viel---------------Zu-unterlassen">mit Anstand viel</l>
+              <l>Zu unterlassen</rs> – und ich merk <rs ref="#Es-wird-mehr-Schweiß-mir-kosten,-als-das-Tun">es</rs> schon,</l>
+              <l><rs ref="#Es-wird-mehr-Schweiß-mir-kosten,-als-das-Tun"><rs ref="#mit-Anstand-viel---------------Zu-unterlassen">Es</rs> wird mehr Schweiß mir kosten, als das Tun</rs>.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> will <rs ref="#ottokar">sich</rs> setzen.</stage>
+            <l>Horch! Horch! Es kommt.</l>
+            <stage><rs ref="#der-Kerkermeister">Der Kerkermeister</rs> öffnet <rs ref="#eustache">Eustachen</rs> <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs>.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>zu <rs ref="#der-Kerkermeister">diesem</rs>.</stage>
+            <l>Ich werd es <rs ref="#der-Kerkermeister">dir</rs> vergelten.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ach, <rs ref="#eustache">Mutter</rs>!</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Hör, <rs ref="#ottokar">mein Sohn</rs>, ich habe <rs ref="#ottokar">dir</rs></l>
+              <l>Entsetzliches zu sagen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#eustache">Du</rs> erschreckst mich –</l>
+              <l>– Wie bist <rs ref="#eustache">du</rs> so entstellt?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Jerome-ist-erschlagen">Das eine</rs> wirst</l>
+              <l><rs ref="#ottokar">Du</rs> wissen schon, <rs ref="#Jerome-ist-erschlagen"><rs ref="#jeronimus">Jerome</rs> ist erschlagen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Jeronimus</rs>? O Gott des Himmels! Wer</l>
+              <l>Hat <rs ref="#Jerome-ist-erschlagen">das</rs> getan?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Jerome-ist-erschlagen">Das</rs> ist nicht alles. <rs ref="#rupert">Rupert</rs></l>
+              <l>Kennt <rs ref="#Ottokars-Liebe-zu-Agnes"><rs ref="#ottokar">deine</rs> Liebe</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wie? Wer konnt <rs ref="#rupert">ihm</rs> <rs ref="#Ottokars-Liebe-zu-Agnes">die</rs></l>
+              <l>Entdecken?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Frage nicht – o <rs ref="#eustache"><rs ref="#ottokar">deine</rs> Mutter</rs>,</l>
+              <l>Ich selbst. <rs ref="#jeronimus">Jerome</rs> hat <rs ref="#Ottokars-Liebe-zu-Agnes">es</rs> mir vertraut,</l>
+              <l>Mich riß ein übereilter Eifer hin,</l>
+              <l><rs ref="#rupert">Der Wütrich, <rs ref="#rupert">den</rs> ich niemals so gekannt</rs> –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Von wem sprichst <rs ref="#eustache">du</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>O Gott, von <rs ref="#rupert"><rs ref="#ottokar">deinem</rs> Vater</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Noch faß ich <rs ref="#eustache">dich</rs> nur halb – doch laß <rs ref="#eustache">dir</rs> sagen</l>
+              <l>Vor allen Dingen, <rs ref="#Das-ganze-Rätsel-von-Peters-Mord">alles</rs> ist gelöset,</l>
+              <l><rs ref="#Das-ganze-Rätsel-von-Peters-Mord">Das ganze Rätsel von <rs ref="#der-Mord-an-Peter">dem Mord</rs></rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">die Männer,</l>
+              <l><rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">Die</rs> <rs ref="#rupert">man</rs> bei <rs ref="#Peters-Leiche"><rs ref="#Peter">Peters</rs> Leiche</rs> fand</rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sie</rs> haben</l>
+              <l><rs ref="#Peters-Leiche">Die Leiche</rs> selbst gefunden, <rs ref="#Peters-Leiche">ihr</rs> <rs ref="#Peters-kleine-Finger">die Finger</rs></l>
+              <l>Aus Vorurteil nur abgeschnitten. – Kurz,</l>
+              <l>Rein, wie <rs ref="#Die-Sonne">die Sonne</rs>, ist <rs ref="#sylvester">Sylvester</rs>.</l>
+              <pb n="192"/>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>O</l>
+              <l>Jesus! Und jetzt erschlägt <rs ref="#rupert">er</rs> <rs ref="#agnes"><rs ref="#sylvester">seine</rs> Tochter</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wer?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#rupert">Rupert</rs>. Wenn <rs ref="#agnes">sie</rs> in <rs ref="#das-Gebirge">dem Gebirge</rs> jetzt,</l>
+              <l>Ist <rs ref="#agnes">sie</rs> verloren, <rs ref="#rupert">er</rs> und <rs ref="#santing">Santing</rs> sucht <rs ref="#agnes">sie</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>eilt <rs ref="#Die-Tür-vom-Gefängnis-4-5">zur Türe</rs>.</stage>
+            <l><rs ref="#fintenring">Fintenring</rs>! <rs ref="#fintenring">Fintenring</rs>! <rs ref="#fintenring">Fintenring</rs>!</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Höre</l>
+              <l>Mich an, <rs ref="#fintenring">er</rs> darf <rs ref="#ottokar">dich</rs> nicht befrein, <rs ref="#Fintenrings-Haupt"><rs ref="#fintenring">sein</rs> Haupt</rs></l>
+              <l>Steht drauf. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#fintenring">Er</rs> oder ich. – <rs ref="#fintenring">Fintenring</rs>!</l>
+            <stage><rs ref="#ottokar">Er</rs> sieht <rs ref="#ottokar">sich</rs> um.</stage>
+            <lg>
+              <l>Nun</l>
+              <l>So helfe mir <rs ref="#die-Mutter-Gottes">die Mutter <rs ref="#Jesus-Christus">Gottes</rs></rs> denn. –</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> hängt <rs ref="#einen-Mantel">einen Mantel</rs> um, <rs ref="#einen-Mantel">der</rs> auf dem Boden lag.</stage>
+            <l>Und <rs ref="#einen-Mantel">dieser Mantel</rs> bette meinem Fall.</l>
+            <stage><rs ref="#ottokar">Er</rs> klettert in ein unvergittert Fenster.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Um Gotteswillen, springen willst <rs ref="#ottokar">du</rs> doch</l>
+              <l>Von <rs ref="#der-Schloßturm-(Rossitz)">diesem Turm</rs> nicht? <rs ref="#ottokar">Rasender</rs>! <rs ref="#der-Schloßturm-(Rossitz)">Der Turm</rs></l>
+              <l>Ist funfzig Fuß hoch, und der ganze Boden</l>
+              <l>Gepflastert. – <rs ref="#ottokar">Ottokar</rs>! <rs ref="#ottokar">Ottokar</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>von oben.</stage>
+            <lg>
+              <l><rs ref="#eustache">Mutter</rs>! <rs ref="#eustache">Mutter</rs>! Sei wenn ich gesprungen</l>
+              <l>Nur still, hörst <rs ref="#eustache">du</rs>? Ganz still, sonst fangen <rs ref="#der-Kerkermeister-/-fintenring">sie</rs></l>
+              <l>Mich.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>sinkt auf <rs ref="#Eustaches-Kniee">die Knie</rs>.</stage>
+            <lg>
+              <l><rs ref="#ottokar">Ottokar</rs>! Auf <rs ref="#Eustaches-Kniee">meinen Knien</rs> bitte,</l>
+              <l>Beschwör ich <rs ref="#ottokar">dich</rs>, geh so verächtlich nicht</l>
+              <l>Mit <rs ref="#Ottokars-Leben"><rs ref="#ottokar">deinem</rs> Leben</rs> um, spring nicht <rs ref="#der-Schloßturm-(Rossitz)">vom Turm</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#das-Leben">Das Leben</rs> ist viel wert, wenn <rs ref="#man-(generic)"><rs ref="#das-Leben">man's</rs></rs> verachtet.</l>
+              <l>Ich <rs ref="#das-Leben">brauch's</rs>. – Leb wohl.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> springt.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>steht auf.</stage>
+            <l>Zu Hülfe! Hülfe! Hülfe!</l>
+            <stage>Der Vorhang fällt.</stage>
+          </sp>
+        </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,337 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Akt</head>
+        <div type="scene">
+          <head>Sechste Szene</head>
+          <stage>In <rs ref="#Leipzig">Leipzig</rs>.</stage>
+          <stage><rs ref="#paetus">Pätus</rs> an <rs ref="#den-Tisch-(fritz-in-leipzig)">einem Tisch</rs> und schreibt. <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs> tritt herein <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">einen Brief</rs> in <rs ref="#der-------------Hand-(fritz)">der
+            Hand</rs>.</stage>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>sieht auf und schreibt fort.</stage>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Pätus</rs>! – Hast zu tun?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Gleich – <stage><rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz</rs> spaziert auf und ab.</stage> Jetzt – <stage>Legt das
+                Schreibzeug weg.</stage></p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Pätus</rs>! ich hab <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">einen Brief</rs> bekommen – und hab nicht das Herz, <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">ihn</rs> aufzumachen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Von wo kommt <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">er</rs>? <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">Ist's</rs> <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><rs ref="#fritz-(berg-sohn-geheimer-rat)">deines</rs> Vaters</rs> Hand?</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Nein, von <rs ref="#seiffenblase">Seiffenblase</rs> – aber <rs ref="#der-------------Hand-(fritz)">die Hand</rs> zittert mir, so bald ich erbrechen will. Brich
+              doch auf, <rs ref="#paetus">Bruder</rs>, und lies mir vor.</p>
+            <stage>Wirft <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> auf <rs ref="#einen-Lehnstuhl-(pätus-in-leipzig)">einen Lehnstuhl</rs>.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>liest.</stage>
+            <p>»Die Erinnerung so <rs ref="#mancher-angenehmen-Stunden,-deren-ich-mich-noch-mit-Ihnen-(zeit-die-seiffenblase-und-´fritz-verbracht-haben)">mancher angenehmen Stunden, <rs ref="#mancher-angenehmen-Stunden,-deren-ich-mich-noch-mit-Ihnen-(zeit-die-seiffenblase-und-´fritz-verbracht-haben)">deren</rs> <rs ref="#seiffenblase">ich</rs> mich noch mit <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> genossen
+              zu haben erinnere</rs>, verpflichtet <rs ref="#seiffenblase">mich</rs>, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> zu schreiben und <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> an <rs ref="#mancher-angenehmen-Stunden,-deren-ich-mich-noch-mit-Ihnen-(zeit-die-seiffenblase-und-´fritz-verbracht-haben)">diese angenehme
+              Stunden</rs> zu erinnern« – Was <rs ref="#seiffenblase">der Junge</rs> für eine rasende Orthographie hat.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Lies doch nur –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>»Und weil <rs ref="#seiffenblase">ich</rs> mich verpflichtet hielt, <rs ref="#seiffenblase">Ihnen</rs> Nachrichten von meiner Ankunft und den
+              Neuigkeiten, die allhier vorgefallen, als melde <rs ref="#seiffenblase">Ihnen</rs> von <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)">Dero wertesten Familie,
+              <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)">welche</rs> leider <rs ref="#sehr-viele-Unglücksfälle-(die-der-familie-berg-wiederfahren-sind)">sehr viele Unglücksfälle</rs> in diesem Jahre erlebt hat</rs>, und wegen <rs ref="#der---------------Freundschaft,-welche-ich-in-Dero-Eltern-ihrem-Hause-genossen">der
+              Freundschaft, <rs ref="#der---------------Freundschaft,-welche-ich-in-Dero-Eltern-ihrem-Hause-genossen">welche</rs> <rs ref="#seiffenblase">ich</rs> in <rs ref="#Ihrem-Hause-(geheimer-rat,-bergs-in-heidelbrunn,-wo-vermutlich-gustchen-unterrichtet-wird))"><rs ref="#Dero-Eltern-(fritz-eltern)">Dero Eltern</rs> <rs ref="#Dero-Eltern-(fritz-eltern)">ihrem</rs> Hause</rs> genossen</rs>, sehe <rs ref="#seiffenblase">mich</rs> verpflichtet,
+              weil <rs ref="#seiffenblase">ich</rs> weiß, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> mit <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihrem</rs> Herrn Vater</rs> in Mißverständnis und <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">er</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> lange wohl
+              nicht wird geschrieben haben, so werden <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> auch wohl <rs ref="#den-Unglücksfall-(affäre-läuffer-gustchen)">den Unglücksfall</rs> nicht wissen
+              mit <rs ref="#laeuffer-ccc">dem Hofmeister, <rs ref="#laeuffer-ccc">welcher</rs> aus <rs ref="#Ihres-gnädigen-Onkels-Hause-(das-adelshaus-der-majors-als-konzept,-nicht-best-haus)"><rs ref="#major-ccc"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihres</rs> gnädigen Onkels</rs> Hause</rs> ist gejagt worden</rs>, weil <rs ref="#laeuffer-ccc">er</rs>
+              <rs ref="#gustchen-(tochter-majors)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihre</rs> Kusine</rs> genotzüchtigt, worüber <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#gustchen-(tochter-majors)">sich</rs> so zu <rs ref="#im-Gemüt-(gefühlsregungen-gustchen,-herz,-seele)">Gemüt</rs> gezogen, daß <rs ref="#gustchen-(tochter-majors)">sie</rs> in <rs ref="#einem-Teich">einen
+              Teich</rs> gesprungen, durch welchen Trauerfall <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihre</rs> ganze Familie</rs> in den höchsten <pb n="84"/> Schröcken« – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>! was ist <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> – <stage>Begießt <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> mit Lavendel.</stage>
+              Wie nun Berg? Rede, wird dir weh – Hätt ich dir doch den verdammten Brief nicht – Ganz
+              gewiß <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">ist's</rs> eine Erdichtung – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>! <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>!</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Laß mich – Es wird schon übergehn.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Soll ich <rs ref="#einen-Chirurgus-(ein-arzt)">jemand</rs> holen, <rs ref="#einen-Chirurgus-(ein-arzt)">der</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> die Ader schlägt.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>O pfui doch – tu doch so französisch nicht – Lies <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">mir's</rs> noch einmal vor.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ja, ich werde <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> – Ich will <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">den hundsföttischen maliziösen Brief</rs> den Agenblick –</p>
+            <stage>Zerreißt <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">ihn</rs>.</stage>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Genotzüchtigt – ersäuft. <stage>Schlägt <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> an die Stirn.</stage> <rs ref="#Meine-Schuld-(fritz,-an-gustchens-teichsprung-und-affäre)">Meine Schuld</rs>!
+                <stage>Steht auf.</stage> <rs ref="#Meine-Schuld-(fritz,-an-gustchens-teichsprung-und-affäre)">meine Schuld</rs> einzig und allein –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> bist wohl nicht klug – Willst <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> <rs ref="#Meine-Schuld-(fritz,-an-gustchens-teichsprung-und-affäre)">die Schuld</rs> geben, daß <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#gustchen-(tochter-majors)">sich</rs> <rs ref="#laeuffer-ccc">vom Hofmeister</rs>
+              verführen läßt –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <rs ref="#Einbildungen"><p><rs ref="#paetus">Pätus</rs>, ich schwur <rs ref="#gustchen-(tochter-majors)">ihr</rs>, zurückzukommen, ich schwur <rs ref="#gustchen-(tochter-majors)">ihr</rs> – <rs ref="#das-(zeitraum-bis-gustchen-und-fritz-nach-seinem-uni-abschluss-zusammen-leben-könnten)">Die drei Jahr</rs> sind
+              verflossen, ich bin nicht gekommen, ich bin aus <rs ref="#Halle-in-Sachsen">Halle</rs> fortgangen, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">mein Vater</rs> hat keine
+              Nachrichten von mir gehabt. <rs ref="#es26"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Mein Vater</rs> hat mich aufgeben</rs>, <rs ref="#gustchen-(tochter-majors)">sie</rs> hat <rs ref="#es26">es</rs> erfahren, <rs ref="#Leid-(kummer-leiden-gustchen)">Gram</rs> –
+              du kennst <rs ref="#gustchen-(tochter-majors)">ihren</rs> Hang zur Melancholei –, <rs ref="#deiner-Strenge-(majorin)-aaa">die Strenge <rs ref="#majorin"><rs ref="#gustchen-(tochter-majors)">ihrer</rs> Mutter</rs></rs> obenein, <rs ref="#der---------------Einsamkeit-(gustchens)">Einsamkeit</rs>
+              auf <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">dem Lande</rs>, betrogne Liebe – Siehst <rs ref="#paetus">du</rs> <rs ref="#das61">das</rs> nicht ein, Pätus; siehst <rs ref="#paetus">du</rs> <rs ref="#das61">das</rs> nicht
+              ein? <rs ref="#das61">Ich bin ein Bösewicht: ich bin schuld an <rs ref="#gustchen-(tochter-majors)">ihrem</rs> Tode</rs>.</p></rs>
+            <stage>Wirft <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> wieder in <rs ref="#einen-Lehnstuhl-(pätus-in-leipzig)">den Stuhl</rs> und verhüllt <rs ref="#fritz-(berg-sohn-geheimer-rat)">sein</rs> Gesicht.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#Einbildungen">Einbildungen</rs>! – <rs ref="#Einbildungen">Es</rs> ist nicht wahr, <rs ref="#sehr-viele-Unglücksfälle-(die-der-familie-berg-wiederfahren-sind)">es</rs> ist so nicht gegangen. <stage>Stampft mit <rs ref="#dem-----------------Fuß-(pätus)">dem
+                Fuß</rs>.</stage> Tausend Sapperment, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> so dumm bist und alles glaubst, <rs ref="#seiffenblase">der
+              Spitzbube</rs>, <rs ref="#seiffenblase">der Hundsfut</rs>, <rs ref="#seiffenblase">der Bärenhäuter</rs>, <rs ref="#seiffenblase">der Seiffenblase</rs> will <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> einen Streich
+              spielen – Laß mich <rs ref="#seiffenblase">ihn</rs> einmal zu sehen kriegen. – <rs ref="#Es12">Es</rs> ist nicht wahr, <rs ref="#Es12">daß <rs ref="#gustchen-(tochter-majors)">sie</rs> tot ist</rs>,
+              und wenn <rs ref="#gustchen-(tochter-majors)">sie</rs> tot ist, so hat <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#gustchen-(tochter-majors)">sich</rs> nicht selbst umgebracht ...</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#seiffenblase">Er</rs> kann doch das nicht aus der Luft saugen – <rs ref="#das62">Selbst umgebracht</rs> – <stage>Springt
+                auf.</stage> O <rs ref="#das62">das</rs> ist entsetzlich!</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>stampft abermal mit <rs ref="#dem-----------------Fuß-(pätus)">dem Fuß</rs>.</stage>
+            <p>Nein, <rs ref="#gustchen-(tochter-majors)">sie</rs> hat <rs ref="#gustchen-(tochter-majors)">sich</rs> <pb n="85"/> selbst nicht umgebracht. <rs ref="#seiffenblase">Seiffenblase</rs> lügt; <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs>
+              müssen mehr Bestätigung haben. <rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> weißt, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> <rs ref="#seiffenblase">ihm</rs> einmal im Rausch erzählt hast, <rs ref="#das63">daß
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> in <rs ref="#gustchen-(tochter-majors)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">deine</rs> Kusine</rs> verliebt wärst</rs>; siehst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, <rs ref="#das63">das</rs> hat <rs ref="#seiffenblase">die maliziöse Kanaille</rs>
+              aufgefangen – aber weißt <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> was; weißt <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, was <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> tust? Hust <rs ref="#seiffenblase">ihm</rs> <rs ref="#Schimpf">was</rs>; pfeif <rs ref="#seiffenblase">ihm</rs> <rs ref="#Schimpf">was</rs>;
+              pfui <rs ref="#seiffenblase">ihm</rs> <rs ref="#Schimpf">was</rs>, schreib <rs ref="#seiffenblase">ihm</rs>, <rs ref="#seiffenblase">Ew. Edlen</rs> danke dienstfreundlichst für <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">Dero Neuigkeiten</rs>,
+              und bitte, <rs ref="#seiffenblase">Sie</rs> wollen <rs ref="#fritz-(berg-sohn-geheimer-rat)">mich</rs> im – <rs ref="#Das14">Das</rs> ist <rs ref="#der-beste-Rat">der beste Rat</rs>, <rs ref="#Das14">schreib <rs ref="#seiffenblase">ihm</rs> zurück: <rs ref="#seiffenblase">Ihr</rs> seid
+              <rs ref="#ein-Hundsfut-(prädikativ-seiffenblase)">ein Hundsfut</rs>.</rs> <rs ref="#Das14">Das</rs> ist <rs ref="#der-beste-Rat">das Vernünftigste, <rs ref="#der-beste-Rat">was</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> bei <rs ref="#ein-Briefchen-(seiffenblase-an-fritz)">der Sache</rs> tun kannst</rs>.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ich will nach <rs ref="#Hause-(familie-berg-in-insterburg)">Hause</rs> reisen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>So reis ich mit <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>, ich laß <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> keinen Augenblick allein.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Aber wovon? <rs ref="#Reisen">Reisen</rs> ist bald ausgesprochen – Wenn ich keine abschlägige Antwort
+              befürchtete, so wollt ich <rs ref="#Reisen">es</rs> bei <rs ref="#Leichtfuß-et-Compagnie">Leichtfuß et Compagnie</rs> versuchen, aber ich bin <rs ref="#Leichtfuß-et-Compagnie">ihnen</rs>
+              schon <rs ref="#hundertfunfzig-Dukaten-(schulden-fritz-bei-leichtfuß-et-compagnie)">hundertfunfzig Dukaten</rs> schuldig –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(sohn-geheimer…-/-paetus">Wir</rs> wollen beide zusammen hingehn – Wart, <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> müssen <rs ref="#die-Lotterie">die Lotterie</rs> vorbei. Heut ist
+              die Post aus Hamburg angekommen, ich will doch unterwegs nachfragen; zum Spaß nur
+              –</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

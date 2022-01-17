@@ -1,0 +1,385 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Akt</head>
+        <div type="scene">
+          <head>Siebente Szene</head>
+          <stage>In <rs ref="#Halle-in-Sachsen">Halle</rs>.</stage>
+          <stage><rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz von Berg</rs> im <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">Gefängnis</rs>. <rs ref="#bollwerk">Bollwerk</rs>, <rs ref="#seiffenblase">von Seiffenblase</rs> und <rs ref="#hofmeister-(von-seiffenbalse)"><rs ref="#seiffenblase">sein</rs> Hofmeister</rs> stehn
+            um <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs>.</stage>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Wenn ich doch <rs ref="#paetus">den Jungen</rs> hier hätte, <rs ref="#Haut-(pätus)">das Fell</rs> zög ich <rs ref="#paetus">ihm</rs> über die Ohren. <rs ref="#Es5">Es</rs> ist mit
+              alledem doch infam gehandelt, <rs ref="#Es5">einen ehrlichen Jungen wie <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs> <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">ins Karzer</rs> zu bringen</rs>;
+              da <rs ref="#ein-Mensch-xxx">sich</rs> keiner <rs ref="#paetus">sein</rs> hat annehmen wollen. Denn <rs ref="#das32">das</rs> ist ja wahr, <rs ref="#das32">kein einziger Landsmann
+              hat den Fuß vor die Tür <rs ref="#paetus">seinethalben</rs> gesetzt</rs>. Wenn <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs> nicht gut für <rs ref="#paetus">ihn</rs> gesagt
+              hätte, wär <rs ref="#paetus">er</rs> <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">im Gefängnis</rs> verfault. Und in vierzehn Tagen soll <rs ref="#das-Geld-(ablösesummer-fritz-pätus-gefängnisstrafe)">das Geld</rs> hier sein,
+              und wo <rs ref="#paetus">er</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">den Berg</rs> in <rs ref="#Verlegenheit-(fritz-wird-in-verlegenheit-gelassen)">Verlegenheit</rs> läßt, soll <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#paetus">ihn</rs> für einen ausgemachten Schurken
+              halten. <rs ref="#paetus">O du verdammter Pä Pä Pä Pä Pätus</rs>! Wart <rs ref="#paetus">du verhenkerter Pätus</rs>, wart einmal!
+              –</p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p>Ich kann <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> nicht genug beschreiben, lieber Herr von Berg, wie leid <rs ref="#es15">es</rs> mir
+              besonders um <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihres</rs> Herrn Vaters</rs> und <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)">der Familie</rs> willen tut, <rs ref="#es15"><rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> in <rs ref="#Verlegenheit-(fritz-wird-in-verlegenheit-gelassen)">einem solchen
+              Zustande</rs> zu sehen und noch dazu ohne <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihre</rs> Schuld, aus bloßer jugendlicher
+              Unbesonnenheit</rs>. <rs ref="#Es6">Es</rs> hat schon einer von den sieben Weisen Griechenlandes gesagt, <rs ref="#Es6">für
+              Bürgschaften sollst <rs ref="#ein-Mensch-xxx">du</rs> <rs ref="#ein-Mensch-xxx">dich</rs> in <rs ref="#Acht">Acht</rs> nehmen</rs>, und in <rs ref="#der-Tat-(tatsächlich,-wirklich-floskelhaft)">der Tat</rs> es ist nichts
+              unverschämter, <rs ref="#das33">als daß ein junger Durchbringer, der sich durch seine lüderliche
+              Wirtschaft ins Elend gestürzt hat, auch andere mit hineinziehen will</rs>, denn vermutlich
+              hat <rs ref="#paetus">er</rs> <rs ref="#das33">das</rs> gleich anfangs <rs ref="#im-Sinne-(geist-gedanken-pätus)">im Sinne</rs> gehabt, als <rs ref="#paetus">er</rs> auf <rs ref="#der---------------Universität-(fritz-nach-der-schule,-wohl-in-halle)">der Akademie</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihre</rs> Freundschaft
+              suchte.</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>HERR VON SEIFFENBLASE.</speaker></rs>
+            <p>Ja ja, <rs ref="#fritz-(berg-sohn-geheimer-rat)">lieber Bruder Berg</rs>! nimm mir nicht übel, da hast <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> einen großen Bock gemacht.
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> bist selbst schuld daran; <rs ref="#paetus">dem Kerl</rs> hättst <rs ref="#daß-er---------------dich-betrügen-würde"><rs ref="#fritz-(berg-sohn-geheimer-rat)">du's</rs></rs> doch gleich ansehen können, <rs ref="#daß-er---------------dich-betrügen-würde">daß <rs ref="#paetus">er</rs>
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> betrügen würde</rs>. <rs ref="#paetus">Er</rs> ist bei mir auch gewesen und hat mich angesprochen: <rs ref="#paetus">er</rs> <pb n="45"/> wär <rs ref="#der-äußersten-Not-(finanzielle,-pätus)">aufs Äußerste</rs> getrieben, <rs ref="#es16"><rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)"><rs ref="#paetus">seine</rs> Kreditores</rs> wollten <rs ref="#paetus">ihn</rs> wegstecken
+              lassen, wo <rs ref="#paetus">ihn</rs> nicht Sonn noch Mond beschiene</rs>. Laß <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">sie</rs> <rs ref="#paetus">dich</rs>, dacht ich, <rs ref="#es16">es</rs> schadt <rs ref="#paetus">dir</rs>
+              nichts. Das ist dafür, daß <rs ref="#paetus">du</rs> <rs ref="#den-bürgerlichen-Jungen">uns</rs> sonst kaum über die Achsel ansahst, aber wenn <rs ref="#seine--(kinder-des-adels)">ihr</rs> in
+              Not seid, da sind <rs ref="#seine--(kinder-des-adels)">die Adelichen</rs> zu Kaventen gut genug. <rs ref="#paetus">Er</rs> erzählte mir langes und
+              breites; er hätte <rs ref="#paetus">seine</rs> Pistolen schon geladen, im Fall <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">die Kreditores</rs> <rs ref="#paetus">ihn</rs> angriffen –
+              Und nun läßt <rs ref="#paetus">der lüderliche Hund</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> an <rs ref="#seiner-Stelle-(an-pätus-stelle,-situation-pätus)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">seiner</rs> Stelle</rs> prostituieren. <rs ref="#Das7">Das</rs> ist wahr,
+              <rs ref="#Das7">wenn mir das geschehen wäre, ich könnte so ruhig nicht dabei sein</rs>: <rs ref="#das34">zwischen vier
+              Mauren <rs ref="#fritz-(berg-sohn-geheimer-rat)">der Herr von Berg</rs></rs>, und <rs ref="#das34">das</rs> um <rs ref="#paetus">eines lüderlichen Studenten</rs> willen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Er</rs> war mein Schulkamerad – – Laßt <rs ref="#paetus">ihn</rs> zu frieden. Wenn ich mich nicht über <rs ref="#paetus">ihn</rs>
+              beklage, was <rs ref="#Verlegenheit-(fritz-wird-in-verlegenheit-gelassen)">geht's</rs> <rs ref="#hofmeister-(von-seif…-/-seiffenblase-+-1-sss">euch</rs> an? Ich kenn <rs ref="#paetus">ihn</rs> länger als <rs ref="#hofmeister-(von-seif…-/-seiffenblase-+-1-sss">ihr</rs>; ich weiß, daß <rs ref="#paetus">er</rs> mich nicht
+              mit <rs ref="#seinem-guten-Willen-(moralischer-wille-absicht-pätus)"><rs ref="#paetus">seinem</rs> guten Willen</rs> hier sitzen läßt.</p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p>Aber <rs ref="#fritz-(berg-sohn-geheimer-rat)">Herr von Berg</rs>, <rs ref="#ein-Mensch-xxx">wir</rs> müssen in <rs ref="#der-Welt-(irdische-welt-als-raum)">der Welt</rs> mit <rs ref="#Vernunft">Vernunft</rs> handeln. <rs ref="#paetus">Sein</rs> Schade ist <rs ref="#es17">es</rs>
+              gewiß nicht, <rs ref="#es17">daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> hier für <rs ref="#paetus">ihn</rs> sitzen</rs>, und <rs ref="#paetus">seinethalben</rs> können <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> noch ein Säkulum
+              so sitzen bleiben –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ich hab <rs ref="#paetus">ihn</rs> von Jugend auf gekannt: <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> haben <rs ref="#fritz-(sohn-geheimer…-/-paetus">uns</rs> noch niemals was abgeschlagen. <rs ref="#paetus">Er</rs>
+              hat mich wie <rs ref="#seinen-Bruder"><rs ref="#paetus">seinen</rs> Bruder</rs> geliebt, ich <rs ref="#paetus">ihn</rs> wie <rs ref="#seinen-Bruder">meinen</rs>. Als <rs ref="#paetus">er</rs> nach <rs ref="#Halle-in-Sachsen">Halle</rs> reiste,
+              weint' <rs ref="#paetus">er</rs> zum erstenmal in <rs ref="#meinem-Leben-(lebenszeit-pätus)"><rs ref="#paetus">seinem</rs> Leben</rs>, weil <rs ref="#paetus">er</rs> nicht mit mir reisen konnte. Ein
+              ganzes Jahr früher hätt er schon auf <rs ref="#der---------------Universität-(fritz-nach-der-schule,-wohl-in-halle)">die Akademie</rs> gehn können, aber um mit mir
+              zusammen zu reisen, stellt' <rs ref="#paetus">er</rs> <rs ref="#paetus">sich</rs> gegen <rs ref="#die---------------nüchternen-Subjecta-(lehrer-in-den-öffentlichen-schulen,-klassenpräzeptoren)">die Präceptores</rs> dummer als <rs ref="#paetus">er</rs> war, <rs ref="#das35">und doch
+              wollt es <rs ref="#das-Schicksal">das Schicksal</rs> und <rs ref="#geheimer_rat-(bruder…-/-sein-Vater-(pätus-va…"><rs ref="#fritz-(sohn-geheimer…-/-paetus">unsre</rs> Väter</rs> so, daß <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> nicht zusammen reisten</rs>, und <rs ref="#das35">das</rs> war
+              <rs ref="#paetus">sein</rs> Unglück. <rs ref="#paetus">Er</rs> hat nie gewußt mit <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">Geld</rs> umzugehen und gab <rs ref="#ein-Mensch-xxx">jedem</rs> was <rs ref="#ein-Mensch-xxx">er</rs> verlangte.
+              Hätt <rs ref="#paetus">ihm</rs> <rs ref="#ein-Bettler">ein Bettler</rs> <rs ref="#allen-meinen-Kleidern-(pätus-allg)">das letzte Hemd</rs> <rs ref="#dem-Leibe-(körper-pätus)">vom Leibe</rs> gezogen und dabei gesagt: mit <rs ref="#paetus">Ihrer</rs>
+              Erlaubnis, lieber Herr Pätus! <rs ref="#paetus">er</rs> <rs ref="#allen-meinen-Kleidern-(pätus-allg)">hätt's</rs> <rs ref="#ein-Bettler">ihm</rs> gelassen. <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)"><rs ref="#paetus">Seine</rs> Kreditores</rs> gingen mit <rs ref="#paetus">ihm</rs>
+              um wie Straßenräuber, und <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">sein</rs> Vater</rs> <pb n="46"/> verdiente nie, <rs ref="#paetus">einen verlornen Sohn</rs>
+              zu haben, <rs ref="#paetus">der</rs> bei <rs ref="#Schaden-(durch-pätus)">all <rs ref="#paetus">seinem</rs> Elend</rs> ein so gutes Herz nach <rs ref="#Hause-(pätus-elternhaus)">Hause</rs> brachte.</p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p>O verzeihn <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> mir, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> sind jung und sehen alles noch aus dem vorteilhaftesten
+              Gesichtspunkt an: <rs ref="#ein-Mensch-xxx">man</rs> muß erst <rs ref="#eine-Weile-(längerer-zeitraum)">eine Weile</rs> unter <rs ref="#ein-Mensch-xxx">den Menschen</rs> gelebt haben um
+              Charaktere beurteilen zu können. <rs ref="#paetus">Der Herr Pätus</rs>, oder wie <rs ref="#paetus">er</rs> da heißt, hat <rs ref="#paetus">sich</rs> <rs ref="#paetus">Ihnen</rs>
+              bisher immer nur unter der Maske gezeigt; jetzt kommt <rs ref="#paetus">sein</rs> wahres Gesicht erst ans
+              Tageslicht: <rs ref="#paetus">er</rs> muß einer der feinsten und abgefeimtesten Betrüger gewesen sein, denn
+              die treuherzigen Spitzbuben ...</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>in Reisekleidern, fällt <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs> um den Hals.</stage>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Bruder Berg</rs> – –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Bruder Pätus</rs> – –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Nein – laß – zu <rs ref="#deinen-Füßen-(fritz)"><rs ref="#fritz-(berg-sohn-geheimer-rat)">deinen</rs> Füßen</rs> muß ich liegen – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Dich</rs> hier – um <rs ref="#paetus">meinetwillen</rs>.
+                <stage>Rauft <rs ref="#paetus">sich</rs> <rs ref="#das-letzte-Haar-(pätus-übrige-haare)">das Haar</rs> mit beiden Händen und stampft mit <rs ref="#den-Füßen-(pätus)">den Füßen</rs>.</stage> O
+              <rs ref="#das-Schicksal">Schicksal</rs>! <rs ref="#das-Schicksal">Schicksal</rs>! <rs ref="#das-Schicksal">Schicksal</rs>!</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Nun wie ist's? Hast <rs ref="#paetus">du</rs> <rs ref="#das-Geld-(ablösesummer-fritz-pätus-gefängnisstrafe)">Geld</rs> mitgebracht? Ist <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">dein</rs> Vater</rs> versöhnt? Was bedeutet <rs ref="#paetus">dein</rs>
+              Zurückkommen?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Nichts, nichts – <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Er</rs> hat mich nicht vor <rs ref="#der_alte_paetus-(pätus-vater)-qqq">sich</rs> gelassen – Hundert Meilen umsonst
+              gereist! – <rs ref="#fritz-(berg-sohn-geh…-/-bollwerk-+-1">Ihr Diener, ihr Herren</rs>. <rs ref="#bollwerk">Bollwerk</rs> wein nicht, du erniedrigst mich zu tief,
+              wenn <rs ref="#bollwerk">du</rs> gut für mich denkst – O <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">Himmel</rs>, <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">Himmel</rs>!</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>So bist <rs ref="#paetus">du</rs> <rs ref="#der-ärgste-Narr,-der-auf-dem-Erd-boden-wandelt-(prädikativ-pätus)">der ärgste Narr, <rs ref="#der-ärgste-Narr,-der-auf-dem-Erd-boden-wandelt-(prädikativ-pätus)">der</rs> auf dem Erd boden wandelt</rs>. Warum kommst <rs ref="#paetus">du</rs> zurück?
+              Bist <rs ref="#paetus">du</rs> wahnwitzig? Haben alle <rs ref="#im-Sinne-(geist-gedanken-pätus)"><rs ref="#paetus">deine</rs> Sinne</rs> <rs ref="#paetus">dich</rs> verlassen? Willst <rs ref="#paetus">du</rs>, daß <rs ref="#seine-Kreditores-(denen-denen-pätus-geld-schuldet)">die
+              Kreditores</rs> <rs ref="#paetus">dich</rs> gewahr werden – Fort! <rs ref="#bollwerk">Bollwerk</rs>, führ <rs ref="#paetus">ihn</rs> fort; sieh daß <rs ref="#bollwerk">du</rs> <rs ref="#paetus">ihn</rs> sicher
+              aus <rs ref="#Halle-in-Sachsen">der Stadt</rs> bringst – Ich höre den Pedell – <rs ref="#paetus">Pätus</rs>, ewig mein Feind, wo <rs ref="#paetus">du</rs> nicht im
+              Augenblick –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>wirft <rs ref="#paetus">sich</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> zu <rs ref="#deinen-Füßen-(fritz)">Füßen</rs>.</stage>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ich möchte rasend werden. –</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>So sei doch nun kein Narr, da <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs> so großmütig ist und für <rs ref="#paetus">dich</rs> sitzen bleiben will;
+              <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><rs ref="#fritz-(berg-sohn-geheimer-rat)">sein</rs> Vater</rs> <pb n="47"/> wird <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> schon auslösen: aber wenn <rs ref="#paetus">du</rs> einmal sitzest, so ist
+              keine Hoffnung mehr für <rs ref="#paetus">dich</rs>; <rs ref="#paetus">du</rs> mußt <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">im Gefängnis</rs> verfaulen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Gebt mir <rs ref="#einen-Degen">einen Degen</rs> her ...</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Fort! –</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Fort! –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(berg-sohn-geh…-/-bollwerk-+-1">Ihr</rs> tut mir eine Barmherzigkeit, wenn ihr mir <rs ref="#einen-Degen">einen Degen</rs> –</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>SEIFFENBLASE.</speaker></rs>
+            <p>Da haben <rs ref="#paetus">Sie</rs> meinen ...</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK</speaker></rs>
+            <stage>greift <rs ref="#seiffenblase">ihn</rs> in den Arm.</stage>
+            <p><rs ref="#seiffenblase">Herr – Schurke</rs>! Lassen <rs ref="#seiffenblase">Sie</rs> – Stecken <rs ref="#seiffenblase">Sie</rs> nicht ein! <rs ref="#seiffenblase">Sie</rs> sollen nicht umsonst gezogen
+              haben. Erst will ich <rs ref="#paetus">meinen Freund</rs> in Sicherheit und dann erwarten <rs ref="#seiffenblase">Sie</rs> mich hier –
+              Draußen, wohl zu verstehen; also vor der Hand <rs ref="#zur-Tür-(gefängnis-eingangstür)">zur Tür</rs> hinaus! <stage>Wirft <rs ref="#seiffenblase">ihn</rs> <rs ref="#zur-Tür-(gefängnis-eingangstür)">zur Tür</rs>
+                hinaus.</stage></p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p><rs ref="#bollwerk">Mein Herr Bollwerk</rs> –</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Kein Wort, <rs ref="#hofmeister-(von-seiffenbalse)">Sie</rs> – Gehen <rs ref="#hofmeister-(von-seiffenbalse)">Sie</rs> <rs ref="#seiffenblase"><rs ref="#hofmeister-(von-seiffenbalse)">Ihrem</rs> Jungen</rs> nach und lehren <rs ref="#hofmeister-(von-seiffenbalse)">Sie</rs> <rs ref="#seiffenblase">ihn</rs>, kein schlechter Kerl
+              sein – <rs ref="#hofmeister-(von-seiffenbalse)">Sie</rs> können mich haben wo und wie <rs ref="#hofmeister-(von-seiffenbalse)">Sie</rs> wollen.</p>
+            <stage><rs ref="#hofmeister-(von-seiffenbalse)">Der Hofmeister</rs> geht ab.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#bollwerk">Bollwerk</rs>! ich will <rs ref="#bollwerk">dein</rs> Sekundant sein.</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p><rs ref="#paetus">Narr</rs> auch! <rs ref="#paetus">Du</rs> tust als – Willst <rs ref="#paetus">du</rs> mir den Handschuh vielleicht halten, wenn ich
+              vorher eins übern Daumen pisse? – Was braucht's da Sekundanten. Komm nur fort und
+              sekundiere <rs ref="#paetus">dich</rs> <rs ref="#Halle-in-Sachsen">zur Stadt</rs> hinaus, <rs ref="#paetus">Hasenfuß</rs>.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Aber <rs ref="#seiffenblase-/-hofmeister-(von-seif…">ihrer</rs> sind zwei.</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Ich wünschte, daß <rs ref="#seiffenblase-/-hofmeister-(von-seif…">ihrer</rs> zehn wären und keine Seiffenblasen drunter – So komm doch und
+              mach <rs ref="#paetus">dich</rs> nicht selbst unglücklich, närrischer Kerl.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>! – <stage><rs ref="#bollwerk">Bollwerk</rs> reißt <rs ref="#paetus">ihn</rs> mit <rs ref="#bollwerk">sich</rs> fort.</stage></p>
+            <pb n="48"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

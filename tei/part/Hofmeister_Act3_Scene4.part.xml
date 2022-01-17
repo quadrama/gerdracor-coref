@@ -1,0 +1,364 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Akt</head>
+        <div type="scene">
+          <head>Vierte Szene</head>
+          <stage><rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">Die Schule</rs>.</stage>
+          <stage><rs ref="#wenzeslaus">Wenzeslaus</rs> und <rs ref="#laeuffer-ccc">Läuffer</rs> an <rs ref="#einem-ungedeckten-Tisch-(bei-wenzeslaus,-evtl-nicht-der-gleiche-an-dem-er-liniert-hat)">einem ungedeckten Tisch</rs>, speisend.</stage>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Schmeckt's? Nicht wahr, es ist ein Abstand von <rs ref="#einem-ungedeckten-Tisch-(bei-wenzeslaus,-evtl-nicht-der-gleiche-an-dem-er-liniert-hat)">meinem Tisch</rs> und <rs ref="#major-ccc">des Majors</rs>? Aber wenn
+              <rs ref="#wenzeslaus">der <pb n="56"/> Schulmeister Wenzeslaus</rs> <rs ref="#seine-Wurst-(wenzeslaus-allg)"><rs ref="#wenzeslaus">seine</rs> Wurst</rs> ißt, so hilft <rs ref="#wenzeslaus">ihm</rs> <rs ref="#das-gute---------------Gewissen-(wenzeslaus)">das gute
+              Gewissen</rs> verdauen, und wenn <rs ref="#laeuffer-ccc">der Herr Mandel</rs> <rs ref="#Braten">Kapaunenbraten</rs> mit der Schampignonsauce
+              aß, so stieß <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#gutem---------------Gewissen-(läuffers)"><rs ref="#laeuffer-ccc">sein</rs> Gewissen</rs> <rs ref="#jeden-Bissen,-den-er-hinabschluckte-(läuffer)">jeden Bissen, <rs ref="#jeden-Bissen,-den-er-hinabschluckte-(läuffer)">den</rs> <rs ref="#laeuffer-ccc">er</rs> hinabschluckte</rs>, mit der Moral
+              wieder in Hals zurück: <rs ref="#laeuffer-ccc">Du</rs> bist ein – Denn sagt mir einmal, <rs ref="#laeuffer-ccc">lieber Herr Mandel</rs>; nehmt
+              mir nicht übel, daß ich <rs ref="#laeuffer-ccc">Euch</rs> <rs ref="#die-Wahrheit">die Wahrheit</rs> sage, <rs ref="#die-Wahrheit">das</rs> würzt <rs ref="#ein-Gespräch">das Gespräch</rs> wie Pfeffer den
+              Gurkensalat; sagt mir einmal, ist <rs ref="#das38">das</rs> nicht hundsföttisch, <rs ref="#das38">wenn <rs ref="#einen-Hofmeister-(unbest.)">ich</rs> davon überzeugt
+              bin, daß <rs ref="#einen-Hofmeister-(unbest.)">ich</rs> ein Ignorant bin und <rs ref="#seine--(kinder-des-adels)"><rs ref="#einen-Hofmeister-(unbest.)">meine</rs> Untergebenen</rs> nichts lehren kann und also müßig
+              bei <rs ref="#seine--(kinder-des-adels)">ihnen</rs> gehe und <rs ref="#seine--(kinder-des-adels)">sie</rs> müßig gehen lasse und <rs ref="#Gottes-(christlich)">dem lieben Gott</rs> <rs ref="#seine--(kinder-des-adels)">ihren</rs> Tag stehlen, und
+              doch <rs ref="#hundert-Dukaten-(lohn-den-läuffer-tatsächlich-im-zweiten-jahr-erhalten-hat)">hundert Dukaten</rs> –</rs> <rs ref="#-Gehalt-(läuffers-lohn-allg)">war's</rs> nicht soviel? <rs ref="#Gottes-(christlich)">Gott</rs> verzeih mir, ich hab in meinem Leben
+              nicht <rs ref="#hundert-funfzig-Dukaten">so viel Geld</rs> auf einem Haufen beisammen gesehen! – <rs ref="#hundert-funfzig-Dukaten">hundert funfzig Dukaten</rs>, sag
+              ich, in Sack stecke, für nichts und wieder nichts!</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>O! und <rs ref="#wenzeslaus">Sie</rs> haben noch nicht alles gesagt, <rs ref="#wenzeslaus">Sie</rs> kennen <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)"><rs ref="#wenzeslaus">Ihren</rs> Vorzug</rs> nicht ganz, oder
+              fühlen <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)">ihn</rs>, ohn <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)">ihn</rs> zu kennen. Haben <rs ref="#wenzeslaus">Sie</rs> nie einen Sklaven <rs ref="#Rosen-und-Lilien-(metaph-reichhaltiges-leben-eines-hofmeisters)">im betreßten Rock</rs> gesehen?
+              <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)">O Freiheit</rs>, <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)">güldene Freiheit</rs>!</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ei was <rs ref="#Ihren-Vorzug-(wenzeslaus-vorteil-ggü-einem-hofmeister,-meint-freiheit)">Freiheit</rs>! Ich bin auch so frei nicht; ich bin an <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">meine Schule</rs> gebunden und muß
+              <rs ref="#Gottes-(christlich)">Gott</rs> und <rs ref="#das-gute---------------Gewissen-(wenzeslaus)">meinem Gewissen</rs> <rs ref="#Rechenschaft-(rechtfertigung-wenzeslaus-vor-gott-und-seinem-gewissen)">Rechenschaft</rs> von geben.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Eben das – Aber wie, wenn <rs ref="#wenzeslaus">Sie</rs> <rs ref="#der-Grille-(der-gedanke-des-adels,-sich-von-anderen-bedienen-zu-lassen-und-hofmeister-anzustellen)">den Grillen <rs ref="#eines-wunderlichen-Kopfs-(des-adels,-der-hofmeister-beschäftigt-und-grillen-hervorbringt)">eines wunderlichen Kopfs</rs></rs> davon <rs ref="#Rechenschaft-(rechtfertigung-wenzeslaus-vor-gott-und-seinem-gewissen)">Rechenschaft</rs>
+              ablegen müßten, <rs ref="#eines-wunderlichen-Kopfs-(des-adels,-der-hofmeister-beschäftigt-und-grillen-hervorbringt)">der</rs> mit <rs ref="#wenzeslaus">Ihnen</rs> umginge hundertmal ärger als <rs ref="#wenzeslaus">Sie</rs> mit <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)"><rs ref="#wenzeslaus">Ihren</rs>
+              Schulknaben</rs>?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ja nun – <rs ref="#das39">dann müßt <rs ref="#eines-wunderlichen-Kopfs-(des-adels,-der-hofmeister-beschäftigt-und-grillen-hervorbringt)">er</rs> aber auch an <rs ref="#Verstand-yyy">Verstand</rs> so weit über mich erhaben sein wie ich
+              über <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">meine Schulknaben</rs></rs>, und <rs ref="#das39">das</rs> trifft <rs ref="#ein-Mensch-xxx">man</rs> selten, glaub ich wohl; besonders bei
+              <rs ref="#Adel-(standespersonen)-xxx"><rs ref="#Preußen">unsern</rs> Edelleuten</rs>; da mögt <rs ref="#laeuffer-ccc">Ihr</rs> wohl recht haben: wenigstens <rs ref="#graf_wermuth-ccc">der Flegel da, <rs ref="#graf_wermuth-ccc">der</rs> mir
+              vorhin in <rs ref="#eine-Kammer-(bei-wenzeslaus)">meine Kammer</rs> wollte, ohne mich vorher um Erlaubnis zu bitten</rs>. Wenn ich <rs ref="#graf_wermuth-ccc">zum
+              Herrn Grafen</rs> käme und wollt <rs ref="#graf_wermuth-ccc">ihm</rs> mir nichts, dir nichts die Zimmer visitieren – Aber
+                <pb n="57"/> potz Millius, so eßt doch; <rs ref="#laeuffer-ccc">Ihr</rs> macht ja ein Gesicht, als ob <rs ref="#laeuffer-ccc">Ihr</rs> zu
+              laxieren einnähmt. Nicht wahr, <rs ref="#laeuffer-ccc">Ihr</rs> hättet gern <rs ref="#ein-Glas-Wein">ein Glas Wein</rs> dazu? Ich hab <rs ref="#laeuffer-ccc">Euch</rs> zwar
+              vorhin <rs ref="#ein-Glas-Wein">eins</rs> versprochen, aber ich habe keinen <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">im Hause</rs>. Morgen werd ich wieder
+              bekommen, und da trinken wir Sonntags und Donnerstags, und wenn der Organist Franz zu
+              <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">uns</rs> kommt extra. <rs ref="#ein-Glas-Wasser">Wasser</rs>, <rs ref="#ein-Glas-Wasser">Wasser</rs>, <rs ref="#laeuffer-ccc">mein Freund</rs>, <rs ref="#das40">αριστον μεν <rs ref="#ein-Glas-Wasser">το ύδωρ</rs></rs>, <rs ref="#das40">das</rs> hab ich noch
+              von der Schule mitgebracht, und da <rs ref="#eine-Pfeife-(wenzeslaus)">eine Pfeife</rs> dazu geraucht nach <rs ref="#dem-Essen-(allg-abendessen-wenzeslaus)">dem Essen</rs> im
+              Mondenschein und einen Gang ums Feld gemacht; da läßt <rs ref="#ein-Mensch-xxx">sich</rs> drauf schlafen, vergnügter
+              als der große Mogul – <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#will's3">raucht doch <rs ref="#eine-Pfeife-(wenzeslaus)">eins</rs> mit</rs> heut?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich <rs ref="#will's3">will's</rs> versuchen; ich hab in <rs ref="#seines-Lebens-(läuffers)">meinem Leben</rs> nicht <rs ref="#das41">geraucht</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ja freilich, <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">ihr Herren weiß und rot</rs>, <rs ref="#das41">das</rs> verderbt <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">euch</rs> die Zähne. Nicht wahr? und
+              verderbt <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">euch</rs> die Farbe; nicht wahr? Ich habe geraucht, als ich kaum von meiner Mutter
+              Brust entwöhnt war; die Warze mit dem Pfeifenmundstück verwechselt. He he he! <rs ref="#das41">Das</rs> ist
+              gut wider <rs ref="#der---------------Luft-(entsteht,-wenn-die-lebensgeister-unterdrückt-werden)">die böse Luft</rs> und wider <rs ref="#die-bösen-Begierden">die bösen Begierden</rs> ebenfalls. Das ist so meine
+              Diät: <rs ref="#alle-Morgen">des Morgens</rs> <rs ref="#ein-Glas-Wasser">kalt Wasser</rs> und <rs ref="#eine-Pfeife-(wenzeslaus)">eine Pfeife</rs>, dann <rs ref="#Schul-(unterricht-wenzeslaus)">Schul</rs> gehalten bis eilfe, dann
+              wieder <rs ref="#eine-Pfeife-(wenzeslaus)">eine Pfeife</rs> bis <rs ref="#die-Suppe-(wenzeslaus-allg)">die Suppe</rs> fertig ist: <rs ref="#die-Suppe-(wenzeslaus-allg)">die</rs> kocht mir <rs ref="#mein-Bube-(bei-wenzeslaus,-wohl-Gottlieb)">mein Gottlieb</rs> so gut als
+              <rs ref="#einen-Hofmeister-(unbest.)">eure</rs> französische Köche, und da ein Stück Gebratenes und Zugemüse und dann wieder <rs ref="#eine-Pfeife-(wenzeslaus)">eine
+              Pfeife</rs>, dann wieder <rs ref="#Schul-(unterricht-wenzeslaus)">Schul</rs> gehalten, dann <rs ref="#Vorschriften-(linien-wenzeslaus-allg)">Vorschriften</rs> geschrieben bis <rs ref="#dem-Essen-(allg-abendessen-wenzeslaus)">zum Abendessen</rs>;
+              da eß ich denn gemeiniglich kalt etwas, <rs ref="#seine-Wurst-(wenzeslaus-allg)">eine Wurst</rs> mit <rs ref="#einem-Salat-(wenzeslaus-allg)">Salat</rs>, ein Stück Käs oder was
+              <rs ref="#Gottes-(christlich)">der liebe Gott</rs> gegeben hat, und dann wieder <rs ref="#eine-Pfeife-(wenzeslaus)">eine Pfeife</rs> vor Schlafengehen.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#Gottes-(christlich)">Gott</rs> behüte, ich bin in <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">eine Tabagie</rs> gekommen –</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Und da werd ich dick und fett bei und lebe vergnügt und denke noch <rs ref="#Tode">ans Sterben</rs>
+              nicht.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Es ist aber doch unverantwortlich, daß <rs ref="#die-Obrigkeit-(regierung)">die Obrigkeit</rs> nicht dafür sorgt, <rs ref="#wenzeslaus">Ihnen</rs> <rs ref="#das---------------Leben-(wenzeslaus)">das
+              Leben</rs> angenehmer zu machen.</p>
+            <pb n="58"/>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ei was, <rs ref="#das---------------Leben-(wenzeslaus)">es</rs> ist nun einmal so; und damit muß <rs ref="#wenzeslaus">man</rs> zufrieden sein: bin ich doch auch
+              mein eigner Herr und hat kein Mensch mich zu schikanieren, da ich <rs ref="#Alle-Tage-(immer)">alle Tage</rs> weiß, daß
+              ich mehr tu als ich soll. Ich soll <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">meinen Buben</rs> lesen und schreiben lehren; ich lehre
+              <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">sie</rs> rechnen dazu und <rs ref="#im-Lateinischen">Lateinisch</rs> dazu und mit <rs ref="#Vernunft">Vernunft</rs> lesen dazu und gute Sachen
+              schreiben dazu.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Und was für <rs ref="#Lohn-(wenzeslaus-allg)">Lohn</rs> haben <rs ref="#wenzeslaus">Sie</rs> dafür?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Was für <rs ref="#Lohn-(wenzeslaus-allg)">Lohn</rs>? – Will <rs ref="#laeuffer-ccc">Er</rs> denn das kleine Stückchen Wurst da nicht aufessen? <rs ref="#laeuffer-ccc">Er</rs> kriegt
+              nichts Bessers; wart <rs ref="#laeuffer-ccc">Er</rs> auf nichts Bessers, oder <rs ref="#laeuffer-ccc">Er</rs> muß das erstemal <rs ref="#seines-Lebens-(läuffers)"><rs ref="#laeuffer-ccc">seines</rs> Lebens</rs>
+              hungrig zu <rs ref="#Bett-(läuffers-in-der-schule)">Bette</rs> gehn – Was für <rs ref="#Lohn-(wenzeslaus-allg)">Lohn</rs>? Das war dumm gefragt, <rs ref="#laeuffer-ccc">Herr Mandel</rs>. Verzeih <rs ref="#laeuffer-ccc">Er</rs>
+              mir; was für <rs ref="#Lohn-(wenzeslaus-allg)">Lohn</rs>? <rs ref="#das-gute---------------Gewissen-(wenzeslaus)">Gottes Lohn</rs> hab ich dafür, ein gutes Gewissen, und wenn ich da
+              <rs ref="#Lohn-(wenzeslaus-allg)">vielen Lohn</rs> von <rs ref="#die-Obrigkeit-(regierung)">der Obrigkeit</rs> begehren wollte, so hätt ich ja <rs ref="#das-gute---------------Gewissen-(wenzeslaus)">meinen Lohn</rs> dahin. Will
+              <rs ref="#laeuffer-ccc">Er</rs> denn den Gurkensalat durchaus verderben lassen? So eß <rs ref="#laeuffer-ccc">Er</rs> doch; so sei <rs ref="#laeuffer-ccc">Er</rs> doch nicht
+              blöde: bei <rs ref="#einer-schmalen-Mahlzeit">einer schmalen Mahlzeit</rs> muß <rs ref="#laeuffer-ccc">man</rs> <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">zum Kuckuck</rs> nicht blöde sein. Wart <rs ref="#laeuffer-ccc">Er</rs>, ich
+              will <rs ref="#laeuffer-ccc">Ihm</rs> noch ein Stück Brod abschneiden.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <rs ref="#wenn's2"><p>Ich bin satt überhörig.</p></rs>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Nun so laß <rs ref="#einer-schmalen-Mahlzeit"><rs ref="#laeuffer-ccc">Er's</rs></rs> stehen; aber es ist <rs ref="#laeuffer-ccc">Seine</rs> eigne Schuld <rs ref="#wenn's2">wenn's</rs> nicht wahr ist. Und
+              wenn <rs ref="#wenn's2">es</rs> wahr ist, so hat <rs ref="#laeuffer-ccc">Er</rs> unrecht, daß <rs ref="#laeuffer-ccc">Er</rs> <rs ref="#das42"><rs ref="#mögt's"><rs ref="#laeuffer-ccc">sich</rs> überhörig satt ißt</rs></rs>, denn <rs ref="#das42">das</rs> macht
+              <rs ref="#die-bösen-Begierden">böse Begierden</rs> und schläfert <rs ref="#Verstand-yyy">den Geist</rs> ein. <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">Ihr Herren weiß und rot</rs> <rs ref="#mögt's">mögt's</rs> glauben
+              oder nicht. <rs ref="#hab's"><rs ref="#ein-Mensch-xxx">Man</rs> sagt zwar auch <rs ref="#vom-Toback">vom Toback</rs>, daß <rs ref="#vom-Toback">er</rs> <rs ref="#ein-narkotisches,---------------schläfrigmachendes,-dummachendes-Öl-(in-tabak)">ein narkotisches,
+              schläfrigmachendes, dummachendes Öl</rs> habe</rs>, und ich <rs ref="#hab's">hab's</rs> bisweilen auch wohl so
+              wahrgefunden und bin versucht worden, <rs ref="#eine-Pfeife-(wenzeslaus)">Pfeife</rs> und <rs ref="#allen-Henker-(tabak-wenzeslaus-vermutlich)">allen Henker</rs> ins Kamin zu werfen,
+              aber <rs ref="#unserm-(bewohner-des-dorfes-um-insterburg-das-heidelbrunn-meint)">unsere</rs> Nebel hier herum beständig und die feuchte Winter- und Herbstluft
+              alleweile und denn <rs ref="#die-vortreffliche-Wirkung,-die-ich-davon-verspüre-(vom-tabak-pfeife-rauchen)">die vortreffliche Wirkung, <rs ref="#die-vortreffliche-Wirkung,-die-ich-davon-verspüre-(vom-tabak-pfeife-rauchen)">die</rs> ich davon verspüre</rs>, daß <rs ref="#ein-narkotisches,---------------schläfrigmachendes,-dummachendes-Öl-(in-tabak)">es</rs> zugleich
+              <rs ref="#die-bösen-Begierden">die bösen Begierden</rs> mit einschläfert – Holla, wo seid <rs ref="#laeuffer-ccc">Ihr</rs> denn, lieber Mann? Eben da
+              ich <pb n="59"/> vom Einschläfern rede, nickt <rs ref="#laeuffer-ccc">Ihr</rs> schon; so geht's, wenn <rs ref="#seinen-Verstand-(läuffers)">der Kopf</rs> leer
+              ist und faul dabei und niemals ist angestrengt worden. Allons! frisch, <rs ref="#eine-Pfeife-(wenzeslaus)">eine Pfeife</rs> mit
+              mir geraucht! <stage>Stopft <rs ref="#wenzeslaus">sich</rs> und <rs ref="#laeuffer-ccc">ihm</rs>.</stage> Laßt <rs ref="#laeuffer-als-mandel/-wenzeslaus">uns</rs> noch eins mit einander
+              plaudern! <stage>Raucht.</stage> Ich hab <rs ref="#laeuffer-ccc">Euch</rs> schon vorhin in <rs ref="#die-Küche-(wenzeslaus)">der Küche</rs> sagen wollen:
+              <rs ref="#Welche-Demütigung!">ich sehe, daß <rs ref="#laeuffer-ccc">Ihr</rs> schwach in <rs ref="#im-Lateinischen">der Latinität</rs> seid, aber da <rs ref="#laeuffer-ccc">Ihr</rs> doch eine gute Hand
+              schreibt, wie <rs ref="#laeuffer-ccc">Ihr</rs> sagt, so könntet <rs ref="#laeuffer-ccc">Ihr</rs> mir doch so abends an die Hand gehen, weil ich
+              <rs ref="#meiner-Augen-(wenzeslaus-phys)">meiner Augen</rs> muß anfangen zu schonen, und <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">meinen Buben</rs> <rs ref="#Vorschriften-(linien-wenzeslaus-allg)">die Vorschriften</rs> schreiben. Ich
+              will <rs ref="#laeuffer-ccc">Euch</rs> dabei Corderii Colloquia geben und Gürtleri Lexicon; wenn <rs ref="#laeuffer-ccc">Ihr</rs> fleißig sein
+              wollt. <rs ref="#laeuffer-ccc">Ihr</rs> habt ja <rs ref="#Tag-(am-tag)">den ganzen Tag</rs> für <rs ref="#laeuffer-ccc">Euch</rs>, so könnt <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#laeuffer-ccc">Euch</rs> in <rs ref="#im-Lateinischen">der lateinischen
+              Sprache</rs> was umtun, und wer weiß wenn <rs ref="#es19">es</rs> <rs ref="#Gottes-(christlich)">Gott</rs> gefällt <rs ref="#es19">mich heute oder morgen von <rs ref="#der-Welt-(irdische-welt-als-raum)">der
+              Welt</rs> zu nehmen</rs> – Aber <rs ref="#das43"><rs ref="#laeuffer-ccc">Ihr</rs> müßt fleißig sein</rs>, <rs ref="#das43">das</rs> sag ich <rs ref="#laeuffer-ccc">Euch</rs>, denn so seid <rs ref="#laeuffer-ccc">Ihr</rs> ja
+              noch kaum <rs ref="#zum-Kollaborator-(prädikativ-läuffer-als-mitarbeiter-wenzeslaus)">zum Kollaborator</rs> tüchtig, geschweige denn –</p>
+            <stage>Trinkt</rs>.</stage>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER</speaker></rs>
+            <stage>legt <rs ref="#eine-Pfeife-(wenzeslaus)">die Pfeife</rs> weg.</stage>
+            <rs ref="#Welche-Demütigung!"><p>Welche Demütigung!</p></rs>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Aber ... aber ... aber <stage>Reißt <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#den-Zahnstocher-(läuffers-bei-wenzeslaus)">den Zahnstocher</rs> aus <rs ref="#ins-Maul-(mund-läuffer)">dem Munde</rs>.</stage> was
+              ist denn <rs ref="#den-Zahnstocher-(läuffers-bei-wenzeslaus)">das</rs> da? Habt <rs ref="#laeuffer-ccc">Ihr</rs> denn noch nicht einmal so viel gelernt, <rs ref="#laeuffer-ccc">großer Mensch</rs>, daß
+              <rs ref="#laeuffer-ccc">Ihr</rs> für <rs ref="#Euren-eignen-Körper-(leib-läuffers)"><rs ref="#laeuffer-ccc">Euren</rs> eignen Körper</rs> <rs ref="#Acht-(achtung-geben,-in-acht-nehmen,-läuffers-Achtsamkeit)">Sorge</rs> tragen könnt. Das Zähnestochern ist <rs ref="#ein-Selbstmord-(prädikativ-das-zhnestochern)">ein Selbstmord</rs>;
+              ja <rs ref="#ein-Selbstmord-(prädikativ-das-zhnestochern)">ein Selbstmord</rs>, eine mutwillige Zerstörung Jerusalems, die man mit seinen Zähnen
+              vornimmt. Da, wenn <rs ref="#laeuffer-ccc">Euch</rs> was <rs ref="#im-Zahn-(läuffers)">im Zahn</rs> sitzen bleibt: <stage>Nimmt <rs ref="#ein-Glas-Wasser">Wasser</rs> und schwängt
+                <rs ref="#ins-Maul-(mund-läuffer)">den Mund</rs> aus.</stage> So müßt <rs ref="#laeuffer-ccc">Ihr's</rs> machen, wenn <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#im-Zahn-(läuffers)">gesunde Zähne</rs> behalten wollt,
+              <rs ref="#Gottes-(christlich)">Gott</rs> und <rs ref="#laeuffer-ccc">Eurem</rs> Nebenmenschen zu Ehren, und nicht einmal <rs ref="#im-Alter-(läuffer-als-alter-mann)">im Alter</rs> herumlaufen wie <rs ref="#ein---------------alter-Kettenhund,-dem-die-Zähne-in-der-Jugend-ausgebrochen-worden-und-der-die---------------Kinnbacken-nicht-zusammenhalten-kann">ein
+              alter Kettenhund, <rs ref="#ein---------------alter-Kettenhund,-dem-die-Zähne-in-der-Jugend-ausgebrochen-worden-und-der-die---------------Kinnbacken-nicht-zusammenhalten-kann">dem</rs> die Zähne in der Jugend ausgebrochen worden und <rs ref="#ein---------------alter-Kettenhund,-dem-die-Zähne-in-der-Jugend-ausgebrochen-worden-und-der-die---------------Kinnbacken-nicht-zusammenhalten-kann">der</rs> die
+              Kinnbacken nicht zusammenhalten kann</rs>. <rs ref="#laeuffer-ccc">Das</rs> wird <rs ref="#einen-Klassenpräzeptor-(prädikativ-läuffer,-meint-lehrer-in-städtischer-schule)">einen schönen Schulmeister</rs> abgeben,
+              will's Gott, wenn <rs ref="#laeuffer-ccc">ihm</rs> <rs ref="#im-Alter-(läuffer-als-alter-mann)">aufs Alter</rs> die Worte ungeboren <rs ref="#ins-Maul-(mund-läuffer)">zum Munde</rs> herausfallen und <rs ref="#laeuffer-ccc">er</rs> <pb n="60"/> zwischen Nase und Oberlippen da was herausschnarcht, das kein Hund oder
+              Hahn versteht.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#wenzeslaus">Der</rs> wird mich noch zu <rs ref="#die-selige-Ewigkeit-(läuffers,-vermutl-tod)">Tode</rs> meistern – Das unerträglichste ist, daß <rs ref="#wenzeslaus">er</rs> recht hat –</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Nun wie geht's? Schmeckt <rs ref="#laeuffer-ccc">Euch</rs> <rs ref="#allen-Henker-(tabak-wenzeslaus-vermutlich)">der Toback</rs> nicht? Ich wette, nur ein paar Tage noch mit
+              <rs ref="#wenzeslaus">dem alten Wenzeslaus</rs> zusammen, so werdt <rs ref="#laeuffer-ccc">Ihr</rs> rauchen wie ein Bootsknecht. Ich will <rs ref="#laeuffer-ccc">Euch</rs>
+              nach meiner Hand ziehen, daß <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#laeuffer-ccc">Euch</rs> selber nicht mehr wieder kennen sollt.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

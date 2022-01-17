@@ -1,0 +1,381 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Akt</head>
+        <div type="scene">
+          <head>Letzte Szene</head>
+          <stage><rs ref="#major-ccc">Der Major</rs>, <rs ref="#dem-Kinde-(gustchens-baby)">ein Kind</rs> auf dem Arm. <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Der alte Pätus</rs>.</stage>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Kommen <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie, Herr Pätus</rs>. <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie</rs> haben mir <rs ref="#seinem-Leben-(majors)">das Leben</rs> wiedergegeben. <rs ref="#dem-Kinde-(gustchens-baby)">Das</rs> war <rs ref="#der-einzige---------------Wurm,-der-mir-noch-dran-nagte-(prädikativ-gustchens-baby)">der einzige
+              Wurm, <rs ref="#der-einzige---------------Wurm,-der-mir-noch-dran-nagte-(prädikativ-gustchens-baby)">der</rs> mir noch dran nagte</rs>. Ich muß <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie</rs> <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">meinem Bruder</rs> präsentieren, und <rs ref="#marthe"><rs ref="#der_alte_paetus-(pätus-vater)-qqq">Ihre</rs> alte
+              blinde Großmutter</rs> will ich in Gold einfassen lassen.</p>
+          </sp>
+          <sp who="#der_alte_paetus">
+            <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><speaker>DER ALTE PÄTUS.</speaker></rs>
+            <p>O <rs ref="#marthe">meine Mutter</rs> hat mich durch <rs ref="#marthe">ihren</rs> unvermuteten Besuch weit glücklicher gemacht als
+              <rs ref="#major-ccc">Sie</rs>. <rs ref="#major-ccc">Sie</rs> haben nur <rs ref="#dem-Kinde-(gustchens-baby)">einen Enkel</rs> wiedererhalten, <rs ref="#dem-Kinde-(gustchens-baby)">der</rs> <rs ref="#major-ccc">Sie</rs> an <rs ref="#den-Unglücksfall-(affäre-läuffer-gustchen)">traurige Geschichten</rs>
+              erinnert; ich aber <rs ref="#marthe">eine Mutter, <rs ref="#marthe">die</rs> mich an die angenehmsten Szenen <rs ref="#seinen-Lebzeiten-(pätus-vater)">meines Lebens</rs>
+              erinnert</rs>, und <rs ref="#marthe">deren</rs> mütterliche Zärtlichkeit ich leider <pb n="100"/> noch durch
+              nichts habe erwidern können als Haß und <rs ref="#Undankbarkeit-(alter-pätus-ggü-marthe)">Undankbarkeit</rs>. Ich habe <rs ref="#marthe">sie</rs> aus <rs ref="#Hause-(pätus-elternhaus)">dem Hause</rs>
+              gestoßen, nachdem <rs ref="#marthe">sie</rs> mir den ganzen Nachlaß meines Vaters und <rs ref="#marthe">ihr</rs> Vermögen mit
+              übergeben hatte; ich habe ärger gegen <rs ref="#marthe">sie</rs> gehandelt als ein Tiger – Welche Gnade von
+              <rs ref="#Gottes-(christlich)">Gott</rs> ist <rs ref="#es33">es</rs>, <rs ref="#es33">daß <rs ref="#marthe">sie</rs> noch lebt, daß <rs ref="#marthe">sie</rs> mir noch verzeihen kann</rs>, <rs ref="#marthe">die großmütige
+              Heilige</rs>! daß <rs ref="#es34">es</rs> noch in meine Gewalt gestellt ist, <rs ref="#es34">meine verfluchte Verbrechen wieder
+              gut zu machen</rs>.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Bruder Berg</rs>! wo bist <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">du</rs>? He! <stage><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Geheimer Rat</rs> kömmt.</stage> <rs ref="#Das16">Hier ist <rs ref="#dem-Kinde-(gustchens-baby)">mein Kind,
+              mein Großsohn</rs>.</rs> Wo ist <rs ref="#gustchen-(tochter-majors)">Gustchen</rs>? <rs ref="#dem-Kinde-(gustchens-baby)">Mein allerliebstes Großsöhnchen</rs>! <stage>Schmeichelt
+                <rs ref="#dem-Kinde-(gustchens-baby)">ihm</rs>.</stage> <rs ref="#dem-Kinde-(gustchens-baby)">meine allerliebste närrische Puppe</rs>!</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#Das16">Das</rs> ist vortrefflich! – und <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie, Herr Pätus</rs>?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie Herr Pätus</rs> <rs ref="#dem-Kinde-(gustchens-baby)">hat's</rs> mir verschafft – – <rs ref="#marthe"><rs ref="#der_alte_paetus-(pätus-vater)-qqq">Seine</rs> Mutter</rs> war <rs ref="#das-alte-blinde-Weib,-die---------------Bettlerin,-von-der-uns-Gustchen-so-viel-erzählt-hat-(prädikativ-marthe)">das alte blinde Weib, die
+              Bettlerin, von <rs ref="#das-alte-blinde-Weib,-die---------------Bettlerin,-von-der-uns-Gustchen-so-viel-erzählt-hat-(prädikativ-marthe)">der</rs> <rs ref="#geheimer_rat-/-major-steht--evtl-teilweise-für-deren-generation">uns</rs> <rs ref="#gustchen-(tochter-majors)">Gustchen</rs> so viel erzählt hat</rs>.</p>
+          </sp>
+          <sp who="#der_alte_paetus">
+            <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><speaker>DER ALTE PÄTUS.</speaker></rs>
+            <p>Und durch mich <rs ref="#das-alte-blinde-Weib,-die---------------Bettlerin,-von-der-uns-Gustchen-so-viel-erzählt-hat-(prädikativ-marthe)">Bettlerin</rs> – – O die Scham bindt mir die Zunge. Aber ich <rs ref="#will's5">will's</rs> <rs ref="#die-ganze-Welt-(menschen-von-ganz-verschiedenen-orten,-gesellshaftliche-welt)">der
+              ganzen Welt</rs> erzählen, <rs ref="#will's5">was ich für <rs ref="#ein-Ungeheuer-(prädikativ-pätus-vater)">ein Ungeheuer</rs> war</rs> –</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Weißt <rs ref="#major-ccc">du</rs> was Neues, Major? Es finden <rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">sich</rs> <rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">Freier für <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">deine</rs> Tochter</rs></rs> – aber dring nicht
+              in mich, <rs ref="#major-ccc">dir</rs> <rs ref="#seinen-Namen-(fritz-berg)">den Namen</rs> zu sagen.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">Freier</rs> für <rs ref="#gustchen-(tochter-majors)">meine Tochter</rs>! – <stage>Wirft <rs ref="#dem-Kinde-(gustchens-baby)">das Kind</rs> <rs ref="#ins-Kanapee-(insterburg,-unklar-welches-zimmer,-letzter-akt-liegt-gustchens-baby-drin)">ins Kanapee</rs>.</stage> Wo ist
+              <rs ref="#gustchen-(tochter-majors)">sie</rs>?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Sacht! <rs ref="#fritz-(berg-sohn-geheimer-rat)"><rs ref="#gustchen-(tochter-majors)">ihr</rs> Freier</rs> ist bei <rs ref="#gustchen-(tochter-majors)">ihr</rs> – Willst <rs ref="#major-ccc">du</rs> <rs ref="#major-ccc">deine</rs> Einwilligung geben?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">Ist's</rs> <rs ref="#ein-Mensch-von-gutem-Hause-(prädikativ-fritz-unerkannt-bzw-der-freier-von-gustchen)">ein Mensch von gutem Hause</rs>? Ist <rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">er</rs> von <rs ref="#ein-Mensch-von-gutem-Hause-(prädikativ-fritz-unerkannt-bzw-der-freier-von-gustchen)">Adel</rs>?</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Ich zweifle.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#Das17">Doch keiner zu weit unter <rs ref="#gustchen-(tochter-majors)">ihrem</rs> Stande?</rs> O <rs ref="#gustchen-(tochter-majors)">sie</rs> sollte die erste Partie <rs ref="#Preußen">im Königreich</rs>
+              werden. <rs ref="#Das17">Das</rs> ist ein vermaledeiter Gedanke! wenn ich doch <rs ref="#Das17">den</rs> erst fort hätte; <rs ref="#Das17">er</rs> wird
+              mich noch ins Irrhaus bringen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT</speaker></rs>
+            <stage>öffnet <rs ref="#die-Kammer-(insterburg-wohl-bei-bergs-aber-unklar)">die Kammer</rs>; auf <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">seinen</rs> Wink tritt <rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz</rs> mit <rs ref="#gustchen-(tochter-majors)">Gustchen</rs> heraus.</stage>
+            <pb n="101"/>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR</speaker></rs>
+            <stage>fällt <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> um den Hals.</stage>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz</rs>! <stage><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Zum Geheimen Rat</rs>.</stage> <rs ref="#Freier-für-deine-Tochter-(meint-fritz-aber-major-weiß-nicht,-dass-fritz-damit-gemeint-ist)">Ist's</rs> <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">dein</rs> Fritz? Willst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> <rs ref="#gustchen-(tochter-majors)">meine Tochter</rs>
+              heiraten? – <rs ref="#Gottes-(christlich)">Gott</rs> segne <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs>. Weißt <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> noch nichts, oder weißt <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> alles? Siehst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, wie
+              <rs ref="#die-weißen-Haare-(majors)">mein Haar</rs> grau geworden ist vor <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">der Zeit</rs>! <stage>Führt <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> <rs ref="#ins-Kanapee-(insterburg,-unklar-welches-zimmer,-letzter-akt-liegt-gustchens-baby-drin)">ans Kanapee</rs>.</stage> Siehst
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, dort ist <rs ref="#dem-Kinde-(gustchens-baby)">das Kind</rs>. Bist ein Philosoph? Kannst alles vergessen? Ist <rs ref="#gustchen-(tochter-majors)">Gustchen</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs>
+              noch schön genug? O <rs ref="#gustchen-(tochter-majors)">sie</rs> hat bereut. Jung, ich schwöre <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs>, <rs ref="#gustchen-(tochter-majors)">sie</rs> hat bereut wie keine
+              Nonne und kein Heiliger. Aber was ist zu machen? Sind doch <rs ref="#ihr-Engel-(als-angesprochene-instanz)">die Engel</rs> aus <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">dem Himmel</rs>
+              gefallen – Aber <rs ref="#gustchen-(tochter-majors)">Gustchen</rs> ist wieder aufgestanden.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Lassen <rs ref="#major-ccc">Sie</rs> mich zum Wort kommen.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR</speaker></rs>
+            <stage>drückt <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> immer an <rs ref="#die-Brust-(fritz)">die Brust</rs>.</stage>
+            <p>Nein <rs ref="#fritz-(berg-sohn-geheimer-rat)">Junge</rs> – Ich möchte <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> tot drücken – Daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> so großmütig bist, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> so edel
+              denkst – daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> – – mein Junge bist –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <rs ref="#das71"><p>In <rs ref="#gustchen-(tochter-majors)">Gustchens</rs> Armen beneid ich keinen König.</p></rs>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>So recht; <rs ref="#das71">das</rs> ist recht. – <rs ref="#gustchen-(tochter-majors)">Sie</rs> wird <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> schon gestanden haben; <rs ref="#gustchen-(tochter-majors)">sie</rs> wird <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> alles
+              erzählt haben –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#den-Unglücksfall-(affäre-läuffer-gustchen)">Dieser Fehltritt</rs> macht <rs ref="#gustchen-(tochter-majors)">sie</rs> mir nur noch teurer – macht <rs ref="#im-Gemüt-(gefühlsregungen-gustchen,-herz,-seele)"><rs ref="#gustchen-(tochter-majors)">ihr</rs> Herz</rs> nur noch englischer –
+              <rs ref="#gustchen-(tochter-majors)">Sie</rs> darf nur in den Spiegel sehn, um überzeugt zu sein, daß <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#mein-ganzes-Glück-(fritz)">mein ganzes Glück</rs>
+              machen werde, und doch zittert <rs ref="#gustchen-(tochter-majors)">sie</rs> immer vor dem, wie <rs ref="#gustchen-(tochter-majors)">sie</rs> sagt, <rs ref="#gustchen-(tochter-majors)">ihr</rs> unerträglichen
+              Gedanken: <rs ref="#gustchen-(tochter-majors)">sie</rs> werde mich unglücklich machen. O was hab ich von einer solchen Frau
+              anders zu gewarten als <rs ref="#mein-ganzes-Glück-(fritz)">einen Himmel</rs>?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Ja wohl <rs ref="#mein-ganzes-Glück-(fritz)">einen Himmel</rs>; <rs ref="#wenn's3">wenn's</rs> wahr ist, <rs ref="#wenn's3">daß die Gerechten nicht allein hineinkommen,
+              sondern auch <rs ref="#die-Sünder,-die-Buße-tun">die Sünder, <rs ref="#die-Sünder,-die-Buße-tun">die</rs> Buße tun</rs></rs>. <rs ref="#gustchen-(tochter-majors)">Meine Tochter</rs> hat Buße getan, und ich hab für
+              <rs ref="#meine-schwere-Sünde-(vergehen-majors,-sein-anteil-an-gustchens-unglück)">meine Torheiten</rs> und daß ich <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">einem Bruder</rs> nicht folgen wollte, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">der</rs> <rs ref="#Umstände-(einer-zeit)">das Ding</rs> besser
+              verstund, auch Buße getan; <rs ref="#gustchen-(tochter-majors)">ihr</rs> <rs ref="#zur-Gesellschaft-(prädikativ-major-als-gesellschaft-für-gustchen)">zur Gesellschaft</rs>: und darum macht mich <rs ref="#Gottes-(christlich)">der liebe Gott</rs>
+              auch <rs ref="#gustchen-(tochter-majors)">ihr</rs> <rs ref="#zur-Gesellschaft-(prädikativ-major-als-gesellschaft-für-gustchen)">zur Gesellschaft</rs> mit glücklich.</p>
+            <pb n="102"/>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT</speaker></rs>
+            <stage>ruft <rs ref="#die-Kammer-(insterburg-wohl-bei-bergs-aber-unklar)">zur Kammer</rs> hinein.</stage>
+            <p><rs ref="#paetus">Herr Pätus</rs>, kommen Sie doch hervor. <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">Ihr</rs> Vater</rs> ist hier.</p>
+          </sp>
+          <sp who="#der_alte_paetus">
+            <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><speaker>DER ALTE PÄTUS.</speaker></rs>
+            <p>Was hör ich – <rs ref="#paetus">Mein Sohn</rs>?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>fällt <rs ref="#der_alte_paetus-(pätus-vater)-qqq">ihm</rs> um den Hals.</stage>
+            <p><rs ref="#paetus"><rs ref="#der_alte_paetus-(pätus-vater)-qqq">Ihr</rs> unglücklicher verstoßener Sohn</rs>. Aber <rs ref="#Gottes-(christlich)">Gott</rs> hat sich <rs ref="#paetus">meiner</rs> als eines armen Waisen
+              angenommen. Hier, <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Papa</rs>, ist <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">das Geld, <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">das</rs> <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie</rs> zu meiner Erziehung in der Fremde
+              angewandt</rs>; hier <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">ist's</rs> zurück und mein Dank dazu: <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">es</rs> hat doppelte Zinsen getragen, <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">das
+              Kapital</rs> hat <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">sich</rs> vermehrt und <rs ref="#paetus"><rs ref="#der_alte_paetus-(pätus-vater)-qqq">Ihr</rs> Sohn</rs> ist <rs ref="#was-Ordentliches-(prädikativ-pätus-als-anständiger-mensch">ein rechtschaffener Kerl</rs> worden.</p>
+          </sp>
+          <sp who="#der_alte_paetus">
+            <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><speaker>DER ALTE PÄTUS.</speaker></rs>
+            <p>Muß denn <rs ref="#ein-Mensch-xxx">alles</rs> heute wetteifern, mich durch <rs ref="#die-Sitten-(moralische)">Großmut</rs> zu beschämen. <rs ref="#paetus">Mein Sohn</rs>, erkenne
+              <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">deinen</rs> Vater</rs> wieder, <rs ref="#der_alte_paetus-(pätus-vater)-qqq">der</rs> <rs ref="#eine-Weile-(längerer-zeitraum)">eine Weile</rs> <rs ref="#der_alte_paetus-(pätus-vater)-qqq">seine</rs> menschliche Natur ausgezogen und in <rs ref="#ein-Ungeheuer-(prädikativ-pätus-vater)">ein
+              wildes Tier</rs> ausgeartet war. Es ging <rs ref="#marthe"><rs ref="#paetus">deiner</rs> Großmutter</rs> wie <rs ref="#paetus">dir</rs>: <rs ref="#marthe">sie</rs> ist auch
+              wiedergekommen und hat mir verziehen und hat mich wieder zum Sohn gemacht, so wie <rs ref="#paetus">du</rs>
+              mich wieder zum Vater machst. Nimm <rs ref="#ihr-Vermögen-(marthe…-/-den-ganzen-Nachlaß-m…(vermögen-pätus-vater,-enthält-vermutlich-noch-mehr-als-das-erbe-seiner-eltern)">mein ganzes Vermögen</rs>, <rs ref="#paetus">Gustav</rs>! schalte damit nach
+              <rs ref="#seinem-guten-Willen-(moralischer-wille-absicht-pätus)"><rs ref="#paetus">deinem</rs> Gefallen</rs>, nur laß mich <rs ref="#Undankbarkeit-(alter-pätus-ggü-marthe)">die Undankbarkeit</rs> nicht entgelten, <rs ref="#Undankbarkeit-(alter-pätus-ggü-marthe)">die</rs> ich bei einem
+              <rs ref="#ihr-Vermögen-(marthe…-/-den-ganzen-Nachlaß-m…(vermögen-pätus-vater,-enthält-vermutlich-noch-mehr-als-das-erbe-seiner-eltern)">ähnlichen Geschenk</rs> gegen <rs ref="#marthe"><rs ref="#paetus">deine</rs> Großmutter</rs> äußerte.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Erlauben <rs ref="#der_alte_paetus-(pätus-vater)-qqq">Sie</rs> mir, <rs ref="#jungfer_rehaar">das tugendhafteste süßeste Mädchen</rs> glücklich damit zu machen –</p>
+          </sp>
+          <sp who="#der_alte_paetus">
+            <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><speaker>DER ALTE PÄTUS.</speaker></rs>
+            <p>Was denn? <rs ref="#paetus">Du</rs> auch verliebt? Mit Freuden erlaub ich <rs ref="#paetus">dir</rs> alles. Ich bin alt und möchte
+              vor meinem Tode gern <rs ref="#Enkel-(hypothetische-für-pätus-vater)">Enkel</rs> sehen, <rs ref="#Enkel-(hypothetische-für-pätus-vater)">denen</rs> ich <rs ref="#die-Treue-(marthe-ggü-pätus)">die Treue</rs> beweisen könnte, <rs ref="#die-Treue-(marthe-ggü-pätus)">die</rs> <rs ref="#marthe">eure
+              Großmutter</rs> für <rs ref="#paetus">euch</rs> bewiesen hat.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ</speaker></rs>
+            <stage>umarmt <rs ref="#dem-Kinde-(gustchens-baby)">das Kind</rs> auf <rs ref="#ins-Kanapee-(insterburg,-unklar-welches-zimmer,-letzter-akt-liegt-gustchens-baby-drin)">dem Kanapee</rs>, <rs ref="#dem-Kinde-(gustchens-baby)">küßt's</rs> und <rs ref="#dem-Kinde-(gustchens-baby)">trägt's</rs> zu <rs ref="#gustchen-(tochter-majors)">Gustchen</rs>.</stage>
+            <p><rs ref="#dem-Kinde-(gustchens-baby)">Dies Kind</rs> ist jetzt auch das <rs ref="#fritz-(berg-sohn-geheimer-rat)">meinige</rs>; ein trauriges Pfand der Schwachheit <rs ref="#die-Weiber"><rs ref="#gustchen-(tochter-majors)">deines</rs>
+              Geschlechts</rs> und der Torheiten <rs ref="#ein-Mensch-xxx">des unsrigen</rs>: am meisten aber <rs ref="#die-Erziehung-(unterricht-eines-hofmeisters)">der vorteilhaften
+              Erziehung <rs ref="#die-Weiber">junger Frauenzimmer</rs> durch <rs ref="#einen-Hofmeister-(unbest.)">Hofmeister</rs></rs>.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Ja <rs ref="#fritz-(berg-sohn-geheimer-rat)">mein lieber Sohn</rs>, wie sollen <rs ref="#die-Weiber">sie</rs> denn erzogen werden?</p>
+            <pb n="103"/>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Gibt's für <rs ref="#die-Weiber">sie</rs> keine Anstalten, keine Nähschulen, keine Klöster, keine
+              Erziehungshäuser? – – Doch davon wollen <rs ref="#geheimer_rat-/-major-steht--evtl-teilweise-für-deren-generation">wir</rs> ein andermal sprechen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ</speaker></rs>
+            <stage><rs ref="#dem-Kinde-(gustchens-baby)">küßt's</rs> abermal.</stage>
+            <p>Und dennoch mir unendlich schätzbar, weil's <rs ref="#dies-(gesichtszüge-des-babys)">das Bild <rs ref="#gustchen-(tochter-majors)"><rs ref="#dem-Kinde-(gustchens-baby)">seiner</rs> Mutter</rs></rs> trägt. Wenigstens,
+              <rs ref="#dem-Kinde-(gustchens-baby)">mein süßer Junge</rs>! werd ich <rs ref="#dem-Kinde-(gustchens-baby)">dich</rs> nie durch <rs ref="#einen-Hofmeister-(unbest.)">Hofmeister</rs> erziehen lassen.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

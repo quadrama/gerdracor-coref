@@ -1,0 +1,354 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Akt</head>
+        <div type="scene">
+          <head>Sechste Szene</head>
+          <stage><rs ref="#majorin">Die Majorin</rs>. <rs ref="#graf_wermuth-ccc">Graf Wermuth</rs>.</stage>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Aber <rs ref="#majorin">gnädige Frau</rs>! kriegt man denn <rs ref="#gustchen-(tochter-majors)">Fräulein Gustchen</rs> gar nicht mehr zu sehen? Wie
+              befindt <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#gustchen-(tochter-majors)">sich</rs> auf die vorgestrige Jagd?</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Zu <rs ref="#graf_wermuth-ccc">Ihrem</rs> Befehl; <rs ref="#gustchen-(tochter-majors)">sie</rs> hat die Nacht Zahnschmerzen gehabt, darum darf <rs ref="#gustchen-(tochter-majors)">sie</rs> <rs ref="#gustchen-(tochter-majors)">sich</rs> heut
+              nicht sehen lassen. Was macht <rs ref="#graf_wermuth-ccc">Ihr</rs> Magen, Graf! auf <rs ref="#die-Austern">die Austern</rs>?</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>O <rs ref="#die-Austern">das</rs> bin ich gewohnt. <rs ref="#Es4">Ich habe neulich mit <rs ref="#meinem-Bruder-(von-graf-wermuth)">meinem Bruder</rs> ganz allein auf <rs ref="#graf_wermuth-/-meinem-Bruder-(von-g…">unsre</rs> Hand
+              sechshundert Stück aufgegessen und <rs ref="#zwanzig-Bouteillen-Champagner">zwanzig Bouteillen Champagner</rs> dabei
+              ausgetrunken.</rs></p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Rheinwein wollten <rs ref="#majorin">Sie</rs> sagen.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p><rs ref="#zwanzig-Bouteillen-Champagner">Champagner</rs> – <rs ref="#Es4">Es</rs> war eine Idee und ist <rs ref="#graf_wermuth-/-meinem-Bruder-(von-g…">uns beiden</rs> recht gut bekommen. Denselben Abend
+              war Ball in <rs ref="#Königsberg">Königsberg</rs>, <rs ref="#meinem-Bruder-(von-graf-wermuth)">mein Bruder</rs> hat bis an den andern Mittag getanzt und ich Geld
+              verloren.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Wollen wir <rs ref="#ein-Piquet">ein Piquet</rs> machen?</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Wenn <rs ref="#gustchen-(tochter-majors)">Fräulein Gustchen</rs> käme, <rs ref="#ich's">macht ich ein paar Touren <rs ref="#den-Garten-(majors)">im Garten</rs> mit <rs ref="#gustchen-(tochter-majors)">ihr</rs></rs>. <rs ref="#majorin">Ihnen,
+              gnädige Frau</rs>, darf <rs ref="#ich's">ich's</rs> nicht zumuten; mit <rs ref="#majorin">Ihrer</rs> Fontenelle am Fuß.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Ich weiß auch nicht, wo <rs ref="#major-ccc">der Major</rs> immer steckt. <rs ref="#major-ccc">Er</rs> ist in <rs ref="#seinem-Leben-(majors)"><rs ref="#major-ccc">seinem</rs> Leben</rs> so rasend
+              nicht auf die Ökonomie gewesen; <rs ref="#Tag-(am-tag)">den ganzen ausgeschlagenen Tag</rs> auf <rs ref="#dem-Felde-(majors)">dem Felde</rs>, und wenn
+              <rs ref="#major-ccc">er</rs> nach <rs ref="#Hause-(majors-gut-in-heidelbrunn)">Hause</rs> kommt, sitzt <rs ref="#major-ccc">er</rs> stumm wie ein Stock. Glauben <rs ref="#graf_wermuth-ccc">Sie</rs>, daß ich anfange mir
+              Gedanken drüber zu machen.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p><rs ref="#major-ccc">Er</rs> scheint melancholisch.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Weiß es <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">der Himmel</rs> – Neulich hatt <rs ref="#major-ccc">er</rs> wieder einmal den Einfall bei mir zu schlafen,
+              und da ist <rs ref="#major-ccc">er</rs> mitten in <rs ref="#Nacht-(in-der-nacht)">der Nacht</rs> aus dem Bett' aufgesprungen und hat <rs ref="#major-ccc">sich</rs> – He he,
+              ich sollt's <rs ref="#graf_wermuth-ccc">Ihnen</rs> nicht erzählen, aber <rs ref="#graf_wermuth-ccc">Sie</rs> kennen ja <rs ref="#die-lächerliche-Seite-von-meinem---------------Mann-(charakterzüge,-gefühlnahes-temperament-major)">die lächerliche Seite von <rs ref="#major-ccc">meinem
+              Mann</rs></rs> schon.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Und hat <rs ref="#major-ccc">sich</rs> ...</p>
+            <pb n="42"/>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Auf die Knie niedergeworfen und an die Brust geschlagen und geschluchst und geheult,
+              daß mir zu grauen anfing. Ich hab <rs ref="#major-ccc">ihn</rs> aber nicht fragen mögen, was gehen mich <rs ref="#die-lächerliche-Seite-von-meinem---------------Mann-(charakterzüge,-gefühlnahes-temperament-major)"><rs ref="#major-ccc">seine</rs>
+              Narrheiten</rs> an? Mag <rs ref="#major-ccc">er</rs> Pietist oder Quacker werden. Meinethalben! <rs ref="#major-ccc">Er</rs> wird dadurch weder
+              häßlicher noch liebenswürdiger in meinen Augen werden, als <rs ref="#major-ccc">er</rs> ist.</p>
+            <stage>Sieht <rs ref="#graf_wermuth-ccc">den Grafen</rs> schalkhaft an.</stage>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF</speaker></rs>
+            <stage>faßt <rs ref="#majorin">sie</rs> ans Kinn.</stage>
+            <p><rs ref="#majorin">Boshafte Frau</rs>! – Aber wo ist <rs ref="#gustchen-(tochter-majors)">Gustchen</rs>? Ich möchte gar zu gern mit <rs ref="#gustchen-(tochter-majors)">ihr</rs> spazieren
+              gehn.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Still da kommt ja <rs ref="#major-ccc">der Major</rs> ... <rs ref="#graf_wermuth-ccc">Sie</rs> können mit <rs ref="#major-ccc">ihm</rs> gehen, Graf.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Denk doch – Ich will nun aber mit <rs ref="#gustchen-(tochter-majors)"><rs ref="#majorin">Ihrer</rs> Tochter</rs> gehn.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p><rs ref="#gustchen-(tochter-majors)">Sie</rs> wird noch nicht angezogen sein: <rs ref="#es14">es</rs> ist was Unausstehliches, <rs ref="#es14">wie faul <rs ref="#gustchen-(tochter-majors)">das Mädchen</rs>
+              ist</rs> –</p>
+            <stage><rs ref="#major-ccc">Major von Berg</rs> kommt <rs ref="#im-Nachtwämschen-(majors)">im Nachtwämschen</rs>, einen Strohhut auf.</stage>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Nun wie steht's, <rs ref="#major-ccc">Mann</rs>? Wo treiben <rs ref="#major-ccc">Sie</rs> <rs ref="#major-ccc">sich</rs> denn wieder herum? <rs ref="#majorin">Man</rs> kriegt <rs ref="#major-ccc">Sie</rs> ja <rs ref="#Tag-(am-tag)">den
+              ganzen Tag</rs> nicht zu sehen. Sehn <rs ref="#graf_wermuth-ccc">Sie</rs> <rs ref="#major-ccc">ihn</rs> nur an Herr Graf; sieht <rs ref="#major-ccc">er</rs> doch wie der
+              Heautontimorumenos in meiner großen Madame Dacier abgemalt – Ich glaube, <rs ref="#major-ccc">du</rs> hast
+              gepflügt, Herr Major? <rs ref="#ein-Mensch-xxx">Wir</rs> sind itzt in <rs ref="#den---------------Hundstagen">den Hundstagen</rs>.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>In der Tat, <rs ref="#major-ccc">Herr Major, Sie</rs> haben noch nie so übel ausgesehen, blaß, hager, <rs ref="#major-ccc">Sie</rs>
+              müssen <rs ref="#etwas-(leiden-majors)">etwas</rs> haben, <rs ref="#etwas-(leiden-majors)">das</rs> <rs ref="#major-ccc">Ihnen</rs> auf <rs ref="#meines-Herzens-(majors-gemütszustand)">dem Gemüt</rs> liegt, was bedeuten die Tränen in <rs ref="#Ihren---------------Augen-(majors-phys)"><rs ref="#major-ccc">Ihren</rs>
+              Augen</rs>, sobald man <rs ref="#major-ccc">Sie</rs> aufmerksam ansieht? Ich kenne <rs ref="#major-ccc">Sie</rs> doch zehn Jahr schon und habe
+              <rs ref="#major-ccc">Sie</rs> nie so gesehen, selbst da nicht, als <rs ref="#major-ccc">Ihr</rs> Bruder starb.</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Geiz, nichts als der leidige Geiz, <rs ref="#major-ccc">er</rs> meint, <rs ref="#unserm-(die-majors,-unbest.-wer-dazuzählt,-vermutlich-frau-und-herr-major,-das-hause-major)">wir</rs> werden verhungern, wenn <rs ref="#major-ccc">er</rs> nicht
+              täglich wie ein Maulwurf auf <rs ref="#dem-Felde-(majors)">dem Felde</rs> wühlt. Bald gräbt <rs ref="#major-ccc">er</rs>, bald pflügt <rs ref="#major-ccc">er</rs>, bald eggt
+              <rs ref="#major-ccc">er</rs>. <rs ref="#major-ccc">Du</rs> willst doch nicht <rs ref="#Bauer-(prädikativ-major)">Bauer</rs> werden? <rs ref="#major-ccc">Du</rs> mußt mir vorher <rs ref="#einen-andern-Mann-(für-die-majorin-als-major)">einen andern Mann</rs> geben, <rs ref="#einen-andern-Mann-(für-die-majorin-als-major)">der</rs>
+              die Aufsicht über <rs ref="#major-ccc">dich</rs> führt.</p>
+            <pb n="43"/>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <rs ref="#das30"><p>Ich muß wohl schaffen und scharren, <rs ref="#gustchen-(tochter-majors)">meiner Tochter</rs> einen Platz im Hospital
+              auszumachen.</p></rs>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Was sind <rs ref="#das30">das</rs> nun wieder für Phantasien! – Ich muß wahrhaftig den Doktor Würz noch aus
+              <rs ref="#Königsberg">Königsberg</rs> holen lassen.</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p><rs ref="#majorin">Du</rs> siehst nimmer nichts, vornehme Frau! daß <rs ref="#gustchen-(tochter-majors)"><rs ref="#majorin">dein</rs> Kind</rs> von <rs ref="#)Tag-(tag-für-tag)">Tag</rs> zu <rs ref="#)Tag-(tag-für-tag)">Tag</rs> abfällt, daß <rs ref="#gustchen-(tochter-majors)">sie</rs>
+              <rs ref="#Schönheit-(gustchen)">Schönheit</rs>, <rs ref="#Gesundheit-(gustchens)">Gesundheit</rs> und den ganzen Plunder verliert und dahergeht, als ob <rs ref="#gustchen-(tochter-majors)">sie</rs>, hol
+              mich <rs ref="#der-Teufel">der Teufel</rs> – <rs ref="#Gottes-(christlich)">Gott</rs> verzeih mir <rs ref="#meine-schwere-Sünde-(vergehen-majors,-sein-anteil-an-gustchens-unglück)">meine schwere Sünde</rs> – als ob der arme Lazarus <rs ref="#gustchen-(tochter-majors)">sie</rs>
+              gemacht hätte – <rs ref="#Meine-Krankheit-(gustchens)">Es</rs> frißt mir die Leber ab –</p>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Hören <rs ref="#graf_wermuth-ccc">Sie</rs> <rs ref="#major-ccc">ihn</rs> nur! Wie <rs ref="#major-ccc">er</rs> mich anfährt! Bin ich schuld daran? Bist <rs ref="#major-ccc">du</rs> denn
+              wahnwitzig?</p>
+          </sp>
+          <sp who="#major">
+            <rs ref="#major-ccc"><speaker>MAJOR.</speaker></rs>
+            <p>Ja freilich bist <rs ref="#majorin">du</rs> schuld daran, oder was ist sonst schuld daran? Ich kann's,
+              zerschlag mich der Donner! nicht begreifen. Ich dacht immer, <rs ref="#gustchen-(tochter-majors)">ihr</rs> <rs ref="#einem-General-oder---------------Staatsminister-vom-ersten-Range-(vorgesehener-ehmal-für-gustchen-von-major)">eine der ersten
+              Partien <rs ref="#Preußen">im Reich</rs></rs> auszumachen; denn <rs ref="#gustchen-(tochter-majors)">sie</rs> hat auf <rs ref="#der-Welt-(irdische-welt-als-raum)">der ganzen Welt</rs> an <rs ref="#Schönheit-(weibliche)">Schönheit</rs> nicht
+              <rs ref="#Schönheit-(gustchen)"><rs ref="#gustchen-(tochter-majors)">ihres</rs> gleichen</rs> gehabt, und nun sieht <rs ref="#gustchen-(tochter-majors)">sie</rs> aus wie eine Kühmagd – <rs ref="#das31">Ja freilich bist <rs ref="#majorin">du</rs>
+              schuld daran mit <rs ref="#deiner-Strenge-(majorin)-aaa"><rs ref="#majorin">deiner</rs> Strenge</rs> und <rs ref="#majorin">deinen</rs> Grausamkeiten und <rs ref="#majorin">deinem</rs> Neid, das hat <rs ref="#gustchen-(tochter-majors)">sie</rs>
+              <rs ref="#gustchen-(tochter-majors)">sich</rs> zu <rs ref="#im-Gemüt-(gefühlsregungen-gustchen,-herz,-seele)">Gemüt</rs> gezogen und <rs ref="#im-Gemüt-(gefühlsregungen-gustchen,-herz,-seele)">das</rs> ist <rs ref="#gustchen-(tochter-majors)">ihr</rs> nun zum Gesicht herausgeschlagen</rs>, aber <rs ref="#Das6"><rs ref="#das31">das</rs> ist
+              <rs ref="#majorin">deine</rs> Freude, gnädige Frau, denn <rs ref="#majorin">du</rs> bist lang schalu über <rs ref="#gustchen-(tochter-majors)">sie</rs> gewesen</rs>. <rs ref="#Das6">Das</rs> kannst <rs ref="#majorin">du</rs>
+              doch nicht leugnen? Solltst <rs ref="#majorin">dich</rs> in <rs ref="#majorin">dein</rs> Herz schämen, wahr haftig!</p>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#majorin">
+            <rs ref="#majorin"><speaker>MAJORIN.</speaker></rs>
+            <p>Aber ... aber was sagen <rs ref="#graf_wermuth-ccc">Sie</rs> dazu, Herr Graf! Haben <rs ref="#graf_wermuth-ccc">Sie</rs> in <rs ref="#graf_wermuth-ccc">Ihrem</rs> Leben eine ärgere
+              Kollektion von Sottisen gesehen?</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Kommen <rs ref="#majorin">Sie</rs>; <rs ref="#majorin-/-graf_wermuth">wir</rs> wollen <rs ref="#ein-Piquet">Piquet</rs> spielen, bis <rs ref="#gustchen-(tochter-majors)">Fräulein Gustchen</rs> angezogen ist ...</p>
+            <pb n="44"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

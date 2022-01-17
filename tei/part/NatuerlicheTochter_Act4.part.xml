@@ -1,0 +1,1404 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <stage>Platz <rs ref="#am-Hafen">am Hafen</rs>. Zur einen Seite ein Palast, auf der andern <rs ref="#eine-Kirche">eine Kirche</rs>, <rs ref="#im-Grund">im Grund</rs> <rs ref="#eine-----------Reihe-Bäume,-durch-die-man-nach-dem-Hafen-hinabsieht">eine
+          Reihe Bäume, durch <rs ref="#eine-----------Reihe-Bäume,-durch-die-man-nach-dem-Hafen-hinabsieht">die</rs> <rs ref="#Man">man</rs> nach <rs ref="#am-Hafen">dem Hafen</rs> hinabsieht</rs>.</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage><rs ref="#Eugenie">Eugenie</rs>, in einen Schleier gehüllt, auf einer Bank <rs ref="#im-Grund">im Grunde</rs>, mit <rs ref="#ihr-Gesicht-(eugenie)">dem Gesicht</rs> nach
+            <rs ref="#Ans-Meer">der See</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>, <rs ref="#gerichtsrat">Gerichtsrat</rs> im Vordergrunde.</stage>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Drängt unausweichlich ein betrübt Geschäft</l>
+              <l>Mich aus dem Mittelpunkt <rs ref="#Das-Reich">des Reiches</rs>, mich</l>
+              <l>Aus dem Bezirk der Hauptstadt an die Grenze</l>
+              <l><rs ref="#Zum-Wohle-deines-Vaterlands">Des festen Lands</rs>, zu <rs ref="#am-Hafen">diesem Hafenplatz</rs>,</l>
+              <l>So folgt mir streng <rs ref="#Sorge">die Sorge</rs>, Schritt vor Schritt,</l>
+              <l>Und deutet mir bedenklich in <rs ref="#der-Ferne-/-weite">die Weite</rs>.</l>
+              <l>Wie müssen Rat und Anteil <rs ref="#Mann">eines Manns,</l>
+              <l><rs ref="#Mann">Der</rs> allen edel, zuverlässig gilt</rs>,</l>
+              <l>Mir als ein Leitstern wonniglich erscheinen!</l>
+              <l>Verzeih daher, wenn ich mit <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">diesem Blatt,</l>
+              <l><rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">Das</rs> mich zu solcher schweren Tat berechtigt</rs>,</l>
+              <l>Zu <rs ref="#gerichtsrat">dir</rs> mich wendend komme, <rs ref="#gerichtsrat">den</rs> so lange</l>
+              <l><rs ref="#Man">Man</rs> <rs ref="#im-Gericht">im Gericht</rs>, wo viel Gerechte wirken,</l>
+              <l>Erst pries als Beistand, nun als Richter preist.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT</speaker></rs>
+            <stage><rs ref="#gerichtsrat">der</rs> indessen <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">das Blatt</rs> nachdenkend angesehen.</stage>
+            <lg>
+              <l>Nicht mein Verdienst, nur mein Bemühen war</l>
+              <l>Vielleicht zu preisen. Sonderbar jedoch</l>
+              <l>Will es mich dünken, daß <rs ref="#hofmeisterin">du</rs> eben <rs ref="#diesen,---------------Den-du-gerecht-und-edel-nennen-willst">diesen,</l>
+              <l><rs ref="#diesen,---------------Den-du-gerecht-und-edel-nennen-willst">Den</rs> <rs ref="#hofmeisterin">du</rs> gerecht und edel nennen willst</rs>,</l>
+              <l>In solcher Sache fragen, <rs ref="#diesen,---------------Den-du-gerecht-und-edel-nennen-willst">ihm</rs> getrost</l>
+              <l>Solch <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">ein Papier</rs> <rs ref="#das-Auge">vors Auge</rs> bringen magst,</l>
+              <l>Worauf <rs ref="#diesen,---------------Den-du-gerecht-und-edel-nennen-willst">er</rs> nur mit Schauder blicken kann.</l>
+              <l>Nicht ist von <rs ref="#Recht">Recht</rs>, noch von <rs ref="#im-Gericht">Gericht</rs> die Rede:</l>
+              <l>Hier ist <rs ref="#Gewalt">Gewalt</rs>! entsetzliche Gewalt,</l>
+              <l>Selbst wenn <rs ref="#eugenie">sie</rs> klug, selbst wenn <rs ref="#eugenie">sie</rs> weise handelt.</l>
+              <l>Anheimgegeben ward ein edles Kind,</l>
+              <l>Auf <rs ref="#des-Todes">Tod</rs> und <rs ref="#des-Lebens">Leben</rs> – sag' ich wohl zu viel? –,</l>
+              <l>Anheimgegeben <rs ref="#hofmeisterin">deiner</rs> Willkür. <rs ref="#Jeder">Jeder</rs>,</l>
+              <l>Sei <rs ref="#Jeder">er</rs> Beamter, Kriegsmann, <rs ref="#Bürger">Bürger</rs>, alle</l>
+              <l><pb n="265"/> Sind angewiesen, <rs ref="#hofmeisterin">dich</rs> zu schützen, <rs ref="#eugenie">sie</rs></l>
+              <l>Nach <rs ref="#hofmeisterin">deines</rs> Worts <rs ref="#das-Gesetz">Gesetzen</rs> zu behandeln.</l>
+            </lg>
+            <stage><rs ref="#gerichtsrat">Er</rs> gibt <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">das Blatt</rs> zurück.</stage>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Auch hier beweise <rs ref="#gerichtsrat">dich</rs> gerecht und laß</l>
+              <l>Nicht <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">dies Papier</rs> allein als Kläger sprechen,</l>
+              <l>Auch mich, die hart Verklagte, höre nun</l>
+              <l>Und meinen offnen Vortrag günstig an.</l>
+              <l>Aus edlem Blut entsproß <rs ref="#eugenie">die Treffliche</rs>;</l>
+              <l>Von jeder Gabe, <rs ref="#Tugend">jeder Tugend</rs> schenkt'</l>
+              <l><rs ref="#eugenie">Ihr</rs> <rs ref="#der-Natur">die Natur</rs> den allerschönsten Teil,</l>
+              <l>Wenn <rs ref="#das-Gesetz">das Gesetz</rs> <rs ref="#eugenie">ihr</rs> andre Rechte weigert.</l>
+              <l>Und nun verbannt! Ich sollte <rs ref="#eugenie">sie</rs> dem Kreise</l>
+              <l>Der Ihrigen entführen, <rs ref="#eugenie">sie</rs> hierher,</l>
+              <l>Hinüber nach <rs ref="#den-Inseln">den Inseln</rs> <rs ref="#eugenie">sie</rs> geleiten.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Gewissem-Tod">Gewissem Tod</rs> entgegen, <rs ref="#Gewissem-Tod">der</rs> im Qualm</l>
+              <l>Erhitzter Dünste schleichend überfällt.</l>
+              <l>Dort soll verwelken <rs ref="#eugenie">diese Himmelsblume</rs>,</l>
+              <l>Die Farbe <rs ref="#Wange-(eugenie)">dieser Wange</rs> dort verbleichen!</l>
+              <l>Verschwinden <rs ref="#die-Gestalt,-die-sich-das-Auge---------------Mit-Sehnsucht-immer-zu-erhalten-wünscht">die Gestalt, <rs ref="#die-Gestalt,-die-sich-das-Auge---------------Mit-Sehnsucht-immer-zu-erhalten-wünscht">die</rs> <rs ref="#das-Auge">sich</rs> <rs ref="#das-Auge">das Auge</rs></l>
+              <l>Mit <rs ref="#der-Sehnsucht">Sehnsucht</rs> immer zu erhalten wünscht</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Bevor <rs ref="#gerichtsrat">du</rs> richtest, höre weiter an!</l>
+              <l>Unschuldig ist – bedarf es wohl Beteurung? –,</l>
+              <l>Doch vieler Übel Ursach <rs ref="#eugenie">dieses Kind</rs>.</l>
+              <l><rs ref="#eugenie">Sie</rs>, als <rs ref="#Jenes-Apfels">des Haders Apfel</rs>, warf <rs ref="#ein-Gott">ein Gott</rs></l>
+              <l>Erzürnt ins Mittel zwischen <rs ref="#zwei-Parteien,---------------Die-sich,-auf-ewig-nun-getrennt,-bekämpfen">zwei Parteien,</l>
+              <l><rs ref="#zwei-Parteien,---------------Die-sich,-auf-ewig-nun-getrennt,-bekämpfen">Die</rs> <rs ref="#zwei-Parteien,---------------Die-sich,-auf-ewig-nun-getrennt,-bekämpfen">sich</rs>, auf ewig nun getrennt, bekämpfen</rs>.</l>
+              <l><rs ref="#eugenie">Sie</rs> will der eine Teil <rs ref="#zum-höchsten-Glück">zum höchsten Glück</rs></l>
+              <l>Berechtigt wissen, wenn <rs ref="#andre">der andre</rs> <rs ref="#eugenie">sie</rs></l>
+              <l>Hinabzudrängen strebt. Entschieden <rs ref="#der-andre-/-der-eine-Teil">beide</rs>. –</l>
+              <l>Und so umschlang ein heimlich Labyrinth</l>
+              <l>Verschmitzten Wirkens doppelt <rs ref="#dein-Geschick-(eugenie)"><rs ref="#eugenie">ihr</rs> Geschick</rs>,</l>
+              <l>So schwankte <rs ref="#List">List</rs> um <rs ref="#List">List</rs> im Gleichgewicht,</l>
+              <l>Bis ungeduld'ge Leidenschaft zuletzt</l>
+              <l>Den Augenblick entschiedenen Gewinns</l>
+              <l>Beschleunigte. Da brach von beiden Seiten</l>
+              <l>Die Schranke der Verstellung, drang <rs ref="#Gewalt">Gewalt</rs>,</l>
+              <l>Dem Staate selbst gefährlich drohend, los,</l>
+              <l>Und nun, sogleich der Schuld'gen Schuld zu hemmen,</l>
+              <l>Zu tilgen, trifft ein hoher Götterspruch</l>
+              <l><pb n="266"/> Des Kampfs unschuld'gen Anlaß, <rs ref="#eugenie">meinen Zögling</rs>,</l>
+              <l>Und reißt, verbannend, mich mit <rs ref="#eugenie">ihm</rs> dahin.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ich schelte nicht das Werkzeug, rechte kaum</l>
+              <l>Mit <rs ref="#jenen-Mächten,-die-sich-solche-Handlung---------------Erlauben-können">jenen Mächten, <rs ref="#jenen-Mächten,-die-sich-solche-Handlung---------------Erlauben-können">die</rs> <rs ref="#jenen-Mächten,-die-sich-solche-Handlung---------------Erlauben-können">sich</rs> solche Handlung</l>
+              <l>Erlauben können</rs>. Leider sind auch <rs ref="#jenen-Mächten,-die-sich-solche-Handlung---------------Erlauben-können">sie</rs></l>
+              <l>Gebunden und gedrängt. <rs ref="#jenen-Mächten,-die-sich-solche-Handlung---------------Erlauben-können">Sie</rs> wirken selten</l>
+              <l>Aus freier Überzeugung. <rs ref="#Sorge">Sorge</rs>, <rs ref="#Furcht">Furcht</rs></l>
+              <l>Vor größerm Übel nötiget Regenten</l>
+              <l>Die nützlich ungerechten Taten ab.</l>
+              <l>Vollbringe, was <rs ref="#hofmeisterin">du</rs> mußt, entferne <rs ref="#hofmeisterin">dich</rs></l>
+              <l>Aus meiner Enge <rs ref="#reingezognem-Kreis">reingezognem Kreis</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#reingezognem-Kreis">Den</rs> eben such' ich auf! da dring' ich hin!</l>
+              <l>Dort hoff' ich <rs ref="#Heil">Heil</rs>! <rs ref="#gerichtsrat">du</rs> wirst mich nicht verstoßen.</l>
+              <l><rs ref="#eugenie">Den werten Zögling</rs> wünscht' ich lange schon</l>
+              <l><rs ref="#Glück">Vom Glück</rs> zu überzeugen, <rs ref="#Glück">das</rs> <rs ref="#reingezognem-Kreis">im Kreise</l>
+              <l>Des Bürgerstandes</rs> hold genügsam weilt.</l>
+              <l>Entsagte <rs ref="#eugenie">sie</rs> der nicht gegönnten Höhe,</l>
+              <l>Ergäbe <rs ref="#des-biedern-Gatten-Schutz">sich</rs> <rs ref="#des-biedern-Gatten-Schutz">des biedern Gatten Schutz</rs></l>
+              <l>Und wendete von <rs ref="#jenen-Regionen,---------------Wo-sie-Gefahr,-Verbannung,-Tod-umlauern">jenen Regionen,</l>
+              <l><rs ref="#jenen-Regionen,---------------Wo-sie-Gefahr,-Verbannung,-Tod-umlauern">Wo</rs> <rs ref="#eugenie">sie</rs> <rs ref="#die-Gefahr">Gefahr</rs>, <rs ref="#Verbannung">Verbannung</rs>, <rs ref="#des-Todes">Tod</rs> umlauern</rs>,</l>
+              <l>Ins Häusliche den liebevollen Blick:</l>
+              <l>Gelöst wär' alles, meiner strengen Pflicht</l>
+              <l>Wär' ich entledigt, könnt' <rs ref="#Vaterland">im Vaterland</rs></l>
+              <l>Vertrauter Stunden mich verweilend freuen.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Ein-sonderbar-Verhältnis">Ein sonderbar Verhältnis</rs> zeigst <rs ref="#hofmeisterin">du</rs> mir!</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Dem klug entschloßnen Manne zeig' <rs ref="#Ein-sonderbar-Verhältnis">ich's</rs> an.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#hofmeisterin">Du</rs> gibst <rs ref="#eugenie">sie</rs> frei, wenn <rs ref="#ein-Gatte">sich</rs> <rs ref="#ein-Gatte">ein Gatte</rs> findet?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Und reichlich ausgestattet geb ich <rs ref="#eugenie">sie</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>So übereilt, <rs ref="#wer3">wer</rs> dürfte <rs ref="#wer3">sich</rs> entschließen?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Nur übereilt bestimmt <rs ref="#die-Neigung">die Neigung</rs> <rs ref="#die-Neigung">sich</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Die Unbekannte wählen wäre <rs ref="#Des-Frevels">Frevel</rs>.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Dem-ersten-Blick">Dem ersten Blick</rs> ist <rs ref="#eugenie">sie</rs> gekannt und wert.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#eugenie">Der Gattin</rs> Feinde drohen auch <rs ref="#ein-Gatte">dem Gatten</rs>.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Versöhnt ist alles, wenn <rs ref="#eugenie">sie</rs> <rs ref="#Gattin">Gattin</rs> heißt.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Und <rs ref="#ihr-Geheimnis-(eugenie)"><rs ref="#eugenie">ihr</rs> Geheimnis</rs>, wird <rs ref="#ihr-Geheimnis-(eugenie)"><rs ref="#Man">man's</rs></rs> <rs ref="#ein-Gatte">ihm</rs> entdecken?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Vertrauen wird <rs ref="#Man">man</rs> dem Vertrauenden.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Und wird <rs ref="#eugenie">sie</rs> frei <rs ref="#solch-einen-Bund">solch einen Bund</rs> erwählen?</l>
+            <pb n="267"/>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Ein-großes-Übel">Ein großes Übel</rs> dränget <rs ref="#eugenie">sie</rs> <rs ref="#zur-Wahl">zur Wahl</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>In solchem Fall zu werben, ist es redlich?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Der Rettende faßt an und klügelt nicht.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Was forderst <rs ref="#hofmeisterin">du</rs> vor allen andern Dingen?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Entschließen soll <rs ref="#eugenie">sie</rs> <rs ref="#eugenie">sich</rs> <rs ref="#im-Augenblick">im Augenblick</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Ist <rs ref="#hofmeisterin">euer</rs> Schicksal ängstlich so gesteigert?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#am-Hafen">Im Hafen</rs> regt <rs ref="#die-Fahrt">sich</rs> emsig schon <rs ref="#die-Fahrt">die Fahrt</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Hast <rs ref="#hofmeisterin">du</rs> <rs ref="#eugenie">ihr</rs> früher <rs ref="#solch-einen-Bund">solchen Bund</rs> geraten?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Im allgemeinen deutet ich dahin.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Entfernte <rs ref="#eugenie">sie</rs> unwillig den Gedanken?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Noch war das alte Glück <rs ref="#eugenie">ihr</rs> allzu nah.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Die-schönen-Bilder">Die schönen Bilder</rs>, werden <rs ref="#Die-schönen-Bilder">sie</rs> entweichen?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Das-hohe-Meer">Das hohe Meer</rs> hat <rs ref="#Die-schönen-Bilder">sie</rs> hinweggeschreckt.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#eugenie">Sie</rs> fürchtet, <rs ref="#eugenie">sich</rs> <rs ref="#Vaterland">vom Vaterland</rs> zu trennen?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Sie</rs> fürchtet's, und ich fürcht' <rs ref="#Vaterland">es</rs> wie <rs ref="#des-Todes">den Tod</rs>.</l>
+              <l>O laß <rs ref="#gerichtsrat-/-hofmeisterin">uns</rs>, <rs ref="#gerichtsrat">Edler</rs>, <rs ref="#gerichtsrat">glücklich Aufgefundner</rs>,</l>
+              <l>Vergebne Worte nicht bedenklich wechseln!</l>
+              <l>Noch lebt in <rs ref="#gerichtsrat">dir</rs>, <rs ref="#gerichtsrat">dem Jüngling</rs>, <rs ref="#jede-Tugend,---------------Die-mächt'gen-Glaubens,-unbedingter-Liebe---------------Zu-nie-genug-geschätzter-Tat-bedarf">jede Tugend,</l>
+              <l><rs ref="#jede-Tugend,---------------Die-mächt'gen-Glaubens,-unbedingter-Liebe---------------Zu-nie-genug-geschätzter-Tat-bedarf">Die</rs> mächt'gen Glaubens, unbedingter Liebe</l>
+              <l>Zu nie genug geschätzter Tat bedarf</rs>.</l>
+              <l>Gewiß umgibt <rs ref="#reingezognem-Kreis">ein schöner Kreis</rs> <rs ref="#gerichtsrat">dich</rs> auch</l>
+              <l>Von Ähnlichen – von Gleichen sag' ich nicht!</l>
+              <l>O sieh <rs ref="#gerichtsrat">dich</rs> um in <rs ref="#gerichtsrat">deinem</rs> eignen Herzen,</l>
+              <l>In <rs ref="#gerichtsrat">deiner</rs> Freunde Herzen sieh umher,</l>
+              <l>Und findest <rs ref="#gerichtsrat">du</rs> ein überfließend Maß</l>
+              <l>Von <rs ref="#Zur-Liebe">Liebe</rs>, von Ergebung, <rs ref="#Die-Kraft">Kraft</rs> und <rs ref="#Mut">Mut</rs>,</l>
+              <l>So werde dem Verdientesten dies Kleinod</l>
+              <l>Mit stillem Segen heimlich übergeben!</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ich weiß, ich fühle <rs ref="#hofmeisterin">deinen</rs> Zustand, kann</l>
+              <l>Und mag nicht mit mir selbst bedächtig erst,</l>
+              <l>Wie <rs ref="#Die-Klugheit">Klugheit</rs> forderte, zu Rate gehn!</l>
+              <l>Ich will <rs ref="#eugenie">sie</rs> sprechen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>tritt zurück gegen <rs ref="#eugenie">Eugenien</rs>.</stage>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Was geschehen soll,</l>
+              <l>Es wird geschehn! In ganz gemeinen Dingen</l>
+              <l>Hängt viel von <rs ref="#zur-Wahl">Wahl</rs> und Wollen ab; <rs ref="#das-Höchste,---------------Was-uns-begegnet">das Höchste,</l>
+              <l><rs ref="#das-Höchste,---------------Was-uns-begegnet">Was</rs> <rs ref="#uns-/-wir">uns</rs> begegnet</rs>, kommt wer weiß woher.</l>
+              <pb n="268"/>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>. <rs ref="#gerichtsrat">Gerichtsrat</rs>.</stage>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Indem <rs ref="#eugenie">du</rs> mir, <rs ref="#eugenie">verehrte Schöne</rs>, nahst,</l>
+              <l>So zweifl' ich fast, ob <rs ref="#Man">man</rs> mich treu berichtet.</l>
+              <l><rs ref="#eugenie">Du</rs> bist unglücklich, sagt <rs ref="#Man">man</rs>; doch <rs ref="#eugenie">du</rs> bringst,</l>
+              <l>Wohin <rs ref="#eugenie">du</rs> wandelst, <rs ref="#Glück">Glück</rs> und <rs ref="#Heil">Heil</rs> heran.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Find' ich <rs ref="#den-Ersten,-dem-aus-tiefer-Not---------------Ich-Blick-und-Wort-entgegenwenden-darf">den Ersten, <rs ref="#den-Ersten,-dem-aus-tiefer-Not---------------Ich-Blick-und-Wort-entgegenwenden-darf">dem</rs> aus tiefer Not</l>
+              <l>Ich Blick und <rs ref="#Worten">Wort</rs> entgegenwenden darf</rs>,</l>
+              <l>So mild und edel, als <rs ref="#gerichtsrat">du</rs> mir erscheinst:</l>
+              <l><rs ref="#Dies-Angstgefühl">Dies Angstgefühl</rs>, ich hoffe, wird <rs ref="#Dies-Angstgefühl">sich</rs> lösen.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-Vielerfahrner">Ein Vielerfahrner</rs> wäre zu bedauern,</l>
+              <l>Wär' <rs ref="#Ein-Vielerfahrner">ihm</rs> <rs ref="#das-Los">das Los</rs> gefallen, <rs ref="#das-Los">das</rs> <rs ref="#eugenie">dich</rs> trifft;</l>
+              <l>Wie ruft nicht erst bedrängter Jugend Kummer</l>
+              <l><rs ref="#Mitgefühl">Die Mitgefühle</rs> hilfsbedürftig an!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>So hob ich mich vor kurzem aus der Nacht</l>
+              <l><rs ref="#des-Todes">Des Todes</rs> an des Tages Licht herauf:</l>
+              <l>Ich wußte nicht, wie mir geschehn! wie hart</l>
+              <l><rs ref="#Ein-jäher-Sturz">Ein jäher Sturz</rs> mich lähmend hingestreckt.</l>
+              <l>Da rafft' ich mich empor, erkannte wieder</l>
+              <l>Die schöne Welt, ich sah <rs ref="#deinen-Wundarzt">den Arzt</rs> bemüht,</l>
+              <l>Die Flamme wieder anzufachen, fand</l>
+              <l>In <rs ref="#herzog">meines Vaters</rs> liebevollem Blick,</l>
+              <l>An <rs ref="#herzog">seinem</rs> Ton <rs ref="#meines-Lebens-(eugenie)">mein Leben</rs> wieder. Nun</l>
+              <l>Zum zweitenmal, von <rs ref="#Ein-jäher-Sturz">einem jähern Sturz</rs>.</l>
+              <l>Erwach' ich! Fremd und schattengleich erscheint</l>
+              <l>Mir die Umgebung, mir <rs ref="#dem-Menschen">der Menschen</rs> Wandeln,</l>
+              <l>Und <rs ref="#gerichtsrat">deine</rs> Milde selbst <rs ref="#ein-Traumbild">ein Traumgebild</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#Fremde">Fremde</rs> <rs ref="#Fremde">sich</rs> in <rs ref="#uns-/-wir">unsre</rs> Lage fühlen,</l>
+              <l>Sind <rs ref="#Fremde">sie</rs> wohl näher als <rs ref="#die-Nächsten,-die---------------Oft-unsern-Gram-als-wohlbekanntes-Übel---------------Mit-lässiger-Gewohnheit-übersehn">die Nächsten, <rs ref="#die-Nächsten,-die---------------Oft-unsern-Gram-als-wohlbekanntes-Übel---------------Mit-lässiger-Gewohnheit-übersehn">die</rs></l>
+              <l>Oft <rs ref="#uns-/-wir">unsern</rs> Gram als wohlbekanntes Übel</l>
+              <l>Mit lässiger Gewohnheit übersehn</rs>.</l>
+              <l><rs ref="#Dein-Zustand-(EUGENIE)"><rs ref="#eugenie">Dein</rs> Zustand</rs> ist gefährlich; ob <rs ref="#Dein-Zustand-(EUGENIE)">er</rs> gar</l>
+              <l>Unheilbar sei, wer wagt es zu entscheiden!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ich habe nichts zu sagen. Unbekannt</l>
+              <l>Sind mir <rs ref="#die-Mächte,-die-mein-Elend-schufen">die Mächte, <rs ref="#die-Mächte,-die-mein-Elend-schufen">die</rs> <rs ref="#mein-Elend-(EUGENIE)">mein Elend</rs> schufen</rs>.</l>
+              <l><rs ref="#gerichtsrat">Du</rs> hast <rs ref="#hofmeisterin">das Weib</rs> gesprochen, <rs ref="#hofmeisterin">jene</rs> weiß;</l>
+              <l>Ich dulde nur dem Wahnsinn mich entgegen.</l>
+              <pb n="269"/>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Was auch der Obermacht gewalt'gen Schloß</l>
+              <l>Auf <rs ref="#eugenie">dich</rs> herabgerufen, leichte Schuld,</l>
+              <l><rs ref="#Ein-Irrtum,-den-der-Zufall-schädlich-leitet">Ein Irrtum, <rs ref="#Ein-Irrtum,-den-der-Zufall-schädlich-leitet">den</rs> <rs ref="#Zufall">der Zufall</rs> schädlich leitet</rs> –</l>
+              <l>Die Achtung bleibt, <rs ref="#die-Neigung">die Neigung</rs> spricht für <rs ref="#eugenie">dich</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Des-reinen-Herzens">Des reinen Herzens</rs> traulich mir bewußt,</l>
+              <l>Sinn' ich der Wirkung kleiner Fehler nach.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Auf ebnem Boden straucheln, ist ein Scherz,</l>
+              <l>Ein Fehltritt stürzt <rs ref="#vom-Gipfel">vom Gipfel</rs> <rs ref="#eugenie">dich</rs> herab.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Auf <rs ref="#vom-Gipfel">jenen Gipfeln</rs> schwebt' ich voll <rs ref="#der-Entzückung">Entzücken</rs>,</l>
+              <l><rs ref="#Der-freud'gen-Überraschung"><rs ref="#Freude">Der Freuden</rs> Übermaß</rs> verwirrte mich.</l>
+              <l>Das nahe Glück berührt' ich schon <rs ref="#Geist">im Geist</rs>,</l>
+              <l>Ein köstlich Pfand lag schon in meinen Händen.</l>
+              <l>Nur wenig <rs ref="#der-Ruhe">Ruhe</rs>! wenige Geduld!</l>
+              <l>Und alles war, so darf ich glauben, mein.</l>
+              <l>Doch übereilt' ich's, überließ mich rasch</l>
+              <l>Zudringlicher Versuchung. – War es das? –</l>
+              <l>Ich sah, ich sprach, was mir zu sehn, zu sprechen</l>
+              <l>Verboten war. Wird ein so leicht Vergehn</l>
+              <l>So hart bestraft? Ein läßlich scheinendes,</l>
+              <l>Scherzhafter Probe gleichendes Verbot,</l>
+              <l>Verdammt's den Übertreter ohne Schonung?</l>
+              <l>O, so ist's wahr, was <rs ref="#uns-/-wir">uns</rs> der Völker Sagen</l>
+              <l>Unglaublichs überliefern! <rs ref="#Jenes-Apfels">Jenes Apfels</rs></l>
+              <l>Leichtsinnig augenblicklicher Genuß</l>
+              <l>Hat <rs ref="#Welt">aller Welt</rs> unendlich Weh verschuldet.</l>
+              <l>So ward auch mir <rs ref="#der-Schlüssel-(EUGENIE)">ein Schlüssel</rs> anvertraut:</l>
+              <l>Verbotne Schätze wagt' ich aufzuschließen,</l>
+              <l>Und aufgeschlossen hab' ich mir <rs ref="#dem-Grabe">das Grab</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Des-Übels-Quelle"><rs ref="#dem-Übel">Des Übels</rs> Quelle</rs> findest <rs ref="#eugenie">du</rs> nicht aus,</l>
+              <l>Und aufgefunden fließt <rs ref="#Des-Übels-Quelle">sie</rs> ewig fort.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>In kleinen Fehlern such' ich's, gebe mir</l>
+              <l>Aus eitlem Wahn <rs ref="#Schuld">die Schuld</rs> so großer Leiden.</l>
+              <l>Nur höher, höher wende <rs ref="#zum-Verdacht">den Verdacht</rs>!</l>
+              <rs ref="#Die-beiden,-denen-ich-mein-ganzes-Glück---------------Zu-danken-hoffte"><l>Die beiden, <rs ref="#Die-beiden,-denen-ich-mein-ganzes-Glück---------------Zu-danken-hoffte">denen</rs> ich mein ganzes Glück</l>
+              <l>Zu danken hoffte</rs>, <rs ref="#Die-beiden,-denen-ich-mein-ganzes-Glück---------------Zu-danken-hoffte">die erhabnen Männer</rs>,</l>
+              <l>Zum Scheine reichten <rs ref="#Die-beiden,-denen-ich-mein-ganzes-Glück---------------Zu-danken-hoffte">sie</rs> <rs ref="#Die-beiden,-denen-ich-mein-ganzes-Glück---------------Zu-danken-hoffte">sich</rs> <rs ref="#Hand">Hand</rs> um <rs ref="#Hand">Hand</rs>.</l>
+              <rs ref="#Der-innre-Zwist-unsicherer-Parteien,---------------Der-nur-in-düstern-Höhlen-sich-geneckt"><l>Der innre Zwist unsicherer Parteien,</l>
+              <l><rs ref="#Der-innre-Zwist-unsicherer-Parteien,---------------Der-nur-in-düstern-Höhlen-sich-geneckt">Der</rs> nur in düstern Höhlen <rs ref="#Der-innre-Zwist-unsicherer-Parteien,---------------Der-nur-in-düstern-Höhlen-sich-geneckt">sich</rs> geneckt</rs>,</l>
+              <l><pb n="270"/> <rs ref="#Der-innre-Zwist-unsicherer-Parteien,---------------Der-nur-in-düstern-Höhlen-sich-geneckt">Er</rs> bricht vielleicht ins Freie bald hervor!</l>
+              <l>Und <rs ref="#was2">was</rs> mich erst als <rs ref="#Furcht">Furcht</rs> und <rs ref="#Sorge">Sorg</rs>' umgeben,</l>
+              <l>Entscheidet <rs ref="#was2">sich</rs>, indem <rs ref="#was2">es</rs> mich vernichtet,</l>
+              <l>Und droht Vernichtung <rs ref="#Welt">aller Welt</rs> umher.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Du</rs> jammerst mich! das Schicksal <rs ref="#Welt">einer Welt</rs></l>
+              <l>Verkündest <rs ref="#eugenie">du</rs> nach <rs ref="#eugenie">deinem</rs> Schmerzgefühl.</l>
+              <l>Und schien <rs ref="#eugenie">dir</rs> nicht <rs ref="#Der-Erde-(Planet)">die Erde</rs> froh und glücklich,</l>
+              <l>Als <rs ref="#eugenie">du</rs>, ein heitres Kind, auf <rs ref="#Der-Blumen">Blumen</rs> schrittest?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Wer hat es reizender als ich gesehn,</l>
+              <l><rs ref="#Der-Erde-(Planet)">Der Erde</rs> Glück mit allen <rs ref="#Der-Erde-(Planet)">seinen</rs> Blüten!</l>
+              <l>Ach, alles um mich her, es war so reich,</l>
+              <l>So voll und rein, und was <rs ref="#dem-Menschen">der Mensch</rs> bedarf,</l>
+              <l>Es schien <rs ref="#Lust">zur Lust</rs>, zum Überfluß gegeben.</l>
+              <l>Und wem verdankt' ich solch ein Paradies?</l>
+              <l><rs ref="#Vaterliebe">Der Vaterliebe</rs> dankt' ich's, <rs ref="#Vaterliebe">die</rs>, besorgt</l>
+              <l>Ums Kleinste wie ums Größte, mich verschwendrisch</l>
+              <l>Mit Prachtgenüssen zu erdrücken schien</l>
+              <l>Und <rs ref="#meinen-Körper-(EUGENIE)">meinen Körper</rs>, <rs ref="#Dieser-Geist-(eugenie)">meinen Geist</rs> zugleich,</l>
+              <l>Ein solches Wohl zu tragen, bildete.</l>
+              <l>Wenn alles weichlich Eitle mich umgab,</l>
+              <l>Ein wonniges Behagen mir zu schmeicheln,</l>
+              <l>So rief mich ritterlicher Trieb hinaus,</l>
+              <l>Zu <rs ref="#Roß">Roß</rs> und <rs ref="#im-Wagen">Wagen</rs>, mit <rs ref="#die-Gefahr">Gefahr</rs> zu kämpfen.</l>
+              <l>Oft sehnt' ich mich in <rs ref="#der-Ferne-/-weite">ferne Weiten</rs> hin,</l>
+              <l>Nach fremder Lande seltsam neuen Kreisen.</l>
+              <l>Dorthin versprach <rs ref="#herzog">der edle Vater</rs> mich,</l>
+              <l><rs ref="#Ans-Meer">Ans Meer</rs> versprach <rs ref="#herzog">er</rs> mich zu führen, hoffte</l>
+              <l><rs ref="#herzog">Sich</rs> meines ersten Blicks ins Unbegrenzte</l>
+              <l>Mit liebevollem Anteil zu erfreun –</l>
+              <l>Da steh' ich nun und schaue weit hinaus,</l>
+              <l>Und enger scheint mich's, enger zu umschließen.</l>
+              <l>O Gott, wie schränkt <rs ref="#Himmel-(göttliche-Sp…-/-Welt">sich</rs> <rs ref="#Welt">Welt</rs> und <rs ref="#Himmel-(göttliche-Sphäre)">Himmel</rs> ein,</l>
+              <l>Wenn <rs ref="#unser-Herz"><rs ref="#uns-/-wir">unser</rs> Herz</rs> in <rs ref="#unser-Herz">seinen</rs> Schranken banget!</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <rs ref="#eugenie"><l>Unselige! <rs ref="#eugenie">die</rs> mir aus <rs ref="#eugenie">deinen</rs> Höhen,</l>
+              <l>Ein Meteor, verderblich niederstreifst</l>
+              <l>Und meiner Bahn Gesetz berührend störst</rs>!</l>
+              <l>Auf ewig hast <rs ref="#eugenie">du</rs> mir den heitern Blick</l>
+              <l><rs ref="#Ans-Meer">Ins volle Meer</rs> getrübt. Wenn <rs ref="#Phöbus">Phöbus</rs> nun</l>
+              <l>Ein feuerwallend Lager <rs ref="#Phöbus">sich</rs> bereitet,</l>
+              <l><pb n="271"/> Und <rs ref="#das-Auge">jedes Auge</rs> von <rs ref="#der-Entzückung">Entzücken</rs> tränt,</l>
+              <l>Da werd' ich weg mich wenden, werde <rs ref="#eugenie">dich</rs></l>
+              <l>Und <rs ref="#dein-Geschick-(eugenie)"><rs ref="#eugenie">dein</rs> Geschick</rs> beweinen. Fern am Rande</l>
+              <l>Des nachtumgebnen Ozeans erblick' ich</l>
+              <l>Mit <rs ref="#der-Not">Not</rs> und <rs ref="#Jammer">Jammer</rs> <rs ref="#eugenie">deinen</rs> Pfad umstrickt!</l>
+              <l>Entbehrung alles nötig lang' Gewohnten,</l>
+              <l>Bedrängnis <rs ref="#dem-Übel">neuer Übel</rs>, ohne Flucht.</l>
+              <l><rs ref="#Der-Sonne">Der Sonne</rs> glühendes Geschoß durchdringt</l>
+              <l><rs ref="#Ein-feuchtes,-kaum-der-Flut-entrißnes-Land">Ein feuchtes, kaum <rs ref="#der-Flut">der Flut</rs> entrißnes Land</rs>.</l>
+              <l>Um Niederungen schwebet, gift'gen Brodens,</l>
+              <l>Blaudunst'ger Streifen angeschwollne Pest.</l>
+              <l>Im Vortod seh' ich, matt und hingebleicht,</l>
+              <l>Von <rs ref="#Tag">Tag</rs> zu <rs ref="#Tag">Tag</rs> ein Kummerleben schwanken.</l>
+              <l>O <rs ref="#eugenie"><rs ref="#eugenie">die</rs> so blühend, heiter vor mir steht,</l>
+              <l>Sie</rs> soll so früh, langsamen Tods, verschwinden!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Entsetzen rufst <rs ref="#gerichtsrat">du</rs> mir hervor! Dorthin?</l>
+              <l>Dorthin verstößt <rs ref="#Man">man</rs> mich! In <rs ref="#Ein-feuchtes,-kaum-der-Flut-entrißnes-Land">jenes Land</rs>,</l>
+              <l>Als Höllenwinkel mir, von Kindheit auf,</l>
+              <l>In grauenvollen Zügen dargestellt.</l>
+              <l>Dorthin, wo <rs ref="#Tiger-/-Schlang">sich</rs> in Sümpfen Schlang' und Tiger</l>
+              <l>Durch Rohr und Dorngeflechte tückisch drängen,</l>
+              <l>Wo, peinlich quälend, als belebte Wolken</l>
+              <l>Um Wandrer <rs ref="#Insektenscharen">sich</rs> <rs ref="#Insektenscharen">Insektenscharen</rs> ziehn,</l>
+              <l>Wo jeder Hauch des Windes, unbequem</l>
+              <l>Und schädlich, Stunden raubt und <rs ref="#des-Lebens">Leben</rs> kürzt.</l>
+              <l>Zu bitten dacht' ich; flehend siehst <rs ref="#gerichtsrat">du</rs> nun</l>
+              <l>Die Dringende. <rs ref="#gerichtsrat">Du</rs> kannst, <rs ref="#gerichtsrat">du</rs> wirst mich retten.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ein mächtig ungeheurer Talisman</l>
+              <l>Liegt in den Händen <rs ref="#hofmeisterin"><rs ref="#eugenie">deiner</rs> Führerin</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Was ist <rs ref="#das-Gesetz">Gesetz</rs> und <rs ref="#Ordnung">Ordnung</rs>? Können <rs ref="#das-Gesetz-/-Ordnung">sie</rs></l>
+              <l>Der Unschuld Kindertage nicht beschützen?</l>
+              <l>Wer seid denn <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">ihr, <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">die</rs> <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">ihr</rs> mit leerem Stolz</l>
+              <l>Durchs <rs ref="#Recht">Recht</rs> <rs ref="#Gewalt">Gewalt</rs> zu bänd'gen <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">euch</rs> berühmt</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <rs ref="#In-abgeschloßnen-Kreisen-lenken-wir,---------------Gesetzlich-streng,-das-in-der-Mittelhöhe---------------Des-Lebens-wiederkehrend-Schwebende.---------------Was-droben-sich-in-ungemeßnen-Räumen---------------Gewaltig-seltsam-hin-und-her-bewegt,---------------Belebt-und-tötet-ohne-Rat-und-Urteil,----------------Das-wird-nach-anderm-Maß,-nach-andrer-Zahl---------------Vielleicht-berechnet,-bleibt-uns-rätselhaft"><l>In abgeschloßnen Kreisen lenken <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">wir</rs>,</l>
+              <l>Gesetzlich streng, das in der Mittelhöhe</l>
+              <l>Des Lebens wiederkehrend Schwebende.</l>
+              <l><rs ref="#Was4">Was</rs> droben <rs ref="#Was4">sich</rs> in ungemeßnen Räumen</l>
+              <l>Gewaltig seltsam hin und her bewegt,</l>
+              <l>Belebt und tötet ohne Rat und Urteil,</l>
+              <l><pb n="272"/> <rs ref="#Was4">Das</rs> wird nach anderm Maß, nach andrer Zahl</l>
+              <l>Vielleicht berechnet, bleibt <rs ref="#ihr,-die-ihr-mit-leerem-Stolz---------------Durchs-Recht-Gewalt-zu-bänd'gen-euch-berühmt">uns</rs> rätselhaft</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Und ist <rs ref="#In-abgeschloßnen-Kreisen-lenken-wir,---------------Gesetzlich-streng,-das-in-der-Mittelhöhe---------------Des-Lebens-wiederkehrend-Schwebende.---------------Was-droben-sich-in-ungemeßnen-Räumen---------------Gewaltig-seltsam-hin-und-her-bewegt,---------------Belebt-und-tötet-ohne-Rat-und-Urteil,----------------Das-wird-nach-anderm-Maß,-nach-andrer-Zahl---------------Vielleicht-berechnet,-bleibt-uns-rätselhaft">das</rs> alles? Hast <rs ref="#gerichtsrat">du</rs> weiter nichts</l>
+              <l>Zu sagen, zu verkünden?</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Nichts.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ich glaub' es nicht!</l>
+              <l>Ich darf's nicht glauben.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Laß, o laß mich fort!</l>
+              <l>Soll ich als feig, als unentschlossen gelten? –</l>
+              <l>Bedauern, jammern? Soll nicht irgendhin</l>
+              <l>Mit kühner Hand auf <rs ref="#deine-Rettung-EUGENIE"><rs ref="#eugenie">deine</rs> Rettung</rs> deuten?</l>
+              <l>Doch läge nicht in dieser Kühnheit selbst</l>
+              <l>Für mich die gräßlichste Gefahr, von <rs ref="#eugenie">dir</rs></l>
+              <l>Verkannt zu werden? mit verfehltem Zweck –</l>
+              <l>Als frevelhaft unwürdig zu erscheinen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ich lasse <rs ref="#gerichtsrat">dich</rs> nicht los, <rs ref="#gerichtsrat">den</rs> mir <rs ref="#Glück">das Glück</rs>,</l>
+              <l><rs ref="#dem-Glück-(eugenie)">Mein altes Glück</rs>, vertraulich zugesendet.</l>
+              <l>Mich hat's von <rs ref="#Jugend">Jugend</rs> auf gehegt, gepflegt,</l>
+              <l>Und nun im rauhen Sturme sendet mir's –</l>
+              <l>Den edlen Stellvertreter seiner Neigung.</l>
+              <l>Sollt' ich nicht sehen, fühlen, daß <rs ref="#gerichtsrat">du</rs> teil</l>
+              <l>An mir und <rs ref="#Das-Schicksal-(EUGENIE-Verbannung)">meinem Schicksal</rs> nimmst? Ich stehe</l>
+              <l>Nicht ohne Wirkung hier: <rs ref="#gerichtsrat">du</rs> sinnst! <rs ref="#gerichtsrat">du</rs> denkst! –</l>
+              <l>Im weiten Kreise rechtlicher Erfahrung</l>
+              <l>Schaust <rs ref="#gerichtsrat">du</rs> zu meinen Gunsten um <rs ref="#gerichtsrat">dich</rs> her.</l>
+              <l>Noch bin ich nicht verloren! Ja, <rs ref="#gerichtsrat">du</rs> suchst</l>
+              <l><rs ref="#Ein-Mittel">Ein Mittel</rs>, mich zu retten, hast <rs ref="#Ein-Mittel">es</rs> wohl</l>
+              <l>Schon ausgefunden! Mir bekennt's <rs ref="#dein-Blick-GERICHTSRAT"><rs ref="#gerichtsrat">dein</rs> Blick</rs>,</l>
+              <l><rs ref="#dein-Blick-GERICHTSRAT"><rs ref="#gerichtsrat">Dein</rs> tiefer, ernster, freundlich trüber Blick</rs>.</l>
+              <l>O kehre <rs ref="#gerichtsrat">dich</rs> nicht weg! O! sprich es aus,</l>
+              <l><rs ref="#Ein-hohes-Wort,-das-mich-zu-heilen-töne">Ein hohes Wort, <rs ref="#Ein-hohes-Wort,-das-mich-zu-heilen-töne">das</rs> mich zu heilen töne</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>So wendet voll Vertraun zum Arzte <rs ref="#Der-tief-Erkrankte">sich</rs></l>
+              <l><rs ref="#Der-tief-Erkrankte">Der tief Erkrankte</rs>, fleht um <rs ref="#Linderung">Linderung</rs>,</l>
+              <l>Fleht um Erhaltung schwer bedrohter Tage.</l>
+              <l>Als <rs ref="#Gott">Gott</rs> erscheint <rs ref="#Der-tief-Erkrankte">ihm</rs> der erfahrne Mann.</l>
+              <l>Doch ach! ein bitter, unerträglich Mittel</l>
+              <l>Wird nun geboten. Ach! soll <rs ref="#Der-tief-Erkrankte">ihm</rs> vielleicht</l>
+              <l>Der edlen Glieder grausame Verstümmlung,</l>
+              <l>Verlust statt Heilung angekündigt werden?</l>
+              <l><pb n="273"/> Gerettet willst <rs ref="#eugenie">du</rs> sein! Zu retten bist <rs ref="#eugenie">du</rs>,</l>
+              <l>Nicht herzustellen. Was <rs ref="#eugenie">du</rs> warst, ist hin,</l>
+              <l>Und was <rs ref="#eugenie">du</rs> sein kannst, magst <rs ref="#eugenie">du's</rs> übernehmen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Um <rs ref="#Rettung">Rettung</rs> aus <rs ref="#des-Todes">des Todes</rs> Nachtgewalt,</l>
+              <l>Um dieses Lichts erquickenden Genuß,</l>
+              <l>Um Sicherheit <rs ref="#des-Daseins">des Daseins</rs> ruft zuerst,</l>
+              <l>Aus tiefer Not, ein Halbverlorner noch.</l>
+              <l>Was dann zu heilen sei, was zu erstatten,</l>
+              <l>Was zu vermissen, lehre <rs ref="#Tag">Tag</rs> um <rs ref="#Tag">Tag</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Und nächst <rs ref="#des-Lebens">dem Leben</rs>, was erflehst <rs ref="#eugenie">du</rs> <rs ref="#eugenie">dir</rs>?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Vaterland">Des Vaterlandes</rs> vielgeliebten Boden!</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Du forderst viel im einz'gen, großen Wort!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#gerichtsrat">Ein</rs> einzig Wort enthält <rs ref="#dem-Glück-(eugenie)">mein ganzes Glück</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Den-Zauberbann">Den Zauberbann</rs>, wer wagt's, <rs ref="#Den-Zauberbann">ihn</rs> aufzulösen?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Tugend">Der Tugend</rs> Gegenzauber siegt gewiß!</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Der-obern-Macht">Der obern Macht</rs> ist schwer zu widerstehen.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Allmächtig ist <rs ref="#Der-obern-Macht">sie</rs> nicht, <rs ref="#Der-obern-Macht">die obre Macht</rs>.</l>
+              <l>Gewiß! <rs ref="#gerichtsrat">dir</rs> gibt die Kenntnis jener Formen,</l>
+              <l>Für Hohe wie für Niedre gleich verbindlich,</l>
+              <l><rs ref="#Ein-Mittel2">Ein Mittel</rs> an. <rs ref="#gerichtsrat">Du</rs> lächelst. Ist es möglich!</l>
+              <l><rs ref="#Ein-Mittel2">Das Mittel</rs> ist gefunden! Sprich <rs ref="#Ein-Mittel2">es</rs> aus!</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Was hülf' es, <rs ref="#eugenie">meine Beste</rs>, wenn ich <rs ref="#eugenie">dir</rs></l>
+              <l>Von Möglichkeiten spräche! Möglich scheint</l>
+              <l>Fast alles <rs ref="#uns-/-wir">unsern</rs> Wünschen; <rs ref="#unsrer-Tat"><rs ref="#uns-/-wir">unsrer</rs> Tat</rs></l>
+              <l>Setzt <rs ref="#unsrer-Tat">sich</rs> von innen wie von außen viel,</l>
+              <l>Was <rs ref="#unsrer-Tat">sie</rs> durchaus unmöglich macht, entgegen.</l>
+              <l>Ich kann, ich darf nicht reden, laß mich los!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Und wenn <rs ref="#gerichtsrat">du</rs> täuschen solltest! – Wäre nur</l>
+              <l>Für <rs ref="#im-Augenblick">Augenblicke</rs> meiner Phantasie</l>
+              <l>Ein zweifelhafter, leichter Flug vergönnt!</l>
+              <l><rs ref="#dem-Übel">Ein Übel</rs> um <rs ref="#dem-Übel">das andre</rs> biete mir!</l>
+              <l>Ich bin gerettet, wenn ich wählen kann.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-Mittel2">Ein Mittel</rs> gibt es, <rs ref="#eugenie">dich</rs> <rs ref="#Vaterland">im Vaterland</rs></l>
+              <l>Zurück zu halten. Friedlich ist's, und manchem</l>
+              <l>Erschien' <rs ref="#Ein-Mittel2">es</rs> auch erfreulich. <rs ref="#die-hohe-Gunst">Große Gunst</rs></l>
+              <l>Hat <rs ref="#Ein-Mittel2">es</rs> vor <rs ref="#Gott">Gott</rs> und <rs ref="#dem-Menschen">Menschen</rs>. Heil'ge Kräfte</l>
+              <l>Erheben's über alle Willkür. <rs ref="#Jedem,---------------Der's-anerkennt-sich's-anzueignen-weiß--------------------------------------------------------Verschafft-es-Glück-und-Ruhe">Jedem,</l>
+              <l><rs ref="#Jedem,---------------Der's-anerkennt-sich's-anzueignen-weiß--------------------------------------------------------Verschafft-es-Glück-und-Ruhe">Der's</rs> anerkennt <rs ref="#Jedem,---------------Der's-anerkennt-sich's-anzueignen-weiß--------------------------------------------------------Verschafft-es-Glück-und-Ruhe">sich's</rs> anzueignen weiß</l>
+              <pb n="274"/>
+            </lg>
+            <lg>
+              <l>Verschafft <rs ref="#Ein-Mittel2">es</rs> <rs ref="#Glück">Glück</rs> und <rs ref="#der-Ruhe">Ruhe</rs></rs>. Vollbestand</l>
+              <l>Erwünschter Lebensgüter sind <rs ref="#uns-/-wir">wir</rs> <rs ref="#Gott">ihm</rs>,</l>
+              <l>Sowie der Zukunft höchste Bilder schuldig.</l>
+              <l>Als allgemeines Menschengut verordnet's</l>
+              <l><rs ref="#Himmel-(göttliche-Sphäre)">Der Himmel</rs> selbst und ließ <rs ref="#Glück">dem Glück</rs>, der Kühnheit</l>
+              <l>Und stiller Neigung Raum, sich's zu erwerben.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Ins-Paradies">Welch Paradies</rs> in <rs ref="#ein-Rätsel">Rätseln</rs> stellst <rs ref="#gerichtsrat">du</rs> dar?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Der eignen Schöpfung himmlisch Erdenglück.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Was hilft mein Sinnen! ich verwirre mich!</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Errätst <rs ref="#eugenie">du's</rs> nicht, <rs ref="#so-liegt-es-fern-von-dir">so liegt <rs ref="#Ein-Mittel2">es</rs> fern von <rs ref="#eugenie">dir</rs></rs>.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#so-liegt-es-fern-von-dir">Das</rs> zeige <rs ref="#so-liegt-es-fern-von-dir">sich</rs>, sobald <rs ref="#gerichtsrat">du</rs> ausgesprochen.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Ich wage viel! Der Ehstand ist <rs ref="#Ein-Mittel2">es</rs>!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Gesprochen ist's. Nun überlege <rs ref="#eugenie">du</rs>.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Mich überrascht, mich ängstet solch <rs ref="#Worten">ein Wort</rs>.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#das-Auge">Ins Auge</rs> fasse, was <rs ref="#eugenie">dich</rs> überrascht.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mir lag es fern in meiner frohen Zeit,</l>
+              <l>Nun kann ich <rs ref="#eines-Bräutigams">seine</rs> Nähe nicht ertragen;</l>
+              <l><rs ref="#Sorge">Die Sorge</rs>, die Beklemmung mehrt <rs ref="#die-Beklemmung-/-Sorge">sich</rs> nur.</l>
+              <l>Von <rs ref="#herzog">meines Vaters</rs>, <rs ref="#koenig">meines Königs</rs> Hand</l>
+              <l>Mußt' ich dereinst <rs ref="#eines-Bräutigams">den Bräutigam</rs> erwarten.</l>
+              <l>Voreilig schwärmte nicht mein Blick umher,</l>
+              <l>Und keine Neigung wuchs in <rs ref="#meiner-Brust-EUGENIE">meiner Brust</rs>.</l>
+              <l>Nun soll ich denken, was ich nie gedacht,</l>
+              <l>Und fühlen, was ich sittsam weggewiesen;</l>
+              <l>Soll mir <rs ref="#ein-Gatte">den Gatten</rs> wünschen, eh' <rs ref="#Mann">ein Mann</rs></l>
+              <l><rs ref="#Mann">Sich</rs> liebenswert und meiner wert gezeigt,</l>
+              <l>Und <rs ref="#jenes-Glück,-das-Hymen-uns-verspricht">jenes Glück, <rs ref="#jenes-Glück,-das-Hymen-uns-verspricht">das</rs> Hymen <rs ref="#uns-/-wir">uns</rs> verspricht</rs>,</l>
+              <l>Zum Rettungsmittel <rs ref="#meiner-Not-(Eugenie-im-Exil)">meiner Not</rs> entweihen.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Dem-wackern-Mann">Dem wackern Mann</rs> vertraut <rs ref="#ein-Weib">ein Weib</rs> getrost,</l>
+              <l>Und wär' <rs ref="#Dem-wackern-Mann">er</rs> fremd, ein zweifelhaft Geschick.</l>
+              <l><rs ref="#Der-ist-nicht-fremd,-wer-teil-zu-nehmen-weiß">Der ist nicht fremd, <rs ref="#Der-ist-nicht-fremd,-wer-teil-zu-nehmen-weiß">wer</rs> teil zu nehmen weiß</rs>,</l>
+              <l>Und schnell verbindet <rs ref="#ein-Bedrängter">ein Bedrängter</rs> <rs ref="#ein-Bedrängter">sich</rs></l>
+              <l>Mit <rs ref="#ein-Bedrängter">seinem</rs> Retter. Was im Lebensgange</l>
+              <l><rs ref="#ein-Gatte">Dem Gatten</rs> <rs ref="#seine-Gattin"><rs ref="#ein-Gatte">seine</rs> Gattin</rs> fesselnd eignet,</l>
+              <l><rs ref="#Ein-Sicherheitsgefühl">Ein Sicherheitsgefühl</rs>, <rs ref="#seine-Gattin">ihr</rs> werd' es nie</l>
+              <l>An <rs ref="#Rat-(Ratschlag)">Rat</rs> und <rs ref="#Trost">Trost</rs>, an <rs ref="#Schutz">Schutz</rs> und <rs ref="#Hilfe">Hilfe</rs> fehlen,</l>
+              <l><rs ref="#Ein-Sicherheitsgefühl">Das</rs> flößt <rs ref="#im-Augenblick">im Augenblick</rs> ein kühner Mann</l>
+              <l><pb n="275"/> Dem Busen des gefahrumgebnen Weibes</l>
+              <l>Durch Wagetat auf <rs ref="#ew'ge-Zeit">ew'ge Zeiten</rs> ein.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Und mir, wo zeigte <rs ref="#ein-solcher-Held">sich</rs> <rs ref="#ein-solcher-Held">ein solcher Held</rs>?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Mann">Der Männer</rs> Schar ist groß in <rs ref="#dieser-Stadt">dieser Stadt</rs>.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Doch allen bin und bleib' ich unbekannt.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Nicht lange bleibt ein solcher Blick verborgen!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>O täusche nicht ein leicht betrognes Hoffen!</l>
+              <l>Wo fände <rs ref="#ein-Gleicher">sich</rs> <rs ref="#ein-Gleicher">ein Gleicher</rs>, <rs ref="#ein-Gleicher">seine</rs> Hand</l>
+              <l>Mir, der Erniedrigten, zu reichen? Dürft' ich</l>
+              <l><rs ref="#ein-Gleicher">Dem Gleichen</rs> selbst ein solches Glück verdanken?</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ungleich erscheint <rs ref="#des-Lebens">im Leben</rs> viel, doch bald</l>
+              <l>Und unerwartet ist <rs ref="#des-Lebens">es</rs> ausgeglichen.</l>
+              <l>In ew'gem Wechsel wiegt ein Wohl das Weh</l>
+              <l>Und schnelle Leiden <rs ref="#Freude"><rs ref="#uns-/-wir">unsre</rs> Freuden</rs> auf.</l>
+              <l>Nichts ist beständig! <rs ref="#Manches-Mißverhältnis">Manches Mißverhältnis</rs></l>
+              <l>Löst unbemerkt, indem <rs ref="#Tag">die Tage</rs> rollen,</l>
+              <l>Durch Stufenschritte <rs ref="#Manches-Mißverhältnis">sich</rs> in Harmonie.</l>
+              <l>Und ach! den größten Abstand weiß <rs ref="#Zur-Liebe">die Liebe</rs>,</l>
+              <l><rs ref="#Der-Erde-(Planet)">Die Erde</rs> mit <rs ref="#Himmel-(göttliche-Sphäre)">dem Himmel</rs>, auszugleichen.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>In leere Träume denkst <rs ref="#gerichtsrat">du</rs> mich zu wiegen.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#eugenie">Du</rs> bist gerettet, wenn <rs ref="#eugenie">du</rs> glauben kannst.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>So zeige mir <rs ref="#des-Retters">des Retters</rs> treues Bild.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Ich zeig' <rs ref="#des-Retters">ihn</rs> <rs ref="#eugenie">dir</rs>, <rs ref="#des-Retters">er</rs> bietet <rs ref="#des-Retters">seine</rs> Hand!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#gerichtsrat">Du</rs>! welch ein Leichtsinn überraschte <rs ref="#gerichtsrat">dich</rs>?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Entschieden bleibt auf ewig mein Gefühl.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#im-Augenblick">Der Augenblick</rs>, vermag <rs ref="#im-Augenblick">er</rs> <rs ref="#Das-Wunder">solche Wunder</rs>?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Das-Wunder">Das Wunder</rs> ist <rs ref="#im-Augenblick">des Augenblicks</rs> Geschöpf.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Und <rs ref="#Der-Irrtum">Irrtum</rs> auch der Übereilung Sohn.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Mann">Ein Mann, <rs ref="#Mann">der</rs> <rs ref="#eugenie">dich</rs> gesehen</rs>, irrt nicht mehr.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Erfahrung">Erfahrung</rs> bleibt <rs ref="#des-Lebens">des Lebens</rs> Meisterin.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Verwirren kann <rs ref="#Erfahrung">sie</rs>, doch <rs ref="#Herz">das Herz</rs> entscheidet.</l>
+              <l>O laß <rs ref="#eugenie">dir</rs> sagen: Wie, vor wenig Stunden,</l>
+              <l>Ich mit mir selbst zu <rs ref="#Rat-(Ratschlag)">Rate</rs> ging und mich</l>
+              <l>So einsam fühlte, meine ganze Lage,</l>
+              <l>Vermögen, Stand, Geschäft <rs ref="#das-Auge">ins Auge</rs> faßte</l>
+              <l>Und um mich her nach <rs ref="#Gattin">einer Gattin</rs> sann,</l>
+              <l>Da regte <rs ref="#Phantasie">Phantasie</rs> mir manches Bild,</l>
+              <l><pb n="276"/> <rs ref="#Die-Schätze-der-Erinnerung">Die Schätze der Erinnerung</rs> sichtend, auf,</l>
+              <l>Und wohlgefällig schwebten <rs ref="#Die-Schätze-der-Erinnerung">sie</rs> vorüber.</l>
+              <l>Zu keiner Wahl bewegte <rs ref="#mein-Herz">sich</rs> <rs ref="#mein-Herz">mein Herz</rs>.</l>
+              <l>Doch <rs ref="#eugenie">du</rs> erscheinest: ich empfinde nun,</l>
+              <l>Was ich bedurfte. Dies ist mein Geschick.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Die-Fremde">Die Fremde</rs>, <rs ref="#Die-Fremde">Schlechtumgebne</rs>, <rs ref="#Die-Fremde">Mißempfohlne</rs>,</l>
+              <l><rs ref="#Die-Fremde">Sie</rs> könnte frohen, stolzen Trost empfinden,</l>
+              <l><rs ref="#Die-Fremde">Sich</rs> so geschätzt, <rs ref="#Die-Fremde">sich</rs> so geliebt zu sehn,</l>
+              <l>Bedächte <rs ref="#Die-Fremde">sie</rs> nicht auch <rs ref="#ein-Freund">des Freundes</rs> Glück,</l>
+              <rs ref="#ein-edler-Mann"><l>Des edlen Manns, <rs ref="#ein-edler-Mann">der</rs> unter <rs ref="#dem-Menschen">allen Menschen</rs></l>
+              <l>Vielleicht zuletzt <rs ref="#Die-Fremde">ihr</rs> <rs ref="#Hilfe">Hilfe</rs> bieten mag</rs>.</l>
+              <l>Betrügst <rs ref="#gerichtsrat">du</rs> <rs ref="#gerichtsrat">dich</rs> nicht selbst? und wagst <rs ref="#gerichtsrat">du</rs>, <rs ref="#gerichtsrat">dich</rs></l>
+              <l>Mit <rs ref="#jener-Macht,-die-mich-bedroht">jener Macht, <rs ref="#jener-Macht,-die-mich-bedroht">die</rs> mich bedroht</rs>, zu messen?</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Mit <rs ref="#jener-Macht,-die-mich-bedroht">jener</rs> nicht allein! – Dem Ungestüm</l>
+              <l><rs ref="#der-Menge-Drang">Des rohen Drangs <rs ref="#die-Menge2">der Menge</rs></rs> zu entgehn,</l>
+              <l>Hat <rs ref="#uns-/-wir">uns</rs> <rs ref="#ein-Gott">ein Gott</rs> den schönsten Port bezeichnet.</l>
+              <l>Im Hause, wo <rs ref="#ein-Gatte">der Gatte</rs> sicher waltet,</l>
+              <l>Da wohnt allein <rs ref="#der-Friede,-den-vergebens---------------Im-Weiten-du,-da-draußen,-suchen-magst">der Friede, <rs ref="#der-Friede,-den-vergebens---------------Im-Weiten-du,-da-draußen,-suchen-magst">den</rs> vergebens</l>
+              <l><rs ref="#der-Ferne-/-weite">Im Weiten</rs> <rs ref="#eugenie">du</rs>, da draußen, suchen magst</rs>.</l>
+              <l>Unruh'ge Mißgunst, grimmige Verleumdung,</l>
+              <l>Verhallendes, parteiisches Bestreben,</l>
+              <l>Nicht wirken <rs ref="#grimmige-Verleumdung-/-Unruh'ge-Mißgunst-+-1">sie</rs> auf <rs ref="#reingezognem-Kreis">diesen heil'gen Kreis</rs>!</l>
+              <l><rs ref="#zur-Vernunft">Vernunft</rs> und <rs ref="#Zur-Liebe">Liebe</rs> hegen jedes Glück,</l>
+              <l>Und jeden Unfall mildert <rs ref="#reingezognem-Kreis">ihre</rs> Hand.</l>
+              <l>Komm! rette <rs ref="#eugenie">dich</rs> zu mir! Ich kenne mich!</l>
+              <l>Und weiß, was ich versprechen darf und kann.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Bist <rs ref="#gerichtsrat">du</rs> in <rs ref="#gerichtsrat">deinem</rs> Hause <rs ref="#ein-Fürst">Fürst</rs>?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ich bin's!</l>
+              <l>Und <rs ref="#jeder">jeder</rs> ist's, der Gute wie der Böse.</l>
+              <l>Reicht eine Macht denn wohl in jenes Haus,</l>
+              <l>Wo <rs ref="#der-Tyrann">der Tyrann</rs> <rs ref="#Gattin">die holde Gattin</rs> kränkt,</l>
+              <l>Wenn <rs ref="#der-Tyrann">er</rs> nach eignem Sinn verworren handelt,</l>
+              <l>Durch Launen, <rs ref="#Worten">Worte</rs>, Taten jede Lust</l>
+              <l>Mit Schadenfreude sinnreich untergräbt?</l>
+              <l>Wer trocknet <rs ref="#Gattin">ihre</rs> Tränen? <rs ref="#das-Gesetz">Welch Gesetz</rs>,</l>
+              <l>Welch Tribunal erreicht den Schuldigen?</l>
+              <l><rs ref="#der-Tyrann">Er</rs> triumphiert, und schweigende Geduld</l>
+              <l>Senkt nach und nach, verzweifelnd, <rs ref="#Gattin">sie</rs> <rs ref="#dem-Grabe">ins Grab</rs>.</l>
+              <l>Notwendigkeit, <rs ref="#das-Gesetz">Gesetz</rs>, <rs ref="#Gewohnheit">Gewohnheit</rs> gaben</l>
+              <l><pb n="277"/> <rs ref="#Mann">Dem Mann</rs> so <rs ref="#ein-großes-Recht">große Rechte</rs>; sie vertrauten</l>
+              <l>Auf <rs ref="#Mann">seine</rs> Kraft, auf <rs ref="#Mann">seinen</rs> Biedersinn. –</l>
+              <l>Nicht Heldenfaust, nicht Heldenstamm, geliebte,</l>
+              <l>Verehrte Fremde, weiß ich <rs ref="#eugenie">dir</rs> zu bieten;</l>
+              <l>Allein <rs ref="#Bürger">des Bürgers</rs> hohen Sicherstand.</l>
+              <l>Und bist <rs ref="#eugenie">du</rs> mein, was kann <rs ref="#eugenie">dich</rs> mehr berühren?</l>
+              <l>Auf ewig bist <rs ref="#eugenie">du</rs> mein, versorgt, beschützt.</l>
+              <l><rs ref="#koenig">Der König</rs> fordre <rs ref="#eugenie">dich</rs> von mir zurück:</l>
+              <l>Als <rs ref="#ein-Gatte">Gatte</rs> kann ich mit <rs ref="#koenig">dem König</rs> rechten.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Vergib! Mir schwebt noch allzu lebhaft vor,</l>
+              <l>Was ich verscherzte! <rs ref="#gerichtsrat">Du</rs>, <rs ref="#gerichtsrat">Großmütiger</rs>,</l>
+              <l>Bedenkest nur, was mir noch übrig blieb.</l>
+              <l>Wie wenig ist es! Dieses wenige</l>
+              <l>Lehrst <rs ref="#gerichtsrat">du</rs> mich schätzen, gibst mein eignes Wesen</l>
+              <l>Durch <rs ref="#gerichtsrat">dein</rs> Gefühl belebend mir zurück.</l>
+              <l>Verehrung zoll' ich <rs ref="#gerichtsrat">dir</rs>. Wie soll ich's nennen?</l>
+              <l>Dankbare, schwesterlich entzückte Neigung!</l>
+              <l>Ich fühle mich als <rs ref="#gerichtsrat">dein</rs> Geschöpf und kann</l>
+              <l><rs ref="#gerichtsrat">Dir</rs> leider, wie <rs ref="#gerichtsrat">du</rs> wünschest, nicht gehören.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>So schnell versagst <rs ref="#eugenie">du</rs> <rs ref="#eugenie">dir</rs> und mir <rs ref="#Hoffnung">die Hoffnung</rs>?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Das-Hoffnungslose">Das Hoffnungslose</rs> kündet schnell <rs ref="#Das-Hoffnungslose">sich</rs> an!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#eugenie-/-gerichtsrat">Die Vorigen</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>.</stage>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Dem günst'gen Wind gehorcht die Flotte schon'</l>
+              <l><rs ref="#Die-Segel">Die Segel</rs> schwellen, alles eilt hinab.</l>
+              <l><rs ref="#Die-Scheidenden">Die Scheidenden</rs> umarmen tränend <rs ref="#Die-Scheidenden">sich</rs>,</l>
+              <l>Und von <rs ref="#den-Schiffen">den Schiffen</rs>, von dem Strande wohn</l>
+              <l>Die weißen Tücher noch den letzten Gruß.</l>
+              <l>Bald lichtet <rs ref="#unser-Schiff"><rs ref="#hofmeisterin-/-eugenie">unser</rs> Schiff</rs> die Anker auch!</l>
+              <l>Komm! laß <rs ref="#hofmeisterin-/-eugenie">uns</rs> gehen! <rs ref="#hofmeisterin-/-eugenie">Uns</rs> begleitet nicht</l>
+              <l>Ein Scheidegruß, <rs ref="#hofmeisterin-/-eugenie">wir</rs> ziehen unbeweint.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Nicht unbeweint, nicht ohne bittern Schmerz</l>
+              <rs ref="#Zurückgelaßner-Freunde,-die-nach-euch---------------Die-Arme-rettend-strecken"><l>Zurückgelaßner Freunde, <rs ref="#Zurückgelaßner-Freunde,-die-nach-euch---------------Die-Arme-rettend-strecken">die</rs> nach <rs ref="#hofmeisterin-/-eugenie">euch</rs></l>
+              <l><rs ref="#Arm-(Körper)">Die Arme</rs> rettend strecken</rs>. O! vielleicht</l>
+              <l><pb n="278"/> Erscheint, was <rs ref="#hofmeisterin-/-eugenie">ihr</rs> <rs ref="#im-Augenblick">im Augenblick</rs> verschmäht,</l>
+              <l><rs ref="#hofmeisterin-/-eugenie">Euch</rs> bald ein sehnsuchtswertes, fernes Bild.</l>
+            </lg>
+            <stage>Zu <rs ref="#eugenie">Eugenien</rs>.</stage>
+            <lg>
+              <l>Vor wenigen Minuten nannt' ich <rs ref="#eugenie">dich's</rs></l>
+              <l>Entzückt willkommen! Soll ein Lebewohl</l>
+              <l>Behend auf ewig <rs ref="#eugenie-/-gerichtsrat">unsre</rs> Trennung siegeln?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Der-Unterredung-Inhalt">Der Unterredung Inhalt</rs>, ahn' ich <rs ref="#Der-Unterredung-Inhalt">ihn</rs>?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Zum ew'gen Bunde siehst <rs ref="#hofmeisterin">du</rs> mich bereit.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>zu <rs ref="#eugenie">Eugenien</rs>.</stage>
+            <l>Und wie erkennst <rs ref="#eugenie">du</rs> solch ein groß Erbieten?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Mit höchst gerührten Herzens reinstem Dank.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Und ohne Neigung, <rs ref="#diese-Hand">diese Hand</rs> zu fassen?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l><rs ref="#Hilfe">Zur Hilfe</rs> bietet <rs ref="#diese-Hand">sie</rs> <rs ref="#diese-Hand">sich</rs> dringend an.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Das Nächste steht oft unergreifbar fern.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Ach! fern von <rs ref="#Rettung">Rettung</rs> stehn <rs ref="#hofmeisterin-/-eugenie">wir</rs> nur zu bald.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Und hast <rs ref="#eugenie">du</rs> künftig Drohendes bedacht?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Sogar das letzte Drohende, <rs ref="#des-Todes">den Tod</rs>.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Ein angebotnes Leben schlägst <rs ref="#eugenie">du</rs> aus?</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Erwünschte Feier froher Bundestage.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#zum-Feste">Ein Fest</rs> versäumt' ich, keins erscheint mir wieder.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Gewinnen kann, wer viel verloren, schnell.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Nach glänzendem ein dauerhaft Geschick.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Hinweg die Dauer, wenn der Glanz verlosch.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Wer4">Wer</rs> Mögliches bedenkt, läßt <rs ref="#Wer4">sich</rs> genügen.</l>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <l>Und wem genügte nicht an <rs ref="#Zur-Liebe">Lieb</rs> und Treue?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Den Schmeichelworten widerspricht <rs ref="#mein-eigen-Herz-(eugenie)">mein Herz</rs></l>
+              <l>Und widerstrebt <rs ref="#gerichtsrat-/-hofmeisterin">euch</rs> beiden, ungeduldig.</l>
+            </lg>
+          </sp>
+          <sp who="#gerichtsrat">
+            <rs ref="#gerichtsrat"><speaker>GERICHTSRAT.</speaker></rs>
+            <lg>
+              <l>Ach, allzu lästig scheint, ich weiß es wohl,</l>
+              <l><rs ref="#uns-/-wir">Uns</rs> <rs ref="#unwillkommne-Hilfe">unwillkommne Hilfe</rs>! <rs ref="#unwillkommne-Hilfe">Sie</rs> erregt</l>
+              <l>Nur innern Zwiespalt. Danken möchten <rs ref="#uns-/-wir">wir</rs>,</l>
+              <l>Und sind undankbar, da <rs ref="#uns-/-wir">wir</rs> nicht empfangen.</l>
+              <l>Drum laßt mich scheiden! doch des Hafenbürgers</l>
+              <l>Gebrauch und Pflicht vorher an <rs ref="#hofmeisterin-/-eugenie">euch</rs> erfüllen,</l>
+              <l>Aufs unfruchtbare Meer von Landesgaben</l>
+              <l>Zum Lebewohl Erquickungsvorrat widmen.</l>
+              <l>Dann werd' ich stehen, werde starren Blicks</l>
+              <l><rs ref="#Die-Segel">Geschwollne Segel</rs> ferner, immer ferner,</l>
+              <l>Und <rs ref="#Glück">Glück</rs> und <rs ref="#Hoffnung">Hoffnung</rs> weichend schwinden sehn.</l>
+              <pb n="279"/>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>In <rs ref="#meiner-Hand-(hofmeisterin)"><rs ref="#hofmeisterin">deiner</rs> Hand</rs>, ich weiß es, ruht <rs ref="#ihrem-Heil-EUGENIE">mein Heil</rs>,</l>
+              <l>So wie <rs ref="#mein-Elend-(EUGENIE)">mein Elend</rs>. Laß <rs ref="#hofmeisterin">dich</rs> überreden!</l>
+              <l>Laß <rs ref="#hofmeisterin">dich</rs> erweichen! Schiffe mich nicht ein!</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Du</rs> lenkest nun, was <rs ref="#hofmeisterin-/-eugenie">uns</rs> begegnen soll,</l>
+              <l><rs ref="#eugenie">Du</rs> hast zu wählen! Ich gehorche nur</l>
+              <l><rs ref="#Der-starken-Hand">Der starken Hand</rs>, <rs ref="#Der-starken-Hand">sie</rs> stößt mich vor <rs ref="#Der-starken-Hand">sich</rs> hin.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Und nennst <rs ref="#hofmeisterin">du</rs> Wahl, wenn <rs ref="#Unvermeidliches">Unvermeidliches</rs></l>
+              <l>Unmöglichem <rs ref="#Unvermeidliches">sich</rs> gegenüber stellt?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#solch-einen-Bund">Der Bund</rs> ist möglich, wie der Bann vermeidlich.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Unmöglich ist, was Edle nicht vermögen.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Für <rs ref="#gerichtsrat">diesen biedern Mann</rs> vermagst <rs ref="#eugenie">du</rs> viel.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>In beßre Lagen führe mich zurück,</l>
+              <l>Und <rs ref="#gerichtsrat">sein</rs> Erbieten lohn' ich grenzenlos.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#gerichtsrat">Ihm</rs> lohne gleich, was <rs ref="#gerichtsrat">ihn</rs> allein belohnt:</l>
+              <l>Zu hohen Stufen heb' <rs ref="#gerichtsrat">ihn</rs> <rs ref="#deine-Hand-(eugenie)"><rs ref="#eugenie">deine</rs> Hand</rs>!</l>
+              <l>Wenn <rs ref="#Tugend">Tugend</rs>, wenn Verdienst den Tüchtigen</l>
+              <l>Nur langsam fördern, wenn <rs ref="#gerichtsrat">er</rs> still entsagend</l>
+              <l>Und kaum bemerkt <rs ref="#gerichtsrat">sich</rs> andern widmend strebt,</l>
+              <l>So führt ein edles Weib <rs ref="#gerichtsrat">ihn</rs> leicht <rs ref="#dem-Ziel">ans Ziel</rs>.</l>
+              <l>Hinunter soll kein Mann <rs ref="#die-Blicke">die Blicke</rs> wenden,</l>
+              <l>Hinauf <rs ref="#zur-höchsten-Frauen">zur höchsten Frauen</rs> kehr' <rs ref="#gerichtsrat">er</rs> <rs ref="#gerichtsrat">sich</rs>!</l>
+              <l>Gelingt es <rs ref="#gerichtsrat">ihm</rs>, <rs ref="#zur-höchsten-Frauen">sie</rs> zu erwerben, schnell</l>
+              <l>Geebnet zeigt <rs ref="#des-Lebens-Pfad">des Lebens Pfad</rs> <rs ref="#des-Lebens-Pfad">sich</rs> <rs ref="#gerichtsrat">ihm</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Verwirrender, verfälschter Worte Sinn</l>
+              <l>Entwickl' ich wohl aus <rs ref="#hofmeisterin">deinen</rs> falschen Reden.</l>
+              <l>Das Gegenteil erkenn' ich nur zu klar:</l>
+              <l><rs ref="#ein-Gatte">Der Gatte</rs> zieht <rs ref="#sein-Weib"><rs ref="#ein-Gatte">sein</rs> Weib</rs> unwiderstehlich</l>
+              <l>In <rs ref="#ein-Gatte">seines</rs> Kreises abgeschloßne Bahn.</l>
+              <l>Dorthin ist <rs ref="#sein-Weib">sie</rs> gebannt, <rs ref="#sein-Weib">sie</rs> kann <rs ref="#sein-Weib">sich</rs> nicht</l>
+              <l>Aus eigner Kraft besondre Wege wählen:</l>
+              <l>Aus niedrem Zustand führt <rs ref="#ein-Gatte">er</rs> <rs ref="#sein-Weib">sie</rs> hervor,</l>
+              <l>Aus höhern Sphären lockt <rs ref="#ein-Gatte">er</rs> <rs ref="#sein-Weib">sie</rs> hernieder.</l>
+              <l>Verschwunden ist die frühere Gestalt,</l>
+              <l>Verloschen jede Spur vergangner Tage.</l>
+              <l><pb n="280"/> Was <rs ref="#sein-Weib">sie</rs> gewann, wer will es <rs ref="#sein-Weib">ihr</rs> entreißen?</l>
+              <l>Was <rs ref="#sein-Weib">sie</rs> verlor, wer gibt es <rs ref="#sein-Weib">ihr</rs> zurück?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>So brichst <rs ref="#eugenie">du</rs> grausam <rs ref="#eugenie">dir</rs> und mir den Stab.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Noch forscht <rs ref="#meinem-Blick-(eugenie)">mein Blick</rs> nach <rs ref="#Rettung">Rettung</rs> hoffnungsvoll.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Der Liebende verzweifelt – kannst <rs ref="#eugenie">du</rs> hoffen?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Ein kalter Mann verlieh' <rs ref="#hofmeisterin-/-eugenie">uns</rs> bessern Rat.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#Rat-(Ratschlag)">Rat</rs> und <rs ref="#zur-Wahl">Wahl</rs> ist keine Rede mehr;</l>
+              <l><rs ref="#eugenie">Du</rs> stürzest mich <rs ref="#ins-Elend">ins Elend</rs>, folge mir!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>O daß ich <rs ref="#hofmeisterin">dich</rs> noch einmal freundlich hold</l>
+              <l>Vor <rs ref="#meinen-Augen-(EUGENIE)">meinen Augen</rs> sähe, wie <rs ref="#hofmeisterin">du</rs> stets</l>
+              <l>Von früher Zeit herauf mich angeblickt!</l>
+              <l><rs ref="#Der-Sonne">Der Sonne</rs> Glanz, <rs ref="#Der-Sonne">die</rs> <rs ref="#des-Lebens">alles Leben</rs> regt,</l>
+              <l>Des klaren Monds erquicklich leiser Schein</l>
+              <l>Begegneten mir holder nicht als <rs ref="#hofmeisterin">du</rs>.</l>
+              <l>Was konnt' ich wünschen? Vorbereitet war's.</l>
+              <l>Was durft' ich fürchten? Abgelehnt war alles!</l>
+              <l>Und zog <rs ref="#Die-Fürstin-(eugenie-Mutter)">sich</rs> ins Verborgne <rs ref="#Die-Fürstin-(eugenie-Mutter)">meine Mutter</rs></l>
+              <l>Vor <rs ref="#Die-Fürstin-(eugenie-Mutter)">ihres</rs> Kindes Blicken früh zurück,</l>
+              <l>So reichtest <rs ref="#hofmeisterin">du</rs> ein überfließend Maß</l>
+              <l>Besorgter Mutterliebe mir entgegen.</l>
+              <l>Bist <rs ref="#hofmeisterin">du</rs> denn ganz verwandelt? Äußerlich</l>
+              <l>Erscheinst <rs ref="#hofmeisterin">du</rs> mir die Vielgeliebte selber;</l>
+              <l>Doch ausgewechselt ist, so scheint's, <rs ref="#hofmeisterin">dein</rs> Herz –</l>
+              <l><rs ref="#hofmeisterin">Du</rs> bist es noch, <rs ref="#hofmeisterin">die</rs> ich um Klein- und Großes</l>
+              <l>So oft gebeten, <rs ref="#hofmeisterin">die</rs> mir nichts verweigert.</l>
+              <l><rs ref="#Gewohnter-Ehrfurcht-kindliches-Gefühl">Gewohnter Ehrfurcht kindliches Gefühl</rs>,</l>
+              <l><rs ref="#Gewohnter-Ehrfurcht-kindliches-Gefühl">Es</rs> lehrt mich nun, <rs ref="#das-Höchste,---------------Was-uns-begegnet">das Höchste</rs> zu erbitten.</l>
+              <l>Und könnt' <rs ref="#das-Höchste,---------------Was-uns-begegnet">es</rs> mich erniedrigen, <rs ref="#hofmeisterin">dich</rs> nun</l>
+              <l>An <rs ref="#herzog">Vaters</rs>, <rs ref="#koenig">Königs</rs>, <rs ref="#hofmeisterin">dich</rs> an <rs ref="#Gott">Gottes</rs> Statt</l>
+              <l>Gebognen Knies um <rs ref="#Rettung">Rettung</rs> anzuflehen?</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> kniet.</stage>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>In dieser Lage scheinst <rs ref="#eugenie">du</rs> meiner nur</l>
+              <l>Verstellt zu spotten. Falschheit rührt mich nicht.</l>
+            </lg>
+            <stage>Hebt <rs ref="#eugenie">Eugenien</rs> mit Heftigkeit auf.</stage>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#So-hartes-Wort,-so-widriges-Betragen">So hartes Wort, so widriges Betragen</rs>,</l>
+              <l>Erfahr' ich <rs ref="#So-hartes-Wort,-so-widriges-Betragen">das</rs>, erleb' ich <rs ref="#So-hartes-Wort,-so-widriges-Betragen">das</rs> von <rs ref="#hofmeisterin">dir</rs>?</l>
+              <l>Und mit <rs ref="#Gewalt">Gewalt</rs> verscheuchst <rs ref="#hofmeisterin">du</rs> meinen Traum.</l>
+              <l>Im klaren Lichte seh' ich <rs ref="#dein-Geschick-(eugenie)">mein Geschick</rs>!</l>
+              <l><pb n="281"/> Nicht meine Schuld, nicht jener Großen Zwist,</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)">Des Bruders</rs> Tücke hat mich hergestoßen,</l>
+              <l>Und mitverschworen hältst <rs ref="#hofmeisterin">du</rs> mich gebannt.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Dein</rs> Irrtum schwankt nach allen Seiten hin.</l>
+              <l>Was will <rs ref="#Prinz-/-Sohn-(Herzog)">der Bruder</rs> gegen <rs ref="#eugenie">dich</rs> beginnen?</l>
+              <l>Den bösen Willen hat <rs ref="#Prinz-/-Sohn-(Herzog)">er</rs>, nicht <rs ref="#Macht">die Macht</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Sei's, wie <rs ref="#Prinz-/-Sohn-(Herzog)">ihm</rs> wolle! Noch verschmacht' ich nicht</l>
+              <l>In ferner Wüste hoffnungslosen Räumen.</l>
+              <l><rs ref="#Ein-lebend-Volk">Ein lebend Volk</rs> bewegt <rs ref="#Ein-lebend-Volk">sich</rs> um mich her,</l>
+              <rs ref="#Ein-lebend-Volk"><l>Ein liebend Volk, <rs ref="#Ein-lebend-Volk">das</rs> auch den Vaternamen</l>
+              <l>Entzückt aus <rs ref="#Des-Vaters">seines</rs> Kindes Mund vernimmt</rs>.</l>
+              <l><rs ref="#Ein-lebend-Volk">Die</rs> fordr' ich auf. Aus <rs ref="#roher-Menge">roher Menge</rs> kündet</l>
+              <l>Ein mächt'ger Ruf mir <rs ref="#meine-Freiheit-(EUGENIE)">meine Freiheit</rs> an.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#roher-Menge">Die rohe Menge</rs> hast <rs ref="#eugenie">du</rs> nie gekannt,</l>
+              <l><rs ref="#roher-Menge">Sie</rs> starrt und staunt und zaudert, läßt geschehn;</l>
+              <l>Und regt <rs ref="#roher-Menge">sie</rs> <rs ref="#roher-Menge">sich</rs>, so endet ohne Glück,</l>
+              <l>Was ohne Plan zufällig <rs ref="#roher-Menge">sie</rs> begonnen.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Den Glauben wirst <rs ref="#hofmeisterin">du</rs> mir mit kaltem Wort</l>
+              <l>Nicht, wie <rs ref="#dem-Glück-(eugenie)">mein Glück</rs> mit frecher Tat, zerstören.</l>
+              <l>Dort unten hoff' ich <rs ref="#des-Lebens">Leben</rs>, aus <rs ref="#des-Lebens">dem Leben</rs>,</l>
+              <l>Dort, wo die Masse tätig strömend wogt,</l>
+              <l>Wo <rs ref="#Herz">jedes Herz</rs>, mit wenigem befriedigt,</l>
+              <l>Für holdes Mitleid gern <rs ref="#Herz">sich</rs> öffnen mag.</l>
+              <l><rs ref="#hofmeisterin">Du</rs> hältst mich nicht zurück! Ich rufe laut,</l>
+              <l>Wie furchtbar mich <rs ref="#die-Gefahr">Gefahr</rs> und <rs ref="#der-Not">Not</rs> bedrängen,</l>
+              <l>Ins wühlende Gemisch mich stürzend, aus.</l>
+            </lg>
+          </sp>
+        </div>
+    </body>
+  </text>
+</TEI>
+</#root>

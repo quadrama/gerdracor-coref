@@ -1,0 +1,463 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Zweite Szene</head>
+          <stage><rs ref="#Warwand">Warwand</rs>; Zimmer <rs ref="#Sylvesters-Schloss,-das-Schloss-Warwand">im Schlosse</rs>. <rs ref="#sylvester">Sylvester</rs> tritt auf, öffnet ein Fenster, und bleibt
+            mit Zeichen einer tiefen Bewegung davor stehen. <rs ref="#gertrude">Gertrude</rs> tritt auf, und nähert <rs ref="#gertrude">sich</rs> <rs ref="#sylvester">ihm</rs>
+            mit verdecktem Gesicht.</stage>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <l>Weißt du <rs ref="#der-Mord-an-Jeronimus">es</rs>?</l>
+          </sp>
+          <sp who="#agnes">
+            <rs ref="#agnes"><speaker>AGNES</speaker></rs>
+            <stage>tritt auf, noch an der Tür halblaut.</stage>
+            <l><rs ref="#gertrude">Mutter</rs>! <rs ref="#gertrude">Mutter</rs>!</l>
+            <stage><rs ref="#gertrude">Gertrude</rs> sieht <rs ref="#gertrude">sich</rs> um, <rs ref="#agnes">Agnes</rs> nähert <rs ref="#agnes">sich</rs> <rs ref="#gertrude">ihr</rs>.</stage>
+            <lg>
+              <l>Weißt <rs ref="#gertrude">du</rs> <rs ref="#der-Mord-an-Jeronimus">die</l>
+              <l>Entsetzenstat</rs>? <rs ref="#der-Mord-an-Jeronimus"><rs ref="#jeronimus">Jerome</rs> ist erschlagen</rs>.</l>
+            </lg>
+            <stage><rs ref="#gertrude">Gertrude</rs> gibt <rs ref="#agnes">ihr</rs> ein bejahendes Zeichen.</stage>
+            <l>Weiß <rs ref="#der-Mord-an-Jeronimus"><rs ref="#sylvester">er's</rs></rs>?</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE</speaker></rs>
+            <stage>wendet <rs ref="#gertrude">sich</rs> zu <rs ref="#sylvester">Sylvester</rs>.</stage>
+            <l><rs ref="#sylvester">Sylvester</rs>!</l>
+            <pb n="178"/>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER</speaker></rs>
+            <stage>ohne <rs ref="#sylvester">sich</rs> umzusehen.</stage>
+            <l>Bist <rs ref="#gertrude">du</rs> es <rs ref="#gertrude">Gertrude</rs>?</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Wenn</l>
+              <l>Ich wüßte, wie <rs ref="#sylvester">du</rs> jetzt gestimmt, viel hätt ich</l>
+              <l>Zu sagen <rs ref="#sylvester">dir</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Es ist ein trüber Tag</l>
+              <l>Mit Wind und Regen, viel Bewegung draußen. –</l>
+              <l>Es zieht ein unsichtbarer Geist, gewaltig,</l>
+              <l>Nach <emph>einer</emph> Richtung alles fort, den Staub,</l>
+              <l>Die Wolken, und die Wellen. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Willst <rs ref="#sylvester">du</rs> mich,</l>
+              <l><rs ref="#sylvester">Sylvester</rs>, hören?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Sehr beschäftigt mich</l>
+              <l>Dort <rs ref="#jener-Segel">jener Segel</rs> – siehst <rs ref="#gertrude">du</rs> <rs ref="#jener-Segel">ihn</rs>? <rs ref="#jener-Segel">Er</rs> schwankt</l>
+              <l>Gefährlich, übel ist <rs ref="#jener-Segel">sein</rs> Stand, <rs ref="#jener-Segel">er</rs> kann</l>
+              <l>Das Ufer nicht erreichen. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Höre mich,</l>
+              <l><rs ref="#sylvester">Sylvester</rs>, eine Nachricht hab ich <rs ref="#sylvester">dir</rs></l>
+              <l>Zu sagen von <rs ref="#jeronimus">Jerome</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Er</rs>, <rs ref="#jeronimus">er</rs> ist</l>
+              <l>Hinüber –</l>
+            </lg>
+            <stage><rs ref="#sylvester">Er</rs> wendet <rs ref="#sylvester">sich</rs>.</stage>
+            <l>Ich weiß <rs ref="#der-Mord-an-Jeronimus">alles</rs>.</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Weißt <rs ref="#der-Mord-an-Jeronimus"><rs ref="#sylvester">du's</rs></rs>? Nun</l>
+              <l>Was sagst <rs ref="#sylvester">du</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Wenig will ich sagen. Ist</l>
+              <l><rs ref="#theistiner">Theistin</rs> noch nicht zurück?</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>So willst <rs ref="#sylvester">du</rs> nun</l>
+              <l><rs ref="#Den-Krieg-beginnen"><rs ref="#der-Krieg-zwischen-den-Häusern">Den Krieg</rs> beginnen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <l>Kenn ich doch <rs ref="#rupert"><rs ref="#der-Familienzweig-aus-Rossitz">den Feind</rs></rs>.</l>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Nun freilich wie die Sachen stehn, so mußt</l>
+              <l><rs ref="#sylvester"><rs ref="#Den-Krieg-beginnen">Du's</rs></rs> wohl. Hat <rs ref="#rupert">er</rs> <rs ref="#jeronimus">den Vetter</rs> hingerichtet,</l>
+              <l><rs ref="#jeronimus">Der</rs> schuldlos war, so wird <rs ref="#rupert">er</rs> <rs ref="#sylvester">dich</rs> nicht schonen.</l>
+              <l><rs ref="#Die-Zweige-abzuhaun-des-ganzen-Stammes">Die Zweige abzuhaun <rs ref="#der-ganze-Stamm-der-Schroffensteine">des ganzen Stammes</rs></rs>,</l>
+              <l><rs ref="#Die-Zweige-abzuhaun-des-ganzen-Stammes">Das</rs> ist <rs ref="#rupert">sein</rs> überlegter Plan, damit</l>
+              <l>Das Mark <rs ref="#rupert">ihm</rs> <rs ref="#rupert">seinen</rs> Wipfel höher treibe.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <rs ref="#jeronimus"><l>Den Edelen, <rs ref="#jeronimus">der</rs> nicht einmal als <rs ref="#Der-Herold">Herold</rs></l>
+              <l>Gekommen, <rs ref="#jeronimus">der</rs> als Freund nur das Geschäft</l>
+              <l><pb n="179"/> Betrieb <rs ref="#der-Frieden">des Friedens</rs>, preiszugeben</rs> – <rs ref="#jeronimus"><emph>ihn</emph></rs></l>
+              <l>Um <rs ref="#rupert">sich</rs> an <emph>mir</emph> zu rächen, preiszugeben</l>
+              <l><rs ref="#die-Bevölkerung-von-Rossitz">Dem Volke</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Nun doch, endlich wirst <rs ref="#sylvester">du</rs> <rs ref="#rupert">ihn</rs></l>
+              <l>Nicht mehr verkennen?</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Ihn</rs> hab ich verkannt,</l>
+              <l><rs ref="#jeronimus">Jeronimus</rs> – hab <rs ref="#jeronimus">ihn</rs> der Mitschuld heute</l>
+              <l>Geziehen, <rs ref="#jeronimus">der</rs> <rs ref="#jeronimus">sich</rs> heut für mich geopfert.</l>
+              <l>Denn wohl geahndet hat es <rs ref="#jeronimus">ihm</rs> – mich hielt</l>
+              <l><rs ref="#jeronimus">Er</rs> ab, und ging doch selbst nach <rs ref="#Rossitz">Rossitz</rs>, <rs ref="#jeronimus">der</rs></l>
+              <l>Nicht sichrer war, als ich. –</l>
+            </lg>
+          </sp>
+          <sp who="#gertrude">
+            <rs ref="#gertrude"><speaker>GERTRUDE.</speaker></rs>
+            <lg>
+              <l>Konnt <rs ref="#jeronimus">er</rs> denn anders?</l>
+              <l>Denn weil <rs ref="#sylvester">du</rs> <rs ref="#rupert">Rupert</rs> stets mit blinder Neigung</l>
+              <l>Hast freigesprochen, ja sogar gezürnt,</l>
+              <l>Wenn <rs ref="#man-(generic)">man</rs> es nur gewagt <rs ref="#rupert">ihm</rs> zu mißtraun,</l>
+              <l>So mußt <rs ref="#jeronimus">er</rs> freilich zu <rs ref="#rupert">ihm</rs> gehen. –</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>Nun,</l>
+              <l>Beruh'ge <rs ref="#gertrude">dich</rs> – fortan kein anderes</l>
+              <l>Gefühl als nur <rs ref="#die-Rache">der Rache</rs> will ich kennen,</l>
+              <l>Und wie ich duldend einer Wolke gleich,</l>
+              <l><rs ref="#rupert">Ihm</rs> lange <rs ref="#Ruperts-Haupt">überm Haupt</rs> geschwebt, so fahr</l>
+              <l>Ich einem Blitze gleich jetzt über <rs ref="#rupert">ihn</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER</speaker></rs>
+            <stage>tritt auf.</stage>
+            <lg>
+              <l>Hier bin ich wieder, <rs ref="#sylvester">Herr</rs>, von meinem Zuge</l>
+              <l>Und bringe gleich <rs ref="#Sylvesters-sämtliche-Vasallen">die fünf Vasallen</rs> mit.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER</speaker></rs>
+            <stage>wendet <rs ref="#sylvester">sich</rs> schnell.</stage>
+            <l>Wo sind <rs ref="#Sylvesters-sämtliche-Vasallen">sie</rs>?</l>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l>Unten in dem Saale. <rs ref="#Der-Manso-/-Vitina-+-1">Drei</rs>,</l>
+              <l>Der Manso, Vitina, Paratzin, haben</l>
+              <l>Auf <rs ref="#Der-Manso-/-Vitina-+-1">ihren</rs> Kopf <rs ref="#ein-dreißig-Männer">ein dreißig Männer</rs> gleich</l>
+              <l>Nach <rs ref="#Warwand">Warwand</rs> mitgebracht.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l><rs ref="#ein-dreißig-Männer">Ein dreißig Männer</rs>?</l>
+              <l>– Ein ungesprochner Wunsch ist mir erfüllt.</l>
+              <l>– Laßt mich allein <rs ref="#agnes-/-gertrude">ihr Weiber</rs>.</l>
+            </lg>
+            <stage><rs ref="#agnes-/-gertrude">Die Weiber</rs> ab.</stage>
+            <lg>
+              <l>Wenn <rs ref="#ein-dreißig-Männer">sie</rs> so</l>
+              <l><pb n="180"/> Ergeben <rs ref="#ein-dreißig-Männer">sich</rs> erweisen, sind <rs ref="#ein-dreißig-Männer">sie</rs> wohl</l>
+              <l>Gestimmt, daß <rs ref="#man-(generic)">man</rs> <rs ref="#ein-dreißig-Männer">sie</rs> schleunig brauchen kann?</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l>Wie den gespannten Bogen, <rs ref="#sylvester">Herr</rs>; <rs ref="#der-Mord-an-Jeronimus">der Mord</l>
+              <l><rs ref="#jeronimus">Jeromes</rs></rs> hat ganz wütend <rs ref="#ein-dreißig-Männer">sie</rs> gemacht.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>So wollen <rs ref="#theistiner-/-sylvester">wir</rs> die Witterung benutzen.</l>
+              <l><rs ref="#rupert">Er</rs> will <rs ref="#nach-meinem-Haupte-greifen">nach <rs ref="#Sylvesters-Haupt,-Kopf">meinem Haupte</rs> greifen</rs>, will</l>
+              <l><rs ref="#nach-meinem-Haupte-greifen">Es</rs> – nun, so greif ich schnell nach <rs ref="#Ruperts-Haupt"><rs ref="#rupert">seinem</rs></rs>. <rs ref="#ein-dreißig-Männer">Dreißig</rs></l>
+              <l>Sagst <rs ref="#theistiner">du</rs>, sind eben eingerückt, ein Zwanzig</l>
+              <l>Bring ich zusammen, <rs ref="#ein-Zwanzig-/-ein-dreißig-Männer">das</rs> ist mit <rs ref="#dem-Geiste,---------------Der-mit-uns-geht">dem Geiste,</l>
+              <l><rs ref="#dem-Geiste,---------------Der-mit-uns-geht">Der</rs> mit <rs ref="#theistiner-/-sylvester">uns</rs> geht</rs>, ein Heer – <rs ref="#theistiner">Theistin</rs>, was meinst <rs ref="#theistiner">du</rs>?</l>
+              <l>Noch <rs ref="#diese-Nacht-4-2,-5-1">diese Nacht</rs> will ich nach <rs ref="#Rossitz">Rossitz</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#theistiner">
+            <rs ref="#theistiner"><speaker>THEISTINER.</speaker></rs>
+            <lg>
+              <l><rs ref="#sylvester">Herr</rs>,</l>
+              <l>Gib mir <rs ref="#ein-Funfzehn-von-dem-Trupp">ein Funfzehn von <rs ref="#ein-Zwanzig-/-ein-dreißig-Männer">dem Trupp</rs></rs>, spreng ich</l>
+              <l><rs ref="#Die-Tore-von-Rossitz">Die Tore</rs> selbst und öffne <rs ref="#sylvester">dir</rs> den Weg.</l>
+              <l>Ich kenn <rs ref="#Rossitz">das Nest</rs> als wär's ein Dachsloch – noch</l>
+              <l>Erwarten <rs ref="#der-Familienzweig-aus-Rossitz">sie</rs> von <rs ref="#der-Familienzweig-aus-Warwand">uns</rs> nichts Böses, ich</l>
+              <l><rs ref="#die-sieben-Bürger-halten-Wache---------------Noch,-wie-in-Friedenszeiten">Beschwör's</rs>, <rs ref="#die-sieben-Bürger-halten-Wache---------------Noch,-wie-in-Friedenszeiten">die sieben Bürger halten Wache</l>
+              <l>Noch, wie in Friedenszeiten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sylvester">
+            <rs ref="#sylvester"><speaker>SYLVESTER.</speaker></rs>
+            <lg>
+              <l>So <rs ref="#Du-nimmst-den-Vortrab.-Wenn-es-finster,-brechen---------------Wir-auf.">bleibt's</rs> dabei.</l>
+              <rs ref="#Du-nimmst-den-Vortrab.-Wenn-es-finster,-brechen---------------Wir-auf."><l><rs ref="#theistiner">Du</rs> nimmst <rs ref="#ein-Funfzehn-von-dem-Trupp">den Vortrab</rs>. Wenn es finster, brechen</l>
+              <l><rs ref="#theistiner-/-sylvester">Wir</rs> auf.</rs> Den ersten Zugang überrumpelst</l>
+              <l><rs ref="#theistiner">Du</rs>, selber folg ich auf dem Fuße, bei</l>
+              <l><rs ref="#Jeronimus'-Leiche"><rs ref="#jeronimus">Jeromes</rs> Leiche</rs> sehen <rs ref="#theistiner-/-sylvester">wir</rs> <rs ref="#theistiner-/-sylvester">uns</rs> wieder.</l>
+              <l>Ich will <rs ref="#jeronimus">ihm</rs> <rs ref="#eine-Totenfeier">eine Totenfeier</rs> halten,</l>
+              <l>Und <rs ref="#Rossitz">Rossitz</rs> soll wie Fackeln <rs ref="#eine-Totenfeier">sie</rs> beleuchten.</l>
+              <l>Nun fort zu <rs ref="#Sylvesters-sämtliche-Vasallen">den Vasallen</rs>.</l>
+            </lg>
+            <stage><rs ref="#theistiner-/-sylvester">Beide</rs> ab.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

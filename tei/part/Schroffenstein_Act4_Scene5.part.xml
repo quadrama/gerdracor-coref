@@ -1,0 +1,619 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Fünfte Szene</head>
+          <stage><rs ref="#Rossitz">Rossitz</rs>. <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">Ein Gefängnis <rs ref="#der-Schloßturm-(Rossitz)">im Turm</rs></rs>.</stage>
+          <stage><rs ref="#Die-Tür-vom-Gefängnis-4-5">Die Tür</rs> öffnet <rs ref="#Die-Tür-vom-Gefängnis-4-5">sich</rs>, <rs ref="#fintenring">Fintenring</rs> tritt auf.</stage>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>noch draußen.</stage>
+            <l><rs ref="#rupert">Mein Vater</rs> hat's befohlen?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>In der eigenen</l>
+              <l>Person, <rs ref="#ottokar">du</rs> möchtest gleich bei <rs ref="#ottokar">deinem</rs> Eintritt</l>
+              <l><rs ref="#Die-Tore-von-Rossitz">Ins Tor</rs> <rs ref="#der-Kerkermeister-/-fintenring">uns</rs> folgen nur, wohin <rs ref="#der-Kerkermeister-/-fintenring">wir</rs> <rs ref="#ottokar">dich</rs></l>
+              <l>Zu führen haben. Komm, <rs ref="#ottokar">du alter Junge</rs>,</l>
+              <l><rs ref="#Komm-h'rein">Komm h'rein</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Hör, <rs ref="#fintenring">Fintenring</rs>, <rs ref="#fintenring">du</rs> bist mit <rs ref="#fintenring">deinem</rs></l>
+              <l>Satyrngesicht verdammt verdächtig mir.</l>
+              <l>Nun, weil ich doch kein Mädchen, will <rs ref="#Komm-h'rein">ich's</rs> tun.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> tritt auf, <rs ref="#der-Kerkermeister">der Kerkermeister</rs> folgt <rs ref="#ottokar">ihm</rs>.</stage>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">Der Ort</rs> ist, siehst <rs ref="#ottokar">du</rs>, der unschuldigste.</l>
+              <l>Denn hier auf diesen Quadersteinen müßt's</l>
+              <l>Selbst einen Satyr frieren.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Statt der Rosen</l>
+              <l>Will <rs ref="#rupert">er</rs> mit Ketten mich und Banden mich</l>
+              <l>Umwinden – denn <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">die Grotte</rs>, merk ich wohl,</l>
+              <l>Ist ein Gefängnis.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Hör, das gibt vortreffliche</l>
+              <l>Gedanken, morgen, wett ich, <rs ref="#ist-dein-Geist---------------Fünf-Jahre-älter,-als-dein-Haupt">ist <rs ref="#Ottokars-Geist"><rs ref="#ottokar">dein</rs> Geist</rs></l>
+              <l>Fünf Jahre älter, als <rs ref="#ottokar">dein</rs> Haupt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wär ich</l>
+              <l>Wie <rs ref="#fintenring">du</rs>, ich nähm <rs ref="#ist-dein-Geist---------------Fünf-Jahre-älter,-als-dein-Haupt">es</rs> an. Denn <rs ref="#fintenring">deiner</rs> straft</l>
+              <l><rs ref="#Fintenrings-Haupt"><rs ref="#fintenring">Dein</rs> graues Haupt</rs> um dreißig Jahre Lügen.</l>
+              <l>– Nun komm, ich muß <rs ref="#rupert">zum Vater</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING</speaker></rs>
+            <stage>tritt <rs ref="#ottokar">ihm</rs> in <rs ref="#den-Weg">den Weg</rs>.</stage>
+            <lg>
+              <l>Nein, im Ernst,</l>
+              <l>Bleib <rs ref="#Ein-Gefängnis-im-Turm-(Rossitz)">hier</rs>, und sei <rs ref="#so-lustig,-wie-du-kannst">so lustig, wie <rs ref="#ottokar">du</rs> kannst</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Bei <rs ref="#Ottokars-Leben">meinem Leben</rs>, ja, <rs ref="#so-lustig,-wie-du-kannst">das</rs> bin ich nie</l>
+              <l>Gewesen so wie jetzt, und möchte <rs ref="#fintenring">dir</rs></l>
+              <l>Die zähnelosen Lippen küssen, <rs ref="#fintenring">Alter</rs>.</l>
+              <l><pb n="189"/> <rs ref="#fintenring">Du</rs> gehst auch gern nicht in <rs ref="#Krieg">den Krieg</rs>, nun höre,</l>
+              <l>Sag <rs ref="#fintenring">deinem</rs> Weibe nur, ich bring <rs ref="#der-Frieden">den Frieden</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>Im Ernste?</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Bei <rs ref="#Ottokars-Leben">meinem Leben</rs>, ja.</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Nun morgen</l>
+              <l>Mehr. Lebe wohl.</l>
+            </lg>
+            <stage><rs ref="#der-Kerkermeister">Zum Kerkermeister</rs>.</stage>
+            <lg>
+              <l>Verschließe hinter mir</l>
+              <l>Sogleich <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs>.</l>
+            </lg>
+            <stage>Zu <rs ref="#ottokar">Ottokar</rs>, da <rs ref="#ottokar">dieser</rs> <rs ref="#fintenring">ihm</rs> folgen will.</stage>
+            <lg>
+              <l>Nein, bei meinem Eid</l>
+              <l>Ich sag <rs ref="#ottokar">dir</rs>, <rs ref="#auf-Befehl-des-Vaters-bist---------------Du-ein-Gefangner">auf Befehl <rs ref="#rupert">des Vaters</rs> bist</l>
+              <l><rs ref="#ottokar">Du</rs> ein Gefangner</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Was sagst <rs ref="#fintenring">du</rs>?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Ich soll</l>
+              <l><rs ref="#ottokar">Dir</rs> weiter gar nichts sagen, außer <rs ref="#auf-Befehl-des-Vaters-bist---------------Du-ein-Gefangner">dies</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Nun?</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>Ei, daß ich nichts sagen soll.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>O bei</l>
+              <l><rs ref="#Gott">Dem großen Gott des Himmels</rs>, sprechen muß</l>
+              <l>Ich gleich <rs ref="#rupert">ihn</rs> – <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">eine Nachricht von dem höchsten</l>
+              <l>Gewicht, <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">die</rs> keinen Aufschub duldet</rs>, muß</l>
+              <l>Ich mündlich gleich <rs ref="#rupert">ihm</rs> hinterbringen.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>So</l>
+              <l>Kannst <rs ref="#ottokar">du</rs> <rs ref="#ottokar">dich</rs> trösten mindestens, <rs ref="#rupert">er</rs> ist</l>
+              <l>Mit <rs ref="#santing">Santing</rs> fort, es weiß kein Mensch wohin.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ich muß sogleich <rs ref="#rupert">ihn</rs> suchen, laß mich. –</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING</speaker></rs>
+            <stage>tritt <rs ref="#ottokar">ihm</rs> in <rs ref="#den-Weg">den Weg</rs>.</stage>
+            <lg>
+              <l>Ei</l>
+              <l><rs ref="#ottokar">Du</rs> scherzest wohl.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Nein laß mich, nein, ich scherze</l>
+              <l>Bei meiner Ritterehre nicht mit <rs ref="#Fintenrings-Ritterehre"><rs ref="#fintenring">deiner</rs></rs>.</l>
+              <l>'s ist plötzlich mir so ernst zu Mut geworden,</l>
+              <l>Als wäre ein Gewitter in der Luft.</l>
+              <l>Es hat die höchste Eil mit <rs ref="#eine-Nachricht-von-dem-höchsten---------------Gewicht,-die-keinen-Aufschub-duldet">meiner Nachricht</rs>,</l>
+              <l>Und läßt <rs ref="#fintenring">du</rs> mich gutwillig nicht, so wahr</l>
+              <l>Ich leb, ich breche durch.</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Durchbrechen, <rs ref="#ottokar">du</rs>?</l>
+              <l><pb n="190"/> Sprichst doch mit mir gleich wie mit <rs ref="#ein-Weib">einem Weibe</rs>!</l>
+              <l><rs ref="#ottokar">Du</rs> bist mir anvertraut auf <rs ref="#Fintenrings-Haupt">Haupt</rs> und <rs ref="#Fintenrings-Ritterehre">Ehre</rs>,</l>
+              <l>Tritt mich mit <rs ref="#Ottokars-Füße">Füßen</rs> erst, dann bist <rs ref="#ottokar">du</rs> frei.</l>
+              <l>– Nein, hör, ich wüßte <rs ref="#Gedulde-dich-ein-Stündchen,-führ-ich-selbst---------------Sobald-er-rückkehrt-deinen-Vater-zu-dir">was Gescheuteres</rs>.</l>
+              <rs ref="#Gedulde-dich-ein-Stündchen,-führ-ich-selbst---------------Sobald-er-rückkehrt-deinen-Vater-zu-dir"><l>Gedulde <rs ref="#ottokar">dich</rs> ein Stündchen, führ ich selbst</l>
+              <l>Sobald <rs ref="#rupert">er</rs> rückkehrt <rs ref="#rupert"><rs ref="#ottokar">deinen</rs> Vater</rs> zu <rs ref="#ottokar">dir</rs></rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Sag mir um <rs ref="#was-hab---------------Ich-Böses-denn-getan">'s</rs> <rs ref="#Der-Himmel-(religiös)">Himmels</rs> willen nur, <rs ref="#was-hab---------------Ich-Böses-denn-getan">was hab</l>
+              <l>Ich Böses denn getan</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <lg>
+              <l>Weiß nichts. – Noch mehr.</l>
+              <l>Ich schick <rs ref="#rupert">dem Vater</rs> Boten nach, daß <rs ref="#rupert">er</rs></l>
+              <l>So früher heimkehrt.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Nun denn, meinetwegen.</l>
+          </sp>
+          <sp who="#fintenring">
+            <rs ref="#fintenring"><speaker>FINTENRING.</speaker></rs>
+            <l>So lebe wohl.</l>
+            <stage><rs ref="#der-Kerkermeister">Zum Kerkermeister</rs>.</stage>
+            <l>Und <rs ref="#der-Kerkermeister">du</rs> tust <rs ref="#der-Kerkermeister">deine</rs> Pflicht.</l>
+            <stage><rs ref="#fintenring">Fintenring</rs> und <rs ref="#der-Kerkermeister">der Kerkermeister</rs> ab; <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Tür</rs> wird verschlossen.</stage>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>sieht <rs ref="#der-Kerkermeister-/-fintenring">ihnen</rs> nach.</stage>
+            <lg>
+              <l>Ich hätte doch nicht bleiben sollen. – <rs ref="#Gott">Gott</rs></l>
+              <l>Weiß, wann <rs ref="#rupert">der Vater</rs> wiederkehrt. – <rs ref="#der-Kerkermeister-/-fintenring">Sie</rs> wollten</l>
+              <l><rs ref="#rupert">Ihn</rs> freilich suchen. – Ach, es treibt <rs ref="#der-Geist">der Geist</rs></l>
+              <l><rs ref="#der-Kerkermeister-/-fintenring">Sie</rs> nicht, <rs ref="#der-Geist">der</rs> alles leistet. – – Was zum Henker,</l>
+              <l>Es geht ja nicht, ich muß hinaus, ich habe</l>
+              <l>Ja <rs ref="#agnes">Agnes</rs> <rs ref="#das-Gebirge">ins Gebirg</rs> beschieden. – <rs ref="#fintenring">Fintenring</rs>!</l>
+              <l><rs ref="#fintenring">Fintenring</rs>!</l>
+            </lg>
+            <stage>An <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs> klopfend.</stage>
+            <lg>
+              <l>Daß ein Donner, <rs ref="#fintenring">Tauber</rs>, das</l>
+              <l>Gehör <rs ref="#fintenring">dir</rs> öffnete! <rs ref="#fintenring">Fintenring</rs>! – – Schloß</l>
+              <l>Von <rs ref="#fintenring">einem Menschen, <rs ref="#fintenring">den</rs> kein Schlüssel schließt</rs>,</l>
+              <l>Als nur <rs ref="#rupert"><rs ref="#fintenring">sein</rs> Herr</rs>. <rs ref="#rupert">Dem</rs> dient <rs ref="#fintenring">er</rs> mit stockblinder</l>
+              <l>Dienstfertigkeit, und wenn <rs ref="#fintenring">sein</rs> Dienst auch zehnmal</l>
+              <l><rs ref="#fintenring">Ihm</rs> Schaden brächt, doch dient <rs ref="#fintenring">er</rs> <rs ref="#rupert">ihm</rs>. – Ich wollt</l>
+              <l><rs ref="#rupert">Ihn</rs> doch gewinnen, wenn <rs ref="#rupert">er</rs> nur erschiene.</l>
+              <l>Denn nichts besticht <rs ref="#rupert">ihn</rs>, außer daß <rs ref="#man-(generic)">man</rs> <rs ref="#rupert">ihm</rs></l>
+              <l>Das sagt. – – Zum mindsten wollt ich <rs ref="#rupert">ihn</rs> doch eher</l>
+              <l>Gewinnen, als <rs ref="#die-tauben-Wände">die tauben Wände</rs>! Himmel</l>
+              <l>Und Hölle! Daß ich einem Schäfer gleich</l>
+              <l><pb n="191"/> Mein Leid <rs ref="#die-tauben-Wände">den Felsen</rs> klagen muß! – – So will</l>
+              <l>Ich mich, <rs ref="#Geduld">Geduld</rs>, an <rs ref="#Geduld">dir</rs>, <rs ref="#Geduld">du Weibertugend</rs> üben.</l>
+              <l>– <rs ref="#mit-Anstand-viel---------------Zu-unterlassen">'s</rs> ist eine schnöde Kunst, <rs ref="#mit-Anstand-viel---------------Zu-unterlassen">mit Anstand viel</l>
+              <l>Zu unterlassen</rs> – und ich merk <rs ref="#Es-wird-mehr-Schweiß-mir-kosten,-als-das-Tun">es</rs> schon,</l>
+              <l><rs ref="#Es-wird-mehr-Schweiß-mir-kosten,-als-das-Tun"><rs ref="#mit-Anstand-viel---------------Zu-unterlassen">Es</rs> wird mehr Schweiß mir kosten, als das Tun</rs>.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> will <rs ref="#ottokar">sich</rs> setzen.</stage>
+            <l>Horch! Horch! Es kommt.</l>
+            <stage><rs ref="#der-Kerkermeister">Der Kerkermeister</rs> öffnet <rs ref="#eustache">Eustachen</rs> <rs ref="#Die-Tür-vom-Gefängnis-4-5">die Türe</rs>.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>zu <rs ref="#der-Kerkermeister">diesem</rs>.</stage>
+            <l>Ich werd es <rs ref="#der-Kerkermeister">dir</rs> vergelten.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Ach, <rs ref="#eustache">Mutter</rs>!</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Hör, <rs ref="#ottokar">mein Sohn</rs>, ich habe <rs ref="#ottokar">dir</rs></l>
+              <l>Entsetzliches zu sagen.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#eustache">Du</rs> erschreckst mich –</l>
+              <l>– Wie bist <rs ref="#eustache">du</rs> so entstellt?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Jerome-ist-erschlagen">Das eine</rs> wirst</l>
+              <l><rs ref="#ottokar">Du</rs> wissen schon, <rs ref="#Jerome-ist-erschlagen"><rs ref="#jeronimus">Jerome</rs> ist erschlagen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#jeronimus">Jeronimus</rs>? O Gott des Himmels! Wer</l>
+              <l>Hat <rs ref="#Jerome-ist-erschlagen">das</rs> getan?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Jerome-ist-erschlagen">Das</rs> ist nicht alles. <rs ref="#rupert">Rupert</rs></l>
+              <l>Kennt <rs ref="#Ottokars-Liebe-zu-Agnes"><rs ref="#ottokar">deine</rs> Liebe</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Wie? Wer konnt <rs ref="#rupert">ihm</rs> <rs ref="#Ottokars-Liebe-zu-Agnes">die</rs></l>
+              <l>Entdecken?</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Frage nicht – o <rs ref="#eustache"><rs ref="#ottokar">deine</rs> Mutter</rs>,</l>
+              <l>Ich selbst. <rs ref="#jeronimus">Jerome</rs> hat <rs ref="#Ottokars-Liebe-zu-Agnes">es</rs> mir vertraut,</l>
+              <l>Mich riß ein übereilter Eifer hin,</l>
+              <l><rs ref="#rupert">Der Wütrich, <rs ref="#rupert">den</rs> ich niemals so gekannt</rs> –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Von wem sprichst <rs ref="#eustache">du</rs>?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <l>O Gott, von <rs ref="#rupert"><rs ref="#ottokar">deinem</rs> Vater</rs>.</l>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l>Noch faß ich <rs ref="#eustache">dich</rs> nur halb – doch laß <rs ref="#eustache">dir</rs> sagen</l>
+              <l>Vor allen Dingen, <rs ref="#Das-ganze-Rätsel-von-Peters-Mord">alles</rs> ist gelöset,</l>
+              <l><rs ref="#Das-ganze-Rätsel-von-Peters-Mord">Das ganze Rätsel von <rs ref="#der-Mord-an-Peter">dem Mord</rs></rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">die Männer,</l>
+              <l><rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">Die</rs> <rs ref="#rupert">man</rs> bei <rs ref="#Peters-Leiche"><rs ref="#Peter">Peters</rs> Leiche</rs> fand</rs>, <rs ref="#Sylvesters-Leute,-Peters-angebliche-Mörder">sie</rs> haben</l>
+              <l><rs ref="#Peters-Leiche">Die Leiche</rs> selbst gefunden, <rs ref="#Peters-Leiche">ihr</rs> <rs ref="#Peters-kleine-Finger">die Finger</rs></l>
+              <l>Aus Vorurteil nur abgeschnitten. – Kurz,</l>
+              <l>Rein, wie <rs ref="#Die-Sonne">die Sonne</rs>, ist <rs ref="#sylvester">Sylvester</rs>.</l>
+              <pb n="192"/>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>O</l>
+              <l>Jesus! Und jetzt erschlägt <rs ref="#rupert">er</rs> <rs ref="#agnes"><rs ref="#sylvester">seine</rs> Tochter</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l>Wer?</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l><rs ref="#rupert">Rupert</rs>. Wenn <rs ref="#agnes">sie</rs> in <rs ref="#das-Gebirge">dem Gebirge</rs> jetzt,</l>
+              <l>Ist <rs ref="#agnes">sie</rs> verloren, <rs ref="#rupert">er</rs> und <rs ref="#santing">Santing</rs> sucht <rs ref="#agnes">sie</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>eilt <rs ref="#Die-Tür-vom-Gefängnis-4-5">zur Türe</rs>.</stage>
+            <l><rs ref="#fintenring">Fintenring</rs>! <rs ref="#fintenring">Fintenring</rs>! <rs ref="#fintenring">Fintenring</rs>!</l>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Höre</l>
+              <l>Mich an, <rs ref="#fintenring">er</rs> darf <rs ref="#ottokar">dich</rs> nicht befrein, <rs ref="#Fintenrings-Haupt"><rs ref="#fintenring">sein</rs> Haupt</rs></l>
+              <l>Steht drauf. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <l><rs ref="#fintenring">Er</rs> oder ich. – <rs ref="#fintenring">Fintenring</rs>!</l>
+            <stage><rs ref="#ottokar">Er</rs> sieht <rs ref="#ottokar">sich</rs> um.</stage>
+            <lg>
+              <l>Nun</l>
+              <l>So helfe mir <rs ref="#die-Mutter-Gottes">die Mutter <rs ref="#Jesus-Christus">Gottes</rs></rs> denn. –</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> hängt <rs ref="#einen-Mantel">einen Mantel</rs> um, <rs ref="#einen-Mantel">der</rs> auf dem Boden lag.</stage>
+            <l>Und <rs ref="#einen-Mantel">dieser Mantel</rs> bette meinem Fall.</l>
+            <stage><rs ref="#ottokar">Er</rs> klettert in ein unvergittert Fenster.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE.</speaker></rs>
+            <lg>
+              <l>Um Gotteswillen, springen willst <rs ref="#ottokar">du</rs> doch</l>
+              <l>Von <rs ref="#der-Schloßturm-(Rossitz)">diesem Turm</rs> nicht? <rs ref="#ottokar">Rasender</rs>! <rs ref="#der-Schloßturm-(Rossitz)">Der Turm</rs></l>
+              <l>Ist funfzig Fuß hoch, und der ganze Boden</l>
+              <l>Gepflastert. – <rs ref="#ottokar">Ottokar</rs>! <rs ref="#ottokar">Ottokar</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR</speaker></rs>
+            <stage>von oben.</stage>
+            <lg>
+              <l><rs ref="#eustache">Mutter</rs>! <rs ref="#eustache">Mutter</rs>! Sei wenn ich gesprungen</l>
+              <l>Nur still, hörst <rs ref="#eustache">du</rs>? Ganz still, sonst fangen <rs ref="#der-Kerkermeister-/-fintenring">sie</rs></l>
+              <l>Mich.</l>
+            </lg>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>sinkt auf <rs ref="#Eustaches-Kniee">die Knie</rs>.</stage>
+            <lg>
+              <l><rs ref="#ottokar">Ottokar</rs>! Auf <rs ref="#Eustaches-Kniee">meinen Knien</rs> bitte,</l>
+              <l>Beschwör ich <rs ref="#ottokar">dich</rs>, geh so verächtlich nicht</l>
+              <l>Mit <rs ref="#Ottokars-Leben"><rs ref="#ottokar">deinem</rs> Leben</rs> um, spring nicht <rs ref="#der-Schloßturm-(Rossitz)">vom Turm</rs>. –</l>
+            </lg>
+          </sp>
+          <sp who="#ottokar">
+            <rs ref="#ottokar"><speaker>OTTOKAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#das-Leben">Das Leben</rs> ist viel wert, wenn <rs ref="#man-(generic)"><rs ref="#das-Leben">man's</rs></rs> verachtet.</l>
+              <l>Ich <rs ref="#das-Leben">brauch's</rs>. – Leb wohl.</l>
+            </lg>
+            <stage><rs ref="#ottokar">Er</rs> springt.</stage>
+          </sp>
+          <sp who="#eustache">
+            <rs ref="#eustache"><speaker>EUSTACHE</speaker></rs>
+            <stage>steht auf.</stage>
+            <l>Zu Hülfe! Hülfe! Hülfe!</l>
+            <stage>Der Vorhang fällt.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

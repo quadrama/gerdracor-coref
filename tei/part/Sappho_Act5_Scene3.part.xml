@@ -1,0 +1,590 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Sappho</title>
+        <title type="sub">Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118542192">Grillparzer, Franz</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000108</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1242002</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:nv2j.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Franz Grillparzer: Sämtliche Werke. Ausgewählte Briefe, Gespräche, Berichte.
+              Herausgegeben von Peter Frank und Karl Pörnbacher, München: Hanser,
+              [1960–1965].</title>
+            <date type="print" when="1819"/>
+            <date type="premiere" when="1818"/>
+            <date type="written" when="1817"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="rhamnes" sex="MALE">
+            <persName>Rhamnes</persName>
+          </person>
+          <person xml:id="melitta" sex="FEMALE">
+            <persName>Melitta</persName>
+          </person>
+          <person xml:id="geschrei-volk" sex="UNKNOWN">
+            <persName>Geschrei/Volk</persName>
+          </person>
+          <person xml:id="sappho" sex="FEMALE">
+            <persName>Sappho</persName>
+          </person>
+          <person xml:id="einer_aus_dem_volke" sex="MALE">
+            <persName>Einer aus dem Volke</persName>
+          </person>
+          <person xml:id="phaon" sex="MALE">
+            <persName>Phaon</persName>
+          </person>
+          <person xml:id="eucharis" sex="FEMALE">
+            <persName>Eucharis</persName>
+          </person>
+          <person xml:id="maedchen" sex="FEMALE">
+            <persName>Mädchen</persName>
+          </person>
+          <person xml:id="ruf_von_drinnen" sex="UNKNOWN">
+            <persName>Ruf von drinnen</persName>
+            <persName type="variant">Man ruft von innen</persName>
+            <persName type="variant">Man ruft drinnen</persName>
+          </person>
+          <person xml:id="ein_landmann" sex="MALE">
+            <persName>Ein Landmann</persName>
+            <persName xml:id="landmann">Landmann</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-12-22">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Franz Grillparzer</head>
+        <head>Sappho</head>
+        <head>Trauerspiel in fünf Aufzügen</head>
+        <pb n="715"/>
+      </div>
+      <div type="dedication">
+        <head>[Widmung]</head>
+        <p>Dem Herrn Carl August West</p>
+        <p>widmet diesen</p>
+        <p>seinen zweiten dramatischen Versuch,</p>
+        <p>als Zeichen der</p>
+        <p>Dankbarkeit und Freundschaft,</p>
+        <p>Der Verfasser.</p>
+        <pb n="715"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sappho</castItem>
+          <castItem>Phaon</castItem>
+          <castGroup>
+            <castItem>Eucharis,</castItem>
+            <castItem>Melitta,</castItem>
+            <roleDesc>Dienerinnen Sapphos</roleDesc>
+          </castGroup>
+          <castItem>Rhamnes, Sklave</castItem>
+          <castItem>Ein Landmann</castItem>
+          <castItem>Dienerinnen, Knechte und Landleute</castItem>
+          <pb n="716"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Gegend wie in den vorigen Aufzügen. Tagesanbruch</stage>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#phaon">Phaon</rs>, <rs ref="#melitta">Melitten</rs> führend. <rs ref="#Landleute">Landleute</rs>. <rs ref="#sappho">Sappho</rs> mit <rs ref="#mehrere-Sklavinnen"><rs ref="#sappho">ihren</rs> Dienerinnen</rs> <rs ref="#dem-Hintergrunde">im
+            Hintergrunde</rs>.</stage>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Ha, wag es keiner, <rs ref="#melitta">diese</rs> zu berühren!</l>
+              <l>Nicht wehrlos bin ich, wenn auch gleich entwaffnet!</l>
+              <l>Zu <rs ref="#melitta">ihrem</rs> Schutz wird <rs ref="#diese-Faust">diese Faust</rs> zur Keule,</l>
+              <l>Und jedes <rs ref="#meiner-Glieder">meiner Glieder</rs> wird ein Arm!</l>
+              <l>Hierher, <rs ref="#melitta">Melitta</rs>, hierher! Zittre nicht,</l>
+              <l><rs ref="#melitta">Dir</rs> soll kein Leid geschehn solang ich atme!</l>
+              <l>Verruchte, konntet <rs ref="#Wir">ihr</rs> <rs ref="#dies-Haupt">dies Haupt</rs> verletzen,</l>
+              <l><rs ref="#dies-Haupt">Das reine Haupt <rs ref="#der-Unschuld">der Unschuld</rs></rs>, und seid Männer?</l>
+              <l>So grausam dacht ich höchstens mir <rs ref="#ein-Weib">ein Weib</rs>,</l>
+              <l><rs ref="#ein-Weib">Ein schwaches, feiges, aufgereiztes Weib</rs>.</l>
+              <l><rs ref="#ein_landmann">Du</rs> warsts, <rs ref="#ein_landmann">der</rs> nach <rs ref="#melitta">ihr</rs> schlug, ich kenne <rs ref="#ein_landmann">dich</rs>!</l>
+              <l>Fort, von mir, fort! Daß ich <rs ref="#die-Rachegötter">die Rachegötter</rs></l>
+              <l>Vorgreifend nicht um <rs ref="#ihren-Raub"><rs ref="#die-Rachegötter">ihren</rs> Raub</rs> betrüge!</l>
+              <l>Wie fühlst <rs ref="#melitta">du</rs> <rs ref="#melitta">dich</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <l>Wohl!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>O, <rs ref="#melitta">dein</rs> Blick verneint,</l>
+              <l>Dies Zittern, <rs ref="#diese-Blässe">diese Blässe</rs>, laut verrät <rs ref="#diese-Blässe">sie</rs></l>
+              <l><rs ref="#Die-erste-Lüge,-die-dein-Mund-gesprochen">Die erste Lüge, die <rs ref="#dein-Mund"><rs ref="#melitta">dein</rs> Mund</rs> gesprochen</rs>!</l>
+              <l>Versuche nicht, <rs ref="#den-Grimm">den Grimm</rs> in mir zu dämpfen,</l>
+              <l>Zu <rs ref="#neuer-Glut">neuer Glut</rs> fachst <rs ref="#melitta">du</rs> <rs ref="#die-Flammen">die Flammen</rs> an!</l>
+              <l>Hier setze <rs ref="#melitta">dich</rs> auf <rs ref="#der-Rasenbank">diesem Rasensitz</rs>;</l>
+              <l>Hier, wo <rs ref="#dein-mildes,-himmelklares-Auge"><rs ref="#melitta">dein</rs> mildes, himmelklares Auge</rs></l>
+              <l>Zum erstenmale mir entgegenglänzte</l>
+              <l>Und wie <rs ref="#des-Tages">des Tages</rs> goldner Morgenstrahl</l>
+              <l><rs ref="#Des-Schlafes">Des Schlafes</rs> düstre Bande von mir löste,</l>
+              <l>In <rs ref="#Des-Schlafes">den</rs> mich <rs ref="#jene-Zauberin">jene Zauberin</rs> gesungen,</l>
+              <l>Hier, wo <rs ref="#die-Lieb">die Lieb</rs> <rs ref="#ihr-holdes-Werk"><rs ref="#die-Lieb">ihr</rs> holdes Werk</rs> begann,</l>
+              <l>Auf <rs ref="#der-Rasenbank">dieser Stelle</rs> sei <rs ref="#ihr-holdes-Werk">es</rs> auch vollendet!</l>
+              <l>Sprecht! Wo ist <rs ref="#sappho">Sappho</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <l><rs ref="#phaon">Phaon</rs>, ruf <rs ref="#sappho">sie</rs> nicht!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Sei ruhig! Bin ich nicht <rs ref="#ein-freier-Mann">ein freier Mann</rs>?</l>
+              <l>Wer gab das Recht <rs ref="#sappho">ihr</rs>, meinen Schritt zu hemmen?</l>
+              <l>Noch Richterstühle gibts in <rs ref="#Griechenland">Griechenland</rs>,</l>
+              <l><pb n="774"/> Mit Schrecken soll <rs ref="#sappho">die Stolze</rs> das erfahren.</l>
+              <l>Zu <rs ref="#sappho">Sappho</rs> hin!</l>
+            </lg>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>EIN LANDMANN.</speaker></rs>
+            <l><rs ref="#phaon">Du</rs> bleibst!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <l><rs ref="#ein_landmann">Wer</rs> hält mich? <rs ref="#ein_landmann">Wer</rs>?</l>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l><rs ref="#Wir-alle">Wir alle</rs> hier!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <l>Ich bin <rs ref="#ein-freier-Mann">ein freier Mann</rs>!</l>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l><rs ref="#phaon">Du</rs> warst<rs ref="#ein-freier-Mann">s</rs>, jetzt bist <rs ref="#der-Strafe">der Strafe</rs> <rs ref="#phaon">du</rs> verfallen!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <l><rs ref="#der-Strafe">Der Strafe</rs>! und warum?</l>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <lg>
+              <rs ref="#ihren-Raub"><l><rs ref="#melitta">Der Sklavin</rs> Raub</l></rs>
+              <l>Ruft <rs ref="#das-Gesetz">das Gesetz</rs> <rs ref="#zur-Rache">zur Rache</rs> wider <rs ref="#phaon">dich</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Es fordre <rs ref="#sappho">Sappho</rs> <rs ref="#Lösegeld">Lösegeld</rs> für <rs ref="#melitta">sie</rs>,</l>
+              <l>Und zahlen will ich<rs ref="#Lösegeld">s</rs>, wärens <rs ref="#Krösus-Schätze"><rs ref="#Krösus">Krösus</rs> Schätze</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l><rs ref="#sappho">Ihr</rs> ziemts zu fordern, und nicht <rs ref="#phaon">dir</rs> zu bieten!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Seid <rs ref="#Wir">ihr</rs> so zahm, daß eines Weibes Rache</l>
+              <l>Geduldig <rs ref="#sappho">ihr</rs> die Männerhände leiht,</l>
+              <l>Und dienstbar seid <rs ref="#die-Lieb">der Liebe</rs> Wechsellaunen?</l>
+              <l><emph>Mir</emph> stehet bei, denn <rs ref="#Unrecht">Unrecht</rs> widerfährt mir!</l>
+            </lg>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l>Ob <rs ref="#Recht">Recht</rs>, ob <rs ref="#Unrecht">Unrecht</rs>? <rs ref="#sappho">Sappho</rs> wirds entscheiden!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>So sprichst <rs ref="#ein_landmann">du, Alter</rs>, und errötest nicht?</l>
+              <l>Wer ist denn <rs ref="#sappho">Sappho</rs>, daß <rs ref="#ein_landmann">du</rs> <rs ref="#sappho">ihre</rs> Zunge</l>
+              <l>Für jene achtest an <rs ref="#Recht">des Rechtes</rs> Wage?</l>
+              <l>Ist <rs ref="#sappho">sie</rs> <rs ref="#Gebietrin">Gebietrin</rs> hier <rs ref="#Griechenland">im Land</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <lg>
+              <l><rs ref="#sappho">Sie</rs> ist <rs ref="#Gebietrin">es</rs>,</l>
+              <l>Doch nicht weil <rs ref="#sappho">sie</rs> gebeut, weil <rs ref="#Wir">wir</rs> <rs ref="#sappho">ihr</rs> dienen!</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>So hat <rs ref="#sappho">sie</rs> denn <rs ref="#Wir">euch alle</rs> auch umsponnen,</l>
+              <l>Ich will doch sehn, wie weit <rs ref="#ihr-Zauber"><rs ref="#sappho">ihr</rs> Zauber</rs> reicht!</l>
+            </lg>
+            <stage>Gegen <rs ref="#ins-Haus">das Haus</rs> zugehend.</stage>
+            <l>Zu <rs ref="#sappho">ihr</rs>!</l>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l>Zurück!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Vergebens dräuet <rs ref="#Wir">ihr</rs>!</l>
+              <l>Ich muß <rs ref="#sappho">sie</rs> sehen! <rs ref="#sappho">Sappho</rs>, zeige <rs ref="#sappho">dich</rs>!</l>
+              <l>Wo bist <rs ref="#sappho">du</rs>? oder zitterst <rs ref="#sappho">du</rs> vor mir? –</l>
+              <l>Ha, dort <rs ref="#den-Altar">am Altar <rs ref="#sappho">ihrer</rs> Diener Reihen</rs>,</l>
+              <l><rs ref="#sappho">Sie</rs> ist es, <rs ref="#sappho">du</rs> entgehst mir nicht! – Zu mir!</l>
+            </lg>
+            <stage>Durchbricht die Menge. Auch <rs ref="#der-Kreis-der-Sklavinnen">der Kreis <rs ref="#mehrere-Sklavinnen">der Sklavinnen</rs></rs> öffnet <rs ref="#der-Kreis-der-Sklavinnen">sich</rs>. <rs ref="#sappho">Sappho</rs> liegt
+              hingegossen an <rs ref="#den-Stufen-des-Altars">den Stufen <rs ref="#den-Altar">des Altars</rs></rs>.</stage>
+          </sp>
+          <sp who="#ein_landmann">
+            <rs ref="#ein_landmann"><speaker>LANDMANN.</speaker></rs>
+            <l><rs ref="#phaon">Du</rs> wagst es, <rs ref="#phaon">unbesonnen frecher Knabe</rs>?</l>
+            <pb n="775"/>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Was willst <rs ref="#sappho">du</rs> an <rs ref="#den-Stufen-des-Altars">den Stufen</rs> hier <rs ref="#den-Göttern">der Götter</rs>?</l>
+              <l><rs ref="#den-Göttern">Sie</rs> hören nicht <rs ref="#der-Bosheit">der Bosheit</rs> Flehn. – Steh auf!</l>
+            </lg>
+            <stage><rs ref="#phaon">Er</rs> faßt <rs ref="#sappho">sie</rs> an. Bei <rs ref="#phaon">seiner</rs> Berührung fährt <rs ref="#sappho">Sappho</rs> empor und eilt mit fliegenden
+              Schritten, ohne <rs ref="#phaon">ihn</rs> anzusehen, <rs ref="#dem-Vorgrunde">dem Vorgrunde</rs> zu.</stage>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON</speaker></rs>
+            <stage><rs ref="#sappho">ihr</rs> folgend.</stage>
+            <lg>
+              <l>Entweichst <rs ref="#sappho">du</rs> mir? <rs ref="#sappho">du</rs> mußt mir Rede stehn!</l>
+              <l>Ha, bebe nur! Es ist jetzt Zeit zu beben!</l>
+              <l>Weißt <rs ref="#sappho">du</rs>, was <rs ref="#sappho">du</rs> getan? Mit welchem Recht</l>
+              <l>Wagst <rs ref="#sappho">du</rs> es, mich, mich, <rs ref="#ein-freier-Mann">einen freien Mann,</l>
+              <l>Der niemand eignet als <rs ref="#ein-freier-Mann">sich</rs> selber</rs>, hier</l>
+              <l>In frevelhaften Banden festzuhalten?</l>
+              <l>Hier <rs ref="#diese">diese</rs> da in <rs ref="#ungewohnten-Waffen">ungewohnten Waffen</rs>,</l>
+              <l>Hast <rs ref="#sappho">du</rs> <rs ref="#diese">sie</rs> ausgesandt? Hast <rs ref="#sappho">du</rs> <rs ref="#diese">sie</rs>? Sprich! –</l>
+              <l>So stumm? <rs ref="#sappho">der Dichtrin</rs> <rs ref="#süße-Lippe">süße Lippe</rs> stumm?</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO.</speaker></rs>
+            <l><rs ref="#Es">Es</rs> ist zu viel!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l><rs ref="#Die-Wange">Die Wange</rs> rötet <rs ref="#Die-Wange">sich</rs>,</l>
+              <l>Von Zornes heißen Gluten überflammt.</l>
+              <l>Recht, wirf die Larve weg, sei, was <rs ref="#sappho">du</rs> bist,</l>
+              <l>Und tobe, töte, <rs ref="#sappho">heuchlerische Circe</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO.</speaker></rs>
+            <l><rs ref="#Es">Es</rs> ist zu viel! – Auf, waffne <rs ref="#dich,-mein-Herz">dich, mein Herz</rs>!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <l>Antworte! Hast <rs ref="#sappho">du</rs> <rs ref="#diese">diese</rs> ausgesandt?</l>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>zu <rs ref="#rhamnes">Rhamnes</rs>.</stage>
+            <lg>
+              <l>Geh hin und hol <rs ref="#melitta">die Sklavin</rs> mir zurück,</l>
+              <l>Nur <rs ref="#melitta">sie</rs> und niemand anders ließ ich suchen!</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Zurück! Es wage niemand, <rs ref="#melitta">ihr</rs> zu nahn!</l>
+              <l>Begehre <rs ref="#Lösegeld">Lösegeld</rs>. Ich bin nicht reich,</l>
+              <l>Doch werden Eltern mir und Freunde willig steuern,</l>
+              <l><rs ref="#Mein-Glück">Mein Glück</rs> von <rs ref="#deiner-Habsucht"><rs ref="#sappho">deiner</rs> Habsucht</rs> zu erkaufen!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>noch immer abgewandt.</stage>
+            <l>Nicht <rs ref="#Lösegeld">Geld</rs> verlang ich, nur was mein! <rs ref="#melitta">Sie</rs> bleibt!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l><rs ref="#melitta">Sie</rs> bleibet nicht! Bei <rs ref="#den-Göttern">allen Göttern</rs>, nein!</l>
+              <l><rs ref="#sappho">Du</rs> selber hast <rs ref="#sappho">dein</rs> Recht auf <rs ref="#melitta">sie</rs> verwirkt,</l>
+              <l>Als <rs ref="#sappho">du</rs> <rs ref="#den-Dolch">den Dolch</rs> auf <rs ref="#ihren-Busen"><rs ref="#melitta">ihren</rs> Busen</rs> zücktest,</l>
+              <l><rs ref="#sappho">Du</rs> kauftest <rs ref="#ihre-Dienste"><rs ref="#melitta">ihre</rs> Dienste</rs>, nicht <rs ref="#ihr-Leben"><rs ref="#melitta">ihr</rs> Leben</rs>!</l>
+              <l>Glaubst <rs ref="#sappho">du</rs>, ich ließe <rs ref="#melitta">sie</rs> in <rs ref="#deiner-Hand"><rs ref="#sappho">deiner</rs> Hand</rs>?</l>
+              <l>Noch einmal, fordre <rs ref="#Lösegeld">Lösegeld</rs> und laß <rs ref="#melitta">sie</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>zu <rs ref="#rhamnes">Rhamnes</rs>.</stage>
+            <l>Erfülle, was ich <rs ref="#rhamnes">dir</rs> befahl!</l>
+            <pb n="776"/>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Zurück!</l>
+              <l><rs ref="#sappho">Du</rs> rührst an <rs ref="#deinen-Tod"><rs ref="#sappho">deinen</rs> Tod</rs>, berührst <rs ref="#sappho">du</rs> <rs ref="#melitta">sie</rs>!</l>
+              <l>So ist <rs ref="#dein-Busen"><rs ref="#sappho">dein</rs> Busen</rs> denn so ganz entmenscht,</l>
+              <l>Daß <rs ref="#dein-Busen">er</rs> <rs ref="#dein-Busen">sich</rs> nicht mehr regt bei Menschenleiden!</l>
+              <l>Zerbrich <rs ref="#die-Leier">die Leier</rs>, <rs ref="#sappho">gifterfüllte Schlange</rs>!</l>
+              <l><rs ref="#süße-Lippe">Die Lippe</rs> töne nimmerdar Gesang,</l>
+              <l><rs ref="#sappho">Du</rs> hast verwirkt <rs ref="#der-Dichtung">der Dichtung</rs> goldne Gaben!</l>
+              <l><rs ref="#Den-Namen">Den Namen</rs> nicht entweihe mehr <rs ref="#der-Kunst">der Kunst</rs>!</l>
+              <l><rs ref="#Die-Blume">Die Blume</rs> soll <rs ref="#melitta">sie</rs> sein aus <rs ref="#dieses-Lebens-Blättern">dieses Lebens Blättern</rs>,</l>
+              <l><rs ref="#Die-Blume">Die</rs> hoch empor, der reinsten Kräfte Kind,</l>
+              <l>In blaue Luft das Balsamhaupt erhebt,</l>
+              <l><rs ref="#Den-Sternen">Den Sternen</rs> zu, nach <rs ref="#Den-Sternen">denen</rs> <rs ref="#Die-Blume">sie</rs> gebildet.</l>
+              <l><rs ref="#sappho">Du</rs> hast als giftgen Schierling <rs ref="#melitta">sie</rs> gebraucht,</l>
+              <l>Um <rs ref="#deine-Feinde"><rs ref="#sappho">deine</rs> Feinde</rs> grimmig zu verderben!</l>
+              <l>Wie anders malt ich mir, ich blöder Tor,</l>
+              <l>Einst <rs ref="#sappho">Sapphon</rs> aus, in frühern, schönern Tagen!</l>
+              <l>Weich, wie <rs ref="#ihr-Lied"><rs ref="#sappho">ihr</rs> Lied</rs>, war <rs ref="#sappho">ihr</rs> verklärter Sinn,</l>
+              <l>Und makellos <rs ref="#dich,-mein-Herz"><rs ref="#sappho">ihr</rs> Herz</rs>, wie <rs ref="#sappho">ihre</rs> Lieder,</l>
+              <l><rs ref="#Derselbe-Wohllaut,-der-der-Lipp-entquoll">Derselbe Wohllaut, der <rs ref="#süße-Lippe">der Lipp</rs> entquoll</rs>,</l>
+              <l><rs ref="#Derselbe-Wohllaut,-der-der-Lipp-entquoll">Er</rs> wiegte <rs ref="#Derselbe-Wohllaut,-der-der-Lipp-entquoll">sich</rs> auch wogend in <rs ref="#der-Brust">der Brust</rs></l>
+              <l>Und Melodie war mir <rs ref="#ihr-ganzes-Wesen"><rs ref="#sappho">ihr</rs> ganzes Wesen</rs>!</l>
+              <l>Wer hat <rs ref="#sappho">dich</rs> denn mit Zauberschlag verwandelt?</l>
+              <l>Ha, wende nicht <rs ref="#Die-Augen">die Augen</rs> scheu von mir!</l>
+              <l>Mich blicke an, laß mich <rs ref="#dein-Antlitz"><rs ref="#sappho">dein</rs> Antlitz</rs> schauen,</l>
+              <l>Daß ich erkenne, ob <rs ref="#sappho">du</rs>s selber bist,</l>
+              <l>Ob dies <rs ref="#die-Lippen,-die-mein-Mund-berührt">die Lippen, die <rs ref="#mein-Mund">mein Mund</rs> berührt</rs>,</l>
+              <l>Ob dies <rs ref="#das-Auge,-das-so-mild-gelächelt">das Auge, das so mild gelächelt</rs>,</l>
+              <l>Ob, <rs ref="#sappho">Sappho</rs>, <rs ref="#sappho">du</rs> <rs ref="#es">es</rs> bist, <rs ref="#sappho">du Sappho</rs>?</l>
+            </lg>
+            <stage><rs ref="#phaon">Er</rs> faßt <rs ref="#sappho">ihren</rs> Arm und wendet <rs ref="#sappho">sie</rs> gegen <rs ref="#phaon">sich</rs>. <rs ref="#sappho">Sie</rs> blickt empor, <rs ref="#das-Auge,-das-so-mild-gelächelt"><rs ref="#sappho">ihr</rs> Auge</rs> trifft
+              <rs ref="#das-seinige">das <rs ref="#phaon">seinige</rs></rs>.</stage>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>schmerzvoll zusammenfahrend.</stage>
+            <l>Weh mir!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l><rs ref="#sappho">Du</rs> bist <rs ref="#es">es</rs> noch; ja, das war <rs ref="#Sapphos-Stimme"><rs ref="#sappho">Sapphos</rs> Stimme</rs>!</l>
+              <l>Was ich gesagt! <rs ref="#Die-Winde">Die Winde</rs> tragen<rs ref="#s">s</rs> hin,</l>
+              <l><rs ref="#s">Es</rs> soll nicht Wurzel schlagen in <rs ref="#dem-Herzen">dem Herzen</rs>!</l>
+              <l>O, es wird helle, hell vor meinem Blick,</l>
+              <l>Und wie <rs ref="#Die-Sonne">die Sonne</rs> nach <rs ref="#Gewittersturm">Gewittersturm</rs>,</l>
+              <l>Strahlt aus <rs ref="#der-Gegenwart">der Gegenwart</rs> entladnen Wolken</l>
+              <l>In altem Glanze <rs ref="#die-Vergangenheit">die Vergangenheit</rs>.</l>
+              <l><pb n="777"/> Sei mir gegrüßt, <rs ref="#Erinnrung-schöner-Zeit">Erinnrung schöner Zeit</rs>!</l>
+              <l><rs ref="#sappho">Du</rs> bist mir wieder, <rs ref="#was">was</rs> <rs ref="#sappho">du</rs> einst mir warst,</l>
+              <l>Eh ich <rs ref="#sappho">dich</rs> noch gesehn, in <rs ref="#ferner-Heimat">ferner Heimat</rs>,</l>
+              <rs ref="#Dasselbe-Götterbild,-das-ich-nur-irrend---------------So-lange-für-ein-Menschenantlitz-hielt"><l>Dasselbe Götterbild, das ich nur irrend</l>
+              <l>So lange für ein Menschenantlitz hielt</rs>,</l>
+              <l>Zeig <rs ref="#sappho">dich</rs> als <rs ref="#Göttin">Göttin</rs>! Segne, <rs ref="#sappho">Sappho</rs>, segne!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO.</speaker></rs>
+            <l><rs ref="#phaon">Betrüger</rs>!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Nein fürwahr, ich bin <rs ref="#phaon">es</rs> nicht!</l>
+              <l>Wenn ich <rs ref="#sappho">dir</rs> <rs ref="#meine-Liebe">Liebe</rs> schwur, es war nicht Täuschung,</l>
+              <l>Ich liebte <rs ref="#sappho">dich</rs>, so wie <rs ref="#man">man</rs> <rs ref="#Höhern">Götter</rs> wohl,</l>
+              <l>Wie <rs ref="#man">man</rs> <rs ref="#das-Gute">das Gute</rs> liebet und <rs ref="#das-Schöne">das Schöne</rs>.</l>
+              <l>Mit <rs ref="#Höhern">Höhern</rs>, <rs ref="#sappho">Sappho</rs>, halte <rs ref="#sappho">du</rs> Gemeinschaft,</l>
+              <l><rs ref="#man">Man</rs> steigt nicht ungestraft <rs ref="#vom-Göttermahle">vom Göttermahle</rs></l>
+              <l>Herunter in <rs ref="#den-Kreis-der-Sterblichen">den Kreis <rs ref="#der-Sterblichen">der Sterblichen</rs></rs>.</l>
+              <l><rs ref="#Der-Arm">Der Arm</rs>, in <rs ref="#Der-Arm">dem</rs> <rs ref="#die-Leier">die goldne Leier</rs> ruhte,</l>
+              <l><rs ref="#Der-Arm">Er</rs> ist geweiht, <rs ref="#Der-Arm">er</rs> fasse <rs ref="#Niedres">Niedres</rs> nicht!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>abgewendet vor <rs ref="#sappho">sich</rs> hin.</stage>
+            <lg>
+              <l>Hinab in Meeresgrund <rs ref="#die-Leier">die goldne Leier</rs>,</l>
+              <l>Wird <rs ref="#die-Leier">ihr</rs> Besitz um solchen Preis erkauft!</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Ich taumelte in dumpfer Trunkenheit,</l>
+              <l>Mit mir und mit <rs ref="#der-Welt">der Welt</rs> im düstern Streite;</l>
+              <l>Vergebens rief ich <rs ref="#die-Gefühle">die Gefühle</rs> auf,</l>
+              <l><rs ref="#die-Gefühle">Die</rs> ich in Schlummer glaubt und <rs ref="#die-Gefühle">die</rs> nicht waren,</l>
+              <l><rs ref="#sappho">Du</rs> standst vor mir, <rs ref="#ein-unbegreiflich-Bild">ein unbegreiflich Bild</rs>,</l>
+              <l>Zu <rs ref="#ein-unbegreiflich-Bild">dem</rs>s mich hin, von <rs ref="#ein-unbegreiflich-Bild">dem</rs>s mich fort,</l>
+              <l>Mit unsichtbaren Banden mächtig zog;</l>
+              <l><rs ref="#sappho">Du</rs> warst – zu <emph>niedrig</emph> glaubte <rs ref="#sappho">dich</rs> mein Zorn,</l>
+              <l>Zu <emph>hoch</emph> nennt die Besinnung <rs ref="#sappho">dich</rs> – für <rs ref="#meine-Liebe">meine Liebe</rs>.</l>
+              <l>Und nur <rs ref="#das-Gleiche">das <emph>Gleiche</emph></rs> fügt <rs ref="#das-Gleiche">sich</rs> leicht und wohl!</l>
+              <l>Da sah ich <rs ref="#melitta"><emph>sie</emph></rs>, und hoch gen <rs ref="#Himmel">Himmel</rs> sprangen</l>
+              <l><rs ref="#Die-tiefen-Quellen">Die tiefen Quellen</rs> alle meines Innern,</l>
+              <l><rs ref="#Die-tiefen-Quellen">Die</rs> stockend vorher weigerten den Strahl.</l>
+              <l>Komm her, <rs ref="#melitta">Melittion</rs>, komm her zu <rs ref="#sappho">ihr</rs>,</l>
+              <l>O, sei nicht bange, <rs ref="#sappho">sie</rs> ist mild und gütig!</l>
+              <l>Enthüll <rs ref="#Die-Augen">der Augen</rs> schimmernden Kristall,</l>
+              <l>Daß <rs ref="#sappho">sie</rs> <rs ref="#melitta">dir</rs> blicke in <rs ref="#die-fromme-Brust">die fromme Brust</rs></l>
+              <l>Und freudig ohne Makel <rs ref="#melitta">dich</rs> erkenne!</l>
+            </lg>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA</speaker></rs>
+            <stage>schüchtern nahend.</stage>
+            <l><rs ref="#sappho">Gebieterin</rs>!</l>
+            <pb n="778"/>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage><rs ref="#melitta">sie</rs> von <rs ref="#sappho">sich</rs> haltend.</stage>
+            <l>Fort von mir!</l>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <l>Ach, <rs ref="#sappho">sie</rs> zürnt!</l>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>So wär <rs ref="#sappho">sie</rs> doch, was ich zu glauben scheute?</l>
+              <l>Komm her, <rs ref="#melitta">Melittion</rs>, an <rs ref="#meine-Seite">meine Seite</rs>!</l>
+              <l><rs ref="#melitta">Du</rs> sollst nicht zu <rs ref="#sappho">ihr</rs> flehn! Vor <rs ref="#meinen-Augen">meinen Augen</rs></l>
+              <l>Soll <rs ref="#melitta">dich</rs> <rs ref="#sappho">die Stolze</rs> nicht beleidigen,</l>
+              <l><rs ref="#melitta">Du</rs> sollst nicht flehn! <rs ref="#sappho">Sie</rs> kennt nicht <rs ref="#deinen-Wert"><rs ref="#melitta">deinen</rs> Wert</rs>,</l>
+              <l>Nicht <rs ref="#sappho">ihren</rs>, denn auf <rs ref="#ihren-Knieen"><rs ref="#sappho">ihren</rs> Knieen</rs> würde</l>
+              <l><rs ref="#sappho">Sie</rs> sonst, die Schuld <rs ref="#der-Unschuld">der Unschuld</rs>, stumm <rs ref="#melitta">dir</rs> huldgen!</l>
+              <l>Hierher zu mir, hierher!</l>
+            </lg>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <lg>
+              <l>Nein, laß mich knien,</l>
+              <l>Wies wohl <rs ref="#dem-Kinde">dem Kinde</rs> ziemt vor <rs ref="#dem-Kinde">seiner</rs> Mutter,</l>
+              <l>Und dünkt <rs ref="#sappho">ihr</rs> <rs ref="#der-Strafe">Strafe</rs> recht, so strafe <rs ref="#sappho">sie</rs>,</l>
+              <l>Ich will nicht murren wider <rs ref="#ihren-Willen"><rs ref="#sappho">ihren</rs> Willen</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <lg>
+              <l>Nicht <rs ref="#melitta">dir</rs> allein, auch mir gehörst <rs ref="#melitta">du</rs> an,</l>
+              <l>Und mich erniedrigst <rs ref="#melitta">du</rs> durch <rs ref="#diese-Demut">diese Demut</rs>.</l>
+              <l>Noch gibt es Mittel, <rs ref="#das">das</rs> <rs ref="#melitta-/-phaon">uns</rs> zu erzwingen,</l>
+              <l><rs ref="#das">Was</rs> <rs ref="#sappho">sie</rs> <rs ref="#der-Bitte">der Bitte</rs> störrisch-rauh versagt.</l>
+            </lg>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <lg>
+              <l>O, wär es auch, mich freut nur <rs ref="#ihre-Gabe"><rs ref="#sappho">ihre</rs> <emph>Gabe</emph></rs>,</l>
+              <l>Erzwungen wäre mir <rs ref="#das-höchste-Glück">das höchste Glück</rs> zur Last!</l>
+              <l>Hier will ich knien, bis mir ein milder Blick,</l>
+              <l>Ein gütig Wort, Verzeihung angekündigt.</l>
+              <l>Wie oft schon lag ich hier an dieser Stelle</l>
+              <l>Und immer stand ich freudig wieder auf;</l>
+              <l><rs ref="#sappho">Sie</rs> wird mich diesmal weinend nicht entlassen!</l>
+              <l>Blick auf <rs ref="#dem-Kinde"><rs ref="#sappho">dein</rs> Kind</rs> hernieder, <rs ref="#sappho">teure Frau</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>steht, <rs ref="#dein-Antlitz">das Gesicht</rs> auf <rs ref="#eucharis">Eucharis</rs> Schulter gelehnt.</stage>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON.</speaker></rs>
+            <l>Kannst <rs ref="#sappho">du</rs> <rs ref="#melitta">sie</rs> hören und bleibst kalt und stumm!</l>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <lg>
+              <l><rs ref="#sappho">Sie</rs> ist nicht kalt, und wenn auch schweigt <rs ref="#ihr-Mund"><rs ref="#sappho">ihr</rs> Mund</rs>,</l>
+              <l>Ich fühl <rs ref="#dich,-mein-Herz"><rs ref="#sappho">ihr</rs> Herz</rs> zu <rs ref="#meinem-Herzen">meinem Herzen</rs> sprechen!</l>
+              <l>Sei Richter, <rs ref="#sappho">Sappho</rs>, zwischen mir und <rs ref="#phaon">ihm</rs>!</l>
+              <l>Heiß mich <rs ref="#phaon">ihm</rs> folgen und ich folge <rs ref="#phaon">ihm</rs>,</l>
+              <l>Heiß mich <rs ref="#phaon">ihn</rs> fliehn – o <rs ref="#den-Göttern">Götter</rs>! – alles – alles!</l>
+              <l><rs ref="#sappho">Du</rs> zitterst! – <rs ref="#sappho">Sappho</rs>, hörest <rs ref="#sappho">du</rs> mich nicht?</l>
+            </lg>
+          </sp>
+          <sp who="#phaon">
+            <rs ref="#phaon"><speaker>PHAON</speaker></rs>
+            <stage><rs ref="#melitta">Melitten</rs> umschlingend und ebenfalls hinknieend.</stage>
+            <lg>
+              <l><rs ref="#der-Sterblichen">Den Menschen</rs> <rs ref="#die-Lieb">Liebe</rs> und <rs ref="#den-Göttern">den Göttern</rs> <rs ref="#Ehrfurcht">Ehrfurcht</rs>,</l>
+              <l>Gib uns, was <rs ref="#der-Sterblichen-/-phaon">unser</rs>, und nimm hin, was <rs ref="#sappho">dein</rs>!</l>
+              <l>Bedenke, was <rs ref="#sappho">du</rs> tust und wer <rs ref="#sappho">du</rs> bist!</l>
+              <pb n="779"/>
+            </lg>
+          </sp>
+          <sp who="#sappho">
+            <rs ref="#sappho"><speaker>SAPPHO</speaker></rs>
+            <stage>fährt bei den letzten Worten empor und blickt <rs ref="#melitta-/-phaon">die Knieenden</rs> mit einem starren
+              Blicke an, wendet <rs ref="#sappho">sich</rs> dann schnell um und geht.</stage>
+          </sp>
+          <sp who="#melitta">
+            <rs ref="#melitta"><speaker>MELITTA.</speaker></rs>
+            <l>Weh mir, <rs ref="#sappho">sie</rs> flieht, <rs ref="#sappho">sie</rs> hat <rs ref="#dem-Kinde"><rs ref="#sappho">ihr</rs> Kind</rs> verstoßen!</l>
+            <stage><rs ref="#sappho">Sappho</rs> ab. <rs ref="#eucharis">Eucharis</rs> und <rs ref="#mehrere-Sklavinnen">Dienerinnen</rs> folgen.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

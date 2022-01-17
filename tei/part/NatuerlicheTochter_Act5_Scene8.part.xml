@@ -1,0 +1,191 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Platz <rs ref="#am-Hafen">am Hafen</rs>.</stage>
+        <div type="scene">
+          <head>Achter Auftritt</head>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE</speaker></rs>
+            <stage>allein.</stage>
+            <lg>
+              <l><rs ref="#mein-Elend-(EUGENIE)">Vom eignen Elend</rs> leitet <rs ref="#Man">man</rs> mich ab,</l>
+              <l>Und fremden Jammer prophezeit <rs ref="#Man">man</rs> mir.</l>
+              <rs ref="#Doch-wär'-es-fremd,-was-deinem-Vaterland---------------Begegnen-soll"><l>Doch wär' es fremd, was <rs ref="#Vaterland"><rs ref="#du">deinem</rs> Vaterland</rs></l>
+              <l>Begegnen soll</rs>? <rs ref="#Doch-wär'-es-fremd,-was-deinem-Vaterland---------------Begegnen-soll">Dies</rs> fällt mit neuer Schwere</l>
+              <l>Mir auf <rs ref="#meiner-Brust-EUGENIE">die Brust</rs>! Zum gegenwärt'gen Übel</l>
+              <l>Soll ich <rs ref="#Zukunft">der Zukunft</rs> Geistesbürden tragen?</l>
+              <l>So ist's denn wahr, was in <rs ref="#ihre-Kindheit-eugenie">der Kindheit</rs> schon</l>
+              <l>Mir um das Ohr geklungen, was ich erst</l>
+              <l>Erhorcht, erfragt und nun zuletzt sogar</l>
+              <l>Aus <rs ref="#herzog">meines Vaters</rs>, <rs ref="#koenig">meines Königs</rs> Mund</l>
+              <l>Vernehmen mußte! <rs ref="#seinem-Reiche-(könig)">Diesem Reiche</rs> droht</l>
+              <l>Ein jäher Umsturz. <rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">Die zum großen Leben</l>
+              <l>Gefugten Elemente</rs> wollen <rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">sich</rs></l>
+              <l>Nicht wechselseitig mehr mit Liebeskraft</l>
+              <l>Zu stets erneuter Einigkeit umfangen.</l>
+              <l><rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">Sie</rs> fliehen <rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">sich</rs>, und einzeln tritt nun jedes</l>
+              <l>Kalt in <rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">sich</rs> selbst zurück. Wo blieb <rs ref="#der-Ahnherrn---------------Gewalt'ger-Geist,-der-sie-zu-einem-Zweck---------------Vereinigte">der Ahnherrn</l>
+              <l>Gewalt'ger Geist, <rs ref="#der-Ahnherrn---------------Gewalt'ger-Geist,-der-sie-zu-einem-Zweck---------------Vereinigte">der</rs> <rs ref="#Die-zum-großen-Leben---------------Gefugten-Elemente">sie</rs> zu einem Zweck</l>
+              <l>Vereinigte</rs>, die feindlich kämpfenden?</l>
+              <l><rs ref="#der-Ahnherrn---------------Gewalt'ger-Geist,-der-sie-zu-einem-Zweck---------------Vereinigte">Der</rs> diesem großen Volk als Führer <rs ref="#der-Ahnherrn---------------Gewalt'ger-Geist,-der-sie-zu-einem-Zweck---------------Vereinigte">sich</rs>,</l>
+              <l>Als <rs ref="#den-König">König</rs> und als <rs ref="#Des-Vaters">Vater</rs> dargestellt?</l>
+              <l><rs ref="#der-Ahnherrn---------------Gewalt'ger-Geist,-der-sie-zu-einem-Zweck---------------Vereinigte">Er</rs> ist entschwunden! Was <rs ref="#uns-/-wir">uns</rs> übrig bleibt,</l>
+              <l>Ist <rs ref="#ein-Gespenst,-das-mit-vergebnem-Streben---------------Verlorenen-Besitz-zu-greifen-wähnt">ein Gespenst, <rs ref="#ein-Gespenst,-das-mit-vergebnem-Streben---------------Verlorenen-Besitz-zu-greifen-wähnt">das</rs> mit vergebnem Streben</l>
+              <l>Verlorenen Besitz zu greifen wähnt</rs>.</l>
+              <l>Und solche Sorge nähm' ich mit hinüber?</l>
+              <l>Entzöge mich gemeinsamer Gefahr?</l>
+              <l>Entflöhe der Gelegenheit, mich kühn</l>
+              <l>Der hohen Ahnen würdig zu beweisen</l>
+              <l>Und <rs ref="#jeden,-der-mich-ungerecht-verletzt">jeden, <rs ref="#jeden,-der-mich-ungerecht-verletzt">der</rs> mich ungerecht verletzt</rs>,</l>
+              <l>In böser Stunde hilfreich zu beschämen?</l>
+              <l>Nun bist <rs ref="#Boden-meines-Vaterlands">du</rs>, <rs ref="#Boden-meines-Vaterlands">Boden <rs ref="#Vaterland">meines Vaterlands</rs></rs>,</l>
+              <l>Mir erst ein Heiligtum, nun fühl' ich erst</l>
+              <l>Den dringenden Beruf, mich anzuklammern.</l>
+              <l>Ich lasse <rs ref="#Boden-meines-Vaterlands">dich</rs> nicht los, und <rs ref="#welches-Band">welches Band</rs></l>
+              <l>Mich <rs ref="#Boden-meines-Vaterlands">dir</rs> erhalten kann, <rs ref="#welches-Band">es</rs> ist nun heilig.</l>
+              <l>Wo find' ich <rs ref="#gerichtsrat">jenen gutgesinnten Mann,</l>
+              <l><rs ref="#gerichtsrat">Der</rs> mir <rs ref="#Hand">die Hand</rs> so traulich angeboten</rs>?</l>
+              <l><pb n="296"/> An <rs ref="#gerichtsrat">ihn</rs> will ich mich schließen! Im Verborgnen</l>
+              <l>Verwahr' <rs ref="#gerichtsrat">er</rs> mich, als reinen Talisman.</l>
+              <l>Denn wenn <rs ref="#Das-Wunder">ein Wunder</rs> auf <rs ref="#Welt">der Welt</rs> geschieht,</l>
+              <l>Geschieht's durch liebevolle, treue Herzen.</l>
+              <l>Die Größe <rs ref="#die-Gefahr">der Gefahr</rs> betracht' ich nicht,</l>
+              <l>Und meine Schwäche darf ich nicht bedenken:</l>
+              <l>Das alles wird ein günstiges Geschick</l>
+              <l>Zu rechter Zeit auf hohe Zwecke leiten.</l>
+              <l>Und wenn <rs ref="#herzog">mein Vater</rs>, <rs ref="#koenig">mein Monarch</rs> mich einst</l>
+              <l>Verkannt, verstoßen, mich vergessen, soll</l>
+              <l>Erstaunt <rs ref="#herzog-/-koenig">ihr</rs> Blick auf <rs ref="#der-Erhaltnen">der Erhaltnen</rs> ruhn,</l>
+              <l><rs ref="#der-Erhaltnen">Die</rs> <rs ref="#das,-was-sie-im-Glücke-zugesagt">das, <rs ref="#das,-was-sie-im-Glücke-zugesagt">was</rs> <rs ref="#der-Erhaltnen">sie</rs> <rs ref="#Glück">im Glücke</rs> zugesagt</rs>,</l>
+              <l>Aus tiefem Elend zu erfüllen strebt.</l>
+              <l><rs ref="#gerichtsrat">Er</rs> kommt! Ich seh' <rs ref="#gerichtsrat">ihm</rs> freudiger entgegen,</l>
+              <l>Als ich <rs ref="#gerichtsrat">ihn</rs> ließ. <rs ref="#gerichtsrat">Er</rs> kommt. <rs ref="#gerichtsrat">Er</rs> sucht mich auf!</l>
+              <l>Zu scheiden denkt <rs ref="#gerichtsrat">er</rs> – bleiben werd' ich <rs ref="#gerichtsrat">ihm</rs>.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

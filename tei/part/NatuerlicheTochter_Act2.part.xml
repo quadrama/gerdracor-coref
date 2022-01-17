@@ -1,0 +1,1138 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <stage><rs ref="#Zimmer-Eugeniens">Zimmer <rs ref="#eugenie">Eugeniens</rs></rs>, im gotischen Stil.</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage><rs ref="#hofmeisterin">Hofmeisterin</rs>. <rs ref="#sekretaer">Sekretär</rs>.</stage>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Verdien' ich, daß <rs ref="#hofmeisterin">du</rs> mich, <rs ref="#im-Augenblick">im Augenblick</rs>,</l>
+              <l>Da ich erwünschte Nachricht bringe, fliehst?</l>
+              <l>Vernimm nur erst, was ich zu sagen habe!</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Wohin es deutet, fühl ich nur zu sehr.</l>
+              <l>O laß mein Auge vom bekannten Blick,</l>
+              <l><rs ref="#Mein-Ohr-(hofmeisterin)">Mein Ohr</rs> <rs ref="#Mein-Ohr-(hofmeisterin)">sich</rs> von bekannter Stimme wenden.</l>
+              <l>Entfliehen laß mich <rs ref="#der-Gewalt,-die,-sonst---------------Durch-Lieb'-und-Freundschaft-wirksam">der Gewalt, <rs ref="#der-Gewalt,-die,-sonst---------------Durch-Lieb'-und-Freundschaft-wirksam">die</rs></rs>, sonst</l>
+              <l>Durch <rs ref="#Zur-Liebe">Lieb</rs>' und Freundschaft wirksam, fürchterlich</l>
+              <l>Wie <rs ref="#ein-Gespenst">ein Gespenst</rs> mir nun zur Seite steht.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Wenn ich <rs ref="#Glück">des Glückes</rs> Füllhorn <rs ref="#hofmeisterin">dir</rs> auf einmal,</l>
+              <l>Nach langem Hoffen, vor <rs ref="#unsern-Füßen">die Füße</rs> schütte,</l>
+              <l>Wenn <rs ref="#die-Morgenröte-jenes-Tags">sich</rs> <rs ref="#die-Morgenröte-jenes-Tags">die Morgenröte <rs ref="#jenes-Tags,---------------Der-unsern-Bund-auf-ewig-gründen-soll">jenes Tags</rs>,</l>
+              <l><rs ref="#jenes-Tags,---------------Der-unsern-Bund-auf-ewig-gründen-soll">Der</rs> <rs ref="#hofmeisterin-/-sekretaer">unsern</rs> Bund auf ewig gründen soll</rs>,</l>
+              <l>Am Horizonte feierlich erhebt,</l>
+              <l>So scheinst <rs ref="#hofmeisterin">du</rs> nun verlegen, widerwillig</l>
+              <l>Den Antrag <rs ref="#eines-Bräutigams">eines Bräutigams</rs> zu fliehn.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Du zeigst mir nur <rs ref="#die-eine-Seite">die eine Seite</rs> dar:</l>
+              <l><rs ref="#die-eine-Seite">Sie</rs> glänzt und leuchtet, wie <rs ref="#im-Sonnenschein">im Sonnenschein</rs></l>
+              <l><rs ref="#Welt">Die Welt</rs> erfreulich daliegt; aber hinten</l>
+              <l>Droht <rs ref="#schwarzer-Nächte-Graus">schwarzer Nächte Graus</rs>, ich ahnd' <rs ref="#schwarzer-Nächte-Graus">ihn</rs> schon.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>So laß <rs ref="#hofmeisterin-/-sekretaer">uns</rs> erst <rs ref="#die-eine-Seite">die schöne Seite</rs> sehn!</l>
+              <l>Verlangst <rs ref="#hofmeisterin">du</rs> <rs ref="#Wohnung">Wohnung</rs>, mitten in <rs ref="#Stadt">der Stadt</rs>,</l>
+              <l>Geräumig, heiter, trefflich ausgestattet,</l>
+              <l>Wie <rs ref="#Man">man's</rs> für <rs ref="#Man">sich</rs> so wie für Gäste wünscht:</l>
+              <l><rs ref="#Wohnung">Sie</rs> ist bereit, der nächste Winter findet</l>
+              <l><rs ref="#hofmeisterin-/-sekretaer">Uns</rs> festlich dort umgeben, wenn <rs ref="#hofmeisterin">du</rs> willst.</l>
+              <l>Sehnst <rs ref="#hofmeisterin">du</rs> im Frühling <rs ref="#hofmeisterin">dich</rs> aufs Land: auch dort</l>
+              <l>Ist <rs ref="#hofmeisterin-/-sekretaer">uns</rs> ein Haus, ein Garten <rs ref="#hofmeisterin-/-sekretaer">uns</rs> bestimmt,</l>
+              <l>Ein reiches Feld. Und was <rs ref="#Erfreuliches">Erfreuliches</rs></l>
+              <l>An Waldung, <rs ref="#Busch">Busch</rs>, an Wiesen, <rs ref="#Bach">Bach</rs> und <rs ref="#Seen">Seen</rs></l>
+              <l><rs ref="#Erfreuliches">Sich</rs> <rs ref="#Phantasie">Phantasie</rs> zusammen drängen mag,</l>
+              <l><pb n="234"/> Genießen <rs ref="#hofmeisterin-/-sekretaer">wir</rs>, <rs ref="#zum-Teil">zum Teil</rs> als <rs ref="#hofmeisterin-/-sekretaer">unser</rs> eignes,</l>
+              <l><rs ref="#zum-Teil">Zum Teil</rs> als allgemeines Gut. Wobei</l>
+              <l>Noch manche Rente gar bequem vergönnt,</l>
+              <l>Durch Sparsamkeit ein sichres Glück zu steigern.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>In trübe Wolken hüllt <rs ref="#jenes-Bild">sich</rs> <rs ref="#jenes-Bild">jenes Bild</rs>,</l>
+              <l>So heiter <rs ref="#sekretaer">du</rs> <rs ref="#jenes-Bild">es</rs> malst, vor meinen Augen.</l>
+              <l>Nicht wünschenswert, abscheulich naht <rs ref="#Gott">sich</rs> mir</l>
+              <l><rs ref="#Gott">Der Gott <rs ref="#Welt">der Welt</rs></rs> <rs ref="#Zum-Übermaß">im Überfluß</rs> heran.</l>
+              <l>Was für <rs ref="#ein-Opfer">ein Opfer</rs> fordert <rs ref="#Gott">er</rs>? Das Glück</l>
+              <l>Des holden Zöglings müßt' ich morden helfen!</l>
+              <l>Und was <rs ref="#ein-solch-Verbrechen">ein solch Verbrechen</rs> mir erwarb,</l>
+              <l>Ich sollt' <rs ref="#ein-solch-Verbrechen">es</rs> je mit freier Brust genießen?</l>
+              <l><rs ref="#eugenie">Eugenie</rs>! <rs ref="#eugenie">du, <rs ref="#eugenie">deren holdes Wesen</rs></l>
+              <l>In meiner Nähe <rs ref="#eugenie">sich</rs> von <rs ref="#Jugend">Jugend</rs> auf</l>
+              <l>Aus reicher Fülle rein entwickeln sollte</rs>,</l>
+              <l>Kann ich noch unterscheiden, was an <rs ref="#eugenie">dir</rs></l>
+              <l><rs ref="#eugenie">Dein</rs> eigen ist, und was <rs ref="#eugenie">du</rs> mir verdankst?</l>
+              <rs ref="#Dich,-die-ich-als-mein-selbst-gebildet-Werk---------------Im-Herzen-trage"><l>Dich, <rs ref="#Dich,-die-ich-als-mein-selbst-gebildet-Werk---------------Im-Herzen-trage">die</rs> ich als mein selbst gebildet Werk</l>
+              <l><rs ref="#Im-Herzen-(hofmeisterin)">Im Herzen</rs> trage</rs>, sollt' ich nun zerstören?</l>
+              <l>Von welchem Stoffe seid <rs ref="#Grausamen">ihr</rs> denn geformt,</l>
+              <l><rs ref="#Grausamen">Ihr</rs> <rs ref="#Grausamen">Grausamen</rs>, daß eine solche Tat</l>
+              <l><rs ref="#Grausamen">Ihr</rs> fordern dürft und zu belohnen glaubt?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Gar-manchen-Schatz">Gar manchen Schatz</rs> bewahrt von <rs ref="#Jugend">Jugend</rs> auf</l>
+              <l>Ein edles, gutes Herz und bildet <rs ref="#Gar-manchen-Schatz">ihn</rs></l>
+              <l>Nur immer schöner, liebenswürd'ger aus</l>
+              <l>Zur holden Gottheit des geheimen Tempels;</l>
+              <l>Doch wenn <rs ref="#das-Mächtige,-das-uns-regiert">das Mächtige, <rs ref="#das-Mächtige,-das-uns-regiert">das</rs> <rs ref="#uns-/-wir">uns</rs> regiert</rs>,</l>
+              <l>Ein großes Opfer heischt, <rs ref="#uns-/-wir">wir</rs> bringen's doch,</l>
+              <l>Mit blutendem Gefühl, <rs ref="#der-Not">der Not</rs> zuletzt.</l>
+              <l><rs ref="#Zwei-Welten">Zwei Welten</rs> sind es, <rs ref="#hofmeisterin">meine Liebe</rs>, <rs ref="#Zwei-Welten">die</rs>,</l>
+              <l>Gewaltsam sich bekämpfend, <rs ref="#hofmeisterin-/-sekretaer">uns</rs> bedrängen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>In völlig fremder Welt für mein Gefühl</l>
+              <l>Scheinst <rs ref="#sekretaer">du</rs> zu wandeln, da <rs ref="#sekretaer">du</rs> <rs ref="#herzog"><rs ref="#sekretaer">deinem</rs> Herrn</rs>,</l>
+              <l><rs ref="#herzog">Dem edlen Herzog</rs>, solche Jammertage</l>
+              <l>Verräterisch bereitest, zur Partei</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)">Des Sohns</rs> <rs ref="#sekretaer">dich</rs> fügst. Wenn das Waltende</l>
+              <l>Verbrechen zu begünst'gen scheinen mag,</l>
+              <l>So nennen <rs ref="#uns-/-wir">wir</rs> es <rs ref="#Zufall">Zufall</rs>; doch <rs ref="#der-Mensch,---------------Der-ganz-besonnen-solche-Tat-erwählt">der Mensch,</l>
+              <l><rs ref="#der-Mensch,---------------Der-ganz-besonnen-solche-Tat-erwählt">Der</rs> ganz besonnen solche Tat erwählt</rs>,</l>
+              <l><pb n="235"/> <rs ref="#der-Mensch,---------------Der-ganz-besonnen-solche-Tat-erwählt">Er</rs> ist <rs ref="#ein-Rätsel">ein Rätsel</rs>. Doch – und bin ich nicht</l>
+              <l>Mir auch <rs ref="#ein-Rätsel">ein Rätsel</rs>, daß ich noch an <rs ref="#sekretaer">dir</rs></l>
+              <l>Mit solcher Neigung hänge, da <rs ref="#sekretaer">du</rs> mich</l>
+              <l>Zum jähen Abgrund hinzureißen strebst?</l>
+              <l>Warum, o! schuf <rs ref="#sekretaer">dich</rs> <rs ref="#der-Natur">die Natur</rs> von außen</l>
+              <l>Gefällig, liebenswert, unwiderstehlich,</l>
+              <l>Wenn <rs ref="#der-Natur">sie</rs> ein kaltes Herz in <rs ref="#sekretaer">deinen</rs> Busen,</l>
+              <l>Ein glückzerstörendes, zu pflanzen dachte?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l>An meiner Neigung Wärme zweifelst <rs ref="#hofmeisterin">du</rs>?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Ich würde mich vernichten, wenn ich's könnte.</l>
+              <l>Doch ach! warum, und mit verhaßtem Plan,</l>
+              <l>Aufs neue mich bestürmen? Schwurst <rs ref="#sekretaer">du</rs> nicht,</l>
+              <l>In ew'ge Nacht das Schrecknis zu begraben?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Ach, leider drängt sich's mächtiger hervor.</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)">Den jungen Fürsten</rs> zwingt <rs ref="#Man">man</rs> zum Entschluß.</l>
+              <l>Erst blieb <rs ref="#eugenie">Eugenie</rs> so manches Jahr</l>
+              <l>Ein unbedeutend unbekanntes Kind.</l>
+              <l><rs ref="#hofmeisterin">Du</rs> hast <rs ref="#eugenie">sie</rs> selbst von <rs ref="#eugenie">ihren</rs> ersten Tagen</l>
+              <l>In <rs ref="#Zimmer-Eugeniens">diesen alten Sälen</rs> auferzogen,</l>
+              <l>Von wenigen besucht und heimlich nur.</l>
+              <l>Doch wie verheimlichte <rs ref="#Vaterliebe">sich</rs> <rs ref="#Vaterliebe">Vaterliebe</rs>!</l>
+              <l><rs ref="#herzog">Der Herzog</rs>, stolz auf <rs ref="#eugenie"><rs ref="#herzog">seiner</rs> Tochter</rs> Wert,</l>
+              <l>Läßt nach und nach <rs ref="#eugenie">sie</rs> öffentlich erscheinen;</l>
+              <l><rs ref="#eugenie">Sie</rs> zeigt <rs ref="#eugenie">sich</rs> reitend, fahrend. <rs ref="#jeder">Jeder</rs> fragt</l>
+              <l>Und <rs ref="#jeder">jeder</rs> weiß zuletzt, woher <rs ref="#eugenie">sie</rs> sei.</l>
+              <l>Nun ist <rs ref="#Die-Fürstin-(eugenie-Mutter)">die Mutter</rs> tot. <rs ref="#Die-Fürstin-(eugenie-Mutter)">Der stolzen Frau</rs></l>
+              <l>War <rs ref="#eugenie">dieses Kind</rs> <rs ref="#ein-Greuel,-das-ihr-nur---------------Der-Neigung-Schwäche-vorzuwerfen-schien">ein Greuel, <rs ref="#ein-Greuel,-das-ihr-nur---------------Der-Neigung-Schwäche-vorzuwerfen-schien">das</rs> <rs ref="#Die-Fürstin-(eugenie-Mutter)">ihr</rs> nur</l>
+              <l>Der Neigung Schwäche vorzuwerfen schien</rs>.</l>
+              <l>Nie hat <rs ref="#Die-Fürstin-(eugenie-Mutter)">sie's</rs> anerkannt und kaum gesehn.</l>
+              <l>Durch <rs ref="#der-Fürstin-Tod"><rs ref="#Die-Fürstin-(eugenie-Mutter)">ihren</rs> Tod</rs> fühlt <rs ref="#herzog">sich</rs> <rs ref="#herzog">der Herzog</rs> frei,</l>
+              <l>Entwirft geheime Plane, nähert <rs ref="#herzog">sich</rs></l>
+              <l><rs ref="#dein-Hof-(könig)">Dem Hofe</rs> wieder und entsagt zuletzt</l>
+              <l>Dem alten Groll, versöhnt <rs ref="#herzog">sich</rs> mit <rs ref="#koenig">dem König</rs></l>
+              <l>Und macht <rs ref="#herzog">sich's</rs> zur Bedingung: <rs ref="#eugenie">dieses Kind</rs></l>
+              <l>Als Fürstin <rs ref="#herzog">seines</rs> Stamms erklärt zu sehn.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und gönnt <rs ref="#sekretaer">ihr</rs> <rs ref="#eugenie">dieser köstlichen Natur</l>
+              <l>Vom Fürstenblute</rs> nicht das Glück <rs ref="#Recht">des Rechts</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#hofmeisterin">Geliebte</rs>, <rs ref="#hofmeisterin">Teure</rs>! Sprichst <rs ref="#hofmeisterin">du</rs> doch so leicht,</l>
+              <l><pb n="236"/> Durch diese Mauern von der Welt geschieden,</l>
+              <l>In klösterlichem Sinne von <rs ref="#dem-Wert---------------Der-Erdengüter">dem Wert</l>
+              <l>Der Erdengüter</rs>. Blicke nur hinaus;</l>
+              <l>Dort wägt <rs ref="#Man">man</rs> besser <rs ref="#dem-Wert---------------Der-Erdengüter">solchen edlen Schatz</rs>.</l>
+              <l><rs ref="#Des-Vaters">Der Vater</rs> neidet <rs ref="#dem-Wert---------------Der-Erdengüter">ihn</rs> <rs ref="#dem-Sohn">dem Sohn</rs>, <rs ref="#dem-Sohn">der Sohn</rs></l>
+              <l>Berechnet <rs ref="#Des-Vaters"><rs ref="#dem-Sohn">seines</rs> Vaters</rs> Jahre, Brüder</l>
+              <l>Entzweit ein ungewisses Recht auf <rs ref="#des-Todes">Tod</rs></l>
+              <l>Und <rs ref="#des-Lebens">Leben</rs>. Selbst <rs ref="#der-Geistliche">der Geistliche</rs> vergißt,</l>
+              <l>Wohin <rs ref="#der-Geistliche">er</rs> streben soll, und strebt nach Gold.</l>
+              <l>Verdächte <rs ref="#Man">man's</rs> <rs ref="#Prinz-/-Sohn-(Herzog)">dem Prinzen, <rs ref="#Prinz-/-Sohn-(Herzog)">der</rs> <rs ref="#Prinz-/-Sohn-(Herzog)">sich</rs> stets</l>
+              <l>Als einz'gen Sohn gefühlt</rs>, wenn <rs ref="#Prinz-/-Sohn-(Herzog)">er</rs> <rs ref="#Prinz-/-Sohn-(Herzog)">sich</rs> nun</l>
+              <l><rs ref="#eugenie">Die Schwester</rs> nicht gefallen lassen will,</l>
+              <l><rs ref="#eugenie">Die</rs>, eingedrungen, ihm das Erbteil schmälert?</l>
+              <l><rs ref="#Man">Man</rs> stelle <rs ref="#Man">sich</rs> an <rs ref="#Prinz-/-Sohn-(Herzog)">seinen</rs> Platz und richte.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und ist <rs ref="#Prinz-/-Sohn-(Herzog)">er</rs> nicht schon jetzt ein reicher Fürst?</l>
+              <l>Und wird <rs ref="#Prinz-/-Sohn-(Herzog)">er's</rs> nicht durch <rs ref="#herzog"><rs ref="#Prinz-/-Sohn-(Herzog)">seines</rs> Vaters</rs> Tod</l>
+              <l><rs ref="#Zum-Übermaß">Zum Übermaß</rs>? Wie wär' ein Teil <rs ref="#der-Güter">der Güter</rs></l>
+              <l>So köstlich angelegt, wenn <rs ref="#Prinz-/-Sohn-(Herzog)">er</rs> dafür</l>
+              <l><rs ref="#eugenie">Die holde Schwester</rs> zu gewinnen wüßte!</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Willkürlich handeln ist <rs ref="#des-Reichen">des Reichen</rs> Glück!</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)">Er</rs> widerspricht der Fordrung <rs ref="#der-Natur">der Natur</rs>,</l>
+              <l>Der Stimme <rs ref="#das-Gesetz">des Gesetzes</rs>, <rs ref="#zur-Vernunft">der Vernunft</rs>,</l>
+              <l>Und spendet an <rs ref="#Zufall">den Zufall</rs> <rs ref="#der-Güter"><rs ref="#Prinz-/-Sohn-(Herzog)">seine</rs> Gaben</rs>.</l>
+              <l>Genug besitzen hieße darben. Alles</l>
+              <l>Bedürfte <rs ref="#Man">man</rs>! Unendlicher Verschwendung</l>
+              <l>Sind ungemeßne Güter wünschenswert.</l>
+              <l>Hier denke nicht zu raten, nicht zu mildern;</l>
+              <l>Kannst <rs ref="#hofmeisterin">du</rs> mit <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">uns</rs> nicht wirken, gib <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">uns</rs> auf.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und was denn wirken? Lange droht <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> schon</l>
+              <l>Von fern <rs ref="#dem-Glück-(eugenie)">dem Glück <rs ref="#eugenie">des liebenswürd'gen Kindes</rs></rs>.</l>
+              <l>Was habt <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> denn in <rs ref="#einer-unbemerkbaren-Feder"><rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">eurem</rs> furchtbarn Rat</rs></l>
+              <l>Beschlossen über <rs ref="#eugenie">sie</rs>? Verlangt <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> etwa,</l>
+              <l>Daß ich mich blind zu <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">eurer</rs> Tat geselle?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Mit nichten! Hören kannst und sollst <rs ref="#hofmeisterin">du</rs> gleich,</l>
+              <l>Was zu beginnen, was von <rs ref="#hofmeisterin">dir</rs> zu fordern</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">Wir</rs> selbst genötigt sind. <rs ref="#eugenie">Eugenien</rs></l>
+              <l>Sollst <rs ref="#hofmeisterin">du</rs> entführen! <rs ref="#eugenie">Sie</rs> muß dergestalt</l>
+              <l><pb n="237"/> Auf einmal aus <rs ref="#Welt">der Welt</rs> verschwinden, daß</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">Wir</rs> <rs ref="#eugenie">sie</rs> getrost als tot beweinen können.</l>
+              <l>Verborgen muß <rs ref="#eugenie">ihr</rs> künftiges Geschick,</l>
+              <l>Wie das Geschick <rs ref="#der-Toten">der Toten</rs>, ewig bleiben.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Lebendig weiht <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> <rs ref="#eugenie">sie</rs> <rs ref="#dem-Grabe">dem Grabe</rs>, mich</l>
+              <l>Bestimmt <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> tückisch zur Begleiterin.</l>
+              <l>Mich stoßt <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">ihr</rs> mit hinab. Ich soll mit <rs ref="#eugenie">ihr</rs>,</l>
+              <l>Mit <rs ref="#eugenie">der Verratnen</rs> die Verräterin,</l>
+              <l><rs ref="#der-Toten">Der Toten</rs> Schicksal vor <rs ref="#des-Todes">dem Tode</rs> teilen.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#hofmeisterin">Du</rs> führst <rs ref="#eugenie">sie</rs> hin und kehrest gleich zurück.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Soll <rs ref="#eugenie">sie</rs> <rs ref="#im-Kloster">im Kloster</rs> <rs ref="#eugenie">ihre</rs> Tage schließen?</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#im-Kloster">Im Kloster</rs> nicht; <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">wir</rs> mögen <rs ref="#solch-ein-Pfand">solch ein Pfand</rs></l>
+              <l><rs ref="#Der-Geistlichkeit">Der Geistlichkeit</rs> nicht anvertrauen, <rs ref="#Der-Geistlichkeit">die</rs></l>
+              <l><rs ref="#solch-ein-Pfand">Es</rs> leicht als Werkzeug gegen <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">uns</rs> gebrauchte.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>So soll <rs ref="#eugenie">sie</rs> nach <rs ref="#den-Inseln">den Inseln</rs>? Sprich es aus.</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <l><rs ref="#hofmeisterin">Du</rs> wirst's vernehmen! Jetzt beruh'ge <rs ref="#hofmeisterin">dich</rs>.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Wie kann ich ruhen bei <rs ref="#die-Gefahr">Gefahr</rs> und <rs ref="#der-Not">Not,</l>
+              <l><rs ref="#der-Not">Die</rs> <rs ref="#eugenie">meinen Liebling</rs>, <rs ref="#der-Not">die</rs> mich selbst bedräut</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Dein Liebling</rs> kann auch drüben glücklich sein,</l>
+              <l>Und <rs ref="#hofmeisterin">dich</rs> erwarten hier <rs ref="#Genuß">Genuß</rs> und <rs ref="#Wonne">Wonne</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>O schmeichelt <rs ref="#sekretaer">euch</rs> mit solcher Hoffnung nicht.</l>
+              <l>Was hilft's, in mich zu stürmen? zum Verbrechen</l>
+              <l>Mich anzulocken, mich zu drängen? <rs ref="#eugenie">Sie</rs>,</l>
+              <l><rs ref="#eugenie">Das hohe Kind</rs>, wird <rs ref="#euren-Plan-(eugenie-entfernen)"><rs ref="#sekretaer">euren</rs> Plan</rs> vereiteln.</l>
+              <l>Gedenkt nur nicht, <rs ref="#eugenie">sie</rs> als geduld'ges Opfer</l>
+              <l>Gefahrlos wegzuschleppen. <rs ref="#Dieser-Geist-(eugenie)">Dieser Geist,</l>
+              <l><rs ref="#Dieser-Geist-(eugenie)">Der</rs> mutvoll <rs ref="#eugenie">sie</rs> beseelt</rs>, ererbte Kraft</l>
+              <l>Begleiten <rs ref="#eugenie">sie</rs>, wohin <rs ref="#eugenie">sie</rs> geht, zerreißen</l>
+              <l><rs ref="#Das-falsche-Netz,-womit-ihr-sie-umgabt">Das falsche Netz, <rs ref="#Das-falsche-Netz,-womit-ihr-sie-umgabt">womit</rs> <rs ref="#sekretaer">ihr</rs> <rs ref="#eugenie">sie</rs> umgabt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Sie-festzuhalten"><rs ref="#eugenie">Sie</rs> festzuhalten</rs>, <rs ref="#Sie-festzuhalten">das</rs> gelinge <rs ref="#hofmeisterin">dir</rs>!</l>
+              <l>Willst <rs ref="#hofmeisterin">du</rs> mich überreden, daß <rs ref="#Des-Kindes">ein Kind</rs>,</l>
+              <l>Bisher im sanften Arm <rs ref="#Glück">des Glücks</rs> gewiegt,</l>
+              <l>Im unverhofften Fall <rs ref="#Besonnenheit">Besonnenheit</rs></l>
+              <l>Und <rs ref="#Die-Kraft">Kraft</rs>, <rs ref="#Geschick">Geschick</rs> und <rs ref="#Die-Klugheit">Klugheit</rs> zeigen werde?</l>
+              <l>Gebildet ist <rs ref="#Dieser-Geist-(eugenie)"><rs ref="#eugenie">ihr</rs> Geist</rs>, doch nicht <rs ref="#zur-Tat">zur Tat</rs>,</l>
+              <l>Und wenn <rs ref="#eugenie">sie</rs> richtig fühlt und weise spricht,</l>
+              <l>So fehlt noch viel, daß <rs ref="#eugenie">sie</rs> gemessen handle.</l>
+              <rs ref="#Des-Unerfahrnen-hoher,-freier-Mut"><l>Des Unerfahrnen hoher, freier Mut</l></rs>
+              <l><pb n="238"/> Verliert <rs ref="#Des-Unerfahrnen-hoher,-freier-Mut">sich</rs> leicht in Feigheit und <rs ref="#der-Verzweiflung">Verzweiflung</rs>,</l>
+              <l>Wenn <rs ref="#der-Not">sich</rs> <rs ref="#der-Not">die Not</rs> <rs ref="#Des-Unerfahrnen-hoher,-freier-Mut">ihm</rs> gegenüberstellt.</l>
+              <l>Was <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">wir</rs> gesonnen, führe <rs ref="#hofmeisterin">du</rs> es aus:</l>
+              <l>Klein wird <rs ref="#dem-Übel">das Übel</rs> werden, groß <rs ref="#Glück">das Glück</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>So gebt mir <rs ref="#Zeit">Zeit</rs>, zu prüfen und zu wählen!</l>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Der Augenblick des Handelns drängt <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">uns</rs> schon.</l>
+              <l><rs ref="#herzog">Der Herzog</rs> scheint gewiß, daß <rs ref="#herzog">ihm</rs> <rs ref="#koenig">der König</rs></l>
+              <l><rs ref="#An-jenem-Fest-(geburtstag-koenig)">Am nächsten Fest</rs> <rs ref="#die-hohe-Gunst">die hohe Gunst</rs> gewähren</l>
+              <l>Und <rs ref="#eugenie"><rs ref="#herzog">seine</rs> Tochter</rs> anerkennen wolle;</l>
+              <l>Denn Kleider und <rs ref="#Juwelen">Juwelen</rs> stehn bereit,</l>
+              <l>Im prächt'gen Kasten sämtlich eingeschlossen,</l>
+              <l>Wozu <rs ref="#koenig">er</rs> selbst die Schlüssel wohl verwahrt</l>
+              <l>Und <rs ref="#vom-Geheimnis">ein Geheimnis</rs> zu verwahren glaubt;</l>
+              <l><rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">Wir</rs> aber wissen's wohl und sind gerüstet.</l>
+              <l>Geschehen muß nun schnell das Überlegte.</l>
+              <l>Heut' abend hörst <rs ref="#hofmeisterin">du</rs> mehr. Nun lebe wohl!</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Auf düstern Wegen wirkt <rs ref="#sekretaer">ihr</rs> tückisch fort</l>
+              <l>Und wähnet, <rs ref="#sekretaer">euren</rs> Vorteil klar zu sehen.</l>
+              <l>Habt <rs ref="#sekretaer">ihr</rs> denn jeder Ahnung <rs ref="#sekretaer">euch</rs> verschlossen,</l>
+              <l>Daß über <rs ref="#Schuld">Schuld</rs> und <rs ref="#Unschuld">Unschuld</rs>, lichtverbreitend,</l>
+              <l>Ein rettend, rächend Wesen göttlich schwebt?</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>Wer wagt, <rs ref="#ein-Herrschendes">ein Herrschendes</rs> zu leugnen, <rs ref="#ein-Herrschendes">das</rs></l>
+              <l><rs ref="#ein-Herrschendes">Sich</rs> vorbehält, den Ausgang <rs ref="#unsrer-Taten-(allgemein-Taten-des-gen.-wir)"><rs ref="#uns-/-wir">unsrer</rs> Taten</rs></l>
+              <l>Nach <rs ref="#ein-Herrschendes">seinem</rs> einz'gen Willen zu bestimmen?</l>
+              <l>Doch <rs ref="#wer">wer</rs> hat <rs ref="#wer">sich</rs> zu <rs ref="#ein-Herrschendes">seinem</rs> hohen Rat</l>
+              <l>Gesellen dürfen? Wer <rs ref="#das-Gesetz">Gesetz</rs> und Regel,</l>
+              <l>Wonach es ordnend spricht, erkennen mögen?</l>
+              <l><rs ref="#Verstand">Verstand</rs> empfingen <rs ref="#uns-/-wir">wir</rs>, <rs ref="#uns-/-wir">uns</rs> mündig selbst</l>
+              <l><rs ref="#Im-ird'schen-Element">Im ird'schen Element</rs> zurecht zu finden,</l>
+              <l>Und was <rs ref="#uns-/-wir">uns</rs> nützt, ist <rs ref="#uns-/-wir">unser</rs> höchstes Recht.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und so verleugnet <rs ref="#sekretaer">ihr</rs> <rs ref="#das-Göttlichste">das Göttlichste</rs>,</l>
+              <l>Wenn <rs ref="#sekretaer">euch</rs> <rs ref="#Herz">des Herzens</rs> Winke nichts bedeuten.</l>
+              <l>Mich ruft <rs ref="#das-Göttlichste">es</rs> auf, <rs ref="#die-schreckliche-Gefahr">die schreckliche Gefahr</rs></l>
+              <l><rs ref="#eugenie">Vom holden Zögling</rs> kräftig abzuwenden,</l>
+              <l>Mich gegen <rs ref="#sekretaer">dich</rs> und gegen <rs ref="#Macht">Macht</rs> und <rs ref="#List">List</rs></l>
+              <l>Beherzt zu waffnen. Kein Versprechen soll,</l>
+              <l>Kein Drohn mich von der Stelle drängen. Hier,</l>
+              <l>Zu <rs ref="#ihrem-Heil-EUGENIE"><rs ref="#eugenie">ihrem</rs> Heil</rs> gewidmet, steh' ich fest.</l>
+            </lg>
+          </sp>
+          <sp who="#sekretaer">
+            <rs ref="#sekretaer"><speaker>SEKRETÄR.</speaker></rs>
+            <lg>
+              <l>O meine Gute! <rs ref="#ihrem-Heil-EUGENIE">dies <rs ref="#eugenie">ihr</rs> Heil</rs> vermagst</l>
+              <l><pb n="239"/> <rs ref="#hofmeisterin">Du</rs> ganz allein zu schaffen, <rs ref="#die-schreckliche-Gefahr">die Gefahr</rs></l>
+              <l>Von <rs ref="#eugenie">ihr</rs> zu wenden, magst <rs ref="#hofmeisterin">du</rs> ganz allein,</l>
+              <l>Und zwar, indem <rs ref="#hofmeisterin">du</rs> <rs ref="#Prinz-/-Sohn-(Herzog)-/-sekretaer">uns</rs> gehorchst. Ergreife</l>
+              <l><rs ref="#eugenie">Sie</rs> schnell, <rs ref="#eugenie">die holde Tochter</rs>, führe <rs ref="#eugenie">sie</rs>,</l>
+              <l>So weit <rs ref="#hofmeisterin">du</rs> kannst, hinweg, verbirg <rs ref="#eugenie">sie</rs> fern</l>
+              <l>Von <rs ref="#dem-Menschen">aller Menschen</rs> Anblick, denn – <rs ref="#hofmeisterin">Du</rs> schauderst,</l>
+              <l><rs ref="#hofmeisterin">Du</rs> fühlst, was ich zu sagen habe. Sei's,</l>
+              <l>Weil <rs ref="#hofmeisterin">du</rs> mich drängest, endlich auch gesagt:</l>
+              <l><rs ref="#eugenie">Sie</rs> zu entfernen, ist das Mildeste.</l>
+              <l>Willst <rs ref="#hofmeisterin">du</rs> zu <rs ref="#euren-Plan-(eugenie-entfernen)">diesem Plan</rs> nicht tätig wirken,</l>
+              <l>Denkst <rs ref="#hofmeisterin">du</rs>, <rs ref="#hofmeisterin">dich</rs> <rs ref="#euren-Plan-(eugenie-entfernen)">ihm</rs> geheim zu widersetzen,</l>
+              <l>Und wagtest <rs ref="#hofmeisterin">du</rs>, was ich <rs ref="#hofmeisterin">dir</rs> anvertraut,</l>
+              <l>Aus guter Absicht irgend zu verraten,</l>
+              <l>So liegt <rs ref="#eugenie">sie</rs> tot in <rs ref="#hofmeisterin">deinen</rs> Armen! Was</l>
+              <l>Ich selbst beweinen werde, muß geschehn.</l>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Die kühne Drohung überrascht mich nicht!</l>
+              <l>Schon lange seh' ich <rs ref="#dieses-Feuer">dieses Feuer</rs> glimmen,</l>
+              <l>Nun schlägt <rs ref="#dieses-Feuer">es</rs> bald in lichte Flammen aus.</l>
+              <l>Um <rs ref="#eugenie">dich</rs> zu retten, muß ich, <rs ref="#eugenie">liebes Kind</rs>,</l>
+              <l><rs ref="#eugenie">Dich</rs> <rs ref="#eugenie">deinem</rs> holden Morgentraum entreißen.</l>
+              <l>Nur eine Hoffnung lindert meinen Schmerz;</l>
+              <l>Allein <rs ref="#eugenie">sie</rs> schwindet, wie ich <rs ref="#eugenie">sie</rs> ergreife.</l>
+              <l><rs ref="#eugenie">Eugenie</rs>! wenn <rs ref="#eugenie">du</rs> entsagen könntest</l>
+              <l><rs ref="#Dem-hohen-Glück,-das-unermeßlich-scheint">Dem hohen Glück, <rs ref="#Dem-hohen-Glück,-das-unermeßlich-scheint">das</rs> unermeßlich scheint</rs>,</l>
+              <l>An <rs ref="#Dem-hohen-Glück,-das-unermeßlich-scheint">dessen</rs> Schwelle <rs ref="#eugenie">dir</rs> <rs ref="#die-Gefahr">Gefahr</rs> und <rs ref="#des-Todes">Tod</rs>,</l>
+              <l><rs ref="#Verbannung">Verbannung</rs> als ein Milderes begegnet.</l>
+              <l>O dürft' ich <rs ref="#eugenie">dich</rs> erleuchten! dürft' ich <rs ref="#eugenie">dir</rs></l>
+              <l>Verborgne Winkel öffnen, wo die Schar</l>
+              <l>Verschworener Verfolger tückisch lauscht!</l>
+              <l>Ach, schweigen soll ich! Leise kann ich nur</l>
+              <l><rs ref="#eugenie">Dich</rs> ahnungsvoll ermahnen; wirst <rs ref="#eugenie">du</rs> wohl</l>
+              <l>Im Taumel <rs ref="#Der-freud'gen-Überraschung"><rs ref="#eugenie">deiner</rs> Freude</rs> mich verstehen?</l>
+              <pb n="240"/>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Sei mir gegrüßt! <rs ref="#hofmeisterin">du</rs> <rs ref="#hofmeisterin">Freundin <rs ref="#mein-eigen-Herz-(eugenie)">meines Herzens</rs></rs>,</l>
+              <l>An Mutter Statt Geliebte, sei gegrüßt.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Mit Wonne drück' ich <rs ref="#eugenie">dich</rs> an <rs ref="#Im-Herzen-(hofmeisterin)">dieses Herz</rs>,</l>
+              <l><rs ref="#eugenie">Geliebtes Kind</rs>, und freue mich <rs ref="#der-Freude,---------------Die-reich-aus-Lebensfülle-dir-entquillt">der Freude,</l>
+              <l><rs ref="#der-Freude,---------------Die-reich-aus-Lebensfülle-dir-entquillt">Die</rs> reich aus Lebensfülle <rs ref="#eugenie">dir</rs> entquillt</rs>.</l>
+              <l>Wie heiter glänzt <rs ref="#Ihr-helles-Auge-(eugenie)"><rs ref="#eugenie">dein</rs> Auge</rs>! Welch <rs ref="#der-Entzückung">Entzücken</rs></l>
+              <l>Umschwebet <rs ref="#Mund-(eugenie)">Mund</rs> und <rs ref="#Wange-(eugenie)">Wange</rs>! Welches <rs ref="#Glück">Glück</rs></l>
+              <l>Drängt aus bewegtem Busen <rs ref="#Glück">sich</rs> hervor!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Ein großes Unheil hatte mich ergriffen:</l>
+              <l><rs ref="#Vom-Felsen">Vom Felsen</rs> stürzte <rs ref="#Roß">Roß</rs> und Reiterin.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>O Gott!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Sei ruhig! Siehst <rs ref="#hofmeisterin">du</rs> doch mich wieder,</l>
+              <l>Gesund und hochbeglückt, nach <rs ref="#diesem-Fall-(eugenie-ist-vom-Felsen-gefallen)">diesem Fall</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Und wie?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#hofmeisterin">Du</rs> sollst es hören, wie so schön</l>
+              <l>Aus diesem Übel <rs ref="#Glück">sich</rs> <rs ref="#Glück">das Glück</rs> entwickelt.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Ach! aus <rs ref="#Glück">dem Glück</rs> entwickelt oft <rs ref="#Glück">sich</rs> <rs ref="#Schmerz">Schmerz</rs>.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Sprich böser Vorbedeutung Wort nicht aus!</l>
+              <l>Und schrecke mich <rs ref="#Sorge">der Sorge</rs> nicht entgegen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>O möchtest <rs ref="#eugenie">du</rs> mir alles gleich vertrauen!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#dem-Menschen">allen Menschen</rs> <rs ref="#hofmeisterin">dir</rs> zuerst. Nur jetzt,</l>
+              <l><rs ref="#hofmeisterin">Geliebte</rs>, laß mich mir. Ich muß allein</l>
+              <l>Ins eigene Gefühl mich finden lernen.</l>
+              <l><rs ref="#hofmeisterin">Du</rs> weißt, wie hoch <rs ref="#herzog">mein Vater</rs> <rs ref="#herzog">sich</rs> erfreut,</l>
+              <l>Wenn unerwartet <rs ref="#herzog">ihm</rs> <rs ref="#ein-klein-Gedicht">ein klein Gedicht</rs></l>
+              <l>Entgegen kommt, wie mir's der Muse Gunst</l>
+              <l>Bei manchem Anlaß willig schenken mag.</l>
+              <l>Verlaß mich! Eben schwebt mir's heiter vor,</l>
+              <l>Ich muß <rs ref="#ein-klein-Gedicht">es</rs> haschen, sonst entschwindet's mir.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Wann soll, wie sonst, <rs ref="#vertrauter-Stunden-Reihe">vertrauter Stunden Reihe</rs></l>
+              <l>Mit reichlichen Gesprächen <rs ref="#hofmeisterin-/-eugenie">uns</rs> erquicken?</l>
+              <l>Wann öffnen <rs ref="#hofmeisterin-/-eugenie">wir</rs>, <rs ref="#zufriednen-Mädchen">zufriednen Mädchen</rs> gleich,</l>
+              <l><rs ref="#zufriednen-Mädchen">Die</rs> <rs ref="#zufriednen-Mädchen">ihren</rs> Schmuck einander wiederholt</l>
+              <l>Zu zeigen kaum ermüden, <rs ref="#hofmeisterin-/-eugenie">unsres</rs> Herzens</l>
+              <l><pb n="241"/> Geheimste Fächer, <rs ref="#hofmeisterin-/-eugenie">uns</rs> bequem und herzlich</l>
+              <l>Des wechselseit'gen Reichtums zu erfreuen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Auch <rs ref="#vertrauter-Stunden-Reihe">jene Stunden</rs> werden wiederkehren,</l>
+              <l>Von <rs ref="#vertrauter-Stunden-Reihe">deren</rs> stillem Glück <rs ref="#Man">man</rs> mit <rs ref="#Vertrauen">Vertrauen</rs>,</l>
+              <l><rs ref="#Man">Sich</rs> <rs ref="#Vertrauen">des Vertrauns</rs> erinnernd, gerne spricht.</l>
+              <l>Doch heute laß in <rs ref="#voller-Einsamkeit">voller Einsamkeit</rs></l>
+              <l>Mich das Bedürfnis jener Tage finden.</l>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>, nachher <rs ref="#hofmeisterin">Hofmeisterin</rs> außen.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE</speaker></rs>
+            <stage>eine Brieftasche hervorziehend.</stage>
+            <lg>
+              <l>Und nun geschwind zum Pergament, zum Griffel!</l>
+              <l>Ich hab' es ganz, und eilig fass' ich's auf,</l>
+              <l>Was ich <rs ref="#koenig">dem Könige</rs> zu <rs ref="#An-jenem-Fest-(geburtstag-koenig)">jener Feier,</l>
+              <l>Bei <rs ref="#An-jenem-Fest-(geburtstag-koenig)">der</rs> ich, neugeboren durch <rs ref="#deiner-Worte-(koenig)"><rs ref="#koenig">sein</rs> Wort</rs>,</l>
+              <l><rs ref="#des-Lebens">Ins Leben</rs> trete, herzlich widmen soll</rs>.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> rezitiert langsam und schreibt.</stage>
+            <lg>
+              <l>Welch Wonneleben wird hier ausgespendet!</l>
+              <l>Willst <rs ref="#koenig">du</rs>, <rs ref="#koenig">o Herr der obern Regionen</rs>,</l>
+              <l>Des Neulings Unvermögen nicht verschonen?</l>
+              <l>Ich sinke hin, von <rs ref="#koenig">Majestät</rs> geblendet.</l>
+              <l>Doch bald getrost zu <rs ref="#koenig">dir</rs> hinauf gewendet</l>
+              <l>Erfreut's mich, an dem Fuß der festen Thronen,</l>
+              <l>Ein Sprößling <rs ref="#koenig">deines</rs> Stamms, beglückt zu wohnen,</l>
+              <l>Und all mein frühes Hoffen ist vollendet.</l>
+              <l>So fließe denn der holde Born der Gnaden!</l>
+              <l>Hier will <rs ref="#die-treue-Brust">die treue Brust</rs> so gern verweilen</l>
+              <l>Und an der Liebe <rs ref="#koenig">Majestät</rs> <rs ref="#die-treue-Brust">sich</rs> fassen.</l>
+              <l>Mein Ganzes hängt an einem zarten Faden,</l>
+              <l>Mir ist, als müßt' ich unaufhaltsam eilen,</l>
+              <l><rs ref="#Das-Leben,-das-du-gabst">Das Leben, <rs ref="#Das-Leben,-das-du-gabst">das</rs> <rs ref="#koenig">du</rs> gabst</rs>, für <rs ref="#koenig">dich</rs> zu lassen.</l>
+            </lg>
+            <stage>Das Geschriebene mit Gefälligkeit betrachtend.</stage>
+            <lg>
+              <l>So hast <rs ref="#bewegtes-Herz">du</rs> lange nicht, <rs ref="#bewegtes-Herz">bewegtes Herz</rs>,</l>
+              <l><rs ref="#bewegtes-Herz">Dich</rs> in gemeßnen Worten ausgesprochen!</l>
+              <l>Wie glücklich, den Gefühlen <rs ref="#uns-/-wir">unsrer</rs> Brust</l>
+              <l>Für <rs ref="#ew'ge-Zeit">ew'ge Zeit</rs> den Stempel aufzudrücken!</l>
+              <l>Doch ist es wohl genug? Hier quillt es fort,</l>
+              <l>Hier quillt es auf! – <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">Du</rs> nahest, <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">großer Tag,</l>
+              <l><pb n="242"/> <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">Der</rs> <rs ref="#uns-/-wir">uns</rs> <rs ref="#koenig">den König</rs> gab und <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">der</rs> nun mich</l>
+              <l><rs ref="#koenig">Dem Könige</rs>, <rs ref="#herzog">dem Vater</rs>, mich mir selbst</l>
+              <l>Zu ungemeßner Wonne geben soll</rs>.</l>
+              <l><rs ref="#An-jenem-Fest-(geburtstag-koenig)">Dies hohe Fest</rs> verherrliche mein Lied!</l>
+              <l>Beflügelt drängt <rs ref="#Phantasie">sich</rs> <rs ref="#Phantasie">Phantasie</rs> voraus,</l>
+              <l><rs ref="#Phantasie">Sie</rs> trägt mich vor <rs ref="#Am-Throne">den Thron</rs> und stellt mich vor,</l>
+              <l><rs ref="#Phantasie">Sie</rs> gibt im Kreise mir –</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>außen.</stage>
+            <l><rs ref="#eugenie">Eugenie</rs>!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Was soll das?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Höre mich und öffne gleich!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Verhaßte Störung! Öffnen kann ich nicht.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#herzog">Vom Vater</rs> Botschaft!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#herzog">vom Vater</rs>? Gleich!</l>
+              <l>Da muß ich öffnen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Große Gaben scheint</l>
+              <l><rs ref="#herzog">Er</rs> <rs ref="#eugenie">dir</rs> zu schicken.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Warte!</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Hörst <rs ref="#eugenie">du</rs>?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Warte!</l>
+              <l>Doch wo verberg' ich <rs ref="#dieses-Blatt">dieses Blatt</rs>? Zu klar</l>
+              <l><rs ref="#dieses-Blatt">Spricht's</rs> <rs ref="#jene-Hoffnung">jene Hoffnung</rs> aus, <rs ref="#jene-Hoffnung">die</rs> mich beglückt.</l>
+              <l>Hier ist nichts zum Verschließen! Und bei mir</l>
+              <l><rs ref="#dieses-Blatt">Ist's</rs> nirgend sicher, diese Tasche kaum;</l>
+              <l>Denn meine Leute sind nicht alle treu.</l>
+              <l>Gar manches hat <rs ref="#Man">man</rs> schon mir, als ich schlief,</l>
+              <l>Durchblättert und entwendet. <rs ref="#Das-Geheimnis">Das Geheimnis</rs>,</l>
+              <l><rs ref="#Das-Geheimnis">Das größte, <rs ref="#Das-Geheimnis">das</rs> ich je gehegt</rs>, wohin,</l>
+              <l>Wohin verberg' <rs ref="#Das-Geheimnis">ich's</rs>?</l>
+            </lg>
+            <stage>Indem <rs ref="#eugenie">sie</rs> <rs ref="#eugenie">sich</rs> der Seitenwand nähert.</stage>
+            <lg>
+              <l>Wohl! Hier war es ja,</l>
+              <l>Wo <rs ref="#geheimer-Wandschrank">du</rs>, <rs ref="#geheimer-Wandschrank">geheimer Wandschrank</rs>, meiner Kindheit</l>
+              <l>Unschuldige Geheimnisse verbargst!</l>
+              <rs ref="#geheimer-Wandschrank"><l>Du, <rs ref="#geheimer-Wandschrank">den</rs> mir kindisch allausspähende,</l>
+              <l>Von Neugier und von Müßiggang erzeugte,</l>
+              <l>Rastlose Tätigkeit entdecken half</rs>,</l>
+              <l><rs ref="#geheimer-Wandschrank">Du</rs>, jedem <rs ref="#vom-Geheimnis">ein Geheimnis</rs>, öffne <rs ref="#geheimer-Wandschrank">dich</rs>!</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> drückt an <rs ref="#einer-unbemerkbaren-Feder">einer unbemerkbaren Feder</rs>, und <rs ref="#eine-kleine-Türe">eine kleine Türe</rs> springt
+              auf.</stage>
+            <lg>
+              <l><pb n="243"/> So wie ich sonst verbotnes Zuckerwerk</l>
+              <l>Zu listigem Genuß in <rs ref="#geheimer-Wandschrank">dir</rs> versteckte,</l>
+              <l>Vertrau' ich heute <rs ref="#meines-Lebens-(eugenie)">meines Lebens</rs> Glück</l>
+              <l>Entzückt und sorglich <rs ref="#geheimer-Wandschrank">dir</rs>, auf kurze Zeit.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> legt <rs ref="#dieses-Blatt">das Pergament</rs> in <rs ref="#geheimer-Wandschrank">den Schrank</rs> und drückt <rs ref="#geheimer-Wandschrank">ihn</rs> zu.</stage>
+            <lg>
+              <l>Die Tage schreiten vor, und ahnungsvoller</l>
+              <l>Bewegen <rs ref="#Schmerz-/-Freude">sich</rs> nun <rs ref="#Freude">Freud</rs>' und <rs ref="#Schmerz">Schmerz</rs> heran.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> öffnet <rs ref="#eine-kleine-Türe">die Türe</rs>.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>. <rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">Bediente, <rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">die</rs> <rs ref="#einen-prächtigen-Putzkasten">einen prächtigen Putzkasten</rs> tragen</rs>.</stage>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Wenn ich <rs ref="#eugenie">dich</rs> störte, führ' ich gleich mit mir,</l>
+              <l>Was mich gewiß entschuld'gen soll, herbei.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#herzog">meinem Vater</rs>? <rs ref="#einen-prächtigen-Putzkasten">dieser prächt'ge Schrein</rs>!</l>
+              <l>Auf welchen Inhalt deutet <rs ref="#einen-prächtigen-Putzkasten">solch Gefäß</rs>?</l>
+            </lg>
+            <stage><rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">Zu den Bedienten</rs>.</stage>
+            <l>Verweilt!</l>
+            <stage><rs ref="#eugenie">Sie</rs> reicht <rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">ihnen</rs> <rs ref="#einen-Beutel">einen Beutel</rs> hin.</stage>
+            <lg>
+              <l>Zum Vorschmack <rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">eures</rs> Botenlohns</l>
+              <l>Nehmt <rs ref="#einen-Beutel">diese Kleinigkeit</rs>, das Beßre folgt.</l>
+            </lg>
+            <stage><rs ref="#Bediente,-die-einen-prächtigen-Putzkasten-tragen">Bediente</rs> gehen.</stage>
+            <lg>
+              <l>Und ohne Brief und ohne Schlüssel! Steht</l>
+              <l>Mir solch <rs ref="#einen-prächtigen-Putzkasten">ein Schatz</rs> verborgen, in der Nähe?</l>
+              <l>O Neugier! O Verlangen! Ahnest <rs ref="#hofmeisterin">du</rs>,</l>
+              <l>Was <rs ref="#einen-prächtigen-Putzkasten">diese Gabe</rs> mir bedeuten kann?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Ich zweifle nicht, <rs ref="#eugenie">du</rs> hast es selbst erraten.</l>
+              <l>Auf nächste Hoheit deutet <rs ref="#einen-prächtigen-Putzkasten">sie</rs> gewiß.</l>
+              <rs ref="#Den-Schmuck-der-Fürstentochter-bringt-man-dir,---------------Weil-dich-der-König-bald-berufen-wird"><l><rs ref="#Den-Schmuck-der-Fürstentochter">Den Schmuck der Fürstentochter</rs> bringt <rs ref="#Man">man</rs> <rs ref="#eugenie">dir</rs>,</l>
+              <l>Weil <rs ref="#eugenie">dich</rs> <rs ref="#koenig">der König</rs> bald berufen wird</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Wie kannst <rs ref="#hofmeisterin">du</rs> <rs ref="#Den-Schmuck-der-Fürstentochter-bringt-man-dir,---------------Weil-dich-der-König-bald-berufen-wird">das</rs> vermuten?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Weiß ich's doch!</l>
+              <l>Geheimnisse <rs ref="#der-Großen">der Großen</rs> sind belauscht.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Und wenn <rs ref="#hofmeisterin">du's</rs> weißt, was soll ich <rs ref="#hofmeisterin">dir's</rs> verbergen?</l>
+              <l>Soll ich <rs ref="#Den-Aufgang-eines-neuen-Sterns">die Neugier</rs>, <rs ref="#einen-prächtigen-Putzkasten">dies Geschenk</rs> zu sehn,</l>
+              <l><pb n="244"/> Vor <rs ref="#hofmeisterin">dir</rs> umsonst bezähmen! – Hab' ich doch</l>
+              <l><rs ref="#der-Schlüssel-(EUGENIE)">Den Schlüssel</rs> hier! – <rs ref="#herzog">Der Vater</rs> zwar verbot's.</l>
+              <l>Doch was verbot <rs ref="#herzog">er</rs>? <rs ref="#vom-Geheimnis">Das Geheimnis</rs> nicht</l>
+              <l>Unzeitig zu entdecken; doch <rs ref="#hofmeisterin">dir</rs> ist</l>
+              <l><rs ref="#vom-Geheimnis">Es</rs> schon entdeckt. <rs ref="#hofmeisterin">Du</rs> kannst nicht mehr erfahren,</l>
+              <l>Als <rs ref="#hofmeisterin">du</rs> schon weißt, und schweigst nun, mir zu <rs ref="#Zur-Liebe">Liebe</rs>.</l>
+              <l>Was zaudern <rs ref="#hofmeisterin-/-eugenie">wir</rs>? Komm, laß <rs ref="#hofmeisterin-/-eugenie">uns</rs> öffnen! komm,</l>
+              <l>Daß <rs ref="#hofmeisterin-/-eugenie">uns</rs> <rs ref="#einen-prächtigen-Putzkasten">der Gaben</rs> hoher Glanz entzücke.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Halt ein! Gedenke des Verbots! Wer weiß,</l>
+              <l>Warum <rs ref="#herzog">der Herzog</rs> weislich so befohlen?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mit <rs ref="#Sinn">Sinn</rs> befahl <rs ref="#herzog">er</rs>, <rs ref="#zum-bestimmten-Zweck">zum bestimmten Zweck</rs>;</l>
+              <l><rs ref="#zum-bestimmten-Zweck">Der</rs> ist vereitelt: alles weißt <rs ref="#hofmeisterin">du</rs> schon.</l>
+              <l><rs ref="#hofmeisterin">Du</rs> liebst mich, bist verschwiegen, zuverlässig.</l>
+              <l>Laß <rs ref="#hofmeisterin-/-eugenie">uns</rs> <rs ref="#Zimmer-Eugeniens">das Zimmer</rs> schließen! das Geheime</l>
+              <l>Laß <rs ref="#hofmeisterin-/-eugenie">uns</rs> sogleich vertraulich untersuchen.</l>
+            </lg>
+            <stage><rs ref="#hofmeisterin">Sie</rs> schließt die Zimmertüre und eilt gegen <rs ref="#geheimer-Wandschrank">den Schrank</rs>.</stage>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage><rs ref="#eugenie">sie</rs> abhaltend.</stage>
+            <lg>
+              <l>Der prächt'gen Stoffe Gold und Farben Glanz,</l>
+              <l><rs ref="#Der-Perlen">Der Perlen</rs> Milde, der Juwelen Strahl</l>
+              <l>Bleib' im Verborgnen! Ach, <rs ref="#Der-prächt'gen-Stoff…-/-Der-Perlen-Milde-+-1">sie</rs> reizen <rs ref="#eugenie">dich</rs></l>
+              <l>Zu jenem Ziel unwiderstehlich auf.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Was <rs ref="#Der-prächt'gen-Stoff…-/-Der-Perlen-Milde-+-1">sie</rs> bedeuten, ist das Reizende.</l>
+            <stage><rs ref="#eugenie">Sie</rs> öffnet <rs ref="#geheimer-Wandschrank">den Schrank</rs>, an <rs ref="#eine-kleine-Türe">der Türe</rs> zeigen <rs ref="#Spiegel">sich</rs> <rs ref="#Spiegel">Spiegel</rs>.</stage>
+            <lg>
+              <l><rs ref="#Welch-köstliches-Gewand">Welch köstliches Gewand</rs> entwickelt <rs ref="#Welch-köstliches-Gewand">sich</rs>,</l>
+              <l>Indem ich's nur berühre, <rs ref="#meinem-Blick-(eugenie)">meinem Blick</rs>.</l>
+              <l>Und <rs ref="#Spiegel">diese Spiegel</rs>! fordern <rs ref="#Spiegel">sie</rs> nicht gleich,</l>
+              <l><rs ref="#Dem-Mädchen">Das Mädchen</rs> und <rs ref="#Den-Schmuck-der-Fürstentochter">den Schmuck</rs> vereint zu schildern?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Kreusas-tödliches-Gewand">Kreusas tödliches Gewand</rs> entfaltet,</l>
+              <l>So scheint es mir, <rs ref="#Kreusas-tödliches-Gewand">sich</rs> unter <rs ref="#meiner-Hand-(hofmeisterin)">meiner Hand</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Wie schwebt <rs ref="#Trübsinn">ein solcher Trübsinn</rs> <rs ref="#hofmeisterin">dir</rs> ums Haupt?</l>
+              <l>Denk' an beglückter Bräute frohes Fest.</l>
+              <l>Komm! Reiche mir die Teile, nach und nach.</l>
+              <l><rs ref="#Das-Unterkleid">Das Unterkleid</rs>! wie reich und süß durchflimmert</l>
+              <l><rs ref="#Das-Unterkleid">Sich</rs> rein des Silbers und der Farben Blitz.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>indem sie <rs ref="#eugenie">Eugenien</rs> <rs ref="#Das-Unterkleid">das Gewand</rs> umlegt.</stage>
+            <lg>
+              <l>Verbirgt <rs ref="#der-Gnade-Sonnenblick">sich</rs> je <rs ref="#der-Gnade-Sonnenblick">der Gnade Sonnenblick</rs>,</l>
+              <l>Sogleich ermattet solch ein Widerglanz.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-treues-Herz">Ein treues Herz</rs> verdient <rs ref="#Ein-treues-Herz">sich</rs> <rs ref="#diesen-Blick">diesen Blick</rs>,</l>
+              <l><pb n="245"/> Und wenn <rs ref="#diesen-Blick">er</rs> weichen wollte, zieht's <rs ref="#diesen-Blick">ihn</rs> an. –</l>
+              <l>Das Oberkleid, das goldne, schlage drüber,</l>
+              <l>Die Schleppe ziehe, weit verbreitet, nach.</l>
+              <l>Auch diesem Gold ist, mit Geschmack und <rs ref="#zur-Wahl">Wahl</rs>,</l>
+              <l><rs ref="#Der-Blumen">Der Blumen</rs> Schmelz metallisch aufgebrämt.</l>
+              <l>Und tret' ich so nicht schön umgeben auf?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Doch wird von <rs ref="#Kennern">Kennern</rs> mehr <rs ref="#die-Schönheit">die Schönheit</rs> selbst</l>
+              <l>In <rs ref="#die-Schönheit">ihrer</rs> eignen Herrlichkeit verehrt.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Das einfach Schöne soll <rs ref="#Kennern">der Kenner</rs> schätzen</l>
+              <l>Verziertes aber spricht der Menge zu. –</l>
+              <l>Nun leihe mir <rs ref="#Der-Perlen">der Perlen</rs> sanftes Licht,</l>
+              <l>Auch <rs ref="#Juwelen">der Juwelen</rs> leuchtende Gewalt.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Doch <rs ref="#mein-eigen-Herz-(eugenie)"><rs ref="#eugenie">deinem</rs> Herzen</rs>, <rs ref="#Dieser-Geist-(eugenie)"><rs ref="#eugenie">deinem</rs> Geist</rs> genügt</l>
+              <l>Nur eigner, innrer Wert und nicht <rs ref="#der-Schein">der Schein</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#der-Schein">Der Schein</rs>, was ist <rs ref="#der-Schein">er, <rs ref="#der-Schein">dem</rs> <rs ref="#das-Wesen">das Wesen</rs> fehlt</rs>?</l>
+              <l><rs ref="#das-Wesen">Das Wesen</rs>, wär' <rs ref="#das-Wesen">es</rs>, wenn <rs ref="#das-Wesen">es</rs> nicht erschiene?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und hast <rs ref="#eugenie">du</rs> nicht in diesen Mauern selbst</l>
+              <l>Der Jugend ungetrübte Zeit verlebt?</l>
+              <l>Am Busen <rs ref="#eugenie">deiner</rs> Liebenden, entzückt,</l>
+              <l>Verborgner Wonne Seligkeit erfahren?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Gefaltet kann <rs ref="#die-Knospe">die Knospe</rs> <rs ref="#die-Knospe">sich</rs> genügen</l>
+              <l>Solange <rs ref="#die-Knospe">sie</rs> des Winters Frost umgibt;</l>
+              <l>Nun schwillt vom Frühlingshauche Lebenskraft,</l>
+              <l>In Blüten bricht <rs ref="#die-Knospe">sie</rs> auf, an <rs ref="#ans-Licht">Licht</rs> und Lüfte.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Aus Mäßigkeit entspringt ein reines Glück.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Wenn <rs ref="#hofmeisterin">du</rs> ein mäßig Ziel <rs ref="#hofmeisterin">dir</rs> vorgesteckt.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Beschränktheit sucht <rs ref="#der-Genießende">sich</rs> <rs ref="#der-Genießende">der Genießende</rs>.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#hofmeisterin">Du</rs> überredest die Geschmückte nicht.</l>
+              <l>O daß <rs ref="#dieser-Saal">sich</rs> <rs ref="#dieser-Saal">dieser Saal</rs> erweiterte</l>
+              <l>Zum Raum des Glanzes, wo <rs ref="#koenig">der König</rs> thront!</l>
+              <l>Daß reicher Teppich unten, oben <rs ref="#Der-goldnen-Decke-Wölbung">sich</rs></l>
+              <l><rs ref="#Der-goldnen-Decke-Wölbung">Der goldnen Decke Wölbung</rs> breitete!</l>
+              <l>Daß hier im Kreise, vor <rs ref="#koenig">der Majestät</rs>,</l>
+              <l>Demütig stolz, <rs ref="#der-Großen">die Großen</rs>, angelacht</l>
+              <l>Von dieser Sonne, herrlich leuchteten!</l>
+              <l>Ich unter <rs ref="#der-Großen">diesen Ausgezeichneten</rs></l>
+              <l><rs ref="#An-jenem-Fest-(geburtstag-koenig)">Am schönsten Fest</rs> die Ausgezeichnete!</l>
+              <pb n="246"/>
+            </lg>
+            <lg>
+              <l>O laß mir dieser Wonne Vorgefühl,</l>
+              <l>Wenn aller Augen mich <rs ref="#dem-Ziel">zum Ziel</rs> erlesen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Zum Ziele der Bewundrung nicht allein,</l>
+              <l>Zum Ziel <rs ref="#Der-Neid">des Neides</rs> und des Hasses mehr.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Der Neider steht als Folie <rs ref="#Glück">des Glücks</rs>,</l>
+              <l>Der Hasser lehrt <rs ref="#uns-/-wir">uns</rs> immer wehrhaft bleiben.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Demütigung">Demütigung</rs> beschleicht die Stolzen oft.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Ich setz' <rs ref="#Demütigung">ihr</rs> Geistesgegenwart entgegen.</l>
+            <stage><rs ref="#geheimer-Wandschrank">Zum Schranke</rs> gewendet.</stage>
+            <lg>
+              <l>Noch haben <rs ref="#hofmeisterin-/-eugenie">wir</rs> nicht alles durchgesehn;</l>
+              <l>Nicht mich allein bedenk' ich diese Tage:</l>
+              <l>Für andre hoff' ich manche Kostbarkeit.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage><rs ref="#ein-Kästchen">ein Kästchen</rs> hervornehmend.</stage>
+            <l>Hier aufgeschrieben steht es: »Zu Geschenken«.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>So nimm voraus, was <rs ref="#hofmeisterin">dich</rs> vergnügen kann,</l>
+              <l>Von diesen Uhren, diesen Dosen. Wähle! –</l>
+              <l>Nein, überlege noch! Vielleicht verbirgt</l>
+              <l><rs ref="#Wünschenswerteres">Sich</rs> <rs ref="#Wünschenswerteres">Wünschenswerteres</rs> <rs ref="#einen-prächtigen-Putzkasten">im reichen Schrein</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>O fände <rs ref="#ein-kräft'ger-Talisman">sich</rs> <rs ref="#ein-kräft'ger-Talisman">ein kräft'ger Talisman</rs>,</l>
+              <l>Des trüben Bruders Neigung zu gewinnen!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Den-Widerwillen">Den Widerwillen</rs> tilge nach und nach</l>
+              <l>Des unbefangnen Herzens reines Wirken.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Doch <rs ref="#die-Partei,-die-seinen-Groll-bestärkt">die Partei, <rs ref="#die-Partei,-die-seinen-Groll-bestärkt">die</rs> <rs ref="#die-Partei,-die-seinen-Groll-bestärkt">seinen</rs> Groll bestärkt</rs>,</l>
+              <l>Auf ewig steht <rs ref="#die-Partei,-die-seinen-Groll-bestärkt">sie</rs> <rs ref="#eugenie">deinem</rs> Wunsch entgegen.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#die-Partei,-die-seinen-Groll-bestärkt">sie</rs> bisher <rs ref="#dem-Glück-(eugenie)">mein Glück</rs> zu hindern suchte,</l>
+              <l>Tritt nun <rs ref="#Entscheidung">Entscheidung</rs> unaufhaltsam ein,</l>
+              <l>Und ins Geschehne fügt <rs ref="#jedermann">sich</rs> <rs ref="#jedermann">jedermann</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#Das,-was-du-hoffest">Das, <rs ref="#Das,-was-du-hoffest">was</rs> <rs ref="#eugenie">du</rs> hoffest</rs>, noch ist's nicht geschehn.</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Doch als vollendet kann ich's wohl betrachten.</l>
+            <stage>Nach <rs ref="#geheimer-Wandschrank">dem Schrank</rs> gekehrt.</stage>
+            <l>Was liegt <rs ref="#ein-Kästchen">im langen Kästchen</rs>, oben an?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage><rs ref="#hofmeisterin">die</rs> <rs ref="#ein-Kästchen">es</rs> herausnimmt.</stage>
+            <lg>
+              <l>Die schönsten Bänder, frisch und neu gewählt –</l>
+              <l>Zerstreue nicht durch eitlen Flitterwesens</l>
+              <l>Neugierige Betrachtung <rs ref="#Dieser-Geist-(eugenie)"><rs ref="#eugenie">deinen</rs> Geist</rs>.</l>
+              <l>O wär' es möglich, daß <rs ref="#eugenie">du</rs> meinem Wort</l>
+              <l>Gehör verliehest, einen Augenblick!</l>
+              <l>Aus stillem Kreise trittst <rs ref="#eugenie">du</rs> nun heraus</l>
+              <l><pb n="247"/> In weite Räume, wo <rs ref="#eugenie">dich</rs> Sorgendrang,</l>
+              <l>Vielfach geknüpfte Netze, <rs ref="#des-Todes">Tod</rs> vielleicht</l>
+              <l>Von meuchelmörderischer Hand erwartet.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#hofmeisterin">Du</rs> scheinst mir krank! wie könnte sonst <rs ref="#dem-Glück-(eugenie)">mein Glück</rs></l>
+              <l><rs ref="#hofmeisterin">Dir</rs> fürchterlich, als <rs ref="#ein-Gespenst">ein Gespenst</rs>, erscheinen.</l>
+            </lg>
+            <stage>In <rs ref="#ein-Kästchen">das Kästchen</rs> blickend.</stage>
+            <lg>
+              <l>Was seh' ich? <rs ref="#Diese-Rolle">Diese Rolle</rs>! Ganz gewiß</l>
+              <l><rs ref="#Diese-Rolle">Das Ordensband der ersten Fürstentöchter</rs>!</l>
+              <l>Auch <rs ref="#Diese-Rolle">dieses</rs> werd' ich tragen! Nur geschwind!</l>
+              <l>Laß sehen, wie <rs ref="#Diese-Rolle">es</rs> kleidet! <rs ref="#Diese-Rolle">Es</rs> gehört</l>
+              <l>Zum ganzen Prunk; so sei auch <rs ref="#Diese-Rolle">das</rs> versucht!</l>
+            </lg>
+            <stage><rs ref="#Diese-Rolle">Das Band</rs> wird umgelegt.</stage>
+            <lg>
+              <l>Nun sprich <rs ref="#des-Todes">vom Tode</rs> nur! sprich von <rs ref="#die-Gefahr">Gefahr</rs>!</l>
+              <l>Was zieret mehr <rs ref="#Mann">den Mann</rs>, als wenn <rs ref="#Mann">er</rs> <rs ref="#Mann">sich</rs></l>
+              <l><rs ref="#Im-Heldenschmuck">Im Heldenschmuck</rs> zu <rs ref="#Mann">seinem</rs> Könige,</l>
+              <l><rs ref="#Mann">Sich</rs> unter <rs ref="#Mann">seinesgleichen</rs> stellen kann?</l>
+              <l>Was reizt <rs ref="#das-Auge">das Auge</rs> mehr als <rs ref="#Im-Heldenschmuck">jenes Kleid,</l>
+              <l><rs ref="#Im-Heldenschmuck">Das</rs> kriegerische lange Reihen zeichnet</rs>?</l>
+              <l>Und <rs ref="#Im-Heldenschmuck">dieses Kleid</rs> und <rs ref="#seine-Farben"><rs ref="#Im-Heldenschmuck">seine</rs> Farben</rs>, sind</l>
+              <l><rs ref="#seine-Farben">Sie</rs> nicht ein Sinnbild ewiger Gefahr?</l>
+              <l>Die Schärpe deutet Krieg, womit <rs ref="#ein-edler-Mann">sich</rs>, stolz</l>
+              <l>Auf <rs ref="#ein-edler-Mann">seine</rs> Kraft, <rs ref="#ein-edler-Mann">ein edler Mann</rs> umgürtet.</l>
+              <l>O <rs ref="#hofmeisterin">meine Liebe</rs>! <rs ref="#Was2">Was</rs> bedeutend schmückt,</l>
+              <l><rs ref="#Was2">Es</rs> ist durchaus gefährlich. Laß auch mir</l>
+              <l><rs ref="#Das-Mutgefühl,-was-mir-begegnen-kann">Das Mutgefühl, <rs ref="#Das-Mutgefühl,-was-mir-begegnen-kann">was</rs> mir begegnen kann</rs>,</l>
+              <l>So prächtig ausgerüstet, zu erwarten.</l>
+              <l>Unwiderruflich, <rs ref="#hofmeisterin">Freundin</rs>, bleibt <rs ref="#dem-Glück-(eugenie)">mein Glück</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>beiseite.</stage>
+            <l><rs ref="#Das-Schicksal,-das-dich-trifft">Das Schicksal, <rs ref="#Das-Schicksal,-das-dich-trifft">das</rs> <rs ref="#eugenie">dich</rs> trifft</rs>, unwiderruflich.</l>
+            <pb n="248"/>
+          </sp>
+        </div>
+    </body>
+  </text>
+</TEI>
+</#root>

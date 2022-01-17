@@ -1,0 +1,241 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Platz <rs ref="#am-Hafen">am Hafen</rs>.</stage>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage><rs ref="#hofmeisterin-/-eugenie">Die Vorigen</rs>. <rs ref="#aebtissin">Äbtissin</rs>. <rs ref="#zwei-der-Ihren">Zwei Nonnen</rs>.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Betäubt, verworren, mit mir selbst entzweit</l>
+              <l>Und mit <rs ref="#Welt">der Welt</rs>, <rs ref="#aebtissin">verehrte heil'ge Jungfrau</rs>,</l>
+              <l>Siehst <rs ref="#aebtissin">du</rs> mich hier. Die Angst <rs ref="#im-Augenblick">des Augenblicks</rs>,</l>
+              <l>Die Sorge für <rs ref="#Zukunft">die Zukunft</rs> treiben mich</l>
+              <l>In <rs ref="#deine-Gegenwart,-in-der-ich-Lindrung---------------Des-ungeheuren-Übels-hoffen-darf"><rs ref="#aebtissin">deine</rs> Gegenwart, in <rs ref="#deine-Gegenwart,-in-der-ich-Lindrung---------------Des-ungeheuren-Übels-hoffen-darf">der</rs> ich <rs ref="#Linderung">Lindrung</rs></l>
+              <l><rs ref="#solch-ungeheures-Übel">Des ungeheuren Übels</rs> hoffen darf</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#aebtissin">
+            <rs ref="#aebtissin"><speaker>ÄBTISSIN.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#der-Ruhe">Ruhe</rs>, wenn <rs ref="#Besonnenheit">Besonnenheit</rs> und <rs ref="#Friede---------------Mit-Gott">Friede</l>
+              <l>Mit <rs ref="#Gott">Gott</rs></rs> und <rs ref="#uns-/-wir">unserm</rs> eignen Herzen <rs ref="#Friede---------------Mit-Gott">sich</rs></l>
+              <l>Mitteilen läßt, so soll es, <rs ref="#eugenie">edle Fremde,</rs></l>
+              <l>Nicht fehlen an der Lehre treuem Wort,</l>
+              <l><rs ref="#eugenie">Dir</rs> einzuflößen, was der Meinen Glück</l>
+              <l>Und meins, für heut' so wie auf ewig, fördert.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Unendlich ist <rs ref="#mein-Übel">mein Übel</rs>, schwerlich möcht'</l>
+              <l><rs ref="#mein-Übel">Es</rs> durch der Worte göttliche Gewalt</l>
+              <l>Sogleich zu heilen sein. O nimm mich auf</l>
+              <l>Und laß mich weilen, wo <rs ref="#aebtissin">du</rs> weilst, mich erst</l>
+              <l>In <rs ref="#Tränen">Tränen</rs> lösen <rs ref="#diese-Bangigkeit">diese Bangigkeit</rs></l>
+              <l>Und mein erleichtert Herz <rs ref="#Trost">dem Troste</rs> weihen!</l>
+              <pb n="287"/>
+            </lg>
+          </sp>
+          <sp who="#aebtissin">
+            <rs ref="#aebtissin"><speaker>ÄBTISSIN.</speaker></rs>
+            <lg>
+              <l>Wohl hab' ich oft im heiligen Bezirk</l>
+              <l>Der Erde <rs ref="#Tränen">Tränen</rs> <rs ref="#Tränen">sich</rs> in göttlich Lächeln</l>
+              <l>Verwandeln sehn, in himmlisches Entzücken,</l>
+              <l>Doch drängt <rs ref="#Man">man</rs> <rs ref="#Man">sich</rs> gewaltsam nicht herein:</l>
+              <l>Gar manche Prüfung muß <rs ref="#eugenie">die neue Schwester</rs></l>
+              <l>Und <rs ref="#eugenie">ihren</rs> ganzen Wert uns erst entwickeln.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Entschiedner Wert ist leicht zu kennen, leicht,</l>
+              <l>Was <rs ref="#aebtissin">du</rs> bedingen möchtest, zu erfüllen.</l>
+            </lg>
+          </sp>
+          <sp who="#aebtissin">
+            <rs ref="#aebtissin"><speaker>ÄBTISSIN.</speaker></rs>
+            <lg>
+              <l>Ich zweifle nicht am Adel <rs ref="#die-Geburt">der Geburt</rs>,</l>
+              <l>Nicht am Vermögen, <rs ref="#dieses-Hauses-Rechte,---------------Die-groß-und-wichtig-sind">dieses Hauses Rechte,</l>
+              <l><rs ref="#dieses-Hauses-Rechte,---------------Die-groß-und-wichtig-sind">Die</rs> groß und wichtig sind</rs>, <rs ref="#eugenie">dir</rs> zu gewinnen.</l>
+              <l>Drum laßt mich bald vernehmen, was <rs ref="#eugenie">ihr</rs> denkt.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Gewähre meine Bitte, nimm mich auf!</l>
+              <l>Verbirg mich vor <rs ref="#Welt">der Welt</rs>, im tiefsten Winkel,</l>
+              <l>Und meine ganze Habe nimm dahin.</l>
+              <l>Ich bringe viel und hoffe mehr zu leisten.</l>
+            </lg>
+          </sp>
+          <sp who="#aebtissin">
+            <rs ref="#aebtissin"><speaker>ÄBTISSIN.</speaker></rs>
+            <lg>
+              <l>Kann <rs ref="#koenig">uns</rs> <rs ref="#Jugend">die Jugend</rs>, <rs ref="#koenig">uns</rs> <rs ref="#die-Schönheit">die Schönheit</rs> rühren,</l>
+              <l>Ein edles Wesen, spricht's an <rs ref="#unser-Herz"><rs ref="#koenig">unser</rs> Herz</rs>,</l>
+              <l>So hast <rs ref="#eugenie">du</rs> <rs ref="#Recht">viele Rechte</rs>, <rs ref="#eugenie">gutes Kind</rs>.</l>
+              <l><rs ref="#eugenie">Geliebte Tochter</rs>! komm an meine Brust!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mit diesem Wort, mit diesem Herzensdruck</l>
+              <l>Besänftigst <rs ref="#aebtissin">du</rs> auf einmal alles Toben</l>
+              <l>Der aufgeregten Brust. Die letzte Welle</l>
+              <l>Umspielt mich weichend noch. Ich bin im Hafen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>dazwischentretend.</stage>
+            <lg>
+              <l>Wenn nicht ein grausam Schicksal widerstünde!</l>
+              <l>Betrachte dieses Blatt, uns zu beklagen.</l>
+            </lg>
+            <stage><rs ref="#hofmeisterin">Sie</rs> reicht <rs ref="#aebtissin">der Äbtissin</rs> <rs ref="#diesem-Blatt,---------------Das-mich-zu-solcher-schweren-Tat-berechtigt">das Blatt</rs>.</stage>
+          </sp>
+          <sp who="#aebtissin">
+            <rs ref="#aebtissin"><speaker>ÄBTISSIN</speaker></rs>
+            <stage><rs ref="#aebtissin">die</rs> gelesen.</stage>
+            <lg>
+              <l>Ich muß <rs ref="#hofmeisterin">dich</rs> tadeln, daß <rs ref="#hofmeisterin">du</rs> wissentlich</l>
+              <l>So manch vergeblich Wort mit angehört.</l>
+              <l>Ich beuge vor <rs ref="#der-höhern-Hand">der höhern Hand</rs> mich tief,</l>
+              <l><rs ref="#der-höhern-Hand">Die</rs> hier zu walten scheint.</l>
+              <pb n="288"/>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

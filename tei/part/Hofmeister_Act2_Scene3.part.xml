@@ -1,0 +1,511 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Akt</head>
+        <div type="scene">
+          <head>Dritte Szene</head>
+          <stage>Zu <rs ref="#Halle-in-Sachsen">Halle in Sachsen</rs>.</stage>
+          <stage><rs ref="#paetus">Pätus</rs>' Zimmer.</stage>
+          <stage><rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz von Berg</rs>. <rs ref="#paetus">Pätus</rs>, <rs ref="#im-Schlafrock-(pätus)">im Schlafrock</rs> an einem Tisch sitzend.</stage>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ei was <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>! <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> bist ja kein Kind mehr, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> nach Papa und Mama – Pfui <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">Teufel</rs>! ich
+              hab <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> allezeit für <rs ref="#einen-braven-Kerl-(prädikativ-fritz,-als-anständiger-kerl)">einen braven Kerl</rs> gehalten, wenn <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> nicht mein Schulkamerad
+              wärst: ich würde mich schämen, mit <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs> umzugehen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Pätus</rs>, auf meine Ehr, es ist nicht <rs ref="#dem-dummen-Verdacht">Heimweh</rs>, <rs ref="#paetus">du</rs> machst mich bis über die Ohren rot mit
+              <rs ref="#dem-dummen-Verdacht">dem dummen Verdacht</rs>. <rs ref="#das21">Ich möchte gern Nachricht von <rs ref="#Hause-(familie-berg-in-insterburg)">Hause</rs> haben</rs>, <rs ref="#das21">das</rs> gesteh ich, aber
+              <rs ref="#das21">das</rs> hat <rs ref="#das21">seine</rs> Ursachen – –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#gustchen-(tochter-majors)">Gustchen</rs> – Nicht wahr? Denk doch, <rs ref="#fritz-(berg-sohn-geheimer-rat)">du arme Seele</rs>! Hundertachtzig Stunden von <rs ref="#gustchen-(tochter-majors)">ihr</rs>
+              entfernt – Was für Wälder und <rs ref="#Ströme">Ströme</rs> liegen nicht zwischen <rs ref="#fritz-(sohn-geheimer…-/-gustchen-(tochter-ma…">euch</rs>? Aber warte, <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> haben
+              hier auch <rs ref="#die-Weiber">Mädchen</rs>; wenn ich nur besser besponnen wäre, ich wollte <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> heut in eine
+              Gesellschaft führen – Ich weiß nicht, wie <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> auch bist; <rs ref="#das22">ein Jahr in <rs ref="#Halle-in-Sachsen">Halle</rs> und noch mit
+              keinem Mädchen gesprochen</rs>: <rs ref="#das22">das</rs> muß melancholisch machen; es kann nicht anders sein.
+              Warte, <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> mußt mir <rs ref="#hier-(haus-in-dem-pätus-in-halle-lebt)">hier</rs> einziehen, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> lustig wirst. Was machst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> da bei dem
+              Pfarrer? Das ist keine Stube für <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <rs ref="#es9"><p>Was zahlst <rs ref="#paetus">du</rs> <rs ref="#hier-(haus-in-dem-pätus-in-halle-lebt)">hier</rs>?</p></rs>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ich zahle – Wahrhaftig, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Bruder</rs>, ich weiß <rs ref="#es9">es</rs> nicht. <rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">Es</rs> ist ein guter ehrlicher
+              Philister, bei <rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">dem</rs> ich wohne; <rs ref="#mag's"><rs ref="#frau_blitzer-yyy"><rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">seine</rs> Frau</rs> ist freilich bisweilen ein bißchen
+              wunderlich</rs>, aber <rs ref="#mag's">mag's</rs>. Was <rs ref="#mag's">geht's</rs> mich an? Wir zanken uns einmal herum und denn laß
+              ich <rs ref="#frau_blitzer-yyy">sie</rs> laufen: und <rs ref="#frau_blitzer/-herr-blitzer">die</rs> schreiben mir alles auf, Hausmiete, <rs ref="#Kaffee-(den-pätus-verlangt)">Kaffee</rs>, Tabak, alles was
+              ich verlange, und denn zahl ich die Rechnung alle Jahre, wenn <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">mein Wechsel</rs> kommt.</p>
+            <pb n="33"/>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Bist <rs ref="#paetus">du</rs> jetzt viel schuldig?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ich habe die vorige Woche bezahlt. Das ist wahr, diesmal haben <rs ref="#frau_blitzer/-herr-blitzer">sie</rs> <rs ref="#mir's-(das-auskommen,-die-finanzielle-lage-pätus)">mir's</rs> arg gemacht:
+              <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">mein ganzer Wechsel</rs> hat herhalten müssen bis auf den letzten Pfennig, und <rs ref="#mein-Rock,---------------den-ich-Tags-vorher-versetzt-hatte-(pätus)">mein Rock,
+              <rs ref="#mein-Rock,---------------den-ich-Tags-vorher-versetzt-hatte-(pätus)">den</rs> ich Tags vorher versetzt hatte</rs>, weil ich in <rs ref="#der-äußersten-Not-(finanzielle,-pätus)">der äußersten Not</rs> war, steht noch zu
+              Gevattern. Weiß <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">der Himmel</rs>, wenn ich <rs ref="#mein-Rock,---------------den-ich-Tags-vorher-versetzt-hatte-(pätus)">ihn</rs> wieder einlösen kann.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Und wie machst <rs ref="#mir's-(das-auskommen,-die-finanzielle-lage-pätus)">du's</rs> denn itzt?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ich? – Ich bin krank. Heut morgen hat mich <rs ref="#frau_hamster">die Frau Rätin Hamster</rs> invitieren lassen,
+              gleich kroch ich ins Bett ...</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Aber <rs ref="#das23">bei <rs ref="#dem-schönen-Wetter">dem schönen Wetter</rs> immer zu <rs ref="#hier-(haus-in-dem-pätus-in-halle-lebt)">Hause</rs> zu sitzen</rs>.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Was macht <rs ref="#das23">das</rs>? des Abends geh ich <rs ref="#im-Schlafrock-(pätus)">im Schlafrock</rs> spazieren, <rs ref="#dem-schönen-Wetter">es</rs> ist ohnedem in <rs ref="#den---------------Hundstagen">den
+              Hundstagen</rs> <rs ref="#Tag-(am-tag)">am Tage</rs> nicht auszuhalten – Aber Potz Mordio! Wo bleibt denn <rs ref="#Kaffee-(den-pätus-verlangt)">mein Kaffee</rs>?
+                <stage>Pocht mit <rs ref="#dem-Fuß-(pätus)-unbest-welcher)">dem Fuß</rs>.</stage> <rs ref="#frau_blitzer-yyy">Frau Blitzer</rs>! – Nun sollst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> sehn, wie ich <rs ref="#frau_blitzer/-herr-blitzer">meinen
+              Leuten</rs> umspringe – <rs ref="#frau_blitzer-yyy">Frau Blitzer</rs>! in <rs ref="#tausend-alle-Welt-(als-fluch-oder-floskel)">aller Welt</rs> <rs ref="#frau_blitzer-yyy">Frau Blitzer</rs>. <stage>Klingelt und
+                pocht.</stage> – Ich habe <rs ref="#frau_blitzer/-herr-blitzer">sie</rs> kürzlich bezahlt: nun kann ich schon breiter tun –
+              <rs ref="#frau_blitzer-yyy">Frau ...</rs></p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER</speaker></rs>
+            <stage>tritt herein mit <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">einer Portion Kaffee</rs>.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>In <rs ref="#tausend-alle-Welt-(als-fluch-oder-floskel)">aller Welt</rs>, <rs ref="#frau_blitzer-yyy">Mutter</rs>! wo bleibst <rs ref="#frau_blitzer-yyy">du</rs> denn? <rs ref="#Das-Wetter">Das Wetter</rs> soll <rs ref="#frau_blitzer-yyy">dich</rs> regieren. Ich warte
+              hier schon über eine Stunde –</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER.</speaker></rs>
+            <p>Was? <rs ref="#paetus">Du nichtsnutziger Kerl</rs>, was lärmst du? Bist <rs ref="#paetus">du</rs> schon wieder nichts nutz,
+              abgeschabte Laus? Den Augenblick trag ich <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">meinen Kaffee</rs> wieder herunter –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>gießt <rs ref="#paetus">sich</rs> ein.</stage>
+            <p>Nun, nun, nicht so böse <rs ref="#frau_blitzer-yyy">Mutter</rs>! aber <rs ref="#Zwieback">Zwieback</rs> – Wo ist denn <rs ref="#Zwieback">Zwieback</rs>?</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER.</speaker></rs>
+            <p>Ja, kleine Steine <rs ref="#paetus">dir</rs>! Es ist kein Zwieback <rs ref="#hier-(haus-in-dem-pätus-in-halle-lebt)">im Hause</rs>. Denk doch, ob <rs ref="#so-ein-kahler---------------lausigter-Kerl-(vom-typ-pätus)">so ein kahler
+              lausigter Kerl</rs> nun alle Nachmittag <rs ref="#Zwieback">Zwieback</rs> frißt oder nicht – –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Was <rs ref="#tausend-alle-Welt-(als-fluch-oder-floskel)">tausend alle Welt</rs>! <stage>Stampft mit dem Fuß.</stage> <rs ref="#frau_blitzer-yyy">Sie</rs> <pb n="34"/> weiß, daß
+              ich keinen Kaffee ohne Zwieback <rs ref="#ins-Maul-(pätus-mund)">ins Maul</rs> nehme – Wofür gebe ich denn <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">mein Geld</rs> aus
+              –</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER</speaker></rs>
+            <stage>langt ihm <rs ref="#Zwieback-(tatsächlicher,-pätus)">Zwieback</rs> aus der Schürze, wobei <rs ref="#frau_blitzer-yyy">sie</rs> ihn an den Haaren zupft.</stage>
+            <p>Da siehst <rs ref="#paetus">du</rs>, da ist <rs ref="#Zwieback-(tatsächlicher,-pätus)">Zwieback</rs>, Posaunenkerl! <rs ref="#paetus">Er</rs> hat eine Stimme wie ein ganzes
+              Regiment Soldaten. Nu, <rs ref="#mir's3">ist <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">der Kaffee</rs> gut</rs>? Ist <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">er</rs> nicht? Gleich sag <rs ref="#mir's3">mir's</rs>, oder ich
+              reiß <rs ref="#paetus">Ihm</rs> <rs ref="#das-letzte-Haar-(pätus-übrige-haare)">das letzte Haar</rs> aus <rs ref="#Seinem-kahlen-Kopf-(pätus)"><rs ref="#paetus">Seinem</rs> kahlen Kopf</rs> heraus.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>trinkt.</stage>
+            <p>Unvergleichlich – Aye! – Ich hab in <rs ref="#meinem-Leben-(lebenszeit-pätus)">meinem Leben</rs> keinen bessern getrunken.</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER.</speaker></rs>
+            <p>Siehst <rs ref="#paetus">du Hundejunge</rs>! Wenn <rs ref="#paetus">du</rs> <rs ref="#frau_blitzer-yyy">die Mutter</rs> nicht hättest, <rs ref="#frau_blitzer-yyy">die</rs> <rs ref="#frau_blitzer-yyy">sich</rs> deiner annähme und
+              <rs ref="#paetus">dir</rs> zu essen und zu trinken gäbe, <rs ref="#paetus">du</rs> müßtest an <rs ref="#der-Straße-(gasse)">der Straße</rs> verhungern. Sehen <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> <rs ref="#paetus">ihn</rs>
+              einmal an, Herr von Berg, wie <rs ref="#paetus">er</rs> daher geht, keinen Rock auf <rs ref="#dem-Leibe-(körper-pätus)">dem Leibe</rs> und <rs ref="#im-Schlafrock-(pätus)"><rs ref="#paetus">sein</rs>
+              Schlafrock</rs> ist auch, als ob <rs ref="#paetus">er</rs> <rs ref="#im-Schlafrock-(pätus)">darin</rs> wär aufgehenkt worden und wieder vom Galgen
+              gefallen. <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> sind doch <rs ref="#einen-braven-Kerl-(prädikativ-fritz,-als-anständiger-kerl)">ein hübscher Herr</rs>, ich weiß nicht wie <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> mit <rs ref="#paetus">dem Menschen</rs>
+              umgehen können, nun freilich unter Landsleuten da ist immer so eine kleine
+              Blutsverwandtschaft, drum sag ich immer, wenn doch <rs ref="#fritz-(berg-sohn-geheimer-rat)">der Herr von Berg</rs> zu <rs ref="#frau_blitzer/-herr-blitzer">uns</rs>
+              einlogieren täte. Ich weiß, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> viel Gewalt über <rs ref="#paetus">ihn</rs> haben: da könnte doch noch
+              <rs ref="#was-Ordentliches-(prädikativ-pätus-als-anständiger-mensch">was Ordentliches</rs> aus <rs ref="#paetus">ihm</rs> werden, aber sonst wahrhaftig –</p>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Siehst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, ist <rs ref="#frau_blitzer-yyy">das</rs> nicht <rs ref="#ein-gut-fidel-Weib-(prädikativ-frau-blitzer)">ein gut fidel Weib</rs>. Ich seh <rs ref="#frau_blitzer-yyy">ihr</rs> all etwas durch die Finger,
+              aber potz, wenn ich auch einmal ernsthaft werde, kusch ist <rs ref="#frau_blitzer-yyy">sie</rs> wie die Wand – Willst
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> nicht eine Tasse mit trinken? <stage>Gießt <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> ein.</stage> Siehst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>, ich bin hier
+              wohl bedient; <rs ref="#das24">ich zahle <rs ref="#fünfhundert-Gulden---------------jährlich-(miete-pätus)">was Rechts</rs></rs>, <rs ref="#das24">das</rs> ist wahr, aber dafür hab ich auch was ...</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ</speaker></rs>
+            <stage>trinkt.</stage>
+            <p><rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">Der Kaffee</rs> schmeckt nach <rs ref="#Gerste">Gerste</rs>.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Was sagst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs>? – <stage>Schmeckt gleichfalls.</stage> Ja wahrhaftig, mit <rs ref="#Zwieback-(tatsächlicher,-pätus)">dem Zwieback</rs>
+              hab <rs ref="#Gerste">ich's</rs> nicht so – <stage>Sieht in <rs ref="#die-Kanne">die Kanne</rs>.</stage> Nun so hol <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">dich</rs>! <stage><rs ref="#das25">Wirft
+                <rs ref="#die-Kanne">das Kaffeezeug</rs> zum <rs ref="#Fenster-(pätus-zimmer)">Fenster</rs> hinaus</rs>.</stage> <rs ref="#einer-Portion-Kaffee-(pätus-tatsächlicher)">Gerstenkaffee</rs> und <rs ref="#fünfhundert-Gulden---------------jährlich-(miete-pätus)">fünfhundert Gulden
+              jährlich</rs>! –</p>
+            <pb n="35"/>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER</speaker></rs>
+            <stage>stürzt herein.</stage>
+            <p>Wie? Was <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">zum Teufel</rs>, was ist <rs ref="#das25">das</rs>? <rs ref="#fritz-(berg-sohn-geheimer-rat)">Herr</rs>, ist <rs ref="#paetus">Er</rs> rasend oder plagt <rs ref="#paetus">Ihn</rs> gar <rs ref="#der-Teufel">der Teufel</rs>?
+              –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Still <rs ref="#frau_blitzer-yyy">Mutter</rs>!</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER</speaker></rs>
+            <stage>mit gräßlichem Geschrei.</stage>
+            <p>Aber wo ist <rs ref="#die-Kanne">mein Kaffeezeug</rs>? Ei! <rs ref="#Zum-Henker-(als-fluch)-xxx">zum Henker</rs>! aus <rs ref="#Fenster-(pätus-zimmer)">dem Fenster</rs> – Ich kratz <rs ref="#paetus">Ihm</rs> die
+              Augen aus <rs ref="#Seinem-kahlen-Kopf-(pätus)">dem Kopf</rs> heraus.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Es war <rs ref="#eine-Spinne">eine Spinne</rs> <rs ref="#die-Kanne">darin</rs> und ich <rs ref="#die-Kanne">warf's</rs> in der Angst – Was kann ich dafür, daß <rs ref="#Fenster-(pätus-zimmer)">das
+              Fenster</rs> offen stand?</p>
+          </sp>
+          <sp who="#frau_blitzer">
+            <rs ref="#frau_blitzer-yyy"><speaker>FRAU BLITZER.</speaker></rs>
+            <p>Daß <rs ref="#paetus">du</rs> verreckt wärst an <rs ref="#eine-Spinne">der Spinne</rs>, wenn ich <rs ref="#paetus">dich</rs> mit <rs ref="#Haut-(pätus)">Haut</rs> und <rs ref="#das-letzte-Haar-(pätus-übrige-haare)">Haar</rs> verkaufe, so
+              kannst <rs ref="#paetus">du</rs> mir mein <rs ref="#die-Kanne">Kaffeezeug</rs> nicht bezahlen, nichtswürdiger Hund! Nichts als <rs ref="#Schaden-(durch-pätus)">Schaden</rs>
+              und Unglück kann <rs ref="#paetus">Er</rs> machen. Ich will <rs ref="#paetus">dich</rs> verklagen; ich will <rs ref="#paetus">dich</rs> in <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">Karzer</rs> werfen
+              lassen.</p>
+            <stage>Läuft heraus.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>lachend.</stage>
+            <p>Was ist zu machen, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Bruder</rs>! <rs ref="#ein-Mensch-xxx">man</rs> muß <rs ref="#frau_blitzer-yyy">sie</rs> schon ausrasen lassen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Aber für <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">dein Geld</rs>?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ei was! – Wenn ich bis Weihnachten warten muß, wer wird mir sogleich bis dahin
+              kreditieren? Und denn <rs ref="#frau_blitzer-yyy">ist's</rs> ja nur <rs ref="#ein-gut-fidel-Weib-(prädikativ-frau-blitzer)">ein Weib und ein närrisch Weib dazu, <rs ref="#ein-gut-fidel-Weib-(prädikativ-frau-blitzer)">dem's</rs> nicht
+              immer so von Herzen geht</rs>: <rs ref="#das26">wenn mir's <rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">der Mann</rs> gesagt hätte</rs>, <rs ref="#das26">das</rs> wär was anders, <rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">dem</rs>
+              schlüg ich <rs ref="#die-Haut-(hankes)">das Leder</rs> voll – Siehst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> wohl!</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Hast <rs ref="#paetus">du</rs> Feder und Tinte?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Dort auf <rs ref="#Fenster-(pätus-zimmer)">dem Fenster</rs> –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ich weiß nicht, <rs ref="#das-Herz-(gefühlsleben,-gemütszustand-fritz)">das Herz</rs> ist mir so schwer – Ich habe nie was auf Ahndungen
+              gehalten.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Ja mir auch – <rs ref="#Die-Döbblinsche-Gesellschaft-(schauspielgruppe)">Die Döbblinsche Gesellschaft</rs> ist angekommen. Ich möchte gern in <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">die
+              Komödie</rs> gehn und habe keinen Rock anzuziehen. <rs ref="#Es-(der-philister-blitzer-bei-dem-pätus-lebt)">Der Schurke mein Wirt</rs> leiht mir keinen,
+              und ich bin eine so große dicke Bestie, daß mir keiner von all euren Röcken passen
+              würde.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ich muß gleich nach <rs ref="#Hause-(familie-berg-in-insterburg)">Hause</rs> schreiben.</p>
+            <stage>Setzt <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> an <rs ref="#Fenster-(pätus-zimmer)">ein Fenster</rs> nieder und schreibt.</stage>
+            <pb n="36"/>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>setzt <rs ref="#paetus">sich</rs> <rs ref="#einem-Wolfspelz">einem Wolfspelz</rs> gegenüber, <rs ref="#einem-Wolfspelz">der</rs> an der Wand hängt.</stage>
+            <p>Hm! nichts als <rs ref="#einem-Wolfspelz">den Pelz</rs> gerettet von <rs ref="#allen-meinen-Kleidern-(pätus-allg)"><rs ref="#die-(kleider,-die-sich-pätus-noch-machen-lassen-würde)">allen meinen Kleidern</rs>, <rs ref="#allen-meinen-Kleidern-(pätus-allg)">die</rs> ich habe</rs> und <rs ref="#die-(kleider,-die-sich-pätus-noch-machen-lassen-würde)">die</rs> ich
+              mir noch wollte machen lassen. Grade <rs ref="#einem-Wolfspelz">den Pelz, <rs ref="#einem-Wolfspelz">den</rs> ich im Sommer nicht tragen kann und
+              <rs ref="#einem-Wolfspelz">den</rs> mir nicht einmal der Jude zum Versatz annimmt, weil <rs ref="#der-Wurm">sich</rs> <rs ref="#der-Wurm">der Wurm</rs> leicht
+              hineinsetzt</rs>. <rs ref="#Hanke,-Hanke-(schneider-pätus)">Hanke, Hanke</rs>! <rs ref="#das27">das</rs> ist doch unverantwortlich, <rs ref="#das27">daß <rs ref="#Hanke,-Hanke-(schneider-pätus)">du</rs> mir keinen Rock auf
+              <rs ref="#Pump-(auf-pump,-geliehen,-kredit)">Pump</rs> machen willst</rs>. <stage>Steht auf und geht herum.</stage> Was hab ich <rs ref="#Hanke,-Hanke-(schneider-pätus)">dir</rs> getan,
+              Hanke, daß <rs ref="#Hanke,-Hanke-(schneider-pätus)">du</rs> just mir keinen Rock machen willst? Just <rs ref="#paetus">mir, <rs ref="#paetus">der</rs> ich <rs ref="#ihn-(der-rock,-den-petus-benötigt)">ihn</rs> am nötigsten
+              brauche, weil ich jetzo keinen habe</rs>, just mir! – <rs ref="#der-Teufel">Der Teufel</rs> muß <rs ref="#Hanke,-Hanke-(schneider-pätus)">dich</rs> besitzen, <rs ref="#Hanke,-Hanke-(schneider-pätus)">er</rs>
+              macht Hunz und Kunz auf <rs ref="#Pump-(auf-pump,-geliehen,-kredit)">Kredit</rs> und just mir nicht! <stage>Faßt <rs ref="#paetus">sich</rs> an <rs ref="#Seinem-kahlen-Kopf-(pätus)">den Kopf</rs> und
+                stampft mit <rs ref="#dem-Fuß-(pätus)-unbest-welcher)">dem Fuß</rs>.</stage> Just mir nicht, just mir nicht! –</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK</speaker></rs>
+            <stage><rs ref="#bollwerk">der</rs> <rs ref="#bollwerk">sich</rs> mittlerweile hineingeschlichen und <rs ref="#paetus">ihm</rs> zugehört, faßt <rs ref="#paetus">ihn</rs> an: <rs ref="#paetus">er</rs> kehrt
+              <rs ref="#paetus">sich</rs> um und bleibt stumm vor <rs ref="#bollwerk">Bollwerk</rs> stehen.</stage>
+            <p>Ha ha ha ... Nun <rs ref="#paetus">du armer Pätus</rs> – ha ha ha! Nicht wahr, <rs ref="#Hanke,-Hanke-(schneider-pätus)">es</rs> ist doch ein gottloser
+              Hanke, daß <rs ref="#Hanke,-Hanke-(schneider-pätus)">er</rs> just <rs ref="#paetus">dir</rs> nicht – Aber wo ist <rs ref="#das-rote-Kleid-mit-Gold,-das-du-bei-ihm---------------bestellt-hast-www">das rote Kleid mit Gold, <rs ref="#das-rote-Kleid-mit-Gold,-das-du-bei-ihm---------------bestellt-hast-www">das</rs> <rs ref="#paetus">du</rs> bei <rs ref="#Hanke,-Hanke-(schneider-pätus)">ihm</rs>
+              bestellt hast</rs>, und das blauseidne mit der silberstücknen Weste, und <rs ref="#das-rotsammetne---------------mit-schwarz-Sammet-gefüttert-www">das rotsammetne
+              mit schwarz Sammet gefüttert</rs>, <rs ref="#das-rotsammetne---------------mit-schwarz-Sammet-gefüttert-www">das</rs> wär vortrefflich bei dieser Jahrszeit. Sage mir!
+              antworte mir! <rs ref="#Hanke,-Hanke-(schneider-pätus)">Der verfluchte Hanke</rs>! Wollen <rs ref="#bollwerk-/-paetus">wir</rs> gehn und <rs ref="#Hanke,-Hanke-(schneider-pätus)">ihm</rs> <rs ref="#die-Haut-(hankes)">die Haut</rs> vollschlagen? Wo
+              bleibt <rs ref="#Hanke,-Hanke-(schneider-pätus)">er</rs> so lang mit <rs ref="#das-rotsammetne-----…-/-das-rote-Kleid-mit-G…-+-1"><rs ref="#paetus">deiner</rs> Arbeit</rs>? Wollen <rs ref="#bollwerk-/-paetus">wir</rs>?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>wirf <rs ref="#paetus">sich</rs> auf einen Stuhl.</stage>
+            <p>Laß mich zufrieden.</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Aber hör <rs ref="#paetus">Pätus, Pätus, Pä Pä Pä Pätus</rs> <stage>Setzt <rs ref="#bollwerk">sich</rs> zu <rs ref="#paetus">ihm</rs>.</stage> Döbblin ist
+              angekommen. Hör <rs ref="#paetus">Pä Pä Pä Pä Pätus</rs>, wie wollen <rs ref="#bollwerk-/-paetus">wir</rs> das machen? Ich denke, <rs ref="#paetus">du</rs> ziehst
+              <rs ref="#einem-Wolfspelz"><rs ref="#paetus">deinen</rs> Wolfspelz</rs> an und gehst heut abend in <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">die Komödie</rs>. Was schadt's, <rs ref="#paetus">du</rs> bist doch
+              fremd hier – und <rs ref="#die-ganze-Welt-(menschen-von-ganz-verschiedenen-orten,-gesellshaftliche-welt)">die ganze Welt</rs> weiß, daß <rs ref="#paetus">du</rs> <rs ref="#das-rotsammetne-----…-/-das-rote-Kleid-mit-G…-+-1">vier Paar Kleider</rs> bei <rs ref="#Hanke,-Hanke-(schneider-pätus)">Hanke</rs> bestellt
+              hast. Ob <rs ref="#Hanke,-Hanke-(schneider-pätus)">er</rs> <rs ref="#das-rotsammetne-----…-/-das-rote-Kleid-mit-G…-+-1">sie</rs> <rs ref="#paetus">dir</rs> machen wird, ist gleich <pb n="37"/> viel! – <rs ref="#Hanke,-Hanke-(schneider-pätus)">Der verfluchte Kerl</rs>!
+              Wollen <rs ref="#Hanke,-Hanke-(schneider-pätus)">ihm</rs> die Fenster einschlagen, wenn <rs ref="#Hanke,-Hanke-(schneider-pätus)">er</rs> <rs ref="#das-rotsammetne-----…-/-das-rote-Kleid-mit-G…-+-1">sie</rs> <rs ref="#paetus">dir</rs> nicht macht!</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>heftig.</stage>
+            <p>Laß mich zufrieden, sag ich <rs ref="#bollwerk">dir</rs>.</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Aber hör ... aber ... aber ... hör hör hör <rs ref="#paetus">Pätus</rs>; nimm <rs ref="#paetus">dich</rs> in Acht Pätus! daß <rs ref="#paetus">du</rs> mir
+              <rs ref="#Nacht-(in-der-nacht)">des Nachts</rs> nicht mehr <rs ref="#im-Schlafrock-(pätus)">im Schlafrock</rs> auf <rs ref="#der-Straße-(gasse)">der Gasse</rs> läufst. Ich weiß, daß <rs ref="#paetus">du</rs> bange bist
+              vor <rs ref="#einem-tückischen-Hunde">Hunden</rs>; <rs ref="#es10">es</rs> ist eben ausgetrummelt worden, <rs ref="#es10">daß <rs ref="#zehn-wütige-Hunde">zehn wütige Hunde</rs> in <rs ref="#Halle-in-Sachsen">der Stadt</rs>
+              herumlaufen sollen</rs>; <rs ref="#zehn-wütige-Hunde">sie</rs> haben schon einige Kinder gebissen: zwei sind noch davon
+              kommen, aber vier sind auf der Stelle gestorben. Das machen <rs ref="#den---------------Hundstagen">die Hundstage</rs>! Nicht wahr
+              <rs ref="#paetus">Pätus</rs>? <rs ref="#es11">es</rs> ist gut, <rs ref="#es11">daß <rs ref="#paetus">du</rs> jetzt nicht ausgehen kannst</rs>. Nicht wahr? <rs ref="#paetus">du</rs> gehst itzt mit
+              allem Fleiß nicht aus? Nicht wahr <rs ref="#paetus">Pä Pä Pätus</rs>?</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Laß mich zufrieden ... oder <rs ref="#bollwerk-/-paetus">wir</rs> verzürnen <rs ref="#bollwerk-/-paetus">uns</rs>.</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p><rs ref="#paetus">Du</rs> wirst doch kein Kind sein – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Berg</rs>, kommen Sie mit in <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">die Komödie</rs>?</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ</speaker></rs>
+            <stage>zerstreut.</stage>
+            <p>Was? – Was für <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">Komödie</rs>?</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Es ist <rs ref="#Die-Döbblinsche-Gesellschaft-(schauspielgruppe)">eine Gesellschaft</rs> angekommen – Legen <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> <rs ref="#die-Schmieralien-(fritz-brief-nach-hause-in-2,3)">die Schmieralien</rs> weg. <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> können ja
+              auf den Abend schreiben. <rs ref="#Die-Döbblinsche-Gesellschaft-(schauspielgruppe)">Man</rs> gibt heut <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">Minna von Barnhelm</rs>.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>O <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">die</rs> muß ich sehen. – – <stage>Steckt <rs ref="#die-Schmieralien-(fritz-brief-nach-hause-in-2,3)">seine Briefe</rs> zu <rs ref="#die-Schmieralien-(fritz-brief-nach-hause-in-2,3)">sich</rs>.</stage> <rs ref="#paetus">Armer Pätus</rs>, daß
+              du keinen Rock hast. –</p>
+          </sp>
+          <sp who="#bollwerk">
+            <rs ref="#bollwerk"><speaker>BOLLWERK.</speaker></rs>
+            <p>Ich lieh' ihm gern <rs ref="#ihn-(der-rock,-den-petus-benötigt)">einen</rs>, aber es ist hol mich <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">der Teufel</rs> <rs ref="#mein-einziger,-den-ich-auf---------------dem-Leibe-habe-(prädikativ-bollwerks-rock)">mein einziger, <rs ref="#mein-einziger,-den-ich-auf---------------dem-Leibe-habe-(prädikativ-bollwerks-rock)">den</rs> ich auf
+              dem Leibe habe</rs> –</p>
+            <stage>Gehn ab.</stage>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>allein.</stage>
+            <p>Geht zum Teufel mit <rs ref="#eurem-Mitleiden-(fritz-bollwerk-ggü-pätus)"><rs ref="#fritz-(sohn-geheimer…-/-bollwerk">eurem</rs> Mitleiden</rs>! <rs ref="#eurem-Mitleiden-(fritz-bollwerk-ggü-pätus)">Das</rs> ärgert mich mehr als wenn <rs ref="#ein-Mensch-xxx">man</rs> mir ins
+              Gesicht schlüge – Ei was mach ich mir draus. <stage>Zieht <rs ref="#im-Schlafrock-(pätus)"><rs ref="#paetus">seinen</rs> Schlafrock</rs>
+                aus.</stage> Laß <rs ref="#ein-Mensch-xxx">die Leute</rs> mich für wahnwitzig halten! <rs ref="#die---------------Komödie-(der-döbblinschen-gesellschaft)">Minna von Barnhelm</rs> muß ich
+              sehen und wenn ich nackend hingehen sollte! <stage>Zieht <rs ref="#einem-Wolfspelz">den Wolfspelz</rs> an.</stage>
+              <rs ref="#Hanke,-Hanke-(schneider-pätus)">Hanke, Hanke</rs>! <rs ref="#es12">es</rs> soll <rs ref="#Hanke,-Hanke-(schneider-pätus)">dir</rs> zu <rs ref="#Hause-(hanke)">Hause</rs> kommen! <stage>Stampft mit <rs ref="#dem-Fuß-(pätus)-unbest-welcher)">dem Fuß</rs>.</stage> <rs ref="#es12">Es</rs> soll
+              dir zu <rs ref="#Hause-(hanke)">Hause</rs> kommen! <stage>Geht.</stage></p>
+            <pb n="38"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

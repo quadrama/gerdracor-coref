@@ -1,0 +1,254 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <stage>Platz <rs ref="#am-Hafen">am Hafen</rs>.</stage>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>. <rs ref="#hofmeisterin">Hofmeisterin</rs>.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mit welchen Ketten führst <rs ref="#hofmeisterin">du</rs> mich zurück?</l>
+              <l>Gehorch' ich, <rs ref="#Den-Widerwillen">wider Willen</rs>, diesmal auch!</l>
+              <l>Fluchwürdige Gewalt <rs ref="#der-Stimme,-die----------------Mich-einst-so-glatt-zur-Folgsamkeit-gewöhnte,---------------Die-meines-ersten-bildsamen-Gefühls---------------Im-ganzen-Umfang-sich-bemeisterte">der Stimme, <rs ref="#der-Stimme,-die----------------Mich-einst-so-glatt-zur-Folgsamkeit-gewöhnte,---------------Die-meines-ersten-bildsamen-Gefühls---------------Im-ganzen-Umfang-sich-bemeisterte">die</rs></l>
+              <l><pb n="282"/> Mich einst so glatt zur Folgsamkeit gewöhnte,</l>
+              <l><rs ref="#der-Stimme,-die----------------Mich-einst-so-glatt-zur-Folgsamkeit-gewöhnte,---------------Die-meines-ersten-bildsamen-Gefühls---------------Im-ganzen-Umfang-sich-bemeisterte">Die</rs> meines ersten bildsamen Gefühls</l>
+              <l>Im ganzen Umfang <rs ref="#der-Stimme,-die----------------Mich-einst-so-glatt-zur-Folgsamkeit-gewöhnte,---------------Die-meines-ersten-bildsamen-Gefühls---------------Im-ganzen-Umfang-sich-bemeisterte">sich</rs> bemeisterte</rs>!</l>
+              <l><rs ref="#hofmeisterin">Du</rs> warst es, <rs ref="#hofmeisterin">der</rs> ich dieser Worte Sinn</l>
+              <l>Zuerst verdanke, dieser Sprache Kraft</l>
+              <l>Und künstliche Verknüpfung; <rs ref="#Welt">diese Welt</rs></l>
+              <l>Hab' ich aus <rs ref="#hofmeisterin">deinem</rs> Munde, ja, <rs ref="#mein-eigen-Herz-(eugenie)">mein eignes Herz</rs>.</l>
+              <l>Nun brauchst <rs ref="#hofmeisterin">du</rs> diesen Zauber gegen mich,</l>
+              <l><rs ref="#hofmeisterin">Du</rs> fesselst mich, <rs ref="#hofmeisterin">du</rs> schleppst mich hin und wider,</l>
+              <l><rs ref="#Dieser-Geist-(eugenie)">Mein Geist</rs> verwirrt <rs ref="#Dieser-Geist-(eugenie)">sich</rs>, mein Gefühl ermattet,</l>
+              <l>Und zu <rs ref="#der-Toten">den Toten</rs> sehn' ich mich hinab.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>O hätte diese Zauberkraft gewirkt,</l>
+              <l>Als ich <rs ref="#eugenie">dich</rs> dringend, flehentlich gebeten,</l>
+              <l>Von <rs ref="#euren-Plan-(eugenie-entfernen)">jenen hohen Planen</rs> abzustehn!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l><rs ref="#hofmeisterin">Du</rs> ahnetest <rs ref="#solch-ungeheures-Übel">solch ungeheures Übel</rs></l>
+              <l>Und warntest nicht den allzu sichern Mut?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Wohl durft' ich warnen, aber leise nur</l>
+              <l>Die ausgesprochne Silbe trug <rs ref="#des-Todes">den Tod</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Und hinter <rs ref="#hofmeisterin">deinem</rs> Schweigen lag <rs ref="#Verbannung">Verbannung</rs>!</l>
+              <l><rs ref="#Ein-Todeswort">Ein Todeswort</rs>, willkommner war <rs ref="#Ein-Todeswort">es</rs> mir.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Dies Unglück, vorgesehen oder nicht,</l>
+              <l>Hat mich und <rs ref="#eugenie">dich</rs> in gleiches Netz verschlungen.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Was kann ich wissen, <rs ref="#welch-ein-Lohn">welch ein Lohn</rs> <rs ref="#hofmeisterin">dir</rs> wird,</l>
+              <l>Um <rs ref="#hofmeisterin">deinen</rs> armen Zögling zu verderben.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#welch-ein-Lohn">Er</rs> wartet wohl am fremden Strande mein!</l>
+              <l><rs ref="#Die-Segel">Das Segel</rs> schwillt und fahrt <rs ref="#hofmeisterin-/-eugenie">uns</rs> beide hin.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Noch hat <rs ref="#unser-Schiff">das Schiff</rs> in <rs ref="#unser-Schiff">seine</rs> Kerker nicht</l>
+              <l>Mich aufgenommen. Sollt' ich willig gehn?</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Und riefst <rs ref="#eugenie">du</rs> nicht <rs ref="#das-Volk">das Volk</rs> <rs ref="#Hilfe">zur Hilfe</rs> schon?</l>
+              <l><rs ref="#das-Volk">Es</rs> staunte nur <rs ref="#eugenie">dich</rs> an und schwieg und ging.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Mit ungeheurer Not <rs ref="#eugenie">im Kampfe</rs>, schien</l>
+              <l>Ich dem gemeinen Blick des Wahnsinns Beute.</l>
+              <l>Doch sollst <rs ref="#hofmeisterin">du</rs> mir mit <rs ref="#Worten">Worten</rs>, mit <rs ref="#Gewalt">Gewalt</rs></l>
+              <l>Den mut'gen Schritt nach <rs ref="#Hilfe">Hilfe</rs> nicht verkümmern.</l>
+              <l><rs ref="#Die-Ersten-dieser-Stadt">Die Ersten <rs ref="#dieser-Stadt">dieser Stadt</rs></rs> erheben <rs ref="#Die-Ersten-dieser-Stadt">sich</rs></l>
+              <l>Aus <rs ref="#Die-Ersten-dieser-Stadt">ihren</rs> Häusern dem Gestade zu,</l>
+              <l><rs ref="#den-Schiffen">Die Schiffe</rs> zu bewundern, <rs ref="#den-Schiffen">die</rs> gereiht,</l>
+              <l><rs ref="#hofmeisterin-/-eugenie">Uns</rs> unerwünscht, <rs ref="#Das-hohe-Meer">das hohe Meer</rs> gewinnen.</l>
+              <l><pb n="283"/> Schon regt <rs ref="#Die-Wache">sich</rs> am Palast <rs ref="#gouverneur">des Gouverneurs</rs></l>
+              <l><rs ref="#Die-Wache">Die Wache</rs>. <rs ref="#gouverneur">Jener</rs> ist es, <rs ref="#gouverneur">der</rs> die Stufen,</l>
+              <l>Von mehreren begleitet, niedersteigt.</l>
+              <l>Ich will <rs ref="#gouverneur">ihn</rs> sprechen, <rs ref="#gouverneur">ihm</rs> den Fall erzählen!</l>
+              <l>Und ist <rs ref="#gouverneur">er</rs> wert, an <rs ref="#koenig">meines Königs</rs> Platz</l>
+              <l>Den wichtigsten Geschäften vorzustehn,</l>
+              <l>So weist <rs ref="#gouverneur">er</rs> mich nicht unerhört von hinnen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Ich hindre <rs ref="#eugenie">dich</rs> an diesem Schritte nicht,</l>
+              <l>Doch nennst <rs ref="#eugenie">du</rs> keinen Namen, nur die Sache.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#Den-Namen">Den Namen</rs> nicht, bis ich vertrauen darf.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Es ist <rs ref="#gouverneur">ein edler junger Mann</rs> und wird,</l>
+              <l>Was <rs ref="#gouverneur">er</rs> vermag, mit Anstand gern gewähren.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

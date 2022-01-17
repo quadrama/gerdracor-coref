@@ -1,0 +1,446 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt</head>
+        <div type="scene">
+          <head>Sechste Szene</head>
+          <stage>In <rs ref="#Leipzig">Leipzig</rs>.</stage>
+          <stage><rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz von Berg</rs>. <rs ref="#paetus">Pätus</rs>.</stage>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#das53">Das einzige, was ich an <rs ref="#paetus">dir</rs> auszusetzen habe</rs>, <rs ref="#paetus">Pätus</rs>. Ich habe <rs ref="#das53">dir's</rs> schon lang sagen
+              wollen: untersuche <rs ref="#paetus">dich</rs> nur selbst; was ist die Ursach zu all <rs ref="#paetus">deinem</rs> Unglück gewesen?
+              Ich tadle <rs ref="#es23">es</rs> nicht, <rs ref="#es23">wenn <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#ein-Mensch-xxx">sich</rs> verliebt</rs>. <rs ref="#fritz-(sohn-geheimer…-/-paetus">Wir</rs> sind in <rs ref="#den-Jahren-(alter-in-dem-man-sich-verliebt)">den Jahren</rs>; <rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> sind auf <rs ref="#den-Jahren-(alter-in-dem-man-sich-verliebt)">der
+              See</rs>, <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">der Wind</rs> treibt uns, aber <rs ref="#Vernunft">die Vernunft</rs> muß immer am Steuerruder bleiben, sonst
+              jagen <rs ref="#ein-Mensch-xxx">wir</rs> auf die erste beste Klippe und scheitern. <rs ref="#jungfer_hamster">Die Hamstern</rs> war <rs ref="#eine-Kokette,-die---------------aus-dir-machte,-was-sie-wollte-(prädikativ-die-ambike-jungfer-hamster)">eine Kokette, <rs ref="#eine-Kokette,-die---------------aus-dir-machte,-was-sie-wollte-(prädikativ-die-ambike-jungfer-hamster)">die</rs>
+              aus <rs ref="#paetus">dir</rs> machte, was <rs ref="#jungfer_hamster">sie</rs> wollte</rs>; <rs ref="#jungfer_hamster">sie</rs> hat <rs ref="#paetus">dich</rs> um <rs ref="#mein-Rock,---------------den-ich-Tags-vorher-versetzt-hatte-(pätus)"><rs ref="#paetus">deinen</rs> letzten Rock</rs>, um <rs ref="#paetus">deinen</rs> guten
+              Namen und um den guten Namen <rs ref="#fritz-(sohn-geheimer…-/-bollwerk"><rs ref="#paetus">deiner</rs> Freunde</rs> dazu gebracht: ich dächte, da hättest <rs ref="#paetus">du</rs>
+              klug werden können. <rs ref="#jungfer_rehaar">Die Rehaarin</rs> ist <rs ref="#ein-unverführtes-unschuldiges-jugendliches-Lamm-(prädikativ-jungfer-rehaar)">ein unverführtes unschuldiges jugendliches Lamm</rs>:
+              <rs ref="#das53">wenn <rs ref="#ein-Mensch-xxx">man</rs> gegen <rs ref="#ein-Herz,-das-sich-nicht-verteidigen-will-noch-verteidigen-kann-(junge-frauen-die-verführt-werden-wollen)">ein Herz, <rs ref="#ein-Herz,-das-sich-nicht-verteidigen-will-noch-verteidigen-kann-(junge-frauen-die-verführt-werden-wollen)">das</rs> <rs ref="#ein-Herz,-das-sich-nicht-verteidigen-will-noch-verteidigen-kann-(junge-frauen-die-verführt-werden-wollen)">sich</rs> nicht verteidigen will noch verteidigen kann</rs>, alle
+              mögliche Batterien spielen läßt, um <rs ref="#ein-Herz,-das-sich-nicht-verteidigen-will-noch-verteidigen-kann-(junge-frauen-die-verführt-werden-wollen)">es</rs> – was soll ich sagen? zu zerstören,
+              einzuäschern</rs>, <rs ref="#das53">das</rs> ist unrecht, <rs ref="#paetus">Bruder Pätus</rs>, <rs ref="#das53">das</rs> ist unrecht. Nimm <rs ref="#mir's5">mir's</rs> nicht übel,
+              <rs ref="#mir's5"><rs ref="#fritz-(sohn-geheimer…-/-paetus">wir</rs> können so nicht gute Freunde zusammen bleiben</rs>. <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">Ein Mann, der gegen ein
+              Frauenzimmer es so weit treibt, als er nur immer kann</rs>, ist entweder <rs ref="#ein-Teekessel-(prädikativ-ein-verführer)">ein Teekessel</rs> oder
+              <rs ref="#ein-Bösewicht-(präduikativ-ein-verführer)">ein Bösewicht</rs>; <rs ref="#ein-Teekessel-(prädikativ-ein-verführer)">ein Teekessel</rs>, wenn <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">er</rs> <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">sich</rs> selbst nicht beherrschen kann, <rs ref="#die---------------Ehrfurcht,-die-er-der-Unschuld-und-Tugend-schuldig-ist-(vor-unschuldigen-frauen)">die
+              Ehrfurcht, <rs ref="#die---------------Ehrfurcht,-die-er-der-Unschuld-und-Tugend-schuldig-ist-(vor-unschuldigen-frauen)">die</rs> <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">er</rs> <rs ref="#der-Unschuld-(körperl-enthaltsamkeit)">der Unschuld</rs> und Tugend schuldig ist</rs>, aus <rs ref="#Acht">den Augen</rs> zu setzen: oder
+              <rs ref="#ein-Bösewicht-(präduikativ-ein-verführer)">ein Bösewicht</rs>, wenn <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">er</rs> <rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">sich</rs> selbst nicht beherrschen will und wie <rs ref="#der-Teufel">der Teufel</rs> im
+              Paradiese <rs ref="#sein-einzig-Glück"><rs ref="#Ein-Mann,-der-gegen-ein-Frauenzimmer-es-so-weit-treibt,-als-er-nur-immer-kann-(ein-verführer)">sein</rs> einzig Glück</rs> darin setzt, <rs ref="#die-Weiber">ein Weib</rs> <rs ref="#ins-Verderben">ins Verderben</rs> zu stürzen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Predige nur nicht, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Bruder</rs>! <rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> hast recht; <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">es</rs> reuet mich, aber ich schwöre <rs ref="#fritz-(berg-sohn-geheimer-rat)">dir</rs>, ich
+              kann drauf fluchen, daß ich <rs ref="#jungfer_rehaar">das Mädchen</rs> nicht angerührt habe.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#haben's">So bist <rs ref="#paetus">du</rs> doch <rs ref="#zum-Fenster-(rehaars)">zum Fenster</rs> hineingestiegen</rs> und <pb n="71"/> <rs ref="#die-Nachbarn-(rehaars)">die Nachbarn</rs> <rs ref="#haben's">haben's</rs>
+              gesehen, meinst <rs ref="#paetus">du</rs>, <rs ref="#die-Nachbarn-(rehaars)">ihre</rs> Zunge wird so verschämt sein, wie <rs ref="#deine-Hand-(pätus)"><rs ref="#paetus">deine</rs> Hand</rs> vielleicht
+              gewesen ist? Ich kenne <rs ref="#paetus">dich</rs>, ich weiß, so dreust <rs ref="#paetus">du</rs> scheinst, bist <rs ref="#paetus">du</rs> doch blöde
+              <rs ref="#die-Weiber">gegen's Frauenzimmer</rs>, und darum lieb ich <rs ref="#paetus">dich</rs>: aber wenn's auch nichts mehr wäre, als
+              daß <rs ref="#jungfer_rehaar">das Mädchen</rs> <rs ref="#ihren-guten-Namen-(jungfer-rehaars)"><rs ref="#jungfer_rehaar">ihren</rs> guten Namen</rs> verliert, und eine Musikantentochter dazu, <rs ref="#jungfer_rehaar">ein
+              Mädchen, <rs ref="#jungfer_rehaar">das</rs> alles von <rs ref="#naturae-(natur)">der Natur</rs> empfing</rs>, <rs ref="#sein-einzig-Glück">vom Glück</rs> nichts; <rs ref="#jungfer_rehaar">der</rs> <rs ref="#ihren-guten-Namen-(jungfer-rehaars)"><rs ref="#jungfer_rehaar">ihre</rs> einzige
+              Aussteuer, ihren guten Namen</rs>, zu rauben – <rs ref="#paetus">du</rs> hast <rs ref="#jungfer_rehaar">sie</rs> unglücklich gemacht, <rs ref="#paetus">Pätus</rs>.
+              –</p>
+            <stage><rs ref="#rehaar">Herr Rehaar</rs> kommt, <rs ref="#eine-Laute-(rehaar)">eine Laute</rs> unterm Arm.</stage>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR.</speaker></rs>
+            <p><rs ref="#rehaar">Ergebener Diener von <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs></rs>; <rs ref="#rehaar">ergebener Diener</rs>, <rs ref="#fritz-(berg-sohn-geheimer-rat)">Herr von Berg</rs>, wünsche schönen guten
+              Morgen. Wie haben <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> geschlafen und wie <rs ref="#steht's-Konzertchen-(das-stück-das-fritz-mit-rehaar-übt)">steht's Konzertchen</rs>? <stage>Setzt <rs ref="#rehaar">sich</rs> und
+                stimmt.</stage> Haben <rs ref="#steht's-Konzertchen-(das-stück-das-fritz-mit-rehaar-übt)"><rs ref="#rehaar">Sie's</rs></rs> durchgespielt? <stage>Stimmt.</stage> Ich habe die Nacht
+              <rs ref="#einen-häßlichen-Schrecken-(rehaar)">einen häßlichen Schrecken</rs> gehabt, aber ich will's <rs ref="#einen-häßlichen-Schrecken-(rehaar)">dem</rs> eingedenk sein – <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> kennen <rs ref="#paetus">ihn</rs>
+              wohl, <rs ref="#paetus">es</rs> ist einer von <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihren</rs> Landsleuten. <rs ref="#Twing,-twing">Twing, twing</rs>. <rs ref="#Twing,-twing">Das</rs> ist eine verdammte Quinte!
+              Will <rs ref="#eine-Laute-(rehaar)">sie</rs> doch <rs ref="#mein-Tage-(lebenszeit-rehaars)">mein Tage</rs> nicht recht tönen; ich will <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> nachmittag <rs ref="#eine-andere-(eine-andere-laute-als-rehaars)">eine andere</rs>
+              bringen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ</speaker></rs>
+            <stage>setzt <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> mit <rs ref="#fritz-(berg-sohn-geheimer-rat)">seiner</rs> Laute.</stage>
+            <p>Ich hab <rs ref="#steht's-Konzertchen-(das-stück-das-fritz-mit-rehaar-übt)">das Konzert</rs> noch nicht angesehen.</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR.</speaker></rs>
+            <p>Ei ei, <rs ref="#fritz-(berg-sohn-geheimer-rat)">faules Herr von Bergchen</rs>, noch nicht angesehen? Twing! nachmittag bring ich
+              <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs> <rs ref="#eine-andere-(eine-andere-laute-als-rehaars)">eine andre</rs>. <stage>Legt <rs ref="#eine-Laute-(rehaar)">die Laute</rs> weg und nimmt <rs ref="#eine-Prise-(wohl-tabak-rehaars)">eine Prise</rs>.</stage> <rs ref="#das---------------ganze-Land-(bewohner-preußens)">Man</rs> sagt:
+              <rs ref="#den-Türken">die Türken</rs> sind über die Donau gegangen und haben <rs ref="#Die---------------Russen">die Russen</rs> brav zurückgepeitscht,
+              bis – Wie heißt doch nun <rs ref="#Otschakof">der Ort</rs>! Bis <rs ref="#Otschakof">Otschakof</rs>, glaub ich; was weiß ich? So viel sag
+              ich <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen</rs>, wenn <rs ref="#rehaar">Rehaar</rs> unter <rs ref="#den-Türken">ihnen</rs> gewesen wäre, was meinen <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs>? <rs ref="#rehaar">er</rs> wäre noch weiter
+              gelaufen. Ha ha ha! <stage>Nimmt <rs ref="#eine-Laute-(rehaar)">die Laute</rs> wieder.</stage> Ich sag <rs ref="#fritz-(berg-sohn-geheimer-rat)">Ihnen, Herr von
+              Berg</rs>, ich hab keine größere Freude, als wenn ich wieder einmal in <rs ref="#allen-Zeitungen">der Zeitung</rs> lese,
+              daß <rs ref="#die-Soldaten">eine Armee</rs> gelaufen ist. <rs ref="#Die---------------Russen">Die Russen</rs> sind brave Leute, daß <rs ref="#Die---------------Russen">sie</rs> gelaufen sind;
+              <rs ref="#rehaar">Rehaar</rs> wär auch gelaufen und <rs ref="#vernünftige-Leute">alle <pb n="72"/> gescheute Leute</rs>, denn wozu nützt das
+              Stehen und <rs ref="#die-Soldaten">sich</rs> totschlagen Lassen, ha ha ha.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Nicht wahr, das ist der erste Griff?</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR.</speaker></rs>
+            <p>Ganz recht; den zweiten Finger etwas mehr übergelegt und mit dem kleinen abgerissen,
+              so – Rund, rund <rs ref="#den-Triller-(verzierung-d-lautenmusik)">den Triller</rs>, rund <rs ref="#fritz-(berg-sohn-geheimer-rat)">Herr von Bergchen</rs> – Mein seliger Vater pflegt' immer
+              zu sagen, <rs ref="#Das11"><rs ref="#ein-Virtuos-(künstler,-musiker)">ein Musikus</rs> muß keine Courage haben und <rs ref="#ein-Virtuos-(künstler,-musiker)">ein Musikus <rs ref="#ein-Virtuos-(künstler,-musiker)">der</rs> <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">Herz</rs> hat</rs>, ist <rs ref="#ein---------------Hundsfut-(prädikativ-ein-leidenschaftlicher-musiker)">ein
+              Hundsfut</rs></rs>. Wenn <rs ref="#ein-Virtuos-(künstler,-musiker)">er</rs> <rs ref="#ein-Virtuos-(künstler,-musiker)">sein</rs> Konzertchen spielen kann und <rs ref="#ein-Virtuos-(künstler,-musiker)">seinen</rs> Marsch gut bläst – <rs ref="#Das11">Das</rs> hab
+              ich auch <rs ref="#dem-Herzog-von-Kurland">dem Herzog von Kurland</rs> gesagt, als ich nach <rs ref="#Petersburg">Petersburg</rs> ging, das erstemal in
+              <rs ref="#der-Suite-vom-Prinzen-Czartorinsky">der Suite <rs ref="#vom-Prinzen-Czartorinsky">vom Prinzen Czartorinsky</rs></rs>, und vor <rs ref="#vom-Prinzen-Czartorinsky">ihm</rs> spielen mußte. Ich muß noch lachen;
+              als ich in <rs ref="#der-Suite-vom-Prinzen-Czartorinsky">den Saal</rs> kam und wollt <rs ref="#vom-Prinzen-Czartorinsky">ihm</rs> mein tief tief Kompliment machen, sah ich nicht,
+              daß der Fußboden von <rs ref="#Spiegel-(material-des-fußbodens-in-der-porinzensuite)">Spiegel</rs> war und die Wände auch von <rs ref="#Spiegel-(material-des-fußbodens-in-der-porinzensuite)">Spiegel</rs>, und fiel herunter wie
+              ein Stück Holz und schlug mir ein gewaltig Loch in Kopf: <rs ref="#das54">da kamen die Hofkavaliere und
+              wollten mich drüber necken</rs>. Leidt <rs ref="#das54">das</rs> nicht, <rs ref="#rehaar">Rehaar</rs>, sagte <rs ref="#dem-Herzog-von-Kurland">der Herzog</rs>, <rs ref="#rehaar">Ihr</rs> habt ja
+              <rs ref="#einen-Degen-(rehaars)">einen Degen</rs> an der Seite; leidt <rs ref="#das54">das</rs> nicht. Ja, sagt ich, <rs ref="#dem-Herzog-von-Kurland">Ew. Herzoglichen Majestät</rs>,
+              <rs ref="#einen-Degen-(rehaars)">mein Degen</rs> ist seit Anno dreißig nicht aus der Scheide gekommen, und <rs ref="#ein-Virtuos-(künstler,-musiker)">ein Musikus</rs>
+              braucht <rs ref="#einen-Degen">den Degen</rs> nicht zu ziehen, denn <rs ref="#ein-Virtuos-(künstler,-musiker)">ein Musikus, <rs ref="#ein-Virtuos-(künstler,-musiker)">der</rs> <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">Herz</rs> hat</rs> und <rs ref="#einen-Degen">den Degen</rs> zieht,
+              ist <rs ref="#ein---------------Hundsfut-(prädikativ-ein-leidenschaftlicher-musiker)">ein Hundsfut</rs> und kann <rs ref="#ein-Virtuos-(künstler,-musiker)">sein</rs> Tag auf keinem Instrument was vor <rs ref="#ein-Virtuos-(künstler,-musiker)">sich</rs> bringen. – Nein,
+              nein, das dritte Chor war's, <emph>k, k,</emph> so – Rein, rein, <rs ref="#den-Triller-(verzierung-d-lautenmusik)">den Triller</rs> rund und
+              den Daumen unten nicht bewegt, so –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage><rs ref="#paetus">der</rs> <rs ref="#paetus">sich</rs> die Zeit über seitwärts gehalten, tritt hervor und bietet <rs ref="#rehaar">Rehaar</rs> <rs ref="#deine-Hand-(pätus)">die
+              Hand</rs>.</stage>
+            <p><rs ref="#paetus"><rs ref="#rehaar">Ihr</rs> Diener</rs>, Herr Rehaar; wie <rs ref="#soll's">geht's</rs>?</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR</speaker></rs>
+            <stage>hebt <rs ref="#rehaar">sich</rs> mit <rs ref="#eine-Laute-(rehaar)">der Laute.</rs></stage>
+            <p>Ergebener Die – Wie <rs ref="#soll's">soll's</rs> gehen, <rs ref="#paetus">Herr Pätus</rs>? <rs ref="#wissen's"><rs ref="#das55">Toujours content, jamais <rs ref="#Geld">d'argent</rs></rs>: <rs ref="#das55">das</rs>
+              ist <rs ref="#rehaar">des alten Rehaars</rs> Sprichwort</rs>, wissen <rs ref="#paetus">Sie</rs>, und <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">die Herren Studenten</rs> <rs ref="#wissen's">wissen's</rs> alle;
+              aber darum geben <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">sie</rs> mir doch nichts – <rs ref="#paetus">Der Herr Pätus</rs> ist mir auch <pb n="73"/> noch
+              schuldig, von der letzten Serenade, aber <rs ref="#paetus">er</rs> denkt nicht dran ...</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#rehaar">Sie</rs> sollen haben, liebster Rehaar; in <rs ref="#acht-Tagen">acht Tagen</rs> erwart ich unfehlbar <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">meinen
+              Wechsel</rs>.</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR.</speaker></rs>
+            <p>Ja, <rs ref="#paetus">Sie</rs> haben schon lang gewartet, Herr Pätus, und <rs ref="#mein-Wechsel-(geld-das-pätus-vom-vater-zur-verfügung-gestellt-wird,-unterschiedliche-beträge)">Wechselchen</rs> ist doch nicht kommen.
+              Was ist zu tun, <rs ref="#ein-Mensch-xxx">man</rs> muß Geduld haben, ich sag immer, ich begegne keinem Menschen mit
+              so viel Ehrfurcht als <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">einem Studenten</rs>: denn <rs ref="#das56"><rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">ein Student</rs> ist nichts</rs>, <rs ref="#das56">das</rs> ist wahr, aber
+              es kann doch alles aus <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">ihm</rs> werden. <stage><rs ref="#rehaar">Er</rs> legt <rs ref="#eine-Laute-(rehaar)">die Laute</rs> auf <rs ref="#den-Tisch-(fritz-in-leipzig)">den Tisch</rs> und nimmt
+                <rs ref="#eine-Prise-(wohl-tabak-rehaars)">eine Prise</rs>.</stage> Aber <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">was haben <rs ref="#paetus">Sie</rs> mir denn gemacht, Herr Pätus</rs>? Ist <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">das</rs> recht;
+              ist <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">das</rs> auch honett gehandelt? Sind mir gestern <rs ref="#zum-Fenster-(rehaars)">zum Fenster</rs> hineingestiegen, in <rs ref="#jungfer_rehaar">meiner
+              Tochter</rs> Schlafkammer.</p>
+          </sp>
+          <sp who="#paetus">
+            <speaker>PÄTUS.</speaker>
+            <p>Was denn, <rs ref="#rehaar">Vaterchen</rs>? ich? ...</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR</speaker></rs>
+            <stage>läßt die Dose fallen.</stage>
+            <p><rs ref="#das57">Ja ich will <rs ref="#paetus">dich</rs> bevaterchen und ich werd <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">es</rs> <rs ref="#gehörigen-Orts-(justiz,-polzei-o-dgl-in-leipzig,-kurfürst,-magnisfikus))">gehörigen Orts</rs> zu melden wissen</rs>, <rs ref="#paetus">Herr</rs>,
+              <rs ref="#das57">das</rs> sein <rs ref="#paetus">Sie</rs> versichert. <rs ref="#ihren-guten-Namen-(jungfer-rehaars)"><rs ref="#jungfer_rehaar">Meiner Tochter</rs> Ehr</rs> ist mir lieb und <rs ref="#jungfer_rehaar">es</rs> ist <rs ref="#ein-unverführtes-unschuldiges-jugendliches-Lamm-(prädikativ-jungfer-rehaar)">ein honettes
+              Mädchen</rs>, hol's <rs ref="#Zum-Henker-(als-fluch)-xxx">der Henker</rs>! und wenn <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">ich's</rs> nur gestern gemerkt hätte oder wär
+              aufgewacht, ich hätt <rs ref="#paetus">Euch</rs> <rs ref="#zum-Fenster-(rehaars)">zum Fenster</rs> hinausgehänselt, daß <rs ref="#paetus">Ihr</rs> <rs ref="#den-Füßen-(pätus)">das unterste</rs> zu oberst
+              – Ist <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">das</rs> honett, ist <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">das</rs> ehrlich? Pfui <rs ref="#der-Teufel-(eher-sprichwörtl.)-xxx">Teufel</rs>, wenn <rs ref="#ein-Mensch-xxx">ich</rs> <rs ref="#Student-(prädikativ-wenn-man-student-ist)">Student</rs> bin, muß ich mich
+              auch <rs ref="#Student-(prädikativ-wenn-man-student-ist)">als Student</rs> aufführen, nicht als <rs ref="#ein-Bösewicht-(präduikativ-ein-verführer)">ein Schlingel</rs> – Da haben <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">mir's</rs> <rs ref="#die-Nachbarn-(rehaars)">die Nachbarn</rs> heut
+              gesagt: ich dacht ich sollte den Schlag drüber kriegen, augenblicks hat mir <rs ref="#jungfer_rehaar">das
+              Mädchen</rs> auf den Postwagen müssen und das nach <rs ref="#Königsberg">Kurland</rs> zu <rs ref="#ihrer-Tante-(von-jungfer-rehaar)"><rs ref="#jungfer_rehaar">ihrer</rs> Tante</rs>; ja nach <rs ref="#Königsberg">Kurland</rs>,
+              <rs ref="#paetus">Herr</rs>, denn hier ist <rs ref="#ihren-guten-Namen-(jungfer-rehaars)"><rs ref="#jungfer_rehaar">ihre</rs> Ehr</rs> hin und wer zahlt mir nun die Reisekosten? Ich habe
+              wahrhaftig den ganzen Tag keine Laut anrühren können und über die funfzehn Quinten
+              sind mir heut gesprungen. Ja <rs ref="#paetus">Herr</rs>, ich zittere noch am ganzen Leibe, und <rs ref="#paetus">Herr Pätus</rs>,
+              ich will ein Hühnchen mit <rs ref="#paetus">Ihnen</rs> pflücken. Es soll nicht so bleiben; ich will <rs ref="#Spitzbuben">euch
+              Schlingeln</rs> lehren <rs ref="#einen-ehrlichen-Mann">ehrlicher Leute</rs> Kinder verführen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#rehaar">Herr</rs>, schimpf <rs ref="#rehaar">Er</rs> nicht, oder –</p>
+            <pb n="74"/>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR.</speaker></rs>
+            <p>Sehen <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> nur an, Herr von Berg! sehn <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs> einmal an – wenn ich nun <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">Herz</rs> hätte, ich
+              fodert <rs ref="#paetus">ihn</rs> augenblicklich vor <rs ref="#einen-Degen">die Klinge</rs> – Sehen <rs ref="#fritz-(berg-sohn-geheimer-rat)">Sie</rs>, da steht <rs ref="#paetus">er</rs> und lacht mir noch
+              in die Zähne obenein. Sind <rs ref="#ein-Mensch-xxx">wir</rs> denn unter <rs ref="#den-Türken">Türken</rs> und Heiden, daß <rs ref="#einem-Vater">ein Vater</rs> nicht mehr
+              mit <rs ref="#eine-Tochter"><rs ref="#einem-Vater">seiner</rs> Tochter</rs> sicher ist? <rs ref="#sag's"><rs ref="#paetus">Herr Pätus, Sie</rs> sollen <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">mir's</rs> nicht umsonst getan haben</rs>,
+              ich <rs ref="#sag's">sag's</rs> <rs ref="#paetus">Ihnen</rs>, und <rs ref="#das-(pätus-eindringen-bei-jungfer-rehaar)">sollt's</rs> bis an <rs ref="#den-Kurfürsten">den Kurfürsten</rs> selber kommen. Unter <rs ref="#die-Soldaten">die Soldaten</rs>
+              mit <rs ref="#so-ein-kahler---------------lausigter-Kerl-(vom-typ-pätus)">solchen lüderlichen Hunden</rs>! <rs ref="#das58">Dem Kalbsfell folgen</rs>, <rs ref="#das58">das</rs> ist gescheiter! <rs ref="#ein-Bösewicht-(präduikativ-ein-verführer)">Schlingel</rs>
+              seid <rs ref="#Spitzbuben">ihr</rs> und keine Studenten!</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>gibt <rs ref="#rehaar">ihm</rs> eine Ohrfeige.</stage>
+            <p><rs ref="#hab's2">Schimpf <rs ref="#rehaar">Er</rs> nicht</rs>; ich <rs ref="#hab's2">hab's</rs> <rs ref="#rehaar">Ihm</rs> fünfmal gesagt!</p>
+          </sp>
+          <sp who="#rehaar">
+            <rs ref="#rehaar"><speaker>REHAAR</speaker></rs>
+            <stage>springt auf, das Schnupftuch <rs ref="#vorm-Gesicht-(rehaars)">vorm Gesicht</rs>.</stage>
+            <p>So? Wart – Wenn ich doch nur <rs ref="#den-roten-Fleck-(rehaars-von-ohrfeige)">den roten Fleck</rs> behalten könnte, bis ich vorn Magnifikus
+              komme – Wenn ich <rs ref="#den-roten-Fleck-(rehaars-von-ohrfeige)">ihn</rs> doch nur <rs ref="#acht-Tagen">acht Tage</rs> behalten könnte, daß ich nach <rs ref="#Dresden">Dresden</rs> reise
+              und <rs ref="#den-roten-Fleck-(rehaars-von-ohrfeige)">ihn</rs> <rs ref="#den-Kurfürsten">dem Kurfürsten</rs> zeige – Wart, es soll <rs ref="#paetus">dir</rs> zu Hause kommen, wart, wart – Ist <rs ref="#das59">das</rs>
+              erlaubt? <stage>Weint.</stage> <rs ref="#das59"><rs ref="#Einen-Lautenisten">Einen Lautenisten</rs> zu schlagen</rs>? weil <rs ref="#Einen-Lautenisten">er</rs> <rs ref="#paetus">dir</rs> <rs ref="#seine---------------Tochter-(eines-lautenisten)"><rs ref="#Einen-Lautenisten">seine</rs>
+              Tochter</rs> nicht geben will, daß <rs ref="#paetus">du</rs> <rs ref="#Lautchen">Lautchen</rs> auf <rs ref="#seine---------------Tochter-(eines-lautenisten)">ihr</rs> spielen kannst? – Wart, ich <rs ref="#will's4">will's</rs>
+              <rs ref="#den-Kurfürsten">seiner Kurfürstlichen Majestät</rs> sagen, <rs ref="#will's4">daß <rs ref="#paetus">du</rs> mich <rs ref="#vorm-Gesicht-(rehaars)">ins Gesicht</rs> geschlagen hast</rs>. <rs ref="#deine-Hand-(pätus)">Die
+              Hand</rs> soll <rs ref="#paetus">dir</rs> abgehauen werden – <rs ref="#paetus">Schlingel</rs>!</p>
+            <stage>Läuft ab, <rs ref="#paetus">Pätus</rs> will <rs ref="#rehaar">ihm</rs> nach; <rs ref="#fritz-(berg-sohn-geheimer-rat)">Fritz</rs> hält <rs ref="#paetus">ihn</rs> zurück.</stage>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Pätus</rs>! <rs ref="#paetus">du</rs> hast schlecht gehandelt. <rs ref="#rehaar">Er</rs> war beleidigter Vater, <rs ref="#paetus">du</rs> hättest <rs ref="#rehaar">ihn</rs> schonen
+              sollen.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Was schimpfte <rs ref="#rehaar">der Schurke</rs>?</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Schimpfliche Handlungen verdienen <rs ref="#Schimpf">Schimpf</rs>. <rs ref="#rehaar">Er</rs> konnte <rs ref="#ihren-guten-Namen-(jungfer-rehaars)">die Ehre <rs ref="#jungfer_rehaar"><rs ref="#rehaar">seiner</rs> Tochter</rs></rs> auf
+              keine andere Weise rächen, aber es möchten <rs ref="#gehörigen-Orts-(justiz,-polzei-o-dgl-in-leipzig,-kurfürst,-magnisfikus))">sich</rs> <rs ref="#gehörigen-Orts-(justiz,-polzei-o-dgl-in-leipzig,-kurfürst,-magnisfikus))">Leute</rs> finden –</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Was? Was für <rs ref="#gehörigen-Orts-(justiz,-polzei-o-dgl-in-leipzig,-kurfürst,-magnisfikus))">Leute</rs>?</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Du</rs> hast <rs ref="#jungfer_rehaar">sie</rs> entehrt, <rs ref="#paetus">du</rs> hast <rs ref="#rehaar"><rs ref="#jungfer_rehaar">ihren</rs> Vater</rs> entehrt. <rs ref="#Ein-schlechter-Kerl,-der-sich-an---------------Weiber-und-Musikanten-wagt">Ein schlechter Kerl, <rs ref="#Ein-schlechter-Kerl,-der-sich-an---------------Weiber-und-Musikanten-wagt">der</rs> <rs ref="#Ein-schlechter-Kerl,-der-sich-an---------------Weiber-und-Musikanten-wagt">sich</rs> an
+              <rs ref="#die-Weiber">Weiber</rs> und <rs ref="#ein-Virtuos-(künstler,-musiker)">Musikanten</rs> wagt</rs>, <rs ref="#ein-Virtuos-(künstler,-musiker)">die</rs> noch weniger als <rs ref="#die-Weiber">Weiber</rs> sind.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#Ein-schlechter-Kerl,-der-sich-an---------------Weiber-und-Musikanten-wagt">Ein schlechter Kerl</rs>?</p>
+            <pb n="75"/>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#paetus">Du</rs> sollst <rs ref="#rehaar">ihm</rs> öffentlich abbitten.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Mit meinem Stock.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>So werd ich <rs ref="#paetus">dir</rs> in <rs ref="#rehaar">seinem</rs> Namen antworten.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS</speaker></rs>
+            <stage>schreit.</stage>
+            <p>Was willst <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> von mir?</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#Genugtuung-(für-rehaar)">Genugtuung</rs> für <rs ref="#rehaar">Rehaarn</rs>.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> wirst mich doch nicht zwingen wollen, einfältiger Mensch –</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Ja, ich will <rs ref="#paetus">dich</rs> zwingen, kein Schurke zu sein.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p><rs ref="#fritz-(berg-sohn-geheimer-rat)">Du</rs> bist <rs ref="#ein-Spitzbube-(prädikativ-fritz)">einer</rs> – <rs ref="#fritz-(berg-sohn-geheimer-rat)">du</rs> mußt <rs ref="#fritz-(berg-sohn-geheimer-rat)">dich</rs> mit mir schlagen.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p>Herzlich gern – wenn <rs ref="#paetus">du</rs> <rs ref="#rehaar">Rehaarn</rs> nicht <rs ref="#Genugtuung-(für-rehaar)">Satisfaktion</rs> gibst.</p>
+          </sp>
+          <sp who="#paetus">
+            <rs ref="#paetus"><speaker>PÄTUS.</speaker></rs>
+            <p>Nimmermehr.</p>
+          </sp>
+          <sp who="#fritz">
+            <rs ref="#fritz-(berg-sohn-geheimer-rat)"><speaker>FRITZ.</speaker></rs>
+            <p><rs ref="#Es11">Es</rs> wird <rs ref="#Es11">sich</rs> zeigen.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,401 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Familie Schroffenstein</title>
+        <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
+        <author key="pnd:118563076">Kleist, Heinrich von</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000049</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1212309</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:r0px.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Heinrich von Kleist: Werke und Briefe in vier Bänden. Herausgegeben von Siegfried
+              Streller in Zusammenarbeit mit Peter Goldammer und Wolfgang Barthel, Anita Golz,
+              Rudolf Loch, Berlin und Weimar: Aufbau, 1978.</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1804">1804</date>
+            <date type="written" when="1802">1802</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <personGrp xml:id="chor_der_maedchen" sex="FEMALE">
+            <name>Chor der Mädchen</name>
+          </personGrp>
+          <personGrp xml:id="chor_der_juenglinge" sex="MALE">
+            <name>Chor der Jünglinge</name>
+          </personGrp>
+          <person xml:id="rupert" sex="MALE">
+            <persName>Rupert</persName>
+          </person>
+          <person xml:id="ottokar" sex="MALE">
+            <persName>Ottokar</persName>
+          </person>
+          <person xml:id="eustache" sex="FEMALE">
+            <persName>Eustache</persName>
+          </person>
+          <person xml:id="jeronimus" sex="MALE">
+            <persName>Jeronimus</persName>
+          </person>
+          <person xml:id="kirchenvogt" sex="MALE">
+            <persName>Kirchenvogt</persName>
+          </person>
+          <person xml:id="ein_diener_1-1" sex="MALE">
+            <persName>Ein Diener (I/1)</persName>
+          </person>
+          <person xml:id="johann" sex="MALE">
+            <persName>Johann</persName>
+          </person>
+          <person xml:id="sylvius" sex="MALE">
+            <persName>Sylvius</persName>
+          </person>
+          <person xml:id="agnes" sex="FEMALE">
+            <persName>Agnes</persName>
+          </person>
+          <person xml:id="gertrude" sex="FEMALE">
+            <persName>Gertrude</persName>
+          </person>
+          <person xml:id="sylvester" sex="MALE">
+            <persName>Sylvester</persName>
+          </person>
+          <person xml:id="gaertner" sex="MALE">
+            <persName>Gärtner</persName>
+          </person>
+          <person xml:id="ein_knappe" sex="MALE">
+            <persName>Ein Knappe</persName>
+          </person>
+          <person xml:id="aldoebern" sex="MALE">
+            <persName>Aldöbern</persName>
+          </person>
+          <person xml:id="theistiner" sex="MALE">
+            <persName>Theistiner</persName>
+          </person>
+          <person xml:id="ein_diener_2-3" sex="MALE">
+            <persName>Ein Diener (II/3)</persName>
+          </person>
+          <person xml:id="santing" sex="MALE">
+            <persName>Santing</persName>
+          </person>
+          <person xml:id="ein_diener_3-2" sex="MALE">
+            <persName>Ein Diener (III/2)</persName>
+          </person>
+          <person xml:id="der_wanderer" sex="MALE">
+            <persName>Der Wanderer</persName>
+          </person>
+          <person xml:id="zweiter_wanderer" sex="MALE">
+            <persName>Zweiter Wanderer</persName>
+          </person>
+          <person xml:id="die_kammerzofe" sex="FEMALE">
+            <persName>Die Kammerzofe</persName>
+          </person>
+          <person xml:id="ein_diener_4-1" sex="MALE">
+            <persName>Ein Diener (IV/1)</persName>
+          </person>
+          <person xml:id="barnabe" sex="FEMALE">
+            <persName>Barnabe</persName>
+          </person>
+          <person xml:id="ursula" sex="FEMALE">
+            <persName>Ursula</persName>
+          </person>
+          <person xml:id="fintenring" sex="MALE">
+            <persName>Fintenring</persName>
+          </person>
+          <person xml:id="ein_ritter" sex="MALE">
+            <persName>Ein Ritter</persName>
+          </person>
+          <personGrp xml:id="alle_5-1" sex="UNKNOWN">
+            <name>Alle (V/1)</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#eustache #rupert"/>
+            <relation name="parent_of" active="#eustache" passive="#ottokar"/>
+            <relation name="parent_of" active="#rupert" passive="#johann"/>
+            <relation name="parent_of" active="#sylvius" passive="#sylvester"/>
+            <relation name="spouses" mutual="#sylvester #gertrude"/>
+            <relation name="parent_of" active="#gertrude" passive="#agnes"/>
+            <relation name="associated_with" active="#aldoebern" passive="#rupert"/>
+            <relation name="associated_with" active="#santing" passive="#rupert"/>
+            <relation name="associated_with" active="#fintenring" passive="#rupert"/>
+            <relation name="associated_with" active="#theistiner" passive="#sylvester"/>
+            <relation name="parent_of" active="#ursula" passive="#barnabe"/>
+            <relation name="associated_with" active="#die_kammerzofe" passive="#eustache"/>
+            
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-03-04">(ff) formalities; work on IDs; add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Heinrich von Kleist</head>
+        <head>Die Familie Schroffenstein</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="98"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Rupert, Graf von Schroffenstein, aus dem Hause Rossitz.</castItem>
+          <castItem>Eustache, seine Gemahlin.</castItem>
+          <castItem>Ottokar, ihr Sohn.</castItem>
+          <castItem>Johann, Ruperts natürlicher Sohn.</castItem>
+          <castItem>Sylvius, Graf von Schroffenstein, aus dem Hause Warwand.</castItem>
+          <castItem>Sylvester, sein Sohn, regierender Graf.</castItem>
+          <castItem>Gertrude, Sylvesters Gemahlin, Stiefschwester der Eustache.</castItem>
+          <castItem>Agnes, ihre Tochter.</castItem>
+          <castItem>Jeronimus von Schroffenstein, aus dem Hause Wyk.</castItem>
+          <castGroup>
+            <castItem>Aldöbern,</castItem>
+            <castItem>Santing,</castItem>
+            <castItem>Fintenring,</castItem>
+            <roleDesc>Vasallen Ruperts.</roleDesc>
+          </castGroup>
+          <castItem>Theistiner, Vasall Sylvesters.</castItem>
+          <castItem>Ursula, eine Totengräberswitwe.</castItem>
+          <castItem>Barnabe, ihre Tochter.</castItem>
+          <castItem>Eine Kammerjungfer der Eustache.</castItem>
+          <castItem>Ein Kirchenvogt.</castItem>
+          <castItem>Ein Gärtner.</castItem>
+          <castItem>Zwei Wanderer.</castItem>
+          <castItem>Ritter, Geistliche, Hofgesinde.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Das Stück spielt in Schwaben.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Vierte Szene</head>
+          <stage>Eine andere Gegend <rs ref="#das-Gebirge">im Gebirge</rs>.</stage>
+          <stage><rs ref="#rupert">Rupert</rs> und <rs ref="#santing">Santing</rs>, treten auf.</stage>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Das soll gewöhnlich <rs ref="#der-Jäger">sein</rs> Spaziergang sein,</l>
+              <l>Sagt mir <rs ref="#der-Jäger">der Jäger</rs>. Selber hab ich <rs ref="#der-Jäger">ihn</rs></l>
+              <l>Zweimal und sehr erhitzt, auf dieser Straße</l>
+              <l>Begegnet. <rs ref="#im-Gebirge-sein">Ist</rs> <rs ref="#der-Jäger">er</rs> <rs ref="#das-Gebirge">im Gebirg</rs>, so <rs ref="#im-Gebirge-sein">ist's</rs></l>
+              <l>Auch <rs ref="#agnes">Agnes</rs>, und <rs ref="#rupert-/-santing">wir</rs> fangen beid zugleich.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>setzt <rs ref="#rupert">sich</rs> auf einen Stein.</stage>
+            <l><rs ref="#Es-ist-sehr-heiß-mir,-und-die-Zunge-trocken">Es ist sehr heiß mir, und <rs ref="#Ruperts-Zunge">die Zunge</rs> trocken</rs>.</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Der Wind geht kühl doch übers Feld.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Ich glaub,</l>
+              <l><rs ref="#Es-ist-sehr-heiß-mir,-und-die-Zunge-trocken">'s</rs> ist innerlich.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Fühlst <rs ref="#rupert">du</rs> nicht wohl <rs ref="#rupert">dich</rs>?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Nein.</l>
+              <l>Mich dürstet.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Komm an <rs ref="#der-Quell-4-4">diesen Quell</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l>Löscht <rs ref="#der-Quell-4-4">er</rs></l>
+              <l>Den Durst?</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Das Wasser mindestens ist klar,</l>
+              <l>Daß <rs ref="#rupert">du</rs> darin <rs ref="#rupert">dich</rs> spiegeln könntest. Komm!</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf, geht <rs ref="#der-Quell-4-4">zum Quell</rs>, neigt <rs ref="#rupert">sich</rs> über <rs ref="#der-Quell-4-4">ihn</rs>, und plötzlich mit der Bewegung
+              des Abscheus wendet <rs ref="#rupert">er</rs> <rs ref="#rupert">sich</rs>.</stage>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Was fehlt <rs ref="#rupert">dir</rs>?</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <lg>
+              <l><rs ref="#Eines-Teufels-Antlitz"><rs ref="#ein-Teufel">Eines Teufels</rs> Antlitz</rs> sah</l>
+              <l>Mich aus der Welle an.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING</speaker></rs>
+            <stage>lachend.</stage>
+            <l><rs ref="#Eines-Teufels-Antlitz">Es</rs> war <rs ref="#Ruperts-Gesicht"><rs ref="#rupert">dein</rs> eignes</rs>.</l>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>Skorpion von <rs ref="#ein-Mensch">einem Menschen</rs>.</l>
+            <stage>Setzt <rs ref="#rupert">sich</rs> wieder.</stage>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE</speaker></rs>
+            <stage>tritt auf.</stage>
+            <l><rs ref="#diesem-Wege">Hier</rs> geht's nach <rs ref="#Warwand">Warwand</rs> doch, <rs ref="#santing">gestrenger Ritter</rs>?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Was hast <rs ref="#barnabe">du</rs> denn zu tun <rs ref="#Warwand">dort</rs>, <rs ref="#barnabe">schönes Kind</rs>?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Bestellungen an <rs ref="#agnes">Fräulein Agnes</rs>.</l>
+            <pb n="187"/>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>So?</l>
+              <l>Wenn <rs ref="#agnes">sie</rs> so schön wie <rs ref="#barnabe">du</rs>, so möcht ich mit <rs ref="#barnabe">dir</rs> gehn.</l>
+              <l>Was wirst <rs ref="#barnabe">du</rs> <rs ref="#agnes">ihr</rs> denn sagen?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <lg>
+              <l>Sagen? Nichts,</l>
+              <l>Ich führe <rs ref="#agnes">sie</rs> bloß <rs ref="#das-Gebirge">ins Gebirg</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l><rs ref="#Heut">Heut</rs> noch?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Kennst <rs ref="#santing">du</rs> <rs ref="#agnes">sie</rs>?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l><rs ref="#Wen'ger-noch,-als-dich">Wen'ger noch, als <rs ref="#barnabe">dich</rs></rs>,</l>
+              <l>Und <rs ref="#Wen'ger-noch,-als-dich">es</rs> betrübt mich wen'ger. – Also <rs ref="#Heut">heute</rs> noch?</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Ja gleich. – Und bin ich auf dem rechten Weg?</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <l>Wer schickt <rs ref="#barnabe">dich</rs> denn?</l>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l>Wer? – <rs ref="#ursula">Meine Mutter</rs>.</l>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>So?</l>
+              <l>Nun geh nur, geh auf <rs ref="#diesem-Wege">diesem Wege</rs> fort,</l>
+              <l><rs ref="#barnabe">Du</rs> kannst nicht fehlen.</l>
+            </lg>
+          </sp>
+          <sp who="#barnabe">
+            <rs ref="#barnabe"><speaker>BARNABE.</speaker></rs>
+            <l><rs ref="#Gott">Gott</rs> behüte <rs ref="#santing">euch</rs>.</l>
+            <stage>Ab.</stage>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Hast <rs ref="#rupert"><rs ref="#Sie-kommt-noch-heut---------------In-das-Gebirg">du's</rs></rs> gehört <rs ref="#rupert">Rupert</rs>? <rs ref="#Sie-kommt-noch-heut---------------In-das-Gebirg"><rs ref="#agnes">Sie</rs> kommt noch heut</l>
+              <l>In <rs ref="#das-Gebirge">das Gebirg</rs></rs>. Ich wett, <rs ref="#barnabe">das Mädchen</rs> war</l>
+              <l>Von <rs ref="#ottokar">Ottokar</rs> geschickt.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT</speaker></rs>
+            <stage>steht auf.</stage>
+            <lg>
+              <l>So führ ein Gott,</l>
+              <l>So führ <rs ref="#ein-Teufel">ein Teufel</rs> <rs ref="#agnes">sie</rs> mir in die Schlingen,</l>
+              <l>Gleichviel! <rs ref="#der-Familienzweig-aus-Warwand">Sie</rs> haben mich zu <rs ref="#ein-Mörder">einem Mörder</rs></l>
+              <l>Gebrandmarkt boshaft, im voraus. – Wohlan,</l>
+              <l>So sollen <rs ref="#der-Familienzweig-aus-Warwand">sie</rs> denn recht gehabt auch haben.</l>
+              <l>– Weißt <rs ref="#santing">du</rs> <rs ref="#den-Ort,-wo-sie-sich-treffen">den Ort, <rs ref="#den-Ort,-wo-sie-sich-treffen">wo</rs> <rs ref="#ottokar-/-agnes">sie</rs> <rs ref="#ottokar-/-agnes">sich</rs> treffen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#santing">
+            <rs ref="#santing"><speaker>SANTING.</speaker></rs>
+            <lg>
+              <l>Nein,</l>
+              <l><rs ref="#rupert-/-santing">Wir</rs> müssen <rs ref="#ottokar-/-agnes">ihnen</rs> auf die Fährte gehn.</l>
+            </lg>
+          </sp>
+          <sp who="#rupert">
+            <rs ref="#rupert"><speaker>RUPERT.</speaker></rs>
+            <l>So komm.</l>
+            <stage><rs ref="#rupert-/-santing">Beide</rs> ab.</stage>
+            <pb n="188"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,259 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <stage><rs ref="#Zimmer-Eugeniens">Zimmer <rs ref="#eugenie">Eugeniens</rs></rs>, im gotischen Stil.</stage>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage><rs ref="#eugenie">Eugenie</rs>, nachher <rs ref="#hofmeisterin">Hofmeisterin</rs> außen.</stage>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE</speaker></rs>
+            <stage>eine Brieftasche hervorziehend.</stage>
+            <lg>
+              <l>Und nun geschwind zum Pergament, zum Griffel!</l>
+              <l>Ich hab' es ganz, und eilig fass' ich's auf,</l>
+              <l>Was ich <rs ref="#koenig">dem Könige</rs> zu <rs ref="#An-jenem-Fest-(geburtstag-koenig)">jener Feier,</l>
+              <l>Bei <rs ref="#An-jenem-Fest-(geburtstag-koenig)">der</rs> ich, neugeboren durch <rs ref="#deiner-Worte-(koenig)"><rs ref="#koenig">sein</rs> Wort</rs>,</l>
+              <l><rs ref="#des-Lebens">Ins Leben</rs> trete, herzlich widmen soll</rs>.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> rezitiert langsam und schreibt.</stage>
+            <lg>
+              <l>Welch Wonneleben wird hier ausgespendet!</l>
+              <l>Willst <rs ref="#koenig">du</rs>, <rs ref="#koenig">o Herr der obern Regionen</rs>,</l>
+              <l>Des Neulings Unvermögen nicht verschonen?</l>
+              <l>Ich sinke hin, von <rs ref="#koenig">Majestät</rs> geblendet.</l>
+              <l>Doch bald getrost zu <rs ref="#koenig">dir</rs> hinauf gewendet</l>
+              <l>Erfreut's mich, an dem Fuß der festen Thronen,</l>
+              <l>Ein Sprößling <rs ref="#koenig">deines</rs> Stamms, beglückt zu wohnen,</l>
+              <l>Und all mein frühes Hoffen ist vollendet.</l>
+              <l>So fließe denn der holde Born der Gnaden!</l>
+              <l>Hier will <rs ref="#die-treue-Brust">die treue Brust</rs> so gern verweilen</l>
+              <l>Und an der Liebe <rs ref="#koenig">Majestät</rs> <rs ref="#die-treue-Brust">sich</rs> fassen.</l>
+              <l>Mein Ganzes hängt an einem zarten Faden,</l>
+              <l>Mir ist, als müßt' ich unaufhaltsam eilen,</l>
+              <l><rs ref="#Das-Leben,-das-du-gabst">Das Leben, <rs ref="#Das-Leben,-das-du-gabst">das</rs> <rs ref="#koenig">du</rs> gabst</rs>, für <rs ref="#koenig">dich</rs> zu lassen.</l>
+            </lg>
+            <stage>Das Geschriebene mit Gefälligkeit betrachtend.</stage>
+            <lg>
+              <l>So hast <rs ref="#bewegtes-Herz">du</rs> lange nicht, <rs ref="#bewegtes-Herz">bewegtes Herz</rs>,</l>
+              <l><rs ref="#bewegtes-Herz">Dich</rs> in gemeßnen Worten ausgesprochen!</l>
+              <l>Wie glücklich, den Gefühlen <rs ref="#uns-/-wir">unsrer</rs> Brust</l>
+              <l>Für <rs ref="#ew'ge-Zeit">ew'ge Zeit</rs> den Stempel aufzudrücken!</l>
+              <l>Doch ist es wohl genug? Hier quillt es fort,</l>
+              <l>Hier quillt es auf! – <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">Du</rs> nahest, <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">großer Tag,</l>
+              <l><pb n="242"/> <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">Der</rs> <rs ref="#uns-/-wir">uns</rs> <rs ref="#koenig">den König</rs> gab und <rs ref="#großer-Tag,----------------Der-uns-den-König-gab-und-der-nun-mich---------------Dem-Könige,-dem-Vater,-mich-mir-selbst---------------Zu-ungemeßner-Wonne-geben-soll">der</rs> nun mich</l>
+              <l><rs ref="#koenig">Dem Könige</rs>, <rs ref="#herzog">dem Vater</rs>, mich mir selbst</l>
+              <l>Zu ungemeßner Wonne geben soll</rs>.</l>
+              <l><rs ref="#An-jenem-Fest-(geburtstag-koenig)">Dies hohe Fest</rs> verherrliche mein Lied!</l>
+              <l>Beflügelt drängt <rs ref="#Phantasie">sich</rs> <rs ref="#Phantasie">Phantasie</rs> voraus,</l>
+              <l><rs ref="#Phantasie">Sie</rs> trägt mich vor <rs ref="#Am-Throne">den Thron</rs> und stellt mich vor,</l>
+              <l><rs ref="#Phantasie">Sie</rs> gibt im Kreise mir –</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN</speaker></rs>
+            <stage>außen.</stage>
+            <l><rs ref="#eugenie">Eugenie</rs>!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Was soll das?</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Höre mich und öffne gleich!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Verhaßte Störung! Öffnen kann ich nicht.</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l><rs ref="#herzog">Vom Vater</rs> Botschaft!</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#herzog">vom Vater</rs>? Gleich!</l>
+              <l>Da muß ich öffnen.</l>
+            </lg>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <lg>
+              <l>Große Gaben scheint</l>
+              <l><rs ref="#herzog">Er</rs> <rs ref="#eugenie">dir</rs> zu schicken.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Warte!</l>
+          </sp>
+          <sp who="#hofmeisterin">
+            <rs ref="#hofmeisterin"><speaker>HOFMEISTERIN.</speaker></rs>
+            <l>Hörst <rs ref="#eugenie">du</rs>?</l>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <lg>
+              <l>Warte!</l>
+              <l>Doch wo verberg' ich <rs ref="#dieses-Blatt">dieses Blatt</rs>? Zu klar</l>
+              <l><rs ref="#dieses-Blatt">Spricht's</rs> <rs ref="#jene-Hoffnung">jene Hoffnung</rs> aus, <rs ref="#jene-Hoffnung">die</rs> mich beglückt.</l>
+              <l>Hier ist nichts zum Verschließen! Und bei mir</l>
+              <l><rs ref="#dieses-Blatt">Ist's</rs> nirgend sicher, diese Tasche kaum;</l>
+              <l>Denn meine Leute sind nicht alle treu.</l>
+              <l>Gar manches hat <rs ref="#Man">man</rs> schon mir, als ich schlief,</l>
+              <l>Durchblättert und entwendet. <rs ref="#Das-Geheimnis">Das Geheimnis</rs>,</l>
+              <l><rs ref="#Das-Geheimnis">Das größte, <rs ref="#Das-Geheimnis">das</rs> ich je gehegt</rs>, wohin,</l>
+              <l>Wohin verberg' <rs ref="#Das-Geheimnis">ich's</rs>?</l>
+            </lg>
+            <stage>Indem <rs ref="#eugenie">sie</rs> <rs ref="#eugenie">sich</rs> der Seitenwand nähert.</stage>
+            <lg>
+              <l>Wohl! Hier war es ja,</l>
+              <l>Wo <rs ref="#geheimer-Wandschrank">du</rs>, <rs ref="#geheimer-Wandschrank">geheimer Wandschrank</rs>, meiner Kindheit</l>
+              <l>Unschuldige Geheimnisse verbargst!</l>
+              <rs ref="#geheimer-Wandschrank"><l>Du, <rs ref="#geheimer-Wandschrank">den</rs> mir kindisch allausspähende,</l>
+              <l>Von Neugier und von Müßiggang erzeugte,</l>
+              <l>Rastlose Tätigkeit entdecken half</rs>,</l>
+              <l><rs ref="#geheimer-Wandschrank">Du</rs>, jedem <rs ref="#vom-Geheimnis">ein Geheimnis</rs>, öffne <rs ref="#geheimer-Wandschrank">dich</rs>!</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> drückt an <rs ref="#einer-unbemerkbaren-Feder">einer unbemerkbaren Feder</rs>, und <rs ref="#eine-kleine-Türe">eine kleine Türe</rs> springt
+              auf.</stage>
+            <lg>
+              <l><pb n="243"/> So wie ich sonst verbotnes Zuckerwerk</l>
+              <l>Zu listigem Genuß in <rs ref="#geheimer-Wandschrank">dir</rs> versteckte,</l>
+              <l>Vertrau' ich heute <rs ref="#meines-Lebens-(eugenie)">meines Lebens</rs> Glück</l>
+              <l>Entzückt und sorglich <rs ref="#geheimer-Wandschrank">dir</rs>, auf kurze Zeit.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> legt <rs ref="#dieses-Blatt">das Pergament</rs> in <rs ref="#geheimer-Wandschrank">den Schrank</rs> und drückt <rs ref="#geheimer-Wandschrank">ihn</rs> zu.</stage>
+            <lg>
+              <l>Die Tage schreiten vor, und ahnungsvoller</l>
+              <l>Bewegen <rs ref="#Schmerz-/-Freude">sich</rs> nun <rs ref="#Freude">Freud</rs>' und <rs ref="#Schmerz">Schmerz</rs> heran.</l>
+            </lg>
+            <stage><rs ref="#eugenie">Sie</rs> öffnet <rs ref="#eine-kleine-Türe">die Türe</rs>.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

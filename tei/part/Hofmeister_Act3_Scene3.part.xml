@@ -1,0 +1,286 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Akt</head>
+        <div type="scene">
+          <head>Dritte Szene</head>
+          <stage>In <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">Heidelbrunn</rs>.</stage>
+          <stage><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Der Geheime Rat</rs>. <rs ref="#seiffenblase">Herr von Seiffenblase</rs> und <rs ref="#hofmeister-(von-seiffenbalse)"><rs ref="#seiffenblase">sein</rs> Hofmeister</rs>.</stage>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p><rs ref="#seiffenblase-/-hofmeister-(von-seif…">Wie</rs> haben <rs ref="#seiffenblase-/-hofmeister-(von-seif…">uns</rs> in <rs ref="#Halle-in-Sachsen">Halle</rs> nur ein Jahr aufgehalten, und als <rs ref="#seiffenblase-/-hofmeister-(von-seif…">wir</rs> von Göttingen kamen,
+              nahmen <rs ref="#seiffenblase-/-hofmeister-(von-seif…">wir</rs> <rs ref="#seiffenblase-/-hofmeister-(von-seif…">unsere</rs> Rückreise über alle berühmte Universitäten in Deutschland. <rs ref="#seiffenblase-/-hofmeister-(von-seif…">Wir</rs>
+              konnten also in <rs ref="#Halle-in-Sachsen">Halle</rs> das zweitemal nicht lange verweilen; zudem saß <rs ref="#fritz-(berg-sohn-geheimer-rat)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihr</rs> Herr Sohn</rs>
+              grade zu der Zeit in <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">dem unglücklichen Arrest, <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">wo</rs> ich <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> nur einigemal zu sprechen
+              die Ehre haben konnte</rs>: also könnt ich <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihnen</rs> aufrichtig von der Führung <rs ref="#fritz-(berg-sohn-geheimer-rat)">Dero <pb n="54"/> Herrn Sohns</rs> draußen keine umständliche Nachricht geben.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">Der Himmel</rs> verhängt <rs ref="#Strafen-(des-himmels,-ggü-d-familien-berg)">Strafen</rs> über <rs ref="#unsre-ganze-Familie-(familie-berg-inkl-majors)">unsre ganze Familie</rs>. <rs ref="#major-ccc">Mein Bruder</rs> – ich <rs ref="#will's2">will's</rs> <rs ref="#hofmeister-(von-seiffenbalse)">Ihnen</rs>
+              nur nicht verhehlen, denn leider ist <rs ref="#Jedermann-(gesellschaftliche-welt-in-und-um-insterburg)">Stadt und Land</rs> voll davon – hat das Unglück
+              gehabt, <rs ref="#will's2">daß <rs ref="#gustchen-(tochter-majors)"><rs ref="#major-ccc">seine</rs> Tochter</rs> <rs ref="#major-ccc">ihm</rs> verschwunden ist, ohne daß eine Spur von <rs ref="#gustchen-(tochter-majors)">ihr</rs> anzutreffen</rs>
+              – Ich höre itzt von <rs ref="#fritz-(berg-sohn-geheimer-rat)">meinem Sohn</rs> – Wenn <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> <rs ref="#fritz-(berg-sohn-geheimer-rat)">sich</rs> gut geführt hätte, wie <rs ref="#wär's">wär's</rs> möglich
+              gewesen, <rs ref="#wär's"><rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> <rs ref="#Karzer-(gefängnis,-arrestzelle-d-uni)">ins Gefängnis</rs> zu bringen</rs>? Ich hab <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihm</rs> außer <rs ref="#fritz-(berg-sohn-geheimer-rat)">seinem</rs> starken Wechsel noch
+              alle halbe Jahr außerordentliche geschickt; auf allen Fall –</p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p><rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">Die bösen Gesellschaften</rs>; die erstaunenden Verführungen auf <rs ref="#Universitäten">Akademien</rs>.</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>SEIFFENBLASE.</speaker></rs>
+            <p>Das seltsamste dabei ist, daß <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> für <rs ref="#paetus">einen andern</rs> sitzt; <rs ref="#paetus">ein Ausbund aller
+              Lüderlichkeit</rs>, <rs ref="#paetus">ein Mensch, für <rs ref="#paetus">den</rs> ich keinen Groschen ausgäbe und [wenn] <rs ref="#paetus">er</rs> auf
+              meinem Misthaufen Hungers krepierte</rs>. <rs ref="#paetus">Er</rs> ist hier gewesen, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> werden von <rs ref="#paetus">ihm</rs> gehört
+              haben; <rs ref="#paetus">er</rs> suchte <rs ref="#das-Geld-(ablösesummer-fritz-pätus-gefängnisstrafe)">Geld</rs> bei <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">seinem</rs> Vater</rs>, unter dem Vorwand, <rs ref="#fritz-(berg-sohn-geheimer-rat)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihren</rs> Herrn Sohn</rs>
+              auszulösen; vermutlich wär <rs ref="#paetus">er</rs> damit auf eine andere Akademie gegangen und hätte von
+              frischem angefangen zu wirtschaften. Ich weiß schon, wie's <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">die lüderlichen Studenten</rs>
+              machen, aber <rs ref="#der_alte_paetus-(pätus-vater)-qqq"><rs ref="#paetus">sein</rs> Vater</rs> hat den Braten gerochen und hat <rs ref="#paetus">ihn</rs> nicht vor <rs ref="#der_alte_paetus-(pätus-vater)-qqq">sich</rs> kommen
+              lassen.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Doch wohl nicht <rs ref="#Herr-Pätus-(prädikativ-pätus)">der junge Pätus, <rs ref="#der_alte_paetus-(pätus-vater)-qqq">des Ratsherrn</rs> Sohn</rs>?</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>SEIFFENBLASE.</speaker></rs>
+            <p>Ich glaub, <rs ref="#paetus">es</rs> ist <rs ref="#Herr-Pätus-(prädikativ-pätus)">derselbe</rs>.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p><rs ref="#Jedermann-(gesellschaftliche-welt-in-und-um-insterburg)">Jedermann</rs> hat <rs ref="#der_alte_paetus-(pätus-vater)-qqq">dem Vater</rs> die Härte verdacht.</p>
+          </sp>
+          <sp who="#hofmeister">
+            <rs ref="#hofmeister-(von-seiffenbalse)"><speaker>HOFMEISTER.</speaker></rs>
+            <p>Ja was ist da zu verdenken, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">mein gnädiger Herr Geheimer Rat</rs>; wenn <rs ref="#ein-Sohn">ein Sohn</rs> die Güte
+              <rs ref="#einem-Vater">des Vaters</rs> zu sehr mißbraucht, so muß <rs ref="#das-Vaterherz-(mitgefühl-eines-vaters-ggü-seinem-sohn)">sich</rs> <rs ref="#das-Vaterherz-(mitgefühl-eines-vaters-ggü-seinem-sohn)">das Vaterherz</rs> wohl ab von <rs ref="#ein-Sohn">ihm</rs> wenden. Der
+              Hohepriester Eli war nicht hart und brach den Hals.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Gegen die Ausschweifungen <rs ref="#seiner-Kinder"><rs ref="#einem-Vater">seiner</rs> Kinder</rs> kann man nie zu hart sein, aber wohl gegen
+              <rs ref="#seiner-Kinder">ihr</rs> Elend. <rs ref="#paetus">Der <pb n="55"/> junge Mensch</rs> soll hier haben betteln müssen. Und <rs ref="#fritz-(berg-sohn-geheimer-rat)">mein Sohn</rs>
+              sitzt um <rs ref="#paetus">seinetwillen</rs>?</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>SEIFFENBLASE.</speaker></rs>
+            <p>Was anders? <rs ref="#fritz-(berg-sohn-geheimer-rat)">Er</rs> war <rs ref="#paetus">sein</rs> vertrautester Freund und fand niemand würdiger, mit <rs ref="#paetus">ihm</rs> die
+              Komödie von Damon und Pythias zu spielen. Noch mehr, <rs ref="#paetus">Herr Pätus</rs> kam zurück und wollte
+              <rs ref="#seiner-Stelle-(an-pätus-stelle,-situation-pätus)"><rs ref="#paetus">seinen</rs> Platz</rs> wieder einnehmen, aber <rs ref="#fritz-(berg-sohn-geheimer-rat)"><rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Ihr</rs> Sohn</rs> bestund drauf, <rs ref="#fritz-(berg-sohn-geheimer-rat)">er</rs> wollte sitzen bleiben:
+              <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Sie</rs> würden <rs ref="#fritz-(berg-sohn-geheimer-rat)">ihn</rs> schon auslösen; und <rs ref="#paetus">Pätus</rs> mit <rs ref="#bollwerk">einem andern Erzrenommisten und Spieler</rs>
+              wollten die Flucht nehmen und <rs ref="#bollwerk-/-paetus">sich</rs> zu helfen suchen, so gut <rs ref="#bollwerk-/-paetus">sie</rs> könnten. Vielleicht
+              überfallen <rs ref="#bollwerk-/-paetus">sie</rs> wieder so <rs ref="#irgend-einen-armen-Studenten">irgend einen armen Studenten</rs> mit Masken vor den Gesichtern
+              auf <rs ref="#die-Stube-(haus-von-jemandem)">der Stube</rs> und nehmen <rs ref="#irgend-einen-armen-Studenten">ihm</rs> die Uhr und Goldbörse, mit der Pistol auf der Brust, weg,
+              wie <rs ref="#bollwerk-/-paetus">sie's</rs> in <rs ref="#Halle-in-Sachsen">Halle</rs> schon einem gemacht haben.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Und <rs ref="#fritz-(berg-sohn-geheimer-rat)">mein Sohn</rs> ist der dritte aus <rs ref="#Die-bösen-Gesellschaften(die-man-an-der-universität-hat,-studenten))">diesem Kleeblatt</rs>?</p>
+          </sp>
+          <sp who="#seiffenblase">
+            <rs ref="#seiffenblase"><speaker>SEIFFENBLASE.</speaker></rs>
+            <p>Ich weiß nicht, <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc">Herr Geheimer Rat</rs>.</p>
+          </sp>
+          <sp who="#geheimer_rat">
+            <rs ref="#geheimer_rat-(bruder-von-major,-auch-berg)-ccc"><speaker>GEHEIMER RAT.</speaker></rs>
+            <p>Kommen <rs ref="#seiffenblase-/-hofmeister-(von-seif…">Sie</rs> zum Essen, meine Herren! Ich weiß schon zuviel. Es ist <rs ref="#Gottes-Gericht">ein Gericht Gottes</rs>
+              über gewisse Familien; bei einigen sind gewisse Krankheiten erblich, bei andern arten
+              <rs ref="#seiner-Kinder">die Kinder</rs> aus, <rs ref="#einem-Vater">die Väter</rs> mögen tun was <rs ref="#einem-Vater">sie</rs> wollen. Essen <rs ref="#seiffenblase-/-hofmeister-(von-seif…">Sie</rs>: ich will fasten und
+              beten, vielleicht hab ich diesen Abend durch die Ausschweifungen meiner Jugend
+              verdient.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

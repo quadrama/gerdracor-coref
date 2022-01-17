@@ -1,0 +1,268 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die natürliche Tochter</title>
+        <title type="sub">Trauerspiel</title>
+        <author key="pnd:118540238">Goethe, Johann Wolfgang</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000038</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1219062</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:11g3h.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Goethes Werke. Hamburger Ausgabe in 14 Bänden. Textkritisch durchgesehen und mit
+              Anmerkungen versehen von Erich Trunz, Hamburg: Christian Wegener, 1948 ff.
+              [Seitenkonkordanz zu einer Mischauflage aus den Jahren 1959 und 1960.]</title>
+            <date type="print" when="1803">1803</date>
+            <date type="premiere" when="1803">1803</date>
+            <date type="written" when="1803">1801–1803</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="koenig" sex="MALE">
+            <rs ref="#koenig"><persName>König</persName></rs>
+          </person>
+          <person xml:id="herzog" sex="MALE">
+            <rs ref="#herzog"><persName>Herzog</persName></rs>
+          </person>
+          <person xml:id="graf" sex="MALE">
+            <rs ref="#graf"><persName>Graf</persName></rs>
+          </person>
+          <person xml:id="eugenie" sex="FEMALE">
+            <rs ref="#eugenie"><persName>Eugenie</persName></rs>
+          </person>
+          <person xml:id="sekretaer" sex="MALE">
+            <rs ref="#sekretaer"><persName>Sekretär</persName></rs>
+          </person>
+          <person xml:id="hofmeisterin" sex="FEMALE">
+            <rs ref="#hofmeisterin"><persName>Hofmeisterin</persName></rs>
+          </person>
+          <person xml:id="weltgeistlicher" sex="MALE">
+            <rs ref="#weltgeistlicher"><persName>Weltgeistlicher</persName></rs>
+          </person>
+          <person xml:id="gerichtsrat" sex="MALE">
+            <rs ref="#gerichtsrat"><persName>Gerichtsrat</persName></rs>
+          </person>
+          <person xml:id="gouverneur" sex="MALE">
+            <rs ref="#gouverneur"><persName>Gouverneur</persName></rs>
+          </person>
+          <person xml:id="aebtissin" sex="FEMALE">
+            <rs ref="#aebtissin"><persName>Äbtissin</persName></rs>
+          </person>
+          <person xml:id="moench" sex="MALE">
+            <rs ref="#moench"><persName>Mönch</persName></rs>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-12-09">(ff) add gender info</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Johann Wolfgang Goethe</head>
+        <head>Die natürliche Tochter</head>
+        <head>Trauerspiel</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="215"/> Personen.</head>
+          <rs ref="#koenig"><castItem>König</castItem></rs>
+          <rs ref="#herzog"><castItem>Herzog</castItem></rs>
+          <rs ref="#graf"><castItem>Graf</castItem></rs>
+          <rs ref="#eugenie"><castItem>Eugenie</castItem></rs>
+          <rs ref="#hofmeisterin"><castItem>Hofmeisterin</castItem></rs>
+          <rs ref="#sekretaer"><castItem>Sekretär</castItem></rs>
+          <rs ref="#weltgeistlicher"><castItem>Weltgeistlicher</castItem></rs>
+          <rs ref="#gerichtsrat"><castItem>Gerichtsrat</castItem></rs>
+          <rs ref="#gouverneur"><castItem>Gouverneur</castItem></rs>
+          <rs ref="#aebtissin"><castItem>Äbtissin</castItem></rs>
+          <rs ref="#moench"><castItem>Mönch</castItem></rs>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug</head>
+        <stage>Dichter Wald.</stage>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage>Die Vorigen. <rs ref="#eugenie">Eugenie</rs>, auf zusammengeflochtenen Ästen für tot hereingetragen.
+            <rs ref="#herzog">Herzog</rs>. <rs ref="#deinen-Wundarzt">Wundarzt</rs>. Gefolge.</stage>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG</speaker></rs>
+            <stage><rs ref="#deinen-Wundarzt">zum Wundarzt</rs>.</stage>
+            <lg>
+              <l>Wenn <rs ref="#deinen-Wundarzt">deine</rs> Kunst nur irgend was vermag,</l>
+              <l><rs ref="#deinen-Wundarzt">Erfahrner Mann</rs>, dem <rs ref="#koenig"><rs ref="#uns-/-wir">unsers</rs> Königs</rs> Leben,</l>
+              <l>Das unschätzbare Gut, vertraut ist, laß</l>
+              <l><rs ref="#Ihr-helles-Auge-(eugenie)"><rs ref="#eugenie">Ihr</rs> helles Auge</rs> <rs ref="#Ihr-helles-Auge-(eugenie)">sich</rs> noch einmal öffnen,</l>
+              <l>Daß <rs ref="#Hoffnung">Hoffnung</rs> mir in <rs ref="#meinem-Blick-(eugenie)">diesem Blick</rs> erscheine!</l>
+              <l>Daß aus der Tiefe <rs ref="#meines-Jammers-(herzog)">meines Jammers</rs> ich</l>
+              <l>Nur Augenblicke noch gerettet werde!</l>
+              <l>Vermagst <rs ref="#deinen-Wundarzt">du</rs> dann nichts weiter, kannst <rs ref="#deinen-Wundarzt">du</rs> <rs ref="#eugenie">sie</rs></l>
+              <l>Nur wenige Minuten mir erhalten:</l>
+              <l>So laßt mich eilen, vor <rs ref="#eugenie">ihr</rs> hinzusterben,</l>
+              <l>Daß ich im Augenblick <rs ref="#des-Todes">des Todes</rs> noch</l>
+              <l>Getröstet rufe: <rs ref="#eugenie">Meine Tochter</rs> lebt!</l>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <lg>
+              <l>Entferne <rs ref="#herzog">dich</rs>, <rs ref="#herzog">mein Oheim</rs>! daß ich hier</l>
+              <l>Die Vaterpflichten treulich übernehme.</l>
+              <l>Nichts unversucht läßt <rs ref="#deinen-Wundarzt">dieser wackre Mann</rs>.</l>
+              <l>Gewissenhaft, als läg' ich selber hier,</l>
+              <l>Wird <rs ref="#deinen-Wundarzt">er</rs> um <rs ref="#eugenie">deine Tochter</rs> <rs ref="#deinen-Wundarzt">sich</rs> bemühen.</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <l><rs ref="#Sie-regt-sich"><rs ref="#eugenie">Sie</rs> regt <rs ref="#eugenie">sich</rs></rs>!</l>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG.</speaker></rs>
+            <l>Ist <rs ref="#Sie-regt-sich">es</rs> wahr?</l>
+          </sp>
+          <sp who="#graf">
+            <rs ref="#graf"><speaker>GRAF.</speaker></rs>
+            <l><rs ref="#eugenie">Sie</rs> regt <rs ref="#eugenie">sich</rs>!</l>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Starr</l>
+              <l>Blickt <rs ref="#eugenie">sie</rs> zum Himmel, blickt verirrt umher.</l>
+              <l><rs ref="#eugenie">Sie</rs> lebt! <rs ref="#eugenie">sie</rs> lebt!</l>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG</speaker></rs>
+            <stage>ein wenig zurücktretend.</stage>
+            <l>Verdoppelt <rs ref="#herzog">eure</rs> Sorge!</l>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l><rs ref="#eugenie">Sie</rs> lebt! <rs ref="#eugenie">sie</rs> lebt! <rs ref="#eugenie">Sie</rs> hat <rs ref="#des-Lebens">dem Tage</rs> wieder</l>
+              <l><rs ref="#Ihr-helles-Auge-(eugenie)"><rs ref="#eugenie">Ihr</rs> Aug'</rs> eröffnet. Ja! <rs ref="#eugenie">sie</rs> wird nun bald</l>
+              <l><pb n="221"/> Auch <rs ref="#ihrem-Vater-(eugenie)"><rs ref="#eugenie">ihren</rs> Vater</rs>, <rs ref="#eugenie">ihre</rs> Freunde kennen.</l>
+              <l>Nicht so umher, <rs ref="#eugenie">mein liebes Kind</rs>, verschwende</l>
+              <l><rs ref="#die-Blicke">Die Blicke</rs> staunend, ungewiß; auf mich,</l>
+              <l>Auf <rs ref="#ihrem-Vater-(eugenie)"><rs ref="#eugenie">deinen</rs> Vater</rs> wende <rs ref="#die-Blicke">sie</rs> zuerst.</l>
+              <l>Erkenne mich, laß meine Stimme <rs ref="#eugenie">dir</rs></l>
+              <l>Zuerst das Ohr berühren, da <rs ref="#eugenie">du</rs> <rs ref="#uns-/-wir">uns</rs></l>
+              <l>Aus <rs ref="#des-Todes">jener stummen Nacht</rs> zurückekehrst.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE</speaker></rs>
+            <stage><rs ref="#eugenie">die</rs> indes nach und nach zu <rs ref="#eugenie">sich</rs> gekommen ist und <rs ref="#eugenie">sich</rs> aufgerichtet hat.</stage>
+            <l>Was ist aus <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">uns</rs> geworden?</l>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Kenne mich</l>
+              <l>Nur erst! – Erkennst <rs ref="#eugenie">du</rs> mich?</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l><rs ref="#herzog">Mein Vater</rs>!</l>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Ja!</l>
+              <rs ref="#ihrem-Vater-(eugenie)"><l><rs ref="#eugenie">Dein</rs> Vater, <rs ref="#ihrem-Vater-(eugenie)">den</rs> mit diesen holden Tönen</l>
+              <l><rs ref="#eugenie">Du</rs> aus den Armen <rs ref="#der-Verzweiflung">der Verzweiflung</rs> rettest</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE.</speaker></rs>
+            <l>Wer bracht' <rs ref="#Ein-starker-Trupp-von-Reitern,-welcher-sich---------------Durch-Zufall-von-der-Jagd-getrennt-gesehn">uns</rs> unter diese Bäume?</l>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG</speaker></rs>
+            <stage><rs ref="#herzog">dem</rs> <rs ref="#deinen-Wundarzt">der Wundarzt</rs> <rs ref="#ein-weißes-Tuch">ein weißes Tuch</rs> gegeben.</stage>
+            <lg>
+              <l>Bleib</l>
+              <l>Gelassen, <rs ref="#eugenie">meine Tochter</rs>! <rs ref="#Diese-Stärkung">Diese Stärkung</rs>,</l>
+              <l>Nimm <rs ref="#Diese-Stärkung">sie</rs> mit <rs ref="#der-Ruhe">Ruhe</rs>, mit <rs ref="#Vertrauen">Vertrauen</rs> an!</l>
+            </lg>
+          </sp>
+          <sp who="#eugenie">
+            <rs ref="#eugenie"><speaker>EUGENIE</speaker></rs>
+            <stage><rs ref="#eugenie">sie</rs> nimmt <rs ref="#herzog">dem Vater</rs> <rs ref="#ein-weißes-Tuch">das Tuch</rs> ab, <rs ref="#ein-weißes-Tuch">das</rs> <rs ref="#herzog">er</rs> <rs ref="#eugenie">ihr</rs> vorgehalten und verbirgt <rs ref="#ihr-Gesicht-(eugenie)"><rs ref="#eugenie">ihr</rs> Gesicht</rs>
+              darin. Dann steht <rs ref="#eugenie">sie</rs> schnell auf, indem <rs ref="#eugenie">sie</rs> <rs ref="#ein-weißes-Tuch">das Tuch</rs> <rs ref="#ihr-Gesicht-(eugenie)">vom Gesicht</rs> nimmt.</stage>
+            <lg>
+              <l>Da bin ich wieder! – Ja, nun weiß ich alles.</l>
+              <l>Dort oben hielt ich, dort vermaß ich mich</l>
+              <l>Herab zu reiten, grad herab. Verzeih!</l>
+              <l>Nicht wahr, ich bin gestürzt? Vergibst <rs ref="#herzog">du</rs> mir's?</l>
+              <l>Für tot hob <rs ref="#Man">man</rs> mich auf? <rs ref="#herzog">Mein guter Vater</rs>!</l>
+              <l>Und wirst <rs ref="#herzog">du</rs> <rs ref="#die-Verwegne">die Verwegne</rs> lieben können,</l>
+              <l><rs ref="#die-Verwegne">Die</rs> solche bittre Schmerzen <rs ref="#herzog">dir</rs> gebracht?</l>
+            </lg>
+          </sp>
+          <sp who="#herzog">
+            <rs ref="#herzog"><speaker>HERZOG.</speaker></rs>
+            <lg>
+              <l>Zu wissen glaubt' ich, welch ein edler Schatz</l>
+              <l>In <rs ref="#eugenie">dir</rs>, <rs ref="#eugenie">o Tochter</rs>, mir beschieden ist;</l>
+              <l>Nun steigert mir gefürchteter Verlust</l>
+              <l><rs ref="#Glück">Des Glücks</rs> Empfindung <rs ref="#des-Unendlichen">ins Unendliche</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#koenig">
+            <rs ref="#koenig"><speaker>KÖNIG</speaker></rs>
+            <stage><rs ref="#koenig">der</rs> <rs ref="#koenig">sich</rs> bisher im Grunde mit <rs ref="#deinen-Wundarzt">dem Wundarzt</rs> und <rs ref="#graf">dem Grafen</rs> unterhalten, zu <rs ref="#herzog">dem
+              letzten</rs>.</stage>
+            <l>Entferne jedermann! ich will <rs ref="#eugenie">sie</rs> sprechen.</l>
+            <pb n="222"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

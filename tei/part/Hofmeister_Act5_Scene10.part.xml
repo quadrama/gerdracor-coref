@@ -1,0 +1,451 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Akt</head>
+        <div type="scene">
+          <head>Zehnte Szene</head>
+          <stage><rs ref="#lise">Lise</rs> tritt herein, <rs ref="#ein-Gesangbuch-(lise)">ein Gesangbuch</rs> in <rs ref="#der-Hand-(lise-wohl-rechte)">der Hand</rs>, ohne daß <rs ref="#laeuffer-ccc">er</rs> <rs ref="#lise">sie</rs> gewahr wird. <rs ref="#lise">Sie</rs>
+            sieht <rs ref="#laeuffer-ccc">ihm</rs> lang stillschweigend zu. <rs ref="#laeuffer-ccc">Er</rs> springt auf, will knien; wird <rs ref="#lise">sie</rs> gewahr und sieht
+            <rs ref="#lise">sie</rs> <rs ref="#eine-Weile-(zeitraum-in-dem-welche-sich-länger-ansehen)">eine Weile</rs> verwirrt an.</stage>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER</speaker></rs>
+            <stage>nähert <rs ref="#laeuffer-ccc">sich</rs> <rs ref="#lise">ihr</rs>.</stage>
+            <p><rs ref="#lise">Du</rs> hast <rs ref="#Euer-ewiges-Seelenheil-(christl-läuffers;-durch-kastration-und-absage-d-begierden-erlangt)">eine Seele</rs> <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">dem Himmel</rs> gestohlen. <stage>Faßt <rs ref="#lise">sie</rs> an <rs ref="#der-Hand-(lise-wohl-links)">die Hand</rs>.</stage> Was
+              führt <rs ref="#lise">dich</rs> hieher, Lise?</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Ich komme, <rs ref="#laeuffer-ccc">Herr Mandel</rs> – Ich komme, weil <rs ref="#laeuffer-ccc">Sie</rs> gesagt haben, es würd morgen keine
+              Kinderlehr – weil <rs ref="#laeuffer-ccc">Sie</rs> – so komm ich – gesagt haben – Ich komme, zu fragen, ob morgen
+              <rs ref="#die---------------Kinderlehre">Kinderlehre</rs> sein wird.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ach! – – Seht <rs ref="#diese-Wangen-(lise)">diese Wangen</rs>, <rs ref="#ihr-Engel-(als-angesprochene-instanz)">ihr Engel</rs>! wie <rs ref="#diese-Wangen-(lise)">sie</rs> in unschuldigem Feuer brennen, und
+              denn verdammt mich, wenn <rs ref="#ihr-Engel-(als-angesprochene-instanz)">ihr</rs> könnt – – <rs ref="#lise">Lise</rs>, warum zittert <rs ref="#der-Hand-(lise-wohl-links)"><rs ref="#lise">deine</rs> Hand</rs>? Warum sind <rs ref="#lise">dir</rs>
+              <rs ref="#die-Lippen-(lise)">die Lippen</rs> so bleich und <rs ref="#diese-Wangen-(lise)">die Wangen</rs> so rot? Was willst <rs ref="#lise">du</rs>?</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Ob morgen <rs ref="#die---------------Kinderlehre">Kinderlehr</rs> sein wird?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Setz <rs ref="#lise">dich</rs> zu mir nieder – Leg <rs ref="#ein-Gesangbuch-(lise)"><rs ref="#lise">dein</rs> Gesangbuch</rs> weg – Wer steckt <rs ref="#lise">dir</rs> <rs ref="#dem-gelben-Haar-(lise)">das Haar</rs> auf, wenn
+              <rs ref="#lise">du</rs> nach <rs ref="#der-Kirche-(wo-wenzeslaus-predigt)">der Kirche</rs> gehst?</p>
+            <stage>Setzt <rs ref="#lise">sie</rs> auf einen Stuhl neben <rs ref="#laeuffer-ccc">seinem</rs>.</stage>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE</speaker></rs>
+            <stage>will aufstehn.</stage>
+            <p>Verzeih <rs ref="#laeuffer-ccc">Er</rs> mir; <rs ref="#das-rote-Häubchen-(lise)">die Haube</rs> wird wohl nicht recht gesteckt sein; es macht' einen so
+              erschrecklichen Wind, als ich <rs ref="#der-Kirche-(wo-wenzeslaus-predigt)">zur Kirche</rs> kam.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER</speaker></rs>
+            <stage>nimmt <rs ref="#lise">ihre</rs> beiden Hände in <rs ref="#die-Hand-(läuffer,-eher-rechts)"><rs ref="#laeuffer-ccc">seine</rs> Hand</rs>.</stage>
+            <p>O <rs ref="#lise">du</rs> bist – Wie alt bist <rs ref="#lise">du, Lise</rs>? – Hast <rs ref="#lise">du</rs> niemals – Was wollt ich doch fragen –
+              Hast <rs ref="#lise">du</rs> nie Freier gehabt?</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE</speaker></rs>
+            <stage>munter.</stage>
+            <p>O ja <rs ref="#einen-(best-verehrer-lise)">einen</rs>, noch die vorige Woche; und <rs ref="#des-Schafwirts-Grete">des Schafwirts Grete</rs> war so neidisch auf mich
+              und hat immer gesagt: <rs ref="#des-Schafwirts-Grete">ich</rs> weiß nicht, was <rs ref="#einen-(best-verehrer-lise)">er</rs> <rs ref="#einen-(best-verehrer-lise)">sich</rs> um <rs ref="#lise">das einfältige Mädchen</rs> so viel
+              Mühe macht; und <rs ref="#es30">denn hab ich auch noch <rs ref="#einen-Offizier">einen Offizier</rs> gehabt</rs>; <rs ref="#es30">es</rs> ist noch kein
+              Vierteljahr.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#einen-Offizier">Einen Offizier</rs>?</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Ja doch, und <rs ref="#einen-Offizier">einer von den recht vornehmen</rs>. Ich <pb n="93"/> sag <rs ref="#laeuffer-ccc">Ihnen</rs>, <rs ref="#einen-Offizier">er</rs> hat drei
+              Tressen auf dem Arm gehabt: aber ich war noch zu jung und <rs ref="#mein-Vater-(lise)">mein Vater</rs> wollt mich <rs ref="#einen-Offizier">ihm</rs>
+              nicht geben, wegen des soldatischen Wesens und Ziehens.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Würdest <rs ref="#lise">du</rs> – O ich weiß nicht, was ich rede – Würdest <rs ref="#lise">du</rs> wohl – <rs ref="#laeuffer-ccc">Ich Elender</rs>!</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>O ja, von <rs ref="#ganzem-Herzen-(lise)">ganzem Herzen</rs>.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#lise">Bezaubernde</rs>! – <stage>Will <rs ref="#lise">ihr</rs> <rs ref="#der-Hand-(lise-wohl-rechte)">die Hand</rs> küssen.</stage> <rs ref="#lise">Du</rs> weißt ja noch nicht, was
+              ich fragen wollte.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE</speaker></rs>
+            <stage>zieht <rs ref="#der-Hand-(lise-wohl-rechte)">sie</rs> weg.</stage>
+            <p>O lassen <rs ref="#laeuffer-ccc">Sie</rs>, <rs ref="#der-Hand-(lise-wohl-rechte)">meine Hand</rs> ist ja so schwarz – O pfui doch! Was machen <rs ref="#laeuffer-ccc">Sie</rs>? Sehen <rs ref="#laeuffer-ccc">Sie</rs>,
+              <rs ref="#einen-geistlichen-Herrn">einen geistlichen Herrn</rs> hätt ich allewege gern: von meiner ersten Jugend an hab ich
+              <rs ref="#euch-Herren-Gelehrten-(intelektuelle,-studierte)">die studierte Herren</rs> immer gern gehabt; <rs ref="#euch-Herren-Gelehrten-(intelektuelle,-studierte)">sie</rs> sind alleweil so artig, so manierlich,
+              nicht so puff paff wie <rs ref="#die-Soldaten">die Soldaten</rs>, <rs ref="#das65">obschon ich einewege <rs ref="#die-Soldaten">die</rs> auch gern habe</rs>, <rs ref="#das65">das</rs>
+              leugn ich nicht, wegen <rs ref="#die-Soldaten">ihrer</rs> bunten Röcke; ganz gewiß, <rs ref="#das66">wenn <rs ref="#einen-geistlichen-Herrn">die geistlichen Herren</rs> in
+              so bunten Röcken gingen wie die Soldaten</rs>, <rs ref="#das66">das</rs> wäre zum Sterben.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Laß mich <rs ref="#deinen-mutwilligen-Mund-(lise)"><rs ref="#lise">deinen</rs> mutwilligen Mund</rs> mit meinen Lippen zuschließen! <stage>Küßt
+                <rs ref="#lise">sie</rs>.</stage> <rs ref="#lise">O Lise</rs>! Wenn <rs ref="#lise">du</rs> wüßtest, wie unglücklich ich bin.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>O pfui, <rs ref="#laeuffer-ccc">Herr</rs>, was machen Sie?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Noch einmal und denn ewig nicht wieder!</p>
+            <stage>Küßt <rs ref="#lise">sie</rs>. <rs ref="#wenzeslaus">Wenzeslaus</rs> tritt herein.</stage>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Was ist <rs ref="#das-(umstände-dass-läuffer-lise-küsst)">das</rs>? Proh <rs ref="#Gottes-(christlich)">deum</rs> atque <rs ref="#ein-Mensch-xxx">hominum</rs> fidem! Wie nun, <rs ref="#laeuffer-ccc">falscher, falscher, falscher
+              Prophet</rs>! <rs ref="#laeuffer-ccc">Reißender Wolf in <rs ref="#Schafskleidern">Schafskleidern</rs></rs>! Ist <rs ref="#das-(umstände-dass-läuffer-lise-küsst)">das</rs> <rs ref="#die-Sorgfalt,-die-du-deiner-Herde---------------schuldig-bist">die Sorgfalt, <rs ref="#die-Sorgfalt,-die-du-deiner-Herde---------------schuldig-bist">die</rs> <rs ref="#laeuffer-ccc">du</rs> <rs ref="#deiner-Herde-(wohl-schülerinnen-läuffers,-eigentich-wenzeslaus)-xxxx"><rs ref="#laeuffer-ccc">deiner</rs> Herde</rs>
+              schuldig bist</rs>? <rs ref="#Die-Unschuld-(lise)">Die Unschuld</rs> selber verführen, <rs ref="#Die-Unschuld-(lise)">die</rs> <rs ref="#laeuffer-ccc">du</rs> vor <rs ref="#amore-(oliebe,-hier-wahrscheinlich-die-körperliche)">Verführung</rs> bewahren sollst?
+              Es muß ja <rs ref="#Ärgernis">Ärgernis</rs> kommen, doch wehe <rs ref="#dem-Menschen,-durch-welchen-Ärgernis-kommt">dem Menschen, durch <rs ref="#dem-Menschen,-durch-welchen-Ärgernis-kommt">welchen</rs> <rs ref="#Ärgernis">Ärgernis</rs> kommt</rs>!</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#wenzeslaus">Herr Wenzeslaus</rs>!</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Nichts mehr! Kein Wort mehr! <rs ref="#laeuffer-ccc">Ihr</rs> habt <rs ref="#laeuffer-ccc">Euch</rs> in <rs ref="#laeuffer-ccc">Eurer</rs> wahren Gestalt gezeigt. Aus
+              <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">meinem Hause</rs>, <rs ref="#laeuffer-ccc">Verführer</rs>!</p>
+            <pb n="94"/>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE</speaker></rs>
+            <stage>kniet vor <rs ref="#wenzeslaus">Wenzeslaus</rs>.</stage>
+            <p><rs ref="#wenzeslaus">Lieber Herr Schulmeister</rs>, <rs ref="#laeuffer-ccc">er</rs> hat mir nichts Böses getan.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Er</rs> hat <rs ref="#lise">dir</rs> mehr Böses getan, als <rs ref="#lise">dir</rs> <rs ref="#lise">dein</rs> ärgster Feind tun könnte. <rs ref="#laeuffer-ccc">Er</rs> hat <rs ref="#ganzem-Herzen-(lise)"><rs ref="#lise">dein</rs>
+              unschuldiges Herz</rs> verführt.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich bekenne mich schuldig – Aber kann man so vielen Reizungen widerstehen? Wenn <rs ref="#ein-Mensch-xxx">man</rs>
+              mir dies Herz aus <rs ref="#Euren-eignen-Körper-(leib-läuffers)">dem Leibe</rs> risse und mich <rs ref="#Glied-(allg-körperteile-läuffer)">Glied</rs> vor <rs ref="#Glied-(allg-körperteile-läuffer)">Glied</rs> verstümmelte und ich
+              behielt' nur <rs ref="#eine-Ader-von-Blut-(läuffer)">eine Ader von Blut</rs> noch übrig, so würde <rs ref="#eine-Ader-von-Blut-(läuffer)">diese verrätrische Ader</rs> doch für
+              <rs ref="#lise">Lisen</rs> schlagen.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Er</rs> hat mir nichts Leides getan.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#lise">Dir</rs> nichts Leides getan – <rs ref="#Gottes-(christlich)">Himmlischer Vater</rs>!</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich hab <rs ref="#lise">ihr</rs> gesagt, <rs ref="#das67">daß <rs ref="#lise">sie</rs> <rs ref="#die-liebenswürdigste-Kreatur-(prädikativ-lise)">die liebenswürdigste Kreatur</rs> sei, <rs ref="#die-liebenswürdigste-Kreatur-(prädikativ-lise)">die</rs> jemals <rs ref="#der-Welt-(irdische-welt-als-raum)">die
+              Schöpfung</rs> beglückt hat</rs>; ich hab <rs ref="#lise">ihr</rs> <rs ref="#das67">das</rs> auf <rs ref="#die-Lippen-(lise)"><rs ref="#lise">ihre</rs> Lippen</rs> gedrückt; ich hab <rs ref="#deinen-mutwilligen-Mund-(lise)">diesen
+              unschuldigen Mund</rs> mit <rs ref="#das-(umstände-dass-läuffer-lise-küsst)">meinen Küssen</rs> versiegelt, <rs ref="#deinen-mutwilligen-Mund-(lise)">welcher</rs> mich sonst durch <rs ref="#deinen-mutwilligen-Mund-(lise)">seine</rs>
+              Zaubersprache zu noch weit größeren Verbrechen würde hingerissen haben.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ist <rs ref="#das-(umstände-dass-läuffer-lise-küsst)">das</rs> kein Verbrechen? Was nennt <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">Ihr jungen Herrn</rs> <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">heut zu Tage</rs> Verbrechen? <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">O
+              tempora</rs>, <rs ref="#Sitten-(gesellschaftl-Benimmregeln-einer-best-zeit)">o mores</rs>! Habt <rs ref="#laeuffer-ccc">Ihr</rs> den Valerius Maximus gelesen? Habt <rs ref="#laeuffer-ccc">Ihr</rs> den Artikel gelesen
+              de pudicitia? Da führt er <rs ref="#einen-Mänius-an,-der-seinen-Freigelassenen-totgeschlagen---------------hat">einen Mänius</rs> an, <rs ref="#einen-Mänius-an,-der-seinen-Freigelassenen-totgeschlagen---------------hat">der</rs> <rs ref="#seinen-Freigelassenen"><rs ref="#einen-Mänius-an,-der-seinen-Freigelassenen-totgeschlagen---------------hat">seinen</rs> Freigelassenen</rs> totgeschlagen
+              hat, weil <rs ref="#seinen-Freigelassenen">er</rs> <rs ref="#seine-Tochter"><rs ref="#einen-Mänius-an,-der-seinen-Freigelassenen-totgeschlagen---------------hat">seine</rs> Tochter</rs> ein mal küßte, und die Raison: ut etiam <rs ref="#oscula-(kuss-der-tochter-des-mänius)">oscula</rs> ad <rs ref="#maritum-(zukünftiger-ehemann)">maritum</rs>
+              sincera <rs ref="#seine-Tochter">perferret</rs>. Riecht <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#das68">das</rs>? Schmeckt <rs ref="#laeuffer-ccc">Ihr</rs> <rs ref="#das68">das</rs>? <rs ref="#das68">Etiam <rs ref="#oscula-(kuss-der-tochter-des-mänius)">oscula</rs>, non solum
+              virginitatem, etiam <rs ref="#oscula-(kuss-der-tochter-des-mänius)">oscula</rs></rs>. Und <rs ref="#einen-Mänius-an,-der-seinen-Freigelassenen-totgeschlagen---------------hat">Mänius</rs> war doch nur ein Heide: was soll <rs ref="#ein-Christ-(gläubige)">ein Christ</rs>
+              tun, <rs ref="#ein-Christ-(gläubige)">der</rs> weiß, daß <rs ref="#das-(die-ehe,-das-verheiratet-sein)">der Ehstand</rs> von <rs ref="#Gottes-(christlich)">Gott</rs> eingesetzt ist und daß <rs ref="#die-Glückseligkeit---------------eines-solchen-Standes-(eheglück)">die Glückseligkeit
+              <rs ref="#das-(die-ehe,-das-verheiratet-sein)">eines solchen Standes</rs></rs> an der Wurzel vergiften, <rs ref="#maritum-(zukünftiger-ehemann)">einem künftigen Gatten</rs> in <rs ref="#maritum-(zukünftiger-ehemann)">seiner</rs> Gattin
+              <rs ref="#maritum-(zukünftiger-ehemann)">seine</rs> Freud und Trost verderben, <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)"><rs ref="#maritum-(zukünftiger-ehemann)">seinen</rs> Himmel</rs> profanieren – Fort, aus meinen Augen,
+              <rs ref="#laeuffer-ccc">Ihr Bösewicht</rs>! Ich mag mit <rs ref="#laeuffer-ccc">Euch</rs> nichts zu tun haben! Geht zu einem Sultan und laßt
+              <rs ref="#laeuffer-ccc">Euch</rs> zum Aufseher über ein Serail dingen, aber nicht <pb n="95"/> <rs ref="#zum-Kollaborator-(prädikativ-läuffer-als-mitarbeiter-wenzeslaus)">zum Hirten <rs ref="#deiner-Herde-(wohl-schülerinnen-läuffers,-eigentich-wenzeslaus)-xxxx">meiner
+              Schafe</rs></rs>. <rs ref="#laeuffer-ccc">Ihr Mietling</rs>! <rs ref="#laeuffer-ccc">Ihr reißender Wolf in <rs ref="#Schafskleidern">Schafskleidern</rs></rs>!</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Ich will <rs ref="#lise">Lisen</rs> heiraten.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Heiraten – Ei ja doch – als ob <rs ref="#lise">sie</rs> mit <rs ref="#einem-Eunuch-(kastrierter)">einem Eunuch</rs> zufrieden?</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>O ja, ich <rs ref="#einem-Eunuch-(kastrierter)">bin's</rs> herzlich wohl zufrieden, <rs ref="#wenzeslaus">Herr Schulmeister</rs>.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#laeuffer-ccc">Ich Unglücklicher</rs>!</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Glauben <rs ref="#wenzeslaus">Sie</rs> mir, lieber Herr Schulmeister, ich laß einmal nicht von <rs ref="#laeuffer-ccc">ihm</rs> ab. Nehmen
+              <rs ref="#wenzeslaus">Sie</rs> mir <rs ref="#das-Leben-(lise)">das Leben</rs>; ich lasse nicht ab von <rs ref="#laeuffer-ccc">ihm</rs>. Ich hab <rs ref="#laeuffer-ccc">ihn</rs> gern und <rs ref="#ganzem-Herzen-(lise)">mein Herz</rs> sagt
+              mir, daß ich niemand auf <rs ref="#der-Welt-(irdische-welt-als-raum)">der Welt</rs> so gern haben kann als <rs ref="#laeuffer-ccc">ihn</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>So – daß doch – <rs ref="#lise">Lise, du</rs> verstehst <rs ref="#Das-(kastration-läuffers)">das Ding</rs> nicht – <rs ref="#lise">Lise</rs>, <rs ref="#Das-(kastration-läuffers)">es</rs> läßt <rs ref="#Das-(kastration-läuffers)">sich</rs> <rs ref="#lise">dir</rs> so nicht
+              sagen, aber <rs ref="#lise">du</rs> kannst <rs ref="#laeuffer-ccc"><rs ref="#es-(heirat-läuffer-lise)">ihn</rs></rs> nicht heiraten; <rs ref="#es-(heirat-läuffer-lise)">es</rs> ist unmöglich.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Warum soll <rs ref="#es-(heirat-läuffer-lise)">es</rs> denn unmöglich sein, <rs ref="#wenzeslaus">Herr Schulmeister</rs>? Wie <rs ref="#es-(heirat-läuffer-lise)">kann's</rs> unmöglich sein, wenn
+              ich will und wenn <rs ref="#laeuffer-ccc">er</rs> will, und <rs ref="#mein-Vater-(lise)">mein Vater</rs> auch <rs ref="#es-(heirat-läuffer-lise)">es</rs> will? Denn <rs ref="#mein-Vater-(lise)">mein Vater</rs> hat mir immer
+              gesagt, wenn ich einmal <rs ref="#einen-geistlichen-Herrn">einen geistlichen Herrn</rs> bekommen könnte –</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Aber daß <rs ref="#lise">dich</rs> der Kuckuck, <rs ref="#laeuffer-ccc">er</rs> kann ja nichts – <rs ref="#Gottes-(christlich)">Gott</rs> verzeih mir meine Sünde, so laß
+              <rs ref="#lise">dir</rs> doch sagen.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Vielleicht fodert <rs ref="#lise">sie</rs> <rs ref="#Mitteln-(läuffers-penis-funktionstüchtig)">das</rs> nicht – <rs ref="#lise">Lise</rs>, ich kann bei <rs ref="#lise">dir</rs> nicht schlafen.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>So kann <rs ref="#laeuffer-ccc">Er</rs> doch wachen bei mir, wenn <rs ref="#lise-/-laeuffer-ccc">wir</rs> nur <rs ref="#Tag-(am-tag)">den Tag</rs> über beisammen sind und <rs ref="#lise-/-laeuffer-ccc">uns</rs> so
+              anlachen und <rs ref="#lise-/-laeuffer-ccc">uns</rs> einsweilen die Hände küssen – Denn bei <rs ref="#Gottes-(christlich)">Gott</rs>! ich hab <rs ref="#laeuffer-ccc">ihn</rs> gern. <rs ref="#Gottes-(christlich)">Gott</rs>
+              weiß <rs ref="#es31">es</rs>, <rs ref="#es31">ich hab <rs ref="#laeuffer-ccc">Ihn</rs> gern</rs>.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Sehn <rs ref="#wenzeslaus">Sie, Herr Wenzeslaus</rs>! <rs ref="#lise">Sie</rs> verlangt nur Liebe von mir. Und <rs ref="#ist's2">ist's</rs> denn notwendig
+              <rs ref="#die-Glückseligkeit---------------eines-solchen-Standes-(eheglück)">zum Glück <rs ref="#das-(die-ehe,-das-verheiratet-sein)">der Ehe</rs></rs>, <rs ref="#ist's2">daß <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#die-bösen-Begierden">tierische Triebe</rs> stillt</rs>?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Ei was – <rs ref="#das-(die-ehe,-das-verheiratet-sein)">Connubium</rs> sine prole, est quasi dies sine sole ... Seid fruchtbar und mehret
+              <rs ref="#ein-Mensch-xxx">euch</rs>, steht in <rs ref="#Gottes-(christlich)">Gottes</rs> Wort. Wo <rs ref="#das-(die-ehe,-das-verheiratet-sein)">Eh</rs> ist, müssen auch <rs ref="#seiner-Kinder">Kinder</rs> sein.</p>
+          </sp>
+          <sp who="#lise">
+            <rs ref="#lise"><speaker>LISE.</speaker></rs>
+            <p>Nein <rs ref="#wenzeslaus">Herr Schulmeister</rs>, ich <rs ref="#schwör's">schwör's</rs> <rs ref="#wenzeslaus">Ihm</rs>, <rs ref="#schwör's">in <rs ref="#das-Leben-(lise)">meinem <pb n="96"/> Leben</rs> möcht ich
+              keine Kinder haben</rs>. Ei ja doch, <rs ref="#seiner-Kinder">Kinder</rs>! Was <rs ref="#wenzeslaus">Sie</rs> nicht meinen! Damit wär mir auch wohl
+              groß gedient, wenn ich noch <rs ref="#seiner-Kinder">Kinder</rs> dazu bekäme. <rs ref="#mein-Vater-(lise)">Mein Vater</rs> hat <rs ref="#Enten-(lises-vater)-/-Hühner-(lises-vater)">Enten und Hühner</rs> genug,
+              <rs ref="#Enten-(lises-vater)-/-Hühner-(lises-vater)">die</rs> ich <rs ref="#Alle-Tage-(immer)">alle Tage</rs> füttern muß; wenn ich noch <rs ref="#seiner-Kinder">Kinder</rs> obenein füttern müßte.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER</speaker></rs>
+            <stage>küßt <rs ref="#lise">sie</rs>.</stage>
+            <p><rs ref="#lise">Göttliche Lise</rs>!</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS</speaker></rs>
+            <stage>reißt <rs ref="#lise-/-laeuffer-ccc">sie</rs> von einander.</stage>
+            <p>Ei was denn! Was denn! Vor <rs ref="#meiner-Augen-(wenzeslaus-phys)">meinen Augen</rs>? – So kriecht denn zusammen; meinetwegen;
+              weil doch <rs ref="#das-(die-ehe,-das-verheiratet-sein)">Heiraten</rs> besser ist als <rs ref="#die-bösen-Begierden">Brunst</rs> leiden – Aber mit <rs ref="#laeuffer-als-mandel/-wenzeslaus">uns, Herr Mandel</rs>, ist es
+              aus: <rs ref="#alle-große-Hoffnungen,-die-ich-mir-von-Ihm-gemacht-(wenzeslaus)">alle große Hoffnungen, <rs ref="#alle-große-Hoffnungen,-die-ich-mir-von-Ihm-gemacht-(wenzeslaus)">die</rs> ich mir von <rs ref="#laeuffer-ccc">Ihm</rs> gemacht</rs>, <rs ref="#alle-große-Hoffnungen,-die-ich-mir-von-Ihm-gemacht-(wenzeslaus)">alle große Erwartungen, <rs ref="#alle-große-Hoffnungen,-die-ich-mir-von-Ihm-gemacht-(wenzeslaus)">die</rs>
+              mir <rs ref="#laeuffer-ccc">Sein</rs> Heldenmut einflößte</rs> – <rs ref="#den-Himmel-(himmelreich,-sthet-für-gott-oder-schicksal)">Gütiger Himmel</rs>! wie weit ist doch noch <rs ref="#die-Kluft,-die---------------zwischen-einem-Kirchenvater-und-zwischen-einem-Kapaun-befestigt-ist">die Kluft, <rs ref="#die-Kluft,-die---------------zwischen-einem-Kirchenvater-und-zwischen-einem-Kapaun-befestigt-ist">die</rs>
+              zwischen <rs ref="#einem-Kirchenvater">einem Kirchenvater</rs> und zwischen <rs ref="#einem-Eunuch-(kastrierter)">einem Kapaun</rs> befestigt ist</rs>. Ich dacht, <rs ref="#laeuffer-ccc">er</rs>
+              sollte <rs ref="#ein-Kirchenvater-(prädikativ-läuffer)">Origenes der Zweite</rs> – <rs ref="#laeuffer-ccc">O homuncio, homuncio</rs>! <rs ref="#einem-Kirchenvater">Das</rs> müßt <rs ref="#ein-ganz-andrer-Mann-sein,---------------der-aus-Absicht-und-Grundsätzen-den-Weg-einschlüge,-um-ein-Pfeiler-unsrer-sinkenden---------------Kirche-zu-werden-(prädikativ-ein-anderer-als-läuffer,-der-kirchenvater-wird)">ein ganz andrer Mann sein,
+              <rs ref="#ein-ganz-andrer-Mann-sein,---------------der-aus-Absicht-und-Grundsätzen-den-Weg-einschlüge,-um-ein-Pfeiler-unsrer-sinkenden---------------Kirche-zu-werden-(prädikativ-ein-anderer-als-läuffer,-der-kirchenvater-wird)">der</rs> aus Absicht und <rs ref="#seinen-Grundsätzen-(die-jeweils-eigenen-eines-menschen)">Grundsätzen</rs> den Weg einschlüge, um ein Pfeiler <rs ref="#canonico-(kirchl.-werte-kanon)"><rs ref="#ein-Christ-(gläubige)">unsrer</rs> sinkenden
+              Kirche</rs> zu werden</rs>. <rs ref="#ein-ganz-andrer-Mann-sein,---------------der-aus-Absicht-und-Grundsätzen-den-Weg-einschlüge,-um-ein-Pfeiler-unsrer-sinkenden---------------Kirche-zu-werden-(prädikativ-ein-anderer-als-läuffer,-der-kirchenvater-wird)">Ein ganz anderer Mann</rs>! Wer weiß, was noch einmal geschicht!
+                <stage>Geht ab.</stage></p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p>Komm zu <rs ref="#mein-Vater-(lise)"><rs ref="#lise">deinem</rs> Vater</rs>, <rs ref="#lise">Lise</rs>! <rs ref="#mein-Vater-(lise)">seine</rs> Einwilligung noch und ich bin der glücklichste
+              Mensch auf <rs ref="#der-Welt-(irdische-welt-als-raum)">dem Erdboden</rs>!</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

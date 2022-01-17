@@ -1,0 +1,350 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Hofmeister oder Vorteile der Privaterziehung</title>
+        <title type="sub">Eine Komödie</title>
+        <author>
+          <persName>
+            <forename>Jakob</forename>
+            <forename>Michael</forename>
+            <forename>Reinhold</forename>
+            <surname>Lenz</surname>
+          </persName>
+          <idno type="wikidata">Q76417</idno>
+          <idno type="pnd">118571656</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000338</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q21213113</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rhzq.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Jakob Michael Reinhold Lenz: Werke und Schriften. Herausgegeben von Britta Titel
+              und Hellmut Haug, Band 1–2, Stuttgart: Goverts, 1965–1966.</title>
+            <date type="print" when="1774">1774</date>
+            <date type="premiere" when="1778"/>
+            <date type="written" notBefore="1771" notAfter="1772">1771/72</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="laeuffer" sex="MALE">
+            <persName>Läuffer</persName>
+          </person>
+          <person xml:id="major" sex="MALE">
+            <persName>Major</persName>
+          </person>
+          <person xml:id="geheimer_rat" sex="MALE">
+            <persName>Geheimer Rat</persName>
+          </person>
+          <person xml:id="majorin" sex="FEMALE">
+            <persName>Majorin</persName>
+          </person>
+          <person xml:id="bedienter" sex="MALE">
+            <persName>Bedienter</persName>
+          </person>
+          <person xml:id="graf_wermuth" sex="MALE">
+            <persName>Graf Wermuth</persName>
+          </person>
+          <person xml:id="fritz" sex="MALE">
+            <persName>Fritz</persName>
+          </person>
+          <person xml:id="gustchen" sex="FEMALE">
+            <persName>Gustchen</persName>
+          </person>
+          <person xml:id="pastor" sex="MALE">
+            <persName>Pastor</persName>
+          </person>
+          <person xml:id="paetus" sex="MALE">
+            <persName>Pätus</persName>
+          </person>
+          <person xml:id="frau_blitzer" sex="FEMALE">
+            <persName>Frau Blitzer</persName>
+          </person>
+          <person xml:id="bollwerk" sex="MALE">
+            <persName>Bollwerk</persName>
+          </person>
+          <person xml:id="jungfer_knicks" sex="FEMALE">
+            <persName>Jungfer Knicks</persName>
+          </person>
+          <person xml:id="frau_hamster" sex="FEMALE">
+            <persName>Frau Hamster</persName>
+          </person>
+          <person xml:id="jungfer_hamster" sex="FEMALE">
+            <persName>Jungfer Hamster</persName>
+          </person>
+          <person xml:id="hofmeister" sex="MALE">
+            <persName>Hofmeister</persName>
+          </person>
+          <person xml:id="seiffenblase" sex="MALE">
+            <persName>Herr von Seiffenblase</persName>
+          </person>
+          <person xml:id="wenzeslaus" sex="MALE">
+            <persName>Wenzeslaus</persName>
+          </person>
+          <person xml:id="marthe" sex="FEMALE">
+            <persName>Marthe</persName>
+          </person>
+          <person xml:id="schoepsen" sex="MALE">
+            <persName>Schöpsen</persName>
+          </person>
+          <person xml:id="rehaar" sex="MALE">
+            <persName>Rehaar</persName>
+          </person>
+          <person xml:id="jungfer_rehaar" sex="FEMALE">
+            <persName>Jungfer Rehaar</persName>
+          </person>
+          <person xml:id="lise" sex="FEMALE">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="der_alte_paetus" sex="MALE">
+            <persName>Der alte Pätus</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#geheimer_rat #major"/>
+            <relation name="parent_of" active="#majorin" passive="#gustchen"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comedy</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-10">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Jakob Michael Reinhold Lenz</head>
+        <head>Der Hofmeister</head>
+        <head>oder</head>
+        <head>Vorteile der Privaterziehung</head>
+        <head>Eine Komödie</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="10"/> Personen.</head>
+          <castItem>Herr von Berg, Geheimer Rat.</castItem>
+          <castItem>Der Major, sein Bruder.</castItem>
+          <castItem>Die Majorin.</castItem>
+          <castItem>Gustchen, ihre Tochter.</castItem>
+          <castItem>Fritz von Berg.</castItem>
+          <castItem>Graf Wermuth.</castItem>
+          <castItem>Läuffer, ein Hofmeister.</castItem>
+          <castGroup>
+            <castItem>Pätus,</castItem>
+            <castItem>Bollwerk,</castItem>
+            <roleDesc>Studenten.</roleDesc>
+          </castGroup>
+          <castItem>Herr von Seiffenblase.</castItem>
+          <castItem>Sein Hofmeister.</castItem>
+          <castItem>Frau Hamster, Rätin.</castItem>
+          <castItem>Jungfer Hamster.</castItem>
+          <castItem>Jungfer Knicks.</castItem>
+          <castItem>Frau Blitzer.</castItem>
+          <castItem>Wenzeslaus, ein Schulmeister.</castItem>
+          <castItem>Marthe, alte Frau.</castItem>
+          <castItem>Lise.</castItem>
+          <castItem>Der alte Pätus.</castItem>
+          <castItem>Der alte Läuffer, Stadtprediger.</castItem>
+          <castItem>Leopold, Junker des Majors, ein Kind.</castItem>
+          <castItem>Herr Rehaar, Lautenist.</castItem>
+          <castItem>Jungfer Rehaar, seine Tochter.</castItem>
+          <pb n="10"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Akt</head>
+        <div type="scene">
+          <head>Zweite Szene</head>
+          <stage><rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">Eine Schule <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)">im Dorf</rs></rs>.</stage>
+          <stage><rs ref="#den--Abend-(als-läuffer-zu-wenzeslaus-kommt,-3,2)">Es</rs> ist finstrer Abend.</stage>
+          <stage><rs ref="#wenzeslaus">Wenzeslaus</rs>. <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Läuffer</rs>.</stage>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS</speaker></rs>
+            <stage>sitzt an <rs ref="#einem-Tisch-(wenzeslaus)">einem Tisch</rs>, <rs ref="#die-Brill-(wenzeslaus)">die Brill</rs> auf der Nase und lineïert.</stage>
+            <p>Wer da? Was gibt's?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p><rs ref="#Schutz-(für-läuffer)">Schutz</rs>! <rs ref="#Schutz-(für-läuffer)">Schutz</rs>! <rs ref="#wenzeslaus">werter Herr Schulmeister</rs>! <rs ref="#ein-Mensch-xxx">Man</rs> steht mir nach <rs ref="#seines-Lebens-(läuffers)">dem Leben</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Wer ist <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> denn?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p>Ich bin <rs ref="#der-Hofmeister,-den-Sie-dem-jungen-Herrn-bestimmt-(prädikativ-läuffer)">Hofmeister <rs ref="#Ihrem-Hause-(geheimer-rat,-bergs-in-heidelbrunn,-wo-vermutlich-gustchen-unterrichtet-wird))">im benachbarten Schloß</rs></rs>. <rs ref="#major-ccc">Der Major Berg</rs> ist mit all <rs ref="#major-ccc">seinen</rs>
+              Bedienten hinter mir und wollen mich erschießen.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Behüte – Setz <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">sich</rs> hier nieder zu mir – Hier hat <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> meine Hand: <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> soll sicher bei
+              mir sein – Und nun erzähl <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> mir, derweil ich diese Vorschrift hier schreibe.</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p>Lassen <rs ref="#wenzeslaus">Sie</rs> mich erst zu mir selber kommen.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Gut, verschnauf <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">sich</rs>, und hernach will ich <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Ihm</rs> <rs ref="#ein-Glas-Wein">ein Glas Wein</rs> geben lassen und
+              wollen <rs ref="#ein-Glas-Wein">eins</rs> zusammen trinken. Unterdessen sag <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> mir doch – <rs ref="#der-Hofmeister,-den-Sie-dem-jungen-Herrn-bestimmt-(prädikativ-läuffer)">Hofmeister</rs> – <stage>Legt
+                <rs ref="#das-Lineal-(wenzeslaus)">das Lineal</rs> weg, nimmt <rs ref="#die-Brill-(wenzeslaus)">die Brille</rs> ab und sieht <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">ihn</rs> <rs ref="#eine-Weile-(zeitraum-in-dem-welche-sich-länger-ansehen)">eine Weile</rs> an.</stage> Nun ja,
+              nach <rs ref="#im-blauen-Rock-mit-Tressen">dem Rock</rs> zu urteilen. – Nun nun, ich <rs ref="#glaub's">glaub's</rs> <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Ihm</rs>, <rs ref="#glaub's">daß <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> <rs ref="#der-Hofmeister,-den-Sie-dem-jungen-Herrn-bestimmt-(prädikativ-läuffer)">der Hofmeister</rs> ist</rs>. <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs>
+              sieht ja so rot und weiß drein. Nun sag <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> mir aber doch, mein lieber Freund,
+                <stage>Setzt <rs ref="#die-Brill-(wenzeslaus)">die Brille</rs> wieder auf.</stage> wie ist <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Er</rs> denn zu dem Unstern gekommen,
+              daß <rs ref="#major-ccc"><rs ref="#laeuffer-ccc">Sein</rs> Herr Patron</rs> so entrüstet auf <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Ihn</rs> ist? Ich kann <rs ref="#mir's4">mir's</rs> doch nimmermehr
+              einbilden, <rs ref="#mir's4">daß <rs ref="#ein-Mann-wie-der-Herr-Major-von-Berg-(mann-vom-typ-majors)">ein Mann wie <rs ref="#major-ccc">der Herr Major von Berg</rs></rs> –</rs> Ich kenne <rs ref="#major-ccc">ihn</rs> wohl; ich habe
+              genug von <rs ref="#major-ccc">ihm</rs> reden hören; <rs ref="#major-ccc">er</rs> soll freilich von <rs ref="#einem-hastigen-Temperament-(cholerische-art-majors)">einem hastigen Temperament</rs> sein; <rs ref="#einem-hastigen-Temperament-(cholerische-art-majors)">viel
+              Cholera</rs>, <rs ref="#einem-hastigen-Temperament-(cholerische-art-majors)">viel Cholera</rs> – Sehen <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs>, daß muß ich <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">meinen Buben</rs> selber <rs ref="#Vorschriften-(linien-wenzeslaus-allg)">die Linien</rs> ziehen,
+              denn nichts lernen <rs ref="#meinen-Buben-(schüler-von-wenzeslaus,-evtl-unterteilbar-in-jungen-und-mädchen)">die Bursche</rs> so schwer als <rs ref="#das-Gradeschreiben">das Gradeschreiben</rs>, das Gleichschreiben –
+                <pb n="51"/> Nicht zierlich geschrieben, nicht geschwind geschrieben, sag ich immer,
+              aber nur grad geschrieben, denn <rs ref="#das-Gradeschreiben">das</rs> hat <rs ref="#das-Gradeschreiben">seinen</rs> Einfluß in alles, auf <rs ref="#die-Sitten-(moralische)">die Sitten</rs>, auf
+              <rs ref="#die-Wissenschaften-(als-lehrinhalt-im-unterricht)">die Wissenschaften</rs>, in alles, <rs ref="#laeuffer-ccc">lieber Herr Hofmeister</rs>. <rs ref="#Ein-Mensch,-der-nicht-grad---------------schreiben-kann">Ein Mensch, <rs ref="#Ein-Mensch,-der-nicht-grad---------------schreiben-kann">der</rs> nicht grad
+              schreiben kann</rs>, sag ich immer, <rs ref="#Ein-Mensch,-der-nicht-grad---------------schreiben-kann">der</rs> kann auch nicht grad handeln – Wo waren <rs ref="#laeuffer-als-mandel/-wenzeslaus">wir</rs>?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p>Dürft ich mir <rs ref="#ein-Glas-Wasser">ein Glas Wasser</rs> ausbitten?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#ein-Glas-Wasser">Wasser</rs>? – <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> sollen haben. Aber – ja wovon redten <rs ref="#laeuffer-als-mandel/-wenzeslaus">wir</rs>? <rs ref="#das-Gradeschreiben">Vom Gradschreiben</rs>; nein <rs ref="#major-ccc">vom
+              Major</rs> – he he he – Aber wissen <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> auch Herr – Wie ist <rs ref="#Ihr-Name-(läuffers-als-mandel)"><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Ihr</rs> Name</rs>?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p><rs ref="#Ihr-Name-(läuffers-als-mandel)">Mein –</rs> Ich heiße – <rs ref="#Mandel-(prädikativ-läuffer-vor-wenzeslaus-als-herr-mandel)">Mandel</rs>.</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Herr Mandel</rs> – Und darauf mußten <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">sich</rs> noch besinnen? Nun ja, <rs ref="#ein-Mensch-xxx">man</rs> hat bisweilen
+              Abwesenheiten <rs ref="#Verstand-yyy">des Geistes</rs>; besonders <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">die jungen Herren weiß und rot</rs> – <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> heißen
+              unrecht <rs ref="#Mandel-(prädikativ-läuffer-vor-wenzeslaus-als-herr-mandel)">Mandel</rs>; <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> sollten Mandelblüte heißen, denn <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">Sie</rs> sind ja weiß und rot wie
+              Mandelblüte – Nun ja freilich, der Hofmeisterstand ist <rs ref="#einer-von-denen">einer von denen</rs>, <rs ref="#einer-von-denen">unus ex his</rs>,
+              <rs ref="#einer-von-denen">die</rs> alleweile mit <rs ref="#Rosen-und-Lilien-(metaph-reichhaltiges-leben-eines-hofmeisters)">Rosen und Lilien</rs> überstreut sind und wo <rs ref="#einen-Hofmeister-(unbest.)">einen</rs> die Dornen <rs ref="#das-Leben">des Lebens</rs>
+              nur gar selten stechen. Denn was hat <rs ref="#einen-Hofmeister-(unbest.)">man</rs> zu tun? <rs ref="#einen-Hofmeister-(unbest.)">Maß</rs> ißt, trinkt, schläft, hat für
+              nichts zu sorgen; <rs ref="#ein-Glas-Wein"><rs ref="#einen-Hofmeister-(unbest.)">sein</rs> gut Glas Wein</rs> gewiß, <rs ref="#Braten"><rs ref="#einen-Hofmeister-(unbest.)">seinen</rs> Braten</rs> täglich, <rs ref="#alle-Morgen">alle Morgen</rs> <rs ref="#einen-Hofmeister-(unbest.)">seinen</rs>
+              Kaffee, Tee, Schokolade, oder was <rs ref="#einen-Hofmeister-(unbest.)">man</rs> trinkt, und <rs ref="#Rosen-und-Lilien-(metaph-reichhaltiges-leben-eines-hofmeisters)">das</rs> geht denn immer so fort – Nun
+              ja, ich wollt <rs ref="#laeuffer-ccc">Ihnen</rs> sagen: wissen <rs ref="#laeuffer-ccc">Sie</rs> auch, Herr Mandel, daß <rs ref="#ein-Glas-Wasser">ein Glas Wasser</rs> <rs ref="#der---------------Gesundheit">der
+              Gesundheit</rs> eben so schädlich auf eine heftige Gemütsbewegung als auf eine heftige
+              Leibesbewegung; aber freilich, was fragt <rs ref="#einen-Hofmeister-(unbest.)">ihr jungen Herren Hofmeister</rs> nach <rs ref="#der---------------Gesundheit">der
+              Gesundheit</rs> – Denn sagt mir doch <stage>Legt <rs ref="#die-Brill-(wenzeslaus)">Brille</rs> und <rs ref="#das-Lineal-(wenzeslaus)">Lineal</rs> weg und steht
+                auf.</stage> wo in <rs ref="#der-Welt-(irdische-welt-als-raum)">aller Welt</rs> kann <rs ref="#das37">das</rs> <rs ref="#der---------------Gesundheit">der Gesundheit</rs> gut tun, <rs ref="#das37">wenn alle Nerven und
+              Adern gespannt sind und das Blut ist in der heftigsten Cirkulation und <rs ref="#die---------------Lebensgeister">die
+              Lebensgeister</rs> sind alle in <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">einer – Hitze</rs>, in einer –</rs></p>
+            <pb n="52"/>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)">LÄUFFER</rs>.</speaker>
+            <p>Um <rs ref="#Gottes-willen-(eher-sprichwörtl)">Gotteswillen</rs> <rs ref="#graf_wermuth-ccc">der Graf Wermuth</rs> – <stage>Springt in <rs ref="#eine-Kammer-(bei-wenzeslaus)">eine Kammer</rs>.</stage></p>
+            <stage><rs ref="#graf_wermuth-ccc">Graf Wermuth</rs> mit <rs ref="#ein-paar-Bedienten,-die-Pistolen-tragen-(die-mit-graf-wermuth-läuffer-jagen)">ein paar Bedienten, <rs ref="#ein-paar-Bedienten,-die-Pistolen-tragen-(die-mit-graf-wermuth-läuffer-jagen)">die</rs> Pistolen tragen</rs>.</stage>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Ist hier <rs ref="#laeuffer-ccc">ein gewisser Läuffer</rs> – <rs ref="#laeuffer-ccc">Ein Student <rs ref="#im-blauen-Rock-mit-Tressen">im blauen Rock mit Tressen</rs></rs>?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p><rs ref="#graf_wermuth-ccc">Herr</rs>, in <rs ref="#Heidelbrunn-(in-der-nähe-von-marthes-bettlerhütte,-dorf-von-wenzeslaus-schule)"><rs ref="#unserm-(bewohner-des-dorfes-um-insterburg-das-heidelbrunn-meint)">unserm</rs> Dorf</rs> ist's die Mode, daß <rs ref="#ein-Mensch-xxx">man</rs> <rs ref="#den-Hut">den Hut</rs> abzieht, wenn man in <rs ref="#die-Stube-(haus-von-jemandem)">die Stube</rs>
+              tritt und mit dem Herrn <rs ref="#die-Stube-(haus-von-jemandem)">vom Hause</rs> spricht.</p>
+          </sp>
+          <sp who="#graf_wermuth">
+            <rs ref="#graf_wermuth-ccc"><speaker>GRAF.</speaker></rs>
+            <p>Die Sache pressiert – Sagt mir, ist <rs ref="#laeuffer-ccc">er</rs> hier oder nicht?</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Und was soll <rs ref="#laeuffer-ccc">er</rs> denn verbrochen haben, daß <rs ref="#graf_wermuth-ccc">Ihr</rs> <rs ref="#laeuffer-ccc">ihn</rs> so mit gewaffneter Hand sucht?
+                <stage><rs ref="#graf_wermuth-ccc">Graf</rs> will in <rs ref="#eine-Kammer-(bei-wenzeslaus)">die Kammer</rs>, <rs ref="#wenzeslaus">er</rs> stellt <rs ref="#wenzeslaus">sich</rs> vor die Tür.</stage> Halt <rs ref="#graf_wermuth-ccc">Herr</rs>! <rs ref="#eine-Kammer-(bei-wenzeslaus)">Die
+              Kammer</rs> ist mein, und wo <rs ref="#graf_wermuth-ccc">Ihr</rs> nicht augenblicklich <rs ref="#graf_wermuth-ccc">Euch</rs> aus <rs ref="#Eine-Schule-im-Dorf-wenzeslaus-als-lehrer">meinem Hause</rs> packt, so zieh
+              ich nur an <rs ref="#meiner-Schelle-(wenzeslaus-schule)">meiner Schelle</rs> und <rs ref="#ein-halb-Dutzend-handfester-Bauerkerle">ein halb Dutzend handfester Bauerkerle</rs> schlägt <rs ref="#graf_wermuth-ccc">Euch</rs> zu
+              morsch <rs ref="#tausendmillionen-Stücken-(in-stücke-zerbrechen)">Pulver-Granatenstücken</rs>. Seid <rs ref="#graf_wermuth-/-ein-paar-Bedienten,-…">ihr</rs> <rs ref="#Straßenräuber-(prädikativ-graf-wermuth-und-die-bedienten)">Straßenräuber</rs>, so muß <rs ref="#wenzeslaus">man</rs> <rs ref="#graf_wermuth-/-ein-paar-Bedienten,-…">euch</rs> als
+              <rs ref="#Straßenräuber-(prädikativ-graf-wermuth-und-die-bedienten)">Straßenräubern</rs> begegnen. Und damit <rs ref="#graf_wermuth-ccc">Ihr</rs> <rs ref="#graf_wermuth-ccc">Euch</rs> nicht verirrt und <rs ref="#ihn">den Weg zum Haus'</rs> hinaus
+              so gut findt als <rs ref="#graf_wermuth-ccc">Ihr</rs> <rs ref="#ihn">ihn</rs> hinein gefunden habt – <stage>Faßt <rs ref="#graf_wermuth-ccc">ihn</rs> an die Hand und führt
+                <rs ref="#graf_wermuth-ccc">ihn</rs> zur Tür hinaus; <rs ref="#ein-paar-Bedienten,-die-Pistolen-tragen-(die-mit-graf-wermuth-läuffer-jagen)">die Bedienten</rs> folgen <rs ref="#graf_wermuth-ccc">ihm</rs>.</stage></p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#Läuffer-(als-mandel-vor-wenzeslaus)"><speaker>LÄUFFER</speaker></rs>
+            <stage>springt aus <rs ref="#eine-Kammer-(bei-wenzeslaus)">der Kammer</rs> hervor.</stage>
+            <p><rs ref="#wenzeslaus">Glücklicher Mann</rs>! <rs ref="#wenzeslaus">Beneidenswerter Mann</rs>!</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS</speaker></rs>
+            <stage>in der obigen Attitude.</stage>
+            <p>In – <rs ref="#die---------------Lebensgeister">Die Lebensgeister</rs> sagt ich, sind in <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">einer – Begeisterung</rs>, <rs ref="#die---------------Lebensgeister">alle Passionen</rs> sind
+              gleichsam in <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">einer Empörung</rs>, in <rs ref="#Feuer-(aufruhr-leidenschaft-impulsive-gefühlsausbrüche)">einem Aufruhr</rs> – Nun wenn <rs ref="#laeuffer-ccc">Ihr</rs> da <rs ref="#ein-Glas-Wasser">Wasser</rs> trinkt, so
+              geht's, wie wenn man in eine mächtige Flamme <rs ref="#das-Wasser-(als-element)">Wasser</rs> schüttet. Die starke Bewegung <rs ref="#der---------------Luft-(entsteht,-wenn-die-lebensgeister-unterdrückt-werden)">der
+              Luft</rs> und der Krieg zwischen den beiden entgegengesetzten Elementen macht <rs ref="#eine---------------Effervescenz">eine
+              Effervescenz</rs>, <rs ref="#eine---------------Effervescenz">eine Gärung</rs>, <rs ref="#eine---------------Effervescenz">eine Unruhe</rs>, <rs ref="#eine---------------Effervescenz">ein tumultuarisches Wesen</rs> –</p>
+          </sp>
+          <sp who="#laeuffer">
+            <speaker><rs ref="#laeuffer-ccc">LÄUFFER</rs>.</speaker>
+            <p>Ich bewundere <rs ref="#wenzeslaus">Sie</rs> ...</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Gottlieb! – Jetzt können <rs ref="#laeuffer-ccc">Sie</rs> schon allgemach trinken – Allgemach – und denn werden
+              <rs ref="#laeuffer-ccc">Sie</rs> auf <rs ref="#den--Abend-(als-läuffer-zu-wenzeslaus-kommt,-3,2)">den <pb n="53"/> Abend</rs> mit <rs ref="#einem-Salat-(wenzeslaus-allg)">einem Salat</rs> und <rs ref="#seine-Wurst-(wenzeslaus-allg)">Knackwurst</rs> vorlieb nehmen – Was war
+              <rs ref="#graf_wermuth-ccc">das</rs> für ein ungeschliffener Kerl, <rs ref="#graf_wermuth-ccc">der nach <rs ref="#laeuffer-ccc">Ihnen</rs> suchte</rs>?</p>
+          </sp>
+          <sp who="#laeuffer">
+            <rs ref="#laeuffer-ccc"><speaker>LÄUFFER.</speaker></rs>
+            <p><rs ref="#graf_wermuth-ccc">Es</rs> ist der Graf Wermuth, der künftige Schwiegersohn <rs ref="#major-ccc">des Majors</rs>; <rs ref="#graf_wermuth-ccc">er</rs> ist eifersüchtig
+              auf mich, weil <rs ref="#gustchen-(tochter-majors)">das Fräulein</rs> <rs ref="#graf_wermuth-ccc">ihn</rs> nicht leiden kann –</p>
+          </sp>
+          <sp who="#wenzeslaus">
+            <rs ref="#wenzeslaus"><speaker>WENZESLAUS.</speaker></rs>
+            <p>Aber was soll denn das auch? Was will <rs ref="#gustchen-(tochter-majors)">das Mädchen</rs> denn auch mit <rs ref="#laeuffer-ccc">Ihm Monsieur
+              Jungfernknecht</rs>? <rs ref="#gustchen-(tochter-majors)">Sich</rs> <rs ref="#gustchen-(tochter-majors)">ihr</rs> Glück zu verderben um <rs ref="#laeuffer-ccc">eines solchen jungen Siegfrieds</rs> willen,
+              <rs ref="#laeuffer-ccc">der</rs> nirgends Haus oder Herd hat? Das laß <rs ref="#laeuffer-ccc">Er</rs> <rs ref="#laeuffer-ccc">sich</rs> aus <rs ref="#seinen-Verstand-(läuffers)">dem Kopf</rs> und folg <rs ref="#laeuffer-ccc">Er</rs> mir nach in
+              <rs ref="#die-Küche-(wenzeslaus)">die Küche</rs>. Ich seh, <rs ref="#mein-Bube-(bei-wenzeslaus,-wohl-Gottlieb)">mein Bube</rs> ist fortgangen, mir <rs ref="#seine-Wurst-(wenzeslaus-allg)">Bratwürste</rs> zu holen. Ich will <rs ref="#laeuffer-ccc">Ihm</rs>
+              selber <rs ref="#ein-Glas-Wasser">Wasser</rs> schöpfen, denn Magd hab ich nicht und an <rs ref="#die-Weiber">eine Frau</rs> hab ich mich noch
+              nicht unterstanden zu denken, weil ich weiß, daß ich keine ernähren kann – geschweige
+              denn <rs ref="#die-Weiber">eine</rs> drauf angesehen, wie <rs ref="#die-jungen-Herren-weiß-und-rot-(aufgeregte,-verängstigte-junge-männer)">ihr junge Herren weiß und rot</rs> – Aber <rs ref="#ein-Mensch-xxx">man</rs> sagt wohl mit
+              Recht, <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">die Welt</rs> verändert <rs ref="#heut-zu-Tage-(heutige-gesellschaftliche-wirklichkeit)-zeit">sich</rs>.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>
