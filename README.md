@@ -132,4 +132,4 @@ Please feel free to create issues or pull requests.
 
 ## Version
 
-1.2.1
+1.3.0
