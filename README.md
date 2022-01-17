@@ -58,6 +58,24 @@ $ gzip -d <FILENAME>.xmi.gz
 
 DIRNDL is a file format based on the CoNLL format, but additionally also contains a speaker column (among others).
 
+## Running the export scripts
+
+The manual annotations are stored in the XMI format, all other formats are exported automatically using [CorefAnnotator](https://github.com/nilsreiter/CorefAnnotator), [DramaNLP](https://github.com/quadrama/DramaNLP) and [Python](https://www.python.org/).
+`DramaNLP` needs to be compiled following the instructions at https://github.com/quadrama/DramaNLP#compiling-from-source.
+The paths to `CorefAnnotator` and `DramaNLP` need to be set as described in the scripts [create-tei.sh](create-tei.sh) and [create-conll.sh](create-conll.sh).
+To reproduce the export of formats included in this corpus, the scripts can be run as follows:
+
+```
+$ sh create-tei.sh
+$ sh create-conll.sh
+$ python3 split_tei.py tei/ tei/part/ --addScenes
+```
+There is also a makefile that runs the entire pipeline for convenience:
+
+```
+$ make run-pipeline
+```
+
 ## Organization
 
 The annotations are sorted into folders according to the different output formats.
