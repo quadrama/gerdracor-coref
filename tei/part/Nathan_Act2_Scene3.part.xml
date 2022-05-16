@@ -1,0 +1,279 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#sittah-xx">Sittah</rs>. <rs ref="#saladin">Saladin</rs>.</stage>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <rs ref="#das13"><l>Eilt</l>
+              <l><rs ref="#derwisch">Er</rs> doch, als ob <rs ref="#derwisch">er</rs> mir nur gern entkäme!</rs> –</l>
+              <l>Was heißt <rs ref="#das13">das</rs>? – <rs ref="#das14">Hat <rs ref="#derwisch">er</rs> wirklich <rs ref="#derwisch">sich</rs> in <rs ref="#nathan">ihm</rs></l>
+              <l>Betrogen, oder – möcht' <rs ref="#derwisch">er</rs> <rs ref="#saladin-/-sittah">uns</rs> nur gern</l>
+              <l>Betriegen?</l></rs>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#das14">das</rs> fragst du mich? Ich weiß</l>
+              <l>Ja kaum, von wem die Rede war; und höre</l>
+              <l>Von <rs ref="#nathan"><rs ref="#derwisch-/-sittah-xx">euerm</rs> Juden</rs>, <rs ref="#nathan"><rs ref="#derwisch-/-sittah-xx">euerm</rs> Nathan</rs>, heut'</l>
+              <l>Zum erstenmal.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ists möglich? daß <rs ref="#nathan">ein Mann</rs></l>
+              <l><rs ref="#saladin">Dir</rs> so verborgen blieb, von <rs ref="#nathan">dem</rs> es heißt,</l>
+              <l><rs ref="#nathan">Er</rs> habe <rs ref="#Salomons-und-Davids-Gräber">Salomons und Davids Gräber</rs></l>
+              <l>Erforscht, und wisse <rs ref="#Salomons-und-Davids-Gräber">deren</rs> Siegel durch</l>
+              <l>Ein mächtiges geheimes Wort zu lösen?</l>
+              <l>Aus <rs ref="#Salomons-und-Davids-Gräber">ihnen</rs> bring' <rs ref="#nathan">er</rs> dann von <rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Zeit</rs> zu <rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Zeit</rs></l>
+              <rs ref="#alles,---------------Was-Ihr-besitzt-(nathans-besitz,-güter-und-geld-werden-nicht-klar-getrennt)"><l>Die unermeßlichen Reichtümer an</l>
+              <l>Den Tag, <rs ref="#alles,---------------Was-Ihr-besitzt-(nathans-besitz,-güter-und-geld-werden-nicht-klar-getrennt)">die</rs> keinen mindern Quell verrieten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Hat <rs ref="#alles,---------------Was-Ihr-besitzt-(nathans-besitz,-güter-und-geld-werden-nicht-klar-getrennt)"><rs ref="#nathan">seinen</rs> Reichtum</rs> <rs ref="#nathan">dieser Mann</rs> aus <rs ref="#Gräbern">Gräbern</rs>,</l>
+              <l>So <rs ref="#Gräbern">warens</rs> sicherlich nicht Salomons,</l>
+              <l>Nicht Davids Gräber. <rs ref="#Davids-11-/-Salomons-11">Narren</rs> lagen da</l>
+              <l>Begraben!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Oder <rs ref="#Davids-11-/-Salomons-11">Bösewichter</rs>! – Auch</l>
+              <l>Ist <rs ref="#alles,---------------Was-Ihr-besitzt-(nathans-besitz,-güter-und-geld-werden-nicht-klar-getrennt)"><rs ref="#nathan">seines</rs> Reichtums</rs> Quelle weit ergiebiger</l>
+              <l>Weit unerschöpflicher, als <rs ref="#Salomons-und-Davids-Gräber">so ein Grab</l>
+              <l>Voll <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">Mammon</rs></rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Denn <rs ref="#nathan">er</rs> handelt; wie ich hörte.</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <rs ref="#Das16"><l><rs ref="#die-Kamele-meines-Vaters-(manchmal-plural-manchmal-singular,-immer-nathans)"><rs ref="#nathan">Sein</rs> Saumtier</rs> treibt auf allen Straßen, zieht</l>
+              <l><pb n="246"/> Durch <rs ref="#Wüsten">alle Wüsten</rs>; <rs ref="#den-Nachen-(kleines-boot-nathans-auf-seiner-reise-nach-jerusalem)"><rs ref="#nathan">seine</rs> Schiffe</rs> liegen</l>
+              <l>In allen Häfen</rs>. <rs ref="#Das16">Das</rs> hat mir wohl eh</l>
+              <l><rs ref="#derwisch">Al-Hafi</rs> selbst gesagt; und voll Entzücken</l>
+              <l>Hinzugefügt, wie groß, wie edel <rs ref="#nathan">dieser</l>
+              <l><rs ref="#derwisch">Sein</rs> Freund</rs> anwende, was so klug und emsig</l>
+              <l><rs ref="#nathan">Er</rs> zu erwerben für zu klein nicht achte:</l>
+              <l>Hinzugefügt, wie frei von Vorurteilen</l>
+              <l><rs ref="#Verstand-(rationale,-logische-Fähigkeit-nathan)"><rs ref="#nathan">Sein</rs> Geist</rs>; <rs ref="#sein-Herz-(nathans-inneres-wesen,-seele,-charakter)"><rs ref="#nathan">sein</rs> Herz</rs> wie offen <rs ref="#jeder-Tugend">jeder Tugend</rs>,</l>
+              <l>Wie eingestimmt mit jeder Schönheit sei.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Und itzt sprach <rs ref="#derwisch">Hafi</rs> doch so ungewiß,</l>
+              <l>So kalt von <rs ref="#nathan">ihm</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Kalt nun wohl nicht; verlegen.</l>
+              <rs ref="#dem3"><l>Als halt' <rs ref="#ers"><rs ref="#derwisch">ers</rs></rs> für gefährlich, <rs ref="#ers"><rs ref="#nathan">ihn</rs> zu loben</rs>,</l>
+              <l>Und woll' <rs ref="#nathan">ihn</rs> unverdient doch auch nicht tadeln. –</l>
+              <l>Wie? oder wär' es wirklich so, daß selbst</l>
+              <l><rs ref="#nathan">Der Beste <rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)"><rs ref="#nathan">seines</rs> Volkes</rs></rs> <rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)"><rs ref="#nathan">seinem</rs> Volke</rs></l>
+              <l>Nicht ganz entfliehen kann? daß wirklich <rs ref="#nathan">sich</rs></l>
+              <l><rs ref="#derwisch">Al-Hafi</rs> <rs ref="#nathan"><rs ref="#derwisch">seines</rs> Freunds</rs> von <rs ref="#Im-Schlechten-(schlechte-eigenschaften-nathans)">dieser Seite</rs></l>
+              <l>Zu schämen hätte?</rs> – Sei <rs ref="#dem3">dem</rs>, wie <rs ref="#dem3">ihm</rs> wolle! –</l>
+              <l><rs ref="#nathan">Der Jude</rs> sei mehr oder weniger</l>
+              <l>Als <rs ref="#ein-Jude-(prädikativ-nathan)">Jud</rs>', ist <rs ref="#nathan">er</rs> nur reich: genug für <rs ref="#saladin-/-sittah">uns</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#sittah-xx">Du</rs> willst <rs ref="#nathan">ihm</rs> aber doch <rs ref="#alles,---------------Was-Ihr-besitzt-(nathans-besitz,-güter-und-geld-werden-nicht-klar-getrennt)">das Seine</rs> mit</l>
+              <l><rs ref="#Gewalt-(als-mittel-zum-zweck)">Gewalt</rs> nicht nehmen, Schwester?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ja, was heißt</l>
+              <l>Bei <rs ref="#saladin">dir</rs> <rs ref="#Gewalt-(als-mittel-zum-zweck)">Gewalt</rs>? Mit <rs ref="#Dem-Feur">Feu'r</rs> und <rs ref="#dem-Schwerte">Schwert</rs>? Nein, nein,</l>
+              <l>Was braucht es mit <rs ref="#den-Schwachen">den Schwachen</rs> für <rs ref="#Gewalt-(als-mittel-zum-zweck)">Gewalt</rs>,</l>
+              <l>Als <rs ref="#den-Schwachen">ihre</rs> Schwäche? – Komm vor itzt nur mit</l>
+              <l>In meinen Haram, <rs ref="#eine-Sängerin">eine Sängerin</rs></l>
+              <l>Zu hören, <rs ref="#eine-Sängerin">die</rs> ich gestern erst gekauft.</l>
+              <l>Es reift indes bei mir vielleicht <rs ref="#ein-Anschlag,---------------Den-ich-auf-diesen-Nathan-habe-(plan-idee-sittahs-wie-an-nathans-geld-zu-kommen-ist)">ein Anschlag,</l>
+              <l><rs ref="#ein-Anschlag,---------------Den-ich-auf-diesen-Nathan-habe-(plan-idee-sittahs-wie-an-nathans-geld-zu-kommen-ist)">Den</rs> ich auf <rs ref="#nathan">diesen Nathan</rs> habe</rs>. – Komm!</l>
+              <pb n="247"/>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

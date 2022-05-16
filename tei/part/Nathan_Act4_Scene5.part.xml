@@ -1,0 +1,284 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage><rs ref="#saladin">Saladin</rs> und <rs ref="#sittah-xx">Sittah</rs>.</stage>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Ganz sonderbar!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Gelt, <rs ref="#sittah-xx">Sittah</rs>? Muß <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">mein Assad</rs> nicht <rs ref="#ein-braver,---------------Ein-schöner-junger-Mann-(prädikativ-assad-wolf)">ein braver,</l>
+              <l>Ein schöner junger Mann</rs> gewesen sein?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">er</rs> so war, und nicht zu <rs ref="#ein-klein-Gemälde">diesem Bilde</rs></l>
+              <l><pb n="308"/> <rs ref="#tempelherr-bbb">Der Tempelherr</rs> vielmehr gesessen! – Aber</l>
+              <l>Wie hast <rs ref="#saladin">du</rs> doch vergessen können <rs ref="#saladin">dich</rs></l>
+              <l>Nach <rs ref="#Assad-als-Wolf-von-F…-/-Stauffen-(mutter-des-bbb…"><rs ref="#tempelherr-bbb">seinen</rs> Eltern</rs> zu erkundigen?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <rs ref="#Das37"><l>Und ins besondre wohl nach <rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll"><rs ref="#tempelherr-bbb">seiner</rs> Mutter</rs>?</l>
+              <l>Ob <rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll"><rs ref="#tempelherr-bbb">seine</rs> Mutter</rs> hier <rs ref="#im-Staat-(meint-syrien-und-wohl-ägypten-als-ayyubidisches-staatsgebiet-saladins)">zu Lande</rs> nie</l>
+              <l>Gewesen sei? – Nicht wahr?</l></rs>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#Das37">Das</rs> machst <rs ref="#saladin">du</rs> gut!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>O, möglicher wär' nichts! Denn <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Assad</rs> war</l>
+              <l>Bei <rs ref="#hübschen-Christendamen">hübschen Christendamen</rs> so willkommen,</l>
+              <l>Auf <rs ref="#hübschen-Christendamen">hübsche Christendamen</rs> so erpicht,</l>
+              <l>Daß einmal gar die Rede ging – Nun, nun;</l>
+              <l>Man spricht nicht gern davon. – Genug; ich hab</l>
+              <l><rs ref="#Dich-(der-tempelherr-wird-von-saladin-angesprochen-in-der-Sehnsucht-dieser-sei-sein-bruder-assad,-das-angesprochene-gegenüber-ist-also-eigentlich-der-tempelherr,-aber-die-fragen-die-diesem-gestellt-werden-richten-sich-an-assad)">Ihn</rs> wieder! – will mit allen <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seinen</rs> Fehlern,</l>
+              <l>Mit allen Launen <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seines</rs> weichen Herzens</l>
+              <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Ihn</rs> wieder haben! – Oh! <rs ref="#recha">das Mädchen</rs> muß</l>
+              <l><rs ref="#tempelherr-bbb">Ihm</rs> <rs ref="#nathan">Nathan</rs> geben. Meinst <rs ref="#sittah-xx">du</rs> nicht?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Ihm</rs> geben?</l>
+              <l><rs ref="#tempelherr-bbb">Ihm</rs> lassen!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Allerdings! Was hätte <rs ref="#nathan">Nathan</rs>,</l>
+              <l>So bald <rs ref="#nathan">er</rs> nicht <rs ref="#recha">ihr</rs> Vater ist, für <rs ref="#Recht---------------Auf-sie-(nathans-recht-über-recha)">Recht</l>
+              <l>Auf <rs ref="#recha">sie</rs></rs>? Wer <rs ref="#recha">ihr</rs> <rs ref="#es-(leben-rechas)">das Leben</rs> so erhielt,</l>
+              <l>Tritt einzig in <rs ref="#die-Rechte-des,-der-ihr---------------Es-gab.-(recht-rechas-leiblicher-eltern-über-sie)">die Rechte <rs ref="#Assad-als-Wolf-von-F…-/-Stauffen-(mutter-des-bbb…">des, <rs ref="#Assad-als-Wolf-von-F…-/-Stauffen-(mutter-des-bbb…">der</rs> <rs ref="#recha">ihr</rs></l>
+              <l><rs ref="#es-(leben-rechas)">Es</rs> gab</rs>.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wie also, <rs ref="#saladin">Saladin</rs>? <rs ref="#das41">wenn <rs ref="#saladin">du</rs></l>
+              <l>Nur gleich <rs ref="#recha">das Mädchen</rs> zu <rs ref="#saladin">dir</rs> nähmst? <rs ref="#recha">Sie</rs> nur</l>
+              <l><rs ref="#nathan">Dem unrechtmäßigen Besitzer</rs> gleich</l>
+              <l>Entzögest</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Täte <rs ref="#das41">das</rs> wohl Not?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Not nun</l>
+              <l>Wohl eben nicht! – <rs ref="#meiner-Neugier-(sittah)">Die liebe Neubegier</rs></l>
+              <l>Treibt mich allein, <rs ref="#saladin">dir</rs> <rs ref="#das41">diesen Rat</rs> zu geben.</l>
+              <l>Denn von <rs ref="#gewissen-Männern-(vom-typ-des-tempelherrn)">gewissen Männern</rs> mag ich gar</l>
+              <l>Zu gern, so bald wie möglich, wissen, <rs ref="#Weib">was</rs></l>
+              <l><rs ref="#gewissen-Männern-(vom-typ-des-tempelherrn)">Sie</rs> für ein Mädchen lieben können.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Nun,</l>
+              <l>So schick' und laß <rs ref="#recha">sie</rs> holen.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Darf ich, <rs ref="#saladin">Bruder</rs>?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Nur schone <rs ref="#nathan">Nathans</rs>! <rs ref="#nathan">Nathan</rs> muß durchaus</l>
+              <l><pb n="309"/> Nicht glauben, daß <rs ref="#saladin">man</rs> mit <rs ref="#Gewalt-(als-mittel-zum-zweck)">Gewalt</rs> <rs ref="#nathan">ihn</rs> von</l>
+              <l><rs ref="#recha">Ihr</rs> trennen wolle.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Sorge nicht.</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Und ich,</l>
+              <l>Ich muß schon selbst sehn, wo <rs ref="#derwisch">Al-Hafi</rs> bleibt.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

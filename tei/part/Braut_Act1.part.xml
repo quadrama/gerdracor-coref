@@ -1,0 +1,2070 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Braut von Messina oder Die feindlichen Brüder</title>
+        <title type="sub">Ein Trauerspiel mit Chören</title>
+        <author key="pnd:118607626">Schiller, Friedrich</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000067</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1211729</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:v0d8.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Friedrich Schiller: Sämtliche Werke, Auf Grund der Originaldrucke herausgegeben
+              von Gerhard Fricke und Herbert G. Göpfert in Verbindung mit Herbert Stubenrauch, Band
+              1–5, 3. Auflage, München: Hanser, 1962.</title>
+            <date type="print" when="1803"/>
+            <date type="premiere"/>
+            <date type="written" when="1803">1802–03</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="isabella" sex="FEMALE">
+            <persName>Isabella</persName>
+          </person>
+          <person xml:id="diego" sex="MALE">
+            <persName>Diego</persName>
+          </person>
+          <personGrp xml:id="erster_chor" sex="MALE">
+            <name>Erster Chor</name>
+          </personGrp>
+          <personGrp xml:id="zweiter_chor" sex="MALE">
+            <name>Zweiter Chor</name>
+          </personGrp>
+          <personGrp xml:id="chor" sex="MALE">
+            <name>Der ganze Chor</name>
+            <name type="variant">Chor</name>
+            <name type="variant">Beide Chöre</name>
+            <name type="variant">Ganzer Chor</name>
+          </personGrp>
+          <person xml:id="einer_aus_dem_chor_1-3" sex="MALE">
+            <persName>Einer aus dem Chor (I/3)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-3" sex="MALE">
+            <persName>Ein Zweiter (I/3)</persName>
+          </person>
+          <person xml:id="don_manuel" sex="MALE">
+            <persName>Don Manuel</persName>
+          </person>
+          <person xml:id="don_cesar" sex="MALE">
+            <persName>Don Cesar</persName>
+          </person>
+          <person xml:id="bote_1-6" sex="MALE">
+            <persName>Bote (I/6)</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_1-8" sex="MALE">
+            <persName>Einer aus dem Chor (I/8)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-8" sex="MALE">
+            <persName>Ein Zweiter (I/8)</persName>
+          </person>
+          <person xml:id="ein_dritter_1-8" sex="MALE">
+            <persName>Ein Dritter (I/8)</persName>
+          </person>
+          <person xml:id="beatrice" sex="FEMALE">
+            <persName>Beatrice</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_3-5" sex="MALE">
+            <persName>Einer aus dem Chor (III/5)</persName>
+          </person>
+          <person xml:id="ein_zweiter_3-5" sex="MALE">
+            <persName>Ein Zweiter (III/5)</persName>
+          </person>
+          <person xml:id="ein_dritter_3-5" sex="MALE">
+            <persName>Ein Dritter (III/5)</persName>
+          </person>
+          <person xml:id="bote_4-2_und_4-3" sex="MALE">
+            <persName>Bote (IV/2–3)</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#isabella" passive="#don_manuel"/>
+            <relation name="parent_of" active="#isabella" passive="#don_cesar"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2018-11-04">(ff) initital commit; scene segmentation from
+          Gutenberg-DE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Friedrich Schiller</head>
+        <head>Die Braut von Messina</head>
+        <head>oder</head>
+        <head>Die feindlichen Brüder</head>
+        <head>Ein Trauerspiel mit Chören</head>
+      </div>
+      <div type="preface">
+        <head><pb type="start" n="815"/> Über den Gebrauch des Chors in der Tragödie</head>
+        <p>Ein poetisches Werk muß sich selbst rechtfertigen, und wo die Tat nicht spricht, da wird
+          das Wort nicht viel helfen. Man könnte es also gar wohl dem Chor überlassen, sein eigener
+          Sprecher zu sein, wenn er nur erst selbst auf die gehörige Art zur Darstellung gebracht
+          wäre. Aber das tragische Dichterwerk wird erst durch die theatralische Vorstellung zu
+          einem Ganzen; nur die Worte gibt der Dichter, Musik und Tanz müssen hinzukommen, sie zu
+          beleben. So lange also dem Chor diese sinnlich mächtige Begleitung fehlt, so lange wird er
+          in der Ökonomie des Trauerspiels als ein Außending, als ein fremdartiger Körper und als
+          ein Aufenthalt erscheinen, der nur den Gang der Handlung unterbricht, der die Täuschung
+          stört, der den Zuschauer erkältet. Um dem Chor sein Recht anzutun, muß man sich also von
+          der wirklichen Bühne auf eine <emph>mögliche</emph> versetzen, aber das muß man überall,
+          wo man zu etwas Höherm gelangen will. Was die Kunst noch nicht hat, das soll sie erwerben;
+          der zufällige Mangel an Hilfsmitteln darf die schaffende Einbildungskraft des Dichters
+          nicht beschränken. Das Würdigste setzt er sich zum Ziel, einem Ideale strebt er nach, die
+          ausübende Kunst mag sich nach den Umständen bequemen.</p>
+        <p>Es ist nicht wahr, was man gewöhnlich behaupten hört, daß das Publikum die Kunst
+          herabzieht; der Künstler zieht das Publikum herab, und zu allen Zeiten, wo die Kunst
+          verfiel, ist sie durch die Künstler gefallen. Das Publikum braucht nichts als
+          Empfänglichkeit, und diese besitzt es. Es tritt vor den Vorhang mit einem unbestimmten
+          Verlangen, mit einem vielseitigen Vermögen. Zu dem Höchsten bringt es eine Fähigkeit mit,
+          es erfreut sich an dem Verständigen und Rechten, und wenn es damit angefangen hat, sich
+          mit dem Schlechten zu begnügen, so wird es zuverlässig damit aufhören, das Vortreffliche
+          zu fodern, wenn man es ihm erst gegeben hat.</p>
+        <p>Der Dichter, hört man einwenden, hat gut nach einem Ideal arbeiten, der Kunstrichter hat
+          gut nach Ideen urteilen, die bedingte, beschränkte, ausübende Kunst ruht auf dem
+          Bedürfnis. Der Unternehmer will bestehen, der Schauspieler will sich zeigen, der Zuschauer
+            <pb n="815"/> will unterhalten und in Bewegung gesetzt sein. Das Vergnügen sucht er und
+          ist unzufrieden, wenn man ihm da eine Anstrengung zumutet, wo er ein Spiel und eine
+          Erholung erwartet.</p>
+        <p>Aber, indem man das Theater ernsthafter behandelt, will man das Vergnügen des Zuschauers
+          nicht aufheben, sondern veredeln. Es soll ein Spiel bleiben, aber ein poetisches. Alle
+          Kunst ist der Freude gewidmet, und es gibt keine höhere und keine ernsthaftere Aufgabe,
+          als die Menschen zu beglücken. Die rechte Kunst ist nur diese, welche den höchsten Genuß
+          verschafft. Der höchste Genuß aber ist die Freiheit des Gemütes in dem lebendigen Spiel
+          aller seiner Kräfte.</p>
+        <p>Jeder Mensch zwar erwartet von den Künsten der Einbildungskraft eine gewisse Befreiung
+          von den Schranken des Wirklichen, er will sich an dem Möglichen ergötzen und seiner
+          Phantasie Raum geben. Der am wenigsten erwartet, will doch sein Geschäft, sein gemeines
+          Leben, sein Individuum vergessen, er will sich in außerordentlichen Lagen fühlen, sich an
+          den seltsamen Kombinationen des Zufalls weiden, er will, wenn er von ernsthafterer Natur
+          ist, die moralische Weltregierung, die er im wirklichen Leben vermißt, auf der Schaubühne
+          finden. Aber er weiß selbst recht gut, daß er nur ein leeres Spiel treibt, daß er im
+          eigentlichen Sinn sich nur an Träumen weidet, und wenn er von dem Schauplatz wieder in die
+          wirkliche Welt zurückkehrt, so umgibt ihn diese wieder mit ihrer ganzen drückenden Enge,
+          er ist ihr Raub, wie vorher, denn sie selbst ist geblieben, was sie war, und an ihm ist
+          nichts verändert worden. Dadurch ist also nichts gewonnen, als ein gefälliger Wahn des
+          Augenblicks, der beim Erwachen verschwindet.</p>
+        <p>Und eben darum, weil es hier nur auf eine vorübergehende Täuschung abgesehen ist, so ist
+          auch nur ein Schein der Wahrheit oder die beliebte Wahrscheinlichkeit nötig, die man so
+          gern an die Stelle der Wahrheit setzt.</p>
+        <p>Die wahre Kunst aber hat es nicht bloß auf ein vorübergehendes Spiel abgesehen, es ist
+          ihr Ernst damit, den Menschen nicht bloß in einen augenblicklichen Traum von Freiheit zu
+          versetzen, sondern ihn wirklich und in der Tat frei zu <emph>machen</emph>, und dieses
+          dadurch, daß sie eine Kraft in ihm erweckt, übt und ausbildet, die sinnliche Welt, die
+          sonst nur als ein roher Stoff auf uns lastet, als eine blinde Macht <pb n="816"/> auf uns
+          drückt, in eine objektive Ferne zu rücken, in ein freies Werk unsers Geistes zu verwandeln
+          und das Materielle durch Ideen zu beherrschen.</p>
+        <p>Und eben darum weil die wahre Kunst etwas Reelles und Objektives will, so kann sie sich
+          nicht bloß mit dem Schein der Wahrheit begnügen; auf der Wahrheit selbst, auf dem festen
+          und tiefen Grunde der Natur errichtet sie ihr ideales Gebäude.</p>
+        <p>Wie aber nun die Kunst zugleich ganz ideell und doch im tiefsten Sinne reell sein – wie
+          sie das Wirkliche ganz verlassen und doch aufs genaueste mit der Natur übereinstimmen soll
+          und kann, das ists, was wenige fassen, was die Ansicht poetischer und plastischer Werke so
+          schielend macht, weil beide Foderungen einander im gemeinen Urteil geradezu aufzuheben
+          scheinen.</p>
+        <p>Auch begegnet es gewöhnlich, daß man das eine mit Aufopferung des andern zu erreichen
+          sucht und eben deswegen beides verfehlt. Wem die Natur zwar einen treuen Sinn und eine
+          Innigkeit des Gefühls verliehen, aber die schaffende Einbildungskraft versagte, der wird
+          ein treuer Maler des Wirklichen sein, er wird die zufällige Erscheinungen, aber nie den
+          Geist der Natur ergreifen. Nur den Stoff der Welt wird er uns wiederbringen, aber es wird
+          eben darum nicht unser Werk, nicht das freie Produkt unsers bildenden Geistes sein und
+          kann also auch die wohltätige Wirkung der Kunst, welche in der Freiheit besteht, nicht
+          haben. Ernst zwar, doch unerfreulich ist die Stimmung, mit der uns ein solcher Künstler
+          und Dichter entläßt, und wir sehen uns durch die Kunst selbst, die uns befreien sollte, in
+          die gemeine enge Wirklichkeit peinlich zurückversetzt. Wem hingegen zwar eine rege
+          Phantasie, aber ohne Gemüt und Charakter, zuteil geworden, der wird sich um keine Wahrheit
+          bekümmern; sondern mit dem Weltstoff nur spielen, nur durch phantastische und bizarre
+          Kombinationen zu überraschen suchen, und wie sein ganzes Tun nur Schaum und Schein ist, so
+          wird er zwar für den Augenblick unterhalten, aber im Gemüt nichts erbauen und begründen.
+          Sein Spiel ist, so wie der Ernst des andern, kein poetisches. Phantastische Gebilde
+          willkürlich aneinanderreihen, heißt nicht ins Ideale gehen, und das Wirkliche nachahmend
+          wieder bringen, heißt nicht die Natur darstellen. Beide Foderungen stehen so wenig im
+          Widerspruch miteinander, <pb n="817"/> daß sie vielmehr – eine und dieselbe sind; daß die
+          Kunst nur dadurch wahr ist, daß sie das Wirkliche ganz verläßt und rein ideell wird. Die
+          Natur selbst ist nur eine Idee des Geistes, die nie in die Sinne fällt. Unter der Decke
+          der Erscheinungen liegt sie, aber sie selbst kommt niemals zur Erscheinung. Bloß der Kunst
+          des Ideals ist es verliehen, oder vielmehr, es ist ihr aufgegeben, diesen Geist des Alls
+          zu ergreifen und in einer körperlichen Form zu binden. Auch sie selbst kann ihn zwar nie
+          vor die Sinne, aber doch durch ihre schaffende Gewalt vor die Einbildungskraft bringen und
+          dadurch wahrer sein als alle Wirklichkeit und realer als alle Erfahrung. Es ergibt sich
+          daraus von selbst, daß der Künstler kein einziges Element aus der Wirklichkeit brauchen
+          kann, wie er es findet, daß sein Werk in <emph>allen</emph> seinen Teilen ideell sein muß,
+          wenn es als ein Ganzes Realität haben und mit der Natur übereinstimmen soll.</p>
+        <p>Was von Poesie und Kunst im Ganzen wahr ist, gilt auch von allen Gattungen derselben, und
+          es läßt sich ohne Mühe von dem jetzt Gesagten auf die Tragödie die Anwendung machen. Auch
+          hier hatte man lange und hat noch jetzt mit dem gemeinen Begriff des
+            <emph>Natürlichen</emph> zu kämpfen, welcher alle Poesie und Kunst geradezu aufhebt und
+          vernichtet. Der bildenden Kunst gibt man zwar notdürftig, doch mehr aus konventionellen
+          als aus innern Gründen, eine gewisse Idealität zu, aber von der Poesie und von der
+          dramatischen insbesondere verlangt man <emph>Illusion</emph>, die, wenn sie auch wirklich
+          zu leisten wäre, immer nur ein armseliger Gauklerbetrug sein würde. Alles Äußere bei einer
+          dramatischen Vorstellung steht diesem Begriff entgegen – alles ist nur ein Symbol des
+          Wirklichen. Der Tag selbst auf dem Theater ist nur ein künstlicher, die Architektur ist
+          nur eine symbolische, die metrische Sprache selbst ist ideal, aber die Handlung soll nun
+          einmal real sein und der Teil das Ganze zerstören. So haben die Franzosen, die den Geist
+          der Alten zuerst ganz mißverstanden, eine Einheit des Orts und der Zeit nach dem
+          gemeinsten empirischen Sinn auf der Schaubühne eingeführt, als ob hier ein anderer Ort
+          wäre als der bloß ideale Raum, und eine andere Zeit als bloß die stetige Folge der
+          Handlung.</p>
+        <p>Durch Einführung einer metrischen Sprache ist man indes der poetischen Tragödie schon um
+          einen großen Schritt näher gekommen. Es sind einige lyrische Versuche auf der Schaubühne
+          glücklich durchgegangen, <pb n="818"/> und die Poesie hat sich durch ihre eigene lebendige
+          Kraft, im einzelnen, manchen Sieg über das herrschende Vorurteil errungen. Aber mit den
+          einzelnen ist wenig gewonnen, wenn nicht der Irrtum im Ganzen fällt, und es ist nicht
+          genug, daß man das nur als eine poetische Freiheit duldet, was doch das Wesen aller Poesie
+          ist. Die Einführung des Chors wäre der letzte, der entscheidende Schritt – und wenn
+          derselbe auch nur dazu diente, dem Naturalism in der Kunst offen und ehrlich den Krieg zu
+          erklären, so sollte er uns eine lebendige Mauer sein, die die Tragödie um sich herumzieht,
+          um sich von der wirklichen Welt rein abzuschließen und sich ihren idealen Boden ihre
+          poetische Freiheit zu bewahren.</p>
+        <p>Die Tragödie der Griechen ist, wie man weiß, aus dem Chor entsprungen. Aber so wie sie
+          sich historisch und der Zeitfolge nach daraus loswand, so kann man auch sagen, daß sie
+          poetisch und dem Geiste nach aus demselben entstanden, und daß ohne diesen beharrlichen
+          Zeugen und Träger der Handlung eine ganz andere Dichtung aus ihr geworden wäre. Die
+          Abschaffung des Chors und die Zusammenziehung dieses sinnlich mächtigen Organs in die
+          charakterlose langweilig wiederkehrende Figur eines ärmlichen Vertrauten war also keine so
+          große Verbesserung der Tragödie, als die Franzosen und ihre Nachbeter sich eingebildet
+          haben.</p>
+        <p>Die alte Tragödie, welche sich ursprünglich nur mit Göttern, Helden und Königen abgab,
+          brauchte den Chor als eine notwendige Begleitung, sie fand ihn in der Natur und brauchte
+          ihn, weil sie ihn fand. Die Handlungen und Schicksale der Helden und Könige sind schon an
+          sich selbst öffentlich und waren es in der einfachen Urzeit noch mehr. Der Chor war
+          folglich in der alten Tragödie mehr ein natürliches Organ, er folgte schon aus der
+          poetischen Gestalt des wirklichen Lebens. In der neuen Tragödie wird er zu einem
+          Kunstorgan; er hilft die Poesie <emph>hervorbringen</emph>. Der neuere Dichter findet den
+          Chor nicht mehr in der Natur, er muß ihn poetisch erschaffen und einführen, das ist, er
+          muß mit der Fabel, die er behandelt, eine solche Veränderung vornehmen, wodurch sie in
+          jene kindliche Zeit und in jene einfache Form des Lebens zurückversetzt wird.</p>
+        <p>Der Chor leistet daher dem neuern Tragiker noch weit wesentlichere Dienste, als dem alten
+          Dichter, eben deswegen, weil er die moderne <pb n="819"/> gemeine Welt in die alte
+          poetische verwandelt, weil er ihm alles das unbrauchbar macht, was der Poesie widerstrebt,
+          und ihn auf die einfachsten, ursprünglichsten und naivsten Motive hinauftreibt. Der Palast
+          der Könige ist jetzt geschlossen, die Gerichte haben sich von den Toren der Städte in das
+          Innere der Häuser zurückgezogen, die Schrift hat das lebendige Wort verdrängt, das Volk
+          selbst, die sinnlich lebendige Masse, ist, wo sie nicht als rohe Gewalt wirkt, zum Staat,
+          folglich zu einem abgezogenen Begriff geworden, die Götter sind in die Brust des Menschen
+          zurückgekehrt. Der Dichter muß die Paläste wieder auftun, er muß die Gerichte unter freien
+          Himmel herausführen, er muß die Götter wieder aufstellen, er muß alles Unmittelbare, das
+          durch die künstliche Einrichtung des wirklichen Lebens aufgehoben ist, wieder herstellen
+          und alles künstliche Machwerk an dem Menschen und um denselben, das die Erscheinung seiner
+          innern Natur und seines ursprünglichen Charakters hindert, wie der Bildhauer die modernen
+          Gewänder, abwerfen und von allen äußern Umgebungen desselben nichts aufnehmen, als was die
+          höchste der Formen, die menschliche, sichtbar macht.</p>
+        <p>Aber ebenso, wie der bildende Künstler die faltige Fülle der Gewänder um seine Figuren
+          breitet, um die Räume seines Bildes reich und anmutig auszufüllen, um die getrennten
+          Partien desselben in ruhigen Massen stetig zu verbinden, um der Farbe, die das Auge reizt
+          und erquickt, einen Spielraum zu geben, um die menschlichen Formen zugleich geistreich zu
+          verhüllen und sichtbar zu machen, ebenso durchflicht und umgibt der tragische Dichter
+          seine streng abgemessene Handlung und die festen Umrisse seiner handelnden Figuren mit
+          einem lyrischen Prachtgewebe, in welchem sich, als wie in einem weit gefalteten
+          Purpurgewand, die handelnden Personen frei und edel mit einer gehaltenen Würde und hoher
+          Ruhe bewegen.</p>
+        <p>In einer höhern Organisation darf der Stoff oder das Elementarische nicht mehr sichtbar
+          sein, die chemische Farbe verschwindet in der feinen Carnation des Lebendigen. Aber auch
+          der Stoff hat seine Herrlichkeit und kann als solcher in einem Kunstkörper aufgenommen
+          werden. Dann aber muß er sich durch Leben und Fülle und durch Harmonie seinen Platz
+          verdienen und die Formen, die er umgibt, geltend machen, anstatt sie durch seine Schwere
+          zu erdrücken.</p>
+        <p><pb n="820"/> In Werken der bildenden Kunst ist dieses jedem leicht verständlich, aber
+          auch in der Poesie und in der tragischen, von der hier die Rede ist, findet dasselbe
+          statt. Alles, was der Verstand sich im allgemeinen ausspricht, ist ebenso wie das, was
+          bloß die Sinne reizt, nur Stoff und rohes Element in einem Dichterwerk und wird da, wo es
+          vorherrscht, unausbleiblich das Poetische zerstören; denn dieses liegt gerade in dem
+          Indifferenzpunkt des Ideellen und Sinnlichen. Nun ist aber der Mensch so gebildet, daß er
+          immer von dem Besondern ins Allgemeine gehen will, und die Reflexion muß also auch in der
+          Tragödie ihren Platz erhalten. Soll sie aber diesen Platz verdienen, so muß sie das, was
+          ihr an sinnlichem Leben fehlt, durch den Vortrag wieder gewinnen, denn wenn die zwei
+          Elemente der Poesie, das Ideale und Sinnliche, nicht innig verbunden <emph>zusammen
+            wirken</emph>, so müssen sie <emph>nebeneinander</emph> wirken, oder die Poesie ist
+          aufgehoben. Wenn die Waage nicht vollkommen inne steht, da kann das Gleichgewicht nur
+          durch eine <emph>Schwankung</emph> der beiden Schalen hergestellt werden.</p>
+        <p>Und dieses leistet nun der Chor in der Tragödie. Der Chor ist selbst kein Individuum,
+          sondern ein allgemeiner Begriff, aber dieser Begriff repräsentiert sich durch eine
+          sinnlich mächtige Masse, welche durch ihre ausfüllende Gegenwart den Sinnen imponiert. Der
+          Chor verläßt den engen Kreis der Handlung, um sich über Vergangenes und Künftiges, über
+          ferne Zeiten und Völker, über das Menschliche überhaupt zu verbreiten, um die großen
+          Resultate des Lebens zu ziehen und die Lehren der Weisheit auszusprechen. Aber er tut
+          dieses mit der vollen Macht der Phantasie, mit einer kühnen lyrischen Freiheit, welche auf
+          den hohen Gipfeln der menschlichen Dinge, wie mit Schritten der Götter, einhergeht – und
+          er tut es, von der ganzen sinnlichen Macht des Rhythmus und der Musik in Tönen und
+          Bewegungen begleitet.</p>
+        <p>Der Chor <emph>reinigt</emph> also das tragische Gedicht, indem er die Reflexion von der
+          Handlung absondert und eben durch diese Absonderung sie selbst mit poetischer Kraft
+          ausrüstet; ebenso, wie der bildende Künstler die gemeine Notdurft der Bekleidung durch
+          eine reiche Draperie in einen Reiz und in eine Schönheit verwandelt.</p>
+        <p>Aber ebenso, wie sich der Maler gezwungen sieht, den Farbenton des Lebendigen zu
+          verstärken, um den mächtigen Stoffen das Gleichgewicht <pb/> zu halten, so legt die
+          lyrische Sprache des Chors dem Dichter auf, verhältnismäßig die ganze Sprache des Gedichts
+          zu erheben und dadurch die sinnliche Gewalt des Ausdrucks überhaupt zu verstärken. Nur der
+          Chor berechtiget den tragischen Dichter zu dieser Erhebung des Tons, die das Ohr ausfüllt,
+          die den Geist anspannt, die das ganze Gemüt erweitert. Diese eine Riesengestalt in seinem
+          Bilde nötigt ihn, alle seine Figuren auf den Kothurn zu stellen und seinem Gemälde dadurch
+          die tragische Größe zu geben. Nimmt man den Chor hinweg, so muß die Sprache der Tragödie
+          im Ganzen sinken, oder was jetzt groß und mächtig ist, wird gezwungen und überspannt
+          erscheinen. Der alte Chor, in das französische Trauerspiel eingeführt, würde es in seiner
+          ganzen Dürftigkeit darstellen und zunichte machen; eben derselbe würde ohne Zweifel
+          Shakespeares Tragödie erst ihre wahre Bedeutung geben.</p>
+        <p>So wie der Chor in die Sprache <emph>Leben</emph> bringt, so bringt er <emph>Ruhe</emph>
+          in die Handlung – aber die schöne und hohe Ruhe, die der Charakter eines edeln Kunstwerkes
+          sein muß. Denn das Gemüt des Zuschauers soll auch in der heftigsten Passion seine Freiheit
+          behalten, es soll kein Raub der Eindrücke sein, sondern sich immer klar und heiter von den
+          Rührungen scheiden, die es erleidet. Was das gemeine Urteil an dem Chor zu tadeln pflegt,
+          daß er die Täuschung aufhebe, daß er die Gewalt der Affekte breche, das gereicht ihm zu
+          seiner höchsten Empfehlung, denn eben diese blinde Gewalt der Affekte ist es, die der
+          wahre Künstler vermeidet, diese Täuschung ist es, die er zu erregen verschmäht. Wenn die
+          Schläge, womit die Tragödie unser Herz trifft, ohne Unterbrechung aufeinander folgten, so
+          würde das Leiden über die Tätigkeit siegen. Wir würden uns mit dem Stoffe vermengen und
+          nicht mehr über demselben schweben. Dadurch, daß der Chor die Teile auseinanderhält und
+          zwischen die Passionen mit seiner beruhigenden Betrachtung tritt, gibt er uns unsre
+          Freiheit zurück, die im Sturm der Affekte verlorengehen würde. Auch die tragischen
+          Personen selbst bedürfen dieses Anhalts, dieser Ruhe, um sich zu sammeln; denn sie sind
+          keine wirkliche Wesen, die bloß der Gewalt des Moments gehorchen und bloß ein Individuum
+          darstellen, sondern ideale Personen und Repräsentanten ihrer Gattung, die das Tiefe der
+          Menschheit aussprechen. Die Gegenwart des Chors, der als ein richtender <pb n="822"/>
+          Zeuge sie vernimmt und die ersten Ausbrüche ihrer Leidenschaft durch seine Dazwischenkunft
+          bändigt, motiviert die Besonnenheit, mit der sie handeln, und die Würde, mit der sie
+          reden. Sie stehen gewissermaßen schon auf einem natürlichen Theater, weil sie vor
+          Zuschauern sprechen und handeln, und werden eben deswegen desto tauglicher, von dem
+          Kunsttheater zu einem Publikum zu reden.</p>
+        <p>Soviel über meine Befugnis, den alten Chor auf die tragische Bühne zurückzuführen. Chöre
+          kennt man zwar auch schon in der modernen Tragödie, aber der Chor des griechischen
+          Trauerspiels, so wie ich ihn hier gebraucht habe, der Chor als eine einzige ideale Person,
+          die die ganze Handlung trägt und begleitet, dieser ist von jenen operhaften Chören
+          wesentlich verschieden, und wenn ich bei Gelegenheit der griechischen Tragödie von
+            <emph>Chören</emph> anstatt von einem Chor sprechen höre, so entsteht mir der Verdacht,
+          daß man nicht recht wisse, wovon man rede. Der Chor der alten Tragödie ist meines Wissens
+          seit dem Verfall derselben nie wieder auf der Bühne erschienen.</p>
+        <p>Ich habe den Chor zwar in zwei Teile getrennt und im Streit mit sich selbst dargestellt;
+          aber dies ist nur dann der Fall, wo er als wirkliche Person und als blinde Menge
+          mithandelt. Als <emph>Chor</emph> und als ideale Person ist er immer eins mit sich selbst.
+          Ich habe den Ort verändert und den Chor mehrmal abgehen lassen; aber auch Aeschylus, der
+          Schöpfer der Tragödie, und Sophokles, der größte Meister in dieser Kunst, haben sich
+          dieser Freiheit bedient.</p>
+        <p>Eine andere Freiheit, die ich mir erlaubt, möchte schwerer zu rechtfertigen sein. Ich
+          habe die christliche Religion und die griechische Götterlehre vermischt angewendet, ja,
+          selbst an den maurischen Aberglauben erinnert. Aber der Schauplatz der Handlung ist
+          Messina, wo diese drei Religionen teils lebendig, teils in Denkmälern fortwirkten und zu
+          den Sinnen sprachen. Und dann halte ich es für ein Recht der Poesie, die verschiedenen
+          Religionen als ein kollektives Ganze für die Einbildungskraft zu behandeln, in welchem
+          alles, was einen eignen Charakter trägt, eine eigne Empfindungsweise ausdrückt, seine
+          Stelle findet. <emph>Unter der Hülle aller Religionen liegt die Religion selbst</emph>,
+          die Idee eines Göttlichen, und es muß dem Dichter erlaubt sein, dieses auszusprechen, in
+          welcher Form er es jedesmal am bequemsten und am treffendsten findet.</p>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="823"/> Personen.</head>
+          <castGroup>
+            <castItem><rs ref="#isabella">Donna Isabella, Fürstin von <rs ref="#Messina">Messina</rs></rs>.</castItem>
+            <castGroup>
+              <castItem><rs ref="#don_manuel">Don Manuel</rs>,</castItem>
+              <castItem><rs ref="#don_cesar">Don Cesar</rs>,</castItem>
+              <roleDesc><rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihre</rs> Söhne</rs>.</roleDesc>
+            </castGroup>
+            <castItem><rs ref="#beatrice">Beatrice</rs>.</castItem>
+            <castItem><rs ref="#diego">Diego</rs>.</castItem>
+            <castItem>Boten.</castItem>
+            <castItem><rs ref="#gesamter-Chor">Chor</rs>, besteht aus dem Gefolge <rs ref="#Die-Brüder-Manuel-und-Cesar">der Brüder</rs>.</castItem>
+            <castItem><rs ref="#Die-Ältesten-von-Messina">Die Ältesten von <rs ref="#Messina">Messina</rs></rs>, reden nicht.</castItem>
+          </castGroup>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <stage>Die Szene ist <rs ref="#eine-geräumige-Säulenhalle">eine geräumige Säulenhalle</rs>, auf beiden Seiten sind Eingänge, <rs ref="#eine-große-----------Flügeltüre">eine große
+          Flügeltüre</rs> in der Tiefe führt zu einer Kapelle.</stage>
+        <div type="scene">
+          <stage><rs ref="#isabella">Donna Isabella</rs> in tiefer Trauer, <rs ref="#Die-Ältesten-von-Messina">die Ältesten von <rs ref="#Messina">Messina</rs></rs> stehn um <rs ref="#isabella">sie</rs> her.</stage>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA.</speaker></rs>
+            <lg>
+              <l>Der Not gehorchend, nicht dem <rs ref="#isabella">eignen</rs> Trieb,</l>
+              <l>Tret ich, <rs ref="#Die-Ältesten-von-Messina">ihr greisen Häupter <rs ref="#Messina">dieser Stadt</rs></rs>,</l>
+              <l>Heraus zu <rs ref="#Die-Ältesten-von-Messina">euch</rs> aus den verschwiegenen</l>
+              <l>Gemächern meines Frauensaals, <rs ref="#Isabellas-Antlitz,-Gesicht">das Antlitz</rs></l>
+              <l>Vor <rs ref="#Die-Ältesten-von-Messina">euren</rs> Männerblicken zu entschleiern.</l>
+              <l>Denn es geziemt <rs ref="#isabella">der Witwe, <rs ref="#isabella">die</rs> <rs ref="#Isabellas-Gatte,-der-Fürst">den Gatten</rs></l>
+              <l>Verloren</rs>, <rs ref="#Isabellas-Leben"><rs ref="#isabella">ihres</rs> Lebens</rs> Licht und Ruhm,</l>
+              <l>Die schwarz umflorte Nachtgestalt dem Aug</l>
+              <l><rs ref="#die-Welt">Der Welt</rs> in stillen Mauern zu verbergen,</l>
+              <l>Doch unerbittlich, allgewaltig treib</l>
+              <l>Des Augenblicks Gebieterstimme mich</l>
+              <l>An das entwohnte Licht <rs ref="#die-Welt">der Welt</rs> hervor.</l>
+              <l>Nicht dreimal hat <rs ref="#der-Mond">der Mond</rs> die Lichtgestalt</l>
+              <l>Erneut, seit ich <rs ref="#Isabellas-Gatte,-der-Fürst">den fürstlichen Gemahl</rs></l>
+              <l>Zu <rs ref="#Isabellas-Gatte,-der-Fürst">seiner</rs> letzten Ruhestätte trug,</l>
+              <l><rs ref="#Isabellas-Gatte,-der-Fürst">Der</rs> mächtigwaltend <rs ref="#Messina">dieser Stadt</rs> gebot,</l>
+              <l>Mit starkem Arme gegen <rs ref="#eine-Welt">eine Welt</rs></l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Euch</rs> schützend, <rs ref="#eine-Welt">die</rs> <rs ref="#Die-Ältesten-von-Messina">euch</rs> feindlich rings umlagert.</l>
+              <l><rs ref="#Isabellas-Gatte,-der-Fürst">Er</rs> selber ist dahin, doch lebt <rs ref="#Isabellas-Gatte,-der-Fürst">sein</rs> Geist</l>
+              <l>In <rs ref="#Die-Brüder-Manuel-und-Cesar">einem tapfern Heldenpaare</rs> fort</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Glorreicher Söhne, dieses Landes Stolz</rs>.</l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Ihr</rs> habt <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> unter <rs ref="#Die-Ältesten-von-Messina">euch</rs> in freudger Kraft</l>
+              <l>Aufwachsen sehen, doch mit <rs ref="#Die-Brüder-Manuel-und-Cesar">ihnen</rs> wuchs</l>
+              <l>Aus unbekannt verhängnisvollem Samen</l>
+              <l>Auch <rs ref="#der-Bruderhass">ein unselger Bruderhaß</rs> empor,</l>
+              <l><rs ref="#die-Kindheit-der-Brüder">Der Kindheit</rs> frohe Einigkeit zerreißend,</l>
+              <l>Und reifte furchtbar mit dem Ernst der Jahre.</l>
+              <l>Nie hab ich <rs ref="#die-Eintracht-zwischen-Manuel-und-Cesar"><rs ref="#Die-Brüder-Manuel-und-Cesar">ihrer</rs> Eintracht</rs> mich erfreut,</l>
+              <l>An diesen Brüsten nährt ich <rs ref="#Die-Brüder-Manuel-und-Cesar">beide</rs> gleich,</l>
+              <l>Gleich unter <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> verteil ich <rs ref="#Isabellas-mütterliche-Liebe">Lieb</rs> und <rs ref="#Isabellas-mütterliche-Sorge">Sorge</rs></l>
+              <l><pb n="825"/> Und <rs ref="#Die-Brüder-Manuel-und-Cesar">beide</rs> weiß ich kindlich mir geneigt.</l>
+              <l>In <rs ref="#die-Eintracht-zwischen-Manuel-und-Cesar">diesem einzgen Triebe</rs> sind <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> eins,</l>
+              <l>In allem andern trennt <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> blutger Streit.</l>
+              <l>Zwar weil <rs ref="#Isabellas-Gatte,-der-Fürst">der Vater</rs> noch gefürchtet herrschte,</l>
+              <l>Hielt <rs ref="#Isabellas-Gatte,-der-Fürst">er</rs> durch gleicher Strenge furchtbare</l>
+              <l>Gerechtigkeit <rs ref="#Die-Brüder-Manuel-und-Cesar">die Heftigbrausenden</rs> im Zügel,</l>
+              <l>Und unter <emph>eines</emph> Joches Eisenschwere</l>
+              <l>Bog <rs ref="#Isabellas-Gatte,-der-Fürst">er</rs> vereinend <rs ref="#Die-Brüder-Manuel-und-Cesar">ihren</rs> starren Sinn.</l>
+              <l>Nicht waffentragend durften <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> nahn,</l>
+              <l>Nicht in denselben Mauren übernachten;</l>
+              <l>So hemmt' <rs ref="#Isabellas-Gatte,-der-Fürst">er</rs> zwar mit strengem Machtgebot</l>
+              <l>Den rohen Ausbruch <rs ref="#die-Eintracht-zwischen-Manuel-und-Cesar"><rs ref="#Die-Brüder-Manuel-und-Cesar">ihres</rs> wilden Triebs</rs>,</l>
+              <l>Doch ungebessert in der tiefen Brust</l>
+              <l>Ließ <rs ref="#Isabellas-Gatte,-der-Fürst">er</rs> <rs ref="#der-Bruderhass">den <emph>Haß</emph></rs> – <rs ref="#Der-Starke">Der Starke</rs> achtet es</l>
+              <l>Gering, die leise Quelle zu verstopfen,</l>
+              <l>Weil <rs ref="#Der-Starke">er</rs> dem Strome mächtig wehren kann.</l>
+              <l>Was kommen mußte, kam. Als <rs ref="#Isabellas-Gatte,-der-Fürst">er</rs> die Augen</l>
+              <l>Im Tode schloß, und <rs ref="#Isabellas-Gatte,-der-Fürst">seine</rs> starke Hand</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Sie</rs> nicht mehr bändigt, bricht <rs ref="#der-Bruderhass">der alte Groll</rs></l>
+              <l>Gleichwie <rs ref="#des-Feuers-eingepreßte-Glut">des Feuers eingepreßte Glut</rs>,</l>
+              <l>Zur offnen Flamme <rs ref="#des-Feuers-eingepreßte-Glut">sich</rs> entzündend los.</l>
+              <l>Ich sag <rs ref="#Die-Ältesten-von-Messina">euch</rs>, was <rs ref="#Die-Ältesten-von-Messina">ihr alle</rs> selbst bezeugt,</l>
+              <l><rs ref="#Messina">Messina</rs> teilte <rs ref="#Messina">sich</rs>, <rs ref="#die-Bruderfehde,--zwist,--hader">die Bruderfehde</rs></l>
+              <l>Löst' alle heilgen Bande <rs ref="#die-Natur">der Natur</rs>,</l>
+              <l><rs ref="#die-Bruderfehde,--zwist,--hader">Dem allgemeinen Streit</rs> die Losung gebend,</l>
+              <l>Schwert traf auf Schwert, zum Schlachtfeld ward <rs ref="#Messina">die Stadt</rs>,</l>
+              <l>Ja <rs ref="#eine-geräumige-Säulenhalle">diese Hallen</rs> selbst besprützte Blut.</l>
+              <l>Des Staates Bande sahet <rs ref="#Die-Ältesten-von-Messina">ihr</rs> zerreißen,</l>
+              <l>Doch mir zerriß im Innersten <rs ref="#Isabellas-Herz">das Herz</rs> –</l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Ihr</rs> fühltet nur das öffentliche Leiden,</l>
+              <l>Und fragtet wenig nach <rs ref="#Isabellas-Schmerz"><rs ref="#isabella">der Mutter</rs> Schmerz</rs>.</l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Ihr</rs> kamt zu mir und spracht <rs ref="#»Du-siehst,-daß-deiner-Söhne-Bruderzwist---------------Die-Stadt-empört-in-bürgerlichem-Streit,---------------Die,-von-dem-bösem-Nachbar-rings-umgarnt,---------------Durch-Eintracht-nur-dem-Feinde-widersteht.----------------–-Du-bist-die-Mutter!-Wohl,-so-siehe-zu,---------------Wie-du-der-Söhne-blutgen-Hader-stillst.---------------Was-kümmert-uns,-die-Friedlichen,-der-Zank---------------Der-Herrscher?-Sollen-wir-zugrunde-gehn,---------------Weil-deine-Söhne-wütend-sich-befehden?---------------Wir-wollen-uns-selbst-raten-ohne-sie,---------------Und-einem-andern-Herrn-uns-übergeben,---------------Der-unser-Bestes-will-und-schaffen-kann!«">dies harte Wort</rs>:</l>
+              <rs ref="#»Du-siehst,-daß-deiner-Söhne-Bruderzwist---------------Die-Stadt-empört-in-bürgerlichem-Streit,---------------Die,-von-dem-bösem-Nachbar-rings-umgarnt,---------------Durch-Eintracht-nur-dem-Feinde-widersteht.----------------–-Du-bist-die-Mutter!-Wohl,-so-siehe-zu,---------------Wie-du-der-Söhne-blutgen-Hader-stillst.---------------Was-kümmert-uns,-die-Friedlichen,-der-Zank---------------Der-Herrscher?-Sollen-wir-zugrunde-gehn,---------------Weil-deine-Söhne-wütend-sich-befehden?---------------Wir-wollen-uns-selbst-raten-ohne-sie,---------------Und-einem-andern-Herrn-uns-übergeben,---------------Der-unser-Bestes-will-und-schaffen-kann!«"><l>»<rs ref="#isabella">Du</rs> siehst, daß <rs ref="#die-Bruderfehde,--zwist,--hader"><rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">deiner</rs> Söhne</rs> Bruderzwist</rs></l>
+              <l><rs ref="#Messina">Die Stadt</rs> empört in bürgerlichem Streit,</l>
+              <l><rs ref="#Messina">Die</rs>, von <rs ref="#Messinas-Feinde">dem bösem Nachbar</rs> rings umgarnt,</l>
+              <l>Durch Eintracht nur <rs ref="#Messinas-Feinde">dem Feinde</rs> widersteht.</l>
+              <l><pb n="826"/> – <rs ref="#isabella">Du</rs> bist die Mutter! Wohl, so siehe zu,</l>
+              <l>Wie <rs ref="#isabella">du</rs> <rs ref="#die-Bruderfehde,--zwist,--hader"><rs ref="#Die-Brüder-Manuel-und-Cesar">der Söhne</rs> blutgen Hader</rs> stillst.</l>
+              <l>Was kümmert <rs ref="#Die-Ältesten-von-Messina">uns, die Friedlichen</rs>, <rs ref="#die-Bruderfehde,--zwist,--hader">der Zank</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Der Herrscher</rs></rs>? Sollen <rs ref="#Die-Ältesten-von-Messina"><emph>wir</emph></rs> zugrunde gehn,</l>
+              <l>Weil <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">deine</rs> Söhne</rs> wütend <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> befehden?</l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Wir</rs> wollen <rs ref="#Die-Ältesten-von-Messina">uns</rs> <emph>selbst</emph> raten ohne <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs>,</l>
+              <l>Und <rs ref="#einem-andern-Herrn">einem andern Herrn</rs> <rs ref="#Die-Ältesten-von-Messina">uns</rs> übergeben,</l>
+              <l><rs ref="#einem-andern-Herrn">Der</rs> <rs ref="#Die-Ältesten-von-Messina">unser</rs> Bestes will und schaffen kann!«</l></rs>
+              <l>So spracht <rs ref="#Die-Ältesten-von-Messina">ihr rauhen Männer</rs>, mitleidlos</l>
+              <l>Für <rs ref="#Die-Ältesten-von-Messina">euch</rs> nur sorgend und für <rs ref="#Messina"><rs ref="#Die-Ältesten-von-Messina">eure</rs> Stadt</rs>,</l>
+              <l>Und wälztet noch die öffentliche Not</l>
+              <l>Auf <rs ref="#Isabellas-Herz">dieses Herz, <rs ref="#Isabellas-Herz">das</rs> von <rs ref="#Isabellas-Angst"><rs ref="#isabella"><rs ref="#Isabellas-mütterliche-Sorge">der Mutter</rs></rs> Angst</rs></l>
+              <l>Und Sorgen schwer genug belastet war</rs>.</l>
+              <l>Ich unternahm <rs ref="#Ich-warf-mit-dem-zerrißnen-Mutterherzen---------------Mich-zwischen-die-Ergrimmten,-Friede-rufend-–---------------Unabgeschreckt,-geschäftig,-unermüdlich---------------Beschickt-ich-sie,-den-einen-um-den-andern,---------------Bis-ich-erhielt-durch-mütterliches-Flehn,---------------Daß-sies-zufrieden-sind,-in-dieser-Stadt---------------Messina,-in-dem-väterlichen-Schloß,---------------Unfeindlich-sich-von-Angesicht-zu-sehn,---------------Was-nie-geschah,-seitdem-der-Fürst-verschieden">das nicht zu Hoffende</rs>,</l>
+              <rs ref="#Ich-warf-mit-dem-zerrißnen-Mutterherzen---------------Mich-zwischen-die-Ergrimmten,-Friede-rufend-–---------------Unabgeschreckt,-geschäftig,-unermüdlich---------------Beschickt-ich-sie,-den-einen-um-den-andern,---------------Bis-ich-erhielt-durch-mütterliches-Flehn,---------------Daß-sies-zufrieden-sind,-in-dieser-Stadt---------------Messina,-in-dem-väterlichen-Schloß,---------------Unfeindlich-sich-von-Angesicht-zu-sehn,---------------Was-nie-geschah,-seitdem-der-Fürst-verschieden"><l>Ich warf mit <rs ref="#Isabellas-Herz">dem zerrißnen Mutterherzen</rs></l>
+              <l>Mich zwischen <rs ref="#Die-Brüder-Manuel-und-Cesar">die Ergrimmten</rs>, <rs ref="#Frieden">Friede</rs> rufend –</l>
+              <l>Unabgeschreckt, geschäftig, unermüdlich</l>
+              <l>Beschickt ich <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs>, <rs ref="#don_cesar"><rs ref="#don_manuel">den einen</rs></rs> um <rs ref="#don_cesar"><rs ref="#don_manuel">den andern</rs></rs>,</l>
+              <l>Bis ich erhielt durch mütterliches Flehn,</l>
+              <l>Daß <rs ref="#in-dieser-Stadt---------------Messina,-in-dem-väterlichen-Schloß,---------------Unfeindlich-sich-von-Angesicht-zu-sehn"><rs ref="#Die-Brüder-Manuel-und-Cesar">sies</rs></rs> zufrieden sind, <rs ref="#in-dieser-Stadt---------------Messina,-in-dem-väterlichen-Schloß,---------------Unfeindlich-sich-von-Angesicht-zu-sehn">in <rs ref="#Messina">dieser Stadt</l>
+              <l>Messina</rs>, in <rs ref="#das-fürstliche-Schloss-/-Palast">dem väterlichen Schloß</rs>,</l>
+              <l>Unfeindlich <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> von Angesicht zu sehn</rs>,</l>
+              <l>Was nie geschah, seitdem <rs ref="#Isabellas-Gatte,-der-Fürst">der Fürst</rs> verschieden</rs>.</l>
+              <l>Dies ist der Tag! <rs ref="#Des-Boten">Des Boten</rs> harr ich stündlich,</l>
+              <l><rs ref="#Des-Boten">Der</rs> mir die Kunde bringt von <rs ref="#Die-Brüder-Manuel-und-Cesar">ihrem</rs> Anzug.</l>
+              <l>– Seid denn bereit, <rs ref="#Die-Brüder-Manuel-und-Cesar">die Herrscher</rs> zu empfangen</l>
+              <l>Mit Ehrfurcht, wies dem Untertanen ziemt.</l>
+              <l>Nur <rs ref="#Die-Ältesten-von-Messina">eure</rs> Pflicht zu leisten seid bedacht,</l>
+              <l>Fürs andre laßt uns andere gewähren.</l>
+              <l>Verderblich <rs ref="#Messina">diesem Land</rs>, und <rs ref="#Die-Brüder-Manuel-und-Cesar">ihnen</rs> selbst</l>
+              <l>Verderbenbringend war <rs ref="#die-Bruderfehde,--zwist,--hader"><rs ref="#Die-Brüder-Manuel-und-Cesar">der Söhne</rs> Streit</rs>;</l>
+              <l>Versöhnt, vereinigt, sind <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> mächtig gnug,</l>
+              <l><rs ref="#Die-Ältesten-von-Messina">Euch</rs> zu beschützen gegen eine Welt,</l>
+              <l>Und Recht <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> zu verschaffen – gegen <rs ref="#Die-Ältesten-von-Messina">euch</rs>!</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#Die-Ältesten-von-Messina">Die Ältesten</rs> entfernen <rs ref="#Die-Ältesten-von-Messina">sich</rs> schweigend, die Hand auf der Brust. <rs ref="#isabella">Sie</rs> winkt <rs ref="#diego">einem
+            alten Diener, <rs ref="#diego">der</rs> zurückbleibt</rs>.</stage>
+          <pb n="827"/>
+        </div>
+        <div type="scene">
+          <stage><rs ref="#isabella">Isabella</rs>. <rs ref="#diego">Diego</rs>.</stage>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA.</speaker></rs>
+            <l><rs ref="#diego">Diego</rs>!</l>
+          </sp>
+          <sp who="#diego">
+            <rs ref="#diego"><speaker>DIEGO.</speaker></rs>
+            <l>Was gebietet <rs ref="#isabella">meine Fürstin</rs>?</l>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA.</speaker></rs>
+            <lg>
+              <l><rs ref="#diego">Bewährter Diener</rs>! <rs ref="#diego">Redlich Herz</rs>! Tritt näher!</l>
+              <l>Mein Leiden hast <rs ref="#diego">du</rs>, <rs ref="#Isabellas-Schmerz">meinen Schmerz</rs> geteilt,</l>
+              <l>So teil auch jetzt <rs ref="#Isabellas-Glück">das Glück <rs ref="#isabella">der Glücklichen</rs></rs>.</l>
+              <l>Verpfändet hab ich <rs ref="#diego">deiner</rs> treuen Brust</l>
+              <l><rs ref="#Isabellas-Geheimnis-bzgl.-Beatrice">Mein schmerzlich süßes, heiliges Geheimnis</rs>.</l>
+              <l>Der Augenblick ist da, wo <rs ref="#Isabellas-Geheimnis-bzgl.-Beatrice">es</rs> ans Licht</l>
+              <l>Des Tages soll hervorgezogen werden.</l>
+              <l>Zu lange schon erstickt ich <rs ref="#die-Natur"><rs ref="#die-Natur">der Natur</rs></l>
+              <l>Gewaltge Regung</rs>, weil noch über mich</l>
+              <l>Ein fremder Wille herrisch waltete,</l>
+              <l>Jetzt darf <rs ref="#die-Natur">sich</rs> <rs ref="#die-Natur">ihre</rs> Stimme frei erheben,</l>
+              <l>Noch heute soll <rs ref="#Isabellas-Herz">dies Herz</rs> befriedigt sein,</l>
+              <l>Und <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">dieses Haus</rs>, <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">das</rs> lang verödet war,</l>
+              <l>Versammle <rs ref="#alles,-was-mir-teuer-ist">alles, <rs ref="#alles,-was-mir-teuer-ist">was</rs> mir teuer ist</rs>.</l>
+              <l>So lenke denn die alterschweren Tritte</l>
+              <l>Nach <rs ref="#das-Kloster">jenem wohlbekannten Kloster</rs> hin,</l>
+              <l><rs ref="#das-Kloster">Das</rs> <rs ref="#beatrice">einen teuren Schatz</rs> mir aufbewahrt.</l>
+              <l><rs ref="#diego">Du</rs> warst <rs ref="#der-ihn-mir---------------Dorthin-geflüchtet-hat-auf-beßre-Tage,---------------Den-traurgen-Dienst-der-Traurigen-erzeigend">es</rs>, <rs ref="#diego">treue Seele</rs>, <rs ref="#der-ihn-mir---------------Dorthin-geflüchtet-hat-auf-beßre-Tage,---------------Den-traurgen-Dienst-der-Traurigen-erzeigend">der <rs ref="#beatrice">ihn</rs> mir</l>
+              <l>Dorthin geflüchtet hat auf beßre Tage,</l>
+              <l>Den traurgen Dienst der Traurigen erzeigend</rs>.</l>
+              <l><rs ref="#diego">Du</rs> bringe fröhlich jetzt <rs ref="#isabella">der Glücklichen</rs></l>
+              <l><rs ref="#beatrice">Das teure Pfand</rs> zurück.</l>
+            </lg>
+            <stage><rs ref="#man-(generic)">Man</rs> hört in der Ferne blasen.</stage>
+            <lg>
+              <l>O eile, eile,</l>
+              <l>Und laß die Freude <rs ref="#diego">deinen</rs> Schritt verjüngen!</l>
+              <l>Ich höre <rs ref="#kriegerischer-Hörner-Schall,---------------Der-meiner-Söhne-Einzug-mir-verkündigt">kriegerischer Hörner Schall,</l>
+              <l><rs ref="#kriegerischer-Hörner-Schall,---------------Der-meiner-Söhne-Einzug-mir-verkündigt">Der</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">meiner Söhne</rs> Einzug mir verkündigt</rs>.</l>
+            </lg>
+            <stage><rs ref="#diego">Diego</rs> geht ab. <rs ref="#kriegerischer-Hörner-Schall,---------------Der-meiner-Söhne-Einzug-mir-verkündigt">Die Musik</rs> läßt <rs ref="#kriegerischer-Hörner-Schall,---------------Der-meiner-Söhne-Einzug-mir-verkündigt">sich</rs> noch von einer entgegengesetzten Seite immer
+              näher und näher hören.</stage>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA.</speaker></rs>
+            <lg>
+              <l>Erregt ist ganz <rs ref="#Messina">Messina</rs> – Horch! <rs ref="#ein-Strom---------------Verworrner-Stimmen">ein Strom</l>
+              <l>Verworrner Stimmen</rs> wälzt <rs ref="#ein-Strom---------------Verworrner-Stimmen">sich</rs> brausend her –</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Sie</rs> <rs ref="#ein-Strom---------------Verworrner-Stimmen">sinds</rs>! <rs ref="#Isabellas-Herz">Das Herz <rs ref="#isabella">der Mutter</rs></rs>, mächtig schlagend,</l>
+              <l>Empfindet <rs ref="#Die-Brüder-Manuel-und-Cesar">ihrer</rs> Nähe Kraft und Zug.</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Sie</rs> <rs ref="#ein-Strom---------------Verworrner-Stimmen">sinds</rs>! O <rs ref="#Die-Brüder-Manuel-und-Cesar">meine Kinder</rs>, <rs ref="#Die-Brüder-Manuel-und-Cesar">meine Kinder</rs>!</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#isabella">Sie</rs> eilt hinaus.</stage>
+        </div>
+        <div type="scene">
+          <stage><pb n="828"/> <rs ref="#gesamter-Chor">Chor</rs> tritt auf.</stage>
+          <stage><rs ref="#gesamter-Chor">Er</rs> besteht aus <rs ref="#gesamter-Chor">zwei Halbchören</rs>, <rs ref="#gesamter-Chor">welche</rs> zu gleicher Zeit, von zwei entgegengesetzten
+            Seiten, <rs ref="#erster_chor">der eine</rs> aus der Tiefe, <rs ref="#zweiter_chor">der andere</rs> aus dem Vordergrund eintreten, rund um die
+            Bühne gehen und sich alsdann auf derselben Seite, wo jeder eingetreten, in eine Reihe
+            stellen. Den <rs ref="#erster_chor">einen Halbchor</rs> bilden die ältern, <rs ref="#zweiter_chor">den andern</rs> die jüngern Ritter, <rs ref="#gesamter-Chor">beide</rs> sind
+            durch Farbe und Abzeichen verschieden. Wenn <rs ref="#gesamter-Chor">beide Chöre</rs> einander gegenüberstehen,
+            schweigt der Marsch und die beiden Chorführer reden.</stage>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#eine-geräumige-Säulenhalle">Dich</rs> begrüß ich in Ehrfurcht,</l>
+              <l><rs ref="#eine-geräumige-Säulenhalle">Prangende Halle</rs>,</l>
+              <rs ref="#eine-geräumige-Säulenhalle"><l>Dich <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">meiner Herrscher</rs></l>
+              <l>Fürstliche Wiege</rs>,</l>
+              <l><rs ref="#eine-geräumige-Säulenhalle">Säulengetragenes herrliches Dach</rs>.</l>
+              <l>Tief in der Scheide</l>
+              <l>Ruhe das Schwert,</l>
+              <l>Vor den Toren gefesselt</l>
+              <l>Liege <rs ref="#die-Bruderfehde,--zwist,--hader">des Streits</rs> schlangenhaarigtes Scheusal.</l>
+              <l>Denn <rs ref="#eine-geräumige-Säulenhalle">des gastlichen Hauses</rs></l>
+              <l>Unverletzliche Schwelle</l>
+              <l>Hütet der <emph>Eid</emph>, <rs ref="#der-Erinnyen">der Erinnyen</rs> Sohn,</l>
+              <l>Der furchtbarste unter den Göttern <rs ref="#die-Hölle">der Hölle</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_chor">
+            <rs ref="#zweiter_chor"><speaker>ZWEITER CHOR.</speaker></rs>
+            <lg>
+              <l>Zürnend ergrimmt mir das Herz im Busen,</l>
+              <l>Zu dem Kampf ist die Faust geballt,</l>
+              <l>Denn ich sehe das Haupt der Medusen,</l>
+              <l><rs ref="#erster_chor">Meines Feindes</rs> verhaßte Gestalt.</l>
+              <l>Kaum gebiet ich dem kochendem Blute.</l>
+              <l>Gönn ich <rs ref="#erster_chor">ihm</rs> die Ehre des Worts?</l>
+              <l>Oder gehorch ich dem zürnenden Mute?</l>
+              <l>Aber mich schreckt <rs ref="#der-Erinnyen">die <emph>Eumenide</emph>,</l>
+              <l>Die Beschirmerin <rs ref="#eine-geräumige-Säulenhalle">dieses Orts</rs></rs>,</l>
+              <l>Und der waltende Gottesfriede.</l>
+            </lg>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR.</speaker></rs>
+            <lg>
+              <l>Weisere Fassung</l>
+              <l>Ziemet dem Alter,</l>
+              <l>Ich, der Vernünftige, grüße zuerst.</l>
+            </lg>
+            <stage>Zu <rs ref="#zweiter_chor">dem zweiten Chor</rs>.</stage>
+            <lg>
+              <l>Sei mir willkommen,</l>
+              <l><pb n="829"/> <rs ref="#zweiter_chor">Der <rs ref="#zweiter_chor">du</rs> mit mir</l>
+              <l>Gleiche Gefühle</l>
+              <l>Brüderlich teilend,</l>
+              <rs ref="#der-Erinnyen"><rs ref="#eine-geräumige-Säulenhalle"><l>Dieses Palastes</l></rs>
+              <l>Schützende Götter</l></rs>
+              <l>Fürchtend verehrst</rs>!</l>
+              <l>Weil <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> gütlich besprechen,</l>
+              <l>Wollen auch <rs ref="#gesamter-Chor">wir</rs> jetzt Worte des Friedens</l>
+              <l>Harmlos wechseln mit ruhigem Blut,</l>
+              <l>Denn auch das Wort ist, das heilende, gut.</l>
+              <l>Aber treff ich <rs ref="#zweiter_chor">dich</rs> draußen <rs ref="#im-Freien">im Freien</rs>,</l>
+              <l>Da mag <rs ref="#der-blutige-Kampf-zwischen-den-Chören">der blutige Kampf</rs> <rs ref="#der-blutige-Kampf-zwischen-den-Chören">sich</rs> erneuen,</l>
+              <l>Da erprobe <rs ref="#das-Eisen">das Eisen</rs> <rs ref="#der-Mut">den Mut</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>DER GANZE CHOR.</speaker></rs>
+            <lg>
+              <l>Aber treff ich <rs ref="#gesamter-Chor">dich</rs> draußen <rs ref="#im-Freien">im Freien</rs>,</l>
+              <l>Da mag <rs ref="#der-blutige-Kampf-zwischen-den-Chören">der blutige Kampf</rs> <rs ref="#der-blutige-Kampf-zwischen-den-Chören">sich</rs> erneuen,</l>
+              <l>Da erprobe <rs ref="#das-Eisen">das Eisen</rs> <rs ref="#der-Mut">den Mut</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#zweiter_chor">Dich</rs> nicht haß ich! Nicht <rs ref="#zweiter_chor">du</rs> bist <rs ref="#der-wahre-Feind">mein Feind</rs>!</l>
+              <l><rs ref="#Messina">Eine Stadt</rs> ja hat <rs ref="#gesamter-Chor">uns</rs> geboren,</l>
+              <l><rs ref="#der-wahre-Feind">Jene</rs> sind ein fremdes Geschlecht.</l>
+              <rs ref="#Aber-wenn-sich-die-Fürsten-befehden,---------------Müssen-die-Diener-sich-morden-und-töten"><l>Aber wenn <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> befehden,</l>
+              <l>Müssen <rs ref="#gesamter-Chor">die Diener</rs> <rs ref="#gesamter-Chor">sich</rs> morden und töten</rs>,</l>
+              <l><rs ref="#Aber-wenn-sich-die-Fürsten-befehden,---------------Müssen-die-Diener-sich-morden-und-töten">Das</rs> ist die Ordnung, so will <rs ref="#Aber-wenn-sich-die-Fürsten-befehden,---------------Müssen-die-Diener-sich-morden-und-töten">es</rs> das Recht.</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_chor">
+            <rs ref="#zweiter_chor"><speaker>ZWEITER CHOR.</speaker></rs>
+            <lg>
+              <l>Mögen <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#Warum-sie-sich-blutig---------------Hassend-bekämpfen">sies</rs></rs> wissen,</l>
+              <rs ref="#Warum-sie-sich-blutig---------------Hassend-bekämpfen"><l>Warum <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> blutig</l>
+              <l>Hassend bekämpfen</rs>! Mich ficht <rs ref="#Warum-sie-sich-blutig---------------Hassend-bekämpfen">es</rs> nicht an.</l>
+              <l>Aber <rs ref="#gesamter-Chor">wir</rs> fechten <rs ref="#die-Schlachten-der-Brüder"><rs ref="#Die-Brüder-Manuel-und-Cesar">ihre</rs> Schlachten</rs>,</l>
+              <l><rs ref="#Der">Der</rs> ist kein Tapfrer, kein Ehrenmann,</l>
+              <l><rs ref="#Der">Der <rs ref="#Die-Brüder-Manuel-und-Cesar">den Gebieter</rs> läßt verachten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>DER GANZE CHOR.</speaker></rs>
+            <lg>
+              <l>Aber <rs ref="#gesamter-Chor">wir</rs> fechten <rs ref="#die-Schlachten-der-Brüder"><rs ref="#Die-Brüder-Manuel-und-Cesar">ihre</rs> Schlachten</rs>,</l>
+              <l><rs ref="#Der">Der</rs> ist kein Tapfrer, kein Ehrenmann,</l>
+              <l><rs ref="#Der">Der <rs ref="#Die-Brüder-Manuel-und-Cesar">den Gebieter</rs> läßt verachten</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#einer_aus_dem_chor_1-3">
+            <speaker>EINER AUS DEM CHOR.</speaker>
+            <lg>
+              <l>Hört, was ich bei mir selbst erwogen,</l>
+              <l>Als ich müßig dahergezogen</l>
+              <l>Durch des Korns hochwallende Gassen,</l>
+              <l>Meinen Gedanken überlassen.</l>
+              <l><rs ref="#gesamter-Chor">Wir</rs> haben <rs ref="#gesamter-Chor">uns</rs> in des Kampfes Wut</l>
+              <l><pb n="830"/> Nicht besonnen und nicht beraten,</l>
+              <l>Denn <rs ref="#gesamter-Chor">uns</rs> betörte das brausende Blut.</l>
+              <l>Sind <rs ref="#diese-Saaten">sie</rs> nicht unser, <rs ref="#diese-Saaten">diese Saaten</rs>?</l>
+              <l><rs ref="#Diese-Ulmen,-mit-Reben-umsponnen">Diese Ulmen, mit Reben umsponnen</rs>,</l>
+              <l>Sind <rs ref="#Diese-Ulmen,-mit-Reben-umsponnen">sie</rs> nicht Kinder <rs ref="#gesamter-Chor">unsrer</rs> Sonnen?</l>
+              <l>Könnten <rs ref="#gesamter-Chor">wir</rs> nicht in frohem Genuß</l>
+              <l>Harmlos vergnügliche Tage spinnen,</l>
+              <l>Lustig das leichte Leben gewinnen?</l>
+              <l>Warum ziehn <rs ref="#gesamter-Chor">wir</rs> mit rasendem Beginnen</l>
+              <l><rs ref="#gesamter-Chor">Unser</rs> Schwert für <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">das fremde Geschlecht</rs>?</l>
+              <l><rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">Es</rs> hat an diesen Boden kein Recht.</l>
+              <l>Auf dem Meerschiff ist <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">es</rs> gekommen,</l>
+              <l>Von <rs ref="#die-Sonne">der Sonne</rs> rötlichtem Untergang,</l>
+              <l>Gastlich haben <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus"><rs ref="#gesamter-Chor">wirs</rs></rs> aufgenommen</l>
+              <l>(<rs ref="#gesamter-Chor">Unsre</rs> Väter! Die Zeit ist lang)</l>
+              <l>Und jetzt sehen <rs ref="#gesamter-Chor">wir</rs> <rs ref="#gesamter-Chor">uns</rs> als Knechte</l>
+              <l>Untertan <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">diesem fremden Geschlechte</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#ein_zweiter_1-3">
+            <speaker>EIN ZWEITER.</speaker>
+            <lg>
+              <l>Wohl! <rs ref="#gesamter-Chor">Wir</rs> bewohnen <rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">ein glückliches Land,</l>
+              <l><rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">Das</rs> <rs ref="#die-Sonne">die himmelumwandelnde Sonne</rs></l>
+              <l>Ansieht mit immer freundlicher Helle</rs>,</l>
+              <l>Und <rs ref="#gesamter-Chor">wir</rs> könnten <rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">es</rs> fröhlich genießen,</l>
+              <l>Aber <rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">es</rs> läßt <rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">sich</rs> nicht sperren und schließen,</l>
+              <l>Und <rs ref="#des-Meers-rings-umgebende-Welle"><rs ref="#das-Meer">des Meers</rs> rings umgebende Welle</rs></l>
+              <l><rs ref="#des-Meers-rings-umgebende-Welle">Sie</rs> verrät <rs ref="#gesamter-Chor">uns</rs> <rs ref="#der-Korsar-/-der-Maure">dem kühnen Korsaren,</l>
+              <l><rs ref="#der-Korsar-/-der-Maure">Der</rs> <rs ref="#die-Küste">die Küste</rs> verwegen durchkreuzt</rs>.</l>
+              <l><rs ref="#Einen-Segen">Einen Segen</rs> haben <rs ref="#gesamter-Chor">wir</rs> zu bewahren,</l>
+              <l><rs ref="#Einen-Segen">Der</rs> das Schwert nur des Fremdlings reizt.</l>
+              <l>Sklaven sind <rs ref="#gesamter-Chor">wir</rs> in den eigenen Sitzen,</l>
+              <l><rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">Das Land</rs> kann <rs ref="#ein-glückliches-Land,---------------Das-die-himmelumwandelnde-Sonne---------------Ansieht-mit-immer-freundlicher-Helle">seine</rs> Kinder nicht schützen.</l>
+              <l>Nicht wo die goldene Ceres lacht</l>
+              <l>Und der friedliche Pan, der Flurenbehüter,</l>
+              <l>Wo das Eisen wächst in der Berge Schacht,</l>
+              <l>Da entspringen der Erde Gebieter.</l>
+            </lg>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR.</speaker></rs>
+            <lg>
+              <l>Ungleich verteilt sind <rs ref="#das-Leben">des Lebens</rs> Güter</l>
+              <l>Unter <rs ref="#die-Menschen">der Menschen flüchtgem Geschlecht</rs>,</l>
+              <l>Aber <rs ref="#die-Natur">die Natur</rs>, <rs ref="#die-Natur">sie</rs> ist ewig gerecht.</l>
+              <pb n="831"/>
+              <l><rs ref="#erster_chor"><emph>Uns</emph></rs> verlieh <rs ref="#die-Natur">sie</rs> das Mark und <rs ref="#die-Fülle,---------------Die-sich-immer-erneuend-erschafft">die Fülle,</l>
+              <l><rs ref="#die-Fülle,---------------Die-sich-immer-erneuend-erschafft">Die</rs> <rs ref="#die-Fülle,---------------Die-sich-immer-erneuend-erschafft">sich</rs> immer erneuend erschafft</rs>,</l>
+              <l><rs ref="#zweiter_chor"><emph>Jenen</emph></rs> ward der gewaltige Wille</l>
+              <l>Und die unzerbrechliche Kraft.</l>
+              <l>Mit der furchtbaren Stärke gerüstet,</l>
+              <l>Führen <rs ref="#zweiter_chor">sie</rs> aus, was <rs ref="#Don-Cesars-Herz">dem Herzen</rs> gelüstet.</l>
+              <l>Füllen <rs ref="#die-Erde-(Planet)">die Erde</rs> mit mächtigem Schall,</l>
+              <l>Aber hinter den großen Höhen</l>
+              <l>Folgt auch der tiefe, der donnernde Fall.</l>
+              <l>Darum lob ich mir niedrig zu stehen,</l>
+              <l>Mich verbergend in meiner Schwäche!</l>
+              <l>Jene gewaltigen Wetterbäche,</l>
+              <l>Aus des Hagels unendlichen Schloßen,</l>
+              <l>Aus den Wolkenbrüchen zusammengeflossen,</l>
+              <l>Kommen finster gerauscht und geschossen,</l>
+              <l>Reißen die Brücken und reißen die Dämme</l>
+              <l>Donnernd mit fort im Wogengeschwemme;</l>
+              <l>Nichts ist, das <rs ref="#zweiter_chor">die Gewaltigen</rs> hemme.</l>
+              <l>Doch nur der Augenblick hat <rs ref="#zweiter_chor">sie</rs> geboren,</l>
+              <l><rs ref="#zweiter_chor">Ihres</rs> Laufes furchtbare Spur</l>
+              <l>Geht verrinnend im Sande verloren,</l>
+              <l>Die Zerstörung verkündigt <rs ref="#zweiter_chor">sie</rs> nur.</l>
+              <l>– Die fremden Eroberer kommen und gehen,</l>
+              <l><rs ref="#erster_chor">Wir</rs> gehorchen, aber <rs ref="#erster_chor">wir</rs> bleiben stehen.</l>
+            </lg>
+            <stage><rs ref="#eine-große-----------Flügeltüre">Die hintere Türe</rs> öffnet <rs ref="#eine-große-----------Flügeltüre">sich</rs>, <rs ref="#isabella">Donna Isabella</rs> erscheint zwischen <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihren</rs> Söhnen <rs ref="#don_manuel">Don
+              Manuel</rs> und <rs ref="#don_cesar">Don Cesar</rs></rs>.</stage>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>BEIDE CHÖRE.</speaker></rs>
+            <lg>
+              <l>Preis <rs ref="#isabella">ihr</rs> und Ehre,</l>
+              <l><rs ref="#isabella">Die</rs> <rs ref="#gesamter-Chor">uns</rs> dort aufgeht,</l>
+              <l><rs ref="#isabella">Eine glänzende Sonne</rs>,</l>
+              <l>Kniend verehr ich <rs ref="#isabella">dein</rs> herrliches Haupt.</l>
+            </lg>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR.</speaker></rs>
+            <lg>
+              <l>Schön ist <rs ref="#der-Mond">des Mondes</rs></l>
+              <l>Mildere Klarheit</l>
+              <l>Unter <rs ref="#die-Sterne">der Sterne</rs> blitzendem Glanz,</l>
+              <l>Schön ist <rs ref="#isabella">der Mutter</rs></l>
+              <l>Liebliche Hoheit</l>
+              <l>Zwischen <rs ref="#die-Kraft-der-Brüder"><rs ref="#Die-Brüder-Manuel-und-Cesar">der Söhne</rs> feuriger Kraft</rs>,</l>
+              <l><pb n="832"/> Nicht auf <rs ref="#die-Erde-(Planet)">der Erden</rs></l>
+              <l>Ist <rs ref="#Isabellas-Bild"><rs ref="#isabella">ihr</rs> Bild</rs> und <rs ref="#isabella">ihr</rs> Gleichnis zu sehn.</l>
+              <l>Hoch auf <rs ref="#das-Leben">des Lebens</rs></l>
+              <l>Gipfel gestellt,</l>
+              <l>Schließt <rs ref="#isabella">sie</rs> blühend den Kreis <rs ref="#das-Schöne">des Schönen</rs>,</l>
+              <l>Mit <rs ref="#isabella">der Mutter</rs> und <rs ref="#Die-Brüder-Manuel-und-Cesar">ihren Söhnen</rs></l>
+              <l>Krönt <rs ref="#die-herrlich-vollendete-Welt">sich</rs> <rs ref="#die-herrlich-vollendete-Welt">die herrlich vollendete Welt</rs>.</l>
+              <l>Selber die Kirche, die göttliche, stellt nicht</l>
+              <l>Schöneres dar auf dem himmlischen Thron,</l>
+              <l>Höheres bildet</l>
+              <l>Selber <rs ref="#die-Kunst">die Kunst</rs> nicht, <rs ref="#die-Kunst">die göttlich geborne</rs>,</l>
+              <l>Als <rs ref="#die-Mutter">die Mutter</rs> mit <rs ref="#die-Mutter">ihrem</rs> Sohn.</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_chor">
+            <rs ref="#zweiter_chor"><speaker>ZWEITER CHOR.</speaker></rs>
+            <lg>
+              <l>Freudig sieht <rs ref="#isabella">sie</rs> aus <rs ref="#Isabellas-Schoß"><rs ref="#isabella">ihrem</rs> Schoße</rs></l>
+              <l><rs ref="#Einen-blühenden-Baum">Einen blühenden Baum</rs> <rs ref="#Einen-blühenden-Baum">sich</rs> erheben,</l>
+              <l><rs ref="#Einen-blühenden-Baum">Der</rs> <rs ref="#Einen-blühenden-Baum">sich</rs> ewig sprossend erneut.</l>
+              <l>Denn <rs ref="#isabella">sie</rs> hat <rs ref="#ein-Geschlecht">ein Geschlecht</rs> geboren,</l>
+              <l><rs ref="#ein-Geschlecht">Welches</rs> wandeln wird mit <rs ref="#die-Sonne">der Sonne</rs>,</l>
+              <l>Und den Namen geben der rollenden Zeit.</l>
+              <l>Völker verrauschen,</l>
+              <l>Namen verklingen,</l>
+              <l>Finstre Vergessenheit</l>
+              <l>Breitet die dunkelnachtenden Schwingen</l>
+              <l>Über ganzen Geschlechtern aus.</l>
+              <l>Aber <rs ref="#die-Häupter-von-Manuel-und-Cesar"><rs ref="#Die-Brüder-Manuel-und-Cesar">der Fürsten</rs></l>
+              <l>Einsame Häupter</l></rs>
+              <l>Glänzen erhellt,</l>
+              <l>Und Aurora berührt <rs ref="#die-Häupter-von-Manuel-und-Cesar">sie</rs></l>
+              <l>Mit den ewigen Strahlen</l>
+              <l>Als die ragenden Gipfel <rs ref="#die-Welt">der Welt</rs>.</l>
+            </lg>
+          </sp>
+        </div>
+        <div type="scene">
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA</speaker></rs>
+            <stage>mit <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihren</rs> Söhnen</rs> hervortretend.</stage>
+            <lg>
+              <l>Blick nieder, <rs ref="#hohe-Königin-des-Himmels">hohe Königin <rs ref="#der-Himmel-(religiös)">des Himmels</rs></rs>,</l>
+              <l>Und halte <rs ref="#hohe-Königin-des-Himmels">deine</rs> Hand auf <rs ref="#Isabellas-Herz">dieses Herz</rs>,</l>
+              <l>Daß es der Übermut nicht schwellend hebe,</l>
+              <l>Denn leicht vergäße <rs ref="#Isabellas-Freude">sich</rs> <rs ref="#Isabellas-Freude"><rs ref="#isabella">der Mutter</rs> Freude</rs>,</l>
+              <l>Wenn <rs ref="#Isabellas-Freude">sie</rs> <rs ref="#Isabellas-Freude">sich</rs> spiegelt in <rs ref="#Die-Brüder-Manuel-und-Cesar">der Söhne</rs> Glanz,</l>
+              <pb n="833"/>
+            </lg>
+            <lg>
+              <l>Zum erstenmal, seitdem ich <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> geboren,</l>
+              <l>Umfaß ich <rs ref="#Isabellas-Glück">meines Glückes</rs> Fülle ganz.</l>
+              <l>Denn bis auf diesen Tag mußt ich gewaltsam</l>
+              <l><rs ref="#Isabellas-Herz">Des Herzens</rs> fröhliche Ergießung teilen,</l>
+              <l>Vergessen ganz mußt ich <rs ref="#don_cesar"><rs ref="#don_manuel">den <emph>einen</emph> Sohn</rs></rs>,</l>
+              <l>Wenn ich der Nähe mich <rs ref="#don_cesar"><rs ref="#don_manuel">des andern</rs></rs> freute.</l>
+              <l>O <rs ref="#Isabellas-mütterliche-Liebe">meine Mutterliebe</rs> ist nur <emph>eine</emph>,</l>
+              <l>Und <rs ref="#Die-Brüder-Manuel-und-Cesar">meine Söhne</rs> waren ewig zwei!</l>
+              <l>– Sagt, darf ich ohne Zittern mich der süßen</l>
+              <l>Gewalt <rs ref="#Isabellas-Herz">des trunknen Herzens</rs> überlassen?</l>
+            </lg>
+            <stage>Zu <rs ref="#don_manuel">Don Manuel</rs>.</stage>
+            <lg>
+              <l>Wenn ich <rs ref="#Don-Cesars-Hand">die Hand <rs ref="#don_cesar">des Bruders</rs></rs> freundlich drücke,</l>
+              <l>Stoß ich den Stachel tief in <rs ref="#Don-Manuels-Brust"><rs ref="#don_manuel"><emph>deine</emph></rs> Brust</rs>?</l>
+            </lg>
+            <stage>Zu <rs ref="#don_cesar">Don Cesar</rs>.</stage>
+            <lg>
+              <l><rs ref="#Wenn-ich-das-Herz-an-seinem-Anblick-weide">Wenn ich <rs ref="#Isabellas-Herz">das Herz</rs> an <rs ref="#Don-Manuels-Anblick"><rs ref="#don_manuel"><emph>seinem</emph></rs> Anblick</rs> weide</rs>,</l>
+              <l><rs ref="#Wenn-ich-das-Herz-an-seinem-Anblick-weide">Ists</rs> nicht ein Raub an <rs ref="#don_cesar">dir</rs>? – O ich muß zittern,</l>
+              <l>Daß <rs ref="#Isabellas-mütterliche-Liebe">meine Liebe</rs> selbst, <rs ref="#Isabellas-mütterliche-Liebe">die</rs> ich <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> zeige,</l>
+              <l>Nur <rs ref="#die-Flammen-des-Bruderhasses"><rs ref="#der-Bruderhass"><rs ref="#Die-Brüder-Manuel-und-Cesar">eures</rs> Hasses</rs> Flammen</rs> heftger schüre.</l>
+            </lg>
+            <stage>Nachdem <rs ref="#isabella">sie</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">beide</rs> fragend angesehen.</stage>
+            <lg>
+              <l>Was darf ich mir von <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> versprechen? Redet!</l>
+              <l>Mit welchem Herzen kamet <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> hieher?</l>
+              <l>Ists noch <rs ref="#der-Bruderhass">der alte unversöhnte Haß,</l>
+              <l><rs ref="#der-Bruderhass">Den</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> mit herbringt in <rs ref="#eine-geräumige-Säulenhalle"><rs ref="#Isabellas-Gatte,-der-Fürst">des Vaters</rs> Haus</rs></rs>,</l>
+              <l>Und wartet draußen vor <rs ref="#des-Schlosses-Toren"><rs ref="#das-fürstliche-Schloss-/-Palast">des Schlosses</rs> Toren</rs></l>
+              <l><rs ref="#die-Bruderfehde,--zwist,--hader">Der Krieg</rs>, auf Augenblicke nur gebändigt,</l>
+              <l>Und knirschend in das eherne Gebiß,</l>
+              <l>Um alsobald, wenn <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> den Rücken mir</l>
+              <l>Gekehrt, mit neuer Wut <rs ref="#die-Bruderfehde,--zwist,--hader">sich</rs> zu entfesseln?</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Krieg-oder-Frieden"><rs ref="#die-Bruderfehde,--zwist,--hader">Krieg</rs> oder <rs ref="#Frieden-zwischen-den-Brüdern">Frieden</rs></rs>! Noch liegen die Lose</l>
+              <l>Dunkel verhüllt in <rs ref="#die-Zukunft">der Zukunft</rs> Schoße!</l>
+              <l>Doch <rs ref="#Krieg-oder-Frieden">es</rs> wird <rs ref="#Krieg-oder-Frieden">sich</rs> noch, eh <rs ref="#gesamter-Chor">wir</rs> <rs ref="#gesamter-Chor">uns</rs> trennen, entscheiden,</l>
+              <l><rs ref="#gesamter-Chor">Wir</rs> sind bereit und gerüstet zu beiden.</l>
+            </lg>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA</speaker></rs>
+            <stage>im ganzen Kreis umherschauend.</stage>
+            <lg>
+              <l>Und welcher furchtbar kriegerische Anblick!</l>
+              <l>Was sollen <rs ref="#gesamter-Chor">diese</rs> hier? Ists <rs ref="#eine-Schlacht,---------------Die-sich-in-diesen-Sälen-zubereitet">eine Schlacht,</l>
+              <l><rs ref="#eine-Schlacht,---------------Die-sich-in-diesen-Sälen-zubereitet">Die</rs> <rs ref="#eine-Schlacht,---------------Die-sich-in-diesen-Sälen-zubereitet">sich</rs> in <rs ref="#eine-geräumige-Säulenhalle">diesen Sälen</rs> zubereitet</rs>?</l>
+              <l>Wozu <rs ref="#gesamter-Chor">die fremde Schar</rs>, wenn <rs ref="#isabella">eine Mutter</rs></l>
+              <l><pb n="834"/> <rs ref="#Isabellas-Herz">Das Herz</rs> aufschließen will vor <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihren</rs> Kindern</rs>?</l>
+              <l>Bis in <rs ref="#Isabellas-Schoß">den Schoß <rs ref="#isabella">der Mutter</rs></rs> fürchtet <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs></l>
+              <l>Der Arglist Schlingen, tückischen Verrat,</l>
+              <l>Daß <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> den Rücken <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> besorglich deckt?</l>
+              <l>– O <rs ref="#gesamter-Chor">diese wilden Banden, <rs ref="#gesamter-Chor">die</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> folgen,</l>
+              <l>Die raschen Diener <rs ref="#Die-Brüder-Manuel-und-Cesar">eures</rs> Zorns</rs> – <rs ref="#gesamter-Chor"><emph>Sie</emph></rs> sind</l>
+              <l>Nicht <rs ref="#Die-Brüder-Manuel-und-Cesar">eure</rs> Freunde! Glaubet nimmermehr,</l>
+              <l>Daß <rs ref="#gesamter-Chor">sie</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> wohlgesinnt zum Besten raten!</l>
+              <l>Wie könnten <rs ref="#gesamter-Chor">sies</rs> von Herzen mit <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> meinen,</l>
+              <rs ref="#Die-Brüder-Manuel-und-Cesar"><l>Den Fremdlingen, dem eingedrungnen Stamm,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Der</rs> aus dem eignen Erbe <rs ref="#gesamter-Chor">sie</rs> vertrieben</rs>,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Sich</rs> über <rs ref="#gesamter-Chor">sie</rs> der Herrschaft angemaßt?</l>
+              <l>Glaubt mir! Es liebt <rs ref="#ein-jeder">ein jeder</rs>, frei <rs ref="#ein-jeder">sich</rs> selbst</l>
+              <l>Zu leben nach dem eigenen Gesetz,</l>
+              <l>Die fremde Herrschaft wird mit Neid ertragen.</l>
+              <l>Von <rs ref="#Die-Brüder-Manuel-und-Cesar">eurer</rs> Macht allein und <rs ref="#gesamter-Chor">ihrer</rs> Furcht</l>
+              <l>Erhaltet <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> den gern versagten Dienst.</l>
+              <l>Lernt <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">dies Geschlecht, das herzlos falsche</rs>, kennen!</l>
+              <l>Die Schadenfreude <rs ref="#ists">ists</rs>, <rs ref="#ists">wodurch <rs ref="#gesamter-Chor">sie</rs> <rs ref="#gesamter-Chor">sich</rs></l>
+              <l>An <rs ref="#Die-Brüder-Manuel-und-Cesar">eurem</rs> Glück, an <rs ref="#Die-Brüder-Manuel-und-Cesar">eurer</rs> Größe rächen</rs>.</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Der Herrscher</rs> Fall, <rs ref="#Die-Brüder-Manuel-und-Cesar">der hohen Häupter</rs> Sturz</l>
+              <l>Ist <rs ref="#gesamter-Chor">ihrer</rs> Lieder Stoff und <rs ref="#ihr-Gespräch,---------------Was-sich-vom-Sohn-zum-Enkel-forterzählt"><rs ref="#gesamter-Chor">ihr</rs> Gespräch,</l>
+              <l><rs ref="#ihr-Gespräch,---------------Was-sich-vom-Sohn-zum-Enkel-forterzählt">Was</rs> <rs ref="#ihr-Gespräch,---------------Was-sich-vom-Sohn-zum-Enkel-forterzählt">sich</rs> vom Sohn zum Enkel forterzählt</rs>,</l>
+              <l>Womit <rs ref="#gesamter-Chor">sie</rs> <rs ref="#gesamter-Chor">sich</rs> die Winternächte kürzen.</l>
+              <l>– O <rs ref="#Die-Brüder-Manuel-und-Cesar">meine Söhne</rs>! Feindlich ist <rs ref="#die-Welt">die Welt</rs></l>
+              <l>Und falsch gesinnt! Es liebt <rs ref="#ein-jeder">ein jeder</rs> nur</l>
+              <l><rs ref="#ein-jeder">Sich</rs> selbst, unsicher, los und wandelbar</l>
+              <l>Sind <rs ref="#alle-Bande,-die-das-leichte-Glück---------------Geflochten">alle Bande, <rs ref="#alle-Bande,-die-das-leichte-Glück---------------Geflochten">die</rs> das leichte Glück</l>
+              <l>Geflochten</rs> – <rs ref="#Laune">Laune</rs> löst, was <rs ref="#Laune">Laune</rs> knüpfte –</l>
+              <l>Nur <rs ref="#die-Natur">die <emph>Natur</emph></rs> ist redlich! <rs ref="#die-Natur">Sie</rs> allein</l>
+              <l>Liegt an dem ewgen Ankergrunde fest,</l>
+              <l>Wenn alles andre auf den sturmbewegten Wellen</l>
+              <l><rs ref="#das-Leben">Des Lebens</rs> unstet treibt – Die Neigung gibt</l>
+              <l>Den Freund, es gibt der Vorteil den Gefährten,</l>
+              <l>Wohl <rs ref="#dem,-dem-die-Geburt-den-Bruder-gab">dem, <rs ref="#dem,-dem-die-Geburt-den-Bruder-gab">dem</rs> die Geburt <rs ref="#der-Bruder">den Bruder</rs> gab</rs>,</l>
+              <l><rs ref="#der-Bruder">Ihn</rs> kann <rs ref="#das-Glück">das Glück</rs> nicht geben! Anerschaffen</l>
+              <l><pb n="835"/> Ist <rs ref="#dem,-dem-die-Geburt-den-Bruder-gab">ihm</rs> <rs ref="#der-Bruder">der Freund</rs>, und gegen eine Welt</l>
+              <l>Voll <rs ref="#der-Krieg">Kriegs</rs> und Truges steht <rs ref="#der-Bruder">er</rs> zweifach da!</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Ja, <rs ref="#es">es</rs> ist etwas Großes, ich muß <rs ref="#es">es</rs> verehren,</l>
+              <l>Um <rs ref="#isabella">einer Herrscherin</rs> fürstlichen Sinn,</l>
+              <l>Über <rs ref="#die-Menschen">der Menschen</rs> Tun und Verkehren</l>
+              <l>Blickt <rs ref="#isabella">sie</rs> mit ruhiger Klarheit hin.</l>
+              <l><rs ref="#gesamter-Chor">Uns</rs> aber treibt das verworrene Streben</l>
+              <l>Blind und sinnlos durchs wüste Leben.</l>
+            </lg>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA</speaker></rs>
+            <stage>zu <rs ref="#don_cesar">Don Cesar</rs>.</stage>
+            <lg>
+              <l><rs ref="#don_cesar">Du, <rs ref="#don_cesar">der</rs> das Schwert auf <rs ref="#don_manuel"><rs ref="#don_cesar">seinen</rs> Bruder</rs> zückt</rs>,</l>
+              <l>Sieh <rs ref="#don_cesar">dich</rs> umher in <rs ref="#gesamter-Chor">dieser ganzen Schar</rs>,</l>
+              <l>Wo ist ein edler Bild als <rs ref="#don_manuel"><rs ref="#don_cesar">deines</rs> Bruders</rs>?</l>
+            </lg>
+            <stage>Zu <rs ref="#don_manuel">Don Manuel</rs>.</stage>
+            <lg>
+              <l><rs ref="#Wer-unter-diesen,-die-du-Freunde-nennst">Wer unter <rs ref="#erster_chor">diesen, <rs ref="#erster_chor">die</rs> <rs ref="#don_manuel">du</rs> Freunde nennst</rs></rs>,</l>
+              <l>Darf <rs ref="#don_cesar"><rs ref="#don_manuel">deinem</rs> Bruder</rs> <rs ref="#Wer-unter-diesen,-die-du-Freunde-nennst">sich</rs> zur Seite stellen?</l>
+              <l><rs ref="#ein-jeder">Ein jeder</rs> ist ein Muster <rs ref="#ein-jeder">seines</rs> Alters,</l>
+              <l>Und keiner gleicht und keiner weicht dem andern.</l>
+              <l>Wagt es, <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> in das Angesicht zu sehn!</l>
+              <l>O Raserei der Eifersucht, des Neides!</l>
+              <l><rs ref="#don_cesar">Ihn</rs> würdest <rs ref="#don_manuel">du</rs> aus Tausenden heraus</l>
+              <l>Zum Freunde <rs ref="#don_manuel">dir</rs> gewählt, <rs ref="#don_cesar">ihn</rs> an <rs ref="#Don-Manuels-Herz"><rs ref="#don_manuel">dein</rs> Herz</rs></l>
+              <l>Geschlossen haben als den <emph>einzigen</emph>,</l>
+              <l>Und jetzt, da <rs ref="#don_cesar">ihn</rs> <rs ref="#die-Natur">die heilige Natur</rs></l>
+              <l><rs ref="#don_manuel">Dir</rs> gab, <rs ref="#don_manuel">dir</rs> in der Wiege schon <rs ref="#don_cesar">ihn</rs> schenkte,</l>
+              <l>Trittst <rs ref="#don_manuel">du</rs>, ein Frevler an <rs ref="#Don-Manuels-eigenes-Blut">dem eignen Blut</rs>,</l>
+              <l>Mit stolzer Willkür <rs ref="#don_cesar"><rs ref="#die-Natur">ihr</rs> Geschenk</rs> mit Füßen,</l>
+              <l><rs ref="#don_manuel">Dich</rs> wegzuwerfen an den schlechtern Mann,</l>
+              <l><rs ref="#don_manuel">Dich</rs> an den Feind und Fremdling anzuschließen!</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Höre mich, <rs ref="#isabella">Mutter</rs>!</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#isabella">Mutter</rs>, höre mich!</l>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA.</speaker></rs>
+            <lg>
+              <l>Nicht Worte <rs ref="#sinds,-die-diesen-traurgen-Streit---------------Erledigen">sinds, <rs ref="#sinds,-die-diesen-traurgen-Streit---------------Erledigen">die</rs> <rs ref="#die-Bruderfehde,--zwist,--hader">diesen traurgen Streit</rs></l>
+              <l>Erledigen</rs> – Hier ist das Mein und Dein,</l>
+              <l><rs ref="#Die-Rache">Die Rache</rs> von <rs ref="#die-Schuld">der Schuld</rs> nicht mehr zu sondern.</l>
+              <l>– Wer möchte noch das alte Bette finden</l>
+              <l><rs ref="#Des-Schwefelstroms,-der-glühend-sich-ergoß">Des Schwefelstroms, <rs ref="#Des-Schwefelstroms,-der-glühend-sich-ergoß">der</rs> glühend <rs ref="#Des-Schwefelstroms,-der-glühend-sich-ergoß">sich</rs> ergoß</rs>?</l>
+              <l>Des unterirdschen Feuers schreckliche</l>
+              <l>Geburt ist alles, eine Lavarinde</l>
+              <l><pb n="836"/> Liegt aufgeschichtet über dem Gesunden,</l>
+              <l>Und jeder Fußtritt wandelt auf Zerstörung.</l>
+              <l>– Nur dieses <emph>eine</emph> leg ich <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> ans Herz.</l>
+              <rs ref="#Das-Böse,-das-der-Mann,-der-mündige,---------------Dem-Manne-zufügt"><l>Das Böse, <rs ref="#Das-Böse,-das-der-Mann,-der-mündige,---------------Dem-Manne-zufügt">das</rs> <rs ref="#der-Mann,-der-mündige">der Mann, der mündige</rs>,</l>
+              <l><rs ref="#der-Mann,-der-mündige">Dem Manne</rs> zufügt</rs>, <rs ref="#Das-Böse,-das-der-Mann,-der-mündige,---------------Dem-Manne-zufügt"><emph>das</emph></rs>, ich will <rs ref="#Vergibt-sich-und-versöhnt-sich-schwer">es</rs> glauben,</l>
+              <l><rs ref="#Vergibt-sich-und-versöhnt-sich-schwer">Vergibt <rs ref="#Das-Böse,-das-der-Mann,-der-mündige,---------------Dem-Manne-zufügt">sich</rs> und versöhnt <rs ref="#Das-Böse,-das-der-Mann,-der-mündige,---------------Dem-Manne-zufügt">sich</rs> schwer</rs>. <rs ref="#der-Mann,-der-mündige">Der Mann</rs></l>
+              <l><emph>Will</emph> <rs ref="#der-Mann,-der-mündige">seinen</rs> Haß, und keine Zeit verändert</l>
+              <l><rs ref="#Den-Ratschluß,-den-er-wohlbesonnen-faßt">Den Ratschluß, <rs ref="#Den-Ratschluß,-den-er-wohlbesonnen-faßt">den</rs> <rs ref="#der-Mann,-der-mündige">er</rs> wohlbesonnen faßt</rs>.</l>
+              <l>Doch <rs ref="#die-Bruderfehde,--zwist,--hader"><rs ref="#Die-Brüder-Manuel-und-Cesar"><emph>eures</emph></rs> Haders</rs> Ursprung steigt hinauf</l>
+              <l>In unverständger <rs ref="#die-Kindheit-der-Brüder">Kindheit</rs> frühe Zeit,</l>
+              <l><rs ref="#die-Bruderfehde,--zwist,--hader">Sein</rs> Alter <rs ref="#ists,-was-ihn-entwaffnen-sollte">ists, <rs ref="#ists,-was-ihn-entwaffnen-sollte">was</rs> <rs ref="#die-Bruderfehde,--zwist,--hader">ihn</rs> entwaffnen sollte</rs>.</l>
+              <l>Fraget zurück, <rs ref="#was-euch-zuerst-entzweite">was <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> zuerst entzweite</rs>,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> wißt <rs ref="#was-euch-zuerst-entzweite">es</rs> nicht, ja, fändet <rs ref="#was-euch-zuerst-entzweite"><rs ref="#Die-Brüder-Manuel-und-Cesar">ihrs</rs></rs> auch aus,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> würdet <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> <rs ref="#die-Bruderfehde,--zwist,--hader">des kindschen Haders</rs> schämen.</l>
+              <l>Und dennoch ists <rs ref="#der-erste-Kinderstreit,---------------Der-fortgezeugt-in-unglückselger-Kette">der erste Kinderstreit,</l>
+              <l><rs ref="#der-erste-Kinderstreit,---------------Der-fortgezeugt-in-unglückselger-Kette">Der</rs> fortgezeugt in unglückselger Kette</rs>,</l>
+              <l>Die neuste Unbill dieses Tags geboren.</l>
+              <l>Denn <rs ref="#alle-schweren-Taten,-die-bis-jetzt-geschahn">alle schweren Taten, <rs ref="#alle-schweren-Taten,-die-bis-jetzt-geschahn">die</rs> bis jetzt geschahn</rs>,</l>
+              <l>Sind nur des Argwohns und <rs ref="#Die-Rache">der Rache</rs> Kinder.</l>
+              <l>– Und <rs ref="#die-Bruderfehde,--zwist,--hader">jene Knabenfehde</rs> wolltet <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs></l>
+              <l>Noch jetzt fortkämpfen, da <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> Männer seid?</l>
+            </lg>
+            <stage><rs ref="#die-Hände-der-Brüder"><rs ref="#Die-Brüder-Manuel-und-Cesar">Beider</rs> Hände</rs> fassend.</stage>
+            <lg>
+              <rs ref="#O-meine-Söhne!-Kommt,-entschließet-euch,---------------Die-Rechnung-gegenseitig-zu-vertilgen,---------------Denn-gleich-auf-beiden-Seiten-ist-das-Unrecht.---------------Seid-edel,-und-großherzig-schenkt-einander---------------Die-unabtragbar-ungeheure-Schuld.---------------Der-Siege-göttlichster-ist-das-Vergeben!---------------In-eures-Vaters-Gruft-werft-ihn-hinab---------------Den-alten-Haß-der-frühen-Kinderzeit!---------------Der-schönen-Liebe-sei-das-neue-Leben,---------------Der-Eintracht,-der-Versöhnung-seis-geweiht."><l>O <rs ref="#Die-Brüder-Manuel-und-Cesar">meine Söhne</rs>! Kommt, entschließet <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs>,</l>
+              <l><rs ref="#die-Bruderfehde,--zwist,--hader">Die Rechnung</rs> gegenseitig zu vertilgen,</l>
+              <l>Denn gleich auf beiden Seiten ist das Unrecht.</l>
+              <l>Seid edel, und großherzig schenkt einander</l>
+              <l>Die unabtragbar ungeheure Schuld.</l>
+              <l>Der Siege göttlichster ist das Vergeben!</l>
+              <l>In <rs ref="#die-Gruft-des-Fürsten"><rs ref="#Isabellas-Gatte,-der-Fürst"><rs ref="#Die-Brüder-Manuel-und-Cesar">eures</rs> Vaters</rs> Gruft</rs> werft <rs ref="#der-Bruderhass">ihn</rs> hinab</l>
+              <l><rs ref="#der-Bruderhass">Den alten Haß <rs ref="#die-Kindheit-der-Brüder">der frühen Kinderzeit</rs></rs>!</l>
+              <l><rs ref="#Die-Liebe-zwischen-den-Brüdern">Der schönen Liebe</rs> sei <rs ref="#das-neue-Leben">das neue Leben</rs>,</l>
+              <l>Der Eintracht, <rs ref="#die-Versöhnung-zwischen-den-Brüdern">der Versöhnung</rs> <rs ref="#das-neue-Leben">seis</rs> geweiht.</l></rs>
+            </lg>
+            <stage><rs ref="#isabella">Sie</rs> tritt einen Schritt zwischen <rs ref="#Die-Brüder-Manuel-und-Cesar">beiden</rs> zurück, als wollte <rs ref="#isabella">sie</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">ihnen</rs> Raum geben,
+              <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> einander zu nähern. <rs ref="#Die-Brüder-Manuel-und-Cesar">Beide</rs> blicken <rs ref="#die-Erde-(der-Boden)">zur Erde</rs>, ohne einander anzusehen.</stage>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Höret <rs ref="#O-meine-Söhne!-Kommt,-entschließet-euch,---------------Die-Rechnung-gegenseitig-zu-vertilgen,---------------Denn-gleich-auf-beiden-Seiten-ist-das-Unrecht.---------------Seid-edel,-und-großherzig-schenkt-einander---------------Die-unabtragbar-ungeheure-Schuld.---------------Der-Siege-göttlichster-ist-das-Vergeben!---------------In-eures-Vaters-Gruft-werft-ihn-hinab---------------Den-alten-Haß-der-frühen-Kinderzeit!---------------Der-schönen-Liebe-sei-das-neue-Leben,---------------Der-Eintracht,-der-Versöhnung-seis-geweiht."><rs ref="#isabella">der Mutter</rs> vermahnende Rede</rs>,</l>
+              <l>Wahrlich, <rs ref="#isabella">sie</rs> spricht ein gewichtiges Wort!</l>
+              <l><pb n="837"/> Laßt es genug sein und endet <rs ref="#die-Bruderfehde,--zwist,--hader">die Fehde</rs>,</l>
+              <l>Oder gefällts <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs>, so setzet <rs ref="#die-Bruderfehde,--zwist,--hader">sie</rs> fort.</l>
+              <l><rs ref="#Was-euch-genehm-ist">Was <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> genehm ist</rs>, <rs ref="#Was-euch-genehm-ist">das</rs> ist mir gerecht,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> seid die Herrscher und ich bin der Knecht.</l>
+            </lg>
+          </sp>
+          <sp who="#isabella">
+            <rs ref="#isabella"><speaker>ISABELLA</speaker></rs>
+            <stage>nachdem <rs ref="#isabella">sie</rs> einige Zeit innegehalten und vergebens eine Äußerung <rs ref="#Die-Brüder-Manuel-und-Cesar">der Brüder</rs>
+              erwartet, mit unterdrücktem Schmerz.</stage>
+            <lg>
+              <l>Jetzt weiß ich nichts mehr. Ausgeleert hab ich</l>
+              <l>Der Worte Köcher und erschöpft der Bitten Kraft.</l>
+              <l><rs ref="#die-Gruft-des-Fürsten">Im Grabe</rs> ruht, <rs ref="#Isabellas-Gatte,-der-Fürst">der <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> gewaltsam bändigte</rs>,</l>
+              <l>Und machtlos steht <rs ref="#isabella">die Mutter</rs> zwischen <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs>.</l>
+              <l>– Vollendet! <rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> habt freie Macht! Gehorcht</l>
+              <l><rs ref="#Dem-Dämon,-der-euch-sinnlos-wütend-treibt">Dem Dämon, <rs ref="#Dem-Dämon,-der-euch-sinnlos-wütend-treibt">der</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> sinnlos wütend treibt</rs>,</l>
+              <l>Ehrt nicht des Hausgotts heiligen Altar,</l>
+              <l>Laßt <rs ref="#eine-geräumige-Säulenhalle">diese Halle</rs> selbst, <rs ref="#eine-geräumige-Säulenhalle">die</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> geboren,</l>
+              <l>Den Schauplatz werden <rs ref="#Die-Brüder-Manuel-und-Cesar">eures</rs> Wechselmords.</l>
+              <l>Vor <rs ref="#Isabellas-Augen"><rs ref="#isabella"><rs ref="#Die-Brüder-Manuel-und-Cesar">eurer</rs> Mutter</rs> Aug</rs> zerstöret <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs></l>
+              <l>Mit <rs ref="#die-Hände-der-Brüder"><rs ref="#Die-Brüder-Manuel-und-Cesar">euren</rs> eignen</rs>, nicht durch fremde Hände.</l>
+              <l>Leib gegen Leib, wie das thebanische Paar,</l>
+              <l>Rückt aufeinander an und wutvoll ringend</l>
+              <l>Umfanget <rs ref="#Die-Brüder-Manuel-und-Cesar">euch</rs> mit eherner Umarmung,</l>
+              <l>Leben um Leben tauschend siege <rs ref="#don_manuel"><rs ref="#don_cesar">jeder</rs></rs></l>
+              <l>Den Dolch einbohrend in <rs ref="#Don-Cesars-Brust"><rs ref="#Don-Manuels-Brust"><rs ref="#don_cesar"><rs ref="#don_manuel">des andern</rs></rs> Brust</rs></rs>,</l>
+              <l>Daß selbst <rs ref="#der-Tod">der Tod</rs> nicht <rs ref="#Die-Brüder-Manuel-und-Cesar">eure</rs> Zwietracht heile,</l>
+              <l><rs ref="#Die-Flamme">Die Flamme</rs> selbst, <rs ref="#Die-Flamme">des Feuers rote Säule,</l>
+              <l><rs ref="#Die-Flamme">Die</rs> <rs ref="#Die-Flamme"><rs ref="#Die-Flamme">sich</rs></rs> von <rs ref="#Die-Brüder-Manuel-und-Cesar">eurem</rs> Scheiterhaufen hebt</rs>,</l>
+              <l><rs ref="#Die-Flamme">Sich</rs> zweigespalten voneinander teile,</l>
+              <l>Ein schaudernd Bild, wie <rs ref="#Die-Brüder-Manuel-und-Cesar">ihr</rs> gestorben und gelebt.</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#isabella">Sie</rs> geht ab. <rs ref="#Die-Brüder-Manuel-und-Cesar">Die Brüder</rs> bleiben noch in der vorigen Entfernung voneinander
+            stehen.</stage>
+        </div>
+        <div type="scene">
+          <stage><rs ref="#Die-Brüder-Manuel-und-Cesar">Beide Brüder</rs>. <rs ref="#gesamter-Chor">Beide Chöre</rs>.</stage>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Es sind nur <rs ref="#Worte">Worte</rs>, <rs ref="#Worte">die</rs> <rs ref="#isabella">sie</rs> gesprochen,</l>
+              <l>Aber <rs ref="#Worte">sie</rs> haben den fröhlichen Mut</l>
+              <l>In der felsigten Brust mir gebrochen!</l>
+              <l>Ich nicht vergoß das verwandte Blut.</l>
+              <l><pb n="838"/> Rein <rs ref="#der-Himmel-(nicht-religiös)">zum Himmel</rs> erheb ich die Hände,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> seid <rs ref="#Brüder">Brüder</rs>! Bedenket das Ende!</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>ohne <rs ref="#don_manuel">Don Manuel</rs> anzusehen.</stage>
+            <lg>
+              <l><rs ref="#don_manuel">Du</rs> bist der ältre Bruder, rede <rs ref="#don_manuel">du</rs>!</l>
+              <l><rs ref="#don_manuel">Dem Erstgebornen</rs> weich ich ohne Schande.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>in derselben Stellung.</stage>
+            <lg>
+              <l>Sag etwas Gutes und ich folge gern</l>
+              <l><rs ref="#Dem-edeln-Beispiel,-das-der-jüngre-gibt">Dem edeln Beispiel, <rs ref="#Dem-edeln-Beispiel,-das-der-jüngre-gibt">das</rs> <rs ref="#don_cesar">der jüngre</rs> gibt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Nicht weil ich für den Schuldigeren mich</l>
+              <l>Erkenne, oder schwächer gar mich fühle –</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Nicht Kleinmuts zeiht <rs ref="#don_cesar">Don Cesarn</rs>, wer <rs ref="#don_cesar">ihn</rs> kennt,</l>
+              <l>Fühlt' <rs ref="#don_cesar">er</rs> <rs ref="#don_cesar">sich</rs> schwächer, würd <rs ref="#don_cesar">er</rs> stolzer reden.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l>Denkst <rs ref="#don_manuel">du</rs> von <rs ref="#don_cesar"><rs ref="#don_manuel">deinem</rs> Bruder</rs> nicht geringer?</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#don_cesar">Du</rs> bist zu stolz zur Demut, ich zur Lüge.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Verachtung nicht erträgt <rs ref="#Don-Cesars-Herz">mein edles Herz</rs>.</l>
+              <l>Doch in des Kampfes heftigster Erbittrung</l>
+              <l>Gedachtest <rs ref="#don_manuel">du</rs> mit Würde <rs ref="#don_cesar"><rs ref="#don_manuel">deines</rs> Bruders</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#don_cesar">Du</rs> willst nicht <rs ref="#Don-Manuels-Tod">meinen Tod</rs>, ich habe Proben.</l>
+              <l><rs ref="#Ein-Mönch">Ein Mönch</rs> erbot <rs ref="#Ein-Mönch">sich</rs> <rs ref="#don_cesar">dir</rs>, mich meuchlerisch</l>
+              <l>Zu morden, <rs ref="#don_cesar">du</rs> bestraftest <rs ref="#don_cesar">den Verräter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>tritt etwas näher.</stage>
+            <lg>
+              <l>Hätt ich <rs ref="#don_manuel">dich</rs> früher so gerecht erkannt,</l>
+              <l>Es wäre vieles ungeschehn geblieben.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Und hätt ich <rs ref="#don_cesar">dir</rs> ein so versöhnlich Herz</l>
+              <l>Gewußt, viel Mühe spart ich dann <rs ref="#isabella">der Mutter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#don_manuel">Du</rs> wurdest mir viel stolzer abgeschildert.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Es ist der Fluch <rs ref="#der-Hohen">der Hohen</rs>, daß <rs ref="#die-Niedern">die Niedern</rs></l>
+              <l><rs ref="#die-Niedern">Sich</rs> <rs ref="#der-Hohen">ihres</rs> offnen Ohrs bemächtigen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>lebhaft.</stage>
+            <l>So ist, <rs ref="#gesamter-Chor">die Diener</rs> tragen alle Schuld!</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#gesamter-Chor">Die</rs> <rs ref="#Don-Cesars-Herz-/-Don-Manuels-Herz"><rs ref="#Die-Brüder-Manuel-und-Cesar">unser</rs> Herz</rs> in bitterm Haß entfremdet.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#gesamter-Chor"><emph>Die</emph></rs> böse Worte hin und wider trugen.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Mit falscher Deutung jede Tat vergiftet.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#Die-Wunde">Die Wunde</rs> nährten, <rs ref="#Die-Wunde">die</rs> <rs ref="#gesamter-Chor">sie</rs> heilen sollten.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Die-Flamme2">Die Flamme</rs> schürten, <rs ref="#Die-Flamme2">die</rs> <rs ref="#gesamter-Chor">sie</rs> löschen konnten.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Wir</rs> waren die Verführten, die Betrognen!</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Das blinde Werkzeug fremder Leidenschaft!</l>
+            <pb n="839"/>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#daß-alles-andre-treulos-ist"><emph>Ists</emph></rs> wahr, <rs ref="#daß-alles-andre-treulos-ist">daß alles andre treulos ist</rs> –</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Und falsch! <rs ref="#isabella">Die Mutter</rs> <rs ref="#daß-alles-andre-treulos-ist">sagts</rs>, <rs ref="#don_cesar">du</rs> darfst <rs ref="#daß-alles-andre-treulos-ist">es</rs> glauben!</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l>So will ich diese Bruderhand ergreifen –</l>
+            <stage><rs ref="#don_cesar">Er</rs> reicht <rs ref="#don_manuel">ihm</rs> <rs ref="#Don-Cesars-Hand">die Hand</rs> hin.</stage>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>ergreift <rs ref="#Don-Cesars-Hand">sie</rs> lebhaft.</stage>
+            <l><rs ref="#Don-Cesars-Hand">Die</rs> mir die nächste ist auf <rs ref="#die-Welt">dieser Welt</rs>.</l>
+            <stage><rs ref="#Die-Brüder-Manuel-und-Cesar">Beide</rs> stehen Hand in Hand und betrachten einander eine Zeitlang
+              schweigend.</stage>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Ich seh <rs ref="#don_manuel">dich</rs> an und überrascht, erstaunt</l>
+              <l>Find ich in <rs ref="#don_manuel">dir</rs> <rs ref="#Isabellas-Züge"><rs ref="#isabella">der Mutter</rs> teure Züge</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#eine-Ähnlichkeit">eine Ähnlichkeit</rs> entdeckt <rs ref="#eine-Ähnlichkeit">sich</rs> mir</l>
+              <l>In <rs ref="#don_cesar">dir</rs>, <rs ref="#eine-Ähnlichkeit">die</rs> mich noch wunderbarer rühret.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Bist <rs ref="#don_manuel">du</rs> <rs ref="#der-dem-jüngern-Bruder---------------So-hold-begegnet-und-so-gütig-spricht">es</rs> wirklich, <rs ref="#der-dem-jüngern-Bruder---------------So-hold-begegnet-und-so-gütig-spricht">der <rs ref="#don_cesar">dem jüngern Bruder</rs></l>
+              <l>So hold begegnet und so gütig spricht</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ist <rs ref="#don_cesar">dieser freundlich sanftgesinnte Jüngling</rs></l>
+              <l>Der übelwollend mir gehäßge Bruder?</l>
+            </lg>
+            <stage>Wiederum Stillschweigen; <rs ref="#Die-Brüder-Manuel-und-Cesar">jeder</rs> steht in den Anblick <rs ref="#Die-Brüder-Manuel-und-Cesar">des andern</rs> verloren.</stage>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#don_manuel">Du</rs> nahmst <rs ref="#die-Pferde-von-arabscher-Zucht">die Pferde von arabscher Zucht</rs></l>
+              <l>In Anspruch, aus dem Nachlaß <rs ref="#Isabellas-Gatte,-der-Fürst"><rs ref="#Die-Brüder-Manuel-und-Cesar">unsers</rs> Vaters</rs>.</l>
+              <l><rs ref="#Den-Rittern,-die-du-schicktest">Den Rittern, <rs ref="#Den-Rittern,-die-du-schicktest">die</rs> <rs ref="#don_manuel">du</rs> schicktest</rs>, schlug ichs ab.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Den-Rittern,-die-du-schicktest">Sie</rs> sind <rs ref="#don_cesar">dir</rs> lieb, ich denke nicht mehr dran.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Nein, nimm <rs ref="#die-Pferde-von-arabscher-Zucht">die Rosse</rs>, nimm den Wagen auch</l>
+              <l>Des Vaters, <rs ref="#nimm-sie">nimm sie</rs>, ich beschwöre <rs ref="#don_manuel">dich</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ich will <rs ref="#nimm-sie">es</rs> tun, wenn <rs ref="#don_cesar">du</rs> <rs ref="#das-Schloß-am-Meere">das Schloß <rs ref="#das-Meer">am Meere</rs></rs></l>
+              <l>Beziehen willst, um das <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> heftig stritten.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Ich nehm <rs ref="#das-Schloß-am-Meere">es</rs> nicht, doch bin <rs ref="#Daß-wirs-gemeinsam-brüderlich-bewohnen">ichs</rs> wohl zufrieden,</l>
+              <l><rs ref="#Daß-wirs-gemeinsam-brüderlich-bewohnen">Daß <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#das-Schloß-am-Meere">wirs</rs></rs> gemeinsam brüderlich bewohnen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>So seis! Warum ausschließend Eigentum</l>
+              <l>Besitzen, da <rs ref="#Don-Cesars-Herz-/-Don-Manuels-Herz">die Herzen</rs> einig sind.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Warum noch länger abgesondert leben,</l>
+              <l>Da <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs>, vereinigt, <rs ref="#Die-Brüder-Manuel-und-Cesar">jeder</rs> reicher werden?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Wir</rs> sind nicht mehr getrennt, <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> sind vereinigt.</l>
+            <stage><rs ref="#don_manuel">Er</rs> eilt in <rs ref="#Don-Cesars-Arme"><rs ref="#don_cesar">seine</rs> Arme</rs>.</stage>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR</speaker></rs>
+            <stage><rs ref="#zweiter_chor">zum zweiten</rs>.</stage>
+            <lg>
+              <l>Was stehen <rs ref="#gesamter-Chor">wir</rs> hier noch feindlich geschieden,</l>
+              <l><pb n="840"/> Da <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> liebend umfassen?</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihrem</rs> Beispiel folg ich und biete <rs ref="#zweiter_chor">dir</rs> Frieden,</l>
+              <l>Wollen <rs ref="#gesamter-Chor"><emph>wir</emph></rs> einander denn ewig hassen?</l>
+              <l>Sind <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> Brüder durch <rs ref="#Blut">Blutes</rs> Bande,</l>
+              <l>Sind <rs ref="#gesamter-Chor"><emph>wir</emph></rs> Bürger und Söhne von <emph>einem</emph> Lande.</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#gesamter-Chor">Beide Chöre</rs> umarmen <rs ref="#gesamter-Chor">sich</rs>.</stage>
+        </div>
+        <div type="scene">
+          <stage><rs ref="#bote_1-6">Ein Bote</rs> tritt auf.</stage>
+          <sp who="#zweiter_chor">
+            <rs ref="#zweiter_chor"><speaker>ZWEITER CHOR</speaker></rs>
+            <stage>zu <rs ref="#don_cesar">Don Cesar</rs>.</stage>
+            <lg>
+              <l><rs ref="#bote_1-6">Den Späher, <rs ref="#bote_1-6">den</rs> <rs ref="#don_cesar">du</rs> ausgesendet</rs>, <rs ref="#don_cesar">Herr</rs>,</l>
+              <l>Erblick ich wiederkehrend. Freue <rs ref="#don_cesar">dich</rs>,</l>
+              <l><rs ref="#don_cesar">Don Cesar</rs>! Gute Botschaft harret <rs ref="#don_cesar">dein</rs>,</l>
+              <l>Denn fröhlich strahlt der Blick <rs ref="#bote_1-6">des Kommenden</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#bote_1-6">
+            <rs ref="#bote_1-6"><speaker>BOTE.</speaker></rs>
+            <lg>
+              <l>Heil mir und Heil <rs ref="#Messina">der fluchbefreiten Stadt</rs>,</l>
+              <l>Des schönsten Anblicks wird mein Auge froh.</l>
+              <rs ref="#Die-Söhne-meines-Herrn,-die-Fürsten-seh-ich---------------In-friedlichem-Gespräche,-Hand-in-Hand,---------------Die-ich-in-heißer-Kampfeswut-verlassen."><l><rs ref="#Die-Brüder-Manuel-und-Cesar">Die Söhne <rs ref="#Isabellas-Gatte,-der-Fürst">meines Herrn</rs></rs>, <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> seh ich</l>
+              <l>In friedlichem Gespräche, Hand in Hand,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Die</rs> ich in heißer Kampfeswut verlassen.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#bote_1-6">Du</rs> siehst <rs ref="#Die-Liebe-zwischen-den-Brüdern">die Liebe</rs> aus <rs ref="#die-Flammen-des-Bruderhasses"><rs ref="#der-Bruderhass">des Hasses</rs> Flammen</rs></l>
+              <l>Wie einen neu verjüngten Phönix steigen.</l>
+            </lg>
+          </sp>
+          <sp who="#bote_1-6">
+            <rs ref="#bote_1-6"><speaker>BOTE.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-zweites-Glück-(des-Boten-1-6-Botschaft)">Ein zweites</rs> leg ich zu <rs ref="#Die-Söhne-meines-Herrn,-die-Fürsten-seh-ich---------------In-friedlichem-Gespräche,-Hand-in-Hand,---------------Die-ich-in-heißer-Kampfeswut-verlassen.">dem ersten Glück</rs>.</l>
+              <l>Mein Botenstab ergrünt von frischen Zweigen!</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage><rs ref="#bote_1-6">ihn</rs> beiseite führend.</stage>
+            <l>Laß hören, <rs ref="#Ein-zweites-Glück-(des-Boten-1-6-Botschaft)">was <rs ref="#bote_1-6">du</rs> bringst</rs>.</l>
+          </sp>
+          <sp who="#bote_1-6">
+            <rs ref="#bote_1-6"><speaker>BOTE.</speaker></rs>
+            <lg>
+              <l>Ein einzger Tag</l>
+              <l>Will <rs ref="#alles,-was-erfreulich-ist">alles, <rs ref="#alles,-was-erfreulich-ist">was</rs> erfreulich ist</rs>, versammeln.</l>
+              <l>Auch <rs ref="#beatrice">die Verlorene, nach <rs ref="#beatrice">der</rs> wir suchten</rs>,</l>
+              <l><rs ref="#beatrice">Sie</rs> ist gefunden, <rs ref="#don_cesar">Herr</rs>, <rs ref="#beatrice">sie</rs> ist nicht weit.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#beatrice">Sie</rs> ist gefunden. O wo ist <rs ref="#beatrice">sie</rs>? Sprich!</l>
+          </sp>
+          <sp who="#bote_1-6">
+            <rs ref="#bote_1-6"><speaker>BOTE.</speaker></rs>
+            <l>Hier in <rs ref="#Messina">Messina</rs>, <rs ref="#don_cesar">Herr</rs>, verbirgt <rs ref="#beatrice">sie</rs> <rs ref="#beatrice">sich</rs>.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>zu <rs ref="#erster_chor">dem ersten Halbchor</rs> gewendet.</stage>
+            <lg>
+              <l>Von hoher Röte Glut seh ich die Wangen</l>
+              <l><rs ref="#don_cesar">Des Bruders</rs> glänzen, und <rs ref="#don_cesar">sein</rs> Auge blitzt.</l>
+              <l>Ich weiß nicht, was es ist, doch ists <rs ref="#die-Farbe---------------Der-Freude">die Farbe</l>
+              <l>Der Freude</rs> und mitfreuend teil ich <rs ref="#die-Farbe---------------Der-Freude">sie</rs>.</l>
+              <pb n="841"/>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>zu <rs ref="#bote_1-6">dem Boten</rs>.</stage>
+            <lg>
+              <l>Komm, führe mich – Leb wohl, <rs ref="#don_manuel">Don Manuel</rs>!</l>
+              <l>Im Arm <rs ref="#isabella">der Mutter</rs> finden <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">uns</rs> wieder,</l>
+              <l>Jetzt fodert mich <rs ref="#ein-dringend-Werk">ein dringend Werk</rs> von hier.</l>
+            </lg>
+            <stage><rs ref="#don_cesar">Er</rs> will gehen.</stage>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Verschieb <rs ref="#ein-dringend-Werk">es</rs> nicht. <rs ref="#das-Glück">Das Glück</rs> begleite <rs ref="#don_cesar">dich</rs>!</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>besinnt <rs ref="#don_cesar">sich</rs> und kommt zurück.</stage>
+            <lg>
+              <l><rs ref="#don_manuel">Don Manuel</rs>! Mehr, als ich sagen kann,</l>
+              <l>Freut mich <rs ref="#Don-Manuels-Anblick"><rs ref="#don_manuel">dein</rs> Anblick</rs> – ja mir ahnet schon,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Wir</rs> werden <rs ref="#Die-Brüder-Manuel-und-Cesar">uns</rs> wie Herzensfreunde lieben,</l>
+              <l>Der langgebundne Trieb wird freudger nur</l>
+              <l>Und mächtger streben in der neuen Sonne,</l>
+              <l>Nachholen werd ich das verlorne Leben.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Die Blüte deutet auf die schöne Frucht.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Es-ist-nicht-recht"><rs ref="#Daß-ich-mich-jetzt-aus-deinen-Armen-reiße">Es</rs> ist nicht recht</rs>, ich <rs ref="#Es-ist-nicht-recht">fühls</rs> und tadle mich,</l>
+              <l><rs ref="#Daß-ich-mich-jetzt-aus-deinen-Armen-reiße">Daß ich mich jetzt aus <rs ref="#Don-Manuels-Arme"><rs ref="#don_manuel">deinen</rs> Armen</rs> reiße</rs>.</l>
+              <l>Denk nicht, ich fühle weniger als <rs ref="#don_manuel">du</rs>,</l>
+              <l>Weil ich die festlich schöne Stunde rasch zerschneide.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>mit sichtbarer Zerstreuung.</stage>
+            <lg>
+              <l>Gehorche <rs ref="#don_cesar">du</rs> dem Augenblick! <rs ref="#Die-Liebe-zwischen-den-Brüdern">Der Liebe</rs></l>
+              <l>Gehört von heute an das ganze Leben.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l>Entdeckt ich <rs ref="#don_manuel">dir</rs>, <rs ref="#was-mich-von-hinnen-ruft">was mich von hinnen ruft</rs> –</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Laß mir <rs ref="#Don-Cesars-Herz"><rs ref="#don_cesar">dein</rs> Herz</rs>, <rs ref="#don_cesar">dir</rs> bleibe <rs ref="#was-mich-von-hinnen-ruft"><rs ref="#don_cesar">dein</rs> Geheimnis</rs>.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Auch kein Geheimnis trenn <rs ref="#Die-Brüder-Manuel-und-Cesar">uns</rs> ferner mehr,</l>
+              <l>Bald soll die letzte dunkle Falte schwinden!</l>
+            </lg>
+            <stage>Zu <rs ref="#gesamter-Chor">dem Chor</rs> gewendet.</stage>
+            <lg>
+              <l><rs ref="#gesamter-Chor">Euch</rs> künd <rs ref="#Der-Streit-ist-abgeschlossen-zwischen-mir---------------Und-dem-geliebten-Bruder!">ichs</rs> an, damit <rs ref="#Der-Streit-ist-abgeschlossen-zwischen-mir---------------Und-dem-geliebten-Bruder!"><rs ref="#gesamter-Chor">ihrs</rs></rs> alle wisset!</l>
+              <rs ref="#Der-Streit-ist-abgeschlossen-zwischen-mir---------------Und-dem-geliebten-Bruder!"><l>Der Streit ist abgeschlossen zwischen mir</l>
+              <l>Und <rs ref="#don_manuel">dem geliebten Bruder</rs>!</rs> <rs ref="#Der-den-erloschnen-Funken-unsers-Streits---------------Aufbläst-zu-neuen-Flammen">Den</rs> erklär ich</l>
+              <l>Für meinen Todfeind und Beleidiger,</l>
+              <l>Und werd <rs ref="#Der-den-erloschnen-Funken-unsers-Streits---------------Aufbläst-zu-neuen-Flammen">ihn</rs> hassen wie <rs ref="#die-Hölle">der Hölle</rs> Pforten,</l>
+              <rs ref="#Der-den-erloschnen-Funken-unsers-Streits---------------Aufbläst-zu-neuen-Flammen"><l>Der den erloschnen Funken <rs ref="#die-Bruderfehde,--zwist,--hader"><rs ref="#Die-Brüder-Manuel-und-Cesar">unsers</rs> Streits</rs></l>
+              <l>Aufbläst zu neuen Flammen</rs> – Hoffe keiner</l>
+              <l>Mir zu gefallen oder Dank zu ernten,</l>
+              <l>Der von <rs ref="#don_manuel">dem Bruder</rs> Böses mir berichtet,</l>
+              <l>Mit falscher Dienstbegier den bittern Pfeil</l>
+              <l>Des raschen Worts geschäftig weitersendet.</l>
+              <l><pb n="842"/> – Nicht Wurzeln auf der Lippe schlägt <rs ref="#das-Wort,---------------Das-unbedacht-dem-schnellen-Zorn-entflohen">das Wort,</l>
+              <l><rs ref="#das-Wort,---------------Das-unbedacht-dem-schnellen-Zorn-entflohen">Das</rs> unbedacht dem schnellen Zorn entflohen</rs>,</l>
+              <l>Doch von dem Ohr des Argwohns aufgefangen,</l>
+              <l>Kriecht <rs ref="#das-Wort,---------------Das-unbedacht-dem-schnellen-Zorn-entflohen">es</rs> wie Schlingkraut endlos treibend fort,</l>
+              <l>Und hängt ans Herz <rs ref="#das-Wort,---------------Das-unbedacht-dem-schnellen-Zorn-entflohen">sich</rs> an mit tausend Ästen,</l>
+              <l>So trennen endlich in Verworrenheit</l>
+              <l>Unheilbar sich die Guten und die Besten!</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#don_cesar">Er</rs> umarmt <rs ref="#don_manuel">den Bruder</rs> noch einmal und geht ab, von <rs ref="#zweiter_chor">dem zweiten Chore</rs>
+            begleitet.</stage>
+        </div>
+        <div type="scene">
+          <stage><rs ref="#don_manuel">Don Manuel</rs> und <rs ref="#erster_chor">der erste Chor</rs>.</stage>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Verwundrungsvoll, o <rs ref="#don_manuel">Herr</rs>, betracht ich <rs ref="#don_manuel">dich</rs>,</l>
+              <l>Und fast muß ich <rs ref="#don_manuel">dich</rs> heute ganz verkennen.</l>
+              <l>Mit karger Rede kaum erwiderst <rs ref="#don_manuel">du</rs></l>
+              <l><rs ref="#don_cesar">Des Bruders</rs> Liebesworte, <rs ref="#don_cesar">der</rs> gutmeinend</l>
+              <l>Mit offnem Herzen <rs ref="#don_manuel">dir</rs> entgegenkommt.</l>
+              <l>Versunken in <rs ref="#don_manuel">dich</rs> selber stehst <rs ref="#don_manuel">du</rs> da</l>
+              <l>Gleich einem Träumenden, als wäre nur</l>
+              <l><rs ref="#don_manuel">Dein</rs> Leib zugegen und <rs ref="#Don-Manuels-Seele">die Seele</rs> fern.</l>
+              <l>Wer so <rs ref="#don_manuel">dich</rs> sähe, möchte leicht der Kälte</l>
+              <l><rs ref="#don_manuel">Dich</rs> zeihn und stolz unfreundlichen Gemüts,</l>
+              <l>Ich aber will <rs ref="#don_manuel">dich</rs> drum nicht fühllos schelten,</l>
+              <l>Denn heiter blickst <rs ref="#don_manuel">du</rs> wie ein Glücklicher</l>
+              <l>Um <rs ref="#don_manuel">dich</rs> und Lächeln spielt um <rs ref="#don_manuel">deine</rs> Wangen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Was soll ich sagen? Was erwidern? Mag</l>
+              <l><rs ref="#don_cesar">Der Bruder</rs> Worte finden! <rs ref="#don_cesar">Ihn</rs> ergreift</l>
+              <l>Ein überraschend neu Gefühl, <rs ref="#don_cesar">er</rs> sieht</l>
+              <l><rs ref="#der-Bruderhass">Den alten Haß</rs> aus <rs ref="#Don-Cesars-Brust"><rs ref="#don_cesar">seinem</rs> Busen</rs> schwinden,</l>
+              <l>Und wundernd fühlt <rs ref="#don_cesar">er</rs> <rs ref="#Don-Cesars-Herz"><rs ref="#don_cesar">sein</rs> verwandelt Herz</rs>.</l>
+              <l>Ich – habe keinen Haß mehr mitgebracht,</l>
+              <l>Kaum weiß ich noch, warum <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> blutig stritten.</l>
+              <l>Denn über allen irdschen Dingen hoch</l>
+              <l>Schwebt mir auf Freudenfittichen <rs ref="#Don-Manuels-Seele">die Seele</rs>,</l>
+              <l>Und in <rs ref="#dem-Glanzesmeer,-das-mich-umfängt">dem Glanzesmeer, <rs ref="#dem-Glanzesmeer,-das-mich-umfängt">das</rs> mich umfängt</rs>,</l>
+              <l>Sind alle Wolken mir und finstre Falten</l>
+              <l><rs ref="#das-Leben">Des Lebens</rs> ausgeglättet und verschwunden.</l>
+              <l><pb n="843"/> – Ich sehe <rs ref="#eine-geräumige-Säulenhalle">diese Hallen, diese Säle</rs></l>
+              <l>Und denke mir das freudige Erschrecken</l>
+              <l><rs ref="#beatrice">Der überraschten, hocherstaunten Braut</rs>,</l>
+              <l>Wenn ich als Fürstin <rs ref="#beatrice">sie</rs> und Herrscherin</l>
+              <l>Durch dieses Hauses Pforten führen werde.</l>
+              <l>– Noch liebt <rs ref="#beatrice">sie</rs> nur <rs ref="#don_manuel">den Liebenden</rs>! <rs ref="#don_manuel">Dem Fremdling,</l>
+              <l>Dem Namenlosen</rs> hat <rs ref="#beatrice">sie</rs> <rs ref="#beatrice">sich</rs> gegeben.</l>
+              <l>Nicht ahnet <rs ref="#beatrice">sie</rs>, daß es <rs ref="#don_manuel">Don Manuel,</l>
+              <l><rs ref="#Messina">Messinas</rs> Fürst</rs> ist, <rs ref="#don_manuel">der</rs> die goldne Binde</l>
+              <l><rs ref="#beatrice">Ihr</rs> um die schöne Stirne flechten wird.</l>
+              <l>Wie süß <rs ref="#das-Geliebte-zu-beglücken---------------Mit-ungehoffter-Größe-Glanz-und-Schein">ists</rs>, <rs ref="#das-Geliebte-zu-beglücken---------------Mit-ungehoffter-Größe-Glanz-und-Schein"><rs ref="#beatrice">das Geliebte</rs> zu beglücken</l>
+              <l>Mit ungehoffter Größe Glanz und Schein</rs>!</l>
+              <l>Längst spart ich mir <rs ref="#dies-höchste-der-Entzücken">dies höchste der Entzücken</rs>,</l>
+              <l>Wohl bleibt es stets <rs ref="#dies-höchste-der-Entzücken">sein</rs> höchster Schmuck allein,</l>
+              <l>Doch auch die Hoheit darf <rs ref="#das-Schöne">das Schöne</rs> schmücken,</l>
+              <l>Der goldne Reif erhebt den Edelstein.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Ich höre <rs ref="#don_manuel">dich, o Herr</rs>, vom langen Schweigen</l>
+              <l>Zum erstenmal den stummen Mund entsiegeln.</l>
+              <l>Mit Späheraugen folgt ich <rs ref="#don_manuel">dir</rs> schon längst,</l>
+              <l>Ein seltsam wunderbar Geheimnis ahnend,</l>
+              <l>Doch nicht erkühnt ich mich, was <rs ref="#don_manuel">du</rs> vor mir</l>
+              <l>In tiefes Dunkel hüllst, <rs ref="#don_manuel">dir</rs> abzufragen.</l>
+              <l><rs ref="#don_manuel">Dich</rs> reizt nicht mehr der Jagden muntre Lust,</l>
+              <l>Der Rosse Wettlauf und des Falken Sieg.</l>
+              <l>Aus der Gefährten Aug verschwindest <rs ref="#don_manuel">du</rs>,</l>
+              <l>Sooft <rs ref="#die-Sonne">die Sonne</rs> sinkt zum Himmelsrande,</l>
+              <l>Und keiner <rs ref="#erster_chor"><rs ref="#erster_chor">unsers</rs> Chors, <rs ref="#erster_chor">die</rs> <rs ref="#erster_chor">wir</rs> <rs ref="#don_manuel">dich</rs> sonst</l>
+              <l>In jeder Kriegs- und Jagdgefahr begleiten</rs>,</l>
+              <l>Mag <rs ref="#don_manuel">deines</rs> stillen Pfads Gefährte sein.</l>
+              <l>Warum verschleierst <rs ref="#don_manuel">du</rs> bis diesen Tag</l>
+              <l><rs ref="#Don-Manuels-Glück"><rs ref="#don_manuel">Dein</rs> Liebesglück</rs> mit dieser neidschen Hülle?</l>
+              <l>Was zwingt <rs ref="#don_manuel">den Mächtigen</rs>, daß <rs ref="#don_manuel">er</rs> verhehle?</l>
+              <l>Denn <rs ref="#Furcht">Furcht</rs> ist fern von <rs ref="#Don-Manuels-Seele"><rs ref="#don_manuel">deiner</rs> großen Seele</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Geflügelt ist <rs ref="#das-Glück">das Glück</rs> und schwer zu binden,</l>
+              <l>Nur in verschloßner Lade <rs ref="#das-Glück">wirds</rs> bewahrt,</l>
+              <l>Das Schweigen ist zum Hüter <rs ref="#das-Glück">ihm</rs> gesetzt,</l>
+              <l><pb n="844"/> Und rasch entfliegt <rs ref="#das-Glück">es</rs>, wenn Geschwätzigkeit</l>
+              <l>Voreilig wagt, die Decke zu erheben.</l>
+              <l>Doch jetzt, dem Ziel so nahe, darf ich wohl</l>
+              <l><rs ref="#Das-lange-Schweigen-brechen">Das lange Schweigen brechen</rs> und ich <rs ref="#Das-lange-Schweigen-brechen">wills</rs>.</l>
+              <l>Denn mit der nächsten Morgensonne Strahl</l>
+              <l>Ist <rs ref="#beatrice">sie</rs> die Meine, und <rs ref="#Don-Cesars-Neid"><rs ref="#don_cesar">des Dämons</rs> Neid</rs></l>
+              <l>Wird keine Macht mehr haben über mich.</l>
+              <l>Nicht mehr verstohlen werd ich zu <rs ref="#beatrice">ihr</rs> schleichen,</l>
+              <l>Nicht rauben mehr <rs ref="#die-Liebe">der Liebe</rs> goldne Frucht,</l>
+              <l>Nicht mehr die Freude haschen auf der Flucht,</l>
+              <l>Das <emph>Morgen</emph> wird dem schönen <emph>Heute</emph> gleichen,</l>
+              <l>Nicht <rs ref="#Blitzen">Blitzen</rs> gleich, <rs ref="#Blitzen">die</rs> schnell vorüberschießen,</l>
+              <l>Und plötzlich von der Nacht verschlungen sind,</l>
+              <l><rs ref="#Don-Manuels-Glück">Mein Glück</rs> wird sein, gleichwie des Baches Fließen,</l>
+              <l>Gleichwie der Sand des Stundenglases rinnt!</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>So nenne <rs ref="#beatrice">sie</rs> <rs ref="#erster_chor">uns</rs>, <rs ref="#don_manuel">Herr</rs>, <rs ref="#beatrice">die</rs> <rs ref="#don_manuel">dich</rs> im stillen</l>
+              <l>Beglückt, daß <rs ref="#erster_chor">wir</rs> <rs ref="#don_manuel">dein</rs> Los beneidend rühmen,</l>
+              <l>Und würdig ehren <rs ref="#beatrice"><rs ref="#don_manuel"><rs ref="#erster_chor">unsers</rs> Fürsten</rs> Braut</rs>.</l>
+              <l>Sag an, <emph>wo</emph> <rs ref="#don_manuel">du</rs> <rs ref="#beatrice">sie</rs> fandest, <emph>wo</emph> verbirgst,</l>
+              <l>In welches Orts verschwiegner Heimlichkeit?</l>
+              <l>Denn <rs ref="#erster_chor">wir</rs> durchziehen schwärmend weit und breit</l>
+              <l>Die Insel auf der Jagd verschlungnen Pfaden,</l>
+              <l>Doch keine Spur hat <rs ref="#erster_chor">uns</rs> <rs ref="#Don-Manuels-Glück"><rs ref="#don_manuel">dein</rs> Glück</rs> verraten,</l>
+              <l>So daß ich bald mich überreden möchte,</l>
+              <l>Es hülle <rs ref="#beatrice">sie</rs> <rs ref="#ein-Zaubernebel">ein Zaubernebel</rs> ein.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#ein-Zaubernebel">Den Zauber</rs> lös ich auf, denn heute noch</l>
+              <l>Soll, <rs ref="#beatrice">was verborgen war</rs>, <rs ref="#die-Sonne">die Sonne</rs> schauen.</l>
+              <l>Vernehmet denn und hört, wie mir geschah.</l>
+              <rs ref="#Fünf-Monde-sinds,-es-herrschte-noch-im-Lande---------------Des-Vaters-Macht,-und-beugete-gewaltsam---------------Der-Jugend-starren-Nacken-in-das-Joch-–---------------Nichts-kannt-ich-als-der-Waffen-wilde-Freuden,---------------Und-als-des-Weidwerks-kriegerische-Lust.---------------–-Wir-hatten-schon-den-ganzen-Tag-gejagt---------------Entlang-des-Waldgebirges-–-da-geschahs,---------------Daß-die-Verfolgung-einer-weißen-Hindin----------------Mich-weit-hinweg-aus-eurem-Haufen-riß.---------------Das-scheue-Tier-floh-durch-des-Tales-Krümmen,---------------Durch-Busch-und-Kluft-und-bahnenlos-Gestrüpp,---------------Auf-Wurfes-Weite-sah-ichs-stets-vor-mir,---------------Doch-konnt-ichs-nicht-erreichen-noch-erzielen,---------------Bis-es-zuletzt-an-eines-Gartens-Pforte-mir---------------Verschwand.-Schnell-von-dem-Roß-herab-mich-werfend---------------Dring-ich-ihm-nach,-schon-mit-dem-Speere-zielend,---------------Da-seh-ich-wundernd-das-erschrockne-Tier---------------Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.---------------Bewegungslos-starr-ich-das-Wunder-an,---------------Den-Jagdspieß-in-der-Hand,-zum-Wurf-ausholend-–---------------Sie-aber-blickt-mit-großen-Augen-flehend---------------Mich-an,-so-stehn-wir-schweigend-gegeneinander-–---------------Wie-lange-Frist,-das-kann-ich-nicht-ermessen,---------------Denn-alles-Maß-der-Zeiten-war-vergessen.---------------Tief-in-die-Seele-drückt-sie-mir-den-Blick,---------------Und-umgewandelt-schnell-ist-mir-das-Herz.---------------–-Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert,-möge-niemand-mich-befragen,---------------Denn-wie-ein-Traumbild-liegt-es-hinter-mir---------------Aus-früher-Kindheit-dämmerhellen-Tagen,---------------An-meiner-Brust-fühlt-ich-die-ihre-schlagen,---------------Als-die-Besinnungskraft-mir-wiederkam.---------------Da-hört-ich-einer-Glocke-helles-Läuten,---------------Den-Ruf-zur-Hora-schien-es-zu-bedeuten,---------------Und-schnell-wie-Geister-in-die-Luft-verwehen,---------------Entschwand-sie-mir-und-ward-nicht-mehr-gesehen."><l>Fünf Monde sinds, es herrschte noch <rs ref="#Messina">im Lande</rs></l>
+              <l><rs ref="#die-Macht-des-Fürsten"><rs ref="#Isabellas-Gatte,-der-Fürst">Des Vaters</rs> Macht</rs>, und beugete gewaltsam</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Der Jugend</rs> starren Nacken in das Joch –</l>
+              <l>Nichts kannt ich als der Waffen wilde Freuden,</l>
+              <l>Und als des Weidwerks kriegerische Lust.</l>
+              <l>– Wir hatten schon den ganzen Tag gejagt</l>
+              <l>Entlang des Waldgebirges – da geschahs,</l>
+              <l>Daß die Verfolgung <rs ref="#einer-weißen-Hindin">einer weißen Hindin</rs></l>
+              <l><pb n="845"/> Mich weit hinweg aus <rs ref="#erster_chor">eurem</rs> Haufen riß.</l>
+              <l><rs ref="#einer-weißen-Hindin">Das scheue Tier</rs> floh durch des Tales Krümmen,</l>
+              <l>Durch Busch und Kluft und bahnenlos Gestrüpp,</l>
+              <l>Auf Wurfes Weite sah <rs ref="#einer-weißen-Hindin">ichs</rs> stets vor mir,</l>
+              <l>Doch konnt <rs ref="#einer-weißen-Hindin">ichs</rs> nicht erreichen noch erzielen,</l>
+              <l>Bis <rs ref="#einer-weißen-Hindin">es</rs> zuletzt an <rs ref="#der-Klostergarten">eines Gartens</rs> Pforte mir</l>
+              <l>Verschwand. Schnell von dem Roß herab mich werfend</l>
+              <l>Dring ich <rs ref="#einer-weißen-Hindin">ihm</rs> nach, schon mit dem Speere zielend,</l>
+              <l>Da seh ich wundernd <rs ref="#einer-weißen-Hindin">das erschrockne Tier</rs></l>
+              <rs ref="#Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost."><l>Zu <rs ref="#Beatrices-Füße"><rs ref="#beatrice">einer Nonne</rs> Füßen</rs> zitternd liegen,</l>
+              <l><rs ref="#beatrice">Die</rs> es mit <rs ref="#Beatrices-Hände">zarten Händen</rs> schmeichelnd kost.</l></rs>
+              <l>Bewegungslos starr ich <rs ref="#Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.">das Wunder</rs> an,</l>
+              <l>Den Jagdspieß in der Hand, zum Wurf ausholend –</l>
+              <l><rs ref="#beatrice">Sie</rs> aber blickt mit <rs ref="#Beatrices-Augen">großen Augen</rs> flehend</l>
+              <l>Mich an, so stehn <rs ref="#don_manuel-/-beatrice">wir</rs> schweigend gegeneinander –</l>
+              <l>Wie lange Frist, das kann ich nicht ermessen,</l>
+              <l>Denn alles Maß der Zeiten war vergessen.</l>
+              <l>Tief in <rs ref="#Don-Manuels-Seele">die Seele</rs> drückt <rs ref="#beatrice">sie</rs> mir <rs ref="#Beatrices-Blick">den Blick</rs>,</l>
+              <l>Und umgewandelt schnell ist mir <rs ref="#Don-Manuels-Herz">das Herz</rs>.</l>
+              <l>– <rs ref="#Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert">Was ich nun sprach, was <rs ref="#beatrice">die Holdselge</rs> mir</l>
+              <l>Erwidert</rs>, möge niemand mich befragen,</l>
+              <l>Denn wie ein Traumbild liegt <rs ref="#Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert">es</rs> hinter mir</l>
+              <l>Aus früher Kindheit dämmerhellen Tagen,</l>
+              <l>An <rs ref="#Don-Manuels-Brust">meiner Brust</rs> fühlt ich <rs ref="#Beatrices-Brust">die ihre</rs> schlagen,</l>
+              <l>Als die Besinnungskraft mir wiederkam.</l>
+              <l>Da hört ich <rs ref="#einer-Glocke-helles-Läuten">einer Glocke helles Läuten</rs>,</l>
+              <l>Den Ruf <rs ref="#die-Hora">zur Hora</rs> schien <rs ref="#einer-Glocke-helles-Läuten">es</rs> zu bedeuten,</l>
+              <l>Und schnell wie Geister in die Luft verwehen,</l>
+              <l>Entschwand <rs ref="#beatrice">sie</rs> mir und ward nicht mehr gesehen.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Mit Furcht, o <rs ref="#don_manuel">Herr</rs>, erfüllt mich <rs ref="#Fünf-Monde-sinds,-es-herrschte-noch-im-Lande---------------Des-Vaters-Macht,-und-beugete-gewaltsam---------------Der-Jugend-starren-Nacken-in-das-Joch-–---------------Nichts-kannt-ich-als-der-Waffen-wilde-Freuden,---------------Und-als-des-Weidwerks-kriegerische-Lust.---------------–-Wir-hatten-schon-den-ganzen-Tag-gejagt---------------Entlang-des-Waldgebirges-–-da-geschahs,---------------Daß-die-Verfolgung-einer-weißen-Hindin----------------Mich-weit-hinweg-aus-eurem-Haufen-riß.---------------Das-scheue-Tier-floh-durch-des-Tales-Krümmen,---------------Durch-Busch-und-Kluft-und-bahnenlos-Gestrüpp,---------------Auf-Wurfes-Weite-sah-ichs-stets-vor-mir,---------------Doch-konnt-ichs-nicht-erreichen-noch-erzielen,---------------Bis-es-zuletzt-an-eines-Gartens-Pforte-mir---------------Verschwand.-Schnell-von-dem-Roß-herab-mich-werfend---------------Dring-ich-ihm-nach,-schon-mit-dem-Speere-zielend,---------------Da-seh-ich-wundernd-das-erschrockne-Tier---------------Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.---------------Bewegungslos-starr-ich-das-Wunder-an,---------------Den-Jagdspieß-in-der-Hand,-zum-Wurf-ausholend-–---------------Sie-aber-blickt-mit-großen-Augen-flehend---------------Mich-an,-so-stehn-wir-schweigend-gegeneinander-–---------------Wie-lange-Frist,-das-kann-ich-nicht-ermessen,---------------Denn-alles-Maß-der-Zeiten-war-vergessen.---------------Tief-in-die-Seele-drückt-sie-mir-den-Blick,---------------Und-umgewandelt-schnell-ist-mir-das-Herz.---------------–-Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert,-möge-niemand-mich-befragen,---------------Denn-wie-ein-Traumbild-liegt-es-hinter-mir---------------Aus-früher-Kindheit-dämmerhellen-Tagen,---------------An-meiner-Brust-fühlt-ich-die-ihre-schlagen,---------------Als-die-Besinnungskraft-mir-wiederkam.---------------Da-hört-ich-einer-Glocke-helles-Läuten,---------------Den-Ruf-zur-Hora-schien-es-zu-bedeuten,---------------Und-schnell-wie-Geister-in-die-Luft-verwehen,---------------Entschwand-sie-mir-und-ward-nicht-mehr-gesehen."><rs ref="#don_manuel">dein</rs> Bericht</rs>,</l>
+              <l>Raub hast <rs ref="#don_manuel">du</rs> an dem Göttlichen begangen,</l>
+              <l><rs ref="#der-Himmel-(religiös)">Des Himmels</rs> Braut berührt mit sündigem Verlangen,</l>
+              <l>Denn furchtbar heilig ist <rs ref="#das-Kloster">des Klosters</rs> Pflicht.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Jetzt hatt ich <emph>eine</emph> Straße nur zu wandeln,</l>
+              <l>Das unstet schwanke Sehnen war gebunden,</l>
+              <l><rs ref="#Don-Manuels-Leben">Dem Leben</rs> war <rs ref="#Don-Manuels-Leben">sein</rs> Inhalt ausgefunden.</l>
+              <l><pb n="846"/> Und wie <rs ref="#der-Pilger">der Pilger</rs> <rs ref="#der-Pilger">sich</rs> nach Osten wendet,</l>
+              <l>Wo <rs ref="#der-Pilger">ihm</rs> die Sonne der Verheißung glänzt,</l>
+              <l>So kehrte sich mein Hoffen und mein Sehnen</l>
+              <l><rs ref="#beatrice">Dem <emph>einen</emph> hellen Himmelspunkte</rs> zu.</l>
+              <l>Kein Tag entstieg <rs ref="#das-Meer">dem Meer</rs> und sank hinunter,</l>
+              <l>Der nicht <rs ref="#don_manuel-/-beatrice">zwei glücklich Liebende</rs> vereinte,</l>
+              <l>Geflochten still war <rs ref="#der-Bund-zwischen-den-Herzen-von-DonManuel-und-Beatrice"><rs ref="#don_manuel-/-beatrice">unsrer</rs> Herzen Bund</rs>,</l>
+              <l>Nur der allsehnde Äther über <rs ref="#don_manuel-/-beatrice">uns</rs></l>
+              <l>War <rs ref="#Don-Manuels-Glück">des verschwiegnen Glücks</rs> vertrauter Zeuge,</l>
+              <l>Es brauchte weiter keines Menschen Dienst.</l>
+              <l>Das waren goldne Stunden, selge Tage!</l>
+              <l>– Nicht Raub am Himmel war <rs ref="#Don-Manuels-Glück">mein Glück</rs>, denn noch</l>
+              <l>Durch kein Gelübde war <rs ref="#Beatrices-Herz">das Herz</rs> gefesselt,</l>
+              <l><rs ref="#Beatrices-Herz">Das</rs> <rs ref="#Beatrices-Herz">sich</rs> auf ewig mir zu eigen gab.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>So war <rs ref="#das-Kloster">das Kloster</rs> eine Freistatt nur</l>
+              <l>Der zarten Jugend, nicht <rs ref="#Beatrices-Leben">des Lebens</rs> Grab?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-heilig-Pfand">Ein heilig Pfand</rs> ward <rs ref="#beatrice">sie</rs> <rs ref="#das-Kloster">dem Gotteshaus</rs></l>
+              <l>Vertraut, <rs ref="#Ein-heilig-Pfand">das</rs> <rs ref="#man-(generic)">man</rs> zurück einst werde fodern.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Doch welches Blutes rühmt <rs ref="#beatrice">sie</rs> <rs ref="#beatrice">sich</rs> zu sein?</l>
+              <l>Denn nur <rs ref="#das-Edle">vom Edeln</rs> kann <rs ref="#das-Edle">das Edle</rs> stammen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#beatrice">Sich</rs> selber ein Geheimnis wuchs <rs ref="#beatrice">sie</rs> auf,</l>
+              <l>Nicht kennt <rs ref="#beatrice">sie</rs> <rs ref="#Beatrices-Geschlecht/Herkunft"><rs ref="#beatrice">ihr</rs> Geschlecht</rs> noch Vaterland.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Und leitet keine dunkle Spur zurück</l>
+              <l>Zu <rs ref="#beatrice">ihres</rs> Daseins unbekannten Quellen?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Daß <rs ref="#beatrice">sie</rs> von edelm Blut, gesteht <rs ref="#diego">der Mann,</l>
+              <l>Der einzge, <rs ref="#diego">der</rs> um <rs ref="#Beatrices-Geschlecht/Herkunft"><rs ref="#beatrice">ihre</rs> Herkunft</rs> weiß</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Wer ist <rs ref="#diego">der Mann</rs>? Nichts halte mir zurück,</l>
+              <l>Denn wissend nur kann ich <rs ref="#don_manuel">dir</rs> nützlich raten.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#diego">Ein alter Diener</rs> naht von Zeit zu Zeit,</l>
+              <l>Der einzge Bote zwischen <rs ref="#beatrice">Kind</rs> und <rs ref="#isabella">Mutter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#diego">diesem Alten</rs> hast <rs ref="#don_manuel">du</rs> nichts erforscht?</l>
+              <l>Feigherzig und geschwätzig ist das Alter.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Nie wagt <rs ref="#einer-Neugier-nachzugeben,---------------Die-mein-verschwiegnes-Glück-gefährden-konnte">ichs</rs>, <rs ref="#einer-Neugier-nachzugeben,---------------Die-mein-verschwiegnes-Glück-gefährden-konnte"><rs ref="#einer-Neugier">einer Neugier</rs> nachzugeben,</l>
+              <l><rs ref="#einer-Neugier">Die</rs> <rs ref="#Don-Manuels-Glück">mein verschwiegnes Glück</rs> gefährden konnte</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Was aber war der Inhalt <rs ref="#diego">seiner</rs> Worte,</l>
+              <l>Wenn <rs ref="#diego">er</rs> <rs ref="#beatrice">die Jungfrau</rs> zu besuchen kam?</l>
+              <pb n="847"/>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Auf <rs ref="#eine-Zeit,-die-alles-lösen-werde">eine Zeit, <rs ref="#eine-Zeit,-die-alles-lösen-werde">die</rs> <rs ref="#alles-(Beatrices-Trennung-von-ihrer-Familie)">alles</rs> lösen werde</rs>,</l>
+              <l>Hat <rs ref="#diego">er</rs> von Jahr zu Jahren <rs ref="#beatrice">sie</rs> vertröstet.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#eine-Zeit,-die-alles-lösen-werde">diese Zeit, <rs ref="#eine-Zeit,-die-alles-lösen-werde">die</rs> <rs ref="#alles-(Beatrices-Trennung-von-ihrer-Familie)">alles</rs> lösen soll</rs>,</l>
+              <l>Hat <rs ref="#diego">er</rs> <rs ref="#eine-Zeit,-die-alles-lösen-werde">sie</rs> näher deutend nicht bezeichnet?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Seit wenig Monden drohete <rs ref="#diego">der Greis</rs></l>
+              <l>Mit einer nahen Ändrung <rs ref="#Beatrices-Schicksal"><rs ref="#beatrice">ihres</rs> Schicksals</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#diego">Er</rs> drohte, sagst <rs ref="#don_manuel">du</rs>? Also fürchtest <rs ref="#don_manuel">du</rs></l>
+              <l><rs ref="#Ein-Licht">Ein Licht</rs> zu schöpfen, <rs ref="#Ein-Licht">das</rs> <rs ref="#don_manuel">dich</rs> nicht erfreut?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ein jeder Wechsel schreckt den Glücklichen,</l>
+              <l>Wo kein Gewinn zu hoffen, droht Verlust.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Doch konnte <rs ref="#die-Entdeckung,-die-du-fürchtest">die Entdeckung, <rs ref="#die-Entdeckung,-die-du-fürchtest">die</rs> <rs ref="#don_manuel">du</rs> fürchtest</rs>,</l>
+              <l>Auch <rs ref="#don_manuel">deiner</rs> Liebe günstge Zeichen bringen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Auch stürzen konnte <rs ref="#die-Entdeckung,-die-du-fürchtest">sie</rs> <rs ref="#Don-Manuels-Glück">mein Glück</rs>, drum wählt ich</l>
+              <l><rs ref="#Das-Sicherste,-ihr-schnell-zuvorzukommen">Das Sicherste, <rs ref="#die-Entdeckung,-die-du-fürchtest">ihr</rs> schnell zuvorzukommen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Wie <rs ref="#Das-Sicherste,-ihr-schnell-zuvorzukommen">das</rs>, o <rs ref="#don_manuel">Herr</rs>? Mit <rs ref="#Furcht">Furcht</rs> erfüllst <rs ref="#don_manuel">du</rs> mich,</l>
+              <l>Und eine rasche Tat muß ich besorgen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Schon seit den letzten Monden ließ <rs ref="#diego">der Greis</rs></l>
+              <l><rs ref="#Geheimnisvolle-Winke">Geheimnisvolle Winke</rs> <rs ref="#Geheimnisvolle-Winke">sich</rs> entfallen,</l>
+              <l>Daß nicht mehr ferne sei <rs ref="#er-Tag-an-dem-Beatrice-zu-ihrer-Familie-zurückkehrt">der Tag, <rs ref="#er-Tag-an-dem-Beatrice-zu-ihrer-Familie-zurückkehrt">der</rs> <rs ref="#beatrice">sie</rs></l>
+              <l><rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">Den <rs ref="#beatrice">Ihrigen</rs></rs> zurückegeben werde</rs>.</l>
+              <l>Seit gestern aber sprach <rs ref="#Daß-mit-der-nächsten-Morgensonne-Strahl"><rs ref="#diego">ers</rs></rs> deutlich aus,</l>
+              <l><rs ref="#Daß-mit-der-nächsten-Morgensonne-Strahl">Daß mit <rs ref="#der-nächsten-Morgensonne">der nächsten Morgensonne</rs> Strahl</rs> –</l>
+              <l><rs ref="#der-nächsten-Morgensonne">Dies</rs> aber ist <rs ref="#der-Tag,-der-heute-leuchtet">der Tag, <rs ref="#der-Tag,-der-heute-leuchtet">der</rs> heute leuchtet</rs> –</l>
+              <l><rs ref="#Beatrices-Schicksal"><rs ref="#beatrice">Ihr</rs> Schicksal</rs> <rs ref="#Beatrices-Schicksal">sich</rs> entscheidend werde lösen.</l>
+              <l>Kein Augenblick war zu verlieren, schnell</l>
+              <l>War mein Entschluß gefaßt und schnell vollstreckt.</l>
+              <rs ref="#In-dieser-Nacht-raubt-ich-die-Jungfrau-weg---------------Und-brachte-sie-verborgen-nach-Messina."><l>In dieser Nacht raubt ich <rs ref="#beatrice">die Jungfrau</rs> weg</l>
+              <l>Und brachte <rs ref="#beatrice">sie</rs> verborgen nach <rs ref="#Messina">Messina</rs>.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <rs ref="#Welch-kühn-verwegen-räuberische-Tat!"><l>Welch <rs ref="#In-dieser-Nacht-raubt-ich-die-Jungfrau-weg---------------Und-brachte-sie-verborgen-nach-Messina.">kühn verwegen-räuberische Tat</rs>!</l></rs>
+              <l>– Verzeih, o <rs ref="#don_manuel">Herr</rs>, <rs ref="#Welch-kühn-verwegen-räuberische-Tat!">die freie Tadelrede</rs>!</l>
+              <l>Doch <rs ref="#Welch-kühn-verwegen-räuberische-Tat!">solches</rs> ist des weisern Alters Recht,</l>
+              <l>Wenn <rs ref="#die-Jugend">sich</rs> <rs ref="#die-Jugend">die rasche Jugend</rs> kühn vergißt.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Unfern <rs ref="#das-Kloster">vom Kloster <rs ref="#beatrice">der Barmherzigen</rs></rs>,</l>
+              <l>In <rs ref="#der-Klostergarten">eines Gartens</rs> abgeschiedner Stille,</l>
+              <l><rs ref="#der-Klostergarten">Der</rs> von der Neugier nicht betreten wird,</l>
+              <l>Trennt ich mich eben jetzt von <rs ref="#beatrice">ihr</rs>, hieher</l>
+              <l><pb n="848"/> Zu <rs ref="#die-Versöhnung-zwischen-den-Brüdern">der Versöhnung mit <rs ref="#don_cesar">dem Bruder</rs></rs> eilend.</l>
+              <l>In banger Furcht ließ ich <rs ref="#beatrice">sie</rs> dort allein</l>
+              <l>Zurück, <rs ref="#beatrice">die</rs> <rs ref="#beatrice">sich</rs> nichts weniger erwartet,</l>
+              <l>Als in dem Glanz <rs ref="#isabella">der Fürstin</rs> eingeholt</l>
+              <l>Und auf erhabnem Fußgestell des Ruhms</l>
+              <l>Vor ganz <rs ref="#Messina">Messina</rs> ausgestellt zu werden.</l>
+              <l>Denn anders nicht soll <rs ref="#beatrice">sie</rs> mich wiedersehn,</l>
+              <l>Als in der Größe Schmuck und Staat, und festlich</l>
+              <l>Von <rs ref="#erster_chor"><rs ref="#erster_chor">eurem</rs> ritterlichen Chor</rs> umgeben.</l>
+              <l>Nicht will ich, daß <rs ref="#beatrice"><rs ref="#don_manuel">Don Manuels</rs> Verlobte</rs></l>
+              <l>Als eine Heimatlose, Flüchtige</l>
+              <l><rs ref="#isabella">Der Mutter</rs> nahen soll, <rs ref="#isabella">die</rs> ich <rs ref="#beatrice">ihr</rs> gebe,</l>
+              <l>Als eine Fürstin fürstlich will ich <rs ref="#beatrice">sie</rs></l>
+              <l>Einführen in <rs ref="#das-fürstliche-Schloss-/-Palast">die Hofburg meiner Väter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <l>Gebiete, Herr! <rs ref="#erster_chor">Wir</rs> harren <rs ref="#don_manuel">deines</rs> Winks.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ich habe mich aus <rs ref="#beatrice">ihrem</rs> Arm gerissen,</l>
+              <l>Doch nur mit <rs ref="#beatrice">ihr</rs> werd ich beschäftigt sein.</l>
+              <rs ref="#Denn-nach-dem-Bazar-sollt-ihr-mich-anjetzt---------------Begleiten,-wo-die-Mohren-zum-Verkauf---------------Ausstellen,-was-das-Morgenland-erzeugt---------------An-edelm-Stoff-und-feinem-Kunstgebild.---------------Erst-wählet-aus-die-zierlichen-Sandalen,---------------Der-zartgeformten-Füße-Schutz-und-Zier,---------------Dann-zum-Gewande-wählt-das-Kunstgewebe---------------Des-Indiers,-hellglänzend-wie-der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht-–---------------Und-leicht-umfließt-es-wie-der-Morgenduft---------------Den-zarten-Bau-der-jugendlichen-Glieder.---------------Von-Purpur-sei,-mit-zarten-Fäden-Goldes---------------Durchwirkt-der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft.---------------Dazu-den-Mantel-wählt,-von-glänzender---------------Seide-gewebt,-in-bleichem-Purpur-schimmernd,---------------Über-der-Achsel-heft-ihn-eine-goldne---------------Zikade-–-Auch-die-Spangen-nicht-vergeßt,---------------Die-schönen-Arme-reizend-zu-umzirken,----------------Auch-nicht-der-Perlen-und-Korallen-Schmuck,---------------Der-Meeresgöttin-wundersame-Gaben.---------------Um-die-Locken-winde-sich-ein-Diadem,---------------Gefüget-aus-dem-köstlichsten-Gestein,---------------Worin-der-feurig-glühende-Rubin---------------Mit-dem-Smaragd-die-Farbenblitze-kreuze,---------------Oben-im-Haarschmuck-sei-der-lange-Schleier---------------Befestigt,-der-die-glänzende-Gestalt---------------Gleich-einem-hellen-Lichtgewölk-umfließe,---------------Und-mit-der-Myrte-jungfräulichem-Kranze---------------Vollende-krönend-sich-das-schöne-Ganze."><l>Denn nach <rs ref="#dem-Bazar">dem Bazar</rs> sollt <rs ref="#erster_chor">ihr</rs> mich anjetzt</l>
+              <l>Begleiten, <rs ref="#dem-Bazar">wo</rs> die Mohren zum Verkauf</l>
+              <l>Ausstellen, was das Morgenland erzeugt</l>
+              <l>An edelm Stoff und feinem Kunstgebild.</l>
+              <l>Erst wählet aus die zierlichen Sandalen,</l>
+              <l><rs ref="#Beatrices-Füße">Der zartgeformten Füße</rs> Schutz und Zier,</l>
+              <l>Dann zum Gewande wählt <rs ref="#das-Kunstgewebe---------------Des-Indiers">das Kunstgewebe</l>
+              <l>Des Indiers</rs>, hellglänzend wie <rs ref="#der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht">der Schnee</l>
+              <l><rs ref="#Der-Ätna">Des Ätna</rs>, <rs ref="#der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht">der</rs> der nächste ist dem Licht</rs> –</l>
+              <l>Und leicht umfließt <rs ref="#das-Kunstgewebe---------------Des-Indiers">es</rs> wie der Morgenduft</l>
+              <l><rs ref="#Beatrices-Körper">Den zarten Bau <rs ref="#Beatrices-Glieder">der jugendlichen Glieder</rs></rs>.</l>
+              <l>Von Purpur sei, mit zarten Fäden Goldes</l>
+              <l>Durchwirkt <rs ref="#der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft">der Gürtel, <rs ref="#der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft">der</rs> die Tunika</l>
+              <l>Unter dem züchtgen Busen reizend knüpft</rs>.</l>
+              <l>Dazu <rs ref="#den-Mantel">den Mantel</rs> wählt, von glänzender</l>
+              <l>Seide gewebt, in bleichem Purpur schimmernd,</l>
+              <l>Über der Achsel heft <rs ref="#den-Mantel">ihn</rs> eine goldne</l>
+              <l>Zikade – Auch die Spangen nicht vergeßt,</l>
+              <l><rs ref="#Beatrices-Arme">Die schönen Arme</rs> reizend zu umzirken,</l>
+              <l><pb n="849"/> Auch nicht der Perlen und Korallen Schmuck,</l>
+              <l>Der Meeresgöttin wundersame Gaben.</l>
+              <l>Um die Locken winde <rs ref="#ein-Diadem">sich</rs> <rs ref="#ein-Diadem">ein Diadem</rs>,</l>
+              <l>Gefüget aus dem köstlichsten Gestein,</l>
+              <l>Worin der feurig glühende Rubin</l>
+              <l>Mit dem Smaragd die Farbenblitze kreuze,</l>
+              <l>Oben <rs ref="#ein-Diadem">im Haarschmuck</rs> sei <rs ref="#der-lange-Schleier">der lange Schleier</rs></l>
+              <l>Befestigt, <rs ref="#der-lange-Schleier">der</rs> <rs ref="#Beatrices-Körper">die glänzende Gestalt</rs></l>
+              <l>Gleich einem hellen Lichtgewölk umfließe,</l>
+              <l>Und mit der Myrte jungfräulichem Kranze</l>
+              <l>Vollende krönend <rs ref="#das-schöne-Ganze">sich</rs> <rs ref="#das-schöne-Ganze">das schöne Ganze</rs>.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Denn-nach-dem-Bazar-sollt-ihr-mich-anjetzt---------------Begleiten,-wo-die-Mohren-zum-Verkauf---------------Ausstellen,-was-das-Morgenland-erzeugt---------------An-edelm-Stoff-und-feinem-Kunstgebild.---------------Erst-wählet-aus-die-zierlichen-Sandalen,---------------Der-zartgeformten-Füße-Schutz-und-Zier,---------------Dann-zum-Gewande-wählt-das-Kunstgewebe---------------Des-Indiers,-hellglänzend-wie-der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht-–---------------Und-leicht-umfließt-es-wie-der-Morgenduft---------------Den-zarten-Bau-der-jugendlichen-Glieder.---------------Von-Purpur-sei,-mit-zarten-Fäden-Goldes---------------Durchwirkt-der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft.---------------Dazu-den-Mantel-wählt,-von-glänzender---------------Seide-gewebt,-in-bleichem-Purpur-schimmernd,---------------Über-der-Achsel-heft-ihn-eine-goldne---------------Zikade-–-Auch-die-Spangen-nicht-vergeßt,---------------Die-schönen-Arme-reizend-zu-umzirken,----------------Auch-nicht-der-Perlen-und-Korallen-Schmuck,---------------Der-Meeresgöttin-wundersame-Gaben.---------------Um-die-Locken-winde-sich-ein-Diadem,---------------Gefüget-aus-dem-köstlichsten-Gestein,---------------Worin-der-feurig-glühende-Rubin---------------Mit-dem-Smaragd-die-Farbenblitze-kreuze,---------------Oben-im-Haarschmuck-sei-der-lange-Schleier---------------Befestigt,-der-die-glänzende-Gestalt---------------Gleich-einem-hellen-Lichtgewölk-umfließe,---------------Und-mit-der-Myrte-jungfräulichem-Kranze---------------Vollende-krönend-sich-das-schöne-Ganze.">Es</rs> soll geschehen, <rs ref="#don_manuel">Herr</rs>! wie <rs ref="#don_manuel">du</rs> gebietest,</l>
+              <l>Denn fertig und vollendet findet <rs ref="#das-Kunstgewebe-----…-/-den-Mantel-+-9">sich</rs></l>
+              <l><rs ref="#das-Kunstgewebe-----…-/-den-Mantel-+-9">Dies alles</rs> auf <rs ref="#dem-Bazar">dem Bazar</rs> ausgestellt.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#Den-schönsten-Zelter">Den schönsten Zelter</rs> führet dann hervor</l>
+              <l>Aus meinen Ställen, <rs ref="#Den-schönsten-Zelter">seine</rs> Farbe sei</l>
+              <l>Lichtweiß, gleichwie des Sonnengottes Pferde,</l>
+              <l>Von Purpur sei die Decke, und Geschirr</l>
+              <l>Und Zügel reich besetzt mit edeln Steinen,</l>
+              <l>Denn tragen soll <rs ref="#Den-schönsten-Zelter">er</rs> <rs ref="#beatrice">meine Königin</rs>.</l>
+              <l><rs ref="#erster_chor">Ihr</rs> selber haltet <rs ref="#erster_chor">euch</rs> bereit, im Glanz</l>
+              <l>Des Ritterstaates, unterm freudgen Schall</l>
+              <l>Der Hörner <rs ref="#beatrice"><rs ref="#erster_chor">eure</rs> Fürstin</rs> heimzuführen.</l>
+              <l>Dies alles zu besorgen geh ich jetzt,</l>
+              <l><rs ref="#Zwei-unter-euch">Zwei unter <rs ref="#erster_chor">euch</rs></rs> erwähl ich zu Begleitern,</l>
+              <l><rs ref="#erster_chor">Ihr andern</rs> wartet mein – Was <rs ref="#erster_chor">ihr</rs> vernahmt,</l>
+              <l>Bewahrts in <rs ref="#erster_chor">eures</rs> Busens tiefem Grunde,</l>
+              <l>Bis ich das Band gelöst von <rs ref="#erster_chor">eurem</rs> Munde.</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#don_manuel">Er</rs> geht ab, von <rs ref="#Zwei-unter-euch">zweien aus dem Chor</rs> begleitet.</stage>
+        </div>
+        <div type="scene">
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Sage, was werden <rs ref="#erster_chor">wir</rs> jetzt beginnen,</l>
+              <l>Da <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> ruhen <rs ref="#die-Bruderfehde,--zwist,--hader">vom Streit</rs>,</l>
+              <l>Auszufüllen die Leere der Stunden</l>
+              <l>Und die lange unendliche Zeit?</l>
+              <l>Etwas fürchten und hoffen und sorgen</l>
+              <l>Muß <rs ref="#der-Mensch">der Mensch</rs> für den kommenden Morgen,</l>
+              <l><pb n="850"/> Daß <rs ref="#der-Mensch">er</rs> die Schwere des Daseins ertrage,</l>
+              <l>Und das ermüdende Gleichmaß der Tage,</l>
+              <l>Und mit erfrischendem Windesweben</l>
+              <l>Kräuselnd bewege das stockende Leben.</l>
+            </lg>
+          </sp>
+          <sp who="#einer_aus_dem_chor_1-8">
+            <rs ref="#einer_aus_dem_chor_1-8"><speaker>EINER AUS DEM CHOR.</speaker></rs>
+            <lg>
+              <l>Schön ist <rs ref="#Frieden">der Friede</rs>! Ein lieblicher Knabe</l>
+              <l>Liegt <rs ref="#Frieden">er</rs> gelagert am ruhigen Bach,</l>
+              <l>Und die hüpfenden Lämmer grasen</l>
+              <l>Lustig um <rs ref="#Frieden">ihn</rs> auf dem sonnigten Rasen,</l>
+              <l>Süßes Tönen entlockt <rs ref="#Frieden">er</rs> der Flöte,</l>
+              <l>Und das Echo des Berges wird wach,</l>
+              <l>Oder im Schimmer der Abendröte</l>
+              <l>Wiegt <rs ref="#Frieden">ihn</rs> in Schlummer der murmelnde Bach –</l>
+              <l>Aber <rs ref="#der-Krieg">der <emph>Krieg</emph></rs> auch hat <rs ref="#der-Krieg">seine</rs> Ehre,</l>
+              <l>Der Beweger des Menschengeschicks,</l>
+              <l>Mir gefällt ein lebendiges Leben,</l>
+              <l>Mir ein ewiges Schwanken und Schwingen und Schweben</l>
+              <l>Auf der steigenden, fallenden Welle <rs ref="#das-Glück">des Glücks</rs>.</l>
+              <l>Denn <rs ref="#der-Mensch">der Mensch</rs> verkümmert <rs ref="#Frieden">im Frieden</rs>,</l>
+              <l>Müßige Ruh ist das Grab <rs ref="#der-Mut">des Muts</rs>.</l>
+              <l><rs ref="#Das-Gesetz">Das Gesetz</rs> ist der Freund des Schwachen,</l>
+              <l>Alles will <rs ref="#Das-Gesetz">es</rs> nur eben machen,</l>
+              <l>Möchte gerne <rs ref="#die-Welt">die Welt</rs> verflachen,</l>
+              <l>Aber <rs ref="#der-Krieg">der Krieg</rs> läßt die Kraft erscheinen,</l>
+              <l>Alles erhebt <rs ref="#der-Krieg">er</rs> zum Ungemeinen,</l>
+              <l>Selber <rs ref="#der-Feige">dem Feigen</rs> erzeugt <rs ref="#der-Krieg">er</rs> <rs ref="#der-Mut">den Mut</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ein_zweiter_1-8">
+            <rs ref="#ein_zweiter_1-8"><speaker>EIN ZWEITER.</speaker></rs>
+            <lg>
+              <l>Stehen nicht Amors Tempel offen,</l>
+              <l>Wallet nicht zu <rs ref="#das-Schöne">dem <emph>Schönen</emph></rs> <rs ref="#die-Welt">die Welt</rs>?</l>
+              <l>Da ist das Fürchten! Da ist das Hoffen!</l>
+              <l>König ist hier, wer den Augen gefällt!</l>
+              <l>Auch <rs ref="#die-Liebe">die Liebe</rs> beweget <rs ref="#das-Leben">das Leben</rs>,</l>
+              <l>Daß <rs ref="#die-graulichten-Farben">sich</rs> <rs ref="#die-graulichten-Farben">die graulichten Farben</rs> erheben,</l>
+              <l>Reizend betrügt <rs ref="#die-graulichten-Farben">sie</rs> die glücklichen Jahre,</l>
+              <l><rs ref="#Die-gefällige-Tochter-des-Schaums">Die gefällige Tochter des Schaums</rs>,</l>
+              <l>In das Gemeine und Traurigwahre</l>
+              <l>Webt <rs ref="#Die-gefällige-Tochter-des-Schaums">sie</rs> die Bilder des goldenen Traums.</l>
+              <pb n="851"/>
+            </lg>
+          </sp>
+          <sp who="#ein_dritter_1-8">
+            <rs ref="#ein_dritter_1-8"><speaker>EIN DRITTER.</speaker></rs>
+            <lg>
+              <l>Bleibe die Blume dem blühenden Lenze,</l>
+              <l>Scheine <rs ref="#das-Schöne">das <emph>Schöne</emph></rs>! Und flechte <rs ref="#Wem-die-Locken-noch-jugendlich-grünen">sich</rs> Kränze,</l>
+              <l><rs ref="#Wem-die-Locken-noch-jugendlich-grünen">Wem die Locken noch jugendlich grünen</rs>,</l>
+              <l>Aber dem männlichen Alter <rs ref="#Einem-ernsteren-Gott-zu-dienen">ziemts</rs>,</l>
+              <l><rs ref="#Einem-ernsteren-Gott-zu-dienen">Einem ernsteren Gott zu dienen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#einer_aus_dem_chor_1-8">
+            <rs ref="#einer_aus_dem_chor_1-8"><speaker>ERSTER.</speaker></rs>
+            <lg>
+              <l>Der strengen Diana, der Freundin der Jagden,</l>
+              <l>Lasset <rs ref="#erster_chor">uns</rs> folgen ins wilde Gehölz,</l>
+              <l>Wo die Wälder am dunkelsten nachten,</l>
+              <l>Und den Springbock stürzen vom Fels.</l>
+              <l>Denn die Jagd ist ein Gleichnis der Schlachten,</l>
+              <l>Des ernsten Kriegsgotts lustige Braut –</l>
+              <l><rs ref="#man-(generic)">Man</rs> ist auf mit dem Morgenstrahl,</l>
+              <l>Wenn die schmetternden Hörner laden</l>
+              <l>Lustig hinaus in das dampfende Tal,</l>
+              <l>Über Berge, über Klüfte,</l>
+              <l>Die ermatteten Glieder zu baden</l>
+              <l>In den erfrischenden Strömen der Lüfte!</l>
+            </lg>
+          </sp>
+          <sp who="#ein_zweiter_1-8">
+            <rs ref="#ein_zweiter_1-8"><speaker>ZWEITER.</speaker></rs>
+            <lg>
+              <l>Oder wollen <rs ref="#erster_chor">wir</rs> <rs ref="#erster_chor">uns</rs> <rs ref="#der-blauen---------------Göttin,-der-ewig-bewegten">der blauen</l>
+              <l>Göttin, der ewig bewegten</rs>, vertrauen,</l>
+              <l><rs ref="#der-blauen---------------Göttin,-der-ewig-bewegten">Die</rs> <rs ref="#erster_chor">uns</rs> mit freundlicher Spiegelhelle</l>
+              <l>Ladet in <rs ref="#der-blauen---------------Göttin,-der-ewig-bewegten">ihren</rs> unendlichen Schoß?</l>
+              <l>Bauen <rs ref="#erster_chor">wir</rs> auf der tanzenden Welle</l>
+              <l><rs ref="#erster_chor">Uns</rs> ein lustig schwimmendes Schloß?</l>
+              <rs ref="#Wer-das-grüne,-kristallene-Feld---------------Pflügt-mit-des-Schiffes-eilendem-Kiele"><l>Wer das grüne, kristallene Feld</l>
+              <l>Pflügt mit des Schiffes eilendem Kiele</rs>,</l>
+              <l><rs ref="#Wer-das-grüne,-kristallene-Feld---------------Pflügt-mit-des-Schiffes-eilendem-Kiele">Der</rs> vermählt <rs ref="#Wer-das-grüne,-kristallene-Feld---------------Pflügt-mit-des-Schiffes-eilendem-Kiele">sich</rs> <rs ref="#das-Glück">das Glück</rs>, <rs ref="#Wer-das-grüne,-kristallene-Feld---------------Pflügt-mit-des-Schiffes-eilendem-Kiele">dem</rs> gehört <rs ref="#die-Welt">die Welt</rs>,</l>
+              <l>Ohne die Saat erblüht <rs ref="#Wer-das-grüne,-kristallene-Feld---------------Pflügt-mit-des-Schiffes-eilendem-Kiele">ihm</rs> die Ernte!</l>
+              <l>Denn <rs ref="#das-Meer">das Meer</rs> ist der Raum der Hoffnung</l>
+              <l>Und der Zufälle launisch Reich,</l>
+              <l>Hier wird der Reiche schnell zum Armen</l>
+              <l>Und der Ärmste dem Fürsten gleich.</l>
+              <l>Wie der Wind mit Gedankenschnelle</l>
+              <l>Läuft um die ganze Windesrose,</l>
+              <l>Wechseln hier des Geschickes Lose,</l>
+              <l>Dreht <rs ref="#das-Glück">das Glück</rs> <rs ref="#das-Glück">seine</rs> Kugel um,</l>
+              <l>Auf den Wellen ist alles Welle,</l>
+              <l><pb n="852"/> Auf <rs ref="#das-Meer">dem Meer</rs> ist kein Eigentum.</l>
+            </lg>
+          </sp>
+          <sp who="#ein_dritter_1-8">
+            <rs ref="#ein_dritter_1-8"><speaker>DRITTER.</speaker></rs>
+            <lg>
+              <l>Aber nicht bloß <rs ref="#das-Meer">im Wellenreiche</rs>,</l>
+              <l>Auf <rs ref="#das-Meer">der wogenden Meeresflut</rs>,</l>
+              <l>Auch auf <rs ref="#die-Erde-(der-Boden)">der Erde</rs>, so fest <rs ref="#die-Erde-(der-Boden)">sie</rs> ruht</l>
+              <l>Auf den ewigen, alten Säulen,</l>
+              <l>Wanket <rs ref="#das-Glück">das Glück</rs> und will nicht weilen.</l>
+              <l>– Sorge gibt mir <rs ref="#Frieden">dieser neue Frieden</rs>,</l>
+              <l>Und nicht fröhlich mag ich <rs ref="#Frieden">ihm</rs> vertrauen,</l>
+              <l>Auf <rs ref="#der-Lava,-die-der-Berg-geschieden">der Lava, <rs ref="#der-Lava,-die-der-Berg-geschieden">die</rs> der Berg geschieden</rs>,</l>
+              <l>Möcht ich nimmer meine Hütte bauen.</l>
+              <l>Denn zu tief schon hat <rs ref="#der-Bruderhass">der Haß</rs> gefressen</l>
+              <l>Und <rs ref="#zu-schwere-Taten">zu schwere Taten</rs> sind geschehn,</l>
+              <l><rs ref="#zu-schwere-Taten">Die</rs> <rs ref="#zu-schwere-Taten">sich</rs> nie vergeben und vergessen,</l>
+              <l>Noch hab ich das Ende nicht gesehn,</l>
+              <l>Und mich schrecken ahnungsvolle Träume!</l>
+              <l>Nicht Wahrsagung reden soll mein Mund,</l>
+              <l>Aber sehr mißfällt mir <rs ref="#Don-Manuels-Geheimnis-(seine-Beziehung-zu-Beatrice)">dies Geheime</rs>,</l>
+              <l>Dieser Ehe segenloser Bund,</l>
+              <l>Diese lichtscheu krummen Liebespfade,</l>
+              <l>Dieses Klosterraubs verwegne Tat,</l>
+              <l>Denn <rs ref="#das-Gute">das Gute</rs> liebt <rs ref="#das-Gute">sich</rs> das Gerade,</l>
+              <l>Böse Früchte trägt die böse Saat.</l>
+              <l>Auch <rs ref="#ein-Raub">ein Raub</rs> wars, wie <rs ref="#erster_chor">wir alle</rs> wissen,</l>
+              <l><rs ref="#ein-Raub">Der</rs> <rs ref="#Isabellas-Gatte,-der-Fürst">des alten Fürsten</rs> ehliches Gemahl</l>
+              <l>In ein frevelnd Ehebett gerissen,</l>
+              <l>Denn sie war <rs ref="#Isabellas-Gatte,-der-Fürst">des Vaters</rs> Wahl.</l>
+              <l>Und <rs ref="#der-Ahnherr">der Ahnherr</rs> schüttete im Zorne</l>
+              <l>Grauenvoller Flüche schrecklichen Samen</l>
+              <l>Auf das sündige Ehebett aus.</l>
+              <l>Greueltaten ohne Namen,</l>
+              <l>Schwarze Verbrechen verbirgt <rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">dies Haus</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Ja, <rs ref="#es2">es</rs> hat nicht gut begonnen,</l>
+              <l>Glaubt mir, und <rs ref="#es2">es</rs> endet nicht gut,</l>
+              <l>Denn gebüßt wird unter <rs ref="#die-Sonne">der Sonnen</rs></l>
+              <l>Jede Tat der verblendeten Wut.</l>
+              <l><rs ref="#Daß-die-Brüder-sich-wütend-selbst-zerstören">Es</rs> ist kein Zufall und blindes Los,</l>
+              <l><pb n="853"/> <rs ref="#Daß-die-Brüder-sich-wütend-selbst-zerstören">Daß <rs ref="#Die-Brüder-Manuel-und-Cesar">die Brüder</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> wütend selbst zerstören</rs>,</l>
+              <l>Denn verflucht ward <rs ref="#Isabellas-Schoß"><rs ref="#isabella">der Mutter</rs> Schoß</rs>,</l>
+              <l><rs ref="#isabella">Sie</rs> sollte <rs ref="#der-Bruderhass">den Haß</rs> und <rs ref="#die-Bruderfehde,--zwist,--hader">den Streit</rs> gebären.</l>
+              <l>– Aber ich will es schweigend verhüllen,</l>
+              <l>Denn <rs ref="#die-Rachgötter">die Rachgötter</rs> schaffen im stillen,</l>
+              <l>Zeit ists, die Unfälle zu beweinen,</l>
+              <l>Wenn <rs ref="#die-Rachgötter">sie</rs> nahen und wirklich erscheinen.</l>
+            </lg>
+            <stage><rs ref="#erster_chor">Der Chor</rs> geht ab.</stage>
+          </sp>
+        </div>
+    </body>
+  </text>
+</TEI>
+</#root>

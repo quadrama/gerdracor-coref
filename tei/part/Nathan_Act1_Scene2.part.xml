@@ -1,0 +1,666 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <rs ref="#Erster-Aufzug-"><head>Erster Aufzug</head></rs>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#recha">Recha</rs>, und die Vorigen.</stage>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>So seid <rs ref="#nathan">Ihr</rs> <rs ref="#es-(prädikativ-nathan-als-nathan)">es</rs> doch ganz und gar, mein Vater?</l>
+              <l>Ich glaubt', <rs ref="#nathan">Ihr</rs> hättet <rs ref="#seine-sanfte-Stimme-(nathans)"><rs ref="#nathan">Eure</rs> Stimme</rs> nur</l>
+              <l>Vorausgeschickt. Wo bleibt <rs ref="#nathan">Ihr</rs>? Was für <rs ref="#Berge">Berge</rs>,</l>
+              <l>Für <rs ref="#Wüsten">Wüsten</rs>, was für Ströme trennen <rs ref="#nathan-/-recha">uns</rs></l>
+              <l>Denn noch? <rs ref="#nathan">Ihr</rs> atmet <rs ref="#Wand">Wand</rs> an <rs ref="#Wand">Wand</rs> mit <rs ref="#recha">ihr</rs>,</l>
+              <l><pb n="212"/> Und eilt nicht, <rs ref="#recha"><rs ref="#nathan">Eure</rs> Recha</rs> zu umarmen?</l>
+              <l><rs ref="#recha">Die arme Recha, <rs ref="#recha">die</rs> indes verbrannte</rs>! –</l>
+              <l>Fast, fast verbrannte! Fast nur. Schaudert nicht!</l>
+              <l><rs ref="#Es">Es</rs> ist ein garst'ger Tod, <rs ref="#Es">verbrennen</rs>. O!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#recha">Mein Kind</rs>! <rs ref="#recha">mein liebes Kind</rs>!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#nathan">Ihr</rs> mußtet über</l>
+              <l>Den Euphrat, Tigris, Jordan; über – wer</l>
+              <l>Weiß was für <rs ref="#Wasser-(flüsse-gewässer)">Wasser</rs> all? – Wie oft hab' ich</l>
+              <l>Um <rs ref="#nathan">Euch</rs> gezittert, eh <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">das Feuer</rs> mir</l>
+              <l>So nahe kam! Denn seit <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">das Feuer</rs> mir</l>
+              <l>So nahe kam: dünkt mich <rs ref="#Wasser-(flüsse-gewässer)">im Wasser</rs> sterben</l>
+              <l>Erquickung, Labsal, Rettung. – Doch <rs ref="#nathan">Ihr</rs> seid</l>
+              <l>Ja nicht ertrunken: ich, ich bin ja nicht</l>
+              <l>Verbrannt. Wie wollen <rs ref="#nathan-/-recha">wir</rs> <rs ref="#nathan-/-recha">uns</rs> freun, und <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>,</l>
+              <l><rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs> loben! <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Er</rs>, <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">er</rs> trug <rs ref="#nathan">Euch</rs> und <rs ref="#den-Nachen-(kleines-boot-nathans-auf-seiner-reise-nach-jerusalem)">den Nachen</rs></l>
+              <l>Auf Flügeln <rs ref="#Der-Engel-(gottes-übernatürliche,-jüdische,-nennungen-von-recha-daher-vielleicht-auch-nicht-religionsspezifisch)"><rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">seiner</rs> <emph>unsichtbaren</emph> Engel</rs></l>
+              <l><rs ref="#Wasser-(flüsse-gewässer)">Die ungetreuen Ström'</rs> hinüber. <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Er</rs>,</l>
+              <l><rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Er</rs> winkte <rs ref="#tempelherr-bbb">meinem Engel</rs>, daß <rs ref="#tempelherr-bbb">er</rs> <emph>sichtbar</emph></l>
+              <l>Auf <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)"><rs ref="#tempelherr-bbb">seinem</rs> weißen Fittiche</rs>, mich durch</l>
+              <l><rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">Das Feuer</rs> trüge –</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>(<rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">Weißem Fittiche</rs>!</l>
+              <l>Ja, ja! <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">der weiße vorgespreizte Mantel</l>
+              <l><rs ref="#tempelherr-bbb">Des Tempelherrn</rs></rs>.)</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Er</rs> sichtbar, sichtbar mich</l>
+              <l><rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">Durchs Feuer</rs> trüg', von <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)"><rs ref="#tempelherr-bbb">seinem</rs> Fittiche</rs></l>
+              <l>Verweht. – Ich also, ich hab' <rs ref="#es4"><rs ref="#Der-Engel-(gottes-übernatürliche,-jüdische,-nennungen-von-recha-daher-vielleicht-auch-nicht-religionsspezifisch)">einen Engel</rs></l>
+              <l>Von <rs ref="#Angesicht-(Rechas)">Angesicht</rs> zu <rs ref="#Angesicht-(des-tempelherrn)">Angesicht</rs> gesehn</rs>;</l>
+              <l>Und <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)"><emph>meinen</emph> Engel</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Recha</rs> wär' <rs ref="#es4">es</rs> wert;</l>
+              <l>Und würd' an <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">ihm</rs> nichts Schönres sehn, als <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">er</rs></l>
+              <l>An <rs ref="#recha">ihr</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage>lächelnd.</stage>
+            <lg>
+              <l>Wem schmeichelt <rs ref="#nathan">Ihr, mein Vater</rs>? wem?</l>
+              <l><rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">Dem Engel</rs>, oder <rs ref="#nathan">Euch</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Doch hätt' auch nur</l>
+              <rs ref="#wir-Menschen"><l>Ein Mensch – ein Mensch, wie <rs ref="#Natur">die Natur</rs> <rs ref="#wir-Menschen">sie</rs> täglich</l>
+              <l>Gewährt</rs>, <rs ref="#recha">dir</rs> <rs ref="#diesen-Dienst-(rettung-rechas-durch-den-tempelherrn)">diesen Dienst</rs> erzeigt: <rs ref="#wir-Menschen">er</rs> müßte</l>
+              <l>Für <rs ref="#recha">dich</rs> <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">ein Engel</rs> sein. <rs ref="#wir-Menschen">Er</rs> müßt' und würde.</l>
+              <pb n="213"/>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Nicht so <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">ein Engel</rs>; nein! <rs ref="#Der-Engel-(gottes-übernatürliche,-jüdische,-nennungen-von-recha-daher-vielleicht-auch-nicht-religionsspezifisch)">ein wirklicher</rs>;</l>
+              <l><rs ref="#tempelherr-bbb">Es</rs> war gewiß <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-übernatürlicher-engel)">ein wirklicher</rs>! – Habt <rs ref="#nathan">Ihr,</l>
+              <l>Ihr selbst</rs> die Möglichkeit, daß <rs ref="#Der-Engel-(gottes-übernatürliche,-jüdische,-nennungen-von-recha-daher-vielleicht-auch-nicht-religionsspezifisch)">Engel</rs> sind,</l>
+              <l>Daß <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs> zum Besten <rs ref="#derer,-die-ihn-lieben-(die-gott-lieben)">derer, <rs ref="#derer,-die-ihn-lieben-(die-gott-lieben)">die</rs> <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">ihn</rs> lieben</rs>,</l>
+              <l>Auch <rs ref="#Wunder-(vernünftg-erschließbare)">Wunder</rs> könne tun, mich nicht gelehrt?</l>
+              <l>Ich lieb' <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">ihn</rs> ja.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#Das4"><l>Und <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">er</rs> liebt <rs ref="#recha">dich</rs>; und tut</l>
+              <l>Für <rs ref="#recha">dich</rs>, und <rs ref="#derer,-die-ihn-lieben-(die-gott-lieben)"><rs ref="#recha">deines</rs> gleichen</rs>, stündlich <rs ref="#Wunder-(vernünftg-erschließbare)">Wunder</rs>;</l>
+              <l>Ja, hat <rs ref="#Wunder-(vernünftg-erschließbare)">sie</rs> schon von <rs ref="#aller-Ewigkeit-(seit-ewigen-zeiten)">aller Ewigkeit</rs></l>
+              <l>Für <rs ref="#derer,-die-ihn-lieben-(die-gott-lieben)">euch</rs> getan.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#Das4">Das</rs> hör' ich gern.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#solcherlei-Subtilitäten">weil</l>
+              <l>Es ganz natürlich, ganz alltäglich klänge,</l>
+              <l>Wenn <rs ref="#recha">dich</rs> <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">ein eigentlicher Tempelherr</rs></l>
+              <l>Gerettet hätte: sollt' <rs ref="#diesen-Dienst-(rettung-rechas-durch-den-tempelherrn)">es</rs> darum weniger</l>
+              <l><rs ref="#Ein-Wunder-(prädikativ-die-rettung-rechas-durch-den-tempelherrn-als-erklärbares-wunder)">Ein Wunder</rs> sein? – <rs ref="#Wunder-(vernünftg-erschließbare)">Der Wunder</rs> höchstes ist,</l>
+              <l>Daß <rs ref="#wir-Menschen">uns</rs> <rs ref="#Wunder-(vernünftg-erschließbare)">die wahren, echten Wunder</rs> so</l>
+              <l>Alltäglich werden können, werden sollen.</l>
+              <l>Ohn' dieses allgemeine Wunder, hätte</l>
+              <l><rs ref="#Ein-Denkender-(rational,-philosophisch,-vernunftbezogen)">Ein Denkender</rs> wohl schwerlich <rs ref="#Wunder-(vernünftg-erschließbare)">Wunder</rs> je</l>
+              <l>Genannt, was <rs ref="#Kindern">Kindern</rs> bloß so heißen müßte,</l>
+              <l><rs ref="#Kindern">Die</rs> gaffend nur das Ungewöhnlichste,</l>
+              <l>Das Neuste nur verfolgen.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA</speaker></rs>
+            <stage>zu <rs ref="#nathan">Nathan</rs>.</stage>
+            <lg>
+              <l>Wollt <rs ref="#nathan">Ihr</rs> denn</l>
+              <l><rs ref="#recha">Ihr</rs> ohnedem schon <rs ref="#den-Samen-der-Vernunft,---------------Den-er-so-rein-in-meine-Seele-streute-(rechas-logisches-denken-vernunft-weißheit-geist-als-geistiges-erbe-nathans)">Überspanntes Hirn</rs></l>
+              <l>Durch <rs ref="#solcherlei-Subtilitäten">solcherlei Subtilitäten</rs> ganz</l>
+              <l>Zersprengen?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Laß mich! – <rs ref="#recha">Meiner Recha</rs> wär'</l>
+              <l>Es Wunders nicht genug, daß <rs ref="#recha">sie</rs> <rs ref="#tempelherr-bbb">ein <emph>Mensch</emph></rs></l>
+              <l>Gerettet, <rs ref="#tempelherr-bbb">welchen</rs> selbst kein kleines Wunder</l>
+              <l>Erst retten müssen? Ja, kein kleines Wunder!</l>
+              <rs ref="#Das5"><l>Denn wer hat schon gehört, daß <rs ref="#saladin">Saladin</rs></l>
+              <l>Je <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">eines Tempelherrn</rs> verschont? daß je</l>
+              <l><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Ein Tempelherr</rs> von <rs ref="#saladin">ihm</rs> verschont zu werden</l>
+              <l>Verlangt? gehofft? <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">ihm</rs> je für <rs ref="#seine-Freiheit-(eines-tempelherrn,-freiheit-vor-saladin)"><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">seine</rs> Freiheit</rs></l>
+              <l>Mehr als <rs ref="#den-ledern-Gurt-(an-dem-saladins-oder-des-gefangenen-tempelherrn-waffen-hängen)">den ledern Gurt</rs> geboten, <rs ref="#den-ledern-Gurt-(an-dem-saladins-oder-des-gefangenen-tempelherrn-waffen-hängen)">der</rs></l>
+              <l><rs ref="#saladin">Sein</rs> Eisen schleppt; und höchstens <rs ref="#saladin">seinen</rs> Dolch?</l></rs>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das5">Das</rs> schließt für mich, <rs ref="#nathan">mein Vater</rs>. – Darum eben</l>
+              <l><pb n="214"/> War <rs ref="#tempelherr-bbb">das</rs> kein Tempelherr; <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">er</rs> schien <rs ref="#als-Tempelherr-(prädikativ-einer-der-engel,-an-die-recha-als-kind-glaubte)">es</rs> nur. –</l>
+              <l>Kömmt kein gefangner Tempelherr je anders</l>
+              <l>Als zum gewissen Tode nach <rs ref="#Jerusalem">Jerusalem</rs>;</l>
+              <l>Geht keiner in <rs ref="#Jerusalem">Jerusalem</rs> so frei</l>
+              <l>Umher: wie hätte mich des Nachts freiwillig</l>
+              <l>Denn <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">einer</rs> retten können?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Sieh! wie sinnreich.</l>
+              <l>Jetzt, <rs ref="#daja">Daja</rs>, nimm <rs ref="#das-Wort-(das-sprechen)">das Wort</rs>. Ich hab' <rs ref="#es5">es</rs> ja</l>
+              <l>Von <rs ref="#daja">dir</rs>, <rs ref="#es5">daß <rs ref="#tempelherr-bbb">er</rs> gefangen hergeschickt</l>
+              <l>Ist worden</rs>. Ohne Zweifel weißt <rs ref="#daja">du</rs> mehr.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Nun ja. – So sagt <rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">man</rs> freilich; – doch <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)"><rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">man</rs> sagt</l>
+              <l>Zugleich, daß <rs ref="#saladin">Saladin</rs> <rs ref="#tempelherr-bbb">den Tempelherrn</rs></l>
+              <l>Begnadigt, weil <rs ref="#tempelherr-bbb">er</rs> <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)"><rs ref="#saladin">seiner</rs> Brüder einem,</l>
+              <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Den</rs> <rs ref="#saladin">er</rs> besonders lieb gehabt</rs>, so ähnlich sehe.</l>
+              <l>Doch da <rs ref="#es6">es</rs> viele zwanzig Jahre her,</l>
+              <l><rs ref="#es6">Daß <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">dieser Bruder</rs> nicht mehr lebt</rs>, – <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">er</rs> hieß,</l>
+              <l>Ich weiß nicht wie; – <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">er</rs> blieb, ich weiß nicht wo; –</l></rs>
+              <l>So klingt <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)">das</rs> ja so gar – so gar unglaublich,</l>
+              <l>Daß an <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)">der ganzen Sache</rs> wohl nichts ist.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ei, <rs ref="#daja">Daja</rs>! Warum wäre denn <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)">das</rs> so</l>
+              <l>Unglaublich? Doch wohl nicht – wie's wohl geschieht –</l>
+              <l>Um lieber etwas <rs ref="#noch-Unglaublichers-(übernatürliche-Wunder)">noch Unglaublichers</rs></l>
+              <l>Zu glauben? – Warum hätte <rs ref="#saladin">Saladin,</l>
+              <l><rs ref="#saladin">Der</rs> <rs ref="#saladin">sein</rs> Geschwister insgesamt so liebt</rs>,</l>
+              <l>In jüngern Jahren <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">einen Bruder</rs> nicht</l>
+              <l>Noch ganz besonders lieben können? – Pflegen</l>
+              <l><rs ref="#zwei-Gesichter">Sich</rs> <rs ref="#zwei-Gesichter">zwei Gesichter</rs> nicht zu ähneln? – Ist</l>
+              <l><rs ref="#Ein-alter-Eindruck-(eine-alte-erinnerung,-an-etwas-das-schon-sehr-lange-her-ist)">Ein alter Eindruck</rs> ein verlorner? – Wirkt</l>
+              <l><rs ref="#Das-nämliche-(das-vergangene)">Das nämliche</rs> nicht mehr <rs ref="#das-nämliche-(die-heutigen-Umstände,-die-heutige-zeit/situation-als-Kosequenz-der-Vergangenheit)">das nämliche</rs>? –</l>
+              <l>Seit wenn? – Wo steckt hier <rs ref="#noch-Unglaublichers-(übernatürliche-Wunder)">das Unglaubliche</rs>? –</l>
+              <l>Ei freilich, <rs ref="#daja">weise Daja</rs>, wär's für dich</l>
+              <l>Kein Wunder mehr; und <rs ref="#noch-Unglaublichers-(übernatürliche-Wunder)"><emph>deine</emph> Wunder</rs> nur</l>
+              <l>Bedürf ... verdienen, will ich sagen, <rs ref="#Glauben-(an-übernatürliche-wunder)">Glauben</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#nathan">Ihr</rs> spottet.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Weil <rs ref="#daja">du</rs> <rs ref="#nathan">meiner</rs> spottest. – Doch</l>
+              <l>Auch so noch, <rs ref="#recha">Recha</rs>, bleibet <rs ref="#diesen-Dienst-(rettung-rechas-durch-den-tempelherrn)">deine Rettung</rs></l>
+              <rs ref="#Ein-Wunder-(prädikativ-die-rettung-rechas-durch-den-tempelherrn-als-erklärbares-wunder)"><l>Ein Wunder, <rs ref="#dem2">dem</rs> nur möglich, <rs ref="#dem2">der</rs> <rs ref="#die-strengsten---------------Entschlüsse">die strengsten</l>
+              <l>Entschlüsse</rs>, die unbändigsten Entwürfe</l>
+              <l><pb n="215"/> Der Könige, <rs ref="#dem2">sein</rs> Spiel – wenn nicht <rs ref="#dem2">sein</rs> Spott –</l>
+              <l>Gern an den schwächsten Fäden lenkt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#nathan">Mein Vater</rs>!</l>
+              <l><rs ref="#nathan">Mein Vater</rs>, wenn ich irr', Ihr wißt, ich irre</l>
+              <l>Nicht gern.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Vielmehr, <rs ref="#recha">du</rs> läßst <rs ref="#recha">dich</rs> gern belehren. –</l>
+              <l>Sieh! <rs ref="#Das6">eine Stirn, so oder so gewölbt;</l>
+              <l>Der Rücken einer Nase, so vielmehr</l>
+              <l>Als so geführet; <rs ref="#Augenbraunen,-die---------------Auf-einem-scharfen-oder-stumpfen-Knochen---------------So-oder-so-sich-schlängeln">Augenbraunen, <rs ref="#Augenbraunen,-die---------------Auf-einem-scharfen-oder-stumpfen-Knochen---------------So-oder-so-sich-schlängeln">die</rs></l>
+              <l>Auf einem scharfen oder stumpfen Knochen</l>
+              <l>So oder so sich schlängeln</rs>; eine Linie,</l>
+              <l>Ein Bug, ein Winkel, eine Falt', ein Mal,</l>
+              <l>Ein Nichts, auf eines wilden Europäers</l>
+              <l>Gesicht: – und <rs ref="#recha">du</rs> entkömmst <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">dem Feur</rs>, in Asien!</l></rs>
+              <l><rs ref="#Das6">Das</rs> wär' kein Wunder, <rs ref="#daja-/-recha">wundersücht'ges Volk</rs>?</l>
+              <l>Warum bemüht <rs ref="#daja-/-recha">ihr</rs> denn noch <rs ref="#ein-Engel-(als-religionsübergreifende-gattung)">einen Engel</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Was <rs ref="#schadets">schadets</rs> – <rs ref="#nathan">Nathan</rs>, wenn ich sprechen darf –</l>
+              <l>Bei alle <rs ref="#solcherlei-Subtilitäten">dem</rs>, <rs ref="#schadets">von <rs ref="#ein-Engel-(als-religionsübergreifende-gattung)">einem Engel</rs> lieber</l>
+              <l>Als <rs ref="#wir-Menschen">einem Menschen</rs> <rs ref="#wir-Menschen">sich</rs> gerettet denken</rs>?</l>
+              <l>Fühlt <rs ref="#wir-Menschen">man</rs> der ersten unbegreiflichen</l>
+              <l>Ursache <rs ref="#seiner-Rettung"><rs ref="#wir-Menschen">seiner</rs> Rettung</rs> nicht <rs ref="#wir-Menschen">sich</rs> so</l>
+              <l>Viel näher?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Stolz">Stolz</rs>! und nichts als <rs ref="#Stolz">Stolz</rs>! <rs ref="#Der-Topf---------------Von-Eisen-(metaph-jemand-der-sich-von-gott-mit-einem-wunder-beglückt-sehen-will)">Der Topf</l>
+              <l>Von Eisen</rs> will mit <rs ref="#noch-Unglaublichers-(übernatürliche-Wunder)">einer silbern Zange</rs></l>
+              <l>Gern aus <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">der Glut</rs> gehoben sein, um selbst</l>
+              <l>Ein Topf von Silber <rs ref="#Der-Topf---------------Von-Eisen-(metaph-jemand-der-sich-von-gott-mit-einem-wunder-beglückt-sehen-will)">sich</rs> zu dünken. – Pah! –</l>
+              <l>Und was <rs ref="#schadets">es</rs> schadet, fragst <rs ref="#daja">du</rs>? was <rs ref="#schadets">es</rs> schadet?</l>
+              <l>Was hilft <rs ref="#schadets">es</rs>? dürft ich nur hinwieder fragen. –</l>
+              <l>Denn <rs ref="#daja">dein</rs> »<rs ref="#wir-Menschen">Sich</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> um so viel näher fühlen«,</l>
+              <l>Ist Unsinn oder Gotteslästerung. –</l>
+              <l>Allein <rs ref="#schadets">es</rs> schadet; ja, <rs ref="#schadets">es</rs> schadet allerdings. –</l>
+              <l>Kommt! hört mir zu. – Nicht wahr? <rs ref="#tempelherr-bbb">dem Wesen, <rs ref="#tempelherr-bbb">das</rs></l>
+              <l><rs ref="#daja">Dich</rs> rettete</rs>, – <rs ref="#tempelherr-bbb">es</rs> sei <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-übernatürlicher-engel)">ein Engel</rs> oder</l>
+              <l><rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">Ein Mensch</rs>, <rs ref="#tempelherr-bbb">dem</rs> möchtet <rs ref="#daja-/-recha">ihr</rs>, und <rs ref="#daja">du</rs> besonders,</l>
+              <l>Gern wieder <rs ref="#viele-große-Dienste-(potentielle-aus-Dankbarkeit-für-den-tempelherrn)">viele große Dienste</rs> tun? –</l>
+              <l>Nicht wahr? – Nun, <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">einem Engel</rs>, <rs ref="#viele-große-Dienste-(potentielle-aus-Dankbarkeit-für-den-tempelherrn)">was für Dienste</rs>,</l>
+              <l><rs ref="#viele-große-Dienste-(potentielle-aus-Dankbarkeit-für-den-tempelherrn)">Für große Dienste</rs> könnt <rs ref="#daja-/-recha">ihr</rs> <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">dem</rs> wohl tun?</l>
+              <l><rs ref="#daja-/-recha">Ihr</rs> könnt <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">ihm</rs> danken; zu <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">ihm</rs> seufzen, beten;</l>
+              <l><pb n="216"/> Könnt in <rs ref="#Entzückung-über-ihn-(dajas-und-rechas-über-den-engel-der-sie-gerettet-hat)">Entzückung über <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">ihn</rs></rs> zerschmelzen;</l>
+              <l>Könnt an dem Tage <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">seiner</rs> Feier fasten,</l>
+              <l><rs ref="#Almosen">Almosen</rs> spenden. – Alles nichts. – Denn mich</l>
+              <l>Deucht immer, daß <rs ref="#daja-/-recha">ihr</rs> selbst und <rs ref="#wir-Menschen"><rs ref="#daja-/-recha">euer</rs> Nächster</rs></l>
+              <l>Hierbei weit mehr gewinnt, als <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">er</rs>. <rs ref="#Der-Engel-einer,-deren-Schutze-sich---------------Ihr-kleines-Herz,-von-Kindheit-auf,-so-gern---------------Vertrauet-glaubte-(der-vermutl-jüdische-engel-von-dem-recha-glaubt,-dass-er-in-Form-des-tempelherrn-auftritt)">Er</rs> wird</l>
+              <l>Nicht fett durch <rs ref="#daja-/-recha">euer</rs> Fasten; wird nicht reich</l>
+              <l>Durch <rs ref="#Almosen"><rs ref="#daja-/-recha">eure</rs> Spenden</rs>; wird nicht herrlicher</l>
+              <l>Durch <rs ref="#Entzückung-über-ihn-(dajas-und-rechas-über-den-engel-der-sie-gerettet-hat)"><rs ref="#daja-/-recha">eur</rs> Entzücken</rs>; wird nicht mächtiger</l>
+              <l>Durch <rs ref="#Glauben-(an-übernatürliche-wunder)"><rs ref="#daja-/-recha">eur</rs> Vertraun</rs>. Nicht wahr? Allein <rs ref="#wir-Menschen">ein Mensch</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Ei freilich hätt' <rs ref="#wir-Menschen">ein Mensch</rs>, etwas für <rs ref="#wir-Menschen">ihn</rs></l>
+              <l>Zu <emph>tun</emph>, <rs ref="#daja-/-recha">uns</rs> mehr Gelegenheit verschafft.</l>
+              <l>Und Gott weiß, wie bereit <rs ref="#daja-/-recha">wir</rs> dazu waren!</l>
+              <l>Allein <rs ref="#tempelherr-bbb">er</rs> wollte ja, bedurfte ja</l>
+              <l>So völlig nichts; war in <rs ref="#tempelherr-bbb">sich</rs>, mit <rs ref="#tempelherr-bbb">sich</rs> so</l>
+              <l>Vergnügsam, als nur <rs ref="#ein-Engel-(als-religionsübergreifende-gattung)">Engel</rs> sind, nur <rs ref="#ein-Engel-(als-religionsübergreifende-gattung)">Engel</rs></l>
+              <l>Sein können.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Endlich, als <rs ref="#tempelherr-bbb">er</rs> gar verschwand ...</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Verschwand? – Wie denn verschwand? – <rs ref="#tempelherr-bbb">Sich</rs> <rs ref="#untern-Palmen">untern Palmen</rs></l>
+              <l>Nicht ferner sehen ließ? – Wie? oder <rs ref="#Das7">habt</l>
+              <l><rs ref="#daja-/-recha">Ihr</rs> wirklich schon <rs ref="#tempelherr-bbb">ihn</rs> weiter aufgesucht?</l></rs>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#Das7">Das</rs> nun wohl nicht.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nicht, <rs ref="#daja">Daja</rs>? nicht? – Da sieh</l>
+              <l>Nun was <rs ref="#schadets">es</rs> schadt! – <rs ref="#daja-/-recha">Grausame Schwärmerinnen</rs>! –</l>
+              <l>Wenn <rs ref="#tempelherr-bbb">dieser Engel</rs> nun – nun krank geworden! ...</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Krank!</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Krank! <rs ref="#tempelherr-bbb">Er</rs> wird doch nicht!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Welch kalter Schauer</l>
+              <l>Befällt mich! – <rs ref="#daja">Daja</rs>! – Meine Stirne, sonst</l>
+              <l>So warm, fühl! ist auf einmal Eis.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Er</rs> ist</l>
+              <l>Ein Franke, dieses Klimas ungewohnt;</l>
+              <l>Ist jung; der harten Arbeit <rs ref="#seines-Standes-(des-tempelherrn-gesellschaftl-stand)"><rs ref="#tempelherr-bbb">seines</rs> Standes,</rs></l>
+              <l>Des Hungerns, Wachens ungewohnt.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#Das8">Krank!</rs> krank!</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#Das8">Das</rs> wäre möglich, meint ja <rs ref="#nathan">Nathan</rs> nur.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nun liegt <rs ref="#tempelherr-bbb">er</rs> da! hat weder Freund, noch Geld</l>
+              <l><pb n="217"/> Sich Freunde zu besolden.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Ah, <rs ref="#nathan">mein Vater</rs>!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Liegt ohne Wartung, ohne Rat und Zusprach,</l>
+              <l>Ein Raub der Schmerzen und <rs ref="#des-Todes-(des-tempelherrn)">des Todes</rs> da!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Wo? wo?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#tempelherr-bbb"><l>Er, <rs ref="#tempelherr-bbb">der</rs> für <rs ref="#recha">eine, die <rs ref="#tempelherr-bbb">er</rs> nie</l>
+              <l>Gekannt, gesehn</rs> – genug, <rs ref="#tempelherr-bbb">es</rs> war <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">ein Mensch</rs> –</l>
+              <l><rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">Ins Feur</rs> <rs ref="#tempelherr-bbb">sich</rs> stürzte</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#nathan">Nathan</rs>, schonet <rs ref="#recha">ihrer</rs>!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#tempelherr-bbb"><l>Der, <rs ref="#daja-/-recha">was <rs ref="#tempelherr-bbb">er</rs> rettete</rs>, nicht näher kennen,</l>
+              <l>Nicht weiter sehen mocht</rs>', – um <rs ref="#daja-/-recha">ihm</rs> <rs ref="#unsers-Danks-(daja-und-recha-ggü-dem-tempelherrn)">den Dank</rs></l>
+              <l>Zu sparen ...</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Schonet <rs ref="#recha">ihrer</rs>, <rs ref="#nathan">Nathan</rs>!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Weiter</l>
+              <l>Auch nicht zu sehn verlangt', – <rs ref="#es7">es</rs> wäre denn,</l>
+              <l><rs ref="#es7">Daß <rs ref="#tempelherr-bbb">er</rs> zum zweiten Mal <rs ref="#daja-/-recha">es</rs> retten sollte</rs> –</l>
+              <l>Denn gnug, <rs ref="#tempelherr-bbb">es</rs> ist <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">ein Mensch</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Hört auf, und seht!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Der, der</rs> hat sterbend <rs ref="#tempelherr-bbb">sich</rs> zu laben, nichts –</l>
+              <l>Als das Bewußtsein <rs ref="#Hülfe-(Rettung-für-daja-und-recha-während-dem-feuer)">dieser Tat</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Hört auf!</l>
+              <l><rs ref="#nathan">Ihr</rs> tötet <rs ref="#recha">sie</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#daja">du</rs> hast <rs ref="#tempelherr-bbb">ihn</rs> getötet! –</l>
+              <l>Hättst so <rs ref="#tempelherr-bbb">ihn</rs> töten können. – <rs ref="#recha">Recha</rs>! <rs ref="#recha">Recha</rs>!</l>
+              <l><rs ref="#solcherlei-Subtilitäten">Es</rs> ist Arznei, nicht Gift, <rs ref="#solcherlei-Subtilitäten">was</rs> ich <rs ref="#recha">dir</rs> reiche.</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> lebt! – komm zu <rs ref="#tempelherr-bbb">dir</rs>! – ist auch wohl nicht krank;</l>
+              <l>Nicht einmal krank!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Gewiß? – nicht tot? nicht krank?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Gewiß, nicht tot! – Denn <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs> lohnt <rs ref="#Gutes-(gute-taten-gutes-handeln)">Gutes</rs>, hier</l>
+              <l>Getan, auch hier noch. – Geh! – Begreifst <rs ref="#recha">du</rs> aber,</l>
+              <l>Wie viel <emph>andächtig schwärmen</emph> leichter, als</l>
+              <l><rs ref="#Gutes-(gute-taten-gutes-handeln)"><emph>Gut handeln</emph></rs> ist? wie gern <rs ref="#der-schlaffste-Mensch">der schlaffste Mensch</rs></l>
+              <l>Andächtig schwärmt, um nur, – ist <rs ref="#der-schlaffste-Mensch">er</rs> zu <rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Zeiten</rs></l>
+              <l><rs ref="#der-schlaffste-Mensch">Sich</rs> schon der Absicht deutlich nicht bewußt –</l>
+              <l>Um nur gut handeln nicht zu dürfen?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Ah,</l>
+              <l><rs ref="#nathan">Mein Vater</rs>! laßt, laßt <rs ref="#recha"><rs ref="#nathan">Eure</rs> Recha</rs> doch</l>
+              <l>Nie wiederum allein! – Nicht wahr, <rs ref="#tempelherr-bbb">er</rs> kann</l>
+              <l><pb n="218"/> Auch wohl verreist nur sein? –</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Geht. – Allerdings. –</l>
+              <l>Ich seh, dort mustert mit neugier'gem Blick</l>
+              <l><rs ref="#derwisch">Ein Muselmann</rs> mir <rs ref="#die-Kamele-meines-Vaters-(manchmal-plural-manchmal-singular,-immer-nathans)">die beladenen</l>
+              <l>Kamele.</rs> Kennt <rs ref="#daja-/-recha">ihr</rs> <rs ref="#derwisch">ihn</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Ha! <rs ref="#derwisch"><rs ref="#nathan">Euer</rs> Derwisch</rs>.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Wer?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#derwisch"><rs ref="#nathan">Euer</rs> Derwisch</rs>; <rs ref="#derwisch"><rs ref="#nathan">Euer</rs> Schachgesell!</rs></l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#derwisch">Al-Hafi</rs>? <rs ref="#derwisch">das</rs> <rs ref="#Al-Hafi-(prädikativ-der-derwisch)">Al-Hafi</rs>?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Itzt <rs ref="#des-Sultans---------------Schatzmeister-(prädikativ-der-derwisch)"><rs ref="#saladin">des Sultans</rs></l>
+              <l>Schatzmeister</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#derwisch">Al-Hafi</rs>? Träumst <rs ref="#daja">du</rs> wieder? –</l>
+              <l><rs ref="#derwisch">Er</rs> <rs ref="#Al-Hafi-(prädikativ-der-derwisch)">ists</rs>! – wahrhaftig, <rs ref="#Al-Hafi-(prädikativ-der-derwisch)">ists</rs>! – kömmt auf <rs ref="#nathan-/-daja-+-1">uns</rs> zu.</l>
+              <l>Hinein mit <rs ref="#daja-/-recha">Euch</rs>, geschwind! – Was werd' ich hören!</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

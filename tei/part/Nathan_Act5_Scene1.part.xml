@@ -1,0 +1,366 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage><rs ref="#Szene-(in-einem-zimmer-des-palasts-saladins)">Szene</rs>: <rs ref="#ein-Zimmer-im-Palaste-des-Saladin">das Zimmer in <rs ref="#sein-Haus-(saladins)"><rs ref="#saladin">Saladins</rs> Palaste</rs>, in <rs ref="#ein-Zimmer-im-Palaste-des-Saladin">welches</rs> <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">die Beutel mit Geld</rs> getragen
+            worden</rs>, <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">die</rs> noch zu sehen.</stage>
+          <stage><rs ref="#saladin">Saladin</rs> und bald darauf verschiedne Mamelucken.</stage>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage>im Hereintreten.</stage>
+            <lg>
+              <l>Da steht <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">das Geld</rs> nun noch! Und niemand weiß</l>
+              <l><rs ref="#derwisch">Den Derwisch</rs> aufzufinden, <rs ref="#derwisch">der</rs> vermutlich</l>
+              <l><rs ref="#Schach">Ans Schachbrett</rs> irgendwo geraten ist,</l>
+              <l><rs ref="#Schach">Das</rs> <rs ref="#derwisch">ihn</rs> wohl <rs ref="#derwisch">seiner</rs> selbst vergessen macht; –</l>
+              <l>Warum nicht meiner? – Nun, Geduld! Was gibts?</l>
+            </lg>
+          </sp>
+          <sp who="#ein_mameluck">
+            <rs ref="#ein_mameluck-(ibrahim)"><speaker>EIN MAMELUCK.</speaker></rs>
+            <lg>
+              <l><rs ref="#Nachricht-(informationen-über-die-gelder-aus-ägyten-an-saladin)">Erwünschte Nachricht</rs>, <rs ref="#saladin">Sultan</rs>! <rs ref="#meine-Freudigkeit-(freude-saladins)">Freude</rs>, <rs ref="#saladin">Sultan</rs>! ...</l>
+              <l><rs ref="#Die-Karawane-von-Kahira">Die Karawane von Kahira</rs> kömmt;</l>
+              <l>Ist glücklich da! mit <rs ref="#Die-Gelder-aus---------------Ägypten-(saladins)">siebenjährigem</l>
+              <l>Tribut des reichen Nils</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Brav, <rs ref="#ein_mameluck-(ibrahim)">Ibrahim</rs>!</l>
+              <l><rs ref="#ein_mameluck-(ibrahim)">Du</rs> bist mir wahrlich ein willkommner Bote! –</l>
+              <l>Ha! endlich einmal! endlich! – Habe Dank</l>
+              <l><rs ref="#Nachricht-(informationen-über-die-gelder-aus-ägyten-an-saladin)">Der guten Zeitung</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ein_mameluck">
+            <rs ref="#ein_mameluck-(ibrahim)"><speaker>DER MAMELUCK</speaker></rs>
+            <stage>wartend.</stage>
+            <l>(Nun? nur her damit!)</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Was wart'st <rs ref="#ein_mameluck-(ibrahim)">du</rs>? – Geh nur wieder.</l>
+          </sp>
+          <sp who="#ein_mameluck">
+            <rs ref="#ein_mameluck-(ibrahim)"><speaker>DER MAMELUCK.</speaker></rs>
+            <lg>
+              <rs ref="#ein_mameluck-(ibrahim)"><l>Dem Willkommnen</l></rs>
+              <l>Sonst nichts?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Was denn noch sonst?</l>
+          </sp>
+          <sp who="#ein_mameluck">
+            <rs ref="#ein_mameluck-(ibrahim)"><speaker>DER MAMELUCK.</speaker></rs>
+            <lg>
+              <rs ref="#ein_mameluck-(ibrahim)"><l>Dem guten Boten</l></rs>
+              <l>Kein Botenbrod? – So wär ich ja <rs ref="#der-erste,---------------Den-Saladin-mit-Worten-abzulohnen,----------------Doch-endlich-lernte-(prädikativ-mameluck-ibrahim)">der erste,</l>
+              <l><rs ref="#der-erste,---------------Den-Saladin-mit-Worten-abzulohnen,----------------Doch-endlich-lernte-(prädikativ-mameluck-ibrahim)">Den</rs> <rs ref="#saladin">Saladin</rs> mit <rs ref="#das-Wort-(das-sprechen)">Worten</rs> abzulohnen,</l>
+              <l><pb n="321"/> Doch endlich lernte</rs>? – Auch ein Ruhm! – <rs ref="#der-erste,---------------Den-Saladin-mit-Worten-abzulohnen,----------------Doch-endlich-lernte-(prädikativ-mameluck-ibrahim)">Der erste,</l>
+              <l>Mit <rs ref="#der-erste,---------------Den-Saladin-mit-Worten-abzulohnen,----------------Doch-endlich-lernte-(prädikativ-mameluck-ibrahim)">dem</rs> <rs ref="#saladin">er</rs> knickerte</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>So nimm <rs ref="#ein_mameluck-(ibrahim)">dir</rs> nur</l>
+              <l>Dort <rs ref="#einen-Beutel-(einen-der-von-nathan-zu-saladin-gebrachten)">einen Beutel</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#ein_mameluck">
+            <rs ref="#ein_mameluck-(ibrahim)"><speaker>DER MAMELUCK.</speaker></rs>
+            <lg>
+              <l>Nein, nun nicht! <rs ref="#saladin">Du</rs> kannst</l>
+              <l>Mir <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">sie</rs> nun alle schenken wollen.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Trotz! –</l>
+              <l>Komm her! Da hast <rs ref="#ein_mameluck-(ibrahim)">du</rs> <rs ref="#zwei-(beutel-der-von-nathan-an-saladin-gelieferten)">zwei</rs>. – Im Ernst? <rs ref="#ein_mameluck-(ibrahim)">er</rs> geht?</l>
+              <l>Tut mirs an Edelmut zuvor? – Denn sicher</l>
+              <l>Muß <rs ref="#ein_mameluck-(ibrahim)">ihm</rs> <rs ref="#es33">es</rs> saurer werden, <rs ref="#es33">auszuschlagen</rs>,</l>
+              <l>Als mir zu geben. – <rs ref="#ein_mameluck-(ibrahim)">Ibrahim</rs>! – Was kömmt</l>
+              <l>Mir denn auch ein, so kurz vor meinem Abtritt</l>
+              <l>Auf einmal ganz ein andrer sein zu wollen? –</l>
+              <l>Will <rs ref="#saladin">Saladin</rs> als <rs ref="#Saladin-(prädikativ-saladin-als-großzügiger-saladin-finanziell)">Saladin</rs> nicht sterben? –</l>
+              <l>So mußt' <rs ref="#saladin">er</rs> auch als <rs ref="#Saladin-(prädikativ-saladin-als-großzügiger-saladin-finanziell)">Saladin</rs> nicht leben.</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>EIN ZWEITER MAMELUCK.</speaker></rs>
+            <l>Nun, <rs ref="#saladin">Sultan</rs>! ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wenn <rs ref="#zweiter_mameluck">du</rs> mir zu melden kömmst ...</l>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <l>Daß aus <rs ref="#Ägypten">Ägypten</rs> <rs ref="#Die-Karawane-von-Kahira">der Transport</rs> nun da!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Ich weiß schon.</l>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <l>Kam ich doch zu spät!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Warum</l>
+              <l>Zu spät? – Da nimm für <rs ref="#zweiter_mameluck">deinen</rs> guten Willen</l>
+              <l><rs ref="#die-Beutel-(menge-sämtlichen-gelds-und-waren-die-nathan-saladin-leiht,-wann-es-sich-um-geld-und-wann-um-waren-handelt-ist-nicht-immer-klar))">Der Beutel</rs> <rs ref="#einen-Beutel-(einen-der-von-nathan-zu-saladin-gebrachten)">einen</rs> oder <rs ref="#zwei-(beutel-der-von-nathan-an-saladin-gelieferten)">zwei</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <l>Macht <rs ref="#drei-(beutel-der-von-nathan-zu-saladin-gebrachten,-die-der-zweite-mameluck-mitnimmt)">drei</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Ja, wenn <rs ref="#zweiter_mameluck">du</rs> rechnen kannst! – So nimm <rs ref="#drei-(beutel-der-von-nathan-zu-saladin-gebrachten,-die-der-zweite-mameluck-mitnimmt)">sie</rs> nur.</l>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <lg>
+              <rs ref="#das43"><l>Es wird wohl noch <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">ein dritter</rs> kommen, – wenn</l>
+              <l><rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">Er</rs> anders kommen kann.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wie <rs ref="#das43">das</rs>?</l>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <lg>
+              <l>Je nu;</l>
+              <l><rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">Er</rs> hat auch wohl den Hals gebrochen! Denn</l>
+              <l>Sobald <rs ref="#ein_mameluck-(ibrahi…-/-zweiter_mameluck-+-1">wir drei</rs> der Ankunft <rs ref="#Die-Karawane-von-Kahira">des Transports</rs></l>
+              <l>Versichert waren, sprengte <rs ref="#ein_mameluck-(ibrahi…-/-zweiter_mameluck-+-1">jeder</rs> frisch</l>
+              <l>Davon. <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">Der Vorderste</rs>, <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">der</rs> stürzt; und so</l>
+              <l>Komm ich nun vor, und bleib' auch vor bis in</l>
+              <l><rs ref="#Jerusalem">Die Stadt</rs>; wo aber <rs ref="#ein_mameluck-(ibrahim)">Ibrahim, der Lecker</rs>,</l>
+              <l>Die Gassen besser kennt.</l>
+              <pb n="322"/>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">O der Gestürzte</rs>!</l>
+              <l><rs ref="#zweiter_mameluck">Freund</rs>, <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">der Gestürzte</rs>! – Reit <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">ihm</rs> doch entgegen.</l>
+            </lg>
+          </sp>
+          <sp who="#zweiter_mameluck">
+            <rs ref="#zweiter_mameluck"><speaker>ZWEITER MAMELUCK.</speaker></rs>
+            <lg>
+              <l>Das werd ich ja wohl tun! – Und wenn <rs ref="#ein-dritter-(mameluck,-aber-nicht-der-hier-dritter-genannt-wird)">er</rs> lebt:</l>
+              <l>So ist die Hälfte <rs ref="#drei-(beutel-der-von-nathan-zu-saladin-gebrachten,-die-der-zweite-mameluck-mitnimmt)">dieser Beutel</rs> sein.</l>
+            </lg>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Sieh, welch ein guter edler Kerl auch <rs ref="#zweiter_mameluck">das</rs>! –</l>
+              <l>Wer kann <rs ref="#wir-Menschen">sich</rs> <rs ref="#ein_mameluck-(ibrahi…-/-zweiter_mameluck-+-1">solcher Mamelucken</rs> rühmen?</l>
+              <l>Und wär' mir denn zu denken nicht erlaubt,</l>
+              <l>Daß <rs ref="#ein_mameluck-(ibrahi…-/-zweiter_mameluck-+-1">sie</rs> mein Beispiel bilden helfen? – Fort</l>
+              <l>Mit dem Gedanken, <rs ref="#ein_mameluck-(ibrahi…-/-zweiter_mameluck-+-1">sie</rs> zu <rs ref="#meinem-Herbst-(alter,-lebensabend-saladins)">guter Letzt</rs></l>
+              <l>Noch an ein anders zu gewöhnen! ...</l>
+            </lg>
+          </sp>
+          <sp who="#dritter_mameluck">
+            <rs ref="#dritter_mameluck"><speaker>EIN DRITTER MAMELUCK.</speaker></rs>
+            <l><rs ref="#saladin">Sultan</rs>, ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Bist <rs ref="#dus,-der-stürzte-(prädikativ-der-dritte-mameluck-der-wohl-nicht-kommt)"><rs ref="#dritter_mameluck">dus</rs>, <rs ref="#dus,-der-stürzte-(prädikativ-der-dritte-mameluck-der-wohl-nicht-kommt)">der</rs> stürzte</rs>?</l>
+          </sp>
+          <sp who="#dritter_mameluck">
+            <rs ref="#dritter_mameluck"><speaker>DRITTER MAMELUCK.</speaker></rs>
+            <lg>
+              <l>Nein. Ich melde nur, –</l>
+              <l>Daß <rs ref="#mansor">Emir Mansor, <rs ref="#mansor">der</rs> <rs ref="#Die-Karawane-von-Kahira">die Karawane</rs></l>
+              <l>Geführt</rs>, vom Pferde steigt ...</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Bring <rs ref="#mansor">ihn</rs>! geschwind! –</l>
+              <l>Da ist <rs ref="#mansor">er</rs> ja! –</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

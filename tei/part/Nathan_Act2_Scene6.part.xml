@@ -1,0 +1,230 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <div type="scene">
+          <head>Sechster Auftritt</head>
+          <stage><rs ref="#tempelherr-bbb-/-nathan">Die Vorigen</rs> und <rs ref="#daja">Daja</rs> eilig.</stage>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#nathan">Nathan</rs>! <rs ref="#nathan">Nathan</rs>!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Nun?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Verzeihet, <rs ref="#tempelherr-bbb">edler Ritter</rs>, daß ich Euch</l>
+              <l>Muß unterbrechen.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Nun, was <rs ref="#ists">ists</rs>?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Was <rs ref="#ists">ists</rs>?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l><rs ref="#saladin">Der Sultan</rs> hat geschickt. <rs ref="#saladin">Der Sultan</rs> will</l>
+              <l><rs ref="#nathan">Euch</rs> sprechen. <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>, <rs ref="#saladin">der Sultan</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Mich? <rs ref="#saladin">der Sultan</rs>?</l>
+              <l><rs ref="#saladin">Er</rs> wird begierig sein, zu sehen, <rs ref="#allem,-was-an-edeln-Spezereien,---------------An-Steinen-und-an-Stoffen,-Indien---------------Und-Persien-und-Syrien,-gar-Sina,---------------Kostbares-nur-gewähren-(das-was-nathan-von-seinen-reisen-mitbrachte-und-dem-tempelherrn-zum-dank-schenken-will)">was</l>
+              <l>Ich Neues mitgebracht</rs>. Sag nur, <rs ref="#allem,-was-an-edeln-Spezereien,---------------An-Steinen-und-an-Stoffen,-Indien---------------Und-Persien-und-Syrien,-gar-Sina,---------------Kostbares-nur-gewähren-(das-was-nathan-von-seinen-reisen-mitbrachte-und-dem-tempelherrn-zum-dank-schenken-will)">es</rs> sei</l>
+              <l>Noch wenig oder gar nichts ausgepackt.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Nein, nein; <rs ref="#saladin">er</rs> will nichts sehen; will <rs ref="#nathan">Euch</rs> sprechen,</l>
+              <l><rs ref="#nathan">Euch</rs> in Person, und bald; sobald <rs ref="#nathan">Ihr</rs> könnt.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Ich werde kommen. – Geh nur wieder, geh!</l>
+            <pb n="254"/>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Nehmt ja nicht übel auf, <rs ref="#tempelherr-bbb">gestrenger Ritter</rs>. –</l>
+              <l><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>, <rs ref="#daja-/-recha">wir</rs> sind so bekümmert, was <rs ref="#saladin">der Sultan</rs></l>
+              <l>Doch will.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Das-(das-anliegen-saladins-ggü-nathan,-weshalb-er-ihn-sprechen-möchte,-unbestimmt,-später-konkretisiert-sich-dies-als-saladins-grille-von-der-frage-nach-der-besten-religion,-hierfür-gibt-es-eine-eigene-entität-da-es-nathan-erst-dann-weiß)">Das</rs> wird <rs ref="#Das-(das-anliegen-saladins-ggü-nathan,-weshalb-er-ihn-sprechen-möchte,-unbestimmt,-später-konkretisiert-sich-dies-als-saladins-grille-von-der-frage-nach-der-besten-religion,-hierfür-gibt-es-eine-eigene-entität-da-es-nathan-erst-dann-weiß)">sich</rs> zeigen. Geh nur, geh!</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

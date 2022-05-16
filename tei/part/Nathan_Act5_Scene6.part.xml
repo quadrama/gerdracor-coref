@@ -1,0 +1,566 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Sechster Auftritt</head>
+          <stage>Szene: in <rs ref="#sittah-xx">Sittahs</rs> Harem.</stage>
+          <stage><rs ref="#sittah-xx">Sittah</rs> und <rs ref="#recha">Recha</rs> in Unterhaltung begriffen.</stage>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Was freu ich mich nicht <rs ref="#recha">deiner</rs>, <rs ref="#recha">süßes Mädchen</rs>! –</l>
+              <l>Sei so beklemmt nur nicht! so angst! so schüchtern! –</l>
+              <l>Sei munter! sei gesprächiger! vertrauter!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#sittah-xx">Prinzessin</rs>, ...</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Nicht doch! nicht Prinzessin! Nenn</l>
+              <l>Mich Sittah, – <rs ref="#deine-Freundin-(prädikativ-sittah-als-freundin-rechas)"><rs ref="#recha">deine</rs> Freundin</rs>, – <rs ref="#deine-Schwester-(prädikativ-sittah-als-schwester-rechas)"><rs ref="#recha">deine</rs> Schwester</rs>.</l>
+              <l>Nenn mich <rs ref="#dein-Mütterchen-(prädikativ-sittah-als-mutter-rechas)"><rs ref="#recha">dein</rs> Mütterchen</rs>! – Ich könnte <rs ref="#dein-Mütterchen-(prädikativ-sittah-als-mutter-rechas)">das</rs></l>
+              <l>Ja schier auch sein. – So jung! so klug! so fromm!</l>
+              <l>Was <rs ref="#recha">du</rs> nicht alles weißt! nicht alles mußt</l>
+              <l>Gelesen haben!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Ich gelesen? – <rs ref="#sittah-xx">Sittah,</l>
+              <l>Du</rs> spottest <rs ref="#recha"><rs ref="#sittah-xx">deiner</rs> kleinen albern Schwester</rs>.</l>
+              <l>Ich kann kaum lesen.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Kannst kaum, <rs ref="#recha">Lügnerin</rs>!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Ein wenig <rs ref="#nathan">meines Vaters</rs> Hand! – Ich meinte,</l>
+              <l><rs ref="#sittah-xx">Du</rs> sprächst von <rs ref="#Büchern">Büchern</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Allerdings! von <rs ref="#Büchern">Büchern</rs>.</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Nun, <rs ref="#Büchern">Bücher</rs> wird mir wahrlich schwer zu lesen! –</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#Im-Ernst-(ernsthaftigkeit,-ernst-meinen-rechas)">Im Ernst</rs>?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>In <rs ref="#Im-Ernst-(ernsthaftigkeit,-ernst-meinen-rechas)">ganzem Ernst</rs>. <rs ref="#nathan">Mein Vater</rs> liebt</l>
+              <rs ref="#Die-kalte-Buchgelehrsamkeit,-die-sich----------------Mit-toten-Zeichen-ins-Gehirn-nur-drückt"><l>Die kalte Buchgelehrsamkeit, <rs ref="#Die-kalte-Buchgelehrsamkeit,-die-sich----------------Mit-toten-Zeichen-ins-Gehirn-nur-drückt">die</rs> <rs ref="#Die-kalte-Buchgelehrsamkeit,-die-sich----------------Mit-toten-Zeichen-ins-Gehirn-nur-drückt">sich</rs></l>
+              <l><pb n="334"/> Mit toten Zeichen <rs ref="#Kopf-(vernunft)-1">ins Gehirn</rs> nur drückt</rs>,</l>
+              <l>Zu wenig.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ei, was sagst <rs ref="#recha">du</rs>! – Hat indes</l>
+              <l>Wohl <rs ref="#Recht-(recht-behalten,-etwas-zu-recht-sein-oder-tun)">nicht sehr Unrecht</rs>! – Und <rs ref="#so-manches,-was---------------Du-weißt-(rechas-wissen)">so manches, was</l>
+              <l><rs ref="#recha">Du</rs> weißt</rs> ...?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Weiß ich allein aus <rs ref="#nathan">seinem</rs> Munde.</l>
+              <l>Und könnte bei <rs ref="#so-manches,-was---------------Du-weißt-(rechas-wissen)">dem meisten</rs> <rs ref="#sittah-xx">dir</rs> noch sagen,</l>
+              <l>Wie? wo? warum? <rs ref="#nathan">er</rs> <rs ref="#so-manches,-was---------------Du-weißt-(rechas-wissen)">michs</rs> gelehrt.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>So hängt</l>
+              <l><rs ref="#alles-(wissen,-erkenntnisse)">Sich</rs> freilich <rs ref="#alles-(wissen,-erkenntnisse)">alles</rs> besser an. So lernt</l>
+              <l>Mit eins <rs ref="#ihre-ganze-Seele-(rechas-herz-seele,-inneres-wesen-das-gefühle-hervorbringt)-222">die ganze Seele</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Sicher hat</l>
+              <l>Auch <rs ref="#sittah-xx">Sittah</rs> wenig oder nichts gelesen!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wie so? – Ich bin nicht stolz aufs Gegenteil. –</l>
+              <l>Allein wie so? <rs ref="#Dein-Grund-(begründung-für-rechas-eindruck-dass-sittah-wenig-gelesen-hat)"><rs ref="#recha">Dein</rs> Grund</rs>! Sprich dreist. <rs ref="#Dein-Grund-(begründung-für-rechas-eindruck-dass-sittah-wenig-gelesen-hat)"><rs ref="#recha">Dein</rs> Grund</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#sittah-xx">Sie</rs> ist <rs ref="#Das48">so schlecht und recht; so unverkünstelt;</l>
+              <l>So ganz <rs ref="#sittah-xx">sich</rs> selbst nur ähnlich</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Nun?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das48">Das</rs> sollen</l>
+              <l><rs ref="#Büchern">Die Bücher</rs> <rs ref="#wir-Menschen">uns</rs> nur selten lassen: sagt</l>
+              <l><rs ref="#nathan">Mein Vater</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>O was ist <rs ref="#nathan"><rs ref="#recha">dein</rs> Vater</rs> für</l>
+              <l><rs ref="#den-Weisen-Nathan-(prädikativ-nathan-als-der-weise)">Ein Mann</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Nicht wahr?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wie nah <rs ref="#nathan">er</rs> immer doch</l>
+              <l>Zum Ziele trifft!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Nicht wahr? – Und <rs ref="#nathan">diesen Vater</rs> –</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Was ist <rs ref="#recha">dir, Liebe</rs>?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#nathan">Diesen Vater</rs> –</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#Der-Schöpfer-(Gott-muslimisch,-saladins,-sittahs,-derwischs,-bei-nennungen-des-derwischs-wurde-ambik-markiert-weil-nicht-ganz-klar-ist,-ob-er-als-parse-wirklich-den-gleichen-gott-meint)">Gott</rs>!</l>
+              <l><rs ref="#recha">Du</rs> weinst?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#nathan">diesen Vater</rs> – Ah! es muß</l>
+              <l>Heraus! <rs ref="#ihre-ganze-Seele-(rechas-herz-seele,-inneres-wesen-das-gefühle-hervorbringt)-222">Mein Herz</rs> will <rs ref="#viel-Boden-(viel-platz-raum)">Luft</rs>, will <rs ref="#viel-Boden-(viel-platz-raum)">Luft</rs> ...</l>
+            </lg>
+            <stage>Wirft <rs ref="#recha">sich</rs>, von <rs ref="#Tränen-(rechas)">Tränen</rs> überwältiget, zu <rs ref="#ihren-Füßen-(sittahs)"><rs ref="#sittah-xx">ihren</rs> Füßen</rs>.</stage>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Kind</rs>, was</l>
+              <l>Geschieht dir? <rs ref="#recha">Recha</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <rs ref="#das50"><l><rs ref="#nathan">Diesen Vater</rs> soll –</l>
+              <l>Soll ich verlieren!</l></rs>
+              <pb n="335"/>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Du</rs>? verlieren? <rs ref="#nathan">ihn</rs>?</l>
+              <l>Wie <rs ref="#das50">das</rs>? – Sei ruhig! – Nimmermehr! – Steh auf!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#sittah-xx">Du</rs> sollst vergebens <rs ref="#sittah-xx">dich</rs> zu <rs ref="#deine-Freundin-(prädikativ-sittah-als-freundin-rechas)">meiner Freundin</rs>,</l>
+              <l>Zu <rs ref="#deine-Schwester-(prädikativ-sittah-als-schwester-rechas)">meiner Schwester</rs> nicht erboten haben!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ich <rs ref="#deine-Schwester-(prä…-/-deine-Freundin-(prädikativ-sittah-als-freundin-und-schwester-rechas)">bins</rs> ja! <rs ref="#deine-Schwester-(prä…-/-deine-Freundin-(prädikativ-sittah-als-freundin-und-schwester-rechas)">bins</rs>! – Steh doch nur auf! Ich muß</l>
+              <l>Sonst Hülfe rufen.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage><rs ref="#recha">die</rs> <rs ref="#recha">sich</rs> ermannt und aufsteht.</stage>
+            <lg>
+              <l>Ah! verzeih! vergib! –</l>
+              <l>Mein Schmerz hat mich vergessen machen, wer</l>
+              <l><rs ref="#sittah-xx">Du</rs> bist. Vor <rs ref="#sittah-xx">Sittah</rs> gilt kein Winseln, kein</l>
+              <l>Verzweifeln. <rs ref="#Kopf-(vernunft)-1">Kalte, ruhige Vernunft</rs></l>
+              <l>Will alles über <rs ref="#sittah-xx">sie</rs> allein vermögen.</l>
+              <l><rs ref="#Wes-Sache-diese-bei-ihr-führt">Wes Sache <rs ref="#Kopf-(vernunft)-1">diese</rs> bei <rs ref="#sittah-xx">ihr</rs> führt</rs>, <rs ref="#Wes-Sache-diese-bei-ihr-führt">der</rs> siegt!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Nun dann?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Nein; <rs ref="#sittah-xx">meine Freundin, meine Schwester</rs></l>
+              <l>Gibt <rs ref="#das51">das</rs> nicht zu! Gibt nimmer zu, <rs ref="#das51">daß mir</l>
+              <l><rs ref="#Ein-andrer-Vater-(für-recha)">Ein andrer Vater</rs> aufgedrungen werde</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-andrer-Vater-(für-recha)">Ein andrer Vater</rs>? aufgedrungen? <rs ref="#recha">dir</rs>?</l>
+              <l>Wer kann <rs ref="#das51">das</rs>? kann <rs ref="#das51">das</rs> auch nur wollen, <rs ref="#recha">Liebe</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Wer? <rs ref="#es36"><rs ref="#daja">Meine gute böse Daja</rs> kann</l>
+              <l><rs ref="#das51">Das</rs> wollen, – will <rs ref="#das51">das</rs> können.</rs> – Ja; <rs ref="#daja">du</rs> kennst</l>
+              <l>Wohl <rs ref="#daja">diese gute böse Daja</rs> nicht?</l>
+              <l>Nun, <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs> vergeb' <rs ref="#es36">es</rs> <rs ref="#daja">ihr</rs>! – belohn' <rs ref="#es36">es</rs> <rs ref="#daja">ihr</rs>!</l>
+              <l><rs ref="#daja">Sie</rs> hat mir <rs ref="#Gutes-(das-daja-für-recha-getan-hat-in-der-kindheit)">so viel Gutes</rs>, – <rs ref="#das51">so viel Böses</rs></l>
+              <l>Erwiesen!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Böses <rs ref="#recha">dir</rs>? – So muß <rs ref="#daja">sie</rs> Gutes</l>
+              <l>Doch wahrlich wenig haben.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Doch! recht viel,</l>
+              <l>Recht viel!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Wer ist <rs ref="#daja">sie</rs>?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <rs ref="#Eine-Christin,-die---------------In-meiner-Kindheit-mich-gepflegt-(prädikativ-daja)"><l><rs ref="#Die-aber-mich-auch-so-geängstet-(prädikativ-daja)">Eine Christin</rs>, <rs ref="#Eine-Christin,-die---------------In-meiner-Kindheit-mich-gepflegt-(prädikativ-daja)">die</rs></l>
+              <rs ref="#Gutes-(das-daja-für-recha-getan-hat-in-der-kindheit)"><l>In <rs ref="#Kindheit-(rechas)">meiner Kindheit</rs> mich gepflegt</rs>; mich so</l>
+              <l>Gepflegt</rs>! – <rs ref="#sittah-xx">Du</rs> glaubst nicht! – <rs ref="#Eine-Christin,-die---------------In-meiner-Kindheit-mich-gepflegt-(prädikativ-daja)">Die mir eine Mutter</l>
+              <l>So wenig missen lassen</rs>! – <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> vergelt'</l>
+              <l><rs ref="#Gutes-(das-daja-für-recha-getan-hat-in-der-kindheit)">Es</rs> <rs ref="#daja">ihr</rs>! – <rs ref="#Die-aber-mich-auch-so-geängstet-(prädikativ-daja)">Die</rs> aber mich auch so geängstet!</l>
+              <l>Mich so gequält!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Und über was? warum?</l>
+              <l>Wie?</l>
+              <pb n="336"/>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <rs ref="#ists4"><l>Ach! <rs ref="#daja">die arme Frau</rs>, – ich sag' <rs ref="#Ist-eine-Christin"><rs ref="#sittah-xx">dirs</rs></rs> ja –</l>
+              <l><rs ref="#Ist-eine-Christin">Ist <rs ref="#Christin-(prädikativ-daja)">eine Christin</rs></rs>; – muß aus Liebe quälen; –</l>
+              <l>Ist eine von <rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">den Schwärmerinnen, <rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">die</rs></l>
+              <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)"><l>Den allgemeinen, einzig wahren Weg</l>
+              <l>Nach <rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">Gott</rs></rs>, zu wissen wähnen!</l></rs></rs>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Nun versteh' ich!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">sich</rs> gedrungen fühlen, <rs ref="#einen-jeden,---------------Der-dieses-Wegs-verfehlt-(ungläubige,-menschen-angeblich-falschen-glaubens">einen jeden,</l>
+              <l><rs ref="#einen-jeden,---------------Der-dieses-Wegs-verfehlt-(ungläubige,-menschen-angeblich-falschen-glaubens">Der</rs> <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)">dieses Wegs</rs> verfehlt</rs>, darauf zu lenken. –</l>
+              <l>Kaum können <rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">sie</rs> auch anders. Denn <rs ref="#ists5">ists</rs> wahr,</l>
+              <l><rs ref="#ists5">Daß <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)">dieser Weg</rs> allein nur richtig führt</rs>:</l>
+              <l>Wie sollen <rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">sie</rs> gelassen <rs ref="#einen-jeden,---------------Der-dieses-Wegs-verfehlt-(ungläubige,-menschen-angeblich-falschen-glaubens"><rs ref="#den-Schwärmerinnen,-die---------------Den-allgemeinen,-einzig-wahren-Weg---------------Nach-Gott,-zu-wissen-wähnen!">ihre</rs> Freunde</rs></l>
+              <l>Auf <rs ref="#einem-andern-(glauben-religion-als-das-christentum)">einem andern</rs> wandeln sehn, – <rs ref="#einem-andern-(glauben-religion-als-das-christentum)">der</rs> <rs ref="#seinem-ewigen-Verderben">ins</l>
+              <l>Verderben</rs> stürzt, <rs ref="#seinem-ewigen-Verderben">ins ewige Verderben</rs>?</l>
+              <l><rs ref="#Es14">Es</rs> müßte möglich sein, <rs ref="#Es14"><rs ref="#einen-jeden,---------------Der-dieses-Wegs-verfehlt-(ungläubige,-menschen-angeblich-falschen-glaubens">denselben Menschen</rs></l>
+              <l>Zur selben Zeit zu lieben und zu hassen</rs>. –</l>
+              <l>Auch <rs ref="#ists4">ists</rs> das nicht, was endlich laute Klagen</l>
+              <l>Mich über <rs ref="#daja">sie</rs> zu führen zwingt. <rs ref="#Es15"><rs ref="#daja">Ihr</rs> Seufzen,</l>
+              <l><rs ref="#daja">Ihr</rs> Warnen, <rs ref="#daja">ihr</rs> Gebet, <rs ref="#daja">ihr</rs> Drohen</rs> hätt'</l>
+              <l>Ich gern noch länger ausgehalten; gern!</l>
+              <l><rs ref="#Es15">Es</rs> brachte mich doch immer auf <rs ref="#Gedanken,---------------Die-gut-und-nützlich-(recha)">Gedanken,</l>
+              <l><rs ref="#Gedanken,---------------Die-gut-und-nützlich-(recha)">Die</rs> gut und nützlich</rs>. Und wem <rs ref="#schmeichelts">schmeichelts</rs> doch</l>
+              <l>Im Grunde nicht, <rs ref="#schmeichelts"><rs ref="#wems"><rs ref="#wir-Menschen">sich</rs> gar so wert und teuer,</rs></l>
+              <l>Von <rs ref="#wems">wems</rs> auch sei, gehalten fühlen, daß</l>
+              <l><rs ref="#wir-Menschen">Er</rs> <rs ref="#den-Gedanken-(ein-anderer-wäre-verdammt)">den Gedanken</rs> nicht ertragen kann,</l>
+              <l><rs ref="#den-Gedanken-(ein-anderer-wäre-verdammt)"><rs ref="#wir-Menschen">Er</rs> müß' einmal auf ewig <rs ref="#einen-jeden,---------------Der-dieses-Wegs-verfehlt-(ungläubige,-menschen-angeblich-falschen-glaubens">uns</rs> entbehren</rs></rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Sehr wahr!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Allein – allein – <rs ref="#Den-zweiten-Schritt-(dajas,-das-vorgehen,-recha-zu-erzählen-dass-sie-nicht-nathan-kind-ist)">das</rs> geht zu weit!</l>
+              <l><rs ref="#Den-zweiten-Schritt-(dajas,-das-vorgehen,-recha-zu-erzählen-dass-sie-nicht-nathan-kind-ist)">Dem</rs> kann ich nichts entgegensetzen; nicht</l>
+              <l>Geduld, nicht Überlegung; nichts!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Was? wem?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#was-Ihr-sagt-(die-information-dass-nathan-nicht-rechas-leiblicher-vater-ist,-sondern-christen)-zzz">Was sie mir eben itzt entdeckt will haben</rs>.</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Entdeckt? und eben itzt?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Nur eben itzt!</l>
+              <l><rs ref="#daja-/-recha">Wir</rs> nahten, <rs ref="#graden-Wegs-(von-nathans-haus-zu-saladin)">auf dem Weg</rs>' hierher, <rs ref="#daja-/-recha">uns</rs> <rs ref="#einem---------------Verfallnen-Christentempel">einem</l>
+              <l>Verfallnen Christentempel</rs>. Plötzlich stand</l>
+              <l><rs ref="#daja">Sie</rs> still; schien mit <rs ref="#daja">sich</rs> selbst zu kämpfen; blickte</l>
+              <l>Mit nassen Augen bald <rs ref="#unter-freiem-Himmel-(irdischer)">gen Himmel</rs>, bald</l>
+              <l><pb n="337"/> Auf mich. Komm, sprach <rs ref="#daja">sie</rs> endlich, laß <rs ref="#daja-/-recha">uns</rs> hier</l>
+              <l><rs ref="#einem---------------Verfallnen-Christentempel">Durch diesen Tempel</rs> in die Richte gehn!</l>
+              <l><rs ref="#daja">Sie</rs> geht; ich folg' <rs ref="#daja">ihr</rs>, und <rs ref="#Ihr-gierig-Aug-(rechas-blick)">mein Auge</rs> schweift</l>
+              <l>Mit Graus <rs ref="#einem---------------Verfallnen-Christentempel">die wankenden Ruinen</rs> durch.</l>
+              <l>Nun steht <rs ref="#daja">sie</rs> wieder; und ich sehe mich</l>
+              <l>An den versunknen Stufen eines morschen</l>
+              <l>Altars mit <rs ref="#daja">ihr</rs>. Wie ward mir? als <rs ref="#daja">sie</rs> da</l>
+              <l>Mit heißen Tränen, mit gerungnen Händen,</l>
+              <l>Zu meinen Füßen stürzte ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#recha">Gutes Kind</rs>!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Und bei <rs ref="#der-Göttlichen,-die-da-wohl-sonst---------------So-manch-Gebet-erhört,-so-manches-Wunder---------------Verrichtet-habe">der Göttlichen, <rs ref="#der-Göttlichen,-die-da-wohl-sonst---------------So-manch-Gebet-erhört,-so-manches-Wunder---------------Verrichtet-habe">die</rs> da wohl sonst</l>
+              <l>So manch Gebet erhört, <rs ref="#noch-Unglaublichers-(übernatürliche-Wunder)">so manches Wunder</rs></l>
+              <l>Verrichtet habe</rs>, mich beschwor; – mit <rs ref="#deinen-Augen-(dajas-blick)">Blicken</l>
+              <l>Des wahren Mitleids</rs> mich beschwor, mich <rs ref="#recha">meiner</rs></l>
+              <l>Doch zu erbarmen! – Wenigstens, <rs ref="#daja">ihr</rs> zu</l>
+              <l>Vergeben, wenn <rs ref="#daja">sie</rs> mir entdecken müsse,</l>
+              <l><rs ref="#Es16">Was <rs ref="#der-Kirche-(als-institution-des-christentums)"><rs ref="#daja">ihre</rs> Kirch</rs>' auf mich für Anspruch habe</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>(<rs ref="#recha">Unglückliche</rs>! – <rs ref="#Es16">Es</rs> ahndte mir!)</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Ich sei</l>
+              <l><rs ref="#ein-Christenkind-(prädikativ-recha-als-tochter-von-christen)">Aus christlichem Geblüte</rs>; sei getauft;</l>
+              <l>Sei Nathans Tochter nicht; <rs ref="#nathan">er</rs> nicht mein Vater! –</l>
+              <l><rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>! <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>! <rs ref="#nathan">Er</rs> nicht mein Vater! – <rs ref="#sittah-xx">Sittah</rs>! <rs ref="#sittah-xx">Sittah</rs>!</l>
+              <l>Sieh mich aufs neu' zu <rs ref="#ihren-Füßen-(sittahs)"><rs ref="#sittah-xx">deinen</rs> Füßen</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Recha</rs>!</l>
+              <l>Nicht doch! steh auf! – <rs ref="#saladin">Mein Bruder</rs> kömmt! steh auf!</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

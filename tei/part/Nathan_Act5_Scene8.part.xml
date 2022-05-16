@@ -1,0 +1,779 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Letzter Auftritt</head>
+          <stage><rs ref="#nathan">Nathan</rs> und <rs ref="#tempelherr-bbb">der Tempelherr</rs> zu den Vorigen.</stage>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Ah, <rs ref="#tempelherr-bbb-/-nathan">meine guten lieben Freunde</rs>! – <rs ref="#nathan">Dich,</l>
+              <l>Dich, Nathan</rs>, muß ich nur <rs ref="#Vor-allen-Dingen-(bevor-man-irgendetwas-anderes-tut)">vor allen Dingen</rs></l>
+              <l>Bedeuten, <rs ref="#dieser-Kleinigkeit">daß <rs ref="#nathan">du</rs> nun, sobald <rs ref="#nathan">du</rs> willst,</l>
+              <l><rs ref="#die-Beutel-(menge-sämtlichen-gelds-und-waren-die-nathan-saladin-leiht,-wann-es-sich-um-geld-und-wann-um-waren-handelt-ist-nicht-immer-klar))"><rs ref="#nathan">Dein</rs> Geld</rs> kannst wiederholen lassen</rs>! ...</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#saladin">Sultan</rs>! ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Nun steh ich auch zu <rs ref="#nathan">deinen</rs> Diensten ...</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#saladin">Sultan</rs>! ...</l>
+            <pb n="340"/>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Die-Karawane-von-Kahira">Die Karawan</rs>' ist da. Ich bin so reich</l>
+              <l>Nun wieder, als ich lange nicht gewesen. –</l>
+              <l>Komm, sag' mir, was <rs ref="#nathan">du</rs> brauchst, so recht was Großes</l>
+              <l>Zu unternehmen! Denn auch <rs ref="#dem-Kaufmann">ihr</rs>, auch <rs ref="#dem-Kaufmann">ihr</rs>,</l>
+              <l><rs ref="#dem-Kaufmann">Ihr Handelsleute</rs>, könnt <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">des baren Geldes</rs></l>
+              <l>Zu viel nie haben!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Und warum zuerst</l>
+              <l>Von <rs ref="#dieser-Kleinigkeit">dieser Kleinigkeit</rs>? – Ich sehe dort</l>
+              <l><rs ref="#verschloßnem-Aug'-(rechas)">Ein Aug'</rs> in <rs ref="#Tränen-(rechas)">Tränen</rs>, <rs ref="#verschloßnem-Aug'-(rechas)">das</rs> zu trocknen, mir</l>
+              <l>Weit angelegner ist.</l>
+            </lg>
+            <stage>Geht auf <rs ref="#recha">Recha</rs> zu.</stage>
+            <lg>
+              <l><rs ref="#recha">Du</rs> hast geweint?</l>
+              <l>Was fehlt <rs ref="#recha">dir</rs>? – bist doch <rs ref="#mein-Kind-(prädikativ-recha-als-kind-nathans)">meine Tochter</rs> noch?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#nathan">Mein Vater</rs>! ...</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#nathan-/-recha">Wir</rs> verstehen <rs ref="#nathan-/-recha">uns</rs>. Genug! –</l>
+              <l>Sei heiter! Sei gefaßt! Wenn sonst <rs ref="#ihre-ganze-Seele-(rechas-herz-seele,-inneres-wesen-das-gefühle-hervorbringt)-222"><rs ref="#recha">dein</rs> Herz</rs></l>
+              <l>Nur <rs ref="#recha">dein</rs> noch ist! Wenn <rs ref="#ihre-ganze-Seele-(rechas-herz-seele,-inneres-wesen-das-gefühle-hervorbringt)-222"><rs ref="#recha">deinem</rs> Herzen</rs> sonst</l>
+              <l>Nur kein Verlust nicht droht! – <rs ref="#nathan">Dein Vater</rs> ist</l>
+              <l><rs ref="#recha">Dir</rs> unverloren!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <rs ref="#Das50"><l>Keiner, keiner sonst!</l></rs>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Sonst keiner? – Nun! so hab' ich mich betrogen.</l>
+              <l>Was <rs ref="#wir-Menschen">man</rs> nicht zu verlieren fürchtet, hat</l>
+              <l><rs ref="#wir-Menschen">Man</rs> zu besitzen nie geglaubt, und nie</l>
+              <l>Gewünscht. – Recht wohl! recht wohl! – <rs ref="#Das50">Das</rs> ändert, <rs ref="#nathan">Nathan</rs>,</l>
+              <l><rs ref="#Das50">Das</rs> ändert alles! – <rs ref="#saladin">Saladin</rs>, <rs ref="#tempelherr-bbb-/-nathan">wir</rs> kamen</l>
+              <l>Auf <rs ref="#sein-Geheiß-(anweisung-befehl-saladins)"><rs ref="#saladin">dein</rs> Geheiß</rs>. Allein, ich hatte <rs ref="#saladin">dich</rs></l>
+              <l>Verleitet: itzt bemüh <rs ref="#saladin">dich</rs> nur nicht weiter!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Wie gach nun wieder, <rs ref="#tempelherr-bbb">junger Mann</rs>! – Soll alles</l>
+              <l><rs ref="#tempelherr-bbb">Dir</rs> denn entgegen kommen? alles <rs ref="#tempelherr-bbb">dich</rs></l>
+              <l>Erraten?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Nun <rs ref="#saladin">du</rs> hörst ja! siehst ja, <rs ref="#saladin">Sultan</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Ei wahrlich! – Schlimm genug, daß <rs ref="#eines-Wunsches-nur-nach-Recha-(des-temnpelherrn-wunsch-recha-zu-heiraten()"><rs ref="#ichs8"><rs ref="#tempelherr-bbb">deiner</rs> Sache</rs></rs></l>
+              <l><rs ref="#tempelherr-bbb">Du</rs> nicht gewisser warst!</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>So bin <rs ref="#ichs8">ichs</rs> nun.</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Wer so auf <rs ref="#irgend-eine-Wohltat">irgend eine Wohltat</rs> trotzt,</l>
+              <l>Nimmt <rs ref="#irgend-eine-Wohltat">sie</rs> zurück. <rs ref="#recha">Was <rs ref="#tempelherr-bbb">du</rs> gerettet</rs>, ist</l>
+              <l>Deswegen nicht <rs ref="#Zur-Eurigen-(prädikativ-recha-als-ehefrau-des-tempelherrn)"><rs ref="#tempelherr-bbb">dein</rs> Eigentum</rs>. Sonst wär'</l>
+              <l><rs ref="#unter-Räuber">Der Räuber, <rs ref="#unter-Räuber">den</rs> <rs ref="#unter-Räuber">sein</rs> Geiz <rs ref="#Dem-Feur">ins Feuer</rs> jagt</rs>,</l>
+              <l>So gut ein Held, wie <rs ref="#tempelherr-bbb">du</rs>!</l>
+            </lg>
+            <stage><pb n="341"/> Auf <rs ref="#recha">Recha</rs> zugehend,um <rs ref="#recha">sie</rs> <rs ref="#tempelherr-bbb">dem Tempelherrn</rs> zuzuführen.</stage>
+            <lg>
+              <l>Komm, <rs ref="#recha">liebes Mädchen</rs>,</l>
+              <l>Komm! Nimms mit <rs ref="#tempelherr-bbb">ihm</rs> nicht so genau. Denn wär'</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> anders; wär' <rs ref="#tempelherr-bbb">er</rs> minder warm und stolz:</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> hätt' <rs ref="#es38">es</rs> bleiben lassen, <rs ref="#es38"><rs ref="#recha">dich</rs> zu retten</rs>.</l>
+              <l><rs ref="#recha">Du</rs> mußt <rs ref="#tempelherr-bbb">ihm</rs> eins fürs andre rechnen. – Komm!</l>
+              <l>Beschäm <rs ref="#tempelherr-bbb">ihn</rs>! tu, <rs ref="#was-ihm-zu-tun-geziemte-(liebesbekenntnis-geständnis-recha-und-tempelherr)">was <rs ref="#tempelherr-bbb">ihm</rs> zu tun geziemte</rs>!</l>
+              <l><rs ref="#was-ihm-zu-tun-geziemte-(liebesbekenntnis-geständnis-recha-und-tempelherr)">Bekenn' <rs ref="#tempelherr-bbb">ihm</rs> <rs ref="#recha">deine</rs> Liebe</rs>! trage <rs ref="#recha">dich</rs> <rs ref="#tempelherr-bbb">ihm</rs> an!</l>
+              <l>Und wenn <rs ref="#tempelherr-bbb">er</rs> <rs ref="#recha">dich</rs> verschmäht; <rs ref="#Wie-ungleich-mehr-in-diesem-Schritte-du---------------Für-ihn-getan,-als-er-für-dich-..."><rs ref="#recha">dirs</rs></rs> je vergißt,</l>
+              <rs ref="#Wie-ungleich-mehr-in-diesem-Schritte-du---------------Für-ihn-getan,-als-er-für-dich-..."><l>Wie ungleich mehr in <rs ref="#was-ihm-zu-tun-geziemte-(liebesbekenntnis-geständnis-recha-und-tempelherr)">diesem Schritte</rs> <rs ref="#recha">du</rs></l>
+              <l>Für <rs ref="#tempelherr-bbb">ihn</rs> getan, als <rs ref="#tempelherr-bbb">er</rs> für <rs ref="#recha">dich</rs> ...</rs> Was hat</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> denn für <rs ref="#recha">dich</rs> getan? Ein wenig <rs ref="#tempelherr-bbb">sich</rs></l>
+              <l>Beräuchern lassen! ist was Rechts! – so hat</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">meines Bruders, meines Assad</rs>, nichts!</l>
+              <l>So trägt <rs ref="#tempelherr-bbb">er</rs> <rs ref="#deines-Bruders-Form-(äußere-gestalt-erscheinung-saladins-bruder)"><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seine</rs> Larve</rs>, nicht sein Herz.</l>
+              <l>Komm, <rs ref="#recha">Liebe</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Geh! geh, <rs ref="#recha">Liebe</rs>, geh! <rs ref="#was-ihm-zu-tun-geziemte-(liebesbekenntnis-geständnis-recha-und-tempelherr)">Es</rs> ist</l>
+              <l>Für <rs ref="#ihren-Dank-(recha-ggü-dem-tempelherrn)"><rs ref="#recha">deine</rs> Dankbarkeit</rs> noch immer wenig;</l>
+              <l>Noch immer nichts.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Halt <rs ref="#saladin">Saladin</rs>! halt <rs ref="#sittah-xx">Sittah</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Auch <rs ref="#nathan">du</rs>?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <rs ref="#das52"><l>Hier hat <rs ref="#tempelherr-bbb">noch einer</rs> mit zu sprechen ...</l></rs>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Wer leugnet <rs ref="#das52">das</rs>? – Unstreitig, <rs ref="#nathan">Nathan</rs>, kömmt</l>
+              <l><rs ref="#nathan">So einem Pflegevater</rs> <rs ref="#Recht---------------Auf-sie-(nathans-recht-über-recha)">eine Stimme</rs></l>
+              <l>Mit zu! <rs ref="#Recht---------------Auf-sie-(nathans-recht-über-recha)">Die erste</rs>, wenn <rs ref="#nathan">du</rs> willst. – <rs ref="#nathan">Du</rs> hörst,</l>
+              <l>Ich weiß <rs ref="#brauchts-(nathans-situation)">der Sache</rs> ganze Lage.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nicht so ganz! –</l>
+              <l>Ich rede nicht von mir. <rs ref="#Es17">Es</rs> ist <rs ref="#ein-andrer-(prädikativ,-der-zuerst-etwas-zur-heirat-rechas-sagen-sollte)">ein andrer</rs>;</l>
+              <l><rs ref="#ein-andrer-(prädikativ,-der-zuerst-etwas-zur-heirat-rechas-sagen-sollte)">Weit, weit ein andrer</rs>, <rs ref="#Es17">den ich</rs>, <rs ref="#saladin">Saladin</rs>,</l>
+              <l>Doch auch vorher zu hören bitte.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wer?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb"><rs ref="#recha">Ihr</rs> Bruder</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb"><rs ref="#recha">Rechas</rs> Bruder</rs>?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Ja!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Mein Bruder</rs>?</l>
+              <l>So hab ich einen Bruder?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR</speaker></rs>
+            <stage>aus <rs ref="#tempelherr-bbb">seiner</rs> wilden stummen Zerstreuung auffahrend.</stage>
+            <lg>
+              <l><pb n="342"/> Wo? wo ist</l>
+              <l><rs ref="#tempelherr-bbb">Er, dieser Bruder</rs>? Noch nicht hier? Ich sollt'</l>
+              <l><rs ref="#tempelherr-bbb">Ihn</rs> hier ja treffen.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Nur <rs ref="#Geduld-(des-tempelherrn)">Geduld</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR</speaker></rs>
+            <stage>äußerst bitter.</stage>
+            <lg>
+              <l><rs ref="#nathan">Er</rs> hat</l>
+              <l><rs ref="#recha">Ihr</rs> <rs ref="#Vater">einen Vater</rs> aufgebunden: – wird</l>
+              <l><rs ref="#nathan">Er</rs> keinen Bruder für <rs ref="#recha">sie</rs> finden?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <rs ref="#ein-so-niedriger---------------Verdacht-(des-tempelherrn-rechas-leiblicher-bruder-sei-erfunden)"><l>Das</l></rs>
+              <l>Hat noch gefehlt! <rs ref="#tempelherr-bbb">Christ</rs>! <rs ref="#ein-so-niedriger---------------Verdacht-(des-tempelherrn-rechas-leiblicher-bruder-sei-erfunden)">ein so niedriger</l>
+              <l>Verdacht</rs> wär über <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Assads</rs> Lippen nicht</l>
+              <l>Gekommen. – Gut! fahr nur so fort!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Verzeih</l>
+              <l><rs ref="#tempelherr-bbb">Ihm</rs>! – Ich verzeih <rs ref="#tempelherr-bbb">ihm</rs> gern. – Wer weiß, was <rs ref="#nathan-/-saladin">wir</rs></l>
+              <l>An <rs ref="#meiner-Stelle-(die-situation-des-tempelherrn-nachdem-er-von-daja-erfahren-hat-dass-nathan-recha-jüdisch-aufzieht-und-nicht-ihr-vater-ist)"><rs ref="#tempelherr-bbb">seiner</rs> Stell'</rs>, in <rs ref="#tempelherr-bbb">seinem</rs> Alter dächten!</l>
+            </lg>
+            <stage>Freundschaftlich auf <rs ref="#tempelherr-bbb">ihn</rs> zugehend.</stage>
+            <lg>
+              <l>Natürlich, <rs ref="#tempelherr-bbb">Ritter</rs>! – <rs ref="#Argwohn-(des-tempelherrn)">Argwohn</rs> folgt auf <rs ref="#einem-Mißlaut-(nathans-ausweichende-erkundigung-nach-tempelherrs-stammbaum-auf-dessen-frage-nach-der-heirat-hin)">Mißtraun</rs>! –</l>
+              <l>Wenn <rs ref="#tempelherr-bbb">Ihr</rs> mich <rs ref="#tempelherr-bbb">Euers</rs> <emph>wahren</emph> Namens gleich</l>
+              <l>Gewürdigt hättet ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb">Ihr</rs> seid kein Stauffen!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wer bin ich denn?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Heißt Curd von Stauffen nicht!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wie heiß ich denn?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <rs ref="#das53"><l>Heißt Leu von Filneck.</l></rs>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb">Ihr</rs> stutzt?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Mit <rs ref="#Recht-(recht-behalten,-etwas-zu-recht-sein-oder-tun)">Recht</rs>! Wer sagt <rs ref="#das53">das</rs>?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#nathan"><l>Ich; <rs ref="#nathan">der</rs> mehr,</l>
+              <l>Noch mehr <rs ref="#tempelherr-bbb">Euch</rs> sagen kann</rs>. Ich straf' indes</l>
+              <l><rs ref="#tempelherr-bbb">Euch</rs> keiner Lüge.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Nicht?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Kann doch wohl sein,</l>
+              <l><rs ref="#Das51">Daß <rs ref="#Euer-Name-(des-tempelherrn)">jener Nam'</rs> <rs ref="#tempelherr-bbb">Euch</rs> ebenfalls gebührt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#Das51">Das</rs> sollt ich meinen! – (<rs ref="#Das51">Das</rs> hieß <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> <rs ref="#tempelherr-bbb">ihn</rs> sprechen!)</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Denn <rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll"><rs ref="#tempelherr-bbb">Eure</rs> Mutter – die</rs> war <rs ref="#eine-Stauffin-(prädikativ-die-mutter-des-tempelherrn)">eine Stauffin</rs>.</l>
+              <l><pb n="343"/> <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll"><rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll">Ihr</rs> Bruder, <rs ref="#tempelherr-bbb">Euer</rs> Ohm, <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">der</rs> <rs ref="#tempelherr-bbb">Euch</rs> erzogen,</l>
+              <l><rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">Dem</rs> <rs ref="#Assad-als-Wolf-von-F…-/-Stauffen-(mutter-des-bbb…"><rs ref="#tempelherr-bbb">Eure</rs> Eltern</rs> <rs ref="#tempelherr-bbb">Euch</rs> in <rs ref="#Das-Land-(Deutschland)-222">Deutschland</rs> ließen,</l>
+              <l>Als, von dem rauhen Himmel dort vertrieben,</l>
+              <l><rs ref="#Assad-als-Wolf-von-F…-/-Stauffen-(mutter-des-bbb…">Sie</rs> wieder hier <rs ref="#Jerusalem">zu Lande</rs> kamen</rs>: – <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">Der</rs></l>
+              <l>Hieß <rs ref="#Conrad-von-Stauffen-(prädikativ-conrad-curd-von-stauffen,-bruder-der-mutter-des-tempelherrn-als-er-selbst)-">Curd von Stauffen</rs>; mag an <rs ref="#Kindern">Kindesstatt</rs></l>
+              <l>Vielleicht <rs ref="#tempelherr-bbb">Euch</rs> angenommen haben! – Seid</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> lange schon mit <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">ihm</rs> nun auch herüber</l>
+              <l>Gekommen? Und <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">er</rs> lebt doch noch?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Was soll</l>
+              <l>Ich sagen? – <rs ref="#nathan">Nathan</rs>! – Allerdings! So <rs ref="#nehmts-(stammbaum,-familiensituation-des-tempelherrn)">ists</rs>!</l>
+              <l><rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">Er</rs> selbst ist tot. Ich kam erst mit der letzten</l>
+              <l>Verstärkung <rs ref="#Euer-Orden-(christl-ritterorden-dem-der-tempelherr-angehört)">unsers Ordens</rs>. – Aber, aber –</l>
+              <l>Was hat mit <rs ref="#nehmts-(stammbaum,-familiensituation-des-tempelherrn)">diesem allen</rs> <rs ref="#tempelherr-bbb"><rs ref="#recha">Rechas</rs> Bruder</rs></l>
+              <l>Zu schaffen?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll"><rs ref="#tempelherr-bbb">Euer</rs> Vater</rs> ...</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wie? auch <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">den</rs></l>
+              <l>Habt <rs ref="#nathan">Ihr</rs> gekannt? Auch <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">den</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Ists"><rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">Er</rs> war <rs ref="#ein-lieber-Herr-(assad-als-wolf-von-filnek,-prädikativ-wolf-als-jemand-dem-nathan-etwas-verdankt)">mein Freund</rs></rs>.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>War <rs ref="#ein-lieber-Herr-(assad-als-wolf-von-filnek,-prädikativ-wolf-als-jemand-dem-nathan-etwas-verdankt)"><rs ref="#nathan">Euer</rs> Freund</rs>? <rs ref="#Ists">Ists</rs> möglich, <rs ref="#nathan">Nathan</rs>! ...</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#das54"><l>Nannte</l>
+              <l><rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">Sich</rs> Wolf von Filneck; aber war kein Deutscher</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#nathan">Ihr</rs> wißt auch <rs ref="#das54">das</rs>?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>War <rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll">einer Deutschen</rs> nur</l>
+              <l>Vermählt; war <rs ref="#Stauffen-(mutter-des-tempelherrn,-frau-des-wolf-von-filnek-bzw-assad-bruder-saladins)-lll"><rs ref="#tempelherr-bbb">Eurer</rs> Mutter</rs> nur nach <rs ref="#Das-Land-(Deutschland)-222">Deutschland</rs></l>
+              <l>Auf kurze Zeit gefolgt ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Nicht mehr! Ich bitt'</l>
+              <l><rs ref="#nathan">Euch</rs>! – Aber <rs ref="#tempelherr-bbb"><rs ref="#recha">Rechas</rs> Bruder</rs>? <rs ref="#tempelherr-bbb"><rs ref="#recha">Rechas</rs> Bruder</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Seid <rs ref="#tempelherr-bbb">Ihr</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Ich? ich <rs ref="#ihr-Bruder-(prädikativ-der-tempelherr)"><rs ref="#recha">ihr</rs> Bruder</rs>?</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb">Er</rs> <rs ref="#ihr-Bruder-(prädikativ-der-tempelherr)">mein Bruder</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb-/-recha">Geschwister</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l><rs ref="#tempelherr-bbb-/-recha">Sie</rs> Geschwister!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage>will auf <rs ref="#tempelherr-bbb">ihn</rs> zu.</stage>
+            <l>Ah! <rs ref="#tempelherr-bbb">mein Bruder</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR</speaker></rs>
+            <stage>tritt zurück.</stage>
+            <l><rs ref="#ihr-Bruder-(prädikativ-der-tempelherr)"><rs ref="#recha">Ihr</rs> Bruder</rs>!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage>hält an, und wendet <rs ref="#recha">sich</rs> zu <rs ref="#nathan">Nathan</rs>.</stage>
+            <lg>
+              <l>Kann nicht sein! nicht sein! – <rs ref="#Euerm-Wesen-(innerer-charakter,-gemüt-des-tempelherrn)"><rs ref="#tempelherr-bbb">Sein</rs> Herz</rs></l>
+              <l><pb n="344"/> Weiß nichts davon! – <rs ref="#Das52"><rs ref="#nathan-/-recha">Wir</rs> sind Betrieger! <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs></rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">zum Tempelherrn</rs>.</stage>
+            <lg>
+              <l><rs ref="#nathan-/-recha">Betrieger</rs>? wie? <rs ref="#Das52">Das</rs> denkst <rs ref="#tempelherr-bbb">du</rs>? kannst <rs ref="#tempelherr-bbb">du</rs> denken?</l>
+              <l>Betrieger selbst! Denn <rs ref="#Die-Schale-(äußere-erscheinung-des-tempelherrn)">alles</rs> ist erlogen</l>
+              <l>An <rs ref="#tempelherr-bbb">dir</rs>: <rs ref="#Angesicht-(des-tempelherrn)">Gesicht</rs> und <rs ref="#seine-Stimme-(des-tempelherrn)">Stimm</rs> und <rs ref="#den-prallen-Gang-(des-tempelherrn)-aaa">Gang</rs>! Nichts <rs ref="#tempelherr-bbb">dein</rs>!</l>
+              <l><rs ref="#recha">So eine Schwester</rs> nicht erkennen wollen! Geh!</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">sich</rs> demütig <rs ref="#saladin">ihm</rs> nahend.</stage>
+            <lg>
+              <l>Mißdeut' auch <rs ref="#saladin">du</rs> nicht <rs ref="#Erstaunen-(tempelherr)">mein Erstaunen</rs>, Sultan!</l>
+              <l>Verkenn' <rs ref="#in-einem-Augenblick',-in-dem---------------Du-schwerlich-deinen-Assad-je-gesehen-(die-situation-in-der-der-tempelherr-erfährt-dass-recha-seine-schwester-ist)">in einem Augenblick', in <rs ref="#in-einem-Augenblick',-in-dem---------------Du-schwerlich-deinen-Assad-je-gesehen-(die-situation-in-der-der-tempelherr-erfährt-dass-recha-seine-schwester-ist)">dem</rs></l>
+              <l><rs ref="#saladin">Du</rs> schwerlich <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)"><rs ref="#saladin">deinen</rs> Assad</rs> je gesehen</rs>,</l>
+              <l>Nicht <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">ihn</rs> und mich!</l>
+            </lg>
+            <stage>Auf <rs ref="#nathan">Nathan</rs> zueilend.</stage>
+            <lg>
+              <l><rs ref="#nathan">Ihr</rs> nehmt und gebt mir, Nathan!</l>
+              <l>Mit <rs ref="#Eure-Hand-(nathans)">vollen Händen</rs> beides! – Nein! <rs ref="#nathan">Ihr</rs> gebt</l>
+              <l>Mir mehr, als <rs ref="#nathan">Ihr</rs> mir nehmt! unendlich mehr!</l>
+            </lg>
+            <stage><rs ref="#recha">Recha</rs> um den Hals fallend.</stage>
+            <l><rs ref="#recha">Ah meine Schwester</rs>! <rs ref="#recha">meine Schwester</rs>!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#recha"><l>Blanda</l>
+              <l>Von Filneck</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Blanda</rs>? <rs ref="#recha">Blanda</rs>? – Recha nicht?</l>
+              <l>Nicht Eure Recha mehr? – <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>! <rs ref="#nathan">Ihr</rs> verstoßt</l>
+              <l><rs ref="#recha">Sie</rs>! gebt <rs ref="#recha">ihr</rs> <rs ref="#recha">ihren</rs> Christennamen wieder!</l>
+              <l>Verstoßt <rs ref="#recha">sie</rs> meinetwegen! – <rs ref="#nathan">Nathan</rs>! <rs ref="#nathan">Nathan</rs>!</l>
+              <l>Warum es <rs ref="#recha">sie</rs> entgelten lassen? <rs ref="#recha">sie</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Und was? – <rs ref="#tempelherr-bbb-/-recha">O meine Kinder</rs>! <rs ref="#tempelherr-bbb-/-recha">meine Kinder</rs>! –</l>
+              <l>Denn <rs ref="#tempelherr-bbb">meiner Tochter Bruder</rs> wär <rs ref="#Sohn-(prädikativ-der-tempelherr-als-sohn-nathans)">mein Kind</rs></l>
+              <l>Nicht auch, – sobald <rs ref="#tempelherr-bbb">er</rs> will?</l>
+            </lg>
+            <stage>Indem <rs ref="#nathan">er</rs> <rs ref="#nathan">sich</rs> <rs ref="#ihren-Umarmungen-(rechas-und-des-tempelherrn)"><rs ref="#tempelherr-bbb-/-recha">ihren</rs> Umarmungen</rs> überläßt, tritt <rs ref="#saladin">Saladin</rs> mit unruhigem Erstaunen zu
+              <rs ref="#sittah-xx"><rs ref="#saladin">seiner</rs> Schwester</rs>.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Was sagst <rs ref="#sittah-xx">du, Schwester</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Ich bin gerührt ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Und ich, – ich schaudere</l>
+              <l>Vor einer größern Rührung fast zurück!</l>
+              <l>Bereite <rs ref="#sittah-xx">dich</rs> nur drauf, so gut <rs ref="#sittah-xx">du</rs> kannst.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Wie?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l><rs ref="#nathan">Nathan</rs>, auf ein Wort! ein Wort! –</l>
+            <stage>Indem <rs ref="#nathan">Nathan</rs> zu <rs ref="#saladin">ihm</rs> tritt, tritt <rs ref="#sittah-xx">Sittah</rs> zu <rs ref="#tempelherr-bbb-/-recha">dem<pb n="345"/> Geschwister</rs>, <rs ref="#tempelherr-bbb-/-recha">ihm</rs> <rs ref="#sittah-xx">ihre</rs>
+              Teilnehmung zu bezeigen; und <rs ref="#nathan">Nathan</rs> und <rs ref="#saladin">Saladin</rs> sprechen leiser.</stage>
+            <lg>
+              <l>Hör! hör doch, <rs ref="#nathan">Nathan</rs>! Sagtest <rs ref="#nathan">du</rs> vorhin</l>
+              <l>Nicht –?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Was?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Aus <rs ref="#Das-Land-(Deutschland)-222">Deutschland</rs> sei <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll"><rs ref="#tempelherr-bbb-/-recha">ihr</rs> Vater</rs> nicht</l>
+              <l>Gewesen; ein geborner Deutscher nicht.</l>
+              <l>Was war <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">er</rs> denn? <rs ref="#Das53">wo war <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">er</rs> sonst denn her?</rs></l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das53">Das</rs> hat <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">er</rs> selbst mir nie vertrauen wollen.</l>
+              <l>Aus <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">seinem</rs> Munde weiß ich nichts davon.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Und war auch sonst kein Frank? kein Abendländer?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>O! daß <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">er</rs> der nicht sei, gestand <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">er</rs> wohl. –</l>
+              <l><rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">Er</rs> sprach am liebsten Persisch ...</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Persisch? Persisch?</l>
+              <l>Was will ich mehr? – <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">Er</rs> <rs ref="#assad-als-wolf-von-filnek-(prädikativ-wolf-als-assad)-uuu">ists</rs>! <rs ref="#Assad-als-Wolf-von-Filnek-(vater-von-recha-und-tempelherr,-wird-hier-von-unterschiedlichen-Figuren-als-Wolf-von-Filnek-bezeichnet,-da-sich-assad-diesen-in-der-zeit-bevor-das-stück-spielt-als-wolf-vorgestellt-hatte)-lll">Er</rs> war <rs ref="#assad-als-wolf-von-filnek-(prädikativ-wolf-als-assad)-uuu">es</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Wer?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Mein Bruder</rs>! ganz gewiß! <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Mein Assad</rs>! ganz</l>
+              <l>Gewiß!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nun, wenn <rs ref="#saladin">du</rs> selbst darauf verfällst: –</l>
+              <l>Nimm die Versichrung hier in <rs ref="#ein-Büchelchen-(gebetsbuch-von-wolf-assad-ehemaliger-dienstherr-des-klosterbruders)">diesem Buche</rs>!</l>
+            </lg>
+            <stage><rs ref="#saladin">Ihm</rs> <rs ref="#ein-Büchelchen-(gebetsbuch-von-wolf-assad-ehemaliger-dienstherr-des-klosterbruders)">das Brevier</rs> überreichend.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#ein-Büchelchen-(gebetsbuch-von-wolf-assad-ehemaliger-dienstherr-des-klosterbruders)">es</rs> begierig aufschlagend.</stage>
+            <l>Ah! <rs ref="#des-Herrn---------------Selbsteigner-Hand-(handschrift-wolf-assad)"><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seine</rs> Hand</rs>! Auch <rs ref="#des-Herrn---------------Selbsteigner-Hand-(handschrift-wolf-assad)">die</rs> erkenn' ich wieder!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Noch wissen <rs ref="#tempelherr-bbb-/-recha">sie</rs> von nichts! Noch stehts bei <rs ref="#saladin">dir</rs></l>
+              <l>Allein, was <rs ref="#tempelherr-bbb-/-recha">sie</rs> davon erfahren sollen!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage>indes <rs ref="#saladin">er</rs> darin geblättert.</stage>
+            <lg>
+              <l>Ich <rs ref="#tempelherr-bbb-/-recha">meines Bruders Kinder</rs> nicht erkennen?</l>
+              <l>Ich <rs ref="#tempelherr-bbb-/-recha">meine Neffen – meine Kinder</rs> nicht?</l>
+              <l><rs ref="#tempelherr-bbb-/-recha">Sie</rs> nicht erkennen? ich? <rs ref="#tempelherr-bbb-/-recha">Sie</rs> <rs ref="#nathan">dir</rs> wohl lassen?</l>
+            </lg>
+            <stage>Wieder laut.</stage>
+            <lg>
+              <l><rs ref="#tempelherr-bbb-/-recha">Sie</rs> <rs ref="#sinds-(prädikativ-recha-und-der-tempelherr-als-kinder-assads)">sinds</rs>! <rs ref="#tempelherr-bbb-/-recha">sie</rs> sind <rs ref="#sinds-(prädikativ-recha-und-der-tempelherr-als-kinder-assads)">es</rs>, <rs ref="#sittah-xx">Sittah</rs>, sind! <rs ref="#tempelherr-bbb-/-recha">Sie</rs> <rs ref="#sinds-(prädikativ-recha-und-der-tempelherr-als-kinder-assads)">sinds</rs>!</l>
+              <l>Sind beide <rs ref="#sinds-(prädikativ-recha-und-der-tempelherr-als-kinder-assads)"><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">meines ... <rs ref="#sittah-xx">deines</rs> Bruders</rs> Kinder</rs>!</l>
+            </lg>
+            <stage><rs ref="#saladin">Er</rs> rennt in <rs ref="#ihren-Umarmungen-(rechas-und-des-tempelherrn)"><rs ref="#tempelherr-bbb-/-recha">ihre</rs> Umarmungen</rs>.</stage>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH</speaker></rs>
+            <stage><rs ref="#saladin">ihm</rs> folgend.</stage>
+            <l>Was hör' ich! – Konnts auch anders, anders sein! –</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">zum Tempelherrn</rs>.</stage>
+            <l>Nun mußt <rs ref="#tempelherr-bbb">du</rs> doch wohl, Trotzkopf, mußt mich lieben!</l>
+            <stage><pb n="346"/> Zu <rs ref="#recha">Recha</rs>.</stage>
+            <lg>
+              <l>Nun bin ich doch, wozu ich mich erbot?</l>
+              <l>Magst wollen, oder nicht!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Ich auch! ich auch!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">zum Tempelherrn</rs> zurück.</stage>
+            <l><rs ref="#tempelherr-bbb">Mein Sohn</rs>! <rs ref="#tempelherr-bbb">mein Assad</rs>! <rs ref="#tempelherr-bbb"><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">meines Assads</rs> Sohn</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich <rs ref="#saladin">deines</rs> Bluts! – So waren <rs ref="#jene-Träume,---------------Womit-man-meine-Kindheit-wiegte">jene Träume,</l>
+              <l><rs ref="#jene-Träume,---------------Womit-man-meine-Kindheit-wiegte">Womit</rs> <rs ref="#mein-Vater-(ziehvater-des-tempelherrn,-curd-von-stauffen,-der-bruder-der-mutter,-den-der-tempelherr-als-seinen-vater-bezeichnet.-ambik-markiert-sind-stellen,-bei-denen-nicht-ganz-klar-ist-ob-es-sich-nicht-auch-um-den-leiblichen-vater-handeln-könnte)-lll">man</rs> meine Kindheit wiegte</rs>, doch –</l>
+              <l>Doch mehr als Träume!</l>
+            </lg>
+            <stage><rs ref="#saladin">Ihm</rs> zu <rs ref="#Saladins-Füßen">Füßen</rs> fallend.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">ihn</rs> aufhebend.</stage>
+            <lg>
+              <l>Seht <rs ref="#tempelherr-bbb">den Bösewicht</rs>!</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> wußte was davon, und konnte mich</l>
+              <l>Zu <rs ref="#tempelherr-bbb">seinem</rs> Mörder machen wollen! Wart!</l>
+            </lg>
+          </sp>
+          <stage>Unter stummer Wiederholung allerseitiger Umarmungen fällt der Vorhang.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

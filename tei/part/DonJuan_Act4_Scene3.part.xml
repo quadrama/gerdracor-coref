@@ -1,0 +1,199 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Don Juan's Ende</title>
+        <title type="sub">Trauerspiel in fünf Akten</title>
+        <author key="pnd:118550772">Heyse, Paul</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000266</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q56201730</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:q41n.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Paul Heyse: Gesammelte Werke. Berlin: Verlag von Wilhelm Hertz (Bessersche
+              Buchhandlung), 1872–1910.</title>
+            <date type="print" when="1883"/>
+            <date type="premiere" when="1884"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="don_juan" sex="MALE">
+            <persName>Don Juan</persName>
+          </person>
+          <person xml:id="leporello" sex="MALE">
+            <persName>Leporello</persName>
+          </person>
+          <person xml:id="der_alte_fischer" sex="MALE">
+            <persName>Der alte Fischer</persName>
+            <persName type="variant">Der Alte</persName>
+            <persName type="variant">Der Fischer</persName>
+          </person>
+          <personGrp xml:id="prozession" sex="UNKNOWN">
+            <name>Prozession</name>
+          </personGrp>
+          <person xml:id="ghita" sex="FEMALE">
+            <persName>Ghita</persName>
+          </person>
+          <person xml:id="der_moench" sex="MALE">
+            <persName>Der Mönch</persName>
+            <persName type="variant">Der Karthäuser</persName>
+          </person>
+          <person xml:id="erster_strolch" sex="MALE">
+            <persName>Erster Strolch</persName>
+          </person>
+          <person xml:id="zweiter_strolch" sex="MALE">
+            <persName>Zweiter Strolch</persName>
+          </person>
+          <person xml:id="gianotto" sex="MALE">
+            <persName>Gianotto</persName>
+            <persName type="variant">Gianotto's Stimme</persName>
+          </person>
+          <person xml:id="wirth" sex="MALE">
+            <persName>Wirth</persName>
+            <persName type="variant">Salvatore's Stimme</persName>
+            <persName type="variant">Der Wirth</persName>
+          </person>
+          <person xml:id="biondetta" sex="FEMALE">
+            <persName>Biondetta</persName>
+            <persName type="variant">Biondetta's Stimme</persName>
+          </person>
+          <person xml:id="martina" sex="FEMALE">
+            <persName>Martina</persName>
+          </person>
+          <person xml:id="graefin" sex="FEMALE">
+            <persName>Gräfin</persName>
+          </person>
+          <person xml:id="diener" sex="MALE">
+            <persName>Diener</persName>
+            <persName type="variant">Ein Diener</persName>
+          </person>
+          <personGrp xml:id="stimmen" sex="UNKNOWN">
+            <name>Stimmen</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#graefin" passive="#ghita"/>
+            <relation name="parent_of" active="#graefin" passive="#gianotto"/>
+            <relation name="spouses" mutual="#biondetta #wirth"/>
+            <relation name="associated_with" active="#biondetta" passive="#graefin"/>
+            <relation name="associated_with" active="#leporello" passive="#don_juan"/>
+            <relation name="associated_with" active="#diener" passive="#graefin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-11">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Paul Heyse</head>
+        <head>Don Juan's Ende</head>
+        <head>Trauerspiel in fünf Akten</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="276"/> Personen.</head>
+          <castItem>Don Juan.</castItem>
+          <castItem>Gräfin Maria de Luna.</castItem>
+          <castItem>Ghita, ihre Tochter.</castItem>
+          <castItem>Gianotto, ihr Pflegesohn.</castItem>
+          <castItem>Martina, eine alte Dienerin.</castItem>
+          <castItem>Salvatore, Gastwirth in Resina.</castItem>
+          <castItem>Biondetta, seine Verlobte, Kammerjungfer der Gräfin.</castItem>
+          <castItem>Leporello, Don Juan's Diener.</castItem>
+          <castItem>Ein Karthäuser Mönch.</castItem>
+          <castItem>Ein alter Fischer.</castItem>
+          <castItem>Zwei Banditen.</castItem>
+          <castGroup>
+            <castItem>Marchetto, ein junger Bauer</castItem>
+            <castItem>Carlino, ein Knabe,</castItem>
+            <roleDesc>stumme Personen.</roleDesc>
+          </castGroup>
+          <castItem>Ein Diener der Gräfin.</castItem>
+          <castItem>Landvolk. Fischer.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Zeit: Mitte des 14 Jahrhunderts.</p>
+        <p>Ort: Resina, am Fuße des Vesuv.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt.</head>
+        <stage>Zimmer der Gräfin. Thüren rechts, links und in der Mitte. Vorn <rs ref="#ein-Tisch">ein Tisch</rs> und einige
+          Sessel. Ein Kamin.</stage>
+        <div type="scene">
+          <head>Dritte Scene.</head>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>allein.</stage>
+            <p><rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">Das</rs> ist schwerer, als ich gefürchtet! Was kann geschehen sein? Welche rauhe Hand hat
+              <rs ref="#die-Harmonie-dieser-zarten-Seele-(ghitas-herzensglück-seelenheil)">die Harmonie <rs ref="#deinem-Herzen-(ghita)">dieser zarten Seele</rs></rs> so jäh zerstört? <rs ref="#Ein-Gespenst,-das-ihr-um-Mitternacht---------------eschien">Ein Gespenst, <rs ref="#Ein-Gespenst,-das-ihr-um-Mitternacht---------------eschien">das</rs> <rs ref="#ghita">ihr</rs> um <rs ref="#die-Nacht">Mitternacht</rs>
+              eschien</rs> – <stage>Geht hin und her, bleibt wieder stehen.</stage> Nein, <rs ref="#ghita">sie</rs> war immer
+              ein tapferes, besonnenes Kind. – <rs ref="#gianotto">Gianotto</rs>? <rs ref="#ghita">Sie</rs> ging leicht darüber weg, als ich <rs ref="#gianotto">seinen</rs>
+              Namen nannte, – und doch – in <rs ref="#deinen-Jahren-(alter-ghita)"><rs ref="#ghita">ihren</rs> Jahren</rs> erschüttert <rs ref="#Man">uns</rs> Nichts in den Tiefen <rs ref="#Man">unsres</rs>
+              Lebens, als was <rs ref="#Man">uns</rs> von <rs ref="#Liebe">Liebe</rs> kommt. <rs ref="#eine-Leidenschaft-zu-einander-(ghita-gianotto)">O meine alte Sorge</rs>! Und ich dachte so
+              zuversichtlich, es wäre noch früh genug, <rs ref="#ghita-/-gianotto">sie</rs> zu trennen! Wär' ich <rs ref="#Dein-Vater-(ghitas)">meinem Manne</rs>
+              gefolgt! Aber <rs ref="#mein-banges-Mutterherz-(gräfin)">mein eigen Herz</rs> war schwach gegen <rs ref="#gianotto">den Knaben, <rs ref="#gianotto">der</rs> die Züge <rs ref="#seiner---------------geliebten,-unglücklichen-Mutter-(gianottos-mutter-anna)"><rs ref="#gianotto">seiner</rs>
+              geliebten, unglücklichen Mutter</rs> trug</rs>. Ich muß <rs ref="#gianotto">ihn</rs> befragen; <rs ref="#gianotto">er</rs> allein –</p>
+          </sp>
+          <sp who="#diener">
+            <rs ref="#diener"><speaker>EIN DIENER</speaker></rs>
+            <stage>durch <rs ref="#die-Mittelthür">die Mittelthür</rs>.</stage>
+            <p><rs ref="#don_juan">Don Cesar von Sevilla</rs> wünscht aufzuwarten.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p><rs ref="#don_juan">Don Cesar</rs>? Entsinn' ich mich doch nicht. Gleichviel, ich kann in diesem Augenblick –
+              <rs ref="#don_juan">der Herr</rs> möge mich entschuldigen –</p>
+          </sp>
+          <sp who="#diener">
+            <rs ref="#diener"><speaker>DIENER.</speaker></rs>
+            <p><rs ref="#don_juan">Er</rs> folgt mir auf dem Fuße.</p>
+            <stage>Tritt zurück, um <rs ref="#don_juan">Don Juan</rs> eintreten zu lassen, entfernt <rs ref="#diener">sich</rs> dann.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

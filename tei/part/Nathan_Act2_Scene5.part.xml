@@ -1,0 +1,508 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage><rs ref="#nathan">Nathan</rs> und bald darauf <rs ref="#tempelherr-bbb">der Tempelherr</rs>.</stage>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Fast scheu' ich mich <rs ref="#tempelherr-bbb">des Sonderlings</rs>. Fast macht</l>
+              <l>Mich <rs ref="#seine-rauhe-Tugend-(des-tempelherrn)"><rs ref="#tempelherr-bbb">seine</rs> rauhe Tugend</rs> stutzen. Daß</l>
+              <l><rs ref="#wir-Menschen">Ein Mensch</rs> doch <rs ref="#wir-Menschen">einen Menschen</rs> so verlegen</l>
+              <l>Soll machen können! – Ha! <rs ref="#tempelherr-bbb">er</rs> kömmt. – Bei <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>!</l>
+              <l><rs ref="#tempelherr-bbb">Ein Jüngling wie ein Mann</rs>. Ich mag ihn wohl</l>
+              <l>Den guten, trotzgen Blick! <rs ref="#den-prallen-Gang-(des-tempelherrn)-aaa">den prallen Gang</rs>!</l>
+              <l><rs ref="#Die-Schale-(äußere-erscheinung-des-tempelherrn)">Die Schale</rs> kann nur bitter sein: <rs ref="#Euerm-Wesen-(innerer-charakter,-gemüt-des-tempelherrn)">der Kern</rs></l>
+              <l>Ists sicher nicht. – Wo sah' ich doch dergleichen? –</l>
+              <l>Verzeihet, <rs ref="#tempelherr-bbb">edler Franke</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Was?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Erlaubt ...</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Was, <rs ref="#nathan">Jude</rs>? was?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#ichs4"><l>Daß ich mich untersteh',</l>
+              <l><rs ref="#tempelherr-bbb">Euch</rs> anzureden</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Kann <rs ref="#ichs4">ichs</rs> wehren? Doch</l>
+              <l>Nur kurz.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Verzieht, und eilet nicht so stolz,</l>
+              <l>Nicht so verächtlich <rs ref="#nathan">einem Mann</rs> vorüber,</l>
+              <l><rs ref="#nathan">Den</rs> <rs ref="#tempelherr-bbb">Ihr</rs> <rs ref="#das15">auf ewig <rs ref="#tempelherr-bbb">Euch</rs> verbunden habt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wie <rs ref="#das15">das</rs>? – Ah, fast errat' <rs ref="#ichs5">ichs</rs>. Nicht? <rs ref="#ichs5"><rs ref="#nathan">Ihr</rs> seid ...</rs></l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ich heiße <rs ref="#es-(prädikativ-nathan-als-nathan)">Nathan</rs>; bin <rs ref="#des-Mädchens-Vater,---------------Das-Eure-Großmut-aus-dem-Feu'r-gerettet-(prädikativ-nathan)"><rs ref="#recha">des Mädchens</rs> Vater,</l>
+              <l><rs ref="#recha">Das</rs> <rs ref="#tempelherr-bbb">Eure</rs> Großmut aus <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">dem Feu'r</rs> gerettet</rs>;</l>
+              <l>Und komme ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#sparts">zu danken</rs>: – <rs ref="#sparts">sparts</rs>! Ich hab'</l>
+              <l>Um <rs ref="#unsers-Danks-(daja-und-recha-ggü-dem-tempelherrn)">diese Kleinigkeit des Dankes</rs> schon</l>
+              <l>Zu viel erdulden müssen. – Vollends <rs ref="#nathan">Ihr</rs>,</l>
+              <l><rs ref="#nathan">Ihr</rs> seid mir gar nichts schuldig. Wußt' ich denn,</l>
+              <l>Daß <rs ref="#recha">dieses Mädchen</rs> <rs ref="#mein-Kind-(prädikativ-recha-als-kind-nathans)">Eure Tochter</rs> war?</l>
+              <l><rs ref="#Es5">Es</rs> ist <rs ref="#Der-Tempelherren-einziger-Beruf-(aufgaben-eines-tempelherrn)"><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">der Tempelherren</rs> Pflicht</rs>, <rs ref="#Es5"><rs ref="#wir-Menschen">dem ersten</l>
+              <l>Dem besten</rs> beizuspringen, <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)"><rs ref="#wir-Menschen">dessen</rs> Not</rs></l>
+              <l><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Sie</rs> sehn</rs>. <rs ref="#Das-Leben-(des-tempelherrn)">Mein Leben</rs> war mir ohnedem</l>
+              <l>In diesem Augenblicke lästig. Gern,</l>
+              <l>Sehr gern ergriff ich die Gelegenheit,</l>
+              <l><pb n="250"/> <rs ref="#Das-Leben-(des-tempelherrn)">Es</rs> für <rs ref="#ein-andres-Leben-(als-das-des-tempelherrn)">ein andres Leben</rs> in die Schanze</l>
+              <l>Zu schlagen: für <rs ref="#ein-andres-Leben-(als-das-des-tempelherrn)">ein andres</rs> – <rs ref="#ein-andres-Leben-(als-das-des-tempelherrn)">wenns</rs> auch nur</l>
+              <l>Das Leben <rs ref="#Judenmädchen">einer Jüdin</rs> wäre.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Groß!</l>
+              <l>Groß und abscheulich! – Doch <rs ref="#die-Wendung">die Wendung</rs> läßt</l>
+              <l><rs ref="#die-Wendung">Sich</rs> denken. <rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Die bescheidne Größe</rs> flüchtet</l>
+              <l><rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Sich</rs> hinter das Abscheuliche, um <rs ref="#der---------------Bewundrung-(anerkennung-guter-taten,-ansehen-das-man-dafür-erntet)">der</l>
+              <l>Bewundrung</rs> auszuweichen. – Aber wenn</l>
+              <l><rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Sie</rs> so <rs ref="#der---------------Bewundrung-(anerkennung-guter-taten,-ansehen-das-man-dafür-erntet)">das Opfer der Bewunderung</rs></l>
+              <l>Verschmäht: was für <rs ref="#viele-große-Dienste-(potentielle-aus-Dankbarkeit-für-den-tempelherrn)">ein Opfer</rs> denn verschmäht</l>
+              <l><rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Sie</rs> minder? – <rs ref="#tempelherr-bbb">Ritter</rs>, wenn Ihr hier nicht fremd,</l>
+              <l>Und nicht gefangen wäret, würd' ich <rs ref="#tempelherr-bbb">Euch</rs></l>
+              <l>So dreist nicht fragen. Sagt, befehlt: womit</l>
+              <l>Kann <rs ref="#nathan">man</rs> <rs ref="#tempelherr-bbb">Euch</rs> dienen?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#nathan">Ihr</rs>? Mit nichts.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ich bin</l>
+              <l><rs ref="#den-Reichen-(prädikativ-nathan)">Ein reicher Mann</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <rs ref="#dem4"><l><rs ref="#Der-reichre-Jude">Der reichre Jude</rs> war</l>
+              <l>Mir nie der beßre Jude</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <rs ref="#das16"><l>Dürft <rs ref="#tempelherr-bbb">Ihr</rs> denn</l>
+              <l>Darum nicht nützen, was <rs ref="#dem4">dem</rs> ungeachtet</l>
+              <l><rs ref="#Der-reichre-Jude">Er</rs> <rs ref="#allen-Gütern-dieser-Welt---------------Das-kleinst'-(Reichtum)">Beßres</rs> hat? nicht <rs ref="#allen-Gütern-dieser-Welt---------------Das-kleinst'-(Reichtum)"><rs ref="#Der-reichre-Jude">seinen</rs> Reichtum</rs> nützen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Nun gut, <rs ref="#das16">das</rs> will ich auch nicht ganz verreden;</l>
+              <l>Um <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">meines Mantels</rs> willen nicht. Sobald</l>
+              <l><rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">Der</rs> ganz und gar verschlissen; weder Stich</l>
+              <l>Noch Fetze länger halten will: komm' ich</l>
+              <l>Und borge mir bei <rs ref="#nathan">Euch</rs> zu einem neuen,</l>
+              <l>Tuch oder Geld. – Seht nicht mit eins so finster!</l>
+              <l>Noch seid <rs ref="#nathan">Ihr</rs> sicher; noch ists nicht so weit</l>
+              <l>Mit <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">ihm</rs>. <rs ref="#nathan">Ihr</rs> seht; <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">er</rs> ist so ziemlich noch</l>
+              <l>Im Stande. Nur <rs ref="#der-eine-Zipfel-da-(des-mantels-des-tempelherrn)">der eine Zipfel da</rs></l>
+              <l>Hat <rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">einen garstgen Fleck</rs>; <rs ref="#der-eine-Zipfel-da-(des-mantels-des-tempelherrn)">er</rs> ist versengt.</l>
+              <l>Und <rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">das</rs> bekam <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">er</rs>, als ich <rs ref="#recha"><rs ref="#nathan">Eure</rs> Tochter</rs></l>
+              <l><rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">Durchs Feuer</rs> trug.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN</speaker></rs>
+            <stage>der nach <rs ref="#der-eine-Zipfel-da-(des-mantels-des-tempelherrn)">dem Zipfel</rs> greift und <rs ref="#der-eine-Zipfel-da-(des-mantels-des-tempelherrn)">ihn</rs> betrachtet.</stage>
+            <lg>
+              <l>Es ist doch sonderbar,</l>
+              <l>Daß <rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">so ein böser Fleck</rs>, daß <rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">so ein Brandmal</rs></l>
+              <l><pb n="251"/> <rs ref="#tempelherr-bbb">Dem Mann</rs> ein beßres Zeugnis redet, als</l>
+              <l><rs ref="#Sein-eigner-Mund-(des-tempelherrn)"><rs ref="#tempelherr-bbb">Sein</rs> eigner Mund</rs>. Ich möcht <rs ref="#es12"><rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">ihn</rs> küssen</rs> gleich –</l>
+              <l><rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">Den Flecken</rs>! – Ah, verzeiht! – Ich tat <rs ref="#es12">es</rs> ungern.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Was?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Eine-Träne-(nathans)">Eine Träne</rs> fiel darauf.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Tut nichts!</l>
+              <l><rs ref="#nathan">Er</rs> hat <rs ref="#Eine-Träne-(nathans)">der Tropfen</rs> mehr. – (Bald aber fängt</l>
+              <l>Mich <rs ref="#nathan">dieser Jud'</rs> an zu verwirren.)</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Wär't</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> wohl so gut, und schicktet <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)"><rs ref="#tempelherr-bbb">Euern</rs> Mantel</rs></l>
+              <l>Auch einmal <rs ref="#recha">meinem Mädchen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Was damit?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Auch <rs ref="#ihren-Mund-(rechas)"><rs ref="#recha">ihren</rs> Mund</rs> auf <rs ref="#einen-garstgen-Fleck-(auf-dem-mantel-des-tempelherrn)">diesen Fleck</rs> zu drücken.</l>
+              <l>Denn <rs ref="#tempelherr-bbb">Eure</rs> Kniee selber zu umfassen,</l>
+              <l>Wünscht <rs ref="#recha">sie</rs> nun wohl vergebens.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Aber, <rs ref="#nathan">Jude –</rs></l>
+              <l><rs ref="#nathan">Ihr</rs> heißet <rs ref="#es-(prädikativ-nathan-als-nathan)">Nathan</rs>? – Aber, <rs ref="#nathan">Nathan</rs> – Ihr</l>
+              <l>Setzt <rs ref="#Eure-Worte-(nathans-allg)"><rs ref="#nathan">Eure</rs> Worte</rs> sehr – sehr gut – sehr spitz –</l>
+              <l>Ich bin betreten – Allerdings – ich hätte ...</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Stellt und verstellt <rs ref="#tempelherr-bbb">Euch</rs>, wie <rs ref="#tempelherr-bbb">Ihr</rs> wollt. Ich find'</l>
+              <l>Auch hier <rs ref="#tempelherr-bbb">Euch</rs> aus. <rs ref="#tempelherr-bbb">Ihr</rs> wart zu gut, zu bieder,</l>
+              <l>Um höflicher zu sein. – <rs ref="#recha">Das Mädchen</rs>, ganz</l>
+              <l>Gefühl; <rs ref="#daja">der weibliche Gesandte</rs>, ganz</l>
+              <l><rs ref="#Dienstfertigkeit-(fleiß-dajas)">Dienstfertigkeit</rs>; <rs ref="#nathan">der Vater</rs> weit entfernt –</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> trugt für <rs ref="#recha">ihren</rs> guten Namen <rs ref="#Acht-(achtung-vorsicht-des-tempelherrn)">Sorge</rs>;</l>
+              <l>Floht <rs ref="#recha">ihre</rs> Prüfung; floht, um nicht zu siegen.</l>
+              <l>Auch dafür dank' ich <rs ref="#tempelherr-bbb">Euch</rs> –</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich muß gestehn,</l>
+              <l><rs ref="#nathan">Ihr</rs> wißt, wie <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Tempelherren</rs> denken sollten.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nur <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Tempelherren</rs>? <emph>sollten</emph> bloß? und bloß</l>
+              <l>Weil es die Ordensregeln so gebieten?</l>
+              <l>Ich weiß, wie <rs ref="#Gute-(Menschen)">gute Menschen</rs> denken; weiß,</l>
+              <l>Daß alle Länder <rs ref="#Gute-(Menschen)">gute Menschen</rs> tragen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Mit <rs ref="#Unterschied-(zwischen-guten-menschen-untereinander)">Unterschied</rs>, doch hoffentlich?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ja wohl;</l>
+              <l>An Farb', an <rs ref="#Kleidung">Kleidung</rs>, an Gestalt verschieden.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Auch hier bald mehr, bald weniger, als dort.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Mit <rs ref="#Unterschied-(zwischen-guten-menschen-untereinander)">diesem Unterschied</rs> ists nicht weit her.</l>
+              <l><pb n="252"/> <rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Der große Mann</rs> braucht überall <rs ref="#viel-Boden-(viel-platz-raum)">viel Boden</rs>;</l>
+              <l>Und <rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">mehrere</rs>, zu nah gepflanzt, zerschlagen</l>
+              <l><rs ref="#Die-bescheidne-Größe-(großmütige-menschen)">Sich</rs> nur die Äste. <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">Mittelgut</rs>, wie <rs ref="#tempelherr-bbb-/-nathan">wir</rs>,</l>
+              <l>Findt <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">sich</rs> hingegen überall in Menge.</l>
+              <l>Nur muß <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">der eine</rs> nicht <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">den andern</rs> mäkeln.</l>
+              <l>Nur muß <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">der Knorr</rs> <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">den Knuppen</rs> hübsch vertragen.</l>
+              <l>Nur muß <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">ein Gipfelchen</rs> <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">sich</rs> nicht vermessen,</l>
+              <l>Daß <rs ref="#Mittelgut-(mittelgute-menschen-wie-nathan-und-der-tempelherr)">es</rs> allein <rs ref="#dieser-Welt-(irdische)">der Erde</rs> nicht entschossen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Sehr wohl gesagt! – Doch kennt <rs ref="#nathan">Ihr</rs> auch <rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">das Volk,</l>
+              <l><rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">Das</rs> <rs ref="#diese-Menschenmäkelei-(rassismus,-menschenunterteilung-in-religiöse-völker)">diese Menschenmäkelei</rs> zu erst</l>
+              <l>Getrieben</rs>? Wißt <rs ref="#nathan">Ihr, Nathan</rs>, <rs ref="#welches-Volk">welches Volk</rs></l>
+              <l>Zu erst das auserwählte Volk <rs ref="#welches-Volk">sich</rs> nannte?</l>
+              <l>Wie? wenn ich <rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">dieses Volk</rs> nun, zwar nicht haßte,</l>
+              <l>Doch wegen <rs ref="#seines-Stolzes-(des-jüdischen-volkes)"><rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">seines</rs> Stolzes</rs> zu verachten,</l>
+              <l>Mich nicht entbrechen könnte? <rs ref="#seines-Stolzes-(des-jüdischen-volkes)"><rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">Seines</rs> Stolzes;</l>
+              <l><rs ref="#seines-Stolzes-(des-jüdischen-volkes)">Den</rs> <rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">es</rs> auf <rs ref="#Christ-222">Christ</rs> und <rs ref="#Muselmann">Muselmann</rs> vererbte</rs>,</l>
+              <l>Nur <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)"><rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">sein</rs> Gott</rs> sei der rechte Gott! – <rs ref="#nathan">Ihr</rs> stutzt,</l>
+              <l>Daß ich, <rs ref="#ein-Christ-(prädikativ-der-tempelherr)">ein Christ</rs>, <rs ref="#ein-Tempelherr-(prädikativ-der-tempelherr-in-seiner-funktion-als-tempelherr)">ein Tempelherr</rs>, so rede?</l>
+              <l>Wenn hat, und wo <rs ref="#die-fromme-Raserei,---------------Den-bessern-Gott-zu-haben,-diesen-bessern---------------Der-ganzen-Welt-als-besten-aufzudringen">die fromme Raserei,</l>
+              <l><rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">Den bessern Gott</rs> zu haben, <rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">diesen bessern</rs></l>
+              <l><rs ref="#dieser-Welt-(irdische)">Der ganzen Welt</rs> als besten aufzudringen</rs>,</l>
+              <l>In <rs ref="#die-fromme-Raserei,---------------Den-bessern-Gott-zu-haben,-diesen-bessern---------------Der-ganzen-Welt-als-besten-aufzudringen">ihrer</rs> schwärzesten Gestalt <rs ref="#die-fromme-Raserei,---------------Den-bessern-Gott-zu-haben,-diesen-bessern---------------Der-ganzen-Welt-als-besten-aufzudringen">sich</rs> mehr</l>
+              <l>Gezeigt, als hier, als itzt? Wem hier, wem itzt</l>
+              <l>Die Schuppen nicht vom Auge fallen ... Doch</l>
+              <l>Sei blind, wer will! – Vergeßt, was ich gesagt;</l>
+              <l>Und laßt mich!</l>
+            </lg>
+            <stage>Will gehen.</stage>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ha! <rs ref="#tempelherr-bbb">Ihr</rs> wißt nicht, wie viel fester</l>
+              <l>Ich nun mich an <rs ref="#tempelherr-bbb">Euch</rs> drängen werde. – Kommt,</l>
+              <l><rs ref="#tempelherr-bbb-/-nathan">Wir</rs> müssen, müssen <rs ref="#Freunde-(prädikativ-nathan-und-der-tempelherr-als-freunde)">Freunde</rs> sein! – Verachtet</l>
+              <l><rs ref="#das-Volk,---------------Das-diese-Menschenmäkelei-zu-erst---------------Getrieben-(das-jüdische-volk)">Mein Volk</rs> so sehr <rs ref="#tempelherr-bbb">Ihr</rs> wollt. <rs ref="#tempelherr-bbb-/-nathan">Wir</rs> haben beide</l>
+              <l><rs ref="#tempelherr-bbb-/-nathan">Uns</rs> <rs ref="#welches-Volk">unser Volk</rs> nicht auserlesen. Sind</l>
+              <l><rs ref="#tempelherr-bbb-/-nathan">Wir</rs> unser Volk? Was heißt denn <rs ref="#welches-Volk">Volk</rs>?</l>
+              <l>Sind <rs ref="#Christ-222">Christ</rs> und <rs ref="#Jud">Jude</rs> eher <rs ref="#Christen-(prädikativ-die-christen-als-christen)">Christ</rs> und <rs ref="#Jude-(prädikativ-juden)">Jude</rs>,</l>
+              <l>Als Mensch? Ah! wenn ich <rs ref="#das17"><rs ref="#einen-mehr,-dem-es-genügt-ein-mensch-zu-heißen-(prädikativ-der-tempelherr)">einen mehr</rs> in <rs ref="#tempelherr-bbb">Euch</rs></l>
+              <l>Gefunden</rs> hätte, <rs ref="#einen-mehr,-dem-es-genügt-ein-mensch-zu-heißen-(prädikativ-der-tempelherr)">dem</rs> <rs ref="#es13">es</rs> gnügt, <rs ref="#es13">ein Mensch</l>
+              <l>Zu heißen</rs>!</l>
+              <pb n="253"/>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ja, bei <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>, <rs ref="#das17">das</rs> habt <rs ref="#nathan">Ihr, Nathan</rs>!</l>
+              <l><rs ref="#das17">Das</rs> habt <rs ref="#nathan">Ihr</rs>! – <rs ref="#Eure-Hand-(nathans)"><rs ref="#nathan">Eure</rs> Hand</rs>! – Ich schäme mich</l>
+              <l><rs ref="#nathan">Euch</rs> <rs ref="#einen-Augenblick-(einen-moment-lang)">einen Augenblick</rs> verkannt zu haben.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Und ich bin stolz darauf. Nur das Gemeine</l>
+              <l>Verkennt <rs ref="#wir-Menschen">man</rs> selten.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Und das Seltene</l>
+              <l>Vergißt <rs ref="#wir-Menschen">man</rs> schwerlich. – <rs ref="#nathan">Nathan</rs>, ja;</l>
+              <l><rs ref="#tempelherr-bbb-/-nathan">Wir</rs> müssen, müssen <rs ref="#Freunde-(prädikativ-nathan-und-der-tempelherr-als-freunde)">Freunde</rs> werden.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Sind</l>
+              <l><rs ref="#Freunde-(prädikativ-nathan-und-der-tempelherr-als-freunde)">Es</rs> schon. – Wie wird <rs ref="#recha">sich</rs> <rs ref="#recha">meine Recha</rs> freuen! –</l>
+              <l>Und ah! <rs ref="#welch-eine-heitre-Ferne-(gefühlte-weite)">welch eine heitre Ferne</rs> schließt</l>
+              <l><rs ref="#welch-eine-heitre-Ferne-(gefühlte-weite)">Sich</rs> <rs ref="#meinen-Blicken-(nathans)">meinen Blicken</rs> auf! – Kennt <rs ref="#recha">sie</rs> nur erst!</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich brenne vor Verlangen – Wer stürzt dort</l>
+              <l>Aus <rs ref="#Nathans-Hause"><rs ref="#nathan">Euerm</rs> Hause</rs>? <rs ref="#daja">Ists</rs> nicht <rs ref="#nathan">ihre</rs> Daja?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Ja wohl. So ängstlich?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha"><rs ref="#tempelherr-bbb-/-nathan">Unsrer</rs> Recha</rs> ist</l>
+              <l>Doch nichts begegnet?</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

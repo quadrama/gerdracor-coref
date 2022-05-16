@@ -1,0 +1,556 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Zweiter Aufzug</head>
+        <div type="scene">
+          <head>Erster Auftritt</head>
+          <stage>Die Szene: <rs ref="#sein-Haus-(saladins)"><rs ref="#saladin">des Sultans</rs> Palast</rs>.</stage>
+          <stage><rs ref="#saladin">Saladin</rs> und <rs ref="#sittah-xx">Sittah</rs> spielen <rs ref="#Schach-(1.-partie-saladin-sittah)">Schach</rs>.</stage>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Wo bist <rs ref="#saladin">du, Saladin</rs>? Wie spielst <rs ref="#saladin">du</rs> heut?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Nicht gut? Ich dächte doch.</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Für mich; und kaum.</l>
+              <l>Nimm diesen Zug zurück.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Warum?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <rs ref="#Der-Springer-(saladins-im-schachspiel)"><l>Der Springer</l></rs>
+              <l>Wird unbedeckt.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Ist wahr. Nun so!</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>So zieh'</l>
+              <l>Ich in die Gabel.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wieder wahr. – <rs ref="#das9">Schach dann</rs>!</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Was hilft <rs ref="#saladin">dir</rs> <rs ref="#das9">das</rs>? Ich setze vor: und <rs ref="#saladin">du</rs></l>
+              <l>Bist, wie <rs ref="#saladin">du</rs> warst.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <rs ref="#Mags"><l>Aus dieser Klemme, seh'</l>
+              <l>Ich wohl, ist ohne Buße nicht zu kommen.</l></rs>
+              <l><rs ref="#Mags">Mags</rs>! nimm <rs ref="#Der-Springer-(saladins-im-schachspiel)">den Springer</rs> nur.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ich will <rs ref="#Der-Springer-(saladins-im-schachspiel)">ihn</rs> nicht.</l>
+              <l>Ich geh vorbei.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#sittah-xx">Du</rs> schenkst mir nichts. <rs ref="#sittah-xx">Dir</rs> liegt</l>
+              <l>An diesem Platze mehr, als an <rs ref="#Der-Springer-(saladins-im-schachspiel)">dem Springer</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Kann sein.</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Mach <rs ref="#deine-Rechnung-(siegesspekulation-sittahs)"><rs ref="#sittah-xx">deine</rs> Rechnung</rs> nur nicht ohne</l>
+              <l><rs ref="#saladin">Den Wirt</rs>. Denn sieh'! Was gilts, <rs ref="#das-(best-schachzug-saladins)">das</rs> warst <rs ref="#sittah-xx">du</rs> nicht Vermuten?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Freilich nicht. Wie konnt' ich auch</l>
+              <l>Vermuten, daß <rs ref="#saladin">du</rs> <rs ref="#deiner-Königin-(saladins-beim-schach)"><rs ref="#saladin">deiner</rs> Königin</rs></l>
+              <l>So müde wärst?</l>
+              <pb n="235"/>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Ich <rs ref="#deiner-Königin-(saladins-beim-schach)">meiner Königin</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ich seh' nun schon: ich soll heut <rs ref="#meine-tausend---------------Dinar'-(wetteinsatz-beim-schachspiel-saladin-sittah)">meine tausend</l>
+              <l>Dinar'</rs>, kein Naserinchen mehr gewinnen.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wie so?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Frag noch! – Weil <rs ref="#saladin">du</rs> mit <rs ref="#Fleiß-(mühen-die-saladin-unternimmt,-absicht-im-schach-zu-verlieren)">Fleiß</rs>, mit <rs ref="#Fleiß-(mühen-die-saladin-unternimmt,-absicht-im-schach-zu-verlieren)">aller</l>
+              <l>Gewalt</rs> verlieren willst. – Doch dabei find'</l>
+              <l>Ich <rs ref="#deine-Rechnung-(siegesspekulation-sittahs)">meine Rechnung</rs> nicht. Denn außer, daß</l>
+              <l><rs ref="#Schach-(1.-partie-saladin-sittah)">Ein solches Spiel</rs> das unterhaltendste</l>
+              <l>Nicht ist: gewann ich immer nicht am meisten</l>
+              <l>Mit <rs ref="#saladin">dir</rs>, wenn ich verlor? Wenn hast <rs ref="#saladin">du</rs> mir</l>
+              <l>Den Satz, mich des verlornen Spieles wegen</l>
+              <l>Zu trösten, doppelt nicht hernach geschenkt?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Ei sieh! so hättest <rs ref="#sittah-xx"><emph>du</emph></rs> ja wohl, wenn <rs ref="#sittah-xx">du</rs></l>
+              <l>Verlorst, mit Fleiß verloren, Schwesterchen?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Zum wenigsten kann gar wohl sein, daß <rs ref="#Fleiß-(mühen-die-saladin-unternimmt,-absicht-im-schach-zu-verlieren)"><rs ref="#saladin">deine</rs></l>
+              <l>Freigebigkeit</rs>, <rs ref="#saladin">mein liebes Brüderchen</rs>,</l>
+              <l>Schuld ist, daß ich nicht besser spielen lernen.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l><rs ref="#saladin-/-sittah">Wir</rs> kommen ab <rs ref="#Schach-(1.-partie-saladin-sittah)">vom Spiele</rs>. Mach ein Ende!</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>So bleibt <rs ref="#das-(best-schachzug-saladins)">es</rs>? Nun dann: <rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>! und <rs ref="#Schach-(best-aufstellung-sittahs)">doppelt Schach</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Nun freilich; <rs ref="#Schach-(best-aufstellung-sittahs)">dieses Abschach</rs> hab' ich nicht</l>
+              <l>Gesehn, <rs ref="#Schach-(best-aufstellung-sittahs)">das</rs> <rs ref="#deiner-Königin-(saladins-beim-schach)">meine Königin</rs> zugleich</l>
+              <l>Mit niederwirft.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>War <rs ref="#Schach-(best-aufstellung-sittahs)">dem</rs> noch abzuhelfen?</l>
+              <l>Laß sehn.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Nein, nein; nimm nur <rs ref="#deiner-Königin-(saladins-beim-schach)">die Königin</rs>.</l>
+              <l>Ich war mit <rs ref="#die-glatten-Steine-(figuren-des-schachspiels-saladin-sittah)">diesem Steine</rs> nie recht glücklich.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Bloß mit <rs ref="#die-glatten-Steine-(figuren-des-schachspiels-saladin-sittah)">dem Steine</rs>?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Fort-damit">Fort damit</rs>! – <rs ref="#Fort-damit">Das</rs> tut</l>
+              <l>Mir nichts. Denn so ist alles wiederum</l>
+              <l>Geschützt.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wie höflich man mit Königinnen</l>
+              <l>Verfahren müsse: hat <rs ref="#saladin">mein Bruder</rs> mich</l>
+              <l>Zu wohl gelehrt.</l>
+            </lg>
+            <stage><rs ref="#sittah-xx">Sie</rs> läßt <rs ref="#deiner-Königin-(saladins-beim-schach)">sie</rs> stehen.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Nimm, oder nimm <rs ref="#deiner-Königin-(saladins-beim-schach)">sie</rs> nicht!</l>
+              <l>Ich habe keine mehr.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wozu <rs ref="#deiner-Königin-(saladins-beim-schach)">sie</rs> nehmen?</l>
+              <l><rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>! – <rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Nur weiter.</l>
+            <pb n="236"/>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>! – und <rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>! – und <rs ref="#Schach-(best-aufstellung-sittahs)">Schach</rs>! –</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Und matt!</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Nicht ganz; <rs ref="#saladin">du</rs> ziehst <rs ref="#Der-Springer-(saladins-im-schachspiel)">den Springer</rs> noch</l>
+              <l>Dazwischen; oder was <rs ref="#saladin">du</rs> machen willst.</l>
+              <l>Gleichviel!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Ganz recht! – <rs ref="#sittah-xx">Du</rs> hast gewonnen: und</l>
+              <l><rs ref="#derwisch">Al-Hafi</rs> zahlt. – <rs ref="#Man-(unbest-bedienstete,-wächter-saladins)">Man</rs> laß <rs ref="#derwisch">ihn</rs> rufen! gleich! –</l>
+              <l><rs ref="#sittah-xx">Du</rs> hattest, Sittah, nicht so unrecht; ich</l>
+              <l>War nicht so ganz <rs ref="#Schach-(1.-partie-saladin-sittah)">beim Spiele</rs>; war zerstreut.</l>
+              <l>Und dann: wer gibt <rs ref="#saladin-/-sittah">uns</rs> denn <rs ref="#die-glatten-Steine-(figuren-des-schachspiels-saladin-sittah)">die glatten Steine</rs></l>
+              <l>Beständig? <rs ref="#die-glatten-Steine-(figuren-des-schachspiels-saladin-sittah)">die</rs> an nichts erinnern, nichts</l>
+              <l>Bezeichnen. Hab' ich mit dem Iman denn</l>
+              <l>Gespielt? – Doch was? Verlust will Vorwand. Nicht</l>
+              <l>Die ungeformten Steine, <rs ref="#sittah-xx">Sittah</rs>, sinds</l>
+              <l>Die mich verlieren machten: <rs ref="#deine-Kunst-(sittahs-logisches-denken,-ihre-geistl-begabung)"><rs ref="#sittah-xx">deine</rs> Kunst</rs>,</l>
+              <l><rs ref="#sittah-xx">Dein</rs> ruhiger und schneller Blick ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Auch so</l>
+              <l>Willst <rs ref="#saladin">du</rs> den Stachel des Verlusts nur stumpfen.</l>
+              <l>Genug, <rs ref="#saladin">du</rs> warst zerstreut; und mehr als ich.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Als <rs ref="#sittah-xx">du</rs>? Was hätte <rs ref="#sittah-xx"><emph>dich</emph></rs> zerstreuet?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <rs ref="#Deine---------------Zerstreuung-(gedankliche-saladins)"><rs ref="#saladin"><l>Deine</l></rs>
+              <l>Zerstreuung</rs> freilich nicht! – <rs ref="#saladin">O Saladin</rs>,</l>
+              <l>Wenn werden <rs ref="#saladin-/-sittah">wir</rs> so fleißig wieder spielen!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>So spielen <rs ref="#saladin-/-sittah">wir</rs> um so viel gieriger! –</l>
+              <l>Ah! weil <rs ref="#Des-Kriegs-(d-feldzüge-zw-muslimen-und-christen)">es</rs> wieder los geht, meinst <rs ref="#sittah-xx">du</rs>? – Mags! –</l>
+              <l>Nur zu! – Ich habe nicht zuerst gezogen;</l>
+              <l>Ich hätte gern <rs ref="#den-Waffenstillestand,---------------Den-Euer-Orden-schon-so-brav-gebrochen-(zw-juden-und-christen-während-derr-kreuzzüge)">den Stillestand</rs> aufs neue</l>
+              <l>Verlängert; hätte <rs ref="#sittah-xx">meiner Sittah</rs> gern,</l>
+              <l>Gern <rs ref="#einen-guten-Mann-(potentieller-für-sittah)">einen guten Mann</rs> zugleich verschafft.</l>
+              <l>Und <rs ref="#einen-guten-Mann-(potentieller-für-sittah)">das</rs> muß <rs ref="#Richards-Bruder-(prädikativ-johann-als-zukünftiger-mann-sittahs)"><rs ref="#Richards-(löwenherz,-engl-könig)">Richards</rs> Bruder</rs> sein: <rs ref="#Richards-Bruder-(prädikativ-johann-als-zukünftiger-mann-sittahs)">er</rs> ist</l>
+              <l>Ja Richards Bruder.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#saladin">du</rs> <rs ref="#Richards-(löwenherz,-engl-könig)"><rs ref="#saladin">deinen</rs> Richard</rs></l>
+              <l>Nur loben kannst!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Wenn <rs ref="#unserm-Bruder-Melek-xx"><rs ref="#saladin-/-sittah">unserm</rs> Bruder Melek</rs></l>
+              <l>Dann <rs ref="#Richards-Schwester"><rs ref="#Richards-(löwenherz,-engl-könig)">Richards</rs> Schwester</rs> wär' zu Teile worden:</l>
+              <l>Ha! <rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">welch ein Haus</rs> zusammen! Ha, <rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">der ersten,</l>
+              <l>Der besten Häuser in der Welt das beste</rs>! –</l>
+              <l><rs ref="#sittah-xx">Du</rs> hörst, ich bin mich selbst zu loben, auch</l>
+              <l><pb n="237"/> Nicht faul. Ich dünk' mich <rs ref="#meiner-Freunde-(saladins-allg)">meiner Freunde</rs> wert. –</l>
+              <l><rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">Das</rs> hätte <rs ref="#Gute-(Menschen)">Menschen</rs> geben sollen! <rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">das</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Hab' ich <rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">des schönen Traums</rs> nicht gleich gelacht?</l>
+              <l><rs ref="#saladin">Du</rs> kennst <rs ref="#Christ-222">die Christen</rs> nicht, willst <rs ref="#Christ-222">sie</rs> nicht kennen.</l>
+              <l><rs ref="#Ihr-Stolz-(das-worauf-christen-stolz-sind)"><rs ref="#Christ-222">Ihr</rs> Stolz</rs> ist: <rs ref="#Christen-(prädikativ-die-christen-als-christen)">Christen</rs> sein; nicht Menschen. Denn</l>
+              <l>Selbst <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">das, <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">was</rs>, noch von <rs ref="#ihrem-Stifter-(jesus)"><rs ref="#Christ-222">ihrem</rs> Stifter</rs> her,</l>
+              <l>Mit <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">Menschlichkeit</rs> <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)">den Aberglauben</rs> wirzt</rs>,</l>
+              <l><rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">Das</rs> lieben <rs ref="#Christ-222">sie</rs>, nicht weil <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">es</rs> menschlich ist:</l>
+              <l><rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">Weils</rs> <rs ref="#ihrem-Stifter-(jesus)">Christus</rs> lehrt; <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">weils</rs> <rs ref="#ihrem-Stifter-(jesus)">Christus</rs> hat getan. –</l>
+              <l>Wohl <rs ref="#Christ-222">ihnen</rs>, daß <rs ref="#ihrem-Stifter-(jesus)">er</rs> ein so guter Mensch</l>
+              <l>Noch war! Wohl <rs ref="#Christ-222">ihnen</rs>, daß <rs ref="#Christ-222">sie</rs> <rs ref="#ihrem-Stifter-(jesus)">seine</rs> Tugend</l>
+              <l>Auf <rs ref="#Treu-(d-christen-ggü-gott-jesus)">Treu</rs> und <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)">Glaube</rs> nehmen können! – Doch</l>
+              <l>Was <rs ref="#das,-was,-noch-von-ihrem-Stifter-her,---------------Mit-Menschlichkeit-den-Aberglauben-wirzt-(meint-wohl-nächstenliebe,-mitgefühl-d-christl-glaubenskonzepts)">Tugend</rs>? – Seine Tugend nicht; <rs ref="#sein-Name-(jesus)"><rs ref="#ihrem-Stifter-(jesus)">sein</rs> Name</rs></l>
+              <l>Soll überall verbreitet werden; soll</l>
+              <l>Die Namen <rs ref="#Gute-(Menschen)">aller guten Menschen</rs> schänden,</l>
+              <l>Verschlingen. Um <rs ref="#sein-Name-(jesus)">den Namen</rs>, um <rs ref="#sein-Name-(jesus)">den Namen</rs></l>
+              <l>Ist <rs ref="#Christ-222">ihnen</rs> nur zu tun.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#sittah-xx">Du</rs> meinst: warum</l>
+              <l><rs ref="#Christ-222">Sie</rs> sonst verlangen würden, daß auch <rs ref="#sittah-xx-/-unserm-Bruder-Melek-…">ihr</rs>,</l>
+              <l>Auch <rs ref="#sittah-xx">du</rs> und <rs ref="#unserm-Bruder-Melek-xx">Melek</rs>, <rs ref="#Christen-(prädikativ-melek-und-sittah-als-christen)">Christen</rs> hießet, eh</l>
+              <l>Als Ehgemahl <rs ref="#sittah-xx-/-unserm-Bruder-Melek-…">ihr</rs> <rs ref="#Christ-222">Christen</rs> lieben wolltet?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ja wohl! Als wär' von <rs ref="#Christ-222">Christen</rs> nur, als <rs ref="#Christen-(prädikativ-melek-und-sittah-als-christen)">Christen</rs>,</l>
+              <l><rs ref="#Die-Liebe-(zwischen-mann-und-frau)">Die Liebe</rs> zu gewärtigen, womit</l>
+              <l><rs ref="#Der-Schöpfer-(Gott-muslimisch,-saladins,-sittahs,-derwischs,-bei-nennungen-des-derwischs-wurde-ambik-markiert-weil-nicht-ganz-klar-ist,-ob-er-als-parse-wirklich-den-gleichen-gott-meint)">Der Schöpfer</rs> <rs ref="#Mann">Mann</rs> und <rs ref="#Weib">Männin</rs> ausgestattet!</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Christ-222">Die Christen</rs> glauben mehr <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)">Armseligkeiten</rs>,</l>
+              <l>Als daß <rs ref="#Christ-222">sie</rs> <emph>die</emph> nicht auch noch glauben könnten! –</l>
+              <l>Und gleichwohl irrst <rs ref="#sittah-xx">du</rs> <rs ref="#sittah-xx">dich</rs>. – <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Die Tempelherren</rs>,</l>
+              <l>Die Christen nicht, sind Schuld: sind nicht, als Christen,</l>
+              <l>Als Tempelherren Schuld. Durch <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">die</rs> allein</l>
+              <l>Wird aus <rs ref="#welch-ein-Haus-(potentielles-regiert-von-saladins-und-richards-familien,-vorstellung-einer-welt-in-der-christen-und-muslime-vereint-sind)">der Sache</rs> nichts. Sie wollen <rs ref="#Acca,---------------Das-Richards-Schwester-unserm-Bruder-Melek---------------Zum-Brautschatz-bringen-müßte">Acca,</l>
+              <l><rs ref="#Acca,---------------Das-Richards-Schwester-unserm-Bruder-Melek---------------Zum-Brautschatz-bringen-müßte">Das</rs> <rs ref="#Richards-Schwester"><rs ref="#Richards-(löwenherz,-engl-könig)">Richards</rs> Schwester</rs> <rs ref="#unserm-Bruder-Melek-xx"><rs ref="#saladin-/-sittah">unserm</rs> Bruder Melek</rs></l>
+              <l>Zum Brautschatz bringen müßte</rs>, schlechterdings</l>
+              <l>Nicht fahren lassen. Daß <rs ref="#des-Ritters-Vorteil-(meint-reichtümer-der-tempelherren-oder-ihren-besitz-der-stadt-acca)"><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">des Ritters</rs> Vorteil</rs></l>
+              <l>Gefahr nicht laufe, spielen <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">sie</rs> <rs ref="#den-Mönch-(prädikativ-die-tempelherren-als-mönche)">den Mönch</rs>,</l>
+              <l><rs ref="#den-Mönch-(prädikativ-die-tempelherren-als-mönche)">Den albern Mönch</rs>. Und ob vielleicht im Fluge</l>
+              <l><rs ref="#des-Ritters-Vorteil-(meint-reichtümer-der-tempelherren-oder-ihren-besitz-der-stadt-acca)">Ein guter Streich</rs> gelänge: haben <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">sie</rs></l>
+              <l><rs ref="#den-Waffenstillestand,---------------Den-Euer-Orden-schon-so-brav-gebrochen-(zw-juden-und-christen-während-derr-kreuzzüge)">Des Waffenstillestandes</rs> Ablauf kaum</l>
+              <l>Erwarten können. – Lustig! Nur so weiter!</l>
+              <l><pb n="238"/> <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Ihr Herren</rs>, nur so weiter! – Mir schon recht! –</l>
+              <l>Wär <rs ref="#alles-(politische,-finanzielle-lage-saladins)">alles</rs> sonst nur, wie <rs ref="#alles-(politische,-finanzielle-lage-saladins)">es</rs> müßte.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Nun?</l>
+              <l>Was irrte <rs ref="#saladin">dich</rs> denn sonst? Was könnte sonst</l>
+              <l><rs ref="#saladin">Dich</rs> aus <rs ref="#der-Fassung-(überlegte-ruhe-saladins)">der Fassung</rs> bringen?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Was von je</l>
+              <l>Mich immer aus <rs ref="#der-Fassung-(überlegte-ruhe-saladins)">der Fassung</rs> hat gebracht. –</l>
+              <l>Ich war auf <rs ref="#Libanon">Libanon</rs>, bei <rs ref="#Sein-Vater-(saladins)"><rs ref="#saladin-/-sittah">unserm</rs> Vater</rs>.</l>
+              <l><rs ref="#Sein-Vater-(saladins)">Er</rs> unterliegt <rs ref="#den-Sorgen-(finanzielle-sorgen-von-saladins-vater-bezgl-der-schatzkammer-im-libanon)">den Sorgen</rs> noch ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>O weh!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Sein-Vater-(saladins)">Er</rs> kann nicht durch; <rs ref="#des-größern-(saladins-schatz-dessen-schatzmeister-saladins-vater-ist)">es</rs> klemmt <rs ref="#des-größern-(saladins-schatz-dessen-schatzmeister-saladins-vater-ist)">sich</rs> aller Orten;</l>
+              <l><rs ref="#des-größern-(saladins-schatz-dessen-schatzmeister-saladins-vater-ist)">Es</rs> fehlt bald da, bald dort –</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Was klemmt? was fehlt?</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Was sonst, als <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">was ich kaum zu nennen würd'ge</rs>?</l>
+              <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)"><l>Was, wenn <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">ichs</rs> habe, mir so überflüssig,</l>
+              <l>Und hab' <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">ichs</rs> nicht, so unentbehrlich scheint</rs>. –</l>
+              <l>Wo bleibt <rs ref="#derwisch">Al-Hafi</rs> denn? Ist niemand nach</l>
+              <l><rs ref="#derwisch">Ihm</rs> aus? – <rs ref="#was-ich-kaum-zu-nennen-würd'ge-(Geld)">Das leidige, verwünschte Geld</rs>! –</l>
+              <l>Gut, <rs ref="#derwisch">Hafi</rs>, daß du kömmst.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

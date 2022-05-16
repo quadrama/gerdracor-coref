@@ -1,0 +1,332 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Sechster Auftritt</head>
+          <stage><rs ref="#Szene-(flur-in-nathans-haus)">Szene</rs>: <rs ref="#Flur-in-Nathans-Hause">die offne Flur in <rs ref="#Nathans-Hause"><rs ref="#nathan">Nathans</rs> Hause</rs></rs>,gegen <rs ref="#untern-Palmen">die Palmen</rs> zu; wie <rs ref="#Erster-Auftritt">im ersten Auftritte
+            <rs ref="#Erster-Aufzug-">des ersten Aufzuges</rs></rs>.</stage>
+          <stage><rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">Ein Teil <rs ref="#die-Beutel-(menge-sämtlichen-gelds-und-waren-die-nathan-saladin-leiht,-wann-es-sich-um-geld-und-wann-um-waren-handelt-ist-nicht-immer-klar))">der Waren und Kostbarkeiten</rs></rs> liegt ausgekramt, <rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">deren</rs> eben daselbst gedacht
+            wird.</stage>
+          <stage><rs ref="#nathan">Nathan</rs> und <rs ref="#daja">Daja</rs>.</stage>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">O, alles herrlich</rs>! <rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">alles auserlesen</rs>!</l>
+              <l><rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">O, alles – wie nur <rs ref="#nathan">Ihr</rs> <rs ref="#Ein-Teil-der-Waren-und-Kostbarkeiten-(der-teil-der-waren-die-nathan-saladin-leiht-und-noch-bei-nathan-liegt)">es</rs> geben könnt</rs>.</l>
+              <l>Wo wird <rs ref="#der-Silberstoff-mit-goldnen-Ranken">der Silberstoff mit <rs ref="#goldnen-Ranken-(auf-dem-silberstoff)">goldnen Ranken</rs></rs></l>
+              <l>Gemacht? Was kostet <rs ref="#der-Silberstoff-mit-goldnen-Ranken">er</rs>? – <rs ref="#der-Silberstoff-mit-goldnen-Ranken">Das</rs> nenn' ich noch</l>
+              <l><rs ref="#Ein-Brautkleid-(prädikativ-der-silberstoff-mit-weißen-ranken-als-brautkleid-für-recha))">Ein Brautkleid</rs>! Keine Königin verlangt</l>
+              <l><rs ref="#Es-(ein-brautkleid)">Es</rs> besser.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Es-(ein-brautkleid)">Brautkleid</rs>? Warum <rs ref="#Es-(ein-brautkleid)">Brautkleid</rs> eben?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Je nun! <rs ref="#nathan">Ihr</rs> dachtet daran freilich nicht,</l>
+              <l>Als <rs ref="#nathan">Ihr</rs> <rs ref="#der-Silberstoff-mit-goldnen-Ranken">ihn</rs> kauftet. – Aber wahrlich, <rs ref="#nathan">Nathan</rs>,</l>
+              <l><rs ref="#der-Silberstoff-mit-goldnen-Ranken">Der und kein andrer</rs> muß <rs ref="#Ein-Brautkleid-(prädikativ-der-silberstoff-mit-weißen-ranken-als-brautkleid-für-recha))">es</rs> sein! <rs ref="#der-Silberstoff-mit-goldnen-Ranken">Er</rs> ist</l>
+              <l><rs ref="#Ein-Brautkleid-(prädikativ-der-silberstoff-mit-weißen-ranken-als-brautkleid-für-recha))">Zum Brautkleid</rs> wie bestellt. <rs ref="#Der-weiße-Grund-(farbe-des-silberstoffes)">Der weiße Grund</rs>;</l>
+              <l>Ein Bild der Unschuld: und <rs ref="#goldnen-Ranken-(auf-dem-silberstoff)">die goldnen Ströme,</l>
+              <l><rs ref="#goldnen-Ranken-(auf-dem-silberstoff)">Die</rs> <rs ref="#der-Silberstoff-mit-goldnen-Ranken">aller Orten</rs> <rs ref="#Der-weiße-Grund-(farbe-des-silberstoffes)">diesen Grund</rs> durchschlängeln</rs>;</l>
+              <l>Ein Bild <rs ref="#allen-Gütern-dieser-Welt---------------Das-kleinst'-(Reichtum)">des Reichtums</rs>. Seht <rs ref="#nathan">Ihr</rs>? Allerliebst!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Was witzelst <rs ref="#daja">du</rs> mir da? Von <rs ref="#Es-(ein-brautkleid)">wessen Brautkleid</rs></l>
+              <l>Sinnbilderst <rs ref="#daja">du</rs> mir so gelehrt? – Bist <rs ref="#daja">du</rs></l>
+              <l>Denn Braut?</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Ich?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l>Nun wer denn?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Ich? <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">– lieber Gott</rs>!</l>
+            <pb n="310"/>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Wer denn? Von <rs ref="#Es-(ein-brautkleid)">wessen Brautkleid</rs> sprichst <rs ref="#daja">du</rs> denn? –</l>
+              <l><rs ref="#Das-alles-(der-teil-der-waren-nathans-die-für-daja-sind)">Das alles</rs> ist ja <rs ref="#daja"><rs ref="#dein-(prädikativ-die-waren-für-daja-als-dajas)">dein</rs></rs>, und keiner andern.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Ist <rs ref="#dein-(prädikativ-die-waren-für-daja-als-dajas)">mein</rs>? Soll <rs ref="#dein-(prädikativ-die-waren-für-daja-als-dajas)">mein</rs> sein? – Ist für <rs ref="#recha">Recha</rs> nicht?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Was-ich-für-Recha-mitgebracht-(nathans-waren-für-recha)">Was ich für <rs ref="#recha">Recha</rs> mitgebracht</rs>, <rs ref="#Was-ich-für-Recha-mitgebracht-(nathans-waren-für-recha)">das</rs> liegt</l>
+              <l>In einem andern Ballen. Mach! nimm weg!</l>
+              <l>Trag <rs ref="#Das-alles-(der-teil-der-waren-nathans-die-für-daja-sind)"><rs ref="#daja">deine</rs> Siebensachen</rs> fort!</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l><rs ref="#nathan">Versucher</rs>!</l>
+              <l>Nein, wären <rs ref="#Das-alles-(der-teil-der-waren-nathans-die-für-daja-sind)">es</rs> die Kostbarkeiten auch</l>
+              <l><rs ref="#dieser-Welt-(irdische)">Der ganzen Welt</rs>! Nicht rühr an! wenn <rs ref="#nathan">Ihr</rs> mir</l>
+              <l>Vorher nicht schwört, von <rs ref="#Aussicht-(aussichten-für-den-tempelherrn-auf-die-heirat-rechas)">dieser einzigen</l>
+              <l>Gelegenheit, <rs ref="#dergleichen-(gelegenheiten-die-gott-bietet-vom-typ-der-gelegenheit-dass-recha-den-tempelherrn-heiratet)">dergleichen</rs> <rs ref="#nathan">Euch</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">der Himmel</rs></l>
+              <l>Nicht zweimal schicken wird</rs>, <rs ref="#Gebrauch-(gebrauch-machen-handeln-nathans)">Gebrauch</rs> zu machen.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <l><rs ref="#Gebrauch-(gebrauch-machen-handeln-nathans)">Gebrauch</rs>? von was? – <rs ref="#dergleichen-(gelegenheiten-die-gott-bietet-vom-typ-der-gelegenheit-dass-recha-den-tempelherrn-heiratet)">Gelegenheit</rs>? wozu?</l>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>O stellt <rs ref="#nathan">Euch</rs> nicht so fremd! – Mit kurzen Worten!</l>
+              <l><rs ref="#tempelherr-bbb">Der Tempelherr</rs> liebt <rs ref="#recha">Recha</rs>: gebt <rs ref="#recha">sie</rs> <rs ref="#tempelherr-bbb">ihm</rs>,</l>
+              <l>So hat doch einmal <rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz"><rs ref="#nathan">Eure</rs> Sünde, <rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz">die</rs></l>
+              <l>Ich länger nicht verschweigen kann</rs>, ein Ende.</l>
+              <l>So kömmt <rs ref="#recha">das Mädchen</rs> wieder <rs ref="#Christ-222">unter Christen</rs>;</l>
+              <l>Wird wieder <rs ref="#eine-Christin-(prädikativ-recha)">was <rs ref="#recha">sie</rs> ist</rs>; ist wieder, <rs ref="#ein-Christenkind-(prädikativ-recha-als-tochter-von-christen)">was</l>
+              <l>Sie ward</rs>: und <rs ref="#nathan">Ihr</rs>, <rs ref="#nathan">Ihr</rs> habt mit <rs ref="#Eure-Güte-(nathans-freigiebigkeit)">all' dem Guten,</l>
+              <l><rs ref="#Eure-Güte-(nathans-freigiebigkeit)">Das</rs> <rs ref="#daja-/-recha">wir</rs> <rs ref="#nathan">Euch</rs> nicht genug verdanken können</rs>,</l>
+              <l>Nicht Feuerkohlen bloß auf <rs ref="#nathan">Euer</rs> Haupt</l>
+              <l>Gesammelt.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Doch die alte Leier wieder?-</l>
+              <l>Mit <rs ref="#einer-neuen-Saite-(neue-argumente-in-dajas-kritik-an-nathans-sünde-recha-als-jüdin-zu-erziehen,-das-argument-die-sünde-durch-heirat-mit-dem-tempelherrn-wiedergutzumachen)">einer neuen Saite</rs> nur bezogen,</l>
+              <l><rs ref="#einer-neuen-Saite-(neue-argumente-in-dajas-kritik-an-nathans-sünde-recha-als-jüdin-zu-erziehen,-das-argument-die-sünde-durch-heirat-mit-dem-tempelherrn-wiedergutzumachen)">Die</rs>, fürcht' ich, weder stimmt noch hält.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Wie so?</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Mir wär' <rs ref="#tempelherr-bbb">der Tempelherr</rs> schon recht. <rs ref="#tempelherr-bbb">Ihm</rs> gönnt'</l>
+              <l>Ich <rs ref="#recha">Recha</rs> mehr als <rs ref="#andrer-(als-der-tempelherr)">einem in <rs ref="#dieser-Welt-(irdische)">der Welt</rs></rs>.</l>
+              <l>Allein ... Nun, habe nur <rs ref="#Geduld-(daja)">Geduld</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l><rs ref="#Geduld-(daja)">Geduld</rs>?</l>
+              <l><rs ref="#Geduld-(daja)">Geduld</rs>, ist <rs ref="#nathan">Eure</rs> alte Leier nun</l>
+              <l>Wohl nicht?</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nur wenig Tage noch <rs ref="#Geduld-(daja)">Geduld</rs>! ...</l>
+              <l>Sieh doch! – Wer kömmt denn dort? <rs ref="#klosterbruder">Ein Klosterbruder</rs>?</l>
+              <l>Geh, frag' <rs ref="#klosterbruder">ihn</rs> <rs ref="#ists3">was <rs ref="#klosterbruder">er</rs> will</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l>Was wird <rs ref="#klosterbruder">er</rs> wollen?</l>
+            <stage><rs ref="#daja">Sie</rs> geht auf <rs ref="#klosterbruder">ihn</rs> zu und fragt.</stage>
+            <pb n="311"/>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>So gib! – und eh' <rs ref="#klosterbruder">er</rs> bittet. – (Wüßt' ich nur</l>
+              <l><rs ref="#tempelherr-bbb">Dem Tempelherrn</rs> erst beizukommen, ohne</l>
+              <l><rs ref="#das-(die-umstände-den-zusammenhang-des-tempelherrn-mit-nathans-altem-freund-wolf-von-filnek,-nathans-verdacht-über-einen-zusammenhang)">Die Ursach <rs ref="#Neubegier-(neugier-nathans)">meiner Neugier</rs></rs> <rs ref="#tempelherr-bbb">ihm</rs> zu sagen!</l>
+              <l>Denn wenn ich <rs ref="#das-(die-umstände-den-zusammenhang-des-tempelherrn-mit-nathans-altem-freund-wolf-von-filnek,-nathans-verdacht-über-einen-zusammenhang)">sie</rs> <rs ref="#tempelherr-bbb">ihm</rs> sag', und <rs ref="#das-(die-umstände-den-zusammenhang-des-tempelherrn-mit-nathans-altem-freund-wolf-von-filnek,-nathans-verdacht-über-einen-zusammenhang)">der Verdacht</rs></l>
+              <l>Ist ohne Grund: so hab' ich ganz umsonst</l>
+              <l><rs ref="#nathan">Den Vater</rs> auf <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">das Spiel</rs> gesetzt.) – Was <rs ref="#ists3">ists</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <l><rs ref="#klosterbruder">Er</rs> will <rs ref="#nathan">Euch</rs> sprechen.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Nun, so laß <rs ref="#klosterbruder">ihn</rs> kommen;</l>
+              <l>Und geh indes.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,512 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#patriarch">Der Patriarch, <rs ref="#patriarch">welcher</rs> mit <rs ref="#allem-geistlichen-Pomp-(aufmachung-kleidung-des-patriarchen-in-4,2)">allem geistlichen Pomp</rs> den einen Kreuzgang heraufkömmt</rs>,
+            und die Vorigen.</stage>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Ich</rs> wich <rs ref="#patriarch">ihm</rs> lieber aus. – Wär' nicht mein Mann! –</l>
+              <l><rs ref="#patriarch">Ein dicker, roter, freundlicher Prälat</rs>!</l>
+              <l>Und <rs ref="#allem-geistlichen-Pomp-(aufmachung-kleidung-des-patriarchen-in-4,2)">welcher Prunk</rs>!</l>
+              <pb n="295"/>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> solltet <rs ref="#patriarch">ihn</rs> erst sehn,</l>
+              <l>Nach Hofe <rs ref="#patriarch">sich</rs> erheben. Itzo kömmt</l>
+              <l><rs ref="#patriarch">Er</rs> nur von einem Kranken.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wie <rs ref="#saladin">sich</rs> da</l>
+              <l>Nicht <rs ref="#saladin">Saladin</rs> wird schämen müssen!</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH</speaker></rs>
+            <stage>indem <rs ref="#patriarch">er</rs> näher kömmt, winkt <rs ref="#klosterbruder">dem Bruder</rs>.</stage>
+            <lg>
+              <l>Hier! –</l>
+              <l><rs ref="#tempelherr-bbb">Das</rs> ist ja wohl <rs ref="#Er-(prädikativ-der-tempelherr-als-er-selbst)#">der Tempelherr</rs>. Was will</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Weiß nicht.</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH</speaker></rs>
+            <stage>auf <rs ref="#tempelherr-bbb">ihn</rs> zugehend, indem <rs ref="#klosterbruder">der Bruder</rs> und das Gefolge zurücktreten.</stage>
+            <lg>
+              <l>Nun, <rs ref="#tempelherr-bbb">Herr Ritter</rs>! – Sehr erfreut</l>
+              <l><rs ref="#tempelherr-bbb">Den braven jungen Mann</rs> zu sehn! – Ei, noch</l>
+              <l>So gar jung! – Nun, mit <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gottes</rs> Hülfe, daraus</l>
+              <l>Kann etwas werden.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Mehr, <rs ref="#patriarch">ehrwürd'ger Herr</rs>,</l>
+              <l>Wohl schwerlich, als schon ist. Und eher noch,</l>
+              <l>Was weniger.</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Ich wünsche wenigstens,</l>
+              <l>Daß <rs ref="#tempelherr-bbb">so ein frommer Ritter</rs> lange noch</l>
+              <l><rs ref="#Christ-222">Der lieben Christenheit,</rs> <rs ref="#Des-Himmels-Wege-(gottes-entscheidungen-christl)">der Sache Gottes</rs></l>
+              <l>Zu <rs ref="#der---------------Bewundrung-(anerkennung-guter-taten,-ansehen-das-man-dafür-erntet)">Ehr</rs> und Frommen blühn und grünen möge!</l>
+              <l><rs ref="#der---------------Bewundrung-(anerkennung-guter-taten,-ansehen-das-man-dafür-erntet)">Das</rs> wird denn auch nicht fehlen, wenn nur fein</l>
+              <l>Die junge Tapferkeit <rs ref="#dem-reifen-Rate---------------Des-Alters-(weisheit-alter-menschen)">dem reifen Rate</l>
+              <l><rs ref="#Des-Alters-(alte-menschen)">Des Alters</rs></rs> folgen will! – Womit wär' sonst</l>
+              <l><rs ref="#tempelherr-bbb">Dem Herrn</rs> zu dienen?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Mit <rs ref="#dem-reifen-Rate---------------Des-Alters-(weisheit-alter-menschen)">dem nämlichen,</l>
+              <l>Woran es meiner Jugend fehlt</rs>: mit <rs ref="#Rat-(patriarch-ggü-tempelherr)">Rat</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <l>Recht gern! – Nur ist <rs ref="#Rat-(patriarch-ggü-tempelherr)">der Rat</rs> auch anzunehmen.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#das35">Doch blindlings nicht</rs>?</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Wer sagt denn <rs ref="#das35">das</rs>? – Ei freilich</l>
+              <l>Muß niemand <rs ref="#Kopf-(vernunft)-1">die Vernunft, <rs ref="#Kopf-(vernunft)-1">die</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> <rs ref="#wir-Menschen">ihm</rs> gab</rs>,</l>
+              <l>Zu brauchen unterlassen, – wo <rs ref="#Kopf-(vernunft)-1">sie</rs> hin</l>
+              <l>Gehört. – Gehört <rs ref="#Kopf-(vernunft)-1">sie</rs> aber überall</l>
+              <l>Denn hin? – O nein! – Zum Beispiel: wenn <rs ref="#wir-Menschen">uns</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs></l>
+              <l><pb n="296"/> Durch <rs ref="#einen-seiner-Engel-(christl-erwähnung)">einen <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">seiner</rs> Engel</rs>, – ist zu sagen,</l>
+              <l>Durch <rs ref="#einen-seiner-Engel-(christl-erwähnung)">einen Diener <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">seines</rs> Worts</rs>, – <rs ref="#ein-Mittel">ein Mittel</rs></l>
+              <l>Bekannt zu machen würdiget, <rs ref="#ein-Mittel">das</rs> Wohl</l>
+              <l>Der ganzen Christenheit, das Heil <rs ref="#der-Kirche-(als-institution-des-christentums)">der Kirche</rs>,</l>
+              <l>Auf irgend eine ganz besondre Weise</l>
+              <l>Zu fördern, zu befestigen: wer darf</l>
+              <l><rs ref="#wir-Menschen">Sich</rs> da noch unterstehn, <rs ref="#Des-Himmels-Wege-(gottes-entscheidungen-christl)">die Willkür <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">des,</l>
+              <l><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Der</rs> <rs ref="#Kopf-(vernunft)-1">die Vernunft</rs> erschaffen</rs></rs>, nach <rs ref="#Kopf-(vernunft)-1">Vernunft</rs></l>
+              <l>Zu untersuchen? und <rs ref="#das-ewige---------------Gesetz-der-Herrlichkeit-des-Himmels-(christl-regeln-gottes)">das ewige</l>
+              <l>Gesetz <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">der Herrlichkeit des Himmels</rs></rs>, nach</l>
+              <l>Den kleinen Regeln einer eiteln Ehre</l>
+              <l>Zu prüfen? – Doch hiervon genug. – Was ist</l>
+              <l><rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">Es</rs> denn, worüber <rs ref="#Rat-(patriarch-ggü-tempelherr)">unsern Rat</rs> für itzt</l>
+              <l><rs ref="#tempelherr-bbb">Der Herr</rs> verlangt?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Gesetzt, <rs ref="#patriarch">ehrwürd'ger Vater</rs>,</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Ein Jude</rs> hätt' <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">ein einzig Kind</rs>, – <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">es</rs> sei</l>
+              <l>Ein Mädchen, – <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">das</rs> <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">er</rs> mit der größten Sorgfalt</l>
+              <l>Zu <rs ref="#Gutes-(gute-taten-gutes-handeln)">allem Guten</rs> auferzogen, <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">das</rs></l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Er</rs> liebe mehr als <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">seine</rs> Seele, <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">das</rs></l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Ihn</rs> wieder mit der frömmsten Liebe liebe.</l>
+              <l>Und nun würd' <rs ref="#Christ-222">unser einem</rs> hinterbracht,</l>
+              <l><rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">Dies Mädchen</rs> sei <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">des Juden</rs> Tochter nicht;</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Er</rs> hab' <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">es</rs> in <rs ref="#Kindheit">der Kindheit</rs> aufgelesen,</l>
+              <l>Gekauft, gestohlen, – was <rs ref="#patriarch">Ihr</rs> wollt; <rs ref="#wir-Menschen">man</rs> wisse,</l>
+              <l><rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">Das Mädchen</rs> sei ein Christenkind, und sei</l>
+              <l>Getauft; <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">der Jude</rs> hab' <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">es</rs> nur als <rs ref="#Jüdin-(prädikativ-das-kind-im-beispiel-des-tempelherrn-ggü-dem-patriarch)">Jüdin</rs></l>
+              <l>Erzogen; laß <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">es</rs> nur als <rs ref="#Jüdin-(prädikativ-das-kind-im-beispiel-des-tempelherrn-ggü-dem-patriarch)">Jüdin</rs> und</l>
+              <l>Als <rs ref="#seine-Tochter-(prädikativ-das-kind-im-beispiel-des-tempelherrn-ggü-dem-patriarch)"><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">seine</rs> Tochter</rs> so verharren: – sagt,</l>
+              <l><rs ref="#patriarch">Ehrwürd'ger Vater</rs>, was wär' hierbei wohl</l>
+              <l>Zu tun?</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Mich schaudert! – Doch zu allererst</l>
+              <l>Erkläre <rs ref="#tempelherr-bbb">sich</rs> <rs ref="#tempelherr-bbb">der Herr</rs>, ob <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">so ein Fall</rs></l>
+              <l><rs ref="#Ein-Faktum-(prädikativ-die-sache-die-der-tempelherr-dem-patriarchen-fragt)">Ein Faktum</rs> oder <rs ref="#eine-Hypothes-(prädikativ-die-sache-die-der-tempelherr-den-patriarchen-fragt)">eine Hypothes</rs>'.</l>
+              <l><rs ref="#Das32">Das</rs> ist zu sagen: <rs ref="#Das32">ob <rs ref="#tempelherr-bbb">der Herr</rs> <rs ref="#tempelherr-bbb">sich</rs> <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">das</rs></l>
+              <l>Nur bloß so dichtet, oder <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">obs</rs> geschehn,</l>
+              <l>Und fortfährt zu geschehn</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich glaubte, <rs ref="#Das32">das</rs></l>
+              <l><pb n="297"/> Sei eins, um <rs ref="#Rat-(patriarch-ggü-tempelherr)"><rs ref="#patriarch">Euer</rs> Hochehrwürden Meinung</rs></l>
+              <l>Bloß zu vernehmen.</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Eins? – Da seh <rs ref="#tempelherr-bbb">der Herr</rs></l>
+              <l>Wie <rs ref="#Kopf-(vernunft)-1">sich</rs> <rs ref="#Kopf-(vernunft)-1">die stolze menschliche Vernunft</rs></l>
+              <l>Im Geistlichen doch irren kann. – Mit nichten!</l>
+              <l>Denn ist <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">der vorgetragne Fall</rs> nur so</l>
+              <l><rs ref="#eine-Hypothes-(prädikativ-die-sache-die-der-tempelherr-den-patriarchen-fragt)">Ein Spiel des Witzes</rs>: so verlohnt es sich</l>
+              <l>Der Mühe nicht, im Ernst <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">ihn</rs> durchzudenken.</l>
+              <l>Ich will <rs ref="#tempelherr-bbb">den Herrn</rs> damit auf das Theater</l>
+              <l>Verwiesen haben, wo dergleichen pro</l>
+              <l>Et contra sich mit <rs ref="#der---------------Bewundrung-(anerkennung-guter-taten,-ansehen-das-man-dafür-erntet)">vielem Beifall</rs> könnte</l>
+              <l>Behandeln lassen. – Hat <rs ref="#tempelherr-bbb">der Herr</rs> mich aber</l>
+              <l>Nicht bloß mit einer theatral'schen Schnurre</l>
+              <l>Zum besten; ist <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">der Fall</rs> <rs ref="#Ein-Faktum-(prädikativ-die-sache-die-der-tempelherr-dem-patriarchen-fragt)">ein Faktum</rs>; hätt'</l>
+              <l><rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">Er</rs> <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">sich</rs> wohl gar in <rs ref="#Jerusalem"><rs ref="#patriarch">unsrer</rs> Diözes'</rs>,</l>
+              <l>In <rs ref="#Jerusalem"><rs ref="#patriarch">unsrer</rs> lieben Stadt Jerusalem</rs>,</l>
+              <l>Eräugnet: – ja alsdann –</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Und was alsdann?</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Dann wäre mit <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">dem Juden</rs> fördersamst</l>
+              <l><rs ref="#Die-Strafe-(des-patriarchen-für-nathan)">Die Strafe</rs> zu vollziehn, <rs ref="#Die-Strafe-(des-patriarchen-für-nathan)">die</rs> <rs ref="#päpstliches-(Rechte-der-Kirche)">päpstliches</rs></l>
+              <l>Und kaiserliches Recht <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">so einem Frevel</rs>,</l>
+              <l><rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">So einer Lastertat</rs> bestimmen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>So?</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Und zwar bestimmen obbesagte Rechte</l>
+              <rs ref="#Dem-Juden,-welcher-einen-Christen-zur---------------Apostasie-verführt"><l>Dem Juden, <rs ref="#Dem-Juden,-welcher-einen-Christen-zur---------------Apostasie-verführt">welcher</rs> <rs ref="#Christ-222">einen Christen</rs> zur</l>
+              <l>Apostasie verführt</rs>, – den Scheiterhaufen, –</l>
+              <l>Den Holzstoß –</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>So?</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Und wie vielmehr <rs ref="#dem-Juden,---------------Der-mit-Gewalt-ein-armes-Christenkind---------------Dem-Bunde-seiner-Tauf-entreißt">dem Juden,</l>
+              <l><rs ref="#dem-Juden,---------------Der-mit-Gewalt-ein-armes-Christenkind---------------Dem-Bunde-seiner-Tauf-entreißt">Der</rs> mit Gewalt <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">ein armes Christenkind</rs></l>
+              <l><rs ref="#Christ-222">Dem Bunde <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">seiner</rs> Tauf</rs> entreißt</rs>! Denn ist</l>
+              <l>Nicht alles, was man <rs ref="#Kindern">Kindern</rs> tut, Gewalt? –</l>
+              <l>Zu sagen: – ausgenommen, was <rs ref="#der-Kirche-(als-institution-des-christentums)">die Kirch'</rs></l>
+              <l>An <rs ref="#Kindern">Kindern</rs> tut.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wenn aber nun <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">das Kind</rs>,</l>
+              <l>Erbarmte <rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">seiner</rs> <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">sich</rs> <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">der Jude</rs> nicht,</l>
+              <l>Vielleicht <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">im Elend</rs> umgekommen wäre?</l>
+              <pb n="298"/>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Tut nichts! <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">der Jude</rs> wird verbrannt. – Denn <rs ref="#dem6">besser,</l>
+              <l><rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">Es</rs> wäre hier <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">im Elend</rs> umgekommen,</l>
+              <l>Als daß zu <rs ref="#seinem-ewigen-Verderben"><rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">seinem</rs> ewigen Verderben</rs></l>
+              <l><rs ref="#ein-einzig-Kind-(das-von-einem-jüdischen-vater-großgezogen-wird)">Es</rs> so gerettet ward.</rs> – Zu <rs ref="#dem6">dem</rs>, was hat</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Der Jude</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> denn vorzugreifen? <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs></l>
+              <l>Kann, wen <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">er</rs> retten will, schon ohn' <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">ihn</rs> retten.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Auch Trotz <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">ihm</rs>, sollt' ich meinen, – selig machen.</l>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <rs ref="#Das33"><l>Tut nichts! <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">der Jude</rs> wird verbrannt.</l></rs>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das33">Das</rs> geht</l>
+              <l>Mir nah'! Besonders, da <rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">man</rs> sagt, <rs ref="#dieserwegen"><rs ref="#nathan">er</rs> habe</l>
+              <l><rs ref="#recha">Das Mädchen</rs> nicht sowohl in <rs ref="#nathan"><rs ref="#seinem-(Glauben,-jüdische-religion-glaubenskonzept-d-judentum)">seinem</rs></rs>, als</l>
+              <l>Vielmehr in keinem Glauben auferzogen,</l>
+              <l>Und <rs ref="#recha">sie</rs> von <rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">Gott</rs> nicht mehr nicht weniger</l>
+              <l>Gelehrt, als <rs ref="#Kopf-(vernunft)-1">der Vernunft</rs> genügt.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Tut nichts!</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Der Jude</rs> wird verbrannt ... Ja, wär' allein</l>
+              <l>Schon <rs ref="#dieserwegen">dieserwegen</rs> wert, dreimal verbrannt</l>
+              <l>Zu werden! – Was? <rs ref="#Kindern">ein Kind</rs> ohn' allen Glauben</l>
+              <l>Erwachsen lassen? – Wie? die große Pflicht</l>
+              <l>Zu glauben, ganz und gar <rs ref="#Kindern">ein Kind</rs> nicht lehren?</l>
+              <l>Das ist zu arg! – Mich wundert sehr, <rs ref="#tempelherr-bbb">Herr Ritter,</l>
+              <l>Euch</rs> selbst ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Ehrwürd'ger Herr</rs>, <rs ref="#das-übrige-(die-restlichen-informationen-des-tempelherrn-über-nathan-ggü-dem-patriarch)">das übrige</rs>,</l>
+              <l>Wenn <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> will, in der Beichte.</l>
+            </lg>
+            <stage>Will gehn.</stage>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>Was? mir nun</l>
+              <l>Nicht einmal <rs ref="#das-übrige-(die-restlichen-informationen-des-tempelherrn-über-nathan-ggü-dem-patriarch)">Rede</rs> stehn? – <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Den Bösewicht</rs>,</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Den Juden</rs> mir nicht nennen? – mir <rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">ihn</rs> nicht</l>
+              <l>Zur Stelle schaffen? – O da weiß ich <rs ref="#Rat-(patriarch-ggü-tempelherr)">Rat</rs>!</l>
+              <l>Ich geh sogleich <rs ref="#saladin">zum Sultan</rs>. – <rs ref="#saladin">Saladin</rs>,</l>
+              <l>Vermöge <rs ref="#der-Kapitulation,---------------Die-er-beschworen-(d-ritterordens-in-jerusalem-ggü-saladin">der Kapitulation,</l>
+              <l><rs ref="#der-Kapitulation,---------------Die-er-beschworen-(d-ritterordens-in-jerusalem-ggü-saladin">Die</rs> <rs ref="#saladin">er</rs> beschworen</rs>, muß <rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">uns</rs>, muß <rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">uns</rs> schützen;</l>
+              <l>Bei <rs ref="#päpstliches-(Rechte-der-Kirche)">allen Rechten</rs>, allen Lehren schützen,</l>
+              <l>Die <rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">wir</rs> zu <rs ref="#den-Aberglauben-(glaubenskonzept-d-christen)"><rs ref="#unters-Volk-(unbestimmte-leute-in-und-um-jerusalem)">unsrer</rs> allerheiligsten</l>
+              <l>Religion</rs> nur immer rechnen dürfen!</l>
+              <l>Gottlob! <rs ref="#Christ-222">wir</rs> haben <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">das Original</rs>.</l>
+              <l><rs ref="#Christ-222">Wir</rs> haben <rs ref="#des-Höchsten-immer-volle-Hand-(gottes-hand,-die-immer-geben-kann-im-gegensatz-zum-menschen-der-irgendwann-nichts-mehr-hat)"><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">seine</rs> Hand</rs>, <rs ref="#das-ewige---------------Gesetz-der-Herrlichkeit-des-Himmels-(christl-regeln-gottes)"><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">sein</rs> Siegel</rs>. <rs ref="#Christ-222">Wir</rs>! –</l>
+              <l>Auch mach' ich <rs ref="#saladin">ihm</rs> gar leicht begreiflich, wie</l>
+              <pb n="299"/>
+            </lg>
+            <lg>
+              <l>Gefährlich selber für <rs ref="#im-Staat-(meint-syrien-und-wohl-ägypten-als-ayyubidisches-staatsgebiet-saladins)">den Staat</rs> <rs ref="#es31">es</rs> ist,</l>
+              <l><rs ref="#es31">Nichts glauben</rs>! Alle bürgerliche Bande</l>
+              <l>Sind aufgelöset, sind zerrissen, wenn</l>
+              <l><rs ref="#wir-Menschen">Der Mensch</rs> nichts glauben darf. – Hinweg! hinweg</l>
+              <l>Mit <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">solchem Frevel</rs>! ..</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Schade, daß ich nicht</l>
+              <l><rs ref="#Rat-(patriarch-ggü-tempelherr)">Den trefflichen Sermon</rs> mit <rs ref="#Laune,-stimmung-des-tempelherrn)">beßrer Muße</rs></l>
+              <l>Genießen kann! Ich bin <rs ref="#saladin">zum Saladin</rs></l>
+              <l>Gerufen.</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <l>Ja? – Nun so – Nun freilich – Dann –</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich will <rs ref="#Es9"><rs ref="#saladin">den Sultan</rs> vorbereiten</rs>, wenn</l>
+              <l><rs ref="#Es9">Es</rs> <rs ref="#patriarch">Eurer Hochehrwürden</rs> so gefällt.</l>
+            </lg>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>O, oh! – Ich weiß, <rs ref="#tempelherr-bbb">der Herr</rs> hat <rs ref="#das-(geschenk-saladins,-meint-die-begnadigung-des-tempelherrn)">Gnade</rs> funden</l>
+              <l>Vor <rs ref="#saladin">Saladin</rs>! – <rs ref="#Das34">Ich bitte <rs ref="#patriarch">meiner</rs> nur</l>
+              <l>Im besten bei <rs ref="#saladin">ihm</rs> eingedenk zu sein. –</l>
+              <l>Mich treibt <rs ref="#Des-Himmels-Wege-(gottes-entscheidungen-christl)">der Eifer <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gottes</rs></rs> lediglich.</l>
+              <l>Was ich zu viel tu, tu ich <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">ihm</rs></rs>. – <rs ref="#Das34">Das</rs> wolle</l>
+              <l>Doch ja <rs ref="#tempelherr-bbb">der Herr</rs> erwägen! – Und nicht wahr,</l>
+              <l><rs ref="#tempelherr-bbb">Herr Ritter</rs>? <rs ref="#eine-Sache-(der-sachverhalt,-dass-nathan-recha-jüdisch-erzieht,-hier-als-abstraktes,-verallgemeinertes-beispiel-eines-juden-mit-einem-christenmädchen)">das vorhin Erwähnte</rs> von</l>
+              <l><rs ref="#Dem-Juden,-welcher-e…-/-dem-Juden,----------…-(eigentlich-nathan,-hier-aber-der-jude-von-dem-der-tempelherr-dem-patriarchen-erzählt-ohne-zu-sagen-dass-es-nathan-ist,-er-wird-nur-Jude-genannt,-es-bleibt-unklar-ob-der-vom-temnpelherrn-beschriebene-fall-hypothetisch-bzw-generisch-oder-speziell-ist)">Dem Juden</rs>, war nur <rs ref="#eine-Hypothes-(prädikativ-die-sache-die-der-tempelherr-den-patriarchen-fragt)">ein Problema</rs>? – ist</l>
+              <l>Zu sagen –</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#eine-Hypothes-(prädikativ-die-sache-die-der-tempelherr-den-patriarchen-fragt)">Ein Problema</rs>.</l>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#patriarch">
+            <rs ref="#patriarch"><speaker>PATRIARCH.</speaker></rs>
+            <lg>
+              <l>(<rs ref="#eine-Hypothes-(prädikativ-die-sache-die-der-tempelherr-den-patriarchen-fragt)">Dem</rs> ich <rs ref="#Das35">tiefer</l>
+              <l>Doch auf den Grund zu kommen suchen</rs> muß.</l>
+              <l><rs ref="#Das35">Das</rs> wär' so wiederum ein Auftrag für</l>
+              <l><rs ref="#klosterbruder">Den Bruder Bonafides</rs>.) – Hier, <rs ref="#klosterbruder">mein Sohn</rs>!</l>
+            </lg>
+            <stage><rs ref="#patriarch">Er</rs> spricht im Abgehn mit <rs ref="#klosterbruder">dem Klosterbruder</rs>.</stage>
+            <pb n="300"/>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

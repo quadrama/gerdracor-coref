@@ -1,0 +1,414 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Dritter Aufzug</head>
+        <div type="scene">
+          <head>Zweiter Auftritt</head>
+          <stage><rs ref="#recha">Recha</rs>. <rs ref="#daja">Daja</rs> und <rs ref="#tempelherr-bbb">der Tempelherr, <rs ref="#tempelherr-bbb">dem</rs> jemand von außen <rs ref="#zur-Pfort-(von-nathans-haus)">die Türe</rs> öffnet</rs>, mit <rs ref="#den-------------Worten">den
+            Worten</rs>.</stage>
+          <lg>
+            <rs ref="#den-------------Worten"><l>Nur hier herein!</l></rs>
+          </lg>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage>fährt zusammen, faßt <rs ref="#recha">sich</rs>, und <rs ref="#Dies">will <rs ref="#tempelherr-bbb">ihm</rs> zu <rs ref="#seinen-Füßen-(des-tempelherrn)">Füßen</rs> fallen</rs>.</stage>
+            <l><rs ref="#Er-(prädikativ-der-tempelherr-als-er-selbst)#">Er</rs> <rs ref="#tempelherr-bbb">ists</rs>! – <rs ref="#tempelherr-bbb">Mein Retter, ah</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Dies">Dies</rs> zu vermeiden</l>
+              <l>Erschien ich bloß so spät: und doch –</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Ich will</l>
+              <l>Ja zu <rs ref="#seinen-Füßen-(des-tempelherrn)">den Füßen <rs ref="#tempelherr-bbb">dieses stolzen Mannes</rs></rs></l>
+              <l>Nur <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs> noch einmal danken; nicht <rs ref="#tempelherr-bbb">dem Manne</rs>.</l>
+              <l><rs ref="#tempelherr-bbb">Der Mann</rs> will keinen Dank; will <rs ref="#ihren-Dank-(recha-ggü-dem-tempelherrn)">ihn</rs> so wenig</l>
+              <l>Als <rs ref="#ihren-Dank-(recha-ggü-dem-tempelherrn)">ihn</rs> <rs ref="#der-Wassereimer">der Wassereimer</rs> will, <rs ref="#der-Wassereimer">der</rs> bei</l>
+              <l>Dem Löschen so geschäftig <rs ref="#der-Wassereimer">sich</rs> erwiesen.</l>
+              <l><rs ref="#der-Wassereimer">Der</rs> ließ <rs ref="#der-Wassereimer">sich</rs> füllen, ließ <rs ref="#der-Wassereimer">sich</rs> leeren, mir</l>
+              <l>Nichts, dir nichts: also auch <rs ref="#tempelherr-bbb">der Mann</rs>. Auch <rs ref="#tempelherr-bbb">der</rs></l>
+              <l>Ward nun so in <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">die Glut</rs> hineingestoßen;</l>
+              <l>Da fiel ich ungefähr <rs ref="#tempelherr-bbb">ihm</rs> in <rs ref="#im-starken-Arm-(des-tempelherrn)">den Arm</rs>;</l>
+              <l>Da blieb ich ungefähr, so wie ein Funken</l>
+              <l>Auf <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)"><rs ref="#tempelherr-bbb">seinem</rs> Mantel</rs>, <rs ref="#tempelherr-bbb">ihm</rs> in <rs ref="#im-starken-Arm-(des-tempelherrn)"><rs ref="#tempelherr-bbb">seinen</rs> Armen</rs>;</l>
+              <l>Bis wiederum, ich weiß nicht was, <rs ref="#tempelherr-bbb-/-recha">uns</rs> beide</l>
+              <l>Herausschmiß aus <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">der Glut</rs>. – Was gibt es da</l>
+              <l>Zu danken? – In <rs ref="#Europa">Europa</rs> treibt der Wein</l>
+              <l>Zu noch weit andern Taten. – <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Tempelherren</rs>,</l>
+              <l><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Die</rs> müssen einmal nun so handeln; müssen</l>
+              <l>Wie etwas besser zugelernte Hunde,</l>
+              <l>Sowohl aus <rs ref="#Dem-Feur">Feuer</rs>, als aus <rs ref="#Wasser-(flüsse-gewässer)">Wasser</rs> holen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR</speaker></rs>
+            <stage><rs ref="#tempelherr-bbb">der</rs> <rs ref="#recha">sie</rs> mit <rs ref="#Erstaunen-(tempelherr)">Erstaunen</rs> und <rs ref="#Unruhe-(tempelherr)">Unruhe</rs> die Zeit über betrachtet.</stage>
+            <lg>
+              <l><rs ref="#daja">O Daja</rs>, <rs ref="#daja">Daja</rs>! Wenn in Augenblicken</l>
+              <l><rs ref="#Des-Kummers-(des-tempelherrn)">Des Kummers</rs> und <rs ref="#der-Galle-(des-tempelherrn,-als-körperlicher-Ort-der-Stimmungen,-vermutl-in-anlehnung-an-säftelehre)">der Galle</rs>, <rs ref="#Laune,-stimmung-des-tempelherrn)">meine Laune</rs></l>
+              <l><rs ref="#daja">Dich</rs> übel anließ, warum <rs ref="#Das19"><rs ref="#so-bittern-Spott-(des-tempelherrn-ggü-daja-nach-der-rettung)">jede Torheit,</l>
+              <l><rs ref="#so-bittern-Spott-(des-tempelherrn-ggü-daja-nach-der-rettung)">Die</rs> meiner Zung' entfuhr</rs>, <rs ref="#recha">ihr</rs> hinterbringen</rs>?</l>
+              <l><rs ref="#Das19">Das</rs> hieß <rs ref="#daja">sich</rs> zu empfindlich rächen, <rs ref="#daja">Daja</rs>!</l>
+              <l>Doch wenn <rs ref="#daja">du</rs> nur von nun an, besser mich</l>
+              <l><pb n="265"/> Bei <rs ref="#recha">ihr</rs> vertreten willst.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Ich denke, <rs ref="#tempelherr-bbb">Ritter</rs>,</l>
+              <l>Ich denke nicht, daß <rs ref="#so-bittern-Spott-(des-tempelherrn-ggü-daja-nach-der-rettung)">diese kleinen Stacheln</rs>,</l>
+              <l><rs ref="#recha">Ihr</rs> an <rs ref="#ihre-ganze-Seele-(rechas-herz-seele,-inneres-wesen-das-gefühle-hervorbringt)-222">das Herz</rs> geworfen, <rs ref="#tempelherr-bbb">Euch</rs> da sehr</l>
+              <l>Geschadet haben.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Wie? <rs ref="#tempelherr-bbb">Ihr</rs> hattet <rs ref="#Des-Kummers-(des-tempelherrn)">Kummer</rs>?</l>
+              <l>Und wart mit <rs ref="#Des-Kummers-(des-tempelherrn)"><rs ref="#tempelherr-bbb">Euerm</rs> Kummer</rs> geiziger</l>
+              <l>Als <rs ref="#Das-Leben-(des-tempelherrn)"><rs ref="#tempelherr-bbb">Euerm</rs> Leben</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Gutes, holdes Kind</rs>! –</l>
+              <l>Wie ist doch <rs ref="#Euerm-Wesen-(innerer-charakter,-gemüt-des-tempelherrn)">meine Seele</rs> zwischen <rs ref="#Auge-(blick-des-tempelherr)">Auge</rs></l>
+              <l>Und <rs ref="#seinem-Ohr-(gehör-des-tempelherrn)">Ohr</rs> geteilt! – <rs ref="#recha">Das</rs> war das Mädchen nicht,</l>
+              <l>Nein, nein, <rs ref="#recha">das</rs> war es nicht, das aus dem Feuer</l>
+              <l>Ich holte. – Denn wer hätte <rs ref="#recha">die</rs> gekannt,</l>
+              <l>Und aus <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">dem Feuer nicht</rs> geholt? Wer hätte</l>
+              <l>Auf mich gewartet? – Zwar – verstellt – <rs ref="#der-Schreck-(angst-furcht)">der Schreck</rs></l>
+            </lg>
+            <stage><rs ref="#Pause,-unter-der-er,-in-Anschauung-ihrer,-sich-wie-verliert-(sprechpausen-des-tempelherrn)">Pause, unter <rs ref="#Pause,-unter-der-er,-in-Anschauung-ihrer,-sich-wie-verliert-(sprechpausen-des-tempelherrn)">der</rs> <rs ref="#tempelherr-bbb">er</rs>, in <rs ref="#Auge-(blick-des-tempelherr)">Anschauung</rs> <rs ref="#recha">ihrer</rs>, <rs ref="#tempelherr-bbb">sich</rs> wie verliert</rs>.</stage>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Ich aber find <rs ref="#tempelherr-bbb">Euch</rs> noch <rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-übernatürlicher-engel)">den nämlichen</rs>. –</l>
+            <stage><rs ref="#ein-Engel-(prädikativ-der-tempelherr-als-ein-guter-Mensch,-kein-echter)">Dergleichen</rs>; bis <rs ref="#recha">sie</rs> fortfährt, um <rs ref="#tempelherr-bbb">ihn</rs> in <rs ref="#Erstaunen-(tempelherr)"><rs ref="#tempelherr-bbb">seinem</rs> Anstaunen</rs> zu
+              unterbrechen.</stage>
+            <lg>
+              <l>Nun, <rs ref="#tempelherr-bbb">Ritter</rs>, sagt <rs ref="#daja-/-recha">uns</rs> doch, wo <rs ref="#tempelherr-bbb">Ihr</rs> so lange</l>
+              <l>Gewesen? – Fast dürft' ich auch fragen: wo</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> itzo seid?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <rs ref="#Das20"><l>Ich bin, – wo ich vielleicht</l>
+              <l>Nicht sollte sein.</rs> –</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Wo <rs ref="#tempelherr-bbb">ihr</rs> gewesen? – Auch</l>
+              <l>Wo <rs ref="#tempelherr-bbb">Ihr</rs> vielleicht nicht solltet sein gewesen?</l>
+              <l><rs ref="#Das20">Das</rs> ist nicht gut.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Auf – auf – wie heißt <rs ref="#Sinai">der Berg</rs>?</l>
+              <l>Auf <rs ref="#Sinai">Sinai</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Auf <rs ref="#Sinai">Sinai</rs>? – Ah schön!</l>
+              <l>Nun kann ich zuverlässig doch einmal</l>
+              <l>Erfahren, ob <rs ref="#es21">es</rs> wahr ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Was? was? <rs ref="#Obs">Obs</rs> wahr,</l>
+              <rs ref="#Obs"><l>Daß noch daselbst der Ort zu sehn, wo <rs ref="#Moses">Moses</rs></l>
+              <l>Vor <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> gestanden, als ...</l></rs>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Nun <rs ref="#Obs">das</rs> wohl nicht.</l>
+              <l>Denn wo <rs ref="#Moses">er</rs> stand, stand <rs ref="#Moses">er</rs> vor <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>. Und davon</l>
+              <l>Ist mir zur Gnüge schon bekannt. – <rs ref="#es21">Obs</rs> wahr,</l>
+              <l><pb n="266"/> Möcht' ich nur gern von <rs ref="#tempelherr-bbb">Euch</rs> erfahren, daß –</l>
+              <rs ref="#es21"><l>Daß <rs ref="#es22">es</rs> bei weitem nicht so mühsam sei,</l>
+              <l><rs ref="#es22">Auf <rs ref="#Sinai">diesen Berg</rs> hinauf zu steigen</rs>, als</l>
+              <l>Herab</rs>? – Denn seht; so viel ich <rs ref="#Berge">Berge</rs> noch</l>
+              <l>Gestiegen bin, wars just das Gegenteil. –</l>
+              <l>Nun, <rs ref="#tempelherr-bbb">Ritter</rs>? – Was? – <rs ref="#tempelherr-bbb">Ihr</rs> kehrt <rs ref="#tempelherr-bbb">Euch</rs> von mir ab?</l>
+              <l>Wollt mich nicht sehn?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Weil ich <rs ref="#recha">Euch</rs> hören will.</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Weil <rs ref="#tempelherr-bbb">Ihr</rs> mich nicht wollt merken lassen, daß</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> meiner Einfalt lächelt; daß <rs ref="#tempelherr-bbb">Ihr</rs> lächelt,</l>
+              <l>Wie ich <rs ref="#tempelherr-bbb">Euch</rs> doch so gar nichts Wichtigers</l>
+              <l>Von <rs ref="#Sinai">diesem heiligen Berg' <rs ref="#Berge">aller Berge</rs></rs></l>
+              <l>Zu fragen weiß? Nicht wahr?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>So muß</l>
+              <l>Ich doch <rs ref="#recha">Euch</rs> wieder in <rs ref="#verschloßnem-Aug'-(rechas)">die Augen</rs> sehn. –</l>
+              <l>Was? Nun schlagt <rs ref="#recha">Ihr</rs> sie nieder? nun verbeißt</l>
+              <l><rs ref="#Das-Lächeln-(recha)">Das Lächeln</rs> <rs ref="#recha">Ihr</rs>? wie ich noch erst in <rs ref="#Angesicht-(Rechas)">Mienen</rs>,</l>
+              <l>In <rs ref="#Angesicht-(Rechas)">zweifelhaften Mienen</rs> lesen will,</l>
+              <l>Was ich so deutlich hör', <rs ref="#recha">Ihr</rs> so vernehmlich</l>
+              <l>Mir sagt – verschweigt? – <rs ref="#recha">Ah Recha</rs>! <rs ref="#recha">Recha</rs>! Wie</l>
+              <l>Hat <rs ref="#nathan">er</rs> so wahr gesagt: <rs ref="#das22">»Kennt <rs ref="#recha">sie</rs> nur erst!«</rs></l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Wer hat? – von wem? – <rs ref="#tempelherr-bbb">Euch</rs> <rs ref="#das22">das</rs> gesagt?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>»Kennt <rs ref="#recha">sie</rs></l>
+              <l>Nur erst!« hat <rs ref="#nathan"><rs ref="#recha">Euer</rs> Vater</rs> mir gesagt;</l>
+              <l>Von <rs ref="#recha">Euch</rs> gesagt.</l>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l>Und ich nicht etwa auch?</l>
+              <l>Ich denn nicht auch?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Allein wo ist <rs ref="#nathan">er</rs> denn?</l>
+              <l>Wo ist denn <rs ref="#nathan"><rs ref="#recha">Euer</rs> Vater</rs>? Ist <rs ref="#nathan">er</rs> noch</l>
+              <l><rs ref="#saladin">Beim Sultan</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Ohne Zweifel.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Noch, noch da? –</l>
+              <l>O <rs ref="#tempelherr-bbb">mich Vergeßlichen</rs>! Nein, nein; da ist</l>
+              <l><rs ref="#nathan">Er</rs> schwerlich mehr. – <rs ref="#nathan">Er</rs> wird dort unten bei</l>
+              <l><rs ref="#dem-Kloster">Dem Kloster</rs> <rs ref="#tempelherr-bbb">meiner</rs> warten; ganz gewiß.</l>
+              <l>So redten, mein ich, <rs ref="#tempelherr-bbb-/-nathan">wir</rs> es ab. Erlaubt!</l>
+              <l>Ich geh, ich <rs ref="#Das21">hol' <rs ref="#nathan">ihn</rs></rs> ...</l>
+              <pb n="267"/>
+            </lg>
+          </sp>
+          <sp who="#daja">
+            <rs ref="#daja"><speaker>DAJA.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das21">Das</rs> ist meine Sache.</l>
+              <l>Bleibt, <rs ref="#tempelherr-bbb">Ritter</rs>, bleibt. Ich bring <rs ref="#nathan">ihn</rs> unverzüglich.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Nicht so, nicht so! <rs ref="#nathan">Er</rs> sieht mir selbst entgegen;</l>
+              <l>Nicht <rs ref="#daja">Euch</rs>. Dazu, <rs ref="#nathan">er</rs> könnte leicht ... wer weiß? ...</l>
+              <l><rs ref="#nathan">Er</rs> könnte bei <rs ref="#saladin">dem Sultan</rs> leicht, ... <rs ref="#daja">Ihr</rs> kennt</l>
+              <l><rs ref="#saladin">Den Sultan</rs> nicht! ... leicht in Verlegenheit</l>
+              <l>Gekommen sein. – Glaubt mir; <rs ref="#es23">es</rs> hat <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">Gefahr</rs>,</l>
+              <l><rs ref="#es23">Wenn ich nicht geh</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l><rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">Gefahr</rs>? was für <rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">Gefahr</rs>?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#der-Glut-(gefahr,-not-aus-der-man-gerettet-werden-muss)">Gefahr für mich, für <rs ref="#recha">Euch</rs>, für <rs ref="#nathan">ihn</rs></rs>: wenn ich</l>
+              <l>Nicht schleunig, schleunig geh.</l>
+            </lg>
+            <rs ref="#das23"><stage>Ab.</stage></rs>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

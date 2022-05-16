@@ -1,0 +1,1672 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Überteufel</title>
+        <title type="sub">Tragödie in fünf Aufzügen</title>
+        <author key="pnd:118531212">Essig, Hermann</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000046</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q52894875</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:mvrf.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Hermann Essig: Überteufel, Berlin: Verlag Der Sturm, 1912.</title>
+            <date type="print" when="1912">1912</date>
+            <date type="premiere" when="1923">1923</date>
+            <date type="written" when="1906">1906</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="selma" sex="FEMALE">
+            <persName>Selma</persName>
+          </person>
+          <person xml:id="karl" sex="MALE">
+            <persName>Karl</persName>
+          </person>
+          <person xml:id="oberst" sex="MALE">
+            <persName>Oberst</persName>
+            <persName type="variant">Stimme</persName>
+          </person>
+          <person xml:id="frau_weber_mutter" sex="FEMALE">
+            <persName>Frau Weber/Mutter</persName>
+          </person>
+          <person xml:id="hecht" sex="MALE">
+            <persName>Hecht</persName>
+          </person>
+          <person xml:id="mariechen_marie" sex="FEMALE">
+            <persName>Mariechen/Marie</persName>
+          </person>
+          <person xml:id="luestling" sex="MALE">
+            <persName>Lüstling</persName>
+            <persName type="variant">Lüstlings Stimme</persName>
+          </person>
+          <person xml:id="brigitte" sex="FEMALE">
+            <persName>Brigitte</persName>
+          </person>
+          <person xml:id="johanna" sex="FEMALE">
+            <persName>Johanna</persName>
+          </person>
+          <person xml:id="lothar_weber_vater" sex="MALE">
+            <persName>Lothar Weber/Vater</persName>
+          </person>
+          <personGrp xml:id="alle_gaeste_die_gesellschaft_rufe" sex="UNKNOWN">
+            <name>Alle/Alle Gäste/Rufe/Die Gesellschaft/Taktmäßige Rufe (IV. Aufzug)</name>
+          </personGrp>
+          <person xml:id="brautvater" sex="MALE">
+            <persName>Brautvater</persName>
+          </person>
+          <person xml:id="ruf" sex="UNKNOWN">
+            <persName>Ruf (aus der Gesellschaft)</persName>
+          </person>
+          <person xml:id="bleich" sex="MALE">
+            <persName>Bleich</persName>
+          </person>
+          <person xml:id="brautmutter" sex="FEMALE">
+            <persName>Brautmutter</persName>
+          </person>
+          <personGrp xml:id="poebel" sex="UNKNOWN">
+            <name>Pöbel (draußen)</name>
+          </personGrp>
+          <person xml:id="frau_hecht" sex="FEMALE">
+            <persName>Frau Hecht</persName>
+          </person>
+          <person xml:id="beamter" sex="MALE">
+            <persName>Beamter</persName>
+          </person>
+          <person xml:id="weib" sex="FEMALE">
+            <persName>Weib</persName>
+          </person>
+          <person xml:id="stimme" sex="MALE">
+            <persName>Stimme</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#lothar_weber_vater #frau_weber_mutter"/>
+            <relation name="parent_of" active="#lothar_weber_vater" passive="#karl"/>
+            <relation name="parent_of" active="#lothar_weber_vater" passive="#selma"/>
+            <relation name="parent_of" active="#lothar_weber_vater" passive="#mariechen_marie"/>
+            <relation name="parent_of" active="#frau_weber_mutter" passive="#karl"/>
+            <relation name="parent_of" active="#frau_weber_mutter" passive="#selma"/>
+            <relation name="parent_of" active="#frau_weber_mutter" passive="#mariechen_marie"/>
+            <relation name="associated_with" active="#bleich" passive="#luestling"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragödie</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-04-28">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Hermann Essig</head>
+        <head>Ueberteufel</head>
+        <head>Tragödie in fünf Aufzügen</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="3"/> Personen.</head>
+          <castItem>Lothar Weber</castItem>
+          <castItem>Martha Weber, seine Frau</castItem>
+          <castGroup>
+            <castItem>Karl,</castItem>
+            <castItem>Selma,</castItem>
+            <castItem>Marie,</castItem>
+            <roleDesc>beider Kinder</roleDesc>
+          </castGroup>
+          <castItem>Hecht, Kaufmann</castItem>
+          <castItem>Schipper, Oberst</castItem>
+          <castItem>Lüstling, Lehrer der Musik</castItem>
+          <castItem>Bleich, dessen jüngerer Gehülfe</castItem>
+          <castItem>Johanna, Kellnerin</castItem>
+          <castItem>Brigitte, Schauspielerin</castItem>
+          <castItem>Ein altes Weib</castItem>
+          <castItem>Hochzeitsgäste</castItem>
+          <castItem>Musikanten</castItem>
+          <castItem>Gassenvolk</castItem>
+          <castItem>Untersuchungskommissare</castItem>
+          <pb n="3"/>
+          <pb n="5"/>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <head>Erster Aufzug.</head>
+        <castList>
+          <head>Personen.</head>
+          <rs ref="#frau_weber_mutter"><castItem>Frau Martha Weber</castItem></rs>
+          <castItem><rs ref="#karl">Karl</rs>, <rs ref="#deiner-Siebzehn-(alter-karls)">17 Jahre</rs> alt</castItem>
+          <castItem><rs ref="#selma">Selma</rs>, 1 Jahr älter</castItem>
+          <castItem><rs ref="#mariechen_marie">Marie</rs>, <rs ref="#10-Jahre-(alter-marie)">10 Jahre</rs> alt</castItem>
+          <rs ref="#oberst"><castItem>Oberst Schipper</castItem></rs>
+          <rs ref="#hecht"><castItem>Kaufmann Hecht</castItem></rs>
+          <rs ref="#luestling"><castItem>Musiklehrer Lüstling</castItem></rs>
+        </castList>
+        <stage>Scene: <rs ref="#Empfangszimmer-im-Hause-Weber">Empfangszimmer im <rs ref="#Hause-Weber">Hause Weber</rs></rs>. <rs ref="#Empfangszimmer-im-Hause-Weber">Großer teppichbelegter Raum</rs>, <rs ref="#Sofa">Sofa</rs>, Tisch und
+          <rs ref="#Stühle">Stühle</rs>. Hinten <rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">Türe zum Korridor</rs>, rechts <rs ref="#Türe-ins-Speisezimmer">Türe <rs ref="#ins-Speisezimmer">ins Speisezimmer</rs></rs>. Links sieht man durch <rs ref="#hohe-----------Fenster">hohe
+          Fenster</rs> über Terrasse und Garten auf die Straße.</stage>
+        <stage><rs ref="#karl">Karl</rs> sitzt auf <rs ref="#Sofa">dem Sofa</rs>, <rs ref="#selma">Selma</rs> steht vor <rs ref="#karl">ihm</rs> leidenschaftlich erregt und knüpft <rs ref="#ihre-----------Bluse"><rs ref="#selma">ihre</rs>
+          Bluse</rs> auf.</stage>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>wenig gedämpft.</stage>
+          <p><rs ref="#karl">Du</rs> – ist <rs ref="#ihre-----------Bluse">das</rs> hübsch? – »Ausgeschnitten.«</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>haftet mit großen Blick an <rs ref="#selma">Selmas</rs> aufgeregtem Atem.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>mit verstärktem Herzklopfen.</stage>
+          <p>Mir ist so heiß. Ich zöge mich am liebsten ganz aus.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>gleichgiltig an <rs ref="#karl">sich</rs> haltend.</stage>
+          <p>Mir auch. Ich zog den Rock aus.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>entschlossen.</stage>
+          <p>Soll ich auch? <stage><rs ref="#selma">Sie</rs> knöpft weiter auf, hält inne.</stage> <rs ref="#das">Wenn ich mich <rs ref="#du's">auszieh</rs>,
+            mußt <rs ref="#du's"><rs ref="#karl">du</rs>'s</rs> auch tun</rs>. <rs ref="#karl">Du</rs> tust <rs ref="#du's">es</rs> doch? Nicht, daß <rs ref="#karl">du</rs> mich nachher allein läßt. <stage><rs ref="#selma">Sie</rs>
+              küßt <rs ref="#karl">Karl</rs>.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>heiß.</stage>
+          <p><rs ref="#selma">Selma</rs>! darf <rs ref="#man-(der-mensch)">man</rs> <rs ref="#das">das</rs>?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>glühend.</stage>
+          <p><rs ref="#karl">Du</rs> weißt doch, was ich bin?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Meine-Schwester-(prädikativ-selma)">Meine Schwester</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Nicht bloß. <rs ref="#karl">Du</rs> mußt anders sagen. – Weißt <rs ref="#karl">du</rs>, was ich bin?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>leiser.</stage>
+          <p>Schön.</p>
+          <pb n="5"/>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>eindringlich.</stage>
+          <p>Gefall' ich <rs ref="#karl">dir</rs>? Ob <rs ref="#karl">du</rs> mir auch gefällst?! <rs ref="#das2">Was bin ich gegen <rs ref="#karl">dich</rs>?</rs></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>schweigt.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>hastig.</stage>
+          <p>Mädchen.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma">Selma</rs>! <rs ref="#das2">das</rs> dacht' ich gleich. <stage>Stürmisch.</stage> Schon oft, wenn ich allein war
+            und nicht schlafen konnte, dann klopfte mir das Herz vor Sehnsucht wild nach <rs ref="#selma">dir</rs>, die
+            Liebe brannte mich im Traum und nachher weinte ich.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#karl">Du</rs> bist mein Karl, <rs ref="#karl">Liebster</rs>. <stage><rs ref="#selma">Sie</rs> umhalst <rs ref="#karl">ihn</rs>.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma">Dein</rs> Bruder bin ich. <rs ref="#selma">Selma</rs>, mach' nicht weiter!</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <rs ref="#s"><p>Wenn ich <rs ref="#karl">dich</rs> aber <rs ref="#Das">liebe wie ...</rs></p></rs>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Sag'<rs ref="#s">s</rs> voll, <rs ref="#selma">Selma</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Wie meinen Mann.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Das">Das</rs> dürfen ja Geschwister nicht.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#Das">Lieben</rs>, Karl, <rs ref="#Das">das</rs> muß das schönste sein – lieben.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Das">Das</rs> dürfen <rs ref="#karl-/-selma">wir</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Hier sind <rs ref="#karl-/-selma">wir</rs> nicht allein, <rs ref="#man-(der-mensch)">man</rs> sieht herein.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Empfangszimmer-im-Hause-Weber">Es</rs> ist so kahl und groß.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>In meinem Zimmer. Komm!</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#karl-/-selma">Wir</rs> bleiben lieber hier.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#man-(der-mensch)">Man</rs> sieht uns, <rs ref="#karl">Karl</rs> folg' mir. <rs ref="#karl-/-selma">Wir</rs> müssen <rs ref="#karl-/-selma">uns</rs> verriegeln wie <rs ref="#frau_weber_mutter">die Mutter</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Die Mutter</rs>?! – <rs ref="#selma">Selma</rs>!</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Sag'<rs ref="#es-(geheimnis-der-mutter)">s</rs> <rs ref="#lothar_weber_vater">Vater</rs> nicht. Ich bitte, <rs ref="#karl">Karl</rs>. Gelt, sagst <rs ref="#es-(geheimnis-der-mutter)">es</rs> nicht. <rs ref="#karl-/-selma">Wir</rs> lieben <rs ref="#karl-/-selma">uns</rs> ja. <rs ref="#karl">Karl</rs>,
+            bitte, sag' <rs ref="#es-(geheimnis-der-mutter)">es</rs> nicht.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich schweige, wenn <rs ref="#selma">du</rs> mir'<rs ref="#es-(geheimnis-der-mutter)">s</rs> erzählst.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#das3"><rs ref="#frau_weber_mutter">Die Mutter</rs> hat mich hinausgesteckt</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Und <rs ref="#lothar_weber_vater">Vater</rs>?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>War verreist.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Was soll <rs ref="#das3">das</rs> heißen? <rs ref="#selma">Du</rs> erzählst mir nichts.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#es-(geheimnis-der-mutter)">Jemand anders war bei <rs ref="#frau_weber_mutter">der Mutter</rs></rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma">Du</rs> hast <rs ref="#selma">dich</rs> getäuscht.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Ich hörte doch <rs ref="#den-Riegel">den Riegel</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Damit <rs ref="#selma">du</rs> nicht hinein sollst.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Nein, <rs ref="#Katharinchen-(weohl-ein-dienstmädchen-der-webers)">Katharinchen</rs> sagte <rs ref="#es-(geheimnis-der-mutter)">es</rs> mir.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Dienstmädchen sind boshaft.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Soll ich <rs ref="#karl">dir</rs> erzählen, was <rs ref="#Katharinchen-(weohl-ein-dienstmädchen-der-webers)">die</rs> gesagt hat?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Nun, was?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#es-(geheimnis-der-mutter)">Es</rs> sei was schlimmes, ich verstehe <rs ref="#es-(geheimnis-der-mutter)">es</rs> aber noch nicht, ich sei noch ein Junges,
+            hopstausendsassa!</p>
+          <pb n="6"/>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <rs ref="#s2"><p>Was ist da dran?</p></rs>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#karl">Du</rs> weißt'<rs ref="#s2">s</rs> so gut wie ich.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Jetzt soll ich erraten.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Von was sprechen <rs ref="#karl-/-selma">wir</rs> denn? <rs ref="#Das2">Komm mit</rs>, dann sag' ich'<rs ref="#s2">s</rs> <rs ref="#karl">dir</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Das2">Das</rs> merkt <rs ref="#man-(der-mensch)">man</rs> doch.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Nur wenn <rs ref="#man-(der-mensch)">man</rs> Angst hat. Komm, ich pass' auf. Was sagt denn <rs ref="#frau_weber_mutter">Mutter</rs> von mir? <rs ref="#Das3">»Ich sei
+            vernünftig, mich betrüge einmal kein Mann.«</rs> <rs ref="#Das3">Das</rs> bezieht sich doch darauf. <rs ref="#man-(der-mensch)">Man</rs> muß
+            herzhaft sein. Kommst <rs ref="#karl">du</rs> nicht?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich mag nicht.</p>
+        </sp>
+        <sp who="#selma #karl">
+          <rs ref="#karl-/-selma"><speaker>BEIDE</speaker></rs>
+          <stage>horchen auf Säbelrasseln und <rs ref="#Schritte-(oberst)">Schritte</rs> draußen.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>verändert.</stage>
+          <p>Mit <rs ref="#karl">dir</rs> darf <rs ref="#man-(der-mensch)">man</rs> nur anfangen. O, was! Mit <rs ref="#karl">dir</rs> fang' ich nicht wieder an. <stage><rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">Zur
+              Tür</rs> tanzend.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich liebe <rs ref="#selma">dich</rs>. Bloß ...</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage><rs ref="#oberst">dem Eintretenden</rs> entgegen fliegend, ruft neckend <rs ref="#karl"><rs ref="#selma">ihrem</rs> Bruder</rs> zu.</stage>
+          <p><rs ref="#oberst">Der Oberstonkel</rs>, sieh' ...</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>verächtlich.</stage>
+          <p><rs ref="#selma">Dirne</rs>!</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>hat verstanden und sieht <rs ref="#karl">Karl</rs> von da ab scheu an.</stage>
+          <stage><rs ref="#oberst">Oberst Schipper, der Freund des Vaters</rs>, in Uniform.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ist <rs ref="#lothar_weber_vater"><rs ref="#karl-/-selma">euer</rs> Vater</rs> schon zu <rs ref="#Hause-Weber">Haus</rs>?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Nein – ich glaube nicht.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>ängstlich umherblickend.</stage>
+          <p><rs ref="#lothar_weber_vater">Vater</rs>! – <rs ref="#karl">Du, Karl</rs>! –</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>ruhig.</stage>
+          <p><rs ref="#lothar_weber_vater">Er</rs> hat <rs ref="#lothar_weber_vater">sich</rs> nie versteckt.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl-/-selma">Liebe Kinder</rs>, suchet nicht. – Wenn <rs ref="#lothar_weber_vater">er</rs> noch kommt, – wird <rs ref="#lothar_weber_vater">er</rs> schon <rs ref="#es">kommen</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Es ist sehr spät. Vielleicht hat <rs ref="#lothar_weber_vater">ihn</rs> <rs ref="#frau_weber_mutter">die Mutter</rs> abgeholt. <rs ref="#frau_weber_mutter-/-lothar_weber_vater">Sie</rs> gehen oft in Wertheims
+            Warenhaus und kaufen etwas ein.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Zerbrech <rs ref="#karl">dir</rs> nicht den Kopf. Ich kann warten. Wenn <rs ref="#es">es</rs> nur wird.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>auffordernd.</stage>
+          <p>Wollen <rs ref="#oberst">Sie</rs> <rs ref="#oberst">sich</rs> nicht setzen?!</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#es2"><rs ref="#Meine-Beine-(oberst)">Meine Beine</rs> haben das Gehen, <rs ref="#Meine-Beine-(oberst)">sie</rs> geben keine Ruhe</rs>. <stage>Zu <rs ref="#selma">Selma</rs>.</stage> <rs ref="#selma">Du, Kleine</rs>,
+            <rs ref="#es2">es</rs> ist mein voller Ernst.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>hängt <rs ref="#selma">sich</rs> <rs ref="#oberst">dem umher gehenden Oberst</rs> in den Arm, <rs ref="#karl">Karl</rs> geht mit umher.</stage>
+          <p><rs ref="#oberst">Du</rs> machst immer <rs ref="#Witze">Witze</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Immer? So, ich will <rs ref="#selma">dir</rs> etwas erzählen. Ich kenne <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">eine Familie, in <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">der</rs> ist <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">ein Unglück</rs>
+            passiert</rs>. – Lach doch nicht immer! <rs ref="#Das4">Das</rs> ist ja gräßlich, <rs ref="#Das4">immer lachen</rs>. Ist <rs ref="#ein-Unglück">ein Unglück</rs>
+            ein Witz?</p>
+          <pb n="7"/>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>etwas eingeschüchtert.</stage>
+          <p>So wie <rs ref="#oberst">du</rs> davon anfängst.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>halb seufzend, zitierend.</stage>
+          <lg>
+            <l>Weh <rs ref="#dem-Witzbold">dem Witzbold</rs>, will <rs ref="#dem-Witzbold">er</rs> ernst sein,</l>
+            <l>wird <rs ref="#dem-Witzbold">sein</rs> Ruf <rs ref="#Witze">im Witze</rs> tot,</l>
+            <l>und statt Mann wird <rs ref="#dem-Witzbold">er</rs> ein Männlein</l>
+            <l>keinen Schuß wert, keinen Schrot.</l>
+          </lg>
+          <stage>Pause.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#oberst">Oberstonkel</rs>, ich möchte einmal mit <rs ref="#oberst">dir</rs> allein sein. <stage>Mit einem kurzen Blick nach
+              <rs ref="#karl">Karl</rs>.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>bleibt stehen.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Und ich mit <rs ref="#selma">dir</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>sprachlos.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>durchschauend.</stage>
+          <p>Allein <rs ref="#im-dichtesten-Wald">im dichtesten Wald</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>blickt starr zu <rs ref="#oberst">dem Oberst</rs> hinauf.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#selma">Du</rs> würdest mitgehen?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>verschleimt.</stage>
+          <p>Ja.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#im-dichtesten-Wald">Im Walde</rs> würden <rs ref="#oberst-/-selma">wir</rs> <rs ref="#oberst-/-selma">uns</rs> lagern, wo recht viel Gebüsch ist, damit <rs ref="#oberst-/-selma">wir</rs> ungestört wären,
+            dann lägen <rs ref="#oberst-/-selma">wir</rs> so da, <rs ref="#unter-dem-blauen-Himmel">unter dem blauen Himmel</rs> und über <rs ref="#oberst-/-selma">uns</rs> die goldenen Laubzweige, auf
+            dem duftenden Boden. <rs ref="#Die-Vögel">Die Vögel</rs> würden <rs ref="#Die-Vögel">singen »Vitrula lala, juhe«</rs>, <rs ref="#ein-Weilchen">ein Weilchen</rs> horchten
+            <rs ref="#oberst-/-selma">wir</rs> zu, dann machten <rs ref="#oberst-/-selma">wir</rs>'s wie <rs ref="#Die-Vögel">sie</rs> und schließlich würden <rs ref="#oberst-/-selma">wir</rs> im heißen Mittag mit <rs ref="#Die-Vögel"><rs ref="#Die-Vögel">ihrem</rs>
+            Gesang</rs> einnicken. <rs ref="#oberst-/-selma">Wir</rs> schliefen und träumten, <rs ref="#oberst-/-selma">jedes von uns beiden</rs> dasselbe. Oder würden
+            <rs ref="#oberst-/-selma">wir</rs> <rs ref="#oberst-/-selma">uns</rs> anders unterhalten? Mit Büchern?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>lächelt errötend.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Oder wie? Ich merk, <rs ref="#selma">du</rs> weißt <rs ref="#etwas-Besonderes-(eine-besondere-beschäftigung-zwischen-selma-und-oberst,-an-die-selma-denkt)">etwas Besonderes</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>verlegen.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Nein? – Doch. Sag <rs ref="#etwas-Besonderes-(eine-besondere-beschäftigung-zwischen-selma-und-oberst,-an-die-selma-denkt)">es</rs> mir, ich denke wohl dasselbe.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>auf den Zehenspitzen <rs ref="#oberst">dem Oberst</rs> ins Ohr.</stage>
+          <p><rs ref="#karl">Karl</rs> –.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl"><rs ref="#selma">Dein</rs> Bruder</rs>? Ach, <rs ref="#karl">der</rs> soll <rs ref="#etwas-Besonderes-(eine-besondere-beschäftigung-zwischen-selma-und-oberst,-an-die-selma-denkt)">es</rs> nicht hören. <rs ref="#karl">Er</rs> könnte verletzt werden
+              <stage>Gehobener.</stage> beim Steckenschneiden.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>getränkt.</stage>
+          <p><rs ref="#oberst">Alter E ...</rs> <stage><rs ref="#selma">Sie</rs> will <rs ref="#selma">sich</rs> losmachen, <rs ref="#oberst">der Oberst</rs> hält <rs ref="#selma">sie</rs> fest, <rs ref="#selma">sie</rs> bricht in
+              <rs ref="#heiße-Tränen-(selma)">heiße Tränen</rs> aus.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>gehen <rs ref="#heiße-Tränen-(selma)">die Tränen</rs> nahe.</stage>
+          <p><rs ref="#oberst">Sie</rs> dürfen <rs ref="#selma">ihr</rs>'<rs ref="#etwas-Besonderes-(eine-besondere-beschäftigung-zwischen-selma-und-oberst,-an-die-selma-denkt)">s</rs> nicht übel nehmen.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>scharf.</stage>
+          <p><rs ref="#karl">Karl</rs>! Trotz <rs ref="#deiner-Siebzehn-(alter-karls)"><rs ref="#karl">deiner</rs> Siebzehn</rs>, zeig ich'<rs ref="#s3">s</rs> <rs ref="#karl">dir</rs>. <rs ref="#s3">So müßtest <rs ref="#karl">du</rs> als <rs ref="#Vater-(prädikativ-karl-als-vater)">Vater</rs> sein, streng</rs>. <rs ref="#Das-------------Jährchen,-das-sie-älter-ist">Das
+            Jährchen, <rs ref="#Das-------------Jährchen,-das-sie-älter-ist">das</rs> <rs ref="#selma">sie</rs> älter ist</rs>, ist <rs ref="#selma">sie</rs> auch indolenter.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>guckt erstaunt.</stage>
+          <pb n="8"/>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#Der-Satz"><rs ref="#karl">Karl</rs>, wenn <rs ref="#lothar_weber_vater"><rs ref="#karl">dein</rs> Vater</rs> nicht kommt,</rs> <stage><rs ref="#Der-Satz">Der Satz</rs> erstickt.</stage> nie weinen, sag
+            ich gleich. <rs ref="#Tränen">Tränen</rs> sind Spülwasser.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>hat <rs ref="#selma">sich</rs> losgemacht und setzt <rs ref="#selma">sich</rs> geärgert in die Sofaecke.</stage>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>steht erschüttert vor <rs ref="#oberst">dem Oberst.</rs></stage>
+          <stage><rs ref="#frau_weber_mutter">Frau Weber</rs> mit <rs ref="#hecht">Kaufmann Hecht</rs>, im Straßenanzug. <rs ref="#selma">Selma</rs> bleibt mit dem Taschentuch im
+            Mund sitzen, während <rs ref="#oberst">sich</rs> <rs ref="#oberst">der Oberst</rs> und <rs ref="#karl">Karl</rs> knapp verbeugen. <rs ref="#frau_weber_mutter">Frau Weber</rs> grüßt
+            herablassend und stellt mit erzwungener Sicherheit <rs ref="#hecht">den Kaufmann</rs> vor.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>FRAU WEBER.</speaker></rs>
+          <p><rs ref="#hecht">Herr Hecht</rs> – <rs ref="#oberst">Herr ... Schipper</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#oberst">Oberst Schipper</rs>.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>FRAU WEBER</speaker></rs>
+          <stage>mit schnippischem Mund rasch <rs ref="#ins-Speisezimmer">ins Nebenzimmer</rs>.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>ruft.</stage>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs> –</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>FRAU WEBER</speaker></rs>
+          <stage>blickt <rs ref="#frau_weber_mutter">sich</rs> kurz um, wirft <rs ref="#ein-Päckchen">ein Päckchen</rs> auf <rs ref="#Stühle">einen Stuhl</rs>, <rs ref="#selma">Selma</rs> bleibt träge
+            sitzen.</stage>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>nach <rs ref="#einer-Kunstpause-(sprechpause-hecht)">einer Kunstpause</rs>.</stage>
+          <p>Ich bin mit <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">der Familie</rs> näher bekannt.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>So, so.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>wieder nach <rs ref="#einer-Kunstpause-(sprechpause-hecht)">einer Pause</rs>.</stage>
+          <p>Ich nehme immer an <rs ref="#allen-Familienereignissen-(der-webers)">allen Familienereignissen</rs> <rs ref="#regen-Anteil-(anteilnahme-hecht-mit-der-familie-weber)">regen Anteil</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ist eine Taufe in Aussicht?</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Nein, ich meinte ganz allgemein, ich nehme an <rs ref="#allen-Familienereignissen-(der-webers)">den Geschehnissen des Tages</rs> <rs ref="#regen-Anteil-(anteilnahme-hecht-mit-der-familie-weber)">Anteil</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>So, so. Ich merkte schon, da <rs ref="#hecht">Sie</rs> mich nicht kennen.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Oh doch, vom Hörensagen. Ich hatte aber leider bis jetzt nie <rs ref="#die-Ehre,-den-Herrn-Oberst-------------kennen-lernen-zu-dürfen">die Ehre, <rs ref="#oberst">den Herrn Oberst</rs>
+            kennen lernen zu dürfen</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Man hat <rs ref="#hecht">Sie</rs> mir als kostbarsten Juwel im Haushalt verborgen gehalten, ganz
+            natürlich.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#die-Ehre,-den-Herrn-Oberst-------------kennen-lernen-zu-dürfen">Es</rs> hat <rs ref="#die-Ehre,-den-Herrn-Oberst-------------kennen-lernen-zu-dürfen">sich</rs> offenbar nie recht getroffen.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ja, ja, <rs ref="#die-Ehre,-den-Herrn-Oberst-------------kennen-lernen-zu-dürfen">das Treffen</rs> ist eine eigene Sache. Gerade heute hat <rs ref="#frau_weber_mutter">man</rs> <rs ref="#hecht">Sie</rs> aus dem
+            Schächtelchen genommen und mir unter die Nase gehalten. <rs ref="#frau_weber_mutter">Frau Weber</rs> dachte eben nicht an
+            <rs ref="#oberst">mich, <rs ref="#oberst">der</rs> so daher stolpert</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ist <rs ref="#es3">es</rs> ein Wunder, <rs ref="#es3">wenn Freunde an den Trauertagen ganz besonders eilen</rs>?</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Besonders, hm. <rs ref="#hecht">Sie</rs> sind sehr zielbewußt.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>nimmt mehr und mehr Predigerton an.</stage>
+          <p>Ich wollte <rs ref="#meine-Hilfe-(hecht-ggü-familie-weber)">meine Hilfe</rs> immer anbieten, aber <rs ref="#lothar_weber_vater">der eigensinnige, leichtfertige Mann</rs> nahm
+            <rs ref="#meine-Hilfe-(hecht-ggü-familie-weber)">sie</rs> nicht an. Ich war <rs ref="#lothar_weber_vater">ihm</rs> zu wenig, ein gewöhnlicher, untergeordneter Kaufmann. <rs ref="#lothar_weber_vater">Er</rs> hielt
+            <rs ref="#lothar_weber_vater">sich</rs> für so gebildet, daß <rs ref="#lothar_weber_vater">er</rs> immer höflicher gegen mich wurde –</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#lothar_weber_vater">Er</rs> fürchtete zu teuren Wucherzins. <stage>Heftig.</stage> Ich <pb n="9"/> hätte <rs ref="#ihn-(der-vom-vater-hinterzogene-geldbetrag)">ihn</rs>
+            gegeben, <rs ref="#lothar_weber_vater">er</rs> hätt' <rs ref="#ihn-(der-vom-vater-hinterzogene-geldbetrag)">ihn</rs> sehr rasch abgezahlt mit einer Scheidemünz. <rs ref="#es4">Man kann die Tropfen
+            nicht am Himmel fesseln</rs>, ich sagt <rs ref="#es4">es</rs> <rs ref="#lothar_weber_vater">ihm</rs>, <rs ref="#lothar_weber_vater">er</rs> wollte nicht verstehen, <rs ref="#lothar_weber_vater">er</rs> konnte nicht.
+              <stage>Auf <rs ref="#hecht">Hecht</rs> eindringend.</stage> <rs ref="#hecht">Sie</rs>! Muß <rs ref="#das4">das</rs> nicht furchtbar brennen? – <rs ref="#das4">Das
+            Gefühl, <rs ref="#es5"><rs ref="#frau_weber_mutter">ein untreu Weib</rs> in <rs ref="#lothar_weber_vater">des Bekannten</rs> Bett zu haben</rs></rs>. Und <rs ref="#es5">es</rs> nicht merken lassen
+            dürfen, weil <rs ref="#hecht">man</rs> sonst gar kein Mann mehr ist. – Ich würde <rs ref="#frau_weber_mutter">Weib</rs> und <rs ref="#hecht">Kerl</rs> – <stage><rs ref="#oberst">Er</rs>
+              packt <rs ref="#hecht">den Kaufmann</rs> an den Schultern.</stage> ausziehen und zu Tomatensuppe machen.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>leis zu <rs ref="#karl">Karl</rs>.</stage>
+          <p><rs ref="#hecht-/-oberst">Sie</rs> meinen <rs ref="#lothar_weber_vater">den Vater</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>unterbricht <rs ref="#die-Stille-(sprechpause-aller)">die Stille</rs>.</stage>
+          <p>Was ist mit <rs ref="#lothar_weber_vater">Vater</rs>?</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Hm, wie's vielen geht. <rs ref="#hecht">Der Hausfreund</rs> weiß Bescheid.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#hecht">Hausfreund</rs>? – <rs ref="#oberst">Oberst</rs>!</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich bin nie anders als mit <rs ref="#der-ehrenwertesten-Absicht-(hechts-ggü-famile-weber,-meint-freundschaft)">der ehrenwertesten Absicht</rs> in <rs ref="#Hause-Weber">diesem Hause</rs> aus- und
+            eingegangen. Mein Geschäft ist eine altehrenwerte Firma. <rs ref="#oberst">Sie</rs> haben <rs ref="#einen-abscheulichen-------------Glauben-von-ihren-Nebenmenschen-(obersts-blick-auf-seine-mitmenschen)">einen abscheulichen
+            Glauben von <rs ref="#oberst">ihren</rs> Nebenmenschen</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>schweigt.</stage>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Was mit <rs ref="#lothar_weber_vater">Vater</rs> ist, werd ich doch wissen dürfen, ich bin <rs ref="#der-Sohn-(prädikativ-karl)">der Sohn</rs>, <rs ref="#hecht-/-oberst">Ihr Herren</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich bitte um Verzeihung. Offen gestanden halte ich es für meine Pflicht, <rs ref="#karl">Ihnen</rs> und
+            <rs ref="#karl">Ihren</rs> Geschwistern nicht länger die Kenntnis <rs ref="#Schiebungen-(tat-vergehen-des-vaters)">einer Sache</rs> vorzuenthalten. <rs ref="#lothar_weber_vater"><rs ref="#karl-/-selma-+-1">Ihr</rs> geschätzter
+            Herr Vater</rs> hat <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">die ganze Familie</rs> <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">ins Unglück</rs> gestürzt, in <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">ein Unglück, <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">das</rs> <rs ref="#karl-/-selma-+-1">Sie</rs> erst
+            allmählich in <rs ref="#vollem-Umfang-(des-unglücks-familie-weber)">vollem Umfang</rs> kennen lernen werden</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich will <rs ref="#vollem-Umfang-(des-unglücks-familie-weber)">den ganzen Umfang</rs> gleich erfahren: »'raus damit!«</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#lothar_weber_vater">Er</rs> hat <rs ref="#Schiebungen-(tat-vergehen-des-vaters)">Schiebungen</rs> vorgenommen, <rs ref="#Schiebungen-(tat-vergehen-des-vaters)">die</rs> <rs ref="#lothar_weber_vater">ihn</rs> dem Abgrund der Hölle immer näher brachten.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>lacht fallend, wie über <rs ref="#Witze">den besten Witz</rs>.</stage>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>laut predigend.</stage>
+          <rs ref="#Das5"><p>Ich kann behaupten, daß <rs ref="#lothar_weber_vater">er</rs> mit unerhörter Gewissenlosigkeit im Gelde wirtschaftete, daß
+            <rs ref="#lothar_weber_vater">er</rs> schuld ist an <rs ref="#dem-Kummer-seiner-ausgezeichneten-Frau">dem Kummer <rs ref="#frau_weber_mutter">seiner ausgezeichneten Frau</rs></rs>, <rs ref="#frau_weber_mutter">die</rs> mit <rs ref="#karl-/-selma-+-1"><rs ref="#frau_weber_mutter">ihren</rs> Kindern</rs> der
+            Ungewißheit <rs ref="#des-Schicksals-(zukunft-famile-weber-ohne-vater)">des Schicksals</rs> überlassen ist.</p></rs>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#Das5">Das</rs> ist ja alles Blödsinn, <rs ref="#karl">Karl</rs>, damit <rs ref="#karl">du</rs> nicht lang zitterst. <rs ref="#lothar_weber_vater">Dein Vater</rs> hat
+            unterschlagen und ist heute verhaftet worden.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>will hinaus stürzen.</stage>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>mächtig.</stage>
+          <p>Halt!</p>
+          <pb n="10"/>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>festgewurzelt.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>herunterhaspelnd.</stage>
+          <p><rs ref="#lothar_weber_vater">Der Vater</rs> ist ein gemeiner Mensch.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#Das6">Geh <rs ref="#selma">du</rs> zu <rs ref="#frau_weber_mutter"><rs ref="#selma">deiner</rs> Mutter</rs></rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>mit Knicksen <rs ref="#ins-Speisezimmer">ins Nebenzimmer</rs>.</stage>
+          <p><rs ref="#Das6">Das</rs> tu ich, tu ich, tu ich.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl">Karl</rs>, <rs ref="#selma">deine Schwester</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma">Sie</rs> ist verdorben. <stage><rs ref="#karl">Er</rs> setzt <rs ref="#karl">sich</rs> wie teilnahmslos.</stage></p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Wieso? Hat <rs ref="#selma">sie</rs> nicht recht? Was ist eine Gewissenlosigkeit? Eine Gemeinheit?!</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ist Gutmütigkeit eine Gemeinheit? Eine Sünde wegen mir, noch mehr eine Dummheit. Ich
+            bin auch so ein gutmütiger Simpel, nur bin zum Glück nicht verheiratet, mich kann nichts
+            Weibliches <rs ref="#ein-Unglück">ins Unglück</rs> stürzen.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#man-(der-mensch)">Man</rs> staune! <rs ref="#lothar_weber_vater">Er</rs> hat nicht <rs ref="#das5">unterschlagen</rs>, <rs ref="#das5">das</rs> tat <rs ref="#selma-/-frau_weber_mutter-+-2"><rs ref="#lothar_weber_vater">seine</rs> Familie</rs>, <rs ref="#frau_weber_mutter"><rs ref="#lothar_weber_vater">seine</rs> Frau, die über
+            alles ehrenwerte</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Unterschlagen hat <rs ref="#lothar_weber_vater">er</rs>, aber gezwungen, von <rs ref="#frau_weber_mutter"><rs ref="#lothar_weber_vater">seinem</rs> »herrlichen« Weib</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#lothar_weber_vater">Er</rs> hat <rs ref="#frau_weber_mutter">ihr</rs> nie ein Wort gestanden, <rs ref="#Das7">wie <rs ref="#lothar_weber_vater">er</rs> steht</rs>.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ei, ei, <rs ref="#hecht">Sie Eingeweihter</rs>. – <rs ref="#Das7">Das</rs> weiß <rs ref="#frau_weber_mutter">man</rs> nur, wenn <rs ref="#frau_weber_mutter-/-lothar_weber_vater">man</rs> in guter Ehe lebt. – Warum
+            gestand <rs ref="#lothar_weber_vater">er</rs> nichts? – Weil <rs ref="#lothar_weber_vater">er</rs> <rs ref="#lothar_weber_vater">sich</rs> nichts vor der Nase abtreiben lassen wollte. Weil <rs ref="#lothar_weber_vater">der
+            Esel</rs> – pardon, ich bin <rs ref="#lothar_weber_vater">sein</rs> bester Freund – – <rs ref="#frau_weber_mutter"><rs ref="#lothar_weber_vater">sein</rs> Weib</rs> liebte wie <rs ref="#einen-Hautpickel">einen Hautpickel</rs>. <rs ref="#man-(der-mensch)">Man</rs>
+            kratzt, bis <rs ref="#einen-Hautpickel">er</rs> weg ist und kratzt, bis <rs ref="#einen-Hautpickel">er</rs> wieder kommt.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Nehmen <rs ref="#oberst">Sie</rs> doch Rücksicht auf <rs ref="#karl">den Sohn</rs>. Was wird <rs ref="#karl">er</rs> von <rs ref="#frau_weber_mutter"><rs ref="#karl">seiner</rs> Mutter</rs> denken müssen,
+            von <rs ref="#frau_weber_mutter"><rs ref="#karl">seiner</rs> guten Mutter</rs>?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>mürrisch.</stage>
+          <p>Ich denke nie.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl">Er</rs> wird noch vieles hören müssen, vor Gericht auf offener Straße hinter blinden Rücken,
+            von <rs ref="#Leuten,-die-die-Anschlagsäulen-angiraffen">Leuten, <rs ref="#Leuten,-die-die-Anschlagsäulen-angiraffen">die</rs> die Anschlagsäulen angiraffen</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>erhebt <rs ref="#karl">sich</rs>.</stage>
+          <p>Nur weiter, <rs ref="#oberst">Oberst</rs>. Vor <rs ref="#karl">einem Tagelöhner</rs> schweigt man nicht.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl">Karl</rs>, sprich nicht so, dann taugst <rs ref="#karl">du</rs> nicht <rs ref="#Verstand">Verstand</rs>!</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>höhnisch, brutal.</stage>
+          <p><rs ref="#Verstand">Verstand</rs> ist mir gleich Null. Ich weiß nur soviel <stage>Immer bewegter werdend, die
+              Zähne zurückziehend.</stage> daß ich einem Tiere gleiche, zerstickt und tot.
+              <stage>Häßlich lachend.</stage> <rs ref="#karl">Karl Weber</rs> wird wie Aussatz klingen. Die Blicke, das
+            Mitleid ... <stage>Das Weinen stockt in <rs ref="#karl">ihm</rs>.</stage></p>
+          <pb n="11"/>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich will <rs ref="#der-erste-(prädikativ-hecht-als-der-erste-der-mitleid-zeigt-ggü-familie-weber)">der erste</rs> sein, <rs ref="#der-erste-(prädikativ-hecht-als-der-erste-der-mitleid-zeigt-ggü-familie-weber)">wo</rs> <rs ref="#Mitleid-(anteilnahme-hecht-ggü-familie-weber-wg-unglück)">Mitleid</rs> hat.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>lachend.</stage>
+          <p>Ich sage ja, da haben <rs ref="#selma-/-frau_weber_mutter-+-2">wir</rs> schon einen. <stage>Bedeutungsvoll.</stage> Ich sage <rs ref="#oberst">Ihnen,
+            Oberst</rs>, was liegt noch daran ...</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Noch sehr viel, <rs ref="#karl">Bursche</rs>! Jetzt hast <rs ref="#karl">du</rs> Pflichten.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich will für alles sorgen.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>rauh.</stage>
+          <p>Damit ich mich selbst anspucken lerne und meinen Unwert spüre?!</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl">Karl, du</rs> bist <rs ref="#der-Sohn-(prädikativ-karl)">der Sohn</rs> und trittst an <rs ref="#lothar_weber_vater"><rs ref="#karl">deines</rs> Vaters</rs> Stelle.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Dann fang ich an, daß <rs ref="#man-(der-mensch)">alle Welt</rs> erschrickt. Von morgen ab bin ich ein Tagelöhner und
+            <rs ref="#selma-/-frau_weber_mutter-+-2">die Familie</rs> nährt <rs ref="#selma-/-frau_weber_mutter-+-2">sich</rs> mit Roßfleisch und <rs ref="#Tränen">Tränen</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>einfältig lachend.</stage>
+          <p><rs ref="#karl">Herr Weber</rs>, so weit kommt <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">es</rs> nicht.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ich wünschte, daß <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">es</rs> käme. Bloß sofort, sofort. <rs ref="#Unsinn">Zum Beispiel, hast <rs ref="#karl">du</rs> <rs ref="#hecht-/-oberst">uns</rs> gleich
+            hinauszuwerfen. Mit Peitschen, dann wirst <rs ref="#karl">du</rs> sehen. Haue zuerst um <rs ref="#karl">dich</rs>, mache <rs ref="#karl">dir</rs> Platz
+            zum Ueberlegen.</rs></p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich werde mit <rs ref="#frau_weber_mutter">der Mutter</rs> reden.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Was, <rs ref="#Unsinn">Unsinn</rs>. <rs ref="#Unsinn">Törichter Gedanke</rs>. <rs ref="#karl">Karl</rs>, folge mir.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich werde <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">den Zusammenbruch <rs ref="#selma-/-frau_weber_mutter-+-2">der Familie</rs></rs> mit <rs ref="#hecht">meiner Person</rs> aufhalten.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Nachdem <rs ref="#hecht">Sie</rs> <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">ihn</rs> herbeigeführt haben.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich? – Herbeigeführt!</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>geht mit <rs ref="#Schritte-(oberst)">wuchtigen Schritten</rs> <rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">der Türe</rs> zu.</stage>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich fordere Erklärung.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST</speaker></rs>
+          <stage>zu <rs ref="#karl">Karl</rs>.</stage>
+          <rs ref="#die-anrüchige-Bedeutung"><p><rs ref="#hecht">Der Herr</rs> wird heute nacht hier Gast sein oder Wirt.</p></rs>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Was soll <rs ref="#die-anrüchige-Bedeutung">die anrüchige Bedeutung</rs>? Sind <rs ref="#oberst">Sie</rs> von Sinnen?! <rs ref="#oberst">Oberst</rs>! Bedenken <rs ref="#oberst">Sie</rs> doch, wer
+            <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">wir</rs> sind.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>hetzend.</stage>
+          <p><rs ref="#oberst">Er</rs> sagt <rs ref="#die-anrüchige-Bedeutung">es</rs>, weil <rs ref="#karl">Sie</rs> nichts mehr sind in <rs ref="#einen-abscheulichen-------------Glauben-von-ihren-Nebenmenschen-(obersts-blick-auf-seine-mitmenschen)"><rs ref="#oberst">seinen</rs> Augen</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Wer <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">wir</rs> waren.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Ich nehme nichts zurück. Geb' <rs ref="#Gott">Gott</rs> daß <rs ref="#Gott">er</rs> beleidigt sein kann.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>betont.</stage>
+          <p><rs ref="#oberst">Sie</rs> haben mich beleidigt.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#hecht-/-oberst">Wir</rs> werden sehen.</p>
+          <stage><rs ref="#karl">Karl</rs> blickt <rs ref="#oberst">dem weggehenden Oberst</rs> verständnislos nach. <rs ref="#hecht">Hecht</rs> sendet <rs ref="#oberst">ihm</rs> einen
+            giftigen Blick nach. Unter <rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">der Türe</rs> wendet <rs ref="#oberst">sich</rs> <rs ref="#oberst">der Oberst</rs> um.</stage>
+          <pb n="12"/>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Hier kommt <rs ref="#mariechen_marie">Mariechen</rs>, wie <rs ref="#mariechen_marie">sie</rs> weint! <stage><rs ref="#oberst">Er</rs> hebt <rs ref="#mariechen_marie">das Kind</rs> zu <rs ref="#oberst">sich</rs> empor.</stage> <rs ref="#mariechen_marie">Du
+            armes Kind</rs>, halte du <rs ref="#karl">zum Bruder</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#oberst">Oberst</rs>, bleiben Sie doch hier!</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Warum?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#oberst">Sie</rs> müssen öfter kommen, <rs ref="#karl-/-selma-+-1">wir</rs> haben keinen Vater mehr.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p><rs ref="#karl">Du</rs> hast gehört, <rs ref="#Unsinn">was ich <rs ref="#karl">dir</rs> riet</rs>, nun brauchst <rs ref="#karl">du</rs> bloß die Augen aufzumachen. <rs ref="#des-Schicksals-(zukunft-famile-weber-ohne-vater)">Die
+            Zukunft</rs> kenn' ich auch nicht, kennst <rs ref="#karl">du</rs> <rs ref="#des-Schicksals-(zukunft-famile-weber-ohne-vater)">sie</rs>?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#Das8">Nein</rs>. <rs ref="#Das8">Das</rs> ist ja wie ein Trost.</p>
+        </sp>
+        <sp who="#oberst">
+          <rs ref="#oberst"><speaker>OBERST.</speaker></rs>
+          <p>Nun sieh, <rs ref="#karl">du</rs> hast noch Hoffnung. Also wacker sein. <stage>Schlägt in <rs ref="#karl">Karls</rs> Hand, <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">ein
+              leichter Blitz</rs> und <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">fernes Brummen</rs>.</stage> Es kommt <rs ref="#ein-Wetter">ein Wetter</rs>. <rs ref="#Gute-Nacht">Gute Nacht</rs>, <rs ref="#mariechen_marie">Mariechen</rs>.
+              <stage>Ab.</stage></p>
+          <stage><rs ref="#mariechen_marie">Mariechen</rs> ist <rs ref="#Empfangszimmer-im-Hause-Weber">ins Zimmer</rs> eingetreten, leicht gekleidet, <rs ref="#mariechen_marie">ein Schulmädchen von <rs ref="#10-Jahre-(alter-marie)">zehn
+            Jahren</rs></rs>.</stage>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>schluchzend.</stage>
+          <p><rs ref="#Gute-Nacht">Gute Nacht</rs> ...</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>zu <rs ref="#hecht">Hecht</rs> in gleichgiltigem Ton.</stage>
+          <p>Es scheint <rs ref="#ein-Wetter">ein schweres Gewitter</rs> zu kommen.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage><rs ref="#hecht">sich</rs> räuspernd.</stage>
+          <p>Ich denke, ja.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#hecht">Sie</rs> brauchen keine Sorge mehr um <rs ref="#selma-/-frau_weber_mutter-+-2">uns</rs> zu haben, ich bin nun ganz gefaßt, es ist mir so
+            klar im Gemüt. Wie dort der blendend weiße Streifen unter <rs ref="#unter-dem-blauen-Himmel">dem schwarzen Himmel</rs>. Wie ein
+            fern winkendes, noch nie gekanntes Glück geht'<rs ref="#eine-seltsame-Seligkeit-in-------------fester,-ernster-Trauer-(karls-glücksempfindung,-meint-evtl-seine-hoffnung)">s</rs> in mir auf, <rs ref="#eine-seltsame-Seligkeit-in-------------fester,-ernster-Trauer-(karls-glücksempfindung,-meint-evtl-seine-hoffnung)">eine seltsame Seligkeit in
+            fester, ernster Trauer</rs>. So jammervoll und erbärmlich erscheint mir <rs ref="#die-Umgebung-(aktuelle-situation-wie-karl-sie-sieht)">die Umgebung</rs>, wie <rs ref="#die-Umgebung-(aktuelle-situation-wie-karl-sie-sieht)">sie</rs>
+            mit der Vergangenheit zusammenhängt, so klein, so leer; mich fühl' ich glücklich, ich
+            bin so hoch erfüllt.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>weiß nichts zu sagen.</stage>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN.</speaker></rs>
+          <p><rs ref="#karl">Karlbruder</rs>, ich habe Angst.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#karl-/-mariechen_marie">Wir</rs> zünden bald <rs ref="#Licht-(die-lampen)">Licht</rs> an.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#unter-dem-blauen-Himmel">Es</rs> wird immer düsterer.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Was planen <rs ref="#hecht">Sie, Herr Hecht</rs>, für heute abend?</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>unruhig erwartend.</stage>
+          <p>Ich habe mir noch nichts vorgenommen.</p>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>guckt <rs ref="#hohe-----------Fenster">zum Fenster</rs> hinaus, gedankenvoll.</stage>
+          <stage><rs ref="#frau_weber_mutter">Die Mutter Weber</rs> in leichtem Hauskleid <rs ref="#Türe-ins-Speisezimmer">zur Nebentür</rs> eintretend.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Ist <rs ref="#oberst">der Oberst</rs> endlich fort? <rs ref="#hecht">Sie</rs> glauben gar nicht, wie unheimlich, wie entsetzlich
+            widerlich <rs ref="#oberst">er</rs> mir ist, wie ein Feind, wie heimtückisch ...</p>
+          <pb n="13"/>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Hast du denn <rs ref="#Grund-(der-mutter-oberst-nicht-zu-mögen)">Grund</rs> dazu?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#Grund-(der-mutter-oberst-nicht-zu-mögen)">Grund</rs>?! <rs ref="#oberst">er</rs> will bloß schnüffeln, weil <rs ref="#lothar_weber_vater">der Hausherr</rs> fehlt. Meinst <rs ref="#karl">du</rs>, <rs ref="#oberst">er</rs> sei <rs ref="#aus-anderem-------------Grund-(absichten-des-oberst-ggü-familie-weber)">aus anderem
+            Grund</rs> gekommen? Ich kenn <rs ref="#oberst">den Schleicher</rs>. <stage>Zu <rs ref="#hecht">Hecht</rs>.</stage> Und vor <rs ref="#oberst">dem</rs> heißt's
+            »<rs ref="#man-(der-mensch)">sich</rs> in acht nehmen,« <rs ref="#oberst">der</rs> verdirbt die Ehrbarsten.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Vielleicht hatte <rs ref="#oberst">er</rs> <rs ref="#aus-anderem-------------Grund-(absichten-des-oberst-ggü-familie-weber)">die beste Absicht</rs>, wenn <rs ref="#oberst">er</rs> gerade heute kam.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Ist nicht etwa <rs ref="#hecht">Ihr</rs> Ernst? <stage>Abschweifend.</stage> <rs ref="#Das9"><rs ref="#hecht">Sie</rs> essen doch mit <rs ref="#selma-/-frau_weber_mutter-+-2">uns</rs> <rs ref="#das-------------Abendbrot">das
+            Abendbrot</rs>?</rs></p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#Das9">Das</rs> kann ich doch nicht annehmen, <rs ref="#frau_weber_mutter">gnädige Frau</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma-/-frau_weber_mutter-+-2">Wir</rs> essen <rs ref="#das-------------Abendbrot">solches Abendbrot</rs>?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Wie einfältig! ach wie lustig!</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>aufs tiefste verletzt.</stage>
+          <p><rs ref="#Das10">Das</rs> kann <rs ref="#man-(der-mensch)">man</rs> fragen. – <rs ref="#frau_weber_mutter">Mutter</rs>, <rs ref="#Das10">wer bezahlt'<rs ref="#das-------------Abendbrot">s</rs></rs>?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>rasch antwortend.</stage>
+          <p>Ich habe doch reiche Verwandte. – Ueberhaupt. –</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#es6">Ich gehe</rs>, <rs ref="#frau_weber_mutter">gnädige Frau</rs>, <rs ref="#es6">es</rs> ist diesmal sicher besser.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage><rs ref="#karl">zum Sohn</rs>, Baß.</stage>
+          <p><rs ref="#karl">Du Jüngling</rs>! <stage>Zu <rs ref="#hecht">Hecht</rs>, <rs ref="#Tenor-(stimme-tonfall-mutter)">Tenor</rs>.</stage> Hören Sie doch nicht auf <rs ref="#karl">meinen Karl.</rs>
+              <stage>Plötzlich in weinerlicher Erregung.</stage> Gewiß, ich sterbe vor <rs ref="#Angst-(mutter)">Angst</rs>, vor
+            Not, vor <rs ref="#dem-Kummer-seiner-ausgezeichneten-Frau">Kummer</rs>, vor <rs ref="#ins-Unglück-(der-familie-weber-als-folge-der-gefängnisstrafe-des-vaters)">Unglück</rs>. Natürlich jetzt wollen <rs ref="#hecht">Sie</rs> mich im Stiche lassen.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, hast du <rs ref="#lothar_weber_vater">Vater</rs> ganz vergessen?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>wie nicht hörend.</stage>
+          <p>Wenn das <rs ref="#lothar_weber_vater">Lothar</rs> wüßte, der arme Mann, daß <rs ref="#mariechen_marie-/-selma-+-3-(familie-weber)">uns</rs> jetzt auch <rs ref="#hecht">die treuesten Freunde</rs>
+            verlassen wollen! Und <rs ref="#karl">mein eigener Sohn</rs> verbietet <rs ref="#hecht">Ihnen</rs> <rs ref="#Mitleid-(anteilnahme-hecht-ggü-familie-weber-wg-unglück)">den Beistand</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich wollte allerdings aus <rs ref="#der-ehrenwertesten-Absicht-(hechts-ggü-famile-weber,-meint-freundschaft)">Freundschaft</rs> alles tun. Wenn <rs ref="#karl">man</rs> aber nicht wünscht.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>drohend.</stage>
+          <p><rs ref="#karl">Karl</rs>, bedenke!</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Was ich <rs ref="#frau_weber_mutter">dir</rs> helfen kann. – Ich bin <rs ref="#Vater-(prädikativ-karl-als-vater)">der Herr <rs ref="#Hause-Weber">im Hause</rs></rs>.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>auslachend.</stage>
+          <p>Was bist denn <rs ref="#karl">du</rs>?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Und ich gestatte nicht, daß Fremde hier <rs ref="#Hause-Weber">im Hause</rs> bleiben.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Gestatte nicht. Was fragt <rs ref="#man-(der-mensch)">man</rs> <rs ref="#karl">dich</rs>? und <rs ref="#eine-große-------------Unverfrorenheit"><rs ref="#hecht">Herrn Hecht</rs> so zu beleidigen</rs>, ist <rs ref="#eine-große-------------Unverfrorenheit">eine große
+            Unverfrorenheit</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Wenn <rs ref="#karl">Herr Weber</rs> nicht wünscht, so räume ich <rs ref="#Hause-Weber">das Feld</rs> gerne.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>brüllend.</stage>
+          <p>Dann zögern <rs ref="#hecht">Sie</rs> nicht mehr!</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#karl">Herr Weber</rs>! – <rs ref="#karl">Herr Weber</rs> sitzt. <stage><rs ref="#frau_weber_mutter">Sie</rs> schiebt <rs ref="#hecht">den Kaufmann, <rs ref="#hecht">der</rs> nicht sehr
+              widerstrebt</rs>, <rs ref="#ins-Speisezimmer">ins Speisezimmer</rs>.</stage></p>
+        </sp>
+        <sp who="#frau_weber_mutter #hecht">
+          <rs ref="#frau_weber_mutter-/-hecht"><speaker>BEIDE</speaker></rs>
+          <stage>ab.</stage>
+          <stage><pb n="14"/> <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donner</rs> rollt über die Decke.</stage>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>nach einer Pause.</stage>
+          <p><rs ref="#oberst">Der Oberst</rs> hatte recht. <rs ref="#selma-/-frau_weber_mutter-+-2">Wir</rs> haben doch nichts mehr – – – Was denk' ich von <rs ref="#frau_weber_mutter">der Mutter</rs>,
+            von <rs ref="#frau_weber_mutter">der eigenen Mutter</rs>? <stage><rs ref="#karl">Er</rs> faßt <rs ref="#karl">sich</rs> an die Kehle.</stage></p>
+          <stage><rs ref="#Türe-ins-Speisezimmer">Die Türe</rs> geht. <rs ref="#selma">Selma</rs> sachte herein.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Jetzt könnten <rs ref="#karl-/-selma">wir</rs> auch allein sein.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Rede vernünftig, <rs ref="#selma">du</rs> bist <rs ref="#Meine-Schwester-(prädikativ-selma)">meine Schwester</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <rs ref="#es7"><p><rs ref="#hecht">Es</rs> ist ja der von damals.</p></rs>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#selma">Selma</rs>, weißt du, <rs ref="#es7">was <rs ref="#selma">du</rs> mir sagst</rs>? Wenn <rs ref="#es7">es</rs> verlogen ist, dann nimm <rs ref="#es7">es</rs> zurück.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>frech.</stage>
+          <p>Ich werd' wohl blind sein? Nicht?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>kurzatmig.</stage>
+          <rs ref="#s4"><p><rs ref="#Die-Peitsche!">Die Peitsche!</rs> <stage><rs ref="#karl">Er</rs> holt <rs ref="#Die-Peitsche!">sie</rs>.</stage></p></rs>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>hat <rs ref="#karl">ihm</rs> <rs ref="#ein-Weilchen">ein Weilchen</rs> vergnügt nachgeblickt, dann hinterbringt <rs ref="#selma">sie</rs>'<rs ref="#s4">s</rs> <rs ref="#frau_weber_mutter">der Mutter</rs>,
+            ruft <rs ref="#ins-Speisezimmer">ins Nebenzimmer</rs>.</stage>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, <rs ref="#frau_weber_mutter">Mutter</rs> – –</p>
+          <stage><rs ref="#frau_weber_mutter">Die Mutter</rs>, hinter <rs ref="#frau_weber_mutter">ihr</rs> <rs ref="#hecht">Hecht</rs>, rasch hereintretend.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#karl">Karl</rs> holt <rs ref="#Die-Peitsche!">die Peitsche</rs>.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>hält unter <rs ref="#Türe-ins-Speisezimmer">der Türe</rs> <rs ref="#hecht">Hecht</rs> zurück.</stage>
+          <p>Warum, <rs ref="#selma">mein Liebchen</rs>?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Ich habe <rs ref="#karl">Karl</rs> erzählt, <rs ref="#s5"><rs ref="#hecht">Herr Hecht</rs> sei ...</rs></p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Weiter.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, nein.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Sag'<rs ref="#s5">s</rs> oder!</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, nicht hauen!</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Man</rs> sollte gleich ...</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>rasch.</stage>
+          <p>Bei <rs ref="#frau_weber_mutter">dir</rs> gewesen.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Ist <rs ref="#s5">das</rs> was Arges? <rs ref="#selma">liebste Tochter Selma</rs>. <stage><rs ref="#Tenor-(stimme-tonfall-mutter)">Im Schmeichelton</rs>.</stage></p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Aber <rs ref="#karl">Karl</rs> holt <rs ref="#Die-Peitsche!">die Peitsche</rs>.</p>
+          <stage>Man hört <rs ref="#karl">Karl</rs> <rs ref="#die-Treppen">die Treppen</rs> herauf eilen, <rs ref="#hecht">Hecht</rs> sieht <rs ref="#hecht">sich</rs> nach Flucht um.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage><rs ref="#man-(der-mensch)">man</rs> merkt <rs ref="#frau_weber_mutter">ihr</rs> <rs ref="#Angst-(mutter)">die Angst</rs> an.</stage>
+          <p><rs ref="#karl">Er</rs> soll <rs ref="#karl">sich</rs> untersteh'n.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Und wie'<rs ref="#ein-Wetter">s</rs> jetzt anfängt! <stage><rs ref="#Gießender-Regen">Gießender Regen</rs> fängt an.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>mit <rs ref="#Die-Peitsche!">einer kräftigen Reitpeitsche</rs>, nachdem <rs ref="#karl">er</rs> ruhig hereingeschritten ist.</stage>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, trete auf die Seite!</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Warum denn?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich sage <rs ref="#frau_weber_mutter">dir</rs>, geh weg!</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>kreischend.</stage>
+          <p>Wirst <rs ref="#karl">du</rs> mich schlagen? <stage><rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">Blitz</rs>.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Wenn <rs ref="#frau_weber_mutter">du</rs> nicht weg gehst. <stage><rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donner</rs>, <rs ref="#karl">Karl</rs> greift an <rs ref="#frau_weber_mutter">die Mutter</rs>.</stage></p>
+          <pb n="15"/>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>schreiend.</stage>
+          <p>Sei nicht so roh.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>So kommen <rs ref="#hecht">Sie</rs> hervor, ich schlage zu.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>mit einer krampfhaften Bewegung nach <rs ref="#hecht">seinem</rs> Taschenmesser.</stage>
+          <p>Jawohl. – <stage>Grausam, angstvoll hervorgestoßen.</stage></p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>brüllt entsetzlich.</stage>
+          <p><rs ref="#karl">Karl</rs>! <stage>Zugleich <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">ein furchtbarer Blitz</rs> und <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donnerschlag</rs>, <rs ref="#frau_weber_mutter">die Mutter</rs> sinkt zu
+              <rs ref="#Boden-(bühne)">Boden</rs>, <rs ref="#karl-/-hecht">die beiden</rs> stehen <rs ref="#karl-/-hecht">einander</rs> gegenüber, aber unfähig, <rs ref="#karl-/-hecht">sich</rs> zu rühren, <rs ref="#selma">Selma</rs>
+              kauert an der Wand, <rs ref="#mariechen_marie">Mariechen</rs> hat <rs ref="#mariechen_marie">sich</rs> furchtsam herangemacht.</stage></p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>bricht zuerst <rs ref="#die-Stille-(sprechpause-aller)">die Stille</rs>, <rs ref="#karl">er</rs> läßt den aufgehobenen Arm sinken.</stage>
+          <p>Verflucht mich. <stage>Erst allmählich kommen <rs ref="#hecht-/-karl-+-3">alle</rs> aus der Lähmung heraus.</stage></p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>bewegt, im Selbstgespräch.</stage>
+          <p>Ich darf <rs ref="#frau_weber_mutter">sie</rs> nicht verlassen.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, lebst du noch?</p>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>streichelt über <rs ref="#das-Gesicht-der-Mutter">das Gesicht <rs ref="#frau_weber_mutter">der Mutter</rs></rs>.</stage>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#Es-(schockzustand-mutter)">Es</rs> scheint bedenklich, <rs ref="#hecht-/-karl-+-3">wir</rs> sollten <rs ref="#Tropfen">Tropfen</rs> haben.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>nervös.</stage>
+          <p><rs ref="#Tropfen">Tropfen</rs>. <stage><rs ref="#karl">Er</rs> eilt hinaus.</stage></p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#selma">Selma</rs>, helfe <rs ref="#karl">Karl</rs>. <stage><rs ref="#selma">Selma</rs> zögert.</stage> – Ja, wird <rs ref="#Es-(schockzustand-mutter)">es</rs>? <stage><rs ref="#selma">Selma</rs> geht. <rs ref="#hecht">Hecht</rs>
+              beugt <rs ref="#hecht">sich</rs> auf <rs ref="#frau_weber_mutter">Frau Weber</rs> nieder.</stage></p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <rs ref="#s6"><p><rs ref="#hecht">Du</rs> bleibst doch da?</p></rs>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ich kann'<rs ref="#s6">s</rs> riskieren, <rs ref="#es7">es</rs> hat <rs ref="#karl">ihn</rs> sehr gepackt, mich übrigens nicht minder.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#mariechen_marie">Mariechen</rs>, ich glaubte, der Vater sei'<rs ref="#hecht">s</rs>. – Aber <rs ref="#lothar_weber_vater">der</rs> ist ja fort. Ja, <rs ref="#lothar_weber_vater"><rs ref="#mariechen_marie">dein</rs> Vater</rs>, war so
+            gut zu <rs ref="#mariechen_marie">dir</rs>, <rs ref="#lothar_weber_vater">er</rs> mochte <rs ref="#mariechen_marie">dich</rs> allein.</p>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>weinend.</stage>
+          <rs ref="#s7"><p>Ist <rs ref="#lothar_weber_vater">der – Papa</rs> – tot?</p></rs>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#mariechen_marie">Du Dummchen</rs>, <stage>Streichelt <rs ref="#mariechen_marie">Mariechen</rs>.</stage> wenn'<rs ref="#s7">s</rs> gleich besser wäre.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>lächelt. <rs ref="#hecht">Er</rs> richtet <rs ref="#frau_weber_mutter">Frau Weber</rs> auf.</stage>
+          <stage><rs ref="#karl">Karl</rs> und <rs ref="#selma">Selma</rs> mit dem Tropfenfläschchen zurück.</stage>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Wie ist's <rs ref="#frau_weber_mutter">dir, Mutter</rs>?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>schluchzend.</stage>
+          <p>Ach, <rs ref="#karl">Karl</rs>, sei nicht so bös zu mir, ich kann nicht dafür, daß ich <rs ref="#karl">deine</rs> Mutter bin.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Ich glaubte, <rs ref="#frau_weber_mutter">du</rs> habest <rs ref="#lothar_weber_vater">Vater</rs> vergessen.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>mit langem Kopfschütteln.</stage>
+          <p>Wie soll ich <rs ref="#lothar_weber_vater">den</rs> vergessen? Und so rasch! Was müßt ich da für eine sein?</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Du</rs> sprachst so leicht von allem.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>So leicht? – <stage><rs ref="#Tenor-(stimme-tonfall-mutter)">Im Verrücktenton</rs>.</stage> Als ob ich nicht am besten merkte, wenn
+            <rs ref="#lothar_weber_vater">mein Mann</rs> <rs ref="#im-Zuchthaus">im Zuchthaus</rs> ist.</p>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>an <rs ref="#frau_weber_mutter">der Mutter</rs> zerrend und entsetzt flehend.</stage>
+          <p><rs ref="#frau_weber_mutter">Mutter</rs>, tu doch nicht so.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL</speaker></rs>
+          <stage>taumelnd.</stage>
+          <p><rs ref="#im-Zuchthaus">Im Zuchthaus</rs>? – <rs ref="#lothar_weber_vater">Vater</rs>? <stage>Rascher.</stage> <rs ref="#im-Zuchthaus">Zuchthaus</rs>, <rs ref="#lothar_weber_vater">Papa</rs>?</p>
+          <pb n="16"/>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>nickt, halb vernehmlich.</stage>
+          <p>Ja.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p>Und weintest nicht und bliebest ruhig und dachtest noch <rs ref="#das-------------Abendbrot">ans Essen</rs> und den Kram? Warum
+            sagst <rs ref="#frau_weber_mutter">du</rs> so spät? Es ist bald <rs ref="#Gute-Nacht">Nacht</rs>. – Ich muß <rs ref="#lothar_weber_vater"><rs ref="#s8">ihn</rs></rs> heut noch sehen.</p>
+          <stage><rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">Ein Blitz</rs> zuckt fern, <rs ref="#karl">Karl</rs> macht <rs ref="#karl">sich</rs> auf.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#karl">Karl</rs>, willst <rs ref="#karl">du</rs>'<rs ref="#s8">s</rs> noch heut?</p>
+        </sp>
+        <sp who="#mariechen_marie">
+          <rs ref="#mariechen_marie"><speaker>MARIECHEN</speaker></rs>
+          <stage>weinend hinter <rs ref="#karl">Karl</rs> her.</stage>
+          <p><rs ref="#karl">Karlbruder</rs>, <rs ref="#karl">Karlbruder</rs>.</p>
+        </sp>
+        <sp who="#karl">
+          <rs ref="#karl"><speaker>KARL.</speaker></rs>
+          <p><rs ref="#mariechen_marie">Mariechen, du</rs> darfst mit, <rs ref="#karl-/-mariechen_marie">wir</rs> gehen zu <rs ref="#lothar_weber_vater">Papa</rs>.</p>
+          <stage><rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donner</rs> <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">zum vorhergehenden Blitz</rs>, <rs ref="#selma">Selma</rs> guckt <rs ref="#karl-/-mariechen_marie">den beiden</rs> <rs ref="#hohe-----------Fenster">durchs Fenster</rs> nach, erst
+            nach <rs ref="#ein-Weilchen">einer Weile</rs> sieht <rs ref="#man-(der-mensch)">man</rs> <rs ref="#karl">Karl</rs> mit umgeworfenem Mantel, den Hut ins Gesicht gedrückt
+            und <rs ref="#mariechen_marie">Mariechen</rs> mit einem Schirm <rs ref="#die-Treppen">die Treppe</rs> hinuntergehen. <rs ref="#Gießender-Regen">Ein furchtbarer Platzregen</rs> hebt
+            an.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter-/-hecht">Wir</rs> dürfen's nicht, komm lieber morgen.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#ein-Wetter">Das bißchen Wetter</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>weicht vor <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">einem grellen Blitz</rs> zurück, <rs ref="#unter-dem-blauen-Himmel">der Himmel</rs> ist fortwährend erleuchtet, <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">ein
+            fortwährendes Krachen und Knattern</rs>.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>entsetzt.</stage>
+          <p><rs ref="#Der-Weber,-ganz-lichtweiß-im-Fenster-(erscheinung-des-vaters-im-fenster,-evtl-ist-dies-auch-lüstling,-der-danach-kommt)">Der Weber, ganz lichtweiß <rs ref="#hohe-----------Fenster">im Fenster</rs></rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT</speaker></rs>
+          <stage>schweigt und blickt starr <rs ref="#hohe-----------Fenster">zum Fenster</rs>.</stage>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Er ist'<rs ref="#Der-Weber,-ganz-lichtweiß-im-Fenster-(erscheinung-des-vaters-im-fenster,-evtl-ist-dies-auch-lüstling,-der-danach-kommt)">s</rs>, ich seh <rs ref="#lothar_weber_vater">ihn</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p><rs ref="#Der-Weber,-ganz-lichtweiß-im-Fenster-(erscheinung-des-vaters-im-fenster,-evtl-ist-dies-auch-lüstling,-der-danach-kommt)">Das</rs> ist Selma.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>lügt.</stage>
+          <p>Ich sah <rs ref="#lothar_weber_vater">ihn</rs> aber auch.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>beim <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">letzten Blitz</rs>.</stage>
+          <p>Erbarm dich, Jesus, <rs ref="#lothar_weber_vater">er</rs> kommt.</p>
+          <stage>Weil <rs ref="#die-Stille-(sprechpause-aller)">eine Pause</rs> bis <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">zum Donner</rs> ist, erholt <rs ref="#frau_weber_mutter">sich</rs> <rs ref="#frau_weber_mutter">die Mutter</rs> und zuckt <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">beim Donner</rs>
+            wieder zusammen.</stage>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Ihr seid verrückt, denkt lieber an <rs ref="#karl-/-mariechen_marie">die beiden, <rs ref="#karl-/-mariechen_marie">die</rs> <rs ref="#es8"><rs ref="#Gießender-Regen">im Regen</rs> tapsen</rs></rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#karl-/-mariechen_marie">Die</rs> waren dumm.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage>wieder kühner.</stage>
+          <p>Ist's <rs ref="#hecht">Ihnen</rs> lieber, daß <rs ref="#karl-/-mariechen_marie">sie</rs> fort sind? <rs ref="#karl-/-mariechen_marie">Sie</rs> tun <rs ref="#es8">es</rs> wohl um <rs ref="#lothar_weber_vater"><rs ref="#karl-/-mariechen_marie">ihren</rs> Vater</rs>.</p>
+        </sp>
+        <sp who="#hecht">
+          <rs ref="#hecht"><speaker>HECHT.</speaker></rs>
+          <p>Nachher – <rs ref="#frau_weber_mutter">süßes Weib</rs>. <stage><rs ref="#hecht">Er</rs> drückt <rs ref="#frau_weber_mutter">Frau Weber</rs> an <rs ref="#frau_weber_mutter">sich</rs>, die wieder an <rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">einem Blitz</rs>
+              erschrickt. <rs ref="#frau_weber_mutter-/-hecht">Beide</rs> <rs ref="#ins-Speisezimmer">ins erleuchtete Speisezimmer</rs>.</stage></p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Hast <rs ref="#frau_weber_mutter">du</rs> mir etwas mitgebracht? <rs ref="#frau_weber_mutter">Muttchen</rs>.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Natürlich, <rs ref="#selma">du</rs>. Dort liegt <rs ref="#ein-Päckchen">ein Paket</rs>.</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p><rs ref="#frau_weber_mutter">Süßes Muttchen</rs>, wo?</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p>Auf <rs ref="#Stühle">dem Sessel</rs>. <stage>Ab, <rs ref="#man-(der-mensch)">man</rs> hört <rs ref="#den-Riegel">den Riegel</rs> gehen.</stage></p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>reißt <rs ref="#ein-Päckchen">das Paket</rs> auf und zieht <rs ref="#eine-Federboa">eine Federboa</rs> hervor und bindet <rs ref="#selma">sich</rs> <rs ref="#eine-Federboa">dieselbe</rs> vor dem
+            Spiegel um.</stage>
+          <p>Ich kann noch sehen.</p>
+          <stage>Es ist inzwischen fast <rs ref="#Gute-Nacht">Nacht</rs> geworden. – <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donner</rs>. – <rs ref="#luestling">Lüstling, Musiklehrer</rs>, kommt
+            während <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">des Donners</rs> durch <rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">die Türe</rs>.</stage>
+          <pb n="17"/>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l><rs ref="#es9">Immer kommt zur rechten Zeit, wer kommt</rs>.</l>
+            <l>Ist <rs ref="#es9">es</rs> anders <rs ref="#bei-gewissen-Pflanzen">bei gewissen Pflanzen</rs>?</l>
+            <l><rs ref="#bei-gewissen-Pflanzen">Immergrün</rs> bricht <rs ref="#man-(der-mensch)">man</rs> durchs ganze Jahr,</l>
+            <l>Schachtelhalme nicht und Kirchenwanzen.</l>
+            <l>'<rs ref="#s9">s</rs> ist nur Sach' vom richtigen Gefühl,</l>
+            <l><rs ref="#s9"><rs ref="#alle-Spuren">alle Spuren</rs> riechen und <rs ref="#alle-Spuren">sie</rs> finden</rs>,</l>
+            <rs ref="#wer-dann-Mut-zum-Stubensteigen-hat"><l>wer dann Mut zum Stubensteigen hat</l>
+            <l>und die Zunge kann zu Worten winden</rs>,</l>
+            <l><rs ref="#wer-dann-Mut-zum-Stubensteigen-hat">dem</rs> gelingt'<rs ref="#s9">s</rs>. Wie mir. – Schön guten Tag.</l>
+          </lg>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA</speaker></rs>
+          <stage>sieht <rs ref="#selma">sich</rs> um und seufzt.</stage>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l>Seht Erinnerung, <rs ref="#selma">sie</rs> sah mich schon.</l>
+            <l><rs ref="#s10">Bin <rs ref="#selma">ihr</rs> vor <rs ref="#dem-Cabaret">dem Cabaret</rs> begegnet</rs>.</l>
+            <l>»Ja, der war schön wie roter Siegellack,</l>
+            <l>Hätt's gehagelt oder sehr geregnet!«</l>
+            <l>Mir war'<rs ref="#s10">s</rs> damals nicht so recht geschickt,</l>
+            <l>mußte singen, klimpern, <emph>five o' clock tea</emph>.</l>
+            <l>– Hätte <rs ref="#selma">sie</rs> den Pelz schon umgehabt</l>
+            <l>und den Rock gehoben bis zum Fußknie –</l>
+            <l>welche Stimme gab <rs ref="#selma">dir</rs> diesen Wink?</l>
+          </lg>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <l><rs ref="#frau_weber_mutter">Meine Mutter</rs> ist ein Goldschatz.</l>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l>»<rs ref="#frau_weber_mutter">Mutter</rs>.«</l>
+            <l><rs ref="#den-Müttern,-ohne-Vater">Solche Mutter</rs> wird von mir besucht.</l>
+            <l>Mit <rs ref="#den-Müttern,-ohne-Vater">den Müttern, ohne Vater</rs>, schwätz' ich gern.</l>
+            <l>Wären alle Mütter solche Kutter,</l>
+            <l>dann, dann, gäb es überschwere Fracht.</l>
+          </lg>
+          <stage>Schnobbert, dann niest <rs ref="#luestling">er</rs> laut.</stage>
+          <l>Hatzi! sitzt <rs ref="#frau_weber_mutter">sie</rs> horchend nebenan?</l>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <l>Wer hat da genossen? Antwort. – Keiner</l>
+          <stage>Seufzt.</stage>
+          <l>Keiner als <rs ref="#hecht">der Kaufmann, dieser Hecht</rs>.</l>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l>So gefällt mir's. <rs ref="#man-(der-mensch)">Jeder</rs> ist nicht einer.</l>
+            <l>Augenblicklich hat <rs ref="#dir">sie</rs> noch Geschmack.</l>
+            <l>Hat <rs ref="#dir">sie</rs>? Weil <rs ref="#dir">sie</rs> ihn nicht hat? Womöglich.</l>
+            <l>Leis. <rs ref="#selma">Sie</rs> spricht von <rs ref="#selma">ihrer</rs> Schönheit. Ach.</l>
+            <pb n="18"/>
+          </lg>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <l>Niemand sah von mir den Körper.</l>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <l>Löblich.</l>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <lg>
+            <l><rs ref="#Meine-Freundin">Meine Freundin</rs> ist nicht halb so schön.</l>
+            <l>Warum wünschen <rs ref="#Meine-Freundin">jene</rs> <rs ref="#alle-Männer">alle Männer</rs>?</l>
+          </lg>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l>Weil <rs ref="#Meine-Freundin">sie</rs> lügt, damit <rs ref="#selma">du</rs> neidisch wirst.</l>
+            <l><rs ref="#selma">Mädchen</rs>, wette, du hast <rs ref="#tausend-Gönner">tausend Gönner</rs>,</l>
+            <l>laufen <rs ref="#tausend-Gönner">sie</rs> doch kreuzweis mir in Weg.</l>
+            <l>In der Tasche hab ich <rs ref="#deine-Bildgraphie"><rs ref="#selma">deine</rs> Bildgraphie</rs>,</l>
+            <l>aber <rs ref="#deine-Bildgraphie">diese</rs> bleibt doch immer angezogen,</l>
+            <l>vorerst ist <rs ref="#deine-Bildgraphie">sie</rs> wenigstens für mich,</l>
+            <l>denn ich stahl <rs ref="#deine-Bildgraphie">sie</rs> mir <rs ref="#beim-Photographen">beim Photographen</rs>.</l>
+            <l>– Denke nur an <rs ref="#beim-Photographen">den <rs ref="#dem-Cabaret">vom Cabaret</rs></rs>,</l>
+            <l>frecher kenn' ich keinen Häckelaffen,</l>
+            <l>saub'rer, stutz'ger, putz'ger und nicht reicher. –</l>
+          </lg>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <lg>
+            <l><rs ref="#frau_weber_mutter">Mutter</rs> gab mir auch den guten Rat,</l>
+            <l>»Wenn <rs ref="#Einem-treu-zu-bleiben">es</rs> ginge, <rs ref="#Einem-treu-zu-bleiben"><rs ref="#alle-Männer">Einem</rs> treu zu bleiben</rs>.«</l>
+          </lg>
+        </sp>
+        <sp who="#luestling">
+          <rs ref="#luestling"><speaker>LÜSTLING.</speaker></rs>
+          <lg>
+            <l>Holla, leuchtend kommt mir <rs ref="#eine-Prachts-Idee">eine Prachts-Idee</rs>.</l>
+            <rs ref="#eine-Prachts-Idee"><rs ref="#Meine-Karte"><l>Meine Karte</l></rs>
+            <l>leg ich auf <rs ref="#Boden-(bühne)">den Boden</rs> – »dufte hold« –.</l></rs>
+            <l>Mache tüchtig Lärm, <rs ref="#selma">sie</rs> ruft um <rs ref="#Licht-(die-lampen)">Licht</rs>.</l>
+            <l>Bis der Zünder zündet, bin ich fort.</l>
+            <l>Warte nur, wann's endlich wieder blitzt.</l>
+          </lg>
+          <stage><rs ref="#ein---------------leichter-Blitz-(jeweils-unterschiedliche-blitze)">Blitz</rs> – <rs ref="#fernes-Brummen-(jeweils-unterschiedliche-Donnergeräusche)">Donner</rs>, <rs ref="#luestling">Lüstling</rs> verschwindet durch <rs ref="#Zur---------------Tür-(an-das-empfangszimmer-angrenzend,-unklar-welche-von-beiden,-oberst-kommt-und-geht-durch-diese-tür-ins-haus-daher-vermutl-korridortür))">die Tür</rs>.</stage>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <l>Bringt mir <rs ref="#Licht-(die-lampen)">Licht</rs>!</l>
+          <stage><rs ref="#selma">Sie</rs> zündet die Gaslampe an (Selbstzünder), steht in fahler Beleuchtung.</stage>
+          <p>Seht nur <rs ref="#Meine-Karte">dieses Rosenduftpapier</rs>!</p>
+          <p><stage>Liest.</stage> »<rs ref="#Unterricht-im">Unterricht im</rs> – wie das riecht – Singen und Klavier erteilt,
+            Zimmerstraße – <rs ref="#dem-Namen">Lüstling, Lehrer</rs>«. Eigentlich ist'<rs ref="#s11">s</rs> gut, <rs ref="#s11">daß <rs ref="#lothar_weber_vater">Vater</rs> nichts mehr sagt</rs>.</p>
+          <stage><rs ref="#frau_weber_mutter">Die Mutter</rs> erscheint.</stage>
+          <pb n="19"/>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER</speaker></rs>
+          <stage><rs ref="#das-Gesicht-der-Mutter">gerötetes Gesicht</rs>.</stage>
+          <p><rs ref="#selma">Selma</rs> kommst du nicht <rs ref="#das-------------Abendbrot">zum Essen</rs>? Zeige! <stage>Entreißt <rs ref="#selma">ihr</rs> <rs ref="#Meine-Karte">die Visitenkarte</rs>.</stage>
+            Kennst <rs ref="#selma">du</rs> <rs ref="#luestling">diesen Herrn</rs>?</p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Nein.</p>
+        </sp>
+        <sp who="#frau_weber_mutter">
+          <rs ref="#frau_weber_mutter"><speaker>MUTTER.</speaker></rs>
+          <p><rs ref="#Unterricht-im">Das</rs> scheint gar nicht übel zu sein. An <rs ref="#dem-Namen">dem Namen</rs> brauchst <rs ref="#selma">du</rs> keinen Anstoß zu nehmen.
+            Hast <rs ref="#selma">du</rs> keinen Hunger? <rs ref="#frau_weber_mutter-/-hecht">Wir</rs> sind fertig. <stage><rs ref="#frau_weber_mutter">Mutter</rs> geht wieder nebenan.</stage></p>
+        </sp>
+        <sp who="#selma">
+          <rs ref="#selma"><speaker>SELMA.</speaker></rs>
+          <p>Jetzt reizt mich'<rs ref="#Unterricht-im">s</rs> doppelt. Ich könnte also Anstoß nehmen. <rs ref="#Unterricht-im">Das</rs> ist einmal etwas, wie
+            ich's in den braunen Büchern lese.</p>
+        </sp>
+        <stage>Vorhang.</stage>
+    </body>
+  </text>
+</TEI>
+</#root>

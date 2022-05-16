@@ -1,0 +1,657 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Braut von Messina oder Die feindlichen Brüder</title>
+        <title type="sub">Ein Trauerspiel mit Chören</title>
+        <author key="pnd:118607626">Schiller, Friedrich</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000067</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1211729</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:v0d8.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Friedrich Schiller: Sämtliche Werke, Auf Grund der Originaldrucke herausgegeben
+              von Gerhard Fricke und Herbert G. Göpfert in Verbindung mit Herbert Stubenrauch, Band
+              1–5, 3. Auflage, München: Hanser, 1962.</title>
+            <date type="print" when="1803"/>
+            <date type="premiere"/>
+            <date type="written" when="1803">1802–03</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="isabella" sex="FEMALE">
+            <persName>Isabella</persName>
+          </person>
+          <person xml:id="diego" sex="MALE">
+            <persName>Diego</persName>
+          </person>
+          <personGrp xml:id="erster_chor" sex="MALE">
+            <name>Erster Chor</name>
+          </personGrp>
+          <personGrp xml:id="zweiter_chor" sex="MALE">
+            <name>Zweiter Chor</name>
+          </personGrp>
+          <personGrp xml:id="chor" sex="MALE">
+            <name>Der ganze Chor</name>
+            <name type="variant">Chor</name>
+            <name type="variant">Beide Chöre</name>
+            <name type="variant">Ganzer Chor</name>
+          </personGrp>
+          <person xml:id="einer_aus_dem_chor_1-3" sex="MALE">
+            <persName>Einer aus dem Chor (I/3)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-3" sex="MALE">
+            <persName>Ein Zweiter (I/3)</persName>
+          </person>
+          <person xml:id="don_manuel" sex="MALE">
+            <persName>Don Manuel</persName>
+          </person>
+          <person xml:id="don_cesar" sex="MALE">
+            <persName>Don Cesar</persName>
+          </person>
+          <person xml:id="bote_1-6" sex="MALE">
+            <persName>Bote (I/6)</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_1-8" sex="MALE">
+            <persName>Einer aus dem Chor (I/8)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-8" sex="MALE">
+            <persName>Ein Zweiter (I/8)</persName>
+          </person>
+          <person xml:id="ein_dritter_1-8" sex="MALE">
+            <persName>Ein Dritter (I/8)</persName>
+          </person>
+          <person xml:id="beatrice" sex="FEMALE">
+            <persName>Beatrice</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_3-5" sex="MALE">
+            <persName>Einer aus dem Chor (III/5)</persName>
+          </person>
+          <person xml:id="ein_zweiter_3-5" sex="MALE">
+            <persName>Ein Zweiter (III/5)</persName>
+          </person>
+          <person xml:id="ein_dritter_3-5" sex="MALE">
+            <persName>Ein Dritter (III/5)</persName>
+          </person>
+          <person xml:id="bote_4-2_und_4-3" sex="MALE">
+            <persName>Bote (IV/2–3)</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#isabella" passive="#don_manuel"/>
+            <relation name="parent_of" active="#isabella" passive="#don_cesar"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2018-11-04">(ff) initital commit; scene segmentation from
+          Gutenberg-DE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Friedrich Schiller</head>
+        <head>Die Braut von Messina</head>
+        <head>oder</head>
+        <head>Die feindlichen Brüder</head>
+        <head>Ein Trauerspiel mit Chören</head>
+      </div>
+      <div type="preface">
+        <head><pb type="start" n="815"/> Über den Gebrauch des Chors in der Tragödie</head>
+        <p>Ein poetisches Werk muß sich selbst rechtfertigen, und wo die Tat nicht spricht, da wird
+          das Wort nicht viel helfen. Man könnte es also gar wohl dem Chor überlassen, sein eigener
+          Sprecher zu sein, wenn er nur erst selbst auf die gehörige Art zur Darstellung gebracht
+          wäre. Aber das tragische Dichterwerk wird erst durch die theatralische Vorstellung zu
+          einem Ganzen; nur die Worte gibt der Dichter, Musik und Tanz müssen hinzukommen, sie zu
+          beleben. So lange also dem Chor diese sinnlich mächtige Begleitung fehlt, so lange wird er
+          in der Ökonomie des Trauerspiels als ein Außending, als ein fremdartiger Körper und als
+          ein Aufenthalt erscheinen, der nur den Gang der Handlung unterbricht, der die Täuschung
+          stört, der den Zuschauer erkältet. Um dem Chor sein Recht anzutun, muß man sich also von
+          der wirklichen Bühne auf eine <emph>mögliche</emph> versetzen, aber das muß man überall,
+          wo man zu etwas Höherm gelangen will. Was die Kunst noch nicht hat, das soll sie erwerben;
+          der zufällige Mangel an Hilfsmitteln darf die schaffende Einbildungskraft des Dichters
+          nicht beschränken. Das Würdigste setzt er sich zum Ziel, einem Ideale strebt er nach, die
+          ausübende Kunst mag sich nach den Umständen bequemen.</p>
+        <p>Es ist nicht wahr, was man gewöhnlich behaupten hört, daß das Publikum die Kunst
+          herabzieht; der Künstler zieht das Publikum herab, und zu allen Zeiten, wo die Kunst
+          verfiel, ist sie durch die Künstler gefallen. Das Publikum braucht nichts als
+          Empfänglichkeit, und diese besitzt es. Es tritt vor den Vorhang mit einem unbestimmten
+          Verlangen, mit einem vielseitigen Vermögen. Zu dem Höchsten bringt es eine Fähigkeit mit,
+          es erfreut sich an dem Verständigen und Rechten, und wenn es damit angefangen hat, sich
+          mit dem Schlechten zu begnügen, so wird es zuverlässig damit aufhören, das Vortreffliche
+          zu fodern, wenn man es ihm erst gegeben hat.</p>
+        <p>Der Dichter, hört man einwenden, hat gut nach einem Ideal arbeiten, der Kunstrichter hat
+          gut nach Ideen urteilen, die bedingte, beschränkte, ausübende Kunst ruht auf dem
+          Bedürfnis. Der Unternehmer will bestehen, der Schauspieler will sich zeigen, der Zuschauer
+            <pb n="815"/> will unterhalten und in Bewegung gesetzt sein. Das Vergnügen sucht er und
+          ist unzufrieden, wenn man ihm da eine Anstrengung zumutet, wo er ein Spiel und eine
+          Erholung erwartet.</p>
+        <p>Aber, indem man das Theater ernsthafter behandelt, will man das Vergnügen des Zuschauers
+          nicht aufheben, sondern veredeln. Es soll ein Spiel bleiben, aber ein poetisches. Alle
+          Kunst ist der Freude gewidmet, und es gibt keine höhere und keine ernsthaftere Aufgabe,
+          als die Menschen zu beglücken. Die rechte Kunst ist nur diese, welche den höchsten Genuß
+          verschafft. Der höchste Genuß aber ist die Freiheit des Gemütes in dem lebendigen Spiel
+          aller seiner Kräfte.</p>
+        <p>Jeder Mensch zwar erwartet von den Künsten der Einbildungskraft eine gewisse Befreiung
+          von den Schranken des Wirklichen, er will sich an dem Möglichen ergötzen und seiner
+          Phantasie Raum geben. Der am wenigsten erwartet, will doch sein Geschäft, sein gemeines
+          Leben, sein Individuum vergessen, er will sich in außerordentlichen Lagen fühlen, sich an
+          den seltsamen Kombinationen des Zufalls weiden, er will, wenn er von ernsthafterer Natur
+          ist, die moralische Weltregierung, die er im wirklichen Leben vermißt, auf der Schaubühne
+          finden. Aber er weiß selbst recht gut, daß er nur ein leeres Spiel treibt, daß er im
+          eigentlichen Sinn sich nur an Träumen weidet, und wenn er von dem Schauplatz wieder in die
+          wirkliche Welt zurückkehrt, so umgibt ihn diese wieder mit ihrer ganzen drückenden Enge,
+          er ist ihr Raub, wie vorher, denn sie selbst ist geblieben, was sie war, und an ihm ist
+          nichts verändert worden. Dadurch ist also nichts gewonnen, als ein gefälliger Wahn des
+          Augenblicks, der beim Erwachen verschwindet.</p>
+        <p>Und eben darum, weil es hier nur auf eine vorübergehende Täuschung abgesehen ist, so ist
+          auch nur ein Schein der Wahrheit oder die beliebte Wahrscheinlichkeit nötig, die man so
+          gern an die Stelle der Wahrheit setzt.</p>
+        <p>Die wahre Kunst aber hat es nicht bloß auf ein vorübergehendes Spiel abgesehen, es ist
+          ihr Ernst damit, den Menschen nicht bloß in einen augenblicklichen Traum von Freiheit zu
+          versetzen, sondern ihn wirklich und in der Tat frei zu <emph>machen</emph>, und dieses
+          dadurch, daß sie eine Kraft in ihm erweckt, übt und ausbildet, die sinnliche Welt, die
+          sonst nur als ein roher Stoff auf uns lastet, als eine blinde Macht <pb n="816"/> auf uns
+          drückt, in eine objektive Ferne zu rücken, in ein freies Werk unsers Geistes zu verwandeln
+          und das Materielle durch Ideen zu beherrschen.</p>
+        <p>Und eben darum weil die wahre Kunst etwas Reelles und Objektives will, so kann sie sich
+          nicht bloß mit dem Schein der Wahrheit begnügen; auf der Wahrheit selbst, auf dem festen
+          und tiefen Grunde der Natur errichtet sie ihr ideales Gebäude.</p>
+        <p>Wie aber nun die Kunst zugleich ganz ideell und doch im tiefsten Sinne reell sein – wie
+          sie das Wirkliche ganz verlassen und doch aufs genaueste mit der Natur übereinstimmen soll
+          und kann, das ists, was wenige fassen, was die Ansicht poetischer und plastischer Werke so
+          schielend macht, weil beide Foderungen einander im gemeinen Urteil geradezu aufzuheben
+          scheinen.</p>
+        <p>Auch begegnet es gewöhnlich, daß man das eine mit Aufopferung des andern zu erreichen
+          sucht und eben deswegen beides verfehlt. Wem die Natur zwar einen treuen Sinn und eine
+          Innigkeit des Gefühls verliehen, aber die schaffende Einbildungskraft versagte, der wird
+          ein treuer Maler des Wirklichen sein, er wird die zufällige Erscheinungen, aber nie den
+          Geist der Natur ergreifen. Nur den Stoff der Welt wird er uns wiederbringen, aber es wird
+          eben darum nicht unser Werk, nicht das freie Produkt unsers bildenden Geistes sein und
+          kann also auch die wohltätige Wirkung der Kunst, welche in der Freiheit besteht, nicht
+          haben. Ernst zwar, doch unerfreulich ist die Stimmung, mit der uns ein solcher Künstler
+          und Dichter entläßt, und wir sehen uns durch die Kunst selbst, die uns befreien sollte, in
+          die gemeine enge Wirklichkeit peinlich zurückversetzt. Wem hingegen zwar eine rege
+          Phantasie, aber ohne Gemüt und Charakter, zuteil geworden, der wird sich um keine Wahrheit
+          bekümmern; sondern mit dem Weltstoff nur spielen, nur durch phantastische und bizarre
+          Kombinationen zu überraschen suchen, und wie sein ganzes Tun nur Schaum und Schein ist, so
+          wird er zwar für den Augenblick unterhalten, aber im Gemüt nichts erbauen und begründen.
+          Sein Spiel ist, so wie der Ernst des andern, kein poetisches. Phantastische Gebilde
+          willkürlich aneinanderreihen, heißt nicht ins Ideale gehen, und das Wirkliche nachahmend
+          wieder bringen, heißt nicht die Natur darstellen. Beide Foderungen stehen so wenig im
+          Widerspruch miteinander, <pb n="817"/> daß sie vielmehr – eine und dieselbe sind; daß die
+          Kunst nur dadurch wahr ist, daß sie das Wirkliche ganz verläßt und rein ideell wird. Die
+          Natur selbst ist nur eine Idee des Geistes, die nie in die Sinne fällt. Unter der Decke
+          der Erscheinungen liegt sie, aber sie selbst kommt niemals zur Erscheinung. Bloß der Kunst
+          des Ideals ist es verliehen, oder vielmehr, es ist ihr aufgegeben, diesen Geist des Alls
+          zu ergreifen und in einer körperlichen Form zu binden. Auch sie selbst kann ihn zwar nie
+          vor die Sinne, aber doch durch ihre schaffende Gewalt vor die Einbildungskraft bringen und
+          dadurch wahrer sein als alle Wirklichkeit und realer als alle Erfahrung. Es ergibt sich
+          daraus von selbst, daß der Künstler kein einziges Element aus der Wirklichkeit brauchen
+          kann, wie er es findet, daß sein Werk in <emph>allen</emph> seinen Teilen ideell sein muß,
+          wenn es als ein Ganzes Realität haben und mit der Natur übereinstimmen soll.</p>
+        <p>Was von Poesie und Kunst im Ganzen wahr ist, gilt auch von allen Gattungen derselben, und
+          es läßt sich ohne Mühe von dem jetzt Gesagten auf die Tragödie die Anwendung machen. Auch
+          hier hatte man lange und hat noch jetzt mit dem gemeinen Begriff des
+            <emph>Natürlichen</emph> zu kämpfen, welcher alle Poesie und Kunst geradezu aufhebt und
+          vernichtet. Der bildenden Kunst gibt man zwar notdürftig, doch mehr aus konventionellen
+          als aus innern Gründen, eine gewisse Idealität zu, aber von der Poesie und von der
+          dramatischen insbesondere verlangt man <emph>Illusion</emph>, die, wenn sie auch wirklich
+          zu leisten wäre, immer nur ein armseliger Gauklerbetrug sein würde. Alles Äußere bei einer
+          dramatischen Vorstellung steht diesem Begriff entgegen – alles ist nur ein Symbol des
+          Wirklichen. Der Tag selbst auf dem Theater ist nur ein künstlicher, die Architektur ist
+          nur eine symbolische, die metrische Sprache selbst ist ideal, aber die Handlung soll nun
+          einmal real sein und der Teil das Ganze zerstören. So haben die Franzosen, die den Geist
+          der Alten zuerst ganz mißverstanden, eine Einheit des Orts und der Zeit nach dem
+          gemeinsten empirischen Sinn auf der Schaubühne eingeführt, als ob hier ein anderer Ort
+          wäre als der bloß ideale Raum, und eine andere Zeit als bloß die stetige Folge der
+          Handlung.</p>
+        <p>Durch Einführung einer metrischen Sprache ist man indes der poetischen Tragödie schon um
+          einen großen Schritt näher gekommen. Es sind einige lyrische Versuche auf der Schaubühne
+          glücklich durchgegangen, <pb n="818"/> und die Poesie hat sich durch ihre eigene lebendige
+          Kraft, im einzelnen, manchen Sieg über das herrschende Vorurteil errungen. Aber mit den
+          einzelnen ist wenig gewonnen, wenn nicht der Irrtum im Ganzen fällt, und es ist nicht
+          genug, daß man das nur als eine poetische Freiheit duldet, was doch das Wesen aller Poesie
+          ist. Die Einführung des Chors wäre der letzte, der entscheidende Schritt – und wenn
+          derselbe auch nur dazu diente, dem Naturalism in der Kunst offen und ehrlich den Krieg zu
+          erklären, so sollte er uns eine lebendige Mauer sein, die die Tragödie um sich herumzieht,
+          um sich von der wirklichen Welt rein abzuschließen und sich ihren idealen Boden ihre
+          poetische Freiheit zu bewahren.</p>
+        <p>Die Tragödie der Griechen ist, wie man weiß, aus dem Chor entsprungen. Aber so wie sie
+          sich historisch und der Zeitfolge nach daraus loswand, so kann man auch sagen, daß sie
+          poetisch und dem Geiste nach aus demselben entstanden, und daß ohne diesen beharrlichen
+          Zeugen und Träger der Handlung eine ganz andere Dichtung aus ihr geworden wäre. Die
+          Abschaffung des Chors und die Zusammenziehung dieses sinnlich mächtigen Organs in die
+          charakterlose langweilig wiederkehrende Figur eines ärmlichen Vertrauten war also keine so
+          große Verbesserung der Tragödie, als die Franzosen und ihre Nachbeter sich eingebildet
+          haben.</p>
+        <p>Die alte Tragödie, welche sich ursprünglich nur mit Göttern, Helden und Königen abgab,
+          brauchte den Chor als eine notwendige Begleitung, sie fand ihn in der Natur und brauchte
+          ihn, weil sie ihn fand. Die Handlungen und Schicksale der Helden und Könige sind schon an
+          sich selbst öffentlich und waren es in der einfachen Urzeit noch mehr. Der Chor war
+          folglich in der alten Tragödie mehr ein natürliches Organ, er folgte schon aus der
+          poetischen Gestalt des wirklichen Lebens. In der neuen Tragödie wird er zu einem
+          Kunstorgan; er hilft die Poesie <emph>hervorbringen</emph>. Der neuere Dichter findet den
+          Chor nicht mehr in der Natur, er muß ihn poetisch erschaffen und einführen, das ist, er
+          muß mit der Fabel, die er behandelt, eine solche Veränderung vornehmen, wodurch sie in
+          jene kindliche Zeit und in jene einfache Form des Lebens zurückversetzt wird.</p>
+        <p>Der Chor leistet daher dem neuern Tragiker noch weit wesentlichere Dienste, als dem alten
+          Dichter, eben deswegen, weil er die moderne <pb n="819"/> gemeine Welt in die alte
+          poetische verwandelt, weil er ihm alles das unbrauchbar macht, was der Poesie widerstrebt,
+          und ihn auf die einfachsten, ursprünglichsten und naivsten Motive hinauftreibt. Der Palast
+          der Könige ist jetzt geschlossen, die Gerichte haben sich von den Toren der Städte in das
+          Innere der Häuser zurückgezogen, die Schrift hat das lebendige Wort verdrängt, das Volk
+          selbst, die sinnlich lebendige Masse, ist, wo sie nicht als rohe Gewalt wirkt, zum Staat,
+          folglich zu einem abgezogenen Begriff geworden, die Götter sind in die Brust des Menschen
+          zurückgekehrt. Der Dichter muß die Paläste wieder auftun, er muß die Gerichte unter freien
+          Himmel herausführen, er muß die Götter wieder aufstellen, er muß alles Unmittelbare, das
+          durch die künstliche Einrichtung des wirklichen Lebens aufgehoben ist, wieder herstellen
+          und alles künstliche Machwerk an dem Menschen und um denselben, das die Erscheinung seiner
+          innern Natur und seines ursprünglichen Charakters hindert, wie der Bildhauer die modernen
+          Gewänder, abwerfen und von allen äußern Umgebungen desselben nichts aufnehmen, als was die
+          höchste der Formen, die menschliche, sichtbar macht.</p>
+        <p>Aber ebenso, wie der bildende Künstler die faltige Fülle der Gewänder um seine Figuren
+          breitet, um die Räume seines Bildes reich und anmutig auszufüllen, um die getrennten
+          Partien desselben in ruhigen Massen stetig zu verbinden, um der Farbe, die das Auge reizt
+          und erquickt, einen Spielraum zu geben, um die menschlichen Formen zugleich geistreich zu
+          verhüllen und sichtbar zu machen, ebenso durchflicht und umgibt der tragische Dichter
+          seine streng abgemessene Handlung und die festen Umrisse seiner handelnden Figuren mit
+          einem lyrischen Prachtgewebe, in welchem sich, als wie in einem weit gefalteten
+          Purpurgewand, die handelnden Personen frei und edel mit einer gehaltenen Würde und hoher
+          Ruhe bewegen.</p>
+        <p>In einer höhern Organisation darf der Stoff oder das Elementarische nicht mehr sichtbar
+          sein, die chemische Farbe verschwindet in der feinen Carnation des Lebendigen. Aber auch
+          der Stoff hat seine Herrlichkeit und kann als solcher in einem Kunstkörper aufgenommen
+          werden. Dann aber muß er sich durch Leben und Fülle und durch Harmonie seinen Platz
+          verdienen und die Formen, die er umgibt, geltend machen, anstatt sie durch seine Schwere
+          zu erdrücken.</p>
+        <p><pb n="820"/> In Werken der bildenden Kunst ist dieses jedem leicht verständlich, aber
+          auch in der Poesie und in der tragischen, von der hier die Rede ist, findet dasselbe
+          statt. Alles, was der Verstand sich im allgemeinen ausspricht, ist ebenso wie das, was
+          bloß die Sinne reizt, nur Stoff und rohes Element in einem Dichterwerk und wird da, wo es
+          vorherrscht, unausbleiblich das Poetische zerstören; denn dieses liegt gerade in dem
+          Indifferenzpunkt des Ideellen und Sinnlichen. Nun ist aber der Mensch so gebildet, daß er
+          immer von dem Besondern ins Allgemeine gehen will, und die Reflexion muß also auch in der
+          Tragödie ihren Platz erhalten. Soll sie aber diesen Platz verdienen, so muß sie das, was
+          ihr an sinnlichem Leben fehlt, durch den Vortrag wieder gewinnen, denn wenn die zwei
+          Elemente der Poesie, das Ideale und Sinnliche, nicht innig verbunden <emph>zusammen
+            wirken</emph>, so müssen sie <emph>nebeneinander</emph> wirken, oder die Poesie ist
+          aufgehoben. Wenn die Waage nicht vollkommen inne steht, da kann das Gleichgewicht nur
+          durch eine <emph>Schwankung</emph> der beiden Schalen hergestellt werden.</p>
+        <p>Und dieses leistet nun der Chor in der Tragödie. Der Chor ist selbst kein Individuum,
+          sondern ein allgemeiner Begriff, aber dieser Begriff repräsentiert sich durch eine
+          sinnlich mächtige Masse, welche durch ihre ausfüllende Gegenwart den Sinnen imponiert. Der
+          Chor verläßt den engen Kreis der Handlung, um sich über Vergangenes und Künftiges, über
+          ferne Zeiten und Völker, über das Menschliche überhaupt zu verbreiten, um die großen
+          Resultate des Lebens zu ziehen und die Lehren der Weisheit auszusprechen. Aber er tut
+          dieses mit der vollen Macht der Phantasie, mit einer kühnen lyrischen Freiheit, welche auf
+          den hohen Gipfeln der menschlichen Dinge, wie mit Schritten der Götter, einhergeht – und
+          er tut es, von der ganzen sinnlichen Macht des Rhythmus und der Musik in Tönen und
+          Bewegungen begleitet.</p>
+        <p>Der Chor <emph>reinigt</emph> also das tragische Gedicht, indem er die Reflexion von der
+          Handlung absondert und eben durch diese Absonderung sie selbst mit poetischer Kraft
+          ausrüstet; ebenso, wie der bildende Künstler die gemeine Notdurft der Bekleidung durch
+          eine reiche Draperie in einen Reiz und in eine Schönheit verwandelt.</p>
+        <p>Aber ebenso, wie sich der Maler gezwungen sieht, den Farbenton des Lebendigen zu
+          verstärken, um den mächtigen Stoffen das Gleichgewicht <pb/> zu halten, so legt die
+          lyrische Sprache des Chors dem Dichter auf, verhältnismäßig die ganze Sprache des Gedichts
+          zu erheben und dadurch die sinnliche Gewalt des Ausdrucks überhaupt zu verstärken. Nur der
+          Chor berechtiget den tragischen Dichter zu dieser Erhebung des Tons, die das Ohr ausfüllt,
+          die den Geist anspannt, die das ganze Gemüt erweitert. Diese eine Riesengestalt in seinem
+          Bilde nötigt ihn, alle seine Figuren auf den Kothurn zu stellen und seinem Gemälde dadurch
+          die tragische Größe zu geben. Nimmt man den Chor hinweg, so muß die Sprache der Tragödie
+          im Ganzen sinken, oder was jetzt groß und mächtig ist, wird gezwungen und überspannt
+          erscheinen. Der alte Chor, in das französische Trauerspiel eingeführt, würde es in seiner
+          ganzen Dürftigkeit darstellen und zunichte machen; eben derselbe würde ohne Zweifel
+          Shakespeares Tragödie erst ihre wahre Bedeutung geben.</p>
+        <p>So wie der Chor in die Sprache <emph>Leben</emph> bringt, so bringt er <emph>Ruhe</emph>
+          in die Handlung – aber die schöne und hohe Ruhe, die der Charakter eines edeln Kunstwerkes
+          sein muß. Denn das Gemüt des Zuschauers soll auch in der heftigsten Passion seine Freiheit
+          behalten, es soll kein Raub der Eindrücke sein, sondern sich immer klar und heiter von den
+          Rührungen scheiden, die es erleidet. Was das gemeine Urteil an dem Chor zu tadeln pflegt,
+          daß er die Täuschung aufhebe, daß er die Gewalt der Affekte breche, das gereicht ihm zu
+          seiner höchsten Empfehlung, denn eben diese blinde Gewalt der Affekte ist es, die der
+          wahre Künstler vermeidet, diese Täuschung ist es, die er zu erregen verschmäht. Wenn die
+          Schläge, womit die Tragödie unser Herz trifft, ohne Unterbrechung aufeinander folgten, so
+          würde das Leiden über die Tätigkeit siegen. Wir würden uns mit dem Stoffe vermengen und
+          nicht mehr über demselben schweben. Dadurch, daß der Chor die Teile auseinanderhält und
+          zwischen die Passionen mit seiner beruhigenden Betrachtung tritt, gibt er uns unsre
+          Freiheit zurück, die im Sturm der Affekte verlorengehen würde. Auch die tragischen
+          Personen selbst bedürfen dieses Anhalts, dieser Ruhe, um sich zu sammeln; denn sie sind
+          keine wirkliche Wesen, die bloß der Gewalt des Moments gehorchen und bloß ein Individuum
+          darstellen, sondern ideale Personen und Repräsentanten ihrer Gattung, die das Tiefe der
+          Menschheit aussprechen. Die Gegenwart des Chors, der als ein richtender <pb n="822"/>
+          Zeuge sie vernimmt und die ersten Ausbrüche ihrer Leidenschaft durch seine Dazwischenkunft
+          bändigt, motiviert die Besonnenheit, mit der sie handeln, und die Würde, mit der sie
+          reden. Sie stehen gewissermaßen schon auf einem natürlichen Theater, weil sie vor
+          Zuschauern sprechen und handeln, und werden eben deswegen desto tauglicher, von dem
+          Kunsttheater zu einem Publikum zu reden.</p>
+        <p>Soviel über meine Befugnis, den alten Chor auf die tragische Bühne zurückzuführen. Chöre
+          kennt man zwar auch schon in der modernen Tragödie, aber der Chor des griechischen
+          Trauerspiels, so wie ich ihn hier gebraucht habe, der Chor als eine einzige ideale Person,
+          die die ganze Handlung trägt und begleitet, dieser ist von jenen operhaften Chören
+          wesentlich verschieden, und wenn ich bei Gelegenheit der griechischen Tragödie von
+            <emph>Chören</emph> anstatt von einem Chor sprechen höre, so entsteht mir der Verdacht,
+          daß man nicht recht wisse, wovon man rede. Der Chor der alten Tragödie ist meines Wissens
+          seit dem Verfall derselben nie wieder auf der Bühne erschienen.</p>
+        <p>Ich habe den Chor zwar in zwei Teile getrennt und im Streit mit sich selbst dargestellt;
+          aber dies ist nur dann der Fall, wo er als wirkliche Person und als blinde Menge
+          mithandelt. Als <emph>Chor</emph> und als ideale Person ist er immer eins mit sich selbst.
+          Ich habe den Ort verändert und den Chor mehrmal abgehen lassen; aber auch Aeschylus, der
+          Schöpfer der Tragödie, und Sophokles, der größte Meister in dieser Kunst, haben sich
+          dieser Freiheit bedient.</p>
+        <p>Eine andere Freiheit, die ich mir erlaubt, möchte schwerer zu rechtfertigen sein. Ich
+          habe die christliche Religion und die griechische Götterlehre vermischt angewendet, ja,
+          selbst an den maurischen Aberglauben erinnert. Aber der Schauplatz der Handlung ist
+          Messina, wo diese drei Religionen teils lebendig, teils in Denkmälern fortwirkten und zu
+          den Sinnen sprachen. Und dann halte ich es für ein Recht der Poesie, die verschiedenen
+          Religionen als ein kollektives Ganze für die Einbildungskraft zu behandeln, in welchem
+          alles, was einen eignen Charakter trägt, eine eigne Empfindungsweise ausdrückt, seine
+          Stelle findet. <emph>Unter der Hülle aller Religionen liegt die Religion selbst</emph>,
+          die Idee eines Göttlichen, und es muß dem Dichter erlaubt sein, dieses auszusprechen, in
+          welcher Form er es jedesmal am bequemsten und am treffendsten findet.</p>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="823"/> Personen.</head>
+          <castGroup>
+            <castItem><rs ref="#isabella">Donna Isabella, Fürstin von <rs ref="#Messina">Messina</rs></rs>.</castItem>
+            <castGroup>
+              <castItem><rs ref="#don_manuel">Don Manuel</rs>,</castItem>
+              <castItem><rs ref="#don_cesar">Don Cesar</rs>,</castItem>
+              <roleDesc><rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihre</rs> Söhne</rs>.</roleDesc>
+            </castGroup>
+            <castItem><rs ref="#beatrice">Beatrice</rs>.</castItem>
+            <castItem><rs ref="#diego">Diego</rs>.</castItem>
+            <castItem>Boten.</castItem>
+            <castItem><rs ref="#gesamter-Chor">Chor</rs>, besteht aus dem Gefolge <rs ref="#Die-Brüder-Manuel-und-Cesar">der Brüder</rs>.</castItem>
+            <castItem><rs ref="#Die-Ältesten-von-Messina">Die Ältesten von <rs ref="#Messina">Messina</rs></rs>, reden nicht.</castItem>
+          </castGroup>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <stage>Die Szene ist <rs ref="#eine-geräumige-Säulenhalle">eine geräumige Säulenhalle</rs>, auf beiden Seiten sind Eingänge, <rs ref="#eine-große-----------Flügeltüre">eine große
+          Flügeltüre</rs> in der Tiefe führt zu einer Kapelle.</stage>
+        <div type="scene">
+          <stage><rs ref="#Die-Brüder-Manuel-und-Cesar">Beide Brüder</rs>. <rs ref="#gesamter-Chor">Beide Chöre</rs>.</stage>
+          <sp who="#chor">
+            <rs ref="#gesamter-Chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Es sind nur <rs ref="#Worte">Worte</rs>, <rs ref="#Worte">die</rs> <rs ref="#isabella">sie</rs> gesprochen,</l>
+              <l>Aber <rs ref="#Worte">sie</rs> haben den fröhlichen Mut</l>
+              <l>In der felsigten Brust mir gebrochen!</l>
+              <l>Ich nicht vergoß das verwandte Blut.</l>
+              <l><pb n="838"/> Rein <rs ref="#der-Himmel-(nicht-religiös)">zum Himmel</rs> erheb ich die Hände,</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihr</rs> seid <rs ref="#Brüder">Brüder</rs>! Bedenket das Ende!</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>ohne <rs ref="#don_manuel">Don Manuel</rs> anzusehen.</stage>
+            <lg>
+              <l><rs ref="#don_manuel">Du</rs> bist der ältre Bruder, rede <rs ref="#don_manuel">du</rs>!</l>
+              <l><rs ref="#don_manuel">Dem Erstgebornen</rs> weich ich ohne Schande.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>in derselben Stellung.</stage>
+            <lg>
+              <l>Sag etwas Gutes und ich folge gern</l>
+              <l><rs ref="#Dem-edeln-Beispiel,-das-der-jüngre-gibt">Dem edeln Beispiel, <rs ref="#Dem-edeln-Beispiel,-das-der-jüngre-gibt">das</rs> <rs ref="#don_cesar">der jüngre</rs> gibt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Nicht weil ich für den Schuldigeren mich</l>
+              <l>Erkenne, oder schwächer gar mich fühle –</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Nicht Kleinmuts zeiht <rs ref="#don_cesar">Don Cesarn</rs>, wer <rs ref="#don_cesar">ihn</rs> kennt,</l>
+              <l>Fühlt' <rs ref="#don_cesar">er</rs> <rs ref="#don_cesar">sich</rs> schwächer, würd <rs ref="#don_cesar">er</rs> stolzer reden.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l>Denkst <rs ref="#don_manuel">du</rs> von <rs ref="#don_cesar"><rs ref="#don_manuel">deinem</rs> Bruder</rs> nicht geringer?</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#don_cesar">Du</rs> bist zu stolz zur Demut, ich zur Lüge.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Verachtung nicht erträgt <rs ref="#Don-Cesars-Herz">mein edles Herz</rs>.</l>
+              <l>Doch in des Kampfes heftigster Erbittrung</l>
+              <l>Gedachtest <rs ref="#don_manuel">du</rs> mit Würde <rs ref="#don_cesar"><rs ref="#don_manuel">deines</rs> Bruders</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#don_cesar">Du</rs> willst nicht <rs ref="#Don-Manuels-Tod">meinen Tod</rs>, ich habe Proben.</l>
+              <l><rs ref="#Ein-Mönch">Ein Mönch</rs> erbot <rs ref="#Ein-Mönch">sich</rs> <rs ref="#don_cesar">dir</rs>, mich meuchlerisch</l>
+              <l>Zu morden, <rs ref="#don_cesar">du</rs> bestraftest <rs ref="#don_cesar">den Verräter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>tritt etwas näher.</stage>
+            <lg>
+              <l>Hätt ich <rs ref="#don_manuel">dich</rs> früher so gerecht erkannt,</l>
+              <l>Es wäre vieles ungeschehn geblieben.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Und hätt ich <rs ref="#don_cesar">dir</rs> ein so versöhnlich Herz</l>
+              <l>Gewußt, viel Mühe spart ich dann <rs ref="#isabella">der Mutter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#don_manuel">Du</rs> wurdest mir viel stolzer abgeschildert.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Es ist der Fluch <rs ref="#der-Hohen">der Hohen</rs>, daß <rs ref="#die-Niedern">die Niedern</rs></l>
+              <l><rs ref="#die-Niedern">Sich</rs> <rs ref="#der-Hohen">ihres</rs> offnen Ohrs bemächtigen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR</speaker></rs>
+            <stage>lebhaft.</stage>
+            <l>So ist, <rs ref="#gesamter-Chor">die Diener</rs> tragen alle Schuld!</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#gesamter-Chor">Die</rs> <rs ref="#Don-Cesars-Herz-/-Don-Manuels-Herz"><rs ref="#Die-Brüder-Manuel-und-Cesar">unser</rs> Herz</rs> in bitterm Haß entfremdet.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#gesamter-Chor"><emph>Die</emph></rs> böse Worte hin und wider trugen.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Mit falscher Deutung jede Tat vergiftet.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#Die-Wunde">Die Wunde</rs> nährten, <rs ref="#Die-Wunde">die</rs> <rs ref="#gesamter-Chor">sie</rs> heilen sollten.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Die-Flamme2">Die Flamme</rs> schürten, <rs ref="#Die-Flamme2">die</rs> <rs ref="#gesamter-Chor">sie</rs> löschen konnten.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Wir</rs> waren die Verführten, die Betrognen!</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Das blinde Werkzeug fremder Leidenschaft!</l>
+            <pb n="839"/>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l><rs ref="#daß-alles-andre-treulos-ist"><emph>Ists</emph></rs> wahr, <rs ref="#daß-alles-andre-treulos-ist">daß alles andre treulos ist</rs> –</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l>Und falsch! <rs ref="#isabella">Die Mutter</rs> <rs ref="#daß-alles-andre-treulos-ist">sagts</rs>, <rs ref="#don_cesar">du</rs> darfst <rs ref="#daß-alles-andre-treulos-ist">es</rs> glauben!</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <l>So will ich diese Bruderhand ergreifen –</l>
+            <stage><rs ref="#don_cesar">Er</rs> reicht <rs ref="#don_manuel">ihm</rs> <rs ref="#Don-Cesars-Hand">die Hand</rs> hin.</stage>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL</speaker></rs>
+            <stage>ergreift <rs ref="#Don-Cesars-Hand">sie</rs> lebhaft.</stage>
+            <l><rs ref="#Don-Cesars-Hand">Die</rs> mir die nächste ist auf <rs ref="#die-Welt">dieser Welt</rs>.</l>
+            <stage><rs ref="#Die-Brüder-Manuel-und-Cesar">Beide</rs> stehen Hand in Hand und betrachten einander eine Zeitlang
+              schweigend.</stage>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Ich seh <rs ref="#don_manuel">dich</rs> an und überrascht, erstaunt</l>
+              <l>Find ich in <rs ref="#don_manuel">dir</rs> <rs ref="#Isabellas-Züge"><rs ref="#isabella">der Mutter</rs> teure Züge</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#eine-Ähnlichkeit">eine Ähnlichkeit</rs> entdeckt <rs ref="#eine-Ähnlichkeit">sich</rs> mir</l>
+              <l>In <rs ref="#don_cesar">dir</rs>, <rs ref="#eine-Ähnlichkeit">die</rs> mich noch wunderbarer rühret.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Bist <rs ref="#don_manuel">du</rs> <rs ref="#der-dem-jüngern-Bruder---------------So-hold-begegnet-und-so-gütig-spricht">es</rs> wirklich, <rs ref="#der-dem-jüngern-Bruder---------------So-hold-begegnet-und-so-gütig-spricht">der <rs ref="#don_cesar">dem jüngern Bruder</rs></l>
+              <l>So hold begegnet und so gütig spricht</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ist <rs ref="#don_cesar">dieser freundlich sanftgesinnte Jüngling</rs></l>
+              <l>Der übelwollend mir gehäßge Bruder?</l>
+            </lg>
+            <stage>Wiederum Stillschweigen; <rs ref="#Die-Brüder-Manuel-und-Cesar">jeder</rs> steht in den Anblick <rs ref="#Die-Brüder-Manuel-und-Cesar">des andern</rs> verloren.</stage>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l><rs ref="#don_manuel">Du</rs> nahmst <rs ref="#die-Pferde-von-arabscher-Zucht">die Pferde von arabscher Zucht</rs></l>
+              <l>In Anspruch, aus dem Nachlaß <rs ref="#Isabellas-Gatte,-der-Fürst"><rs ref="#Die-Brüder-Manuel-und-Cesar">unsers</rs> Vaters</rs>.</l>
+              <l><rs ref="#Den-Rittern,-die-du-schicktest">Den Rittern, <rs ref="#Den-Rittern,-die-du-schicktest">die</rs> <rs ref="#don_manuel">du</rs> schicktest</rs>, schlug ichs ab.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Den-Rittern,-die-du-schicktest">Sie</rs> sind <rs ref="#don_cesar">dir</rs> lieb, ich denke nicht mehr dran.</l>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Nein, nimm <rs ref="#die-Pferde-von-arabscher-Zucht">die Rosse</rs>, nimm den Wagen auch</l>
+              <l>Des Vaters, <rs ref="#nimm-sie">nimm sie</rs>, ich beschwöre <rs ref="#don_manuel">dich</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ich will <rs ref="#nimm-sie">es</rs> tun, wenn <rs ref="#don_cesar">du</rs> <rs ref="#das-Schloß-am-Meere">das Schloß <rs ref="#das-Meer">am Meere</rs></rs></l>
+              <l>Beziehen willst, um das <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> heftig stritten.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Ich nehm <rs ref="#das-Schloß-am-Meere">es</rs> nicht, doch bin <rs ref="#Daß-wirs-gemeinsam-brüderlich-bewohnen">ichs</rs> wohl zufrieden,</l>
+              <l><rs ref="#Daß-wirs-gemeinsam-brüderlich-bewohnen">Daß <rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#das-Schloß-am-Meere">wirs</rs></rs> gemeinsam brüderlich bewohnen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>So seis! Warum ausschließend Eigentum</l>
+              <l>Besitzen, da <rs ref="#Don-Cesars-Herz-/-Don-Manuels-Herz">die Herzen</rs> einig sind.</l>
+            </lg>
+          </sp>
+          <sp who="#don_cesar">
+            <rs ref="#don_cesar"><speaker>DON CESAR.</speaker></rs>
+            <lg>
+              <l>Warum noch länger abgesondert leben,</l>
+              <l>Da <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs>, vereinigt, <rs ref="#Die-Brüder-Manuel-und-Cesar">jeder</rs> reicher werden?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Wir</rs> sind nicht mehr getrennt, <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> sind vereinigt.</l>
+            <stage><rs ref="#don_manuel">Er</rs> eilt in <rs ref="#Don-Cesars-Arme"><rs ref="#don_cesar">seine</rs> Arme</rs>.</stage>
+          </sp>
+          <sp who="#erster_chor">
+            <rs ref="#erster_chor"><speaker>ERSTER CHOR</speaker></rs>
+            <stage><rs ref="#zweiter_chor">zum zweiten</rs>.</stage>
+            <lg>
+              <l>Was stehen <rs ref="#gesamter-Chor">wir</rs> hier noch feindlich geschieden,</l>
+              <l><pb n="840"/> Da <rs ref="#Die-Brüder-Manuel-und-Cesar">die Fürsten</rs> <rs ref="#Die-Brüder-Manuel-und-Cesar">sich</rs> liebend umfassen?</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Ihrem</rs> Beispiel folg ich und biete <rs ref="#zweiter_chor">dir</rs> Frieden,</l>
+              <l>Wollen <rs ref="#gesamter-Chor"><emph>wir</emph></rs> einander denn ewig hassen?</l>
+              <l>Sind <rs ref="#Die-Brüder-Manuel-und-Cesar">sie</rs> Brüder durch <rs ref="#Blut">Blutes</rs> Bande,</l>
+              <l>Sind <rs ref="#gesamter-Chor"><emph>wir</emph></rs> Bürger und Söhne von <emph>einem</emph> Lande.</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#gesamter-Chor">Beide Chöre</rs> umarmen <rs ref="#gesamter-Chor">sich</rs>.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

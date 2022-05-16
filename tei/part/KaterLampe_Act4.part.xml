@@ -1,0 +1,1297 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Kater Lampe</title>
+        <title type="sub">Komödie in vier Akten</title>
+        <author key="pnd:119194724">Rosenow, Emil</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000081</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1260659</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:tgw6.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Dramen des deutschen Naturalismus. Nach den Erstausgaben oder den Ausgaben
+              letzter Hand, herausgegeben von Roy C. Cowen, München: Winkler Verlag, 1981.</title>
+            <date type="print" when="1906">1906</date>
+            <date type="premiere" when="1902">1902</date>
+            <date type="written" when="1900">1900</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="frau_ermischer" sex="FEMALE">
+            <persName>Frau Ermischer</persName>
+          </person>
+          <person xml:id="maari" sex="FEMALE">
+            <persName>Maari</persName>
+          </person>
+          <person xml:id="ermischer" sex="MALE">
+            <persName>Ermischer</persName>
+          </person>
+          <person xml:id="ulbrich" sex="MALE">
+            <persName>Ulbrich</persName>
+          </person>
+          <person xml:id="seifert" sex="MALE">
+            <persName>Seifert</persName>
+          </person>
+          <person xml:id="weigel" sex="MALE">
+            <persName>Gendarm Weigel</persName>
+          </person>
+          <person xml:id="neubert" sex="MALE">
+            <persName>Neubert</persName>
+          </person>
+          <person xml:id="frau_neubert" sex="FEMALE">
+            <persName>Frau Neubert</persName>
+          </person>
+          <person xml:id="neumerkel" sex="MALE">
+            <persName>Neumerkel</persName>
+          </person>
+          <person xml:id="heinerle" sex="MALE">
+            <persName>Heinerle</persName>
+          </person>
+          <person xml:id="fraenzel" sex="FEMALE">
+            <persName>Fränzel</persName>
+          </person>
+          <person xml:id="liesel" sex="FEMALE">
+            <persName>Liesel</persName>
+          </person>
+          <person xml:id="frau_schoenherr" sex="FEMALE">
+            <persName>Frau Schönherr</persName>
+          </person>
+          <person xml:id="gertrud" sex="FEMALE">
+            <persName>Gertrud</persName>
+          </person>
+          <person xml:id="schoenherr" sex="MALE">
+            <persName>Meister Schönherr</persName>
+          </person>
+          <person xml:id="frau_ulbrich" sex="FEMALE">
+            <persName>Frau Ulbrich</persName>
+          </person>
+          <person xml:id="frau_seifert" sex="FEMALE">
+            <persName>Frau Seifert</persName>
+          </person>
+          <personGrp xml:id="die_waldarbeiter" sex="MALE">
+            <name>Die Waldarbeiter</name>
+          </personGrp>
+          <person xml:id="ein_bauer" sex="MALE">
+            <persName>Ein Bauer</persName>
+          </person>
+          <personGrp xml:id="die_schnitzler_schnitzlersleute" sex="MALE">
+            <name>Die Schnitzler/Schnitzlersleute</name>
+          </personGrp>
+          <personGrp xml:id="die_bauern" sex="MALE">
+            <name>Die Bauern</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="spouses" mutual="#ermischer #frau_ermischer"/>
+            <relation name="spouses" mutual="#frau_schoenherr #schoenherr"/>
+            <relation name="spouses" mutual="#frau_seifert #seifert"/>
+            <relation name="spouses" mutual="#frau_ulbrich #ulbrich"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Komödie</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-04-07">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Emil Rosenow</head>
+        <head>Kater Lampe</head>
+        <head>Komödie in vier Akten</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="466"/> Personen.</head>
+          <castItem>Ermischer, Bauerngutsbesitzer und Gemeindevorstand.</castItem>
+          <castItem>Frau Ermischer.</castItem>
+          <castItem>Maari, die Magd.</castItem>
+          <castItem>Neubert, ein großer Spielwarenverleger.</castItem>
+          <castItem>Frau Neubert.</castItem>
+          <castGroup>
+            <castItem>Hartmann Schönherr, Holzdrehermeister</castItem>
+            <castItem>Frau Schönherr</castItem>
+            <castItem>Gertrud, Kind</castItem>
+            <castItem>Heinerle, Kind</castItem>
+            <castItem>Fränzel, Kind</castItem>
+            <castItem>Liesel, Kind</castItem>
+            <roleDesc>Holzspielwarenschnitzler.</roleDesc>
+          </castGroup>
+          <castItem>Neumerkel, der Gesell.</castItem>
+          <castItem>Weigel, Bezirksgendarm.</castItem>
+          <castItem>Seifert, Gemeindediener.</castItem>
+          <castItem>Frau Seifert.</castItem>
+          <castItem>Ulbrich, Landbriefträger.</castItem>
+          <castItem>Frau Ulbrich.</castItem>
+          <castItem>Eine Anzahl Schnitzlersleute, Waldarbeiter und Bauern.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Der Schauplatz der Komödie ist ein Spielwarenindustrieort im oberen sächsischen
+          Erzgebirge.</p>
+        <p>Der erste Akt spielt auf dem Gemeindeamte, der zweite in der Wohn- und Arbeitsstube der
+          Schnitzlerfamilie Schönherr, der dritte in der Hütte des Gemeindedieners und der vierte
+          auf dem »Reihenschank« in Ulbrichs Hause.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head><pb n="524"/> Vierter Akt</head>
+        <stage><rs ref="#ulbrich-/-frau_ulbrich">Die beiden Ulbrichs</rs>. <rs ref="#seifert-/-frau_seifert">Die beiden Seiferts</rs>. <rs ref="#ermischer">Ermischer</rs>. <rs ref="#neubert">Neubert</rs>. <rs ref="#weigel">Weigel</rs>. <rs ref="#neumerkel-bb">Neumerkel</rs>.
+          <rs ref="#schoenherr">Schönherr</rs>, <rs ref="#die_schnitzler_schnitzlersleute">Schnitzlersleute</rs>, <rs ref="#die_waldarbeiter">Waldarbeiter</rs>, <rs ref="#die_bauern">Bauern</rs>.</stage>
+        <stage>Erdgeschoßstube im Hause <rs ref="#ulbrich-/-frau_ulbrich">Ulbrichs</rs>. <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">Eine Wohnstube, <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">die</rs> in ein provisorisches
+          Schanklokal umgewandelt wurde</rs>. <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">Beschränkter niedriger Raum</rs>, getünchte Wände. <rs ref="#Linker-Hand-(linke-seite-der-bühne-oder-linke-seitenwand-ulbrichs-schanklokal)">Linker Hand</rs>,
+          nach <rs ref="#der-Straße-(um-ulbrichs-haus)">der Straße</rs> zu, <rs ref="#zwei-niedrige-Fenster,-durch-die-man-ein-paar-kahle-Bäume-sieht-(schanklokal-eg-ulbrichs)">zwei niedrige Fenster, durch <rs ref="#zwei-niedrige-Fenster,-durch-die-man-ein-paar-kahle-Bäume-sieht-(schanklokal-eg-ulbrichs)">die</rs> man ein paar kahle Bäume sieht</rs>. In
+          <rs ref="#der-Hinterwand-(schanklokal-eg-ulbrichs)">der Hinterwand</rs> links <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">die Türe <rs ref="#zum-Hausflur-(eg-ulbrichs)">zum Hausflur</rs></rs>, in der Mitte <rs ref="#der-rechten-Seitenwand-(ulbrichs-schanklokal)">der rechten Seitenwand</rs> die Türe
+          zur Nebenstube. Die Zimmerwände sind rundum mit Tannengewinde geschmückt. Über <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">der Türe
+          <rs ref="#zum-Hausflur-(eg-ulbrichs)">zum Flur</rs></rs> hängt ein tannenumwundener plumper Farbendruck: »Willkommen!« In der Mitte <rs ref="#der-Hinterwand-(schanklokal-eg-ulbrichs)">der
+          Hinterwand</rs> steht <rs ref="#ein-ärmlicher-Glasschrank-mit-allerlei-altertümlichem-Porzellangeschirr-----------und-mit-Prunkstücken-vollgepfropft">ein ärmlicher Glasschrank mit allerlei altertümlichem Porzellangeschirr
+          und mit Prunkstücken vollgepfropft</rs>. Davor auf einer Bank zwei Bierfässer. Dicht neben <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">der
+          Türe</rs> <rs ref="#ein-kleiner-Tisch-mit-Biergläsern">ein kleiner Tisch mit Biergläsern</rs>, rechts von <rs ref="#ein-ärmlicher-Glasschrank-mit-allerlei-altertümlichem-Porzellangeschirr-----------und-mit-Prunkstücken-vollgepfropft">dem Glasschranke</rs>, neben <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">dem mächtigen
+          Kachelofen, <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">der</rs> <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">sich</rs> in der Ecke erhebt</rs>, ein ebensolcher Tisch mit <rs ref="#Schüsseln-voll-Wurst-----------und-Wellfleisch-(zwiter-tisch-schanklokal)">Schüsseln voll Wurst
+          und Wellfleisch</rs>, sowie eine Tellersäule. So ist primitiv ein Büfett hergestellt. An <rs ref="#der-Hinterwand-(schanklokal-eg-ulbrichs)">der
+          Hinterwand</rs> noch ein paar Buntdrucke: »Heute Schlachtfest!« (<rs ref="#Ein-Fleischer,-der-ein-Schwein-----------schlachtet-(auf-dem-kunstdruck-schanklokal-zu-sehen)">Ein Fleischer, <rs ref="#Ein-Fleischer,-der-ein-Schwein-----------schlachtet-(auf-dem-kunstdruck-schanklokal-zu-sehen)">der</rs> ein Schwein
+          schlachtet</rs>.) »Hier ist Reihenschank!« (Ein Bock mit schäumendem Bierglas.) Vor <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">dem Ofen</rs>
+          <rs ref="#eine-Bank-(vor-dem-ofen-schanklokal,-andere-bank-als-mit-bierfässern)">eine Bank</rs>. An <rs ref="#der-rechten-Seitenwand-(ulbrichs-schanklokal)">der rechten Seitenwand</rs> eine altertümliche Uhr, nach vorne eine Kommode, an
+          <rs ref="#der-rechten-Seitenwand-(ulbrichs-schanklokal)">der Wand</rs> Bilder und Spiegel. <rs ref="#Linker-Hand-(linke-seite-der-bühne-oder-linke-seitenwand-ulbrichs-schanklokal)">Links</rs> zwischen <rs ref="#zwei-niedrige-Fenster,-durch-die-man-ein-paar-kahle-Bäume-sieht-(schanklokal-eg-ulbrichs)">den Fenstern</rs> <rs ref="#ein-plumpes-Ledersofa">ein plumpes Ledersofa</rs>, an <rs ref="#Linker-Hand-(linke-seite-der-bühne-oder-linke-seitenwand-ulbrichs-schanklokal)">der
+          Wand</rs> ein paar Photographien. Von der Mitte der niedrigen Decke eine Lampe herabhängend.
+          Inmitten <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">der Stube</rs> <rs ref="#ein-runder-Tisch">ein runder Tisch</rs>, um <rs ref="#ein-runder-Tisch">ihn</rs> ein paar Holzstühle. Längs <rs ref="#der-rechten-Seitenwand-(ulbrichs-schanklokal)">der rechten Wand</rs>
+          zwei Tische mit Bänken. Links vor <rs ref="#ein-plumpes-Ledersofa">dem Sofa</rs> sowie vor <rs ref="#zwei-niedrige-Fenster,-durch-die-man-ein-paar-kahle-Bäume-sieht-(schanklokal-eg-ulbrichs)">dem Fenster</rs> Tische mit Stühlen und
+          Bänken. Durch <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">die Türe <rs ref="#der-Hinterwand-(schanklokal-eg-ulbrichs)">im Hintergrunde</rs></rs> blickt <rs ref="#man-(der-mensch)">man</rs>, auf der andern Seite <rs ref="#zum-Hausflur-(eg-ulbrichs)">des Hausflurs</rs>, in
+          <rs ref="#eine-Stube,-in-der-ein-Bett-steht">eine Stube, in <rs ref="#eine-Stube,-in-der-ein-Bett-steht">der</rs> <rs ref="#ein-Bett">ein Bett</rs> steht</rs>.</stage>
+        <stage>Schöner Tag beim Beginne des Frühjahrs. <rs ref="#frau_ulbrich">Frau Ulbrich, sauber gekleidet</rs>, hantiert in
+          blauer Schürze <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">am Ofen</rs> und an <rs ref="#Schüsseln-voll-Wurst-----------und-Wellfleisch-(zwiter-tisch-schanklokal)"><rs ref="#frau_ulbrich">ihren</rs> Fleischschüsseln</rs>.</stage>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage>Arbeitsanzug, tritt hastig ein.</stage>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag ooch</rs>, <rs ref="#frau_ulbrich">Fra' Ulbrich'n</rs>. Is <rs ref="#ulbrich">der Mon</rs> noch nich' da?</p>
+          <pb n="525"/>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag</rs>, <rs ref="#schoenherr">Meester</rs>. Nee, <rs ref="#ulbrich">er</rs> is nich' da. Ich lauere ooch schon. <rs ref="#Die-Reih'schankzeit-(schanklokal-ulbrichs)">Die Reih'schankzeit</rs> is da, 's
+            können <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">Leute</rs> kommen und <rs ref="#ulbrich">er</rs> läßt mich hie alleene.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Ich möcht' doch gar zu gerne '<rs ref="#was-Bestimmtes-(die-information-die-schönherr-wissen-will)">was Bestimmtes</rs> wissen ... Gebt mir <rs ref="#een-Glas-(bier)">een Glas</rs> Eefach, <rs ref="#frau_ulbrich">Frau
+            Ulbrich'n</rs>.</p>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH</speaker></rs>
+          <stage>bringt es schon.</stage>
+          <p>Hie is. Wohlsein, <rs ref="#schoenherr">Meester</rs>. <rs ref="#schoenherr">Sie</rs> sein der erschte Gast. <rs ref="#ulbrich-/-frau_ulbrich">M'r</rs> hofft, <rs ref="#schoenherr">Sie</rs> bringen <rs ref="#ulbrich-/-frau_ulbrich">uns</rs> Glücke
+            <rs ref="#Die-Reih'schankzeit-(schanklokal-ulbrichs)">zum Reih'schank</rs>.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#schoenherr">M'r</rs> hofft ... Wohlsein. <stage>Trinkt.</stage> 's is nischt mehr los mit <rs ref="#dem-------------Reih'schank">dem
+            Reih'schank</rs>. Ich mach' längst keenen mehr.</p>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH.</speaker></rs>
+          <p>Ja, <rs ref="#des">des</rs> is 's eben: <rs ref="#des"><rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">die Leute</rs> hangen nich' mehr an den alten Sachen</rs>.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Ja, ja ... wo bleibt <rs ref="#ulbrich">'r</rs> nur, der Ulbrich?</p>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH.</speaker></rs>
+          <p>Is <rs ref="#was-Bestimmtes-(die-information-die-schönherr-wissen-will)">'s</rs> so dringlich, <rs ref="#schoenherr">Meester</rs>?</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Ja, ich wollt' mit <rs ref="#ulbrich">ihm</rs> reden wegen <rs ref="#neumerkel-bb">dem Gesell'n, den Neimerkel</rs>. <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">Man</rs> spricht: <rs ref="#des2"><rs ref="#neumerkel-bb">er</rs> hat
+            <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">eene Erbschaft</rs> gemacht</rs>.</p>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH.</speaker></rs>
+          <p>Ei der Tausend, wie sollt' <rs ref="#des2">des</rs> möglich sinn!</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Er</rs> hat doch <rs ref="#eene-Schwester,-drüben-in-Marienberg,-een-ganz-armes-Bettelmensch-(neumerkels-schwester)">eene Schwester, drüben in Marienberg, een ganz armes Bettelmensch</rs>. <rs ref="#eene-Schwester,-drüben-in-Marienberg,-een-ganz-armes-Bettelmensch-(neumerkels-schwester)">Die</rs> is
+            gestorben, und wie <rs ref="#se-(die-die-neumerkels-schwester-aus-dem-sarg-holen)">se</rs> <rs ref="#eene-Schwester,-drüben-in-Marienberg,-een-ganz-armes-Bettelmensch-(neumerkels-schwester)">sie</rs> aus der Holzkiste, da drinne <rs ref="#eene-Schwester,-drüben-in-Marienberg,-een-ganz-armes-Bettelmensch-(neumerkels-schwester)">sie</rs> schlief, 'rausnehmen, finden
+            <rs ref="#se-(die-die-neumerkels-schwester-aus-dem-sarg-holen)">se</rs> im fauligen Stroh eenen Strump mit <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">'n zwanzig Daler an Ersparten</rs> ... <rs ref="#neumerkel-bb">Der Neimerkel</rs> is
+            der eenz'ge Erbberechtigte und vor 'n Stunden 'ner zwee hat <rs ref="#neumerkel-bb">ihm</rs> <rs ref="#ulbrich">der Ulbrich</rs> die
+            Geldanweisung gebracht. <rs ref="#Währenddem">Itze is '<rs ref="#neumerkel-bb">r</rs> nach <rs ref="#Olbernhau">Olbernhau</rs> uff die Post, <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">'s Geld</rs> holen</rs>.</p>
+          <stage><rs ref="#Währenddem">Währenddem</rs> sind <rs ref="#die_waldarbeiter">ein paar Waldarbeiter</rs> eingetreten; abgerackerte Leute, gebräunte
+            Gesichter. <rs ref="#die_waldarbeiter">Sie</rs> rauchen Pfeifen, tragen Seile, Beile, Stammsäge. <rs ref="#die_waldarbeiter">Sie</rs> sind zuhorchend
+            stehen geblieben.</stage>
+        </sp>
+        <sp who="#frau_ulbrich #die_waldarbeiter">
+          <speaker><rs ref="#frau_ulbrich">FRAU ULBRICH</rs>, <rs ref="#die_waldarbeiter">DIE WALDARBEITER</rs></speaker>
+          <stage><rs ref="#Ausrufe-des-Erstaunens-(waldarbeiter-und-frau-ulbrich)">Ausrufe <rs ref="#des-Erstaunens">des Erstaunens</rs></rs>.</stage>
+          <p>Ei nu, was wird <rs ref="#neumerkel-bb">er</rs> nu machen ... <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">eso viel Geld</rs> ... <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">eso een Glück</rs> ...</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Und nu möcht' <rs ref="#man-(der-mensch)">man</rs> doch Obacht geben, daß <rs ref="#neumerkel-bb">er</rs> nich' etwa'n Dummheeten macht mit <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">all dem
+            Gelde</rs>.</p>
+          <stage><rs ref="#die_waldarbeiter">Die Waldarbeiter</rs> setzen <rs ref="#die_waldarbeiter">sich</rs> an einen Tisch, <rs ref="#frau_ulbrich">Frau Ulbrich</rs> bringt <rs ref="#die_waldarbeiter">ihnen</rs> Bier.
+            Währenddem kommt <rs ref="#ulbrich">Ulbrich</rs> angehetzt.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag ooch</rs>.</p>
+        </sp>
+        <sp who="#die_waldarbeiter">
+          <rs ref="#die_waldarbeiter"><speaker>DIE MÄNNER.</speaker></rs>
+          <p>Ah, da kommt <rs ref="#ulbrich">er, der Wirt</rs> ... <rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag ooch</rs>.</p>
+        </sp>
+        <sp who="#frau_ulbrich">
+          <rs ref="#frau_ulbrich"><speaker>FRAU ULBRICH.</speaker></rs>
+          <p>Nu sag bloß, <rs ref="#ulbrich">Mann</rs>, wo bleibst du nur.</p>
+          <pb n="526"/>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH</speaker></rs>
+          <stage>steht <rs ref="#zum-Hausflur-(eg-ulbrichs)">im Hausflur</rs>, wirft <rs ref="#ulbrich">seine</rs> Dienstsachen m <rs ref="#eine-Stube,-in-der-ein-Bett-steht">die hintere Stube</rs> <rs ref="#ein-Bett">aufs Bett</rs>, zieht
+            einen blauen Hauskittel an.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">Hat's</rs> denn <rs ref="#seine-Richtigkeet-(rechtmäßigkeit-von-neumerkels-erbschaftsvorgang)"><rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">seine</rs> Richtigkeet</rs> mit <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)"><rs ref="#neumerkel-bb">Neimerkels</rs> Erbschaft</rs>, hä?</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Nu laßt mich bloß, ich hab' mich abgehetzt ... also, <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">'s</rs> hat <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">alles</rs> <rs ref="#seine-Richtigkeet-(rechtmäßigkeit-von-neumerkels-erbschaftsvorgang)"><rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">seine</rs> Richtigkeet</rs>.
+            Ich bin dabei gewesen, <rs ref="#neumerkel-bb">wie'n</rs> der Sekretär <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">'s Geld</rs> ausgezahlt hat. <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">Zwanzig Taler</rs>.</p>
+          <stage><rs ref="#Ausrufe-des-Erstaunens-(waldarbeiter-und-frau-ulbrich)">Ausrufe <rs ref="#des-Erstaunens">des Erstaunens</rs></rs>.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Was macht <rs ref="#neumerkel-bb">er</rs> nu?</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Er</rs> sitzt im »Erbgericht« in <rs ref="#Olbernhau">Olbernhau</rs> und macht »Fettlebe«.</p>
+          <stage>Gelächter.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Wenn <rs ref="#neumerkel-bb">er</rs> nur keen dummes Zeug angibt.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>I ja, se werden <rs ref="#neumerkel-bb">ihm</rs> <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)"><rs ref="#neumerkel-bb">sein</rs> bill' Geld</rs> schon beizeeten allemachen.</p>
+          <stage><rs ref="#ermischer">Ermischer</rs> und <rs ref="#seifert">Seifert</rs> kommen herein. <rs ref="#ermischer">Ermischers</rs> Gesicht ist leidlich wieder
+            hergestellt. <rs ref="#die_waldarbeiter">Die Leute</rs> stoßen <rs ref="#die_waldarbeiter">sich</rs> an; <rs ref="#Zeichen-(gestik-waldarbeiter)">Zeichen</rs>, unterdrücktes Kichern. <rs ref="#ermischer">Ermischer</rs> nimmt
+            an <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)">einem leeren Tische</rs> Platz, <rs ref="#seifert">Seifert</rs> setzt <rs ref="#seifert">sich</rs> auf <rs ref="#eine-Bank-(vor-dem-ofen-schanklokal,-andere-bank-als-mit-bierfässern)">die Ofenbank</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Ta-a-g</rs>.</p>
+        </sp>
+        <sp who="#die_waldarbeiter">
+          <rs ref="#die_waldarbeiter"><speaker>DIE LEUTE.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag ooch</rs>.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH</speaker></rs>
+          <stage>hereinkommend, höhnisch die Mütze ziehend.</stage>
+          <p>Ah, <rs ref="#ermischer">der Ermischer</rs>. Nu, wie is denn das? Steh'n mir itze wieder eso mitenander, daß <rs ref="#ermischer">du</rs>
+            mich besuchst?</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>'s is doch <rs ref="#Die-Reih'schankzeit-(schanklokal-ulbrichs)">Reih'schank</rs>. Meine Pflicht is <rs ref="#es">es</rs>, <rs ref="#es">nach <rs ref="#dem-Rechten">dem Rechten</rs> zu seh'n</rs> ... <rs ref="#een-Glas-(bier)">een
+            Zuckerbier</rs> trink' ich.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>'s recht, un' <rs ref="#seifert">der Seifert</rs>?</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p>Ich dank' scheen, ich bin <rs ref="#im-Dienst-(seifert)">im Dienst</rs>.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Nu ... <rs ref="#een-Glas-(bier)">een Glas Eefaches</rs> bist <rs ref="#seifert">du</rs> mir schonn wert ... Herrjess's, wie siehste denn aus,
+            hä?!</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p>Laß <rs ref="#ulbrich">du</rs> mich zufrieden. <rs ref="#man-(der-mensch)">Een jeder</rs> tragt <rs ref="#man-(der-mensch)">sein</rs> Päckel, un' ich hab' meinen Steen uff dem
+            Gewissen.</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Uff <rs ref="#seifert">seine</rs> alten Tage kriegt's nu <rs ref="#seifert">der Dingerich</rs> noch in den Kopp.</p>
+          <stage>Unterdessen treten <rs ref="#die_bauern">Bauern</rs> ein, ärmliche, von der Feldarbeit gebräunte Leute. <rs ref="#die_bauern">Die</rs>
+            setzen <rs ref="#die_bauern">sich</rs> an <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)"><rs ref="#ermischer">Ermischers</rs> Tisch</rs>.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Nu, <rs ref="#ermischer">Herr Fierstand, Sie</rs> sein ja wieder uff <rs ref="#dem-Posten-(dienst-ermischer)">dem Posten</rs>. Vor'n Wochen 'ner dreie sah ich
+            <rs ref="#ermischer">Sie</rs>, da sah'n <rs ref="#ermischer">Sie</rs> aus, als kämen <rs ref="#ermischer">Sie</rs> aus dem Türkenkrieg.</p>
+          <stage><rs ref="#Gelächter">Unterdrücktes Gelächter</rs>.</stage>
+          <pb n="527"/>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>wütender Blick auf <rs ref="#schoenherr">Schönherr</rs>, dann zu <rs ref="#die_bauern">den Bauern</rs>.</stage>
+          <p><rs ref="#Des"><rs ref="#Die-Reih'schankzeit-(schanklokal-ulbrichs)">Der Reih'schank</rs> geht recht laut dahie</rs>, hä?</p>
+        </sp>
+        <sp who="#ein_bauer">
+          <speaker>EIN BAUER.</speaker>
+          <p><rs ref="#Des">Des</rs> wird noch besser. Haußen leeft <rs ref="#neubert">der Neibert-Verlag'r</rs> 'rumm un' holt 'nen ganzen Zopp
+            Schnitzlersleute zusammen.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage>höhnisch zu <rs ref="#die_waldarbeiter">den Arbeitern</rs>.</stage>
+          <p>Des macht, <rs ref="#die-Sache"><rs ref="#neubert">der große Neibert</rs> möchte doch gerne in <rs ref="#den-Gemeenderat">den Gemeenderat</rs></rs>, da gibt <rs ref="#neubert">'r</rs> nu <rs ref="#'ne-------------Lage-Freibier-(bestechungsbier-neuberts-an)">'ne
+            Lage Freibier</rs> und eso wird denn <rs ref="#die-Sache">die Sache</rs> gemacht, hähä.</p>
+          <stage><rs ref="#neubert">Der Verleger Neubert</rs> erscheint unter <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">der Türe</rs> mit <rs ref="#die_schnitzler_schnitzlersleute">einer Anzahl Schnitzlermeistern,
+            dürftigen, schüchternen Leuten</rs>.</stage>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Kommen <rs ref="#die_schnitzler_schnitzlersleute">Sie</rs> nur herein, meine Herren, <rs ref="#die_schnitzler_schnitzlersleute">Sie</rs> brauchen <rs ref="#die_schnitzler_schnitzlersleute">sich</rs> nicht zu genieren. <rs ref="#des3">Ich sehe eine
+            Ehre drinn ... heut sind <rs ref="#die_schnitzler_schnitzlersleute">Sie</rs> meine Gäste</rs>.</p>
+        </sp>
+        <sp who="#die_schnitzler_schnitzlersleute">
+          <rs ref="#die_schnitzler_schnitzlersleute"><speaker>DIE SCHNITZLER.</speaker></rs>
+          <p>Nee, <rs ref="#neubert">Herr Neibert</rs>, eso geht <rs ref="#des3">des</rs> nich'. – <rs ref="#des3">Des</rs> woll'n mir nich' ha'm. – Mir sein
+            Meester.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Machen <rs ref="#die_schnitzler_schnitzlersleute">Sie</rs> doch nich' so viel Umstände wegen '<rs ref="#een-Glas-(bier)">nem Glas Bier</rs>. <rs ref="#Herrgott-(wohl-floskel)">Herrgott</rs> noch mal! Ich bin
+            ja schließlich auch bloß Meister ... <rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag</rs>, ihr Leute.</p>
+          <stage><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Allgemeines Grüßen</rs>. <rs ref="#schoenherr">Schönherr</rs> und <rs ref="#neubert">Neubert</rs> messen sich mit grimmigen
+            Blicken.</stage>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Na, <rs ref="#ulbrich">Ulbrich</rs>, ich bin auch 'mal zu <rs ref="#ulbrich-/-frau_ulbrich">Ihnen</rs> gekommen ... will 'mal sehen, wie's auf so <rs ref="#dem-------------Reih'schank">'nem
+            Reih'schank im Gebirge</rs> zugeht.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>'s recht, <rs ref="#neubert">Herr Neibert</rs>. Womit kann ich dienen?</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Geben <rs ref="#ulbrich">Sie</rs> 'mal <rs ref="#een-Glas-(bier)">Bier</rs> her. <rs ref="#die_schnitzler_schnitzlersleute">Den Meistern</rs> hier und ... na, da sitzen ja auch <rs ref="#die_waldarbeiter">die
+            Waldarbeiter</rs>. Habt <rs ref="#die_waldarbeiter">ihr</rs> auch <rs ref="#een-Glas-(bier)">die Gläser</rs> schon leer? Geben <rs ref="#ulbrich">Sie</rs> auch da <rs ref="#'ne-------------Lage-Freibier-(bestechungsbier-neuberts-an)">'ne Runde</rs> hin.</p>
+          <stage><rs ref="#die_waldarbeiter">Die Waldarbeiter</rs>: vergnügtes Gemurmel. <rs ref="#die_bauern">Die Bauern</rs> und <rs ref="#schoenherr">Schönherr</rs>: höhnische Blicke,
+            gegenseitiges Anstoßen.</stage>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#ihr's">Da sagen nun <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">die Leute</rs>, ich wäre stolz</rs>. <rs ref="#ulbrich">Ulbrich, Sie</rs> bringen mir doch <rs ref="#alle-Tage">alle Tage</rs> 'n
+            paarmal Geschäftsbriefe. Ha'm <rs ref="#ulbrich">Sie</rs> schon 'mal was von Stolz an mir bemerkt?</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>I ja, <rs ref="#neubert">Herr Neibert</rs>, i ja ...</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Na, da hört <rs ref="#ihr's"><rs ref="#die_waldarbeiter-/-die_bauern-+-4">ihr's</rs></rs> ja. <rs ref="#ihr's">Alles leeres Gerede</rs>. Ich will nich' mehr sein wie <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">die andern</rs>.
+            Prost, <rs ref="#die_waldarbeiter-/-die_bauern-+-4">ihr Leute</rs>.</p>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern #die_schnitzler_schnitzlersleute">
+          <rs ref="#ZURUFE."><speaker>ZURUFE.</speaker></rs>
+          <p>Prost, <rs ref="#neubert">Herr Neibert</rs>! <stage>Trinken.</stage></p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Ja ... deshalb bin ich auch als Vertreter <rs ref="#der-allgemeinen-Interessen">der allgemeinen Interessen</rs> für die
+            Gemeinderatswahl aufgestellt worden. Ich werde schon meine Pflicht tun. <rs ref="#Die,-die-mich-------------wählen">Die, <rs ref="#Die,-die-mich-------------wählen">die</rs> mich
+            wählen</rs>, sollen <rs ref="#neubert">den richtigen Mann</rs> auf <rs ref="#den-Gemeenderat">den richtigen Platz</rs> gestellt haben. Was, <rs ref="#die_waldarbeiter-/-die_bauern-+-4">ihr
+            Leute</rs>? <stage>Teilweise Zustimmung. <rs ref="#Gemurmel">Gemurmel</rs>.</stage>
+            <pb n="528"/> Ich werde versuchen, Verbesserungen <rs ref="#im-Orte">im Orte</rs> zu schaffen, denn es gibt ja
+            genug zu bessern, ja ... so vieles ... also ...</p>
+          <stage><rs ref="#die_bauern">Die Bauern</rs> tuscheln mißvergnügt mit <rs ref="#ermischer">Ermischer</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Nu ... <rs ref="#neubert">Sie</rs> wer'n entschuldigen ... ich möcht' bloß wissen, was da zu bessern is?</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT</speaker></rs>
+          <stage>vor <rs ref="#ermischer">ihm</rs>, Brille auf der Stirn, rennt dann nervös lachend umher.</stage>
+          <p>Na, wissen <rs ref="#ermischer">Sie</rs>, wenn <rs ref="#man-(der-mensch)">man</rs> da anfangen wollte ... also, wenn <rs ref="#man-(der-mensch)">man</rs> da anfangen wollte ...!
+            Aber ich zanke mich nich'. Ich will frei gewählt werden, ohne gehässige Agitation ...
+            Geben <rs ref="#ulbrich">Sie</rs> doch noch <rs ref="#'ne-------------Lage-Freibier-(bestechungsbier-neuberts-an)">'ne Runde <rs ref="#een-Glas-(bier)">Bier</rs></rs>, Ulbrich.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Jawohl, <rs ref="#neubert">Herr Neibert</rs>, <rs ref="#een-Glas-(bier)">des</rs> wird besorgt.</p>
+          <stage><rs ref="#die_bauern">Die Bauern</rs>, <rs ref="#schoenherr">Schönherr</rs>: höhnisches Lächeln.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>kommt herein.</stage>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag</rs>, <rs ref="#ulbrich">lieber Ulbrich</rs>, ich will auch 'mal <rs ref="#een-Glas-(bier)">'n Glas Bier</rs> auf <rs ref="#Die-Reih'schankzeit-(schanklokal-ulbrichs)">dem Reih'schank</rs> trinken.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>'s recht. <rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag ooch</rs>, <rs ref="#weigel">Herr Schandarme</rs>.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Tag</rs>, <rs ref="#weigel">Herr Gendarm</rs>, auch hier?</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">T-a-g</rs>. <stage><rs ref="#neubert">Neubert</rs> bemerkend, strammstehend.</stage> A Pardong, <rs ref="#neubert">Herr Neubert</rs>. Habe
+            <rs ref="#neubert">Herrn Neubert</rs> gar nicht gesehen.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Wollen <rs ref="#weigel">Sie</rs> <rs ref="#weigel">sich</rs> nich' 'n bißchen hersetzen?</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Wenn <rs ref="#neubert">Herr Neubert</rs> gestatten, bin ich so frei. <stage>Setzt <rs ref="#weigel">sich</rs> zu <rs ref="#neubert">Neubert</rs> an den
+              Tisch. <rs ref="#ermischer">Ermischer</rs> bemerkend, nachlässig.</stage> <rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">Ah, Servus</rs>!</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#een-Glas-(bier)">'n Glas Bier</rs> für <rs ref="#weigel">den Herrn Gendarmen</rs> ...! Haben <rs ref="#weigel">Sie</rs> tüchtig auf <rs ref="#den-Dienst-(weigel)">den Dienst</rs> spannen
+            müssen?</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Ja, allerdings ... zu tun gibt's immer. G'rade jetzt hab' ich unten <rs ref="#im-Orte">im Ort</rs> <rs ref="#einen-------------Auflauf">einen
+            Auflauf</rs> zerstreut.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#einen-------------Auflauf">Einen Auflauf</rs>? Was <rs ref="#weigel">Sie</rs> sagen.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Ja, mitten d'rin war <rs ref="#neumerkel-bb">der bucklige Spielwarenmacher, der Neumerkel.</rs> <rs ref="#neumerkel-bb">Der Kerl</rs> kommt in
+            einem Aufzuge von <rs ref="#Olbernhau">Olbernhau</rs> 'rüber ... na.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Er</rs> hat <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">eene Erbschaft</rs> gemacht.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">Eine Erbschaft</rs>? Na, <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">das</rs> muß 'was Rechtes sein.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Ja, und <rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">die</rs> legt <rs ref="#neumerkel-bb">er</rs> nun, wie's scheint, in Schnaps an. <stage><rs ref="#Lärm-(viele-stimmen,-auflauf-um-neumerkel)">Lärm</rs> draußen.</stage> Da
+            hören <rs ref="#Lärm-(viele-stimmen,-auflauf-um-neumerkel)"><rs ref="#neubert">Sie's</rs></rs> ja schon, da is <rs ref="#neumerkel-bb">'r</rs> ja angelangt.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#Das">Da sieht <rs ref="#Für-solche-Leute-is-plötzlicher-Geldbesitz-geradezu-'n-------------Unglück."><rs ref="#man-(der-mensch)">man's</rs></rs> nun wieder. <rs ref="#Für-solche-Leute-is-plötzlicher-Geldbesitz-geradezu-'n-------------Unglück.">Für <rs ref="#solche-Leute-(typ-neumerkel)">solche Leute</rs> is plötzlicher Geldbesitz geradezu 'n
+            Unglück.</rs> <rs ref="#solche-Leute-(typ-neumerkel)">Solche Leute</rs> muß <rs ref="#man-(der-mensch)">man</rs> knapp halten.</rs> <stage>Zu <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-7">den Anwesenden</rs>.</stage> <rs ref="#Das">Das</rs> heißt:
+            ich meine <rs ref="#Das">das</rs> natürlich nur in bezug auf <rs ref="#eso-een-Glück-(der-vorgang-der-erbschaft-neumerkels)">diesen speziellen Fall</rs>. Verallgemeinern will
+            ich <rs ref="#Das">das</rs> nicht. Prost, <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-7">ihr Leute</rs>!</p>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern #die_schnitzler_schnitzlersleute">
+          <rs ref="#ZURUFE."><speaker>VIELE STIMMEN.</speaker></rs>
+          <p>Prost, <rs ref="#neubert">Herr Neibert</rs>! Prost!</p>
+          <stage><rs ref="#neumerkel-bb">Neumerkel</rs> kommt herein, angetrunken, in <rs ref="#neumerkel-bb">seinem</rs> gewöhnlichen <pb n="529"/>
+            Arbeitsanzuge, <rs ref="#einen-nagelneuen,-grauseidenen-Filzhut-(neumerkel)">einen nagelneuen, grauseidenen Filzhut</rs> auf dem Kopfe, <rs ref="#weiße-Glacés-(wohl-handschuhe-neumerkel)">weiße Glacés</rs> an <rs ref="#den-------------Händen-(neumerkel)">den
+            Händen</rs> und mit <rs ref="#einem-neuen-Sonnenschirm-(neumerkel)">einem neuen Sonnenschirm</rs>.</stage>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage><rs ref="#zum-Hausflur-(eg-ulbrichs)">im Hausflur</rs>, auf <rs ref="#der-Straße-(um-ulbrichs-haus)">die Straße</rs> rufend.</stage>
+          <p>Da denkt <rs ref="#ihr-(auflauf-menschen-um-neumerkel-bei-seiner-ankunft-im-schanklokal-in-auftritt-4)">ihr</rs>, <rs ref="#ihr-(auflauf-menschen-um-neumerkel-bei-seiner-ankunft-im-schanklokal-in-auftritt-4)">ihr</rs> könnt mich verachten? Ich wer's <rs ref="#ihr-(auflauf-menschen-um-neumerkel-bei-seiner-ankunft-im-schanklokal-in-auftritt-4)">euch</rs> emal weise machen, so'<rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)">s Kapital</rs>
+            sitzt. Schaut emal her! <rs ref="#dees"><stage>Wirft eine Handvoll Kupfermünzen auf <rs ref="#der-Straße-(um-ulbrichs-haus)">die
+            Gasse</rs>.</stage></rs></p>
+          <stage>Kinderjubel draußen.</stage>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern">
+          <speaker><rs ref="#die_waldarbeiter">DIE WALDARBEITER</rs> UND <rs ref="#die_bauern">BAUERN</rs></speaker>
+          <stage>erheben sich neugierig.</stage>
+          <p>Nee, <rs ref="#dees">dees</rs> is doch- <rs ref="#neumerkel-bb">Er</rs> schmeißt'<rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)">s</rs> mit <rs ref="#den-------------Händen-(neumerkel)">vollen Händen</rs> auf <rs ref="#der-Straße-(um-ulbrichs-haus)">die Gasse</rs>. <rs ref="#neumerkel-bb">Er</rs> hat'<rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)">s Geld</rs> zum
+            Wegschmeißen!</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>in <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">der Stube</rs>.</stage>
+          <p>Hä? Schaut <rs ref="#die_bauern-/-frau_ulbrich-+-8">euch</rs> emal <rs ref="#neumerkel-bb">den Neimerkel</rs> an! Was sagt <rs ref="#die_bauern-/-frau_ulbrich-+-8">'r</rs> nu? Bisher war ich een armer
+            Schnitzlersjung', itze gehör'n <rs ref="#neumerkel-bb">mir</rs> zu'n Mittelstand. <stage>Auf die Tasche
+              schlagend.</stage> <rs ref="#neumerkel-bb">Mir</rs> ha'm <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)">Geld</rs> wie Heu!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)"><rs ref="#neumerkel-bb">Ihre</rs> paar Taler</rs> wird bald <rs ref="#der-Teufel-(wohl-sprichwörtl)">der Teufel</rs> geholt haben.</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Nu, fier mich langt'<rs ref="#'n-zwanzig-Daler-(erbe-neumerkel)">s</rs> zu. <rs ref="#einen-nagelneuen,-grauseidenen-Filzhut-(neumerkel)">Eenen neien Hut</rs> ho'n ich, <rs ref="#weiße-Glacés-(wohl-handschuhe-neumerkel)">een paar Klassiker</rs> und <rs ref="#einem-neuen-Sonnenschirm-(neumerkel)">eenen Schärm</rs>
+            und nu geh' ich <rs ref="#eene-Schwester,-drüben-in-Marienberg,-een-ganz-armes-Bettelmensch-(neumerkels-schwester)">meine Erbschwester</rs> begraben.</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#Es">Es</rs> wird auch not tun, <rs ref="#Es">daß <rs ref="#neumerkel-bb">Sie</rs> hier fortkommen</rs>. <rs ref="#Bei-'nem-andern-Gemeindevorstand-säßen-------------Sie-schon-längst-in-Numero-Sicher.">Bei 'nem andern Gemeindevorstand säßen
+            <rs ref="#neumerkel-bb">Sie</rs> schon längst in <rs ref="#Numero-Sicher">Numero Sicher</rs>.</rs></p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Sehr richtig, <rs ref="#weigel">Herr Gendarm</rs>, sehr wahr gesprochen.</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Nu, <rs ref="#man-(der-mensch)">m'r</rs> wird doch noch een Wort sagen dürfen.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>vorkommend.</stage>
+          <p><rs ref="#Bei-'nem-andern-Gemeindevorstand-säßen-------------Sie-schon-längst-in-Numero-Sicher.">Des</rs> is ooch dehie nich' anders, und wenn <rs ref="#neumerkel-bb">du</rs> <rs ref="#neumerkel-bb">dich</rs> dehie noch lange so ufführst, so
+            kommst <rs ref="#neumerkel-bb">du</rs> sicher <rs ref="#Numero-Sicher">ins Spritzenhaus</rs>.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage>tritt ebenfalls vor.</stage>
+          <p><rs ref="#Des2">Des</rs> wär' nu allerdings 's erschte Mal, <rs ref="#Des2">deß een Gesell' vom <rs ref="#schoenherr">Meester Scheenherr</rs> <rs ref="#Numero-Sicher">ins
+            Spritzenhaus</rs> käme</rs>.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Wenn <rs ref="#neumerkel-bb">er</rs> <rs ref="#neumerkel-bb">sich</rs> danach beträgt ...</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#Es2">Es</rs> is gewiß nich' recht, <rs ref="#Es2">deß <rs ref="#neumerkel-bb">'r</rs> <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)"><rs ref="#neumerkel-bb">sein</rs> Geld</rs> uff <rs ref="#der-Straße-(um-ulbrichs-haus)">die Gasse</rs> schmeißt und <rs ref="#neumerkel-bb">sich</rs> betrinkt</rs>,
+            aber <rs ref="#des4">was <rs ref="#neumerkel-bb">'r</rs> mit <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)"><rs ref="#neumerkel-bb">seinem</rs> Gelde</rs> macht</rs>, <rs ref="#des4">des</rs> geht <rs ref="#ermischer">den Fierstand</rs> nischt an.</p>
+          <stage><rs ref="#Zeichen-(gestik-waldarbeiter)">Zustimmende Gebärden <rs ref="#die_waldarbeiter">der Waldarbeiter</rs></rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>wütend.</stage>
+          <p><rs ref="#neumerkel-bb">Er</rs> macht <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">der Gemeende</rs> bloß <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">Schaden</rs>!</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Wer macht <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">Schaden</rs>? Itze bin ich een vermögender Mensch und wenn ich <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">eenen Schaden</rs>
+            mach', da <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">wird's</rs> bezahlt.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Du</rs> wärst der Rechte. Eh' <rs ref="#neumerkel-bb">du</rs> <rs ref="#neumerkel-bb">dich</rs> dehie dicketust <pb n="530"/> mit <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)"><rs ref="#neumerkel-bb">deinem</rs> Gelde</rs>, bezahl
+            <rs ref="#neumerkel-bb">du</rs> erscht <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">der Gemeende</rs> <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">was <rs ref="#neumerkel-bb">du</rs> <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">ihr</rs> gekost' hast</rs>.</p>
+        </sp>
+        <sp who="#die_bauern">
+          <rs ref="#die_bauern"><speaker>DIE BAUERN.</speaker></rs>
+          <p>So is 's recht. – <rs ref="#neumerkel-bb">Er</rs> vertrinkt <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)"><rs ref="#neumerkel-bb">sein</rs> Geld</rs>. – <rs ref="#neumerkel-bb">Er</rs> mag bezahl'n, <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">was <rs ref="#neumerkel-bb">'r</rs> <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">uns</rs> Unkosten
+            gemacht hat</rs>.</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>stutzt, tritt an <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)"><rs ref="#die_bauern">ihren</rs> Tisch</rs> heran.</stage>
+          <p>Was wär' ich <rs ref="#die_bauern">euch Kartuffelbauern</rs> ooch schuldig!</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Werd' <rs ref="#neumerkel-bb">du</rs> emal nich' frech, verstehste! <rs ref="#neumerkel-bb">Du</rs> bist <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">uns</rs> schuldig, was <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">deine</rs> Katze</rs> verdorben
+            hat, <rs ref="#die-Verfahrenskosten-xxx">die Verfahrenskosten</rs>, <rs ref="#die-Verpflägungskosten-xxx">die Verpflägungskosten</rs> ...</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Ganz richtig, ich hab' auch noch 'ne Schadenersatzforderung für <rs ref="#Reinigung-von-Wäsche-------------und-Kleidungstücken-(neubert)">Reinigung von Wäsche
+            und Kleidungstücken</rs>.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Und <rs ref="#neumerkel-bb">du</rs> willst <rs ref="#neumerkel-bb">dich</rs> dehie mausig machen?</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Dem Burschen</rs> muß 'mal die Autorität gezeigt werden!</p>
+        </sp>
+        <sp who="#die_bauern">
+          <rs ref="#die_bauern"><speaker>DIE BAUERN.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Schmeißt'n</rs> 'naus! – 'naus mit <rs ref="#neumerkel-bb">dem Kerl</rs>! – 'naus! 'naus!</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Ruhe dahie, zum Donnerwedder! ... Wenn <rs ref="#neumerkel-bb">mein Gesell</rs>' hie nich' gelitten is, so geht <rs ref="#neumerkel-bb">er</rs>
+            alleene, aber von 'nausschmeißen gibt's nischt ... <rs ref="#neumerkel-bb">Neimerkel</rs>, sieh, deß <rs ref="#neumerkel-bb">du</rs>
+            weiterkommst.</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>'s recht, 's gutt ... <stage>Geht <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">zur Türe</rs>, kehrt plötzlich hastig um.</stage> Von <rs ref="#die_bauern-/-frau_ulbrich-+-8">euch</rs>
+            lass' <rs ref="#neumerkel-bb">'ch</rs> mich noch lang' nich' lumpen. Was <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">'s</rs> kost', <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">des</rs> bezahl' ich!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>guckt <rs ref="#neumerkel-bb">ihn</rs> über die Achsel an, lacht verächtlich und setzt <rs ref="#ermischer">sich</rs> an <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)"><rs ref="#ermischer">seinen</rs>
+            Tisch</rs>.</stage>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>haut wütend <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">Taler</rs> über <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">Taler</rs> auf <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)">den Tisch</rs>.</stage>
+          <rs ref="#Des3"><p>Dehie und hie und hie ...! Hie sein <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">die Unkosten</rs>, gebt mir <rs ref="#deine-Katze">mein Eegentum</rs> 'raus und <rs ref="#ermischer-/-neumerkel">mir</rs>
+            sein fertig miteinander.</p></rs>
+          <stage><rs ref="#Gemurmel">Gemurmel</rs>, <rs ref="#des-Erstaunens">Erstaunen</rs>, <rs ref="#allgemeine-Spannung">allgemeine Spannung</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>guckt ungläubig <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">das Geld</rs> an, streicht <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">es</rs> dann rasch ein.</stage>
+          <p><rs ref="#Des3">Des</rs> wär' ich mir nich' zweemal sagen lassen. <rs ref="#des5"><rs ref="#Die-paar-Neigroschen,-die-iebrig-sein-(rückgeld-neumerkel)">Die paar Neigroschen, <rs ref="#Die-paar-Neigroschen,-die-iebrig-sein-(rückgeld-neumerkel)">die</rs> iebrig sein</rs>,
+            kannste morgen <rs ref="#uff'm-Gemeendeamt">uff'm Gemeendeamt</rs> holen. Da kannste ooch <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">deine</rs> Katze</rs> kriegen.</rs></p>
+          <stage>Gelächter <rs ref="#die_bauern">der Bauern</rs>.</stage>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Nu, <rs ref="#des5">des</rs> gibt's nich'! Hie is <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">mein Geld</rs>, wo is <rs ref="#deine-Katze">mein Eegentum</rs>?</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#des5">Des</rs> wär' ja noch schöner. Wenn <rs ref="#neumerkel-bb">der Mann</rs> <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">den Schaden</rs> bezahlt, muß <rs ref="#neumerkel-bb">er</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">seine</rs> Sach</rs>'
+            ha'm.</p>
+        </sp>
+        <sp who="#die_waldarbeiter #die_schnitzler_schnitzlersleute">
+          <speaker><rs ref="#die_waldarbeiter">DIE WALDARBEITER</rs> UND <rs ref="#die_schnitzler_schnitzlersleute">SCHNITZLERSLEUTE</rs>.</speaker>
+          <p>Da hat <rs ref="#schoenherr">'r</rs> recht. – <rs ref="#des5">Des</rs> is keen Verhalten. – <rs ref="#neumerkel-bb">Der Mann</rs> hat bezahlt, wo is <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">sein</rs> Sach</rs>'?</p>
+          <pb n="531"/>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Weeßte, <rs ref="#ermischer">Ermischer</rs>, mich <rs ref="#des5">geht's</rs> nischt an, aber <rs ref="#des5">des</rs> scheint mir ooch nich' recht. <rs ref="#neumerkel-bb">Der
+            arme Mensch</rs> gibt <rs ref="#so's-Kapital-(vermögen-geld-neumerkel-allg)"><rs ref="#neumerkel-bb">sein</rs> Letztes</rs> her, da kann <rs ref="#neumerkel-bb">er</rs> verlangen, daß <rs ref="#neumerkel-bb">'r</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">seine</rs> Sach'</rs> krieg'.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Er</rs> kann <rs ref="#deine-Katze">se</rs> ja morgen holen.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Itze hat <rs ref="#neumerkel-bb">er</rs> <rs ref="#deine-Katze">se</rs> zu verlangen!</p>
+          <stage><rs ref="#neubert">Neubert</rs> läuft lachend in <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">der Stube</rs> umher.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#ulbrich">Ulbrich</rs> hat ganz recht. 'n korrektes amtliches Verfahren is jedenfalls, daß 'ne
+            beschlagnahmte Sache herausgegeben wird, sobald der Schaden ersetzt ist.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Was soll'n <rs ref="#ermischer-/-neumerkel">mir</rs> <rs ref="#ermischer-/-neumerkel">uns</rs> streiten ... <rs ref="#seifert">Gemeendediener</rs>! ... <rs ref="#seifert">Seifert</rs> ...! <rs ref="#seifert">Seifert</rs>!!</p>
+          <stage><rs ref="#seifert">Seifert</rs> kommt <rs ref="#in-schlotternder-Angst-(seifert)">in schlotternder Angst</rs> <rs ref="#dem-mächtigen-----------Kachelofen,-der-sich-in-der-Ecke-erhebt">vom Ofen</rs> her nach vorn.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Geh' emal und hol' <rs ref="#neumerkel-bb">den Neimerkel</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">seine</rs> Katze</rs>.</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT</speaker></rs>
+          <stage>unartikulierte Laute.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Hä?</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p><rs ref="#'s">'s</rs> is bloß ... <rs ref="#'s"><rs ref="#frau_seifert">meine Fra'</rs> wird nich' d'rheeme sinn</rs>.</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Nu, <rs ref="#'s">des</rs> wär' noch schöner. Seit wann geht's in <rs ref="#der-allgemeinen-Interessen">Gemeendeangelegenheeten</rs> nach <rs ref="#frau_seifert"><rs ref="#seifert">deiner</rs>
+            Fra</rs>'! <rs ref="#seifert">Allongsch</rs> marschee!</p>
+          <stage><rs ref="#seifert">Seifert</rs> entfernt <rs ref="#seifert">sich</rs> in <rs ref="#in-schlotternder-Angst-(seifert)">großer Angst</rs>.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Wos hot bloß <rs ref="#seifert">der Kerl</rs>!</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT</speaker></rs>
+          <stage>lacht.</stage>
+          <p>Mir kommt <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die Sache</rs> bald verdächtig vor. Jedenfalls is <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">es</rs> merkwürdig ... Wenn ich <rs ref="#den-Gemeenderat">im
+            Gemeinderat</rs> wäre ... Prost, <rs ref="#weigel">Herr Gendarm</rs> ... Sie ha'm ja nichts zu trinken. <rs ref="#een-Glas-(bier)">'n Bier</rs>,
+            <rs ref="#ulbrich">Ulbrich</rs>.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Danke sehr ... Prosit, <rs ref="#neubert">Herr Neubert</rs> ... Ich höre, <rs ref="#neubert">Herr Neubert</rs> wollen <rs ref="#neubert">sich</rs> für <rs ref="#den-Gemeenderat">den
+            Gemeinderat</rs> aufstellen lassen?</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Nu ... es is der Wunsch an mich herangetreten und ... ich bin nicht abgeneigt ... ich
+            meine, sofern <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">man</rs> mich wählt ...</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Na, da wird wohl <rs ref="#niemand-hier-unter-Ulbrichs-Gästen-sein,-der-Herr-Neubert-nich'-mit-------------Freuden-seine-Stimme-gäbe">niemand hier unter <rs ref="#ulbrich">Ulbrichs</rs> Gästen sein, <rs ref="#niemand-hier-unter-Ulbrichs-Gästen-sein,-der-Herr-Neubert-nich'-mit-------------Freuden-seine-Stimme-gäbe">der</rs> <rs ref="#neubert">Herr Neubert</rs> nich' mit
+            Freuden seine Stimme gäbe</rs>.</p>
+          <stage><rs ref="#Schweigen">Schweigen</rs>.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage><rs ref="#höhnische-Lache-(schönherr)">höhnische Lache</rs>.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Na, erlauben <rs ref="#schoenherr">Sie</rs> ... warum nich'? <rs ref="#neubert">Herr Verleger Neubert</rs> is <rs ref="#ein-bereister-Mann,-der-die-------------Welt-gesehen-hat-(prädikativ-neubert)">ein bereister Mann, <rs ref="#ein-bereister-Mann,-der-die-------------Welt-gesehen-hat-(prädikativ-neubert)">der</rs> die
+            Welt gesehen hat</rs>. <rs ref="#neubert">Er</rs> war in Dresden und Leipzig, <rs ref="#neubert">er</rs> war auch schon 'mal im Auslande ...
+            jawohl, in Sachsen-Altenburg hat <rs ref="#neubert">er</rs> 'ne Knopffabrik gehabt. So 'nen Mann kann <rs ref="#den-Gemeenderat">der
+            hiesige Gemeinderat</rs> <pb n="532"/> gebrauchen. <rs ref="#neubert">Der</rs> wird 'mal <rs ref="#dem-Rechten">Ordnung</rs> schaffen. Was, <rs ref="#neubert">Herr
+            Neubert</rs>?</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <rs ref="#ihr's2"><p>O gewiß. <rs ref="#dem-Rechten">Ordnung</rs> ... Wo ich <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">Schlumperei</rs> sehe, fahr' ich dazwischen.</p></rs>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Na also, da hört <rs ref="#ihr's2">ihr's</rs> ja. <rs ref="#sehr-zutreffende-Andeutungen">Und <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">Schlumperei</rs> gibt's doch in <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">der Gemeinde</rs> genug.</rs></p>
+          <stage>Unwilliges Gemurmel <rs ref="#die_bauern">der Bauern</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Nu, wenn so 'was <rs ref="#weigel">der Schandarm</rs> spricht, möcht' ich bloß wissen, wo <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">die Schlumperei</rs> sinn
+            soll?</p>
+          <stage><rs ref="#neubert">Neubert</rs> und <rs ref="#weigel">Weigel</rs> sehen sich an, lachen mitleidig.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Hab' ich 'was gesagt?</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>I bewahre – <rs ref="#weigel">Sie</rs> haben ganz im allgemeinen gesprochen, Herr Gendarm.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Also ... was wollen <rs ref="#ermischer">Sie</rs> denn eigentlich, lieber ... lieber Ermischer?</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>blitzig.</stage>
+          <p>Also ... <rs ref="#»lieber-Ermischer«">»lieber Ermischer«</rs>, <rs ref="#»lieber-Ermischer«">des</rs> gibt's ieberhaupt nich'. Ich sprech' ooch nich':
+            <rs ref="#»lieber-Weigel«">»lieber Weigel«</rs>.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#»lieber-Weigel«">Das</rs> würde ich mir auch schön verbitten.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Und ich verbitt' mir <rs ref="#»lieber-Ermischer«">des</rs>!!!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>So ... – <stage>Verlegenheitspause.</stage> Ich mache <rs ref="#den-Dienst-(weigel)">manches</rs> gerne freundschaftlich,
+            gemütlich ab; ich kann aber auch stramm dienstlich sein ... ja. <stage>Plötzlich
+              aufspringend, blitzig herausfahrend.</stage> Wenn ich von <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">»Schlumperei«</rs> rede, werd'
+            ich schon wissen, <rs ref="#Sie's">was ich meine</rs>, versteh'n <rs ref="#ermischer">Sie</rs> mich!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>geduckt.</stage>
+          <p>Nu aber, <rs ref="#weigel">Herr Schandarme</rs> ... dann sagen <rs ref="#Sie's"><rs ref="#weigel">Sie</rs>'s</rs> doch.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>immer heftiger.</stage>
+          <p>Ich kenne überhaupt <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">'ne gewisse Gemeinde, <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">wo</rs>'s nächstens 'nen großen Wechsel geben
+            wird</rs>, in <rs ref="#dem-Posten-(dienst-ermischer)">den oberen Regionen</rs> nämlich ... da wird <rs ref="#ermischer">sich</rs> <rs ref="#ermischer">einer</rs> umgucken!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>ganz verängstigt.</stage>
+          <p>Ich mecht' bloß wissen ... Gebb mir noch <rs ref="#een-Glas-(bier)">een Zuckerbier</rs>, <rs ref="#ulbrich">Ulbrich</rs>.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#weigel">Sie</rs> haben da gewiß <rs ref="#sehr-zutreffende-Andeutungen">sehr zutreffende Andeutungen</rs> gemacht, Herr Gendarm.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>sitzt triumphierend da.</stage>
+          <p>Wenn ich von <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">»Schlumperei«</rs> spreche, weiß ich schon, wo ich hinaus will.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Nu freilich, <rs ref="#man-(der-mensch)">man</rs> braucht <rs ref="#man-(der-mensch)">sich</rs> doch bloß umzusehen ... Der Zustand <rs ref="#der-Gemeindewege">der Gemeindewege</rs>
+            ...</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Also, da ha'm wir ja gleich <rs ref="#Schlumperei-(unrecht-politische-schlamperei)">'was</rs>. Nu kommt'<rs ref="#Schlumperei-(unrecht-politische-schlamperei)">s</rs> ja 'raus.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">Eso eene arme Gemeende</rs> kann nich' mehr fier Wegebau uffbringen.</p>
+          <pb n="533"/>
+        </sp>
+        <sp who="#die_bauern">
+          <rs ref="#die_bauern"><speaker>DIE BAUERN</speaker></rs>
+          <stage>schreien wütend.</stage>
+          <p><rs ref="#die_bauern">Uns</rs> sein <rs ref="#der-Gemeindewege">die Gemeendewege</rs> gut genung! – <rs ref="#die_bauern">Mir</rs> wer'n dahie erdrückt von Wegebaukosten! –
+            <rs ref="#die_bauern">Mir</rs> ha'm g'rade satt Steiern!</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Und <rs ref="#die-Gemeindefeuerwehr">die Gemeindefeuerwehr</rs> sollten <rs ref="#weigel">Sie</rs> 'mal sehen. Wenn's 'mal in meiner Fabrik brennt,
+            ha'm <rs ref="#die-Gemeindefeuerwehr">sie</rs> noch nich' mal <rs ref="#'ne-brauchbare-Spritze">'ne brauchbare Spritze</rs>.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">Mir</rs> ha'm kee' Geld.</p>
+        </sp>
+        <sp who="#die_bauern">
+          <rs ref="#die_bauern"><speaker>DIE BAUERN</speaker></rs>
+          <stage>wie vorher.</stage>
+          <p>Zu was brauchen mir <rs ref="#'ne-brauchbare-Spritze">'ne Feuerspritze</rs>! – <rs ref="#die_bauern">Mir</rs> löschen mit Wassereemern! – <rs ref="#die_bauern">Mir</rs> ham' doch
+            keene Fabrik!</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>'<rs ref="#s-(der-Zustand-der-gemeinde-allg)">s</rs> mag sinn, wie'<rs ref="#s-(der-Zustand-der-gemeinde-allg)">s</rs> will, ich sprech': een bill' mehr Schneid könnt' <rs ref="#ermischer">den
+            Gemeendefierstand</rs> nischt schaden.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Jawoll. Wenn <rs ref="#man-(der-mensch)">m'r</rs> bedenkt, deß <rs ref="#neumerkel-bb">der Neimerkel</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">sein</rs> Eigentum</rs> bloß itze kriegt, weil <rs ref="#Leute-(in-um-das-dorf-evtl-die-gemeinde)">mir</rs>
+            druff drücken ...</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Freilich, daß <rs ref="#neumerkel-bb">der Mann</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">sein</rs> Eigentum</rs> nicht sofort zurückerhalten sollte ... Um <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die
+            Sache</rs> werde ich mich jetzt 'mal bekümmern.</p>
+        </sp>
+        <sp who="#seifert #frau_seifert">
+          <rs ref="#seifert-/-frau_seifert"><speaker>DIE BEIDEN SEIFERTS</speaker></rs>
+          <stage>kommen herein, <rs ref="#seifert">er</rs> zitternd hinter <rs ref="#frau_seifert"><rs ref="#seifert">seiner</rs> Frau</rs>.</stage>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern #die_schnitzler_schnitzlersleute">
+          <rs ref="#ZURUFE."><speaker>STIMMEN.</speaker></rs>
+          <p>Da kommt <rs ref="#seifert">der Seifert</rs>! – <rs ref="#seifert">Er</rs> hat <rs ref="#frau_seifert"><rs ref="#seifert">seine</rs> Fra'</rs> mittebracht. – <rs ref="#seifert">Er</rs> hat ja <rs ref="#deine-Katze">die Katz'</rs> nich'! –
+            Was is los?</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT</speaker></rs>
+          <stage>frech.</stage>
+          <p><rs ref="#Tag-ooch-(begrüßungsfloskel,-evtl-dasgleiche-wie-der-tag-des-vierten-aktes)">T-a-g</rs>. Was soll denn wieder emol los sinn mit <rs ref="#seifert">meinen Mann</rs>, hä?</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Warum habt <rs ref="#seifert-/-frau_seifert">'r</rs> <rs ref="#deine-Katze">die Katz'</rs> nich' mittebracht?</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>schreiend.</stage>
+          <p>Ich verlang' <rs ref="#deine-Katze">mein Eegentum</rs> 'raus, <rs ref="#deine-Katze">mein Eegentum</rs>!</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Sei <rs ref="#neumerkel-bb">du</rs> ruhig, Neimerkel, <rs ref="#deine-Katze">des</rs> wird <rs ref="#deine-Katze">sich</rs> schon finden.</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT.</speaker></rs>
+          <p>Ich weeß nischt davon. <rs ref="#Des-(der-umstand-dass-die-katze-weg-ist-und-nicht-zurückgegeben-werden-kann)"><rs ref="#deine-Katze">Die Katz'</rs> is uff un' davon</rs>.</p>
+          <stage><rs ref="#frau_ulbrich-/-die_waldarbeiter-+-8">Alle</rs> springen erregt von den Plätzen.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Hab' ich'<rs ref="#sehr-zutreffende-Andeutungen">s</rs> nich' gesagt? Da sieht <rs ref="#man-(der-mensch)">man</rs>'<rs ref="#Schlumperei-(unrecht-politische-schlamperei)">s</rs> ja wieder 'mal!</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p><rs ref="#Des-(der-umstand-dass-die-katze-weg-ist-und-nicht-zurückgegeben-werden-kann)">Des</rs> is doch een Skandal. <rs ref="#neumerkel-bb">Dem armen Menschen</rs> geschieht'<rs ref="#Schlumperei-(unrecht-politische-schlamperei)">s größte Unrecht</rs>!</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Ich verlang' <rs ref="#deine-Katze">mein Eegentum</rs> 'raus! Ich hab' bezahlt, ich verlang' <rs ref="#deine-Katze">mein Eegentum</rs>!</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Ruhig, <rs ref="#neumerkel-bb">Neimerkel, du</rs> wirst schonn seh'n ... Uff der Stelle verlang' ich
+            Nachforschung!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#deine-Katze">Des</rs> war eene beschlagnahmte Sache, <rs ref="#seifert">der Seifert</rs> hat <rs ref="#deine-Katze">se</rs> in <rs ref="#Verwahrung-(obhut-der-katze,-seiferts)">Verwahrung</rs> gekriegt und nu is
+            <rs ref="#deine-Katze">se</rs> weg. Was is <rs ref="#seifert">des</rs> fier een Gemeendediener!</p>
+          <pb n="534"/>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT.</speaker></rs>
+          <p>Nu, <rs ref="#seifert-/-frau_seifert">mir</rs> ha'm ooch nich' eso uff <rs ref="#deine-Katze">se</rs> gespannt, mir mußten <rs ref="#deine-Katze">se</rs> doch eemal behalten fier <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">die
+            Kosten ...</rs></p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#neumerkel-bb">Mei' Gesell'</rs> hat <rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">alles</rs> bezahlt!</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT</speaker></rs>
+          <stage>fassungslos.</stage>
+          <p><rs ref="#Herrgott-(wohl-floskel)">O Gott</rs>, <rs ref="#Herrgott-(wohl-floskel)">o Gott</rs>, <rs ref="#Herrgott-(wohl-floskel)">o Gott</rs>! <rs ref="#deine-Katze">Se</rs> is weg. Ich weeß ooch nich' ... weeßt <rs ref="#seifert">du</rs> nich', Mann?</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p><rs ref="#deine-Katze">Mein Eegentum</rs> oder <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">'s Geld</rs>!</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT</speaker></rs>
+          <stage>rennt lachend in <rs ref="#Eine-Wohnstube,-die-in-ein-provisorisches-----------Schanklokal-umgewandelt-wurde">der Stube</rs> umher.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH</speaker></rs>
+          <stage>zu <rs ref="#frau_seifert">Frau Seifert</rs>.</stage>
+          <p>Also, wenn <rs ref="#frau_seifert">du</rs> denkst, <rs ref="#frau_seifert">du</rs> kannst <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-8">uns</rs> dehie mit <rs ref="#frau_seifert">deiner</rs> Schlechtigkeet für dumm
+            verschleißen, denn werden <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-8">wir</rs>'s <rs ref="#frau_seifert">dir</rs> emal beweisen!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Werd' <rs ref="#seifert-/-frau_seifert">ihr</rs> nu endlich sagen ...!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Also <rs ref="#Schweigen">Ruhe</rs>. <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">Die Sache</rs> übernehme ich hiermit. <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">Das</rs> is 'n Kriminalfall, ich wer' schon
+            <rs ref="#s-(die-wahrheit-über-den-verbleib-der-katze)">Licht</rs> hineinbringen.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Drücken <rs ref="#weigel">Se</rs> nur druff, Herr Schandarme, drucken <rs ref="#weigel">Se</rs> druff!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>Bleistift, Protokollbuch.</stage>
+          <p>Also, wann is <rs ref="#deine-Katze">die Katze</rs> angeblich weggelaufen?</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT.</speaker></rs>
+          <p>Ich weeß ooch nich' ... 's kam emal abends <rs ref="#een-unbekannter-Mon-...-mit-'n-schwarzen-------------Mantel-un'-eenen-großen-schwarzen-Bart-...">een unbekannter Mon ... mit 'n schwarzen
+            Mantel un' eenen großen schwarzen Bart ...</rs></p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p><rs ref="#een-unbekannter-Mon-...-mit-'n-schwarzen-------------Mantel-un'-eenen-großen-schwarzen-Bart-...">Den Mann</rs> kenn' ich. <rs ref="#een-unbekannter-Mon-...-mit-'n-schwarzen-------------Mantel-un'-eenen-großen-schwarzen-Bart-...">Der</rs> kommt immer zu <rs ref="#den-Dummen">den Dummen</rs>, wenn <rs ref="#den-Dummen">sie</rs> <rs ref="#den-Dummen">sich</rs> nich' mehr zu helfen
+            wissen. Also, <rs ref="#seifert">Gemeindediener</rs>, wollen Sie nun sagen, wie <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die Sache</rs> steht oder soll ich
+            Anzeige bei der Oberbehörde erstatten?</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT</speaker></rs>
+          <stage>halblaut ängstlich.</stage>
+          <p><rs ref="#weigel">Herr Schandarme</rs>, <rs ref="#ulbrich">Herr Ulbrich</rs> ... ich möcht' bitten ... <rs ref="#seifert-/-frau_seifert">mir</rs> sein <rs ref="#Freundschaft-(prädikativ-die-seiferts-als-freund-der-anderen)">Freundschaft</rs>.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage><rs ref="#höhnische-Lache-(schönherr)">höhnische Lache</rs>.</stage>
+          <p>Ach nee, <rs ref="#seifert-/-frau_seifert">se</rs> sein <rs ref="#Freundschaft-(prädikativ-die-seiferts-als-freund-der-anderen)">Freundschaft</rs>.</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Uff die Freundschaft pfeif' ich!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Wenn ich <rs ref="#den-Dienst-(weigel)">im Dienst</rs> bin, kenn' ich keine Freundschaften und keine Rücksichten ... also,
+            <rs ref="#seifert">Seifert</rs>, wollen Sie <rs ref="#Ihre-Lage-(situation-seiferts-bezügl-der-katze))"><rs ref="#seifert">Ihre</rs> Lage</rs> durch ein offenes Geständnis erleichtern oder wollen <rs ref="#seifert">Sie</rs>
+            mit Schimpf und Schande aus <rs ref="#im-Dienst-(seifert)">dem Dienst</rs> fliegen?</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT</speaker></rs>
+          <stage>plötzlich alle Schüchternheit überwindend, wütend herausschreiend.</stage>
+          <p>Nu, wenn ich ... un' ich soll aus <rs ref="#im-Dienst-(seifert)">dem Dienst</rs>, so is mir alles egal!</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Jetzt kommt'<rs ref="#s-(die-wahrheit-über-den-verbleib-der-katze)">s</rs> 'raus.</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT.</speaker></rs>
+          <p><rs ref="#seifert">Mon</rs>, <rs ref="#seifert">Mon</rs>, wirst du nich' ...!</p>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p>Wirst <rs ref="#frau_seifert">du</rs> <rs ref="#seifert"><rs ref="#ulbrich">deinen</rs> Mann</rs> woll reden lassen. Immer 'raus damit!</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p><rs ref="#deine-Katze">Se</rs> is nich' uff un' davon, <rs ref="#seifert-/-frau_seifert">mir</rs> ha'm <rs ref="#deine-Katze">se</rs> alle gemacht!</p>
+          <pb n="535"/>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern #die_schnitzler_schnitzlersleute">
+          <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-8"><speaker>ALLE</speaker></rs>
+          <stage>in <rs ref="#allgemeine-Spannung">höchster Spannung</rs>.</stage>
+          <p>Ah!!!</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p>Ich hab' <rs ref="#deine-Katze">ihr</rs> den Kopp abgehackt, <rs ref="#frau_seifert">meine Fra'</rs> hat <rs ref="#deine-Katze">se</rs> gekocht un' <rs ref="#weigel-/-ulbrich">ihr zwee</rs>, – <stage>Auf
+              <rs ref="#weigel">Weigel</rs> und <rs ref="#ulbrich">Ulbrich</rs> zeigend.</stage> – <rs ref="#weigel-/-ulbrich">ihr</rs> habt <rs ref="#deine-Katze">se</rs> gefressen!!</p>
+          <stage><rs ref="#weigel">Weigel</rs> und <rs ref="#ulbrich">Ulbrich</rs> stehen wie versteinert. <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-4">Die Leute, <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-4">die</rs> einen Augenblick starr
+            waren</rs>, brechen in <rs ref="#Gelächter">ein endloses Hohngelächter</rs> aus.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH.</speaker></rs>
+          <p><rs ref="#seifert-/-frau_seifert">Ihr</rs> spracht doch: <rs ref="#seifert-/-frau_seifert">ihr</rs> hättet 'nen Hasen tot uff dem Felde gefunden ...?</p>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT</speaker></rs>
+          <stage>in die Schürze heulend.</stage>
+          <p><rs ref="#seifert-/-frau_seifert">Mir</rs> ha'm nicht gewußt, was <rs ref="#seifert-/-frau_seifert">mir</rs> sagen sollten un' da ... un' da ... <stage>Plötzlich
+              wütend.</stage> Nich' emal e Finkl ieberlei gelassen habt <rs ref="#weigel-/-ulbrich">'r</rs> un' nu wollt <rs ref="#weigel-/-ulbrich">'r</rs> <rs ref="#seifert">meinen
+            Mon</rs> um <rs ref="#im-Dienst-(seifert)"><rs ref="#seifert">seinen</rs> Posten</rs> bringen? Kommt mir nur!</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ulbrich">
+          <rs ref="#ulbrich"><speaker>ULBRICH</speaker></rs>
+          <stage>kratzt <rs ref="#ulbrich">sich</rs> hinter den Ohren, geht geduckt hinter <rs ref="#ein-kleiner-Tisch-mit-Biergläsern">den Schanktisch</rs> zu <rs ref="#frau_ulbrich"><rs ref="#ulbrich">seiner</rs> Frau</rs>,
+            von wo <rs ref="#ulbrich">er</rs> nicht mehr hervorkommt.</stage>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p><rs ref="#deine-Katze">Mei' Eegentum</rs> 'raus! <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">Mei Geld</rs> 'raus!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Nu wer' ich mich <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">der Sache</rs> emal annehmen. <rs ref="#seifert">Seifert</rs>, geh' emal <rs ref="#uff'm-Gemeendeamt">uffs Gemeendeamt</rs>, deß mir
+            dadrieber een Protokoll anfert'gen.</p>
+        </sp>
+        <sp who="#seifert">
+          <rs ref="#seifert"><speaker>SEIFERT.</speaker></rs>
+          <p>'s recht. <rs ref="#im-Dienst-(seifert)">Mein Posten</rs> is emal futsch; ich werd' schon <rs ref="#'ne-Gemeende">'ne Gemeende</rs> finden, <rs ref="#'ne-Gemeende">die</rs> <rs ref="#seifert">eenen
+            tücht'gen Poll'zeier</rs> braucht.</p>
+          <stage><rs ref="#seifert">Er</rs> geht unter <rs ref="#Gelächter">dem Gelächter <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-4">der Leute</rs></rs>, gefolgt von <rs ref="#frau_seifert"><rs ref="#seifert">seiner</rs> Frau,</rs> hinaus. Unter <rs ref="#die-Türe-zum-Hausflur-(schanklokal-ulbrichs)">der
+            Tür</rs> wendet <rs ref="#frau_seifert">sich</rs> <rs ref="#frau_seifert">diese</rs> und stürzt auf <rs ref="#die_bauern">die Bauern</rs> zu.</stage>
+        </sp>
+        <sp who="#frau_seifert">
+          <rs ref="#frau_seifert"><speaker>FRAU SEIFERT.</speaker></rs>
+          <p>Des könnt <rs ref="#die_bauern">ihr Kartuffelbauern</rs> <rs ref="#die_bauern">euch</rs> ieberhaupt emal merken: wenn <rs ref="#die_bauern">ihr</rs> <rs ref="#seifert"><rs ref="#die_bauern">euren</rs> Poll'zeier</rs>
+            bloß zweelf Neigroschen <rs ref="#alle-Tage">den Tag</rs> gebt, so dürft <rs ref="#die_bauern">ihr</rs> <rs ref="#seifert">ihm</rs> nischt Eßbares in <rs ref="#Verwahrung-(obhut-der-katze,-seiferts)">Verwahrung</rs>
+            geben! <stage>Rennt <rs ref="#seifert"><rs ref="#frau_seifert">ihrem</rs> Manne</rs> nach.</stage></p>
+          <stage><rs ref="#Gelächter">Gelächter <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-4">der Leute</rs></rs>.</stage>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage><rs ref="#weigel">der</rs> fassungslos, völlig geduckt beiseite gestanden hat, nimmt <rs ref="#weigel">sich</rs> zusammen; mit
+            unterdrückter Stimme zu <rs ref="#ermischer">Ermischer</rs>.</stage>
+          <p><rs ref="#ermischer">Herr Gemeindevorstand</rs>, kann ich vielleicht in <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">der Sache</rs> ... ich meine, ob <rs ref="#Ihre-gütige-------------Nachsicht-(ermischer-ggü-weigel)"><rs ref="#ermischer">Ihre</rs> gütige
+            Nachsicht</rs> ... meine Personalakten sind ohnehin so umfänglich ...</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Ich weeß schon. <stage>Bedeutsam.</stage> <rs ref="#Ihre-gütige-------------Nachsicht-(ermischer-ggü-weigel)">Das</rs> wird <rs ref="#Ihre-gütige-------------Nachsicht-(ermischer-ggü-weigel)">sich</rs> alles nach <rs ref="#weigel">Ihrem</rs> zukünftigen
+            dienstlichen Verhalten richten.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>Hände an der Hosennaht, militärisch stramm, überlaut.</stage>
+          <p>Zu <rs ref="#Befehl-(anweisung-ermischers)">Befehl</rs>, <rs ref="#ermischer">Herr Gemeindevorstand</rs>.</p>
+          <pb n="536"/>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Ich wer' <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die Sach'</rs> prüfen und <rs ref="#weigel">Sie</rs> dadrieber vernehmen. <rs ref="#weigel">Sie</rs> sein doch bereit?</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>Zu <rs ref="#Befehl-(anweisung-ermischers)">Befehl</rs>, <rs ref="#ermischer">Herr Gemeindevorstand</rs>.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Find't <rs ref="#irgend-een-Entschuldigungsgrund">sich</rs> <rs ref="#irgend-een-Entschuldigungsgrund">irgend een Entschuldigungsgrund</rs>, so wer' ich mich <rs ref="#weigel">Ihrer</rs> wohlwollend
+            annehmen, <rs ref="#weigel">lieber ... lieber Weigel</rs>.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL</speaker></rs>
+          <stage>zuckt zusammen, dann schneidig.</stage>
+          <p>Fühle mich sehr geehrt, <rs ref="#ermischer">Herr Gemeindevorstand</rs>.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Na, denn hätt' ich <rs ref="#weigel">Ihnen</rs> vorläufig nischt mehr zu sagen.</p>
+        </sp>
+        <sp who="#weigel">
+          <rs ref="#weigel"><speaker>WEIGEL.</speaker></rs>
+          <p>So habe ich die Ehre, mich <rs ref="#ermischer">dem Herrn Gemeindevorstand</rs> ganz gehorsamst zu empfehlen.
+              <stage>Macht kehrt, geht stramm hinaus. Hinter <rs ref="#weigel">ihm</rs> her <rs ref="#Gelächter">Gelächter</rs>.</stage></p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#weigel">Den</rs> hab' ich aber geduckt.</p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL.</speaker></rs>
+          <p>Un' <rs ref="#s">was wird denn nu mit <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">meinem Gelde</rs></rs>?</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Wart'<rs ref="#s">s</rs> ooch fei' ab. <rs ref="#den-Gemeenderat">Der Gemeenderat</rs> wird beschließen un' denn <rs ref="#neumerkel-bb">wirste</rs> seh'n.</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Da kann <rs ref="#neumerkel-bb">er</rs> ja warten. Ich meene, wenn <rs ref="#neumerkel-bb">er</rs> <rs ref="#deine-Katze"><rs ref="#neumerkel-bb">sein</rs> Eegentum</rs> nich' kriegt, hat <rs ref="#neumerkel-bb">er</rs> <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)"><rs ref="#neumerkel-bb">sein</rs> Geld</rs>
+            zu verlangen.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p><rs ref="#die-Verfahrenskosten…-/-die-Verpflägungskost…-+-2">Der Schaden</rs> is da, so oder so. Hie is <rs ref="#neubert">Herr Neibert</rs>. Uff <rs ref="#neubert">seine</rs> Beschwerde is <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die ganze
+            Sache</rs> gemacht. <rs ref="#neubert">Er</rs> verlangt <rs ref="#vier-Daler-Schadensersatz">vier Daler Schadensersatz</rs>.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT</speaker></rs>
+          <stage><rs ref="#neubert">der</rs> umhergerannt ist, schießt vor.</stage>
+          <p>Was, erlauben <rs ref="#ermischer">Sie</rs> mal! Nun, da <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">die Gemeinde</rs> blamiert ist, wollen <rs ref="#ermischer">Sie</rs> mir wohl <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">die
+            Geschichte</rs> in die Schuhe schieben. Aber da verzichte ich lieber auf <rs ref="#vier-Daler-Schadensersatz">allen
+            Schadensersatz</rs>!</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage>laut zu <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-5">den Leuten</rs>.</stage>
+          <p>Habt <rs ref="#frau_ulbrich-/-die_waldarbeiter-+-5">ihr</rs>'<rs ref="#s2">s</rs> gehört? <rs ref="#s2"><rs ref="#neubert">Herr Neibert</rs> verzichtet uff <rs ref="#vier-Daler-Schadensersatz">Schadensersatz</rs></rs>. So muß <rs ref="#neumerkel-bb">Neimerkel</rs> <rs ref="#vier-Daler-Schadensersatz">die
+            vier Daler</rs> 'rauskriegen!</p>
+        </sp>
+        <sp who="#die_waldarbeiter #die_bauern #die_schnitzler_schnitzlersleute">
+          <rs ref="#ZURUFE."><speaker>DIE LEUTE.</speaker></rs>
+          <p>'s recht! 's recht!</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>sieht <rs ref="#neubert">Neubert, <rs ref="#neubert">der</rs> <rs ref="#ermischer">ihm</rs> den Rücken gekehrt hat</rs>, unschlüssig an.</stage>
+          <p>Ja, wenn <rs ref="#s2">des</rs> <rs ref="#neubert">Herrn Neiberts</rs> Ernst is, so muß ich freilich ... <stage>Legt zögernd <rs ref="#vier---------------Taler-(schadensersatzzahlung-die-neumerkel-zurückerhält)">vier
+              Taler</rs> auf <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)">den Tisch</rs>.</stage> Hie is <rs ref="#vier---------------Taler-(schadensersatzzahlung-die-neumerkel-zurückerhält)">der Schadensersatz</rs>.</p>
+          <stage><rs ref="#neumerkel-bb">Neumerkel</rs> streicht <rs ref="#vier---------------Taler-(schadensersatzzahlung-die-neumerkel-zurückerhält)">das Geld</rs> eilends ein.</stage>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#s2">Das</rs> heißt ... <rs ref="#s2">das</rs> is ja ... Gut, aber wenn ich keinen Schadensersatz bekomme, inwiefern
+            haben <rs ref="#seifert-/-frau_seifert">diese Seiferts</rs> <rs ref="#die-Verpflägungskosten-xxx">Verpflegungskosten</rs> zu beanspruchen, hä?</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Da ha'm <rs ref="#neubert">Sie</rs> recht, nach <rs ref="#Ihre-Lage-(situation-seiferts-bezügl-der-katze))">Lage <rs ref="#die-Sache-(die-umstände-um-die-rückgabe-der-katze-an-neumerkel)">der Sach'</rs></rs> kriegt <rs ref="#seifert">der Seifeit</rs> keen Verpflegungsgeld.</p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Gut, dann müssen <rs ref="#ermischer">Sie</rs> aber auch <rs ref="#die-Verpflägungskosten-xxx">das</rs> auszahlen.</p>
+          <pb n="537"/>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>legt <rs ref="#Geld-(rückzahlung-verpflegungsgeld-an-neumerkel)">Geld</rs> auf <rs ref="#einem-leeren-Tische-(ermischer-und-bauern-im-schanklokal)">den Tisch</rs>.</stage>
+          <p>Scheen. Hie sein <rs ref="#Geld-(rückzahlung-verpflegungsgeld-an-neumerkel)">zwee Daler Verpflegungsgeld</rs>.</p>
+          <stage><rs ref="#neumerkel-bb">Neumerkel</rs> streicht <rs ref="#Geld-(rückzahlung-verpflegungsgeld-an-neumerkel)">es</rs> ein.</stage>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Wie aber steht's mit'<rs ref="#die-Verfahrenskosten-xxx">n Verfahrungskosten</rs>? <rs ref="#Das2">Wie kommt <rs ref="#neumerkel-bb">der Neimerkel</rs> dazu, <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">der Gemeende</rs>
+            <rs ref="#die-Verfahrenskosten-xxx">Verfahrungskosten</rs> zu bezahlen, wenn <rs ref="#deine-Katze">des Objekt</rs> verschwunden is?</rs></p>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p><rs ref="#Das2">Das</rs> is ganz richtig; wenn ich nichts kriege, kriegt <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">die Gemeinde</rs> auch nichts.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Aber <rs ref="#'s-ausgegebene-Geld">die Auslagen</rs> sein doch gemacht?</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p><rs ref="#Des4">Aber <rs ref="#neumerkel-bb">der Neimerkel</rs> hat <rs ref="#die-Verfahrenskosten-xxx">se</rs> nich' zu bezahlen</rs>.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>kleinlaut.</stage>
+          <p><rs ref="#Des4">Des</rs> heeßt ... hie sein ... <rs ref="#die-Daler">die Daler</rs> ... <stage>Legt <rs ref="#die-Daler">den Rest <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">des Geldes</rs></rs>
+            hin.</stage></p>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>streicht <rs ref="#die-Daler">es</rs> ein.</stage>
+          <p>Stimmt uff Heller un' Pfeng'. <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">Die Erbschaft</rs> wär' wieder zusammen!</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER.</speaker></rs>
+          <p>Ja, aber ... was wird denn nu? <rs ref="#'s-ausgegebene-Geld">'s ausgegebene Geld</rs> steht bei <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">der Gemeende</rs> zu Buche, wer
+            bezahlt denn <rs ref="#'s-ausgegebene-Geld">die Sach'</rs>?</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR</speaker></rs>
+          <stage>nimmt höhnisch den Hut ab.</stage>
+          <p>Ja, <rs ref="#ermischer">Herr Gemeendefierstand</rs>, <rs ref="#'s-ausgegebene-Geld">die</rs> wer'n Sie wohl selber bezahlen müssen.</p>
+        </sp>
+        <sp who="#ermischer">
+          <rs ref="#ermischer"><speaker>ERMISCHER</speaker></rs>
+          <stage>starrt <rs ref="#schoenherr">ihn</rs> verblüfft an, greift dann wütend nach <rs ref="#ermischer">seinem</rs> Hut und stürzt
+            hinaus.</stage>
+          <p>I, da mag <rs ref="#der-Teufel-(wohl-sprichwörtl)">der Deifel</rs> dehie Gemeendefierstand sinn!</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs> hinter <rs ref="#ermischer">ihm</rs> her.</stage>
+        </sp>
+        <sp who="#neubert">
+          <rs ref="#neubert"><speaker>NEUBERT.</speaker></rs>
+          <p>Wie liegt denn nun die Sache? <rs ref="#neumerkel-bb">Der Neumerkel</rs> hat <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)"><rs ref="#neumerkel-bb">sein</rs> Geld</rs> wieder, ich hab' <rs ref="#Reinigung-von-Wäsche-------------und-Kleidungstücken-(neubert)">den Schaden</rs>
+            und obendrein noch den Spott?!.. <stage>Außer <rs ref="#neubert">sich</rs>.</stage> Ich muß mich dafür bedanken,
+            in <rs ref="#der-Gemeende-(politisches-konzept-das-sich-aus-den-bewohner-und-ihren-vertretern-konstituiert)">so 'ner Gemeinde</rs> 'nen Gemeinderatsposten anzunehmen! <stage>Rennt hinaus.</stage></p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#ulbrich #frau_ulbrich">
+          <rs ref="#ulbrich-/-frau_ulbrich"><speaker>DIE BEIDEN ULBRICHS</speaker></rs>
+          <stage>hinter <rs ref="#neubert">ihm</rs> her.</stage>
+          <p><rs ref="#neubert">Herr Neibert</rs>! <rs ref="#neubert">Herr Neibert</rs>! <rs ref="#neubert">Sie</rs> ha'm ja'<rs ref="#'ne-------------Lage-Freibier-(bestechungsbier-neuberts-an)">s Freibier</rs> zu bezahlen vergessen! <rs ref="#neubert">Herr Neibert</rs>
+            ...!</p>
+          <stage><rs ref="#Gelächter">Gelächter</rs>.</stage>
+        </sp>
+        <sp who="#neumerkel">
+          <rs ref="#neumerkel-bb"><speaker>NEUMERKEL</speaker></rs>
+          <stage>klappert mit <rs ref="#Taler-(die-neumerkel-auf-den-tisch-legt-um-seine-schulden-zu-begleichen,-ungefähr-der-betrag-seines-erbes,-aber-nicht-deckungsgleich)">dem Gelde</rs>.</stage>
+          <p>Wie wär'<rs ref="#s3">s</rs>, <rs ref="#die_schnitzler_schnitzlersleute">Meester</rs>, <rs ref="#s3">wenn ich die Zeche glatt machte</rs>?</p>
+        </sp>
+        <sp who="#schoenherr">
+          <rs ref="#schoenherr"><speaker>SCHÖNHERR.</speaker></rs>
+          <p>Sei nich' dumm, <rs ref="#neumerkel-bb">Neimerkel</rs>. Des is doch immer verdeelt. Der eene sorgt für den Spaß un'
+            die andern bezahlen die Kosten!</p>
+          <stage>Der Vorhang fällt.</stage>
+          <pb n="538"/>
+        </sp>
+    </body>
+  </text>
+</TEI>
+</#root>

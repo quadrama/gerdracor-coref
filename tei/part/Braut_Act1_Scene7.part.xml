@@ -1,0 +1,857 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Braut von Messina oder Die feindlichen Brüder</title>
+        <title type="sub">Ein Trauerspiel mit Chören</title>
+        <author key="pnd:118607626">Schiller, Friedrich</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000067</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1211729</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:v0d8.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Friedrich Schiller: Sämtliche Werke, Auf Grund der Originaldrucke herausgegeben
+              von Gerhard Fricke und Herbert G. Göpfert in Verbindung mit Herbert Stubenrauch, Band
+              1–5, 3. Auflage, München: Hanser, 1962.</title>
+            <date type="print" when="1803"/>
+            <date type="premiere"/>
+            <date type="written" when="1803">1802–03</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="isabella" sex="FEMALE">
+            <persName>Isabella</persName>
+          </person>
+          <person xml:id="diego" sex="MALE">
+            <persName>Diego</persName>
+          </person>
+          <personGrp xml:id="erster_chor" sex="MALE">
+            <name>Erster Chor</name>
+          </personGrp>
+          <personGrp xml:id="zweiter_chor" sex="MALE">
+            <name>Zweiter Chor</name>
+          </personGrp>
+          <personGrp xml:id="chor" sex="MALE">
+            <name>Der ganze Chor</name>
+            <name type="variant">Chor</name>
+            <name type="variant">Beide Chöre</name>
+            <name type="variant">Ganzer Chor</name>
+          </personGrp>
+          <person xml:id="einer_aus_dem_chor_1-3" sex="MALE">
+            <persName>Einer aus dem Chor (I/3)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-3" sex="MALE">
+            <persName>Ein Zweiter (I/3)</persName>
+          </person>
+          <person xml:id="don_manuel" sex="MALE">
+            <persName>Don Manuel</persName>
+          </person>
+          <person xml:id="don_cesar" sex="MALE">
+            <persName>Don Cesar</persName>
+          </person>
+          <person xml:id="bote_1-6" sex="MALE">
+            <persName>Bote (I/6)</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_1-8" sex="MALE">
+            <persName>Einer aus dem Chor (I/8)</persName>
+          </person>
+          <person xml:id="ein_zweiter_1-8" sex="MALE">
+            <persName>Ein Zweiter (I/8)</persName>
+          </person>
+          <person xml:id="ein_dritter_1-8" sex="MALE">
+            <persName>Ein Dritter (I/8)</persName>
+          </person>
+          <person xml:id="beatrice" sex="FEMALE">
+            <persName>Beatrice</persName>
+          </person>
+          <person xml:id="einer_aus_dem_chor_3-5" sex="MALE">
+            <persName>Einer aus dem Chor (III/5)</persName>
+          </person>
+          <person xml:id="ein_zweiter_3-5" sex="MALE">
+            <persName>Ein Zweiter (III/5)</persName>
+          </person>
+          <person xml:id="ein_dritter_3-5" sex="MALE">
+            <persName>Ein Dritter (III/5)</persName>
+          </person>
+          <person xml:id="bote_4-2_und_4-3" sex="MALE">
+            <persName>Bote (IV/2–3)</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#isabella" passive="#don_manuel"/>
+            <relation name="parent_of" active="#isabella" passive="#don_cesar"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2018-11-04">(ff) initital commit; scene segmentation from
+          Gutenberg-DE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Friedrich Schiller</head>
+        <head>Die Braut von Messina</head>
+        <head>oder</head>
+        <head>Die feindlichen Brüder</head>
+        <head>Ein Trauerspiel mit Chören</head>
+      </div>
+      <div type="preface">
+        <head><pb type="start" n="815"/> Über den Gebrauch des Chors in der Tragödie</head>
+        <p>Ein poetisches Werk muß sich selbst rechtfertigen, und wo die Tat nicht spricht, da wird
+          das Wort nicht viel helfen. Man könnte es also gar wohl dem Chor überlassen, sein eigener
+          Sprecher zu sein, wenn er nur erst selbst auf die gehörige Art zur Darstellung gebracht
+          wäre. Aber das tragische Dichterwerk wird erst durch die theatralische Vorstellung zu
+          einem Ganzen; nur die Worte gibt der Dichter, Musik und Tanz müssen hinzukommen, sie zu
+          beleben. So lange also dem Chor diese sinnlich mächtige Begleitung fehlt, so lange wird er
+          in der Ökonomie des Trauerspiels als ein Außending, als ein fremdartiger Körper und als
+          ein Aufenthalt erscheinen, der nur den Gang der Handlung unterbricht, der die Täuschung
+          stört, der den Zuschauer erkältet. Um dem Chor sein Recht anzutun, muß man sich also von
+          der wirklichen Bühne auf eine <emph>mögliche</emph> versetzen, aber das muß man überall,
+          wo man zu etwas Höherm gelangen will. Was die Kunst noch nicht hat, das soll sie erwerben;
+          der zufällige Mangel an Hilfsmitteln darf die schaffende Einbildungskraft des Dichters
+          nicht beschränken. Das Würdigste setzt er sich zum Ziel, einem Ideale strebt er nach, die
+          ausübende Kunst mag sich nach den Umständen bequemen.</p>
+        <p>Es ist nicht wahr, was man gewöhnlich behaupten hört, daß das Publikum die Kunst
+          herabzieht; der Künstler zieht das Publikum herab, und zu allen Zeiten, wo die Kunst
+          verfiel, ist sie durch die Künstler gefallen. Das Publikum braucht nichts als
+          Empfänglichkeit, und diese besitzt es. Es tritt vor den Vorhang mit einem unbestimmten
+          Verlangen, mit einem vielseitigen Vermögen. Zu dem Höchsten bringt es eine Fähigkeit mit,
+          es erfreut sich an dem Verständigen und Rechten, und wenn es damit angefangen hat, sich
+          mit dem Schlechten zu begnügen, so wird es zuverlässig damit aufhören, das Vortreffliche
+          zu fodern, wenn man es ihm erst gegeben hat.</p>
+        <p>Der Dichter, hört man einwenden, hat gut nach einem Ideal arbeiten, der Kunstrichter hat
+          gut nach Ideen urteilen, die bedingte, beschränkte, ausübende Kunst ruht auf dem
+          Bedürfnis. Der Unternehmer will bestehen, der Schauspieler will sich zeigen, der Zuschauer
+            <pb n="815"/> will unterhalten und in Bewegung gesetzt sein. Das Vergnügen sucht er und
+          ist unzufrieden, wenn man ihm da eine Anstrengung zumutet, wo er ein Spiel und eine
+          Erholung erwartet.</p>
+        <p>Aber, indem man das Theater ernsthafter behandelt, will man das Vergnügen des Zuschauers
+          nicht aufheben, sondern veredeln. Es soll ein Spiel bleiben, aber ein poetisches. Alle
+          Kunst ist der Freude gewidmet, und es gibt keine höhere und keine ernsthaftere Aufgabe,
+          als die Menschen zu beglücken. Die rechte Kunst ist nur diese, welche den höchsten Genuß
+          verschafft. Der höchste Genuß aber ist die Freiheit des Gemütes in dem lebendigen Spiel
+          aller seiner Kräfte.</p>
+        <p>Jeder Mensch zwar erwartet von den Künsten der Einbildungskraft eine gewisse Befreiung
+          von den Schranken des Wirklichen, er will sich an dem Möglichen ergötzen und seiner
+          Phantasie Raum geben. Der am wenigsten erwartet, will doch sein Geschäft, sein gemeines
+          Leben, sein Individuum vergessen, er will sich in außerordentlichen Lagen fühlen, sich an
+          den seltsamen Kombinationen des Zufalls weiden, er will, wenn er von ernsthafterer Natur
+          ist, die moralische Weltregierung, die er im wirklichen Leben vermißt, auf der Schaubühne
+          finden. Aber er weiß selbst recht gut, daß er nur ein leeres Spiel treibt, daß er im
+          eigentlichen Sinn sich nur an Träumen weidet, und wenn er von dem Schauplatz wieder in die
+          wirkliche Welt zurückkehrt, so umgibt ihn diese wieder mit ihrer ganzen drückenden Enge,
+          er ist ihr Raub, wie vorher, denn sie selbst ist geblieben, was sie war, und an ihm ist
+          nichts verändert worden. Dadurch ist also nichts gewonnen, als ein gefälliger Wahn des
+          Augenblicks, der beim Erwachen verschwindet.</p>
+        <p>Und eben darum, weil es hier nur auf eine vorübergehende Täuschung abgesehen ist, so ist
+          auch nur ein Schein der Wahrheit oder die beliebte Wahrscheinlichkeit nötig, die man so
+          gern an die Stelle der Wahrheit setzt.</p>
+        <p>Die wahre Kunst aber hat es nicht bloß auf ein vorübergehendes Spiel abgesehen, es ist
+          ihr Ernst damit, den Menschen nicht bloß in einen augenblicklichen Traum von Freiheit zu
+          versetzen, sondern ihn wirklich und in der Tat frei zu <emph>machen</emph>, und dieses
+          dadurch, daß sie eine Kraft in ihm erweckt, übt und ausbildet, die sinnliche Welt, die
+          sonst nur als ein roher Stoff auf uns lastet, als eine blinde Macht <pb n="816"/> auf uns
+          drückt, in eine objektive Ferne zu rücken, in ein freies Werk unsers Geistes zu verwandeln
+          und das Materielle durch Ideen zu beherrschen.</p>
+        <p>Und eben darum weil die wahre Kunst etwas Reelles und Objektives will, so kann sie sich
+          nicht bloß mit dem Schein der Wahrheit begnügen; auf der Wahrheit selbst, auf dem festen
+          und tiefen Grunde der Natur errichtet sie ihr ideales Gebäude.</p>
+        <p>Wie aber nun die Kunst zugleich ganz ideell und doch im tiefsten Sinne reell sein – wie
+          sie das Wirkliche ganz verlassen und doch aufs genaueste mit der Natur übereinstimmen soll
+          und kann, das ists, was wenige fassen, was die Ansicht poetischer und plastischer Werke so
+          schielend macht, weil beide Foderungen einander im gemeinen Urteil geradezu aufzuheben
+          scheinen.</p>
+        <p>Auch begegnet es gewöhnlich, daß man das eine mit Aufopferung des andern zu erreichen
+          sucht und eben deswegen beides verfehlt. Wem die Natur zwar einen treuen Sinn und eine
+          Innigkeit des Gefühls verliehen, aber die schaffende Einbildungskraft versagte, der wird
+          ein treuer Maler des Wirklichen sein, er wird die zufällige Erscheinungen, aber nie den
+          Geist der Natur ergreifen. Nur den Stoff der Welt wird er uns wiederbringen, aber es wird
+          eben darum nicht unser Werk, nicht das freie Produkt unsers bildenden Geistes sein und
+          kann also auch die wohltätige Wirkung der Kunst, welche in der Freiheit besteht, nicht
+          haben. Ernst zwar, doch unerfreulich ist die Stimmung, mit der uns ein solcher Künstler
+          und Dichter entläßt, und wir sehen uns durch die Kunst selbst, die uns befreien sollte, in
+          die gemeine enge Wirklichkeit peinlich zurückversetzt. Wem hingegen zwar eine rege
+          Phantasie, aber ohne Gemüt und Charakter, zuteil geworden, der wird sich um keine Wahrheit
+          bekümmern; sondern mit dem Weltstoff nur spielen, nur durch phantastische und bizarre
+          Kombinationen zu überraschen suchen, und wie sein ganzes Tun nur Schaum und Schein ist, so
+          wird er zwar für den Augenblick unterhalten, aber im Gemüt nichts erbauen und begründen.
+          Sein Spiel ist, so wie der Ernst des andern, kein poetisches. Phantastische Gebilde
+          willkürlich aneinanderreihen, heißt nicht ins Ideale gehen, und das Wirkliche nachahmend
+          wieder bringen, heißt nicht die Natur darstellen. Beide Foderungen stehen so wenig im
+          Widerspruch miteinander, <pb n="817"/> daß sie vielmehr – eine und dieselbe sind; daß die
+          Kunst nur dadurch wahr ist, daß sie das Wirkliche ganz verläßt und rein ideell wird. Die
+          Natur selbst ist nur eine Idee des Geistes, die nie in die Sinne fällt. Unter der Decke
+          der Erscheinungen liegt sie, aber sie selbst kommt niemals zur Erscheinung. Bloß der Kunst
+          des Ideals ist es verliehen, oder vielmehr, es ist ihr aufgegeben, diesen Geist des Alls
+          zu ergreifen und in einer körperlichen Form zu binden. Auch sie selbst kann ihn zwar nie
+          vor die Sinne, aber doch durch ihre schaffende Gewalt vor die Einbildungskraft bringen und
+          dadurch wahrer sein als alle Wirklichkeit und realer als alle Erfahrung. Es ergibt sich
+          daraus von selbst, daß der Künstler kein einziges Element aus der Wirklichkeit brauchen
+          kann, wie er es findet, daß sein Werk in <emph>allen</emph> seinen Teilen ideell sein muß,
+          wenn es als ein Ganzes Realität haben und mit der Natur übereinstimmen soll.</p>
+        <p>Was von Poesie und Kunst im Ganzen wahr ist, gilt auch von allen Gattungen derselben, und
+          es läßt sich ohne Mühe von dem jetzt Gesagten auf die Tragödie die Anwendung machen. Auch
+          hier hatte man lange und hat noch jetzt mit dem gemeinen Begriff des
+            <emph>Natürlichen</emph> zu kämpfen, welcher alle Poesie und Kunst geradezu aufhebt und
+          vernichtet. Der bildenden Kunst gibt man zwar notdürftig, doch mehr aus konventionellen
+          als aus innern Gründen, eine gewisse Idealität zu, aber von der Poesie und von der
+          dramatischen insbesondere verlangt man <emph>Illusion</emph>, die, wenn sie auch wirklich
+          zu leisten wäre, immer nur ein armseliger Gauklerbetrug sein würde. Alles Äußere bei einer
+          dramatischen Vorstellung steht diesem Begriff entgegen – alles ist nur ein Symbol des
+          Wirklichen. Der Tag selbst auf dem Theater ist nur ein künstlicher, die Architektur ist
+          nur eine symbolische, die metrische Sprache selbst ist ideal, aber die Handlung soll nun
+          einmal real sein und der Teil das Ganze zerstören. So haben die Franzosen, die den Geist
+          der Alten zuerst ganz mißverstanden, eine Einheit des Orts und der Zeit nach dem
+          gemeinsten empirischen Sinn auf der Schaubühne eingeführt, als ob hier ein anderer Ort
+          wäre als der bloß ideale Raum, und eine andere Zeit als bloß die stetige Folge der
+          Handlung.</p>
+        <p>Durch Einführung einer metrischen Sprache ist man indes der poetischen Tragödie schon um
+          einen großen Schritt näher gekommen. Es sind einige lyrische Versuche auf der Schaubühne
+          glücklich durchgegangen, <pb n="818"/> und die Poesie hat sich durch ihre eigene lebendige
+          Kraft, im einzelnen, manchen Sieg über das herrschende Vorurteil errungen. Aber mit den
+          einzelnen ist wenig gewonnen, wenn nicht der Irrtum im Ganzen fällt, und es ist nicht
+          genug, daß man das nur als eine poetische Freiheit duldet, was doch das Wesen aller Poesie
+          ist. Die Einführung des Chors wäre der letzte, der entscheidende Schritt – und wenn
+          derselbe auch nur dazu diente, dem Naturalism in der Kunst offen und ehrlich den Krieg zu
+          erklären, so sollte er uns eine lebendige Mauer sein, die die Tragödie um sich herumzieht,
+          um sich von der wirklichen Welt rein abzuschließen und sich ihren idealen Boden ihre
+          poetische Freiheit zu bewahren.</p>
+        <p>Die Tragödie der Griechen ist, wie man weiß, aus dem Chor entsprungen. Aber so wie sie
+          sich historisch und der Zeitfolge nach daraus loswand, so kann man auch sagen, daß sie
+          poetisch und dem Geiste nach aus demselben entstanden, und daß ohne diesen beharrlichen
+          Zeugen und Träger der Handlung eine ganz andere Dichtung aus ihr geworden wäre. Die
+          Abschaffung des Chors und die Zusammenziehung dieses sinnlich mächtigen Organs in die
+          charakterlose langweilig wiederkehrende Figur eines ärmlichen Vertrauten war also keine so
+          große Verbesserung der Tragödie, als die Franzosen und ihre Nachbeter sich eingebildet
+          haben.</p>
+        <p>Die alte Tragödie, welche sich ursprünglich nur mit Göttern, Helden und Königen abgab,
+          brauchte den Chor als eine notwendige Begleitung, sie fand ihn in der Natur und brauchte
+          ihn, weil sie ihn fand. Die Handlungen und Schicksale der Helden und Könige sind schon an
+          sich selbst öffentlich und waren es in der einfachen Urzeit noch mehr. Der Chor war
+          folglich in der alten Tragödie mehr ein natürliches Organ, er folgte schon aus der
+          poetischen Gestalt des wirklichen Lebens. In der neuen Tragödie wird er zu einem
+          Kunstorgan; er hilft die Poesie <emph>hervorbringen</emph>. Der neuere Dichter findet den
+          Chor nicht mehr in der Natur, er muß ihn poetisch erschaffen und einführen, das ist, er
+          muß mit der Fabel, die er behandelt, eine solche Veränderung vornehmen, wodurch sie in
+          jene kindliche Zeit und in jene einfache Form des Lebens zurückversetzt wird.</p>
+        <p>Der Chor leistet daher dem neuern Tragiker noch weit wesentlichere Dienste, als dem alten
+          Dichter, eben deswegen, weil er die moderne <pb n="819"/> gemeine Welt in die alte
+          poetische verwandelt, weil er ihm alles das unbrauchbar macht, was der Poesie widerstrebt,
+          und ihn auf die einfachsten, ursprünglichsten und naivsten Motive hinauftreibt. Der Palast
+          der Könige ist jetzt geschlossen, die Gerichte haben sich von den Toren der Städte in das
+          Innere der Häuser zurückgezogen, die Schrift hat das lebendige Wort verdrängt, das Volk
+          selbst, die sinnlich lebendige Masse, ist, wo sie nicht als rohe Gewalt wirkt, zum Staat,
+          folglich zu einem abgezogenen Begriff geworden, die Götter sind in die Brust des Menschen
+          zurückgekehrt. Der Dichter muß die Paläste wieder auftun, er muß die Gerichte unter freien
+          Himmel herausführen, er muß die Götter wieder aufstellen, er muß alles Unmittelbare, das
+          durch die künstliche Einrichtung des wirklichen Lebens aufgehoben ist, wieder herstellen
+          und alles künstliche Machwerk an dem Menschen und um denselben, das die Erscheinung seiner
+          innern Natur und seines ursprünglichen Charakters hindert, wie der Bildhauer die modernen
+          Gewänder, abwerfen und von allen äußern Umgebungen desselben nichts aufnehmen, als was die
+          höchste der Formen, die menschliche, sichtbar macht.</p>
+        <p>Aber ebenso, wie der bildende Künstler die faltige Fülle der Gewänder um seine Figuren
+          breitet, um die Räume seines Bildes reich und anmutig auszufüllen, um die getrennten
+          Partien desselben in ruhigen Massen stetig zu verbinden, um der Farbe, die das Auge reizt
+          und erquickt, einen Spielraum zu geben, um die menschlichen Formen zugleich geistreich zu
+          verhüllen und sichtbar zu machen, ebenso durchflicht und umgibt der tragische Dichter
+          seine streng abgemessene Handlung und die festen Umrisse seiner handelnden Figuren mit
+          einem lyrischen Prachtgewebe, in welchem sich, als wie in einem weit gefalteten
+          Purpurgewand, die handelnden Personen frei und edel mit einer gehaltenen Würde und hoher
+          Ruhe bewegen.</p>
+        <p>In einer höhern Organisation darf der Stoff oder das Elementarische nicht mehr sichtbar
+          sein, die chemische Farbe verschwindet in der feinen Carnation des Lebendigen. Aber auch
+          der Stoff hat seine Herrlichkeit und kann als solcher in einem Kunstkörper aufgenommen
+          werden. Dann aber muß er sich durch Leben und Fülle und durch Harmonie seinen Platz
+          verdienen und die Formen, die er umgibt, geltend machen, anstatt sie durch seine Schwere
+          zu erdrücken.</p>
+        <p><pb n="820"/> In Werken der bildenden Kunst ist dieses jedem leicht verständlich, aber
+          auch in der Poesie und in der tragischen, von der hier die Rede ist, findet dasselbe
+          statt. Alles, was der Verstand sich im allgemeinen ausspricht, ist ebenso wie das, was
+          bloß die Sinne reizt, nur Stoff und rohes Element in einem Dichterwerk und wird da, wo es
+          vorherrscht, unausbleiblich das Poetische zerstören; denn dieses liegt gerade in dem
+          Indifferenzpunkt des Ideellen und Sinnlichen. Nun ist aber der Mensch so gebildet, daß er
+          immer von dem Besondern ins Allgemeine gehen will, und die Reflexion muß also auch in der
+          Tragödie ihren Platz erhalten. Soll sie aber diesen Platz verdienen, so muß sie das, was
+          ihr an sinnlichem Leben fehlt, durch den Vortrag wieder gewinnen, denn wenn die zwei
+          Elemente der Poesie, das Ideale und Sinnliche, nicht innig verbunden <emph>zusammen
+            wirken</emph>, so müssen sie <emph>nebeneinander</emph> wirken, oder die Poesie ist
+          aufgehoben. Wenn die Waage nicht vollkommen inne steht, da kann das Gleichgewicht nur
+          durch eine <emph>Schwankung</emph> der beiden Schalen hergestellt werden.</p>
+        <p>Und dieses leistet nun der Chor in der Tragödie. Der Chor ist selbst kein Individuum,
+          sondern ein allgemeiner Begriff, aber dieser Begriff repräsentiert sich durch eine
+          sinnlich mächtige Masse, welche durch ihre ausfüllende Gegenwart den Sinnen imponiert. Der
+          Chor verläßt den engen Kreis der Handlung, um sich über Vergangenes und Künftiges, über
+          ferne Zeiten und Völker, über das Menschliche überhaupt zu verbreiten, um die großen
+          Resultate des Lebens zu ziehen und die Lehren der Weisheit auszusprechen. Aber er tut
+          dieses mit der vollen Macht der Phantasie, mit einer kühnen lyrischen Freiheit, welche auf
+          den hohen Gipfeln der menschlichen Dinge, wie mit Schritten der Götter, einhergeht – und
+          er tut es, von der ganzen sinnlichen Macht des Rhythmus und der Musik in Tönen und
+          Bewegungen begleitet.</p>
+        <p>Der Chor <emph>reinigt</emph> also das tragische Gedicht, indem er die Reflexion von der
+          Handlung absondert und eben durch diese Absonderung sie selbst mit poetischer Kraft
+          ausrüstet; ebenso, wie der bildende Künstler die gemeine Notdurft der Bekleidung durch
+          eine reiche Draperie in einen Reiz und in eine Schönheit verwandelt.</p>
+        <p>Aber ebenso, wie sich der Maler gezwungen sieht, den Farbenton des Lebendigen zu
+          verstärken, um den mächtigen Stoffen das Gleichgewicht <pb/> zu halten, so legt die
+          lyrische Sprache des Chors dem Dichter auf, verhältnismäßig die ganze Sprache des Gedichts
+          zu erheben und dadurch die sinnliche Gewalt des Ausdrucks überhaupt zu verstärken. Nur der
+          Chor berechtiget den tragischen Dichter zu dieser Erhebung des Tons, die das Ohr ausfüllt,
+          die den Geist anspannt, die das ganze Gemüt erweitert. Diese eine Riesengestalt in seinem
+          Bilde nötigt ihn, alle seine Figuren auf den Kothurn zu stellen und seinem Gemälde dadurch
+          die tragische Größe zu geben. Nimmt man den Chor hinweg, so muß die Sprache der Tragödie
+          im Ganzen sinken, oder was jetzt groß und mächtig ist, wird gezwungen und überspannt
+          erscheinen. Der alte Chor, in das französische Trauerspiel eingeführt, würde es in seiner
+          ganzen Dürftigkeit darstellen und zunichte machen; eben derselbe würde ohne Zweifel
+          Shakespeares Tragödie erst ihre wahre Bedeutung geben.</p>
+        <p>So wie der Chor in die Sprache <emph>Leben</emph> bringt, so bringt er <emph>Ruhe</emph>
+          in die Handlung – aber die schöne und hohe Ruhe, die der Charakter eines edeln Kunstwerkes
+          sein muß. Denn das Gemüt des Zuschauers soll auch in der heftigsten Passion seine Freiheit
+          behalten, es soll kein Raub der Eindrücke sein, sondern sich immer klar und heiter von den
+          Rührungen scheiden, die es erleidet. Was das gemeine Urteil an dem Chor zu tadeln pflegt,
+          daß er die Täuschung aufhebe, daß er die Gewalt der Affekte breche, das gereicht ihm zu
+          seiner höchsten Empfehlung, denn eben diese blinde Gewalt der Affekte ist es, die der
+          wahre Künstler vermeidet, diese Täuschung ist es, die er zu erregen verschmäht. Wenn die
+          Schläge, womit die Tragödie unser Herz trifft, ohne Unterbrechung aufeinander folgten, so
+          würde das Leiden über die Tätigkeit siegen. Wir würden uns mit dem Stoffe vermengen und
+          nicht mehr über demselben schweben. Dadurch, daß der Chor die Teile auseinanderhält und
+          zwischen die Passionen mit seiner beruhigenden Betrachtung tritt, gibt er uns unsre
+          Freiheit zurück, die im Sturm der Affekte verlorengehen würde. Auch die tragischen
+          Personen selbst bedürfen dieses Anhalts, dieser Ruhe, um sich zu sammeln; denn sie sind
+          keine wirkliche Wesen, die bloß der Gewalt des Moments gehorchen und bloß ein Individuum
+          darstellen, sondern ideale Personen und Repräsentanten ihrer Gattung, die das Tiefe der
+          Menschheit aussprechen. Die Gegenwart des Chors, der als ein richtender <pb n="822"/>
+          Zeuge sie vernimmt und die ersten Ausbrüche ihrer Leidenschaft durch seine Dazwischenkunft
+          bändigt, motiviert die Besonnenheit, mit der sie handeln, und die Würde, mit der sie
+          reden. Sie stehen gewissermaßen schon auf einem natürlichen Theater, weil sie vor
+          Zuschauern sprechen und handeln, und werden eben deswegen desto tauglicher, von dem
+          Kunsttheater zu einem Publikum zu reden.</p>
+        <p>Soviel über meine Befugnis, den alten Chor auf die tragische Bühne zurückzuführen. Chöre
+          kennt man zwar auch schon in der modernen Tragödie, aber der Chor des griechischen
+          Trauerspiels, so wie ich ihn hier gebraucht habe, der Chor als eine einzige ideale Person,
+          die die ganze Handlung trägt und begleitet, dieser ist von jenen operhaften Chören
+          wesentlich verschieden, und wenn ich bei Gelegenheit der griechischen Tragödie von
+            <emph>Chören</emph> anstatt von einem Chor sprechen höre, so entsteht mir der Verdacht,
+          daß man nicht recht wisse, wovon man rede. Der Chor der alten Tragödie ist meines Wissens
+          seit dem Verfall derselben nie wieder auf der Bühne erschienen.</p>
+        <p>Ich habe den Chor zwar in zwei Teile getrennt und im Streit mit sich selbst dargestellt;
+          aber dies ist nur dann der Fall, wo er als wirkliche Person und als blinde Menge
+          mithandelt. Als <emph>Chor</emph> und als ideale Person ist er immer eins mit sich selbst.
+          Ich habe den Ort verändert und den Chor mehrmal abgehen lassen; aber auch Aeschylus, der
+          Schöpfer der Tragödie, und Sophokles, der größte Meister in dieser Kunst, haben sich
+          dieser Freiheit bedient.</p>
+        <p>Eine andere Freiheit, die ich mir erlaubt, möchte schwerer zu rechtfertigen sein. Ich
+          habe die christliche Religion und die griechische Götterlehre vermischt angewendet, ja,
+          selbst an den maurischen Aberglauben erinnert. Aber der Schauplatz der Handlung ist
+          Messina, wo diese drei Religionen teils lebendig, teils in Denkmälern fortwirkten und zu
+          den Sinnen sprachen. Und dann halte ich es für ein Recht der Poesie, die verschiedenen
+          Religionen als ein kollektives Ganze für die Einbildungskraft zu behandeln, in welchem
+          alles, was einen eignen Charakter trägt, eine eigne Empfindungsweise ausdrückt, seine
+          Stelle findet. <emph>Unter der Hülle aller Religionen liegt die Religion selbst</emph>,
+          die Idee eines Göttlichen, und es muß dem Dichter erlaubt sein, dieses auszusprechen, in
+          welcher Form er es jedesmal am bequemsten und am treffendsten findet.</p>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="823"/> Personen.</head>
+          <castGroup>
+            <castItem><rs ref="#isabella">Donna Isabella, Fürstin von <rs ref="#Messina">Messina</rs></rs>.</castItem>
+            <castGroup>
+              <castItem><rs ref="#don_manuel">Don Manuel</rs>,</castItem>
+              <castItem><rs ref="#don_cesar">Don Cesar</rs>,</castItem>
+              <roleDesc><rs ref="#Die-Brüder-Manuel-und-Cesar"><rs ref="#isabella">ihre</rs> Söhne</rs>.</roleDesc>
+            </castGroup>
+            <castItem><rs ref="#beatrice">Beatrice</rs>.</castItem>
+            <castItem><rs ref="#diego">Diego</rs>.</castItem>
+            <castItem>Boten.</castItem>
+            <castItem><rs ref="#gesamter-Chor">Chor</rs>, besteht aus dem Gefolge <rs ref="#Die-Brüder-Manuel-und-Cesar">der Brüder</rs>.</castItem>
+            <castItem><rs ref="#Die-Ältesten-von-Messina">Die Ältesten von <rs ref="#Messina">Messina</rs></rs>, reden nicht.</castItem>
+          </castGroup>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <div type="act">
+        <stage>Die Szene ist <rs ref="#eine-geräumige-Säulenhalle">eine geräumige Säulenhalle</rs>, auf beiden Seiten sind Eingänge, <rs ref="#eine-große-----------Flügeltüre">eine große
+          Flügeltüre</rs> in der Tiefe führt zu einer Kapelle.</stage>
+        <div type="scene">
+          <stage><rs ref="#don_manuel">Don Manuel</rs> und <rs ref="#erster_chor">der erste Chor</rs>.</stage>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Verwundrungsvoll, o <rs ref="#don_manuel">Herr</rs>, betracht ich <rs ref="#don_manuel">dich</rs>,</l>
+              <l>Und fast muß ich <rs ref="#don_manuel">dich</rs> heute ganz verkennen.</l>
+              <l>Mit karger Rede kaum erwiderst <rs ref="#don_manuel">du</rs></l>
+              <l><rs ref="#don_cesar">Des Bruders</rs> Liebesworte, <rs ref="#don_cesar">der</rs> gutmeinend</l>
+              <l>Mit offnem Herzen <rs ref="#don_manuel">dir</rs> entgegenkommt.</l>
+              <l>Versunken in <rs ref="#don_manuel">dich</rs> selber stehst <rs ref="#don_manuel">du</rs> da</l>
+              <l>Gleich einem Träumenden, als wäre nur</l>
+              <l><rs ref="#don_manuel">Dein</rs> Leib zugegen und <rs ref="#Don-Manuels-Seele">die Seele</rs> fern.</l>
+              <l>Wer so <rs ref="#don_manuel">dich</rs> sähe, möchte leicht der Kälte</l>
+              <l><rs ref="#don_manuel">Dich</rs> zeihn und stolz unfreundlichen Gemüts,</l>
+              <l>Ich aber will <rs ref="#don_manuel">dich</rs> drum nicht fühllos schelten,</l>
+              <l>Denn heiter blickst <rs ref="#don_manuel">du</rs> wie ein Glücklicher</l>
+              <l>Um <rs ref="#don_manuel">dich</rs> und Lächeln spielt um <rs ref="#don_manuel">deine</rs> Wangen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Was soll ich sagen? Was erwidern? Mag</l>
+              <l><rs ref="#don_cesar">Der Bruder</rs> Worte finden! <rs ref="#don_cesar">Ihn</rs> ergreift</l>
+              <l>Ein überraschend neu Gefühl, <rs ref="#don_cesar">er</rs> sieht</l>
+              <l><rs ref="#der-Bruderhass">Den alten Haß</rs> aus <rs ref="#Don-Cesars-Brust"><rs ref="#don_cesar">seinem</rs> Busen</rs> schwinden,</l>
+              <l>Und wundernd fühlt <rs ref="#don_cesar">er</rs> <rs ref="#Don-Cesars-Herz"><rs ref="#don_cesar">sein</rs> verwandelt Herz</rs>.</l>
+              <l>Ich – habe keinen Haß mehr mitgebracht,</l>
+              <l>Kaum weiß ich noch, warum <rs ref="#Die-Brüder-Manuel-und-Cesar">wir</rs> blutig stritten.</l>
+              <l>Denn über allen irdschen Dingen hoch</l>
+              <l>Schwebt mir auf Freudenfittichen <rs ref="#Don-Manuels-Seele">die Seele</rs>,</l>
+              <l>Und in <rs ref="#dem-Glanzesmeer,-das-mich-umfängt">dem Glanzesmeer, <rs ref="#dem-Glanzesmeer,-das-mich-umfängt">das</rs> mich umfängt</rs>,</l>
+              <l>Sind alle Wolken mir und finstre Falten</l>
+              <l><rs ref="#das-Leben">Des Lebens</rs> ausgeglättet und verschwunden.</l>
+              <l><pb n="843"/> – Ich sehe <rs ref="#eine-geräumige-Säulenhalle">diese Hallen, diese Säle</rs></l>
+              <l>Und denke mir das freudige Erschrecken</l>
+              <l><rs ref="#beatrice">Der überraschten, hocherstaunten Braut</rs>,</l>
+              <l>Wenn ich als Fürstin <rs ref="#beatrice">sie</rs> und Herrscherin</l>
+              <l>Durch dieses Hauses Pforten führen werde.</l>
+              <l>– Noch liebt <rs ref="#beatrice">sie</rs> nur <rs ref="#don_manuel">den Liebenden</rs>! <rs ref="#don_manuel">Dem Fremdling,</l>
+              <l>Dem Namenlosen</rs> hat <rs ref="#beatrice">sie</rs> <rs ref="#beatrice">sich</rs> gegeben.</l>
+              <l>Nicht ahnet <rs ref="#beatrice">sie</rs>, daß es <rs ref="#don_manuel">Don Manuel,</l>
+              <l><rs ref="#Messina">Messinas</rs> Fürst</rs> ist, <rs ref="#don_manuel">der</rs> die goldne Binde</l>
+              <l><rs ref="#beatrice">Ihr</rs> um die schöne Stirne flechten wird.</l>
+              <l>Wie süß <rs ref="#das-Geliebte-zu-beglücken---------------Mit-ungehoffter-Größe-Glanz-und-Schein">ists</rs>, <rs ref="#das-Geliebte-zu-beglücken---------------Mit-ungehoffter-Größe-Glanz-und-Schein"><rs ref="#beatrice">das Geliebte</rs> zu beglücken</l>
+              <l>Mit ungehoffter Größe Glanz und Schein</rs>!</l>
+              <l>Längst spart ich mir <rs ref="#dies-höchste-der-Entzücken">dies höchste der Entzücken</rs>,</l>
+              <l>Wohl bleibt es stets <rs ref="#dies-höchste-der-Entzücken">sein</rs> höchster Schmuck allein,</l>
+              <l>Doch auch die Hoheit darf <rs ref="#das-Schöne">das Schöne</rs> schmücken,</l>
+              <l>Der goldne Reif erhebt den Edelstein.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Ich höre <rs ref="#don_manuel">dich, o Herr</rs>, vom langen Schweigen</l>
+              <l>Zum erstenmal den stummen Mund entsiegeln.</l>
+              <l>Mit Späheraugen folgt ich <rs ref="#don_manuel">dir</rs> schon längst,</l>
+              <l>Ein seltsam wunderbar Geheimnis ahnend,</l>
+              <l>Doch nicht erkühnt ich mich, was <rs ref="#don_manuel">du</rs> vor mir</l>
+              <l>In tiefes Dunkel hüllst, <rs ref="#don_manuel">dir</rs> abzufragen.</l>
+              <l><rs ref="#don_manuel">Dich</rs> reizt nicht mehr der Jagden muntre Lust,</l>
+              <l>Der Rosse Wettlauf und des Falken Sieg.</l>
+              <l>Aus der Gefährten Aug verschwindest <rs ref="#don_manuel">du</rs>,</l>
+              <l>Sooft <rs ref="#die-Sonne">die Sonne</rs> sinkt zum Himmelsrande,</l>
+              <l>Und keiner <rs ref="#erster_chor"><rs ref="#erster_chor">unsers</rs> Chors, <rs ref="#erster_chor">die</rs> <rs ref="#erster_chor">wir</rs> <rs ref="#don_manuel">dich</rs> sonst</l>
+              <l>In jeder Kriegs- und Jagdgefahr begleiten</rs>,</l>
+              <l>Mag <rs ref="#don_manuel">deines</rs> stillen Pfads Gefährte sein.</l>
+              <l>Warum verschleierst <rs ref="#don_manuel">du</rs> bis diesen Tag</l>
+              <l><rs ref="#Don-Manuels-Glück"><rs ref="#don_manuel">Dein</rs> Liebesglück</rs> mit dieser neidschen Hülle?</l>
+              <l>Was zwingt <rs ref="#don_manuel">den Mächtigen</rs>, daß <rs ref="#don_manuel">er</rs> verhehle?</l>
+              <l>Denn <rs ref="#Furcht">Furcht</rs> ist fern von <rs ref="#Don-Manuels-Seele"><rs ref="#don_manuel">deiner</rs> großen Seele</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Geflügelt ist <rs ref="#das-Glück">das Glück</rs> und schwer zu binden,</l>
+              <l>Nur in verschloßner Lade <rs ref="#das-Glück">wirds</rs> bewahrt,</l>
+              <l>Das Schweigen ist zum Hüter <rs ref="#das-Glück">ihm</rs> gesetzt,</l>
+              <l><pb n="844"/> Und rasch entfliegt <rs ref="#das-Glück">es</rs>, wenn Geschwätzigkeit</l>
+              <l>Voreilig wagt, die Decke zu erheben.</l>
+              <l>Doch jetzt, dem Ziel so nahe, darf ich wohl</l>
+              <l><rs ref="#Das-lange-Schweigen-brechen">Das lange Schweigen brechen</rs> und ich <rs ref="#Das-lange-Schweigen-brechen">wills</rs>.</l>
+              <l>Denn mit der nächsten Morgensonne Strahl</l>
+              <l>Ist <rs ref="#beatrice">sie</rs> die Meine, und <rs ref="#Don-Cesars-Neid"><rs ref="#don_cesar">des Dämons</rs> Neid</rs></l>
+              <l>Wird keine Macht mehr haben über mich.</l>
+              <l>Nicht mehr verstohlen werd ich zu <rs ref="#beatrice">ihr</rs> schleichen,</l>
+              <l>Nicht rauben mehr <rs ref="#die-Liebe">der Liebe</rs> goldne Frucht,</l>
+              <l>Nicht mehr die Freude haschen auf der Flucht,</l>
+              <l>Das <emph>Morgen</emph> wird dem schönen <emph>Heute</emph> gleichen,</l>
+              <l>Nicht <rs ref="#Blitzen">Blitzen</rs> gleich, <rs ref="#Blitzen">die</rs> schnell vorüberschießen,</l>
+              <l>Und plötzlich von der Nacht verschlungen sind,</l>
+              <l><rs ref="#Don-Manuels-Glück">Mein Glück</rs> wird sein, gleichwie des Baches Fließen,</l>
+              <l>Gleichwie der Sand des Stundenglases rinnt!</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>So nenne <rs ref="#beatrice">sie</rs> <rs ref="#erster_chor">uns</rs>, <rs ref="#don_manuel">Herr</rs>, <rs ref="#beatrice">die</rs> <rs ref="#don_manuel">dich</rs> im stillen</l>
+              <l>Beglückt, daß <rs ref="#erster_chor">wir</rs> <rs ref="#don_manuel">dein</rs> Los beneidend rühmen,</l>
+              <l>Und würdig ehren <rs ref="#beatrice"><rs ref="#don_manuel"><rs ref="#erster_chor">unsers</rs> Fürsten</rs> Braut</rs>.</l>
+              <l>Sag an, <emph>wo</emph> <rs ref="#don_manuel">du</rs> <rs ref="#beatrice">sie</rs> fandest, <emph>wo</emph> verbirgst,</l>
+              <l>In welches Orts verschwiegner Heimlichkeit?</l>
+              <l>Denn <rs ref="#erster_chor">wir</rs> durchziehen schwärmend weit und breit</l>
+              <l>Die Insel auf der Jagd verschlungnen Pfaden,</l>
+              <l>Doch keine Spur hat <rs ref="#erster_chor">uns</rs> <rs ref="#Don-Manuels-Glück"><rs ref="#don_manuel">dein</rs> Glück</rs> verraten,</l>
+              <l>So daß ich bald mich überreden möchte,</l>
+              <l>Es hülle <rs ref="#beatrice">sie</rs> <rs ref="#ein-Zaubernebel">ein Zaubernebel</rs> ein.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#ein-Zaubernebel">Den Zauber</rs> lös ich auf, denn heute noch</l>
+              <l>Soll, <rs ref="#beatrice">was verborgen war</rs>, <rs ref="#die-Sonne">die Sonne</rs> schauen.</l>
+              <l>Vernehmet denn und hört, wie mir geschah.</l>
+              <rs ref="#Fünf-Monde-sinds,-es-herrschte-noch-im-Lande---------------Des-Vaters-Macht,-und-beugete-gewaltsam---------------Der-Jugend-starren-Nacken-in-das-Joch-–---------------Nichts-kannt-ich-als-der-Waffen-wilde-Freuden,---------------Und-als-des-Weidwerks-kriegerische-Lust.---------------–-Wir-hatten-schon-den-ganzen-Tag-gejagt---------------Entlang-des-Waldgebirges-–-da-geschahs,---------------Daß-die-Verfolgung-einer-weißen-Hindin----------------Mich-weit-hinweg-aus-eurem-Haufen-riß.---------------Das-scheue-Tier-floh-durch-des-Tales-Krümmen,---------------Durch-Busch-und-Kluft-und-bahnenlos-Gestrüpp,---------------Auf-Wurfes-Weite-sah-ichs-stets-vor-mir,---------------Doch-konnt-ichs-nicht-erreichen-noch-erzielen,---------------Bis-es-zuletzt-an-eines-Gartens-Pforte-mir---------------Verschwand.-Schnell-von-dem-Roß-herab-mich-werfend---------------Dring-ich-ihm-nach,-schon-mit-dem-Speere-zielend,---------------Da-seh-ich-wundernd-das-erschrockne-Tier---------------Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.---------------Bewegungslos-starr-ich-das-Wunder-an,---------------Den-Jagdspieß-in-der-Hand,-zum-Wurf-ausholend-–---------------Sie-aber-blickt-mit-großen-Augen-flehend---------------Mich-an,-so-stehn-wir-schweigend-gegeneinander-–---------------Wie-lange-Frist,-das-kann-ich-nicht-ermessen,---------------Denn-alles-Maß-der-Zeiten-war-vergessen.---------------Tief-in-die-Seele-drückt-sie-mir-den-Blick,---------------Und-umgewandelt-schnell-ist-mir-das-Herz.---------------–-Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert,-möge-niemand-mich-befragen,---------------Denn-wie-ein-Traumbild-liegt-es-hinter-mir---------------Aus-früher-Kindheit-dämmerhellen-Tagen,---------------An-meiner-Brust-fühlt-ich-die-ihre-schlagen,---------------Als-die-Besinnungskraft-mir-wiederkam.---------------Da-hört-ich-einer-Glocke-helles-Läuten,---------------Den-Ruf-zur-Hora-schien-es-zu-bedeuten,---------------Und-schnell-wie-Geister-in-die-Luft-verwehen,---------------Entschwand-sie-mir-und-ward-nicht-mehr-gesehen."><l>Fünf Monde sinds, es herrschte noch <rs ref="#Messina">im Lande</rs></l>
+              <l><rs ref="#die-Macht-des-Fürsten"><rs ref="#Isabellas-Gatte,-der-Fürst">Des Vaters</rs> Macht</rs>, und beugete gewaltsam</l>
+              <l><rs ref="#Die-Brüder-Manuel-und-Cesar">Der Jugend</rs> starren Nacken in das Joch –</l>
+              <l>Nichts kannt ich als der Waffen wilde Freuden,</l>
+              <l>Und als des Weidwerks kriegerische Lust.</l>
+              <l>– Wir hatten schon den ganzen Tag gejagt</l>
+              <l>Entlang des Waldgebirges – da geschahs,</l>
+              <l>Daß die Verfolgung <rs ref="#einer-weißen-Hindin">einer weißen Hindin</rs></l>
+              <l><pb n="845"/> Mich weit hinweg aus <rs ref="#erster_chor">eurem</rs> Haufen riß.</l>
+              <l><rs ref="#einer-weißen-Hindin">Das scheue Tier</rs> floh durch des Tales Krümmen,</l>
+              <l>Durch Busch und Kluft und bahnenlos Gestrüpp,</l>
+              <l>Auf Wurfes Weite sah <rs ref="#einer-weißen-Hindin">ichs</rs> stets vor mir,</l>
+              <l>Doch konnt <rs ref="#einer-weißen-Hindin">ichs</rs> nicht erreichen noch erzielen,</l>
+              <l>Bis <rs ref="#einer-weißen-Hindin">es</rs> zuletzt an <rs ref="#der-Klostergarten">eines Gartens</rs> Pforte mir</l>
+              <l>Verschwand. Schnell von dem Roß herab mich werfend</l>
+              <l>Dring ich <rs ref="#einer-weißen-Hindin">ihm</rs> nach, schon mit dem Speere zielend,</l>
+              <l>Da seh ich wundernd <rs ref="#einer-weißen-Hindin">das erschrockne Tier</rs></l>
+              <rs ref="#Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost."><l>Zu <rs ref="#Beatrices-Füße"><rs ref="#beatrice">einer Nonne</rs> Füßen</rs> zitternd liegen,</l>
+              <l><rs ref="#beatrice">Die</rs> es mit <rs ref="#Beatrices-Hände">zarten Händen</rs> schmeichelnd kost.</l></rs>
+              <l>Bewegungslos starr ich <rs ref="#Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.">das Wunder</rs> an,</l>
+              <l>Den Jagdspieß in der Hand, zum Wurf ausholend –</l>
+              <l><rs ref="#beatrice">Sie</rs> aber blickt mit <rs ref="#Beatrices-Augen">großen Augen</rs> flehend</l>
+              <l>Mich an, so stehn <rs ref="#don_manuel-/-beatrice">wir</rs> schweigend gegeneinander –</l>
+              <l>Wie lange Frist, das kann ich nicht ermessen,</l>
+              <l>Denn alles Maß der Zeiten war vergessen.</l>
+              <l>Tief in <rs ref="#Don-Manuels-Seele">die Seele</rs> drückt <rs ref="#beatrice">sie</rs> mir <rs ref="#Beatrices-Blick">den Blick</rs>,</l>
+              <l>Und umgewandelt schnell ist mir <rs ref="#Don-Manuels-Herz">das Herz</rs>.</l>
+              <l>– <rs ref="#Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert">Was ich nun sprach, was <rs ref="#beatrice">die Holdselge</rs> mir</l>
+              <l>Erwidert</rs>, möge niemand mich befragen,</l>
+              <l>Denn wie ein Traumbild liegt <rs ref="#Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert">es</rs> hinter mir</l>
+              <l>Aus früher Kindheit dämmerhellen Tagen,</l>
+              <l>An <rs ref="#Don-Manuels-Brust">meiner Brust</rs> fühlt ich <rs ref="#Beatrices-Brust">die ihre</rs> schlagen,</l>
+              <l>Als die Besinnungskraft mir wiederkam.</l>
+              <l>Da hört ich <rs ref="#einer-Glocke-helles-Läuten">einer Glocke helles Läuten</rs>,</l>
+              <l>Den Ruf <rs ref="#die-Hora">zur Hora</rs> schien <rs ref="#einer-Glocke-helles-Läuten">es</rs> zu bedeuten,</l>
+              <l>Und schnell wie Geister in die Luft verwehen,</l>
+              <l>Entschwand <rs ref="#beatrice">sie</rs> mir und ward nicht mehr gesehen.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Mit Furcht, o <rs ref="#don_manuel">Herr</rs>, erfüllt mich <rs ref="#Fünf-Monde-sinds,-es-herrschte-noch-im-Lande---------------Des-Vaters-Macht,-und-beugete-gewaltsam---------------Der-Jugend-starren-Nacken-in-das-Joch-–---------------Nichts-kannt-ich-als-der-Waffen-wilde-Freuden,---------------Und-als-des-Weidwerks-kriegerische-Lust.---------------–-Wir-hatten-schon-den-ganzen-Tag-gejagt---------------Entlang-des-Waldgebirges-–-da-geschahs,---------------Daß-die-Verfolgung-einer-weißen-Hindin----------------Mich-weit-hinweg-aus-eurem-Haufen-riß.---------------Das-scheue-Tier-floh-durch-des-Tales-Krümmen,---------------Durch-Busch-und-Kluft-und-bahnenlos-Gestrüpp,---------------Auf-Wurfes-Weite-sah-ichs-stets-vor-mir,---------------Doch-konnt-ichs-nicht-erreichen-noch-erzielen,---------------Bis-es-zuletzt-an-eines-Gartens-Pforte-mir---------------Verschwand.-Schnell-von-dem-Roß-herab-mich-werfend---------------Dring-ich-ihm-nach,-schon-mit-dem-Speere-zielend,---------------Da-seh-ich-wundernd-das-erschrockne-Tier---------------Zu-einer-Nonne-Füßen-zitternd-liegen,---------------Die-es-mit-zarten-Händen-schmeichelnd-kost.---------------Bewegungslos-starr-ich-das-Wunder-an,---------------Den-Jagdspieß-in-der-Hand,-zum-Wurf-ausholend-–---------------Sie-aber-blickt-mit-großen-Augen-flehend---------------Mich-an,-so-stehn-wir-schweigend-gegeneinander-–---------------Wie-lange-Frist,-das-kann-ich-nicht-ermessen,---------------Denn-alles-Maß-der-Zeiten-war-vergessen.---------------Tief-in-die-Seele-drückt-sie-mir-den-Blick,---------------Und-umgewandelt-schnell-ist-mir-das-Herz.---------------–-Was-ich-nun-sprach,-was-die-Holdselge-mir---------------Erwidert,-möge-niemand-mich-befragen,---------------Denn-wie-ein-Traumbild-liegt-es-hinter-mir---------------Aus-früher-Kindheit-dämmerhellen-Tagen,---------------An-meiner-Brust-fühlt-ich-die-ihre-schlagen,---------------Als-die-Besinnungskraft-mir-wiederkam.---------------Da-hört-ich-einer-Glocke-helles-Läuten,---------------Den-Ruf-zur-Hora-schien-es-zu-bedeuten,---------------Und-schnell-wie-Geister-in-die-Luft-verwehen,---------------Entschwand-sie-mir-und-ward-nicht-mehr-gesehen."><rs ref="#don_manuel">dein</rs> Bericht</rs>,</l>
+              <l>Raub hast <rs ref="#don_manuel">du</rs> an dem Göttlichen begangen,</l>
+              <l><rs ref="#der-Himmel-(religiös)">Des Himmels</rs> Braut berührt mit sündigem Verlangen,</l>
+              <l>Denn furchtbar heilig ist <rs ref="#das-Kloster">des Klosters</rs> Pflicht.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Jetzt hatt ich <emph>eine</emph> Straße nur zu wandeln,</l>
+              <l>Das unstet schwanke Sehnen war gebunden,</l>
+              <l><rs ref="#Don-Manuels-Leben">Dem Leben</rs> war <rs ref="#Don-Manuels-Leben">sein</rs> Inhalt ausgefunden.</l>
+              <l><pb n="846"/> Und wie <rs ref="#der-Pilger">der Pilger</rs> <rs ref="#der-Pilger">sich</rs> nach Osten wendet,</l>
+              <l>Wo <rs ref="#der-Pilger">ihm</rs> die Sonne der Verheißung glänzt,</l>
+              <l>So kehrte sich mein Hoffen und mein Sehnen</l>
+              <l><rs ref="#beatrice">Dem <emph>einen</emph> hellen Himmelspunkte</rs> zu.</l>
+              <l>Kein Tag entstieg <rs ref="#das-Meer">dem Meer</rs> und sank hinunter,</l>
+              <l>Der nicht <rs ref="#don_manuel-/-beatrice">zwei glücklich Liebende</rs> vereinte,</l>
+              <l>Geflochten still war <rs ref="#der-Bund-zwischen-den-Herzen-von-DonManuel-und-Beatrice"><rs ref="#don_manuel-/-beatrice">unsrer</rs> Herzen Bund</rs>,</l>
+              <l>Nur der allsehnde Äther über <rs ref="#don_manuel-/-beatrice">uns</rs></l>
+              <l>War <rs ref="#Don-Manuels-Glück">des verschwiegnen Glücks</rs> vertrauter Zeuge,</l>
+              <l>Es brauchte weiter keines Menschen Dienst.</l>
+              <l>Das waren goldne Stunden, selge Tage!</l>
+              <l>– Nicht Raub am Himmel war <rs ref="#Don-Manuels-Glück">mein Glück</rs>, denn noch</l>
+              <l>Durch kein Gelübde war <rs ref="#Beatrices-Herz">das Herz</rs> gefesselt,</l>
+              <l><rs ref="#Beatrices-Herz">Das</rs> <rs ref="#Beatrices-Herz">sich</rs> auf ewig mir zu eigen gab.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>So war <rs ref="#das-Kloster">das Kloster</rs> eine Freistatt nur</l>
+              <l>Der zarten Jugend, nicht <rs ref="#Beatrices-Leben">des Lebens</rs> Grab?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#Ein-heilig-Pfand">Ein heilig Pfand</rs> ward <rs ref="#beatrice">sie</rs> <rs ref="#das-Kloster">dem Gotteshaus</rs></l>
+              <l>Vertraut, <rs ref="#Ein-heilig-Pfand">das</rs> <rs ref="#man-(generic)">man</rs> zurück einst werde fodern.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Doch welches Blutes rühmt <rs ref="#beatrice">sie</rs> <rs ref="#beatrice">sich</rs> zu sein?</l>
+              <l>Denn nur <rs ref="#das-Edle">vom Edeln</rs> kann <rs ref="#das-Edle">das Edle</rs> stammen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#beatrice">Sich</rs> selber ein Geheimnis wuchs <rs ref="#beatrice">sie</rs> auf,</l>
+              <l>Nicht kennt <rs ref="#beatrice">sie</rs> <rs ref="#Beatrices-Geschlecht/Herkunft"><rs ref="#beatrice">ihr</rs> Geschlecht</rs> noch Vaterland.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Und leitet keine dunkle Spur zurück</l>
+              <l>Zu <rs ref="#beatrice">ihres</rs> Daseins unbekannten Quellen?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Daß <rs ref="#beatrice">sie</rs> von edelm Blut, gesteht <rs ref="#diego">der Mann,</l>
+              <l>Der einzge, <rs ref="#diego">der</rs> um <rs ref="#Beatrices-Geschlecht/Herkunft"><rs ref="#beatrice">ihre</rs> Herkunft</rs> weiß</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Wer ist <rs ref="#diego">der Mann</rs>? Nichts halte mir zurück,</l>
+              <l>Denn wissend nur kann ich <rs ref="#don_manuel">dir</rs> nützlich raten.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#diego">Ein alter Diener</rs> naht von Zeit zu Zeit,</l>
+              <l>Der einzge Bote zwischen <rs ref="#beatrice">Kind</rs> und <rs ref="#isabella">Mutter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Von <rs ref="#diego">diesem Alten</rs> hast <rs ref="#don_manuel">du</rs> nichts erforscht?</l>
+              <l>Feigherzig und geschwätzig ist das Alter.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Nie wagt <rs ref="#einer-Neugier-nachzugeben,---------------Die-mein-verschwiegnes-Glück-gefährden-konnte">ichs</rs>, <rs ref="#einer-Neugier-nachzugeben,---------------Die-mein-verschwiegnes-Glück-gefährden-konnte"><rs ref="#einer-Neugier">einer Neugier</rs> nachzugeben,</l>
+              <l><rs ref="#einer-Neugier">Die</rs> <rs ref="#Don-Manuels-Glück">mein verschwiegnes Glück</rs> gefährden konnte</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Was aber war der Inhalt <rs ref="#diego">seiner</rs> Worte,</l>
+              <l>Wenn <rs ref="#diego">er</rs> <rs ref="#beatrice">die Jungfrau</rs> zu besuchen kam?</l>
+              <pb n="847"/>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Auf <rs ref="#eine-Zeit,-die-alles-lösen-werde">eine Zeit, <rs ref="#eine-Zeit,-die-alles-lösen-werde">die</rs> <rs ref="#alles-(Beatrices-Trennung-von-ihrer-Familie)">alles</rs> lösen werde</rs>,</l>
+              <l>Hat <rs ref="#diego">er</rs> von Jahr zu Jahren <rs ref="#beatrice">sie</rs> vertröstet.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#eine-Zeit,-die-alles-lösen-werde">diese Zeit, <rs ref="#eine-Zeit,-die-alles-lösen-werde">die</rs> <rs ref="#alles-(Beatrices-Trennung-von-ihrer-Familie)">alles</rs> lösen soll</rs>,</l>
+              <l>Hat <rs ref="#diego">er</rs> <rs ref="#eine-Zeit,-die-alles-lösen-werde">sie</rs> näher deutend nicht bezeichnet?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Seit wenig Monden drohete <rs ref="#diego">der Greis</rs></l>
+              <l>Mit einer nahen Ändrung <rs ref="#Beatrices-Schicksal"><rs ref="#beatrice">ihres</rs> Schicksals</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#diego">Er</rs> drohte, sagst <rs ref="#don_manuel">du</rs>? Also fürchtest <rs ref="#don_manuel">du</rs></l>
+              <l><rs ref="#Ein-Licht">Ein Licht</rs> zu schöpfen, <rs ref="#Ein-Licht">das</rs> <rs ref="#don_manuel">dich</rs> nicht erfreut?</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ein jeder Wechsel schreckt den Glücklichen,</l>
+              <l>Wo kein Gewinn zu hoffen, droht Verlust.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Doch konnte <rs ref="#die-Entdeckung,-die-du-fürchtest">die Entdeckung, <rs ref="#die-Entdeckung,-die-du-fürchtest">die</rs> <rs ref="#don_manuel">du</rs> fürchtest</rs>,</l>
+              <l>Auch <rs ref="#don_manuel">deiner</rs> Liebe günstge Zeichen bringen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Auch stürzen konnte <rs ref="#die-Entdeckung,-die-du-fürchtest">sie</rs> <rs ref="#Don-Manuels-Glück">mein Glück</rs>, drum wählt ich</l>
+              <l><rs ref="#Das-Sicherste,-ihr-schnell-zuvorzukommen">Das Sicherste, <rs ref="#die-Entdeckung,-die-du-fürchtest">ihr</rs> schnell zuvorzukommen</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l>Wie <rs ref="#Das-Sicherste,-ihr-schnell-zuvorzukommen">das</rs>, o <rs ref="#don_manuel">Herr</rs>? Mit <rs ref="#Furcht">Furcht</rs> erfüllst <rs ref="#don_manuel">du</rs> mich,</l>
+              <l>Und eine rasche Tat muß ich besorgen.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Schon seit den letzten Monden ließ <rs ref="#diego">der Greis</rs></l>
+              <l><rs ref="#Geheimnisvolle-Winke">Geheimnisvolle Winke</rs> <rs ref="#Geheimnisvolle-Winke">sich</rs> entfallen,</l>
+              <l>Daß nicht mehr ferne sei <rs ref="#er-Tag-an-dem-Beatrice-zu-ihrer-Familie-zurückkehrt">der Tag, <rs ref="#er-Tag-an-dem-Beatrice-zu-ihrer-Familie-zurückkehrt">der</rs> <rs ref="#beatrice">sie</rs></l>
+              <l><rs ref="#die-fürstliche-Familie-/-Geschlecht-/-Haus">Den <rs ref="#beatrice">Ihrigen</rs></rs> zurückegeben werde</rs>.</l>
+              <l>Seit gestern aber sprach <rs ref="#Daß-mit-der-nächsten-Morgensonne-Strahl"><rs ref="#diego">ers</rs></rs> deutlich aus,</l>
+              <l><rs ref="#Daß-mit-der-nächsten-Morgensonne-Strahl">Daß mit <rs ref="#der-nächsten-Morgensonne">der nächsten Morgensonne</rs> Strahl</rs> –</l>
+              <l><rs ref="#der-nächsten-Morgensonne">Dies</rs> aber ist <rs ref="#der-Tag,-der-heute-leuchtet">der Tag, <rs ref="#der-Tag,-der-heute-leuchtet">der</rs> heute leuchtet</rs> –</l>
+              <l><rs ref="#Beatrices-Schicksal"><rs ref="#beatrice">Ihr</rs> Schicksal</rs> <rs ref="#Beatrices-Schicksal">sich</rs> entscheidend werde lösen.</l>
+              <l>Kein Augenblick war zu verlieren, schnell</l>
+              <l>War mein Entschluß gefaßt und schnell vollstreckt.</l>
+              <rs ref="#In-dieser-Nacht-raubt-ich-die-Jungfrau-weg---------------Und-brachte-sie-verborgen-nach-Messina."><l>In dieser Nacht raubt ich <rs ref="#beatrice">die Jungfrau</rs> weg</l>
+              <l>Und brachte <rs ref="#beatrice">sie</rs> verborgen nach <rs ref="#Messina">Messina</rs>.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <rs ref="#Welch-kühn-verwegen-räuberische-Tat!"><l>Welch <rs ref="#In-dieser-Nacht-raubt-ich-die-Jungfrau-weg---------------Und-brachte-sie-verborgen-nach-Messina.">kühn verwegen-räuberische Tat</rs>!</l></rs>
+              <l>– Verzeih, o <rs ref="#don_manuel">Herr</rs>, <rs ref="#Welch-kühn-verwegen-räuberische-Tat!">die freie Tadelrede</rs>!</l>
+              <l>Doch <rs ref="#Welch-kühn-verwegen-räuberische-Tat!">solches</rs> ist des weisern Alters Recht,</l>
+              <l>Wenn <rs ref="#die-Jugend">sich</rs> <rs ref="#die-Jugend">die rasche Jugend</rs> kühn vergißt.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Unfern <rs ref="#das-Kloster">vom Kloster <rs ref="#beatrice">der Barmherzigen</rs></rs>,</l>
+              <l>In <rs ref="#der-Klostergarten">eines Gartens</rs> abgeschiedner Stille,</l>
+              <l><rs ref="#der-Klostergarten">Der</rs> von der Neugier nicht betreten wird,</l>
+              <l>Trennt ich mich eben jetzt von <rs ref="#beatrice">ihr</rs>, hieher</l>
+              <l><pb n="848"/> Zu <rs ref="#die-Versöhnung-zwischen-den-Brüdern">der Versöhnung mit <rs ref="#don_cesar">dem Bruder</rs></rs> eilend.</l>
+              <l>In banger Furcht ließ ich <rs ref="#beatrice">sie</rs> dort allein</l>
+              <l>Zurück, <rs ref="#beatrice">die</rs> <rs ref="#beatrice">sich</rs> nichts weniger erwartet,</l>
+              <l>Als in dem Glanz <rs ref="#isabella">der Fürstin</rs> eingeholt</l>
+              <l>Und auf erhabnem Fußgestell des Ruhms</l>
+              <l>Vor ganz <rs ref="#Messina">Messina</rs> ausgestellt zu werden.</l>
+              <l>Denn anders nicht soll <rs ref="#beatrice">sie</rs> mich wiedersehn,</l>
+              <l>Als in der Größe Schmuck und Staat, und festlich</l>
+              <l>Von <rs ref="#erster_chor"><rs ref="#erster_chor">eurem</rs> ritterlichen Chor</rs> umgeben.</l>
+              <l>Nicht will ich, daß <rs ref="#beatrice"><rs ref="#don_manuel">Don Manuels</rs> Verlobte</rs></l>
+              <l>Als eine Heimatlose, Flüchtige</l>
+              <l><rs ref="#isabella">Der Mutter</rs> nahen soll, <rs ref="#isabella">die</rs> ich <rs ref="#beatrice">ihr</rs> gebe,</l>
+              <l>Als eine Fürstin fürstlich will ich <rs ref="#beatrice">sie</rs></l>
+              <l>Einführen in <rs ref="#das-fürstliche-Schloss-/-Palast">die Hofburg meiner Väter</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <l>Gebiete, Herr! <rs ref="#erster_chor">Wir</rs> harren <rs ref="#don_manuel">deines</rs> Winks.</l>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l>Ich habe mich aus <rs ref="#beatrice">ihrem</rs> Arm gerissen,</l>
+              <l>Doch nur mit <rs ref="#beatrice">ihr</rs> werd ich beschäftigt sein.</l>
+              <rs ref="#Denn-nach-dem-Bazar-sollt-ihr-mich-anjetzt---------------Begleiten,-wo-die-Mohren-zum-Verkauf---------------Ausstellen,-was-das-Morgenland-erzeugt---------------An-edelm-Stoff-und-feinem-Kunstgebild.---------------Erst-wählet-aus-die-zierlichen-Sandalen,---------------Der-zartgeformten-Füße-Schutz-und-Zier,---------------Dann-zum-Gewande-wählt-das-Kunstgewebe---------------Des-Indiers,-hellglänzend-wie-der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht-–---------------Und-leicht-umfließt-es-wie-der-Morgenduft---------------Den-zarten-Bau-der-jugendlichen-Glieder.---------------Von-Purpur-sei,-mit-zarten-Fäden-Goldes---------------Durchwirkt-der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft.---------------Dazu-den-Mantel-wählt,-von-glänzender---------------Seide-gewebt,-in-bleichem-Purpur-schimmernd,---------------Über-der-Achsel-heft-ihn-eine-goldne---------------Zikade-–-Auch-die-Spangen-nicht-vergeßt,---------------Die-schönen-Arme-reizend-zu-umzirken,----------------Auch-nicht-der-Perlen-und-Korallen-Schmuck,---------------Der-Meeresgöttin-wundersame-Gaben.---------------Um-die-Locken-winde-sich-ein-Diadem,---------------Gefüget-aus-dem-köstlichsten-Gestein,---------------Worin-der-feurig-glühende-Rubin---------------Mit-dem-Smaragd-die-Farbenblitze-kreuze,---------------Oben-im-Haarschmuck-sei-der-lange-Schleier---------------Befestigt,-der-die-glänzende-Gestalt---------------Gleich-einem-hellen-Lichtgewölk-umfließe,---------------Und-mit-der-Myrte-jungfräulichem-Kranze---------------Vollende-krönend-sich-das-schöne-Ganze."><l>Denn nach <rs ref="#dem-Bazar">dem Bazar</rs> sollt <rs ref="#erster_chor">ihr</rs> mich anjetzt</l>
+              <l>Begleiten, <rs ref="#dem-Bazar">wo</rs> die Mohren zum Verkauf</l>
+              <l>Ausstellen, was das Morgenland erzeugt</l>
+              <l>An edelm Stoff und feinem Kunstgebild.</l>
+              <l>Erst wählet aus die zierlichen Sandalen,</l>
+              <l><rs ref="#Beatrices-Füße">Der zartgeformten Füße</rs> Schutz und Zier,</l>
+              <l>Dann zum Gewande wählt <rs ref="#das-Kunstgewebe---------------Des-Indiers">das Kunstgewebe</l>
+              <l>Des Indiers</rs>, hellglänzend wie <rs ref="#der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht">der Schnee</l>
+              <l><rs ref="#Der-Ätna">Des Ätna</rs>, <rs ref="#der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht">der</rs> der nächste ist dem Licht</rs> –</l>
+              <l>Und leicht umfließt <rs ref="#das-Kunstgewebe---------------Des-Indiers">es</rs> wie der Morgenduft</l>
+              <l><rs ref="#Beatrices-Körper">Den zarten Bau <rs ref="#Beatrices-Glieder">der jugendlichen Glieder</rs></rs>.</l>
+              <l>Von Purpur sei, mit zarten Fäden Goldes</l>
+              <l>Durchwirkt <rs ref="#der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft">der Gürtel, <rs ref="#der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft">der</rs> die Tunika</l>
+              <l>Unter dem züchtgen Busen reizend knüpft</rs>.</l>
+              <l>Dazu <rs ref="#den-Mantel">den Mantel</rs> wählt, von glänzender</l>
+              <l>Seide gewebt, in bleichem Purpur schimmernd,</l>
+              <l>Über der Achsel heft <rs ref="#den-Mantel">ihn</rs> eine goldne</l>
+              <l>Zikade – Auch die Spangen nicht vergeßt,</l>
+              <l><rs ref="#Beatrices-Arme">Die schönen Arme</rs> reizend zu umzirken,</l>
+              <l><pb n="849"/> Auch nicht der Perlen und Korallen Schmuck,</l>
+              <l>Der Meeresgöttin wundersame Gaben.</l>
+              <l>Um die Locken winde <rs ref="#ein-Diadem">sich</rs> <rs ref="#ein-Diadem">ein Diadem</rs>,</l>
+              <l>Gefüget aus dem köstlichsten Gestein,</l>
+              <l>Worin der feurig glühende Rubin</l>
+              <l>Mit dem Smaragd die Farbenblitze kreuze,</l>
+              <l>Oben <rs ref="#ein-Diadem">im Haarschmuck</rs> sei <rs ref="#der-lange-Schleier">der lange Schleier</rs></l>
+              <l>Befestigt, <rs ref="#der-lange-Schleier">der</rs> <rs ref="#Beatrices-Körper">die glänzende Gestalt</rs></l>
+              <l>Gleich einem hellen Lichtgewölk umfließe,</l>
+              <l>Und mit der Myrte jungfräulichem Kranze</l>
+              <l>Vollende krönend <rs ref="#das-schöne-Ganze">sich</rs> <rs ref="#das-schöne-Ganze">das schöne Ganze</rs>.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#chor">
+            <rs ref="#erster_chor"><speaker>CHOR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Denn-nach-dem-Bazar-sollt-ihr-mich-anjetzt---------------Begleiten,-wo-die-Mohren-zum-Verkauf---------------Ausstellen,-was-das-Morgenland-erzeugt---------------An-edelm-Stoff-und-feinem-Kunstgebild.---------------Erst-wählet-aus-die-zierlichen-Sandalen,---------------Der-zartgeformten-Füße-Schutz-und-Zier,---------------Dann-zum-Gewande-wählt-das-Kunstgewebe---------------Des-Indiers,-hellglänzend-wie-der-Schnee---------------Des-Ätna,-der-der-nächste-ist-dem-Licht-–---------------Und-leicht-umfließt-es-wie-der-Morgenduft---------------Den-zarten-Bau-der-jugendlichen-Glieder.---------------Von-Purpur-sei,-mit-zarten-Fäden-Goldes---------------Durchwirkt-der-Gürtel,-der-die-Tunika---------------Unter-dem-züchtgen-Busen-reizend-knüpft.---------------Dazu-den-Mantel-wählt,-von-glänzender---------------Seide-gewebt,-in-bleichem-Purpur-schimmernd,---------------Über-der-Achsel-heft-ihn-eine-goldne---------------Zikade-–-Auch-die-Spangen-nicht-vergeßt,---------------Die-schönen-Arme-reizend-zu-umzirken,----------------Auch-nicht-der-Perlen-und-Korallen-Schmuck,---------------Der-Meeresgöttin-wundersame-Gaben.---------------Um-die-Locken-winde-sich-ein-Diadem,---------------Gefüget-aus-dem-köstlichsten-Gestein,---------------Worin-der-feurig-glühende-Rubin---------------Mit-dem-Smaragd-die-Farbenblitze-kreuze,---------------Oben-im-Haarschmuck-sei-der-lange-Schleier---------------Befestigt,-der-die-glänzende-Gestalt---------------Gleich-einem-hellen-Lichtgewölk-umfließe,---------------Und-mit-der-Myrte-jungfräulichem-Kranze---------------Vollende-krönend-sich-das-schöne-Ganze.">Es</rs> soll geschehen, <rs ref="#don_manuel">Herr</rs>! wie <rs ref="#don_manuel">du</rs> gebietest,</l>
+              <l>Denn fertig und vollendet findet <rs ref="#das-Kunstgewebe-----…-/-den-Mantel-+-9">sich</rs></l>
+              <l><rs ref="#das-Kunstgewebe-----…-/-den-Mantel-+-9">Dies alles</rs> auf <rs ref="#dem-Bazar">dem Bazar</rs> ausgestellt.</l>
+            </lg>
+          </sp>
+          <sp who="#don_manuel">
+            <rs ref="#don_manuel"><speaker>DON MANUEL.</speaker></rs>
+            <lg>
+              <l><rs ref="#Den-schönsten-Zelter">Den schönsten Zelter</rs> führet dann hervor</l>
+              <l>Aus meinen Ställen, <rs ref="#Den-schönsten-Zelter">seine</rs> Farbe sei</l>
+              <l>Lichtweiß, gleichwie des Sonnengottes Pferde,</l>
+              <l>Von Purpur sei die Decke, und Geschirr</l>
+              <l>Und Zügel reich besetzt mit edeln Steinen,</l>
+              <l>Denn tragen soll <rs ref="#Den-schönsten-Zelter">er</rs> <rs ref="#beatrice">meine Königin</rs>.</l>
+              <l><rs ref="#erster_chor">Ihr</rs> selber haltet <rs ref="#erster_chor">euch</rs> bereit, im Glanz</l>
+              <l>Des Ritterstaates, unterm freudgen Schall</l>
+              <l>Der Hörner <rs ref="#beatrice"><rs ref="#erster_chor">eure</rs> Fürstin</rs> heimzuführen.</l>
+              <l>Dies alles zu besorgen geh ich jetzt,</l>
+              <l><rs ref="#Zwei-unter-euch">Zwei unter <rs ref="#erster_chor">euch</rs></rs> erwähl ich zu Begleitern,</l>
+              <l><rs ref="#erster_chor">Ihr andern</rs> wartet mein – Was <rs ref="#erster_chor">ihr</rs> vernahmt,</l>
+              <l>Bewahrts in <rs ref="#erster_chor">eures</rs> Busens tiefem Grunde,</l>
+              <l>Bis ich das Band gelöst von <rs ref="#erster_chor">eurem</rs> Munde.</l>
+            </lg>
+          </sp>
+          <stage><rs ref="#don_manuel">Er</rs> geht ab, von <rs ref="#Zwei-unter-euch">zweien aus dem Chor</rs> begleitet.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

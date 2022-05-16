@@ -1,0 +1,700 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <rs ref="#Erster-Aufzug-"><head>Erster Aufzug</head></rs>
+        <div type="scene">
+          <head>Fünfter Auftritt</head>
+          <stage><rs ref="#Szene-(unter-den-palmen)">Szene</rs>: ein Platz mit <rs ref="#untern-Palmen">Palmen, unter <rs ref="#untern-Palmen">welchen</rs> <rs ref="#tempelherr-bbb">der Tempelherr</rs> auf und nieder geht</rs>. <rs ref="#klosterbruder">Ein
+            Klosterbruder</rs> folgt <rs ref="#tempelherr-bbb">ihm</rs> in einiger Entfernung von <rs ref="#der-Seite-(des-tempelherrn)">der Seite</rs>, immer als ob <rs ref="#klosterbruder">er</rs> <rs ref="#tempelherr-bbb">ihn</rs> anreden
+            wolle.</stage>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#klosterbruder">Der</rs> folgt mir nicht vor langer Weile! – Sieh,</l>
+              <l>Wie schielt <rs ref="#klosterbruder">er</rs> nach den Händen! – <rs ref="#klosterbruder">Guter Bruder</rs>, ...</l>
+              <l>Ich kann <rs ref="#klosterbruder">Euch</rs> auch wohl Vater nennen; nicht?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Nur <rs ref="#Bruder-(prädikativ-der-klosterbruder)">Bruder</rs> – <rs ref="#Bruder-(prädikativ-der-klosterbruder)">Laienbruder</rs> nur; zu dienen.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ja, <rs ref="#klosterbruder">guter Bruder</rs>, wer nur selbst was hätte!</l>
+              <l>Bei <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>! bei <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs>! ich habe nichts –</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Und doch</l>
+              <l>Recht warmen Dank! <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> geb' <rs ref="#tempelherr-bbb">Euch</rs> tausendfach</l>
+              <l>Was <rs ref="#tempelherr-bbb">Ihr</rs> gern geben wolltet. Denn <rs ref="#der-Wille-(die-absicht-intention-hinter-einer-tat)">der Wille</rs></l>
+              <l>Und nicht <rs ref="#Almosen">die Gabe</rs> macht <rs ref="#Gute-(Menschen)">den Geber</rs>. – Auch</l>
+              <l>Ward ich <rs ref="#tempelherr-bbb">dem Herrn</rs> <rs ref="#Almosen">Almosens</rs> wegen gar</l>
+              <l>Nicht nachgeschickt.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Doch aber nachgeschickt?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Ja; aus <rs ref="#dem-Kloster">dem Kloster</rs>.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <rs ref="#dem-Kloster"><l>Wo ich eben jetzt</l>
+              <l>Ein kleines Pilgermahl zu finden hoffte</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Die Tische waren schon besetzt: komm' aber</l>
+              <l><rs ref="#tempelherr-bbb">Der Herr</rs> nur wieder mit zurück.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wozu?</l>
+              <l><rs ref="#tuts">Ich habe Fleisch wohl lange nicht gegessen</rs>:</l>
+              <l>Allein was <rs ref="#tuts">tuts</rs>? <rs ref="#Datteln">Die Datteln</rs> sind ja reif.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <rs ref="#dieser-Warnung"><l>Nehm' <rs ref="#tempelherr-bbb">sich</rs> <rs ref="#tempelherr-bbb">der Herr</rs> in <rs ref="#Acht-(achtung-vorsicht-des-tempelherrn)">Acht</rs> mit <rs ref="#Datteln">dieser Frucht</rs>.</l>
+              <l>Zu viel genossen taugt <rs ref="#Datteln">sie</rs> nicht; verstopft</l>
+              <l>Die Milz; macht melancholisches Geblüt.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wenn ich nun melancholisch gern mich fühlte? –</l>
+              <l>Doch <rs ref="#dieser-Warnung">dieser Warnung</rs> wegen wurdet <rs ref="#klosterbruder">Ihr</rs></l>
+              <l>Mir doch nicht nachgeschickt?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>O nein! – <rs ref="#das5">Ich soll</l>
+              <l>Mich nur nach <rs ref="#tempelherr-bbb">Euch</rs> erkunden; auf den Zahn</l>
+              <l><rs ref="#tempelherr-bbb">Euch</rs> fühlen</rs>.</l>
+              <pb n="225"/>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Und <rs ref="#das5">das</rs> sagt <rs ref="#klosterbruder">Ihr</rs> mir so selbst?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Warum nicht?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>(<rs ref="#klosterbruder">Ein verschmitzter Bruder!</rs>) – Hat</l>
+              <l><rs ref="#dem-Kloster">Das Kloster</rs> <rs ref="#Eures-gleichen-(Menschen-so-ehrlich-naiv-wie-menschen-vom-typ-des-klosterbruder)"><rs ref="#klosterbruder">Eures</rs> gleichen</rs> mehr?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Weiß nicht.</l>
+              <l>Ich muß gehorchen, <rs ref="#tempelherr-bbb">lieber Herr</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Und da</l>
+              <l><rs ref="#Wär's">Gehorcht</rs> <rs ref="#klosterbruder">Ihr</rs> denn auch ohne viel zu klügeln?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l><rs ref="#Wär's">Wär's</rs> sonst gehorchen, <rs ref="#tempelherr-bbb">lieber Herr</rs>?</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>(Daß doch</l>
+              <l><rs ref="#Die-Einfalt-(naivität-ehrlichkeit)">Die Einfalt</rs> immer <rs ref="#Recht-(recht-behalten,-etwas-zu-recht-sein-oder-tun)">Recht</rs> behält!) – <rs ref="#mirs"><rs ref="#klosterbruder">Ihr</rs> dürft</l>
+              <l>Mir doch auch wohl vertrauen, wer mich gern</l>
+              <l>Genauer kennen möchte?</rs> – Daß <rs ref="#klosterbruder">Ihrs</rs> selbst</l>
+              <l>Nicht seid, will ich wohl schwören.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ziemte <rs ref="#mirs">mirs</rs>?</l>
+              <l>Und frommte <rs ref="#mirs">mirs</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Wem ziemt und frommt <rs ref="#es8">es</rs> denn,</l>
+              <l><rs ref="#es8">Daß <rs ref="#patriarch">er</rs> so neubegierig ist</rs>? Wem denn?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Dem Patriarchen</rs>; muß ich glauben. – Denn</l>
+              <l><rs ref="#patriarch">Der</rs> sandte mich <rs ref="#tempelherr-bbb">Euch</rs> nach.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Der Patriarch</rs>?</l>
+              <l>Kennt <rs ref="#patriarch">der</rs> <rs ref="#das-rote-Kreuz-auf-weißem-Mantel">das rote Kreuz auf <rs ref="#weißem-Mantel-(kutte-der-christl-tempelherren-bzw-des-christl-ritterordens-mit-rotem-kreuz)">weißem Mantel</rs></rs></l>
+              <l>Nicht besser?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Kenn' ja <rs ref="#das-rote-Kreuz-auf-weißem-Mantel">ichs</rs>!</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Nun, <rs ref="#klosterbruder">Bruder</rs>? nun? –</l>
+              <l>Ich bin <rs ref="#ein-Tempelherr-(prädikativ-der-tempelherr-in-seiner-funktion-als-tempelherr)">ein Tempelherr</rs>; und <rs ref="#ein-gefang'ner-(prädikativ-der-tempelherr)">ein gefang'ner</rs>. –</l>
+              <l>Setz' ich hinzu: gefangen bei <rs ref="#Tebnin">Tebnin</rs>,</l>
+              <rs ref="#Tebnin"><l>Der Burg, <rs ref="#Tebnin">die</rs> mit des Stillstands letzter Stunde</l>
+              <l>Wir gern erstiegen hätten, um sodann</l>
+              <l>Auf Sidon los zu gehn</rs>; – setz' ich hinzu:</l>
+              <l>Selbzwanzigster gefangen und allein</l>
+              <l><rs ref="#saladin">Vom Saladin</rs> begnadiget: so weiß</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs>, was <rs ref="#patriarch">er</rs> zu wissen braucht; –</l>
+              <l>Mehr, als <rs ref="#patriarch">er</rs> braucht. –</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Wohl aber schwerlich mehr,</l>
+              <l><pb n="226"/> Als <rs ref="#patriarch">er</rs> schon weiß. – <rs ref="#patriarch">Er</rs> wüßt' auch gern, <rs ref="#das6">warum</l>
+              <l><rs ref="#tempelherr-bbb">Der Herr</rs> <rs ref="#saladin">vom Saladin</rs> begnadigt worden;</l>
+              <l><rs ref="#tempelherr-bbb">Er</rs> ganz allein.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Weiß ich <rs ref="#das6">das</rs> selber? – <rs ref="#das7">Schon</l>
+              <l>Den Hals entblößt, kniet' ich auf <rs ref="#vorgespreiztem-Mantel-(des-tempelherrn,-seine-vermeintlichen-flügel)">meinem Mantel</rs>,</l>
+              <l>Den Streich erwartend: als mich schärfer <rs ref="#saladin">Saladin</rs></l>
+              <l>Ins Auge faßt, mir näher springt, und winkt.</l>
+              <l><rs ref="#Man-(unbest-bedienstete,-wächter-saladins)">Man</rs> hebt mich auf; ich bin entfesselt; will</l>
+              <l><rs ref="#saladin">Ihm</rs> danken; seh' <rs ref="#sein-Aug'-(saladins-phys)"><rs ref="#saladin">sein</rs> Aug'</rs> in Tränen: stumm</l>
+              <l>Ist <rs ref="#saladin">er</rs>, bin ich; <rs ref="#saladin">er</rs> geht, ich bleibe.</rs> – Wie</l>
+              <l>Nun <rs ref="#das7">das</rs> zusammenhängt, enträtsle <rs ref="#patriarch">sich</rs></l>
+              <l><rs ref="#patriarch">Der Patriarche</rs> selbst.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Er</rs> schließt daraus,</l>
+              <l>Daß <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> zu großen, großen Dingen <rs ref="#tempelherr-bbb">Euch</rs></l>
+              <l>Müß' aufbehalten haben.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ja, zu großen!</l>
+              <l><rs ref="#recha">Ein Judenmädchen</rs> aus <rs ref="#dem-Feuer-(des-brandes-von-nathans-haus)">dem Feur</rs> zu retten;</l>
+              <l>Auf <rs ref="#Sinai">Sinai</rs> <rs ref="#neugier'ge-Pilger">neugier'ge Pilger</rs> zu</l>
+              <l>Geleiten; und dergleichen mehr.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Wird schon</l>
+              <l>Noch kommen! – Ist inzwischen auch nicht übel. –</l>
+              <l>Vielleicht hat selbst <rs ref="#patriarch">der Patriarch</rs> bereits</l>
+              <l><rs ref="#Weit-wicht'gere-Geschäfte-(auftrag-des-patriarchen-an-tempelherrn,-brief-überbringen-und-spionage-gg-saladin-betreiben)">Weit wicht'gere Geschäfte</rs> für <rs ref="#tempelherr-bbb">den Herrn</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>So? meint <rs ref="#klosterbruder">Ihr, Bruder</rs>? – Hat <rs ref="#patriarch">er</rs> gar <rs ref="#klosterbruder">Euch</rs> schon</l>
+              <l>Was merken lassen?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ei, ja wohl! – Ich soll</l>
+              <l><rs ref="#tempelherr-bbb">Den Herrn</rs> nur erst ergründen, ob <rs ref="#tempelherr-bbb">er</rs> so</l>
+              <l>Der Mann wohl ist.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Nun ja; ergründet nur!</l>
+              <l>(Ich will doch sehn, wie <rs ref="#klosterbruder">der</rs> ergründet!) – Nun?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Das kürzste wird wohl sein, daß ich <rs ref="#tempelherr-bbb">dem Herrn</rs></l>
+              <l>Ganz grade zu <rs ref="#Weit-wicht'gere-Geschäfte-(auftrag-des-patriarchen-an-tempelherrn,-brief-überbringen-und-spionage-gg-saladin-betreiben)"><rs ref="#patriarch">des Patriarchen</rs> Wunsch</rs></l>
+              <l>Eröffne.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Wohl!</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <rs ref="#Das12"><l>Er hätte durch <rs ref="#tempelherr-bbb">den Herrn</rs></l>
+              <l><pb n="227"/> <rs ref="#Ein-Briefchen-(das-der-tempelherr-für-den-patriarch-überbringen-soll)">Ein Briefchen</rs> gern bestellt</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Durch mich? Ich bin</l>
+              <l>Kein Bote. – <rs ref="#Das12">Das</rs>, <rs ref="#Das12">das</rs> wäre <rs ref="#das-Geschäft,---------------Das-weit-glorreicher-sei,-als-Judenmädchen---------------Dem-Feur-entreißen-(prädikativ-der-auftrag-des-patriarchen-an-den-tempelherrn)">das Geschäft,</l>
+              <l><rs ref="#das-Geschäft,---------------Das-weit-glorreicher-sei,-als-Judenmädchen---------------Dem-Feur-entreißen-(prädikativ-der-auftrag-des-patriarchen-an-den-tempelherrn)">Das</rs> weit glorreicher sei, als <rs ref="#Judenmädchen">Judenmädchen</rs></l>
+              <l><rs ref="#Dem-Feur">Dem Feur</rs> entreißen</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Muß doch wohl! Denn – sagt</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs> – an <rs ref="#Ein-Briefchen-(das-der-tempelherr-für-den-patriarch-überbringen-soll)">diesem Briefchen</rs> sei</l>
+              <l><rs ref="#Christ-222">Der ganzen Christenheit</rs> sehr viel gelegen.</l>
+              <l><rs ref="#Ein-Briefchen-(das-der-tempelherr-für-den-patriarch-überbringen-soll)">Dies Briefchen</rs> wohl bestellt zu haben, – sagt</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs>, – werd' einst <rs ref="#im-Himmel-(christl)">im Himmel</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs></l>
+              <l>Mit <rs ref="#einer-ganz-besondern-Krone-(die-derjenige-bekommt-der-für-den-patriarchen-den-brief-überbringt)">einer ganz besondern Krone</rs> lohnen.</l>
+              <l>Und <rs ref="#einer-ganz-besondern-Krone-(die-derjenige-bekommt-der-für-den-patriarchen-den-brief-überbringt)">dieser Krone</rs>, – sagt <rs ref="#patriarch">der Patriarch</rs>, –</l>
+              <l>Sei niemand würd'ger, als <rs ref="#tempelherr-bbb">mein Herr</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Als ich?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Denn <rs ref="#einer-ganz-besondern-Krone-(die-derjenige-bekommt-der-für-den-patriarchen-den-brief-überbringt)">diese Krone</rs> zu verdienen, – sagt</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs>, – sei schwerlich jemand auch</l>
+              <l>Geschickter, als <rs ref="#tempelherr-bbb">mein Herr</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Als ich?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#tempelherr-bbb">Er</rs> sei</l>
+              <l>Hier frei; könn' überall <rs ref="#tempelherr-bbb">sich</rs> hier besehn;</l>
+              <l>Versteh', wie eine Stadt zu stürmen und</l>
+              <l>Zu schirmen; könne, – sagt <rs ref="#patriarch">der Patriarch</rs>, –</l>
+              <l>Die Stärk' und Schwäche <rs ref="#der-von-Saladin---------------Neu-aufgeführten,-innern,-zweiten-Mauer">der von <rs ref="#saladin">Saladin</rs></l>
+              <l>Neu aufgeführten, innern, zweiten Mauer</l></rs>
+              <l>Am besten schätzen, <rs ref="#der-von-Saladin---------------Neu-aufgeführten,-innern,-zweiten-Mauer">sie</rs> am deutlichsten</l>
+              <l><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Den Streitern <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gottes</rs></rs>, – sagt <rs ref="#patriarch">der Patriarch</rs>, –</l>
+              <l>Beschreiben.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#klosterbruder">Guter Bruder</rs>, wenn ich doch</l>
+              <l>Nun auch <rs ref="#des-Briefchens-nähern-Inhalt-(brief-des-patriarchen)"><rs ref="#Ein-Briefchen-(das-der-tempelherr-für-den-patriarch-überbringen-soll)">des Briefchens</rs> nähern Inhalt</rs> wüßte.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ja den, – <rs ref="#des-Briefchens-nähern-Inhalt-(brief-des-patriarchen)">den</rs> weiß ich nun wohl nicht so recht.</l>
+              <l><rs ref="#Ein-Briefchen-(das-der-tempelherr-für-den-patriarch-überbringen-soll)">Das Briefchen</rs> aber ist an <rs ref="#König-Philipp-(an-ihn-ist-der-brief-des-patriarchen-gerichtet)">König Philipp</rs>. –</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs> ... Ich hab' mich oft gewundert,</l>
+              <l>Wie doch <rs ref="#patriarch">ein Heiliger, <rs ref="#patriarch">der</rs> sonst so ganz</l>
+              <l><rs ref="#Im-Himmel-(wohl-die-glaubenswelt-des-patriarchen)">Im Himmel</rs> lebt, zugleich <rs ref="#Es3">so unterrichtet</l>
+              <l><rs ref="#Von-Dingen-dieser-Welt-(irdische-zustände,-evtl-politische,-meitn-wohl-die-zustände-der-zeit-während-der-kreuzzüge-und-kriege))">Von Dingen <rs ref="#dieser-Welt-(irdische)">dieser Welt</rs></rs> zu sein</rs> herab</l>
+              <l><rs ref="#patriarch">Sich</rs> lassen kann</rs>. <rs ref="#Es3">Es</rs> muß <rs ref="#patriarch">ihm</rs> sauer werden.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Nun dann? <rs ref="#patriarch">der Patriarch</rs>? –</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Weiß ganz genau,</l>
+              <l><pb n="228"/> Ganz zuverlässig, <rs ref="#Das13">wie und wo, wie stark,</l>
+              <l>Von welcher Seite <rs ref="#saladin">Saladin</rs>, im Fall</l>
+              <l><rs ref="#Des-Kriegs-(d-feldzüge-zw-muslimen-und-christen)">Es</rs> völlig wieder losgeht, seinen Feldzug</l>
+              <l>Eröffnen wird.</l></rs>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l><rs ref="#Das13">Das</rs> weiß <rs ref="#patriarch">er</rs>?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ja, und möcht'</l>
+              <l><rs ref="#Das13">Es</rs> gern <rs ref="#König-Philipp-(an-ihn-ist-der-brief-des-patriarchen-gerichtet)">dem König Philipp</rs> wissen lassen:</l>
+              <l>Damit <rs ref="#König-Philipp-(an-ihn-ist-der-brief-des-patriarchen-gerichtet)">der</rs> ungefähr ermessen könne,</l>
+              <l>Ob die Gefahr denn gar so schrecklich, um</l>
+              <l>Mit <rs ref="#saladin">Saladin</rs> <rs ref="#Es4"><rs ref="#den-Waffenstillestand,---------------Den-Euer-Orden-schon-so-brav-gebrochen-(zw-juden-und-christen-während-derr-kreuzzüge)">den Waffenstillestand,</l>
+              <l><rs ref="#den-Waffenstillestand,---------------Den-Euer-Orden-schon-so-brav-gebrochen-(zw-juden-und-christen-während-derr-kreuzzüge)">Den</rs> <rs ref="#Euer-Orden-(christl-ritterorden-dem-der-tempelherr-angehört)"><rs ref="#tempelherr-bbb">Euer</rs> Orden</rs> schon so brav gebrochen</rs>,</l></rs>
+              <l><rs ref="#Es4">Es</rs> koste was <rs ref="#Es4">es</rs> wolle, wieder her</l>
+              <l>Zu stellen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Welch ein Patriarch</rs>! – Ja so!</l>
+              <l><rs ref="#patriarch">Der liebe tapfre Mann</rs> will mich zu keinem</l>
+              <l>Gemeinen Boten; will mich – zum Spion. –</l>
+              <l>Sagt <rs ref="#patriarch"><rs ref="#klosterbruder">Euerm</rs> Patriarchen</rs>, <rs ref="#klosterbruder">guter Bruder</rs>,</l>
+              <l>So viel <rs ref="#klosterbruder">Ihr</rs> mich ergründen können, <rs ref="#ichs3">wär'</l>
+              <l><rs ref="#Weit-wicht'gere-Geschäfte-(auftrag-des-patriarchen-an-tempelherrn,-brief-überbringen-und-spionage-gg-saladin-betreiben)">Das</rs> meine Sache nicht</rs>. – Ich müsse mich</l>
+              <l>Noch als <rs ref="#ein-gefang'ner-(prädikativ-der-tempelherr)">Gefangenen</rs> betrachten; und</l>
+              <rs ref="#Der-Tempelherren-einziger-Beruf-(aufgaben-eines-tempelherrn)"><l><rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">Der Tempelherren</rs> einziger Beruf</l></rs>
+              <l>Sei mit <rs ref="#dem-Schwerte">dem Schwerte</rs> drein zu schlagen, nicht</l>
+              <l>Kundschafterei zu treiben.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Dacht' <rs ref="#ichs3">ichs</rs> doch! –</l>
+              <l><rs ref="#ichs3">Wills</rs> auch <rs ref="#tempelherr-bbb">dem Herrn</rs> nicht eben sehr verübeln. –</l>
+              <l>Zwar kömmt <rs ref="#Das-Stück-(überfall-saladins-durch-leute-des-patriarchen)">das Beste</rs> noch. – <rs ref="#patriarch">Der Patriarch</rs></l>
+              <l>Hiernächst hat ausgegattert, wie <rs ref="#die-Feste-(saladins-große-schatzkammer-dessen-schatzmeister-dessen-vater-ist#)">die Feste</rs></l>
+              <l><rs ref="#die-Feste-(saladins-große-schatzkammer-dessen-schatzmeister-dessen-vater-ist#)">Sich</rs> nennt, und wo auf <rs ref="#Libanon">Libanon</rs> <rs ref="#die-Feste-(saladins-große-schatzkammer-dessen-schatzmeister-dessen-vater-ist#)">sie</rs> liegt,</l>
+              <l>In <rs ref="#die-Feste-(saladins-große-schatzkammer-dessen-schatzmeister-dessen-vater-ist#)">der</rs> <rs ref="#die-ungeheuern-Summen-(aus-der-großen-schatzkammer,-mit-der-saladins-heer-besoldet-wird)">die ungeheuern Summen</rs> stecken,</l>
+              <l>Mit <rs ref="#die-ungeheuern-Summen-(aus-der-großen-schatzkammer,-mit-der-saladins-heer-besoldet-wird)">welchen</rs> <rs ref="#Sein-Vater-(saladins)">Saladins vorsichtger Vater</rs></l>
+              <l>Das Heer besoldet, und die Zurüstungen</l>
+              <l><rs ref="#Des-Kriegs-(d-feldzüge-zw-muslimen-und-christen)">Des Kriegs</rs> bestreitet. <rs ref="#saladin">Saladin</rs> verfügt</l>
+              <l>Von <rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Zeit</rs> zu <rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Zeit</rs> auf abgelegnen Wegen</l>
+              <l>Nach <rs ref="#die-Feste-(saladins-große-schatzkammer-dessen-schatzmeister-dessen-vater-ist#)">dieser Feste</rs> <rs ref="#saladin">sich</rs>, nur kaum begleitet. –</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> merkt doch?</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Nimmermehr!</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Was wäre da</l>
+              <l><pb n="229"/> Wohl leichter, als <rs ref="#saladin">des Saladins</rs> <rs ref="#patriarch">sich</rs> zu</l>
+              <l>Bemächtigen? den Garaus <rs ref="#saladin">ihm</rs> zu machen? –</l>
+              <l><rs ref="#tempelherr-bbb">Ihr</rs> schaudert? – O <rs ref="#ein-Paar---------------Gottsfürchtge-Maroniten-(die-saladin-überfallen-sollen)">es</rs> haben schon <rs ref="#ein-Paar---------------Gottsfürchtge-Maroniten-(die-saladin-überfallen-sollen)">ein Paar</l>
+              <l>Gottsfürchtge Maroniten</rs> <rs ref="#ein-Paar---------------Gottsfürchtge-Maroniten-(die-saladin-überfallen-sollen)">sich</rs> erboten,</l>
+              <l>Wenn nur <rs ref="#ein-wackrer-Mann-(der-die-leitung-des-überfalls-saladins-übernehmen-soll)">ein wackrer Mann</rs> <rs ref="#ein-Paar---------------Gottsfürchtge-Maroniten-(die-saladin-überfallen-sollen)">sie</rs> führen wolle,</l>
+              <l><rs ref="#Das-Stück-(überfall-saladins-durch-leute-des-patriarchen)">Das Stück</rs> zu wagen.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Und <rs ref="#patriarch">der Patriarch</rs></l>
+              <l>Hätt' auch zu <rs ref="#diesem-wackern-Manne-(prädikativ-der-tempelherr-als-leiter-des-überfalls-auf-saladin)">diesem wackern Manne</rs> mich</l>
+              <l>Ersehn?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#patriarch">Er</rs> glaubt, daß <rs ref="#König-Philipp-(an-ihn-ist-der-brief-des-patriarchen-gerichtet)">König Philipp</rs> wohl</l>
+              <l>Von Ptolemais aus die Hand hierzu</l>
+              <l>Am besten bieten könne.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Mir? mir, <rs ref="#klosterbruder">Bruder</rs>?</l>
+              <l>Mir? Habt <rs ref="#klosterbruder">Ihr</rs> nicht gehört? nur erst gehört,</l>
+              <rs ref="#Was-für-Verbindlichkeit-dem-Saladin---------------Ich-habe"><l><rs ref="#Was-für-Verbindlichkeit-(schuld-verbindlichkeit-des-tempelherrn-ggü-saladin-wg-begnadigung)">Was für Verbindlichkeit</rs> <rs ref="#saladin">dem Saladin</rs></l>
+              <l>Ich habe</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Wohl hab <rs ref="#Was-für-Verbindlichkeit-dem-Saladin---------------Ich-habe"><rs ref="#klosterbruder">ichs</rs></rs> gehört.</l>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <l>Und doch?</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ja, – meint <rs ref="#patriarch">der Patriarch</rs>, – <rs ref="#Was-für-Verbindlichkeit-(schuld-verbindlichkeit-des-tempelherrn-ggü-saladin-wg-begnadigung)">das</rs> wär' schon gut:</l>
+              <l><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> aber und <rs ref="#Euer-Orden-(christl-ritterorden-dem-der-tempelherr-angehört)">der Orden</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ändern nichts!</l>
+              <l>Gebieten mir kein Bubenstück!</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Gewiß nicht! –</l>
+              <l>Nur, – meint <rs ref="#patriarch">der Patriarch</rs>, – sei Bubenstück</l>
+              <l>Vor <rs ref="#wir-Menschen">Menschen</rs>, nicht auch Bubenstück vor Gott.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Ich wär' <rs ref="#saladin">dem Saladin</rs> <rs ref="#Das-Leben-(des-tempelherrn)">mein Leben</rs> schuldig:</l>
+              <l>Und raubt <rs ref="#saladin">ihm</rs> seines?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Pfui! – Doch bliebe, – meint</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs>, – noch immer <rs ref="#saladin">Saladin</rs></l>
+              <l>Ein Feind <rs ref="#Christ-222">der Christenheit</rs>, der <rs ref="#tempelherr-bbb">Euer</rs> Freund</l>
+              <l>Zu sein, kein Recht erwerben könne.</l>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l><rs ref="#Freund-(saladin-als-freund-des-tempelherrn)">Freund</rs>?</l>
+              <l>An <rs ref="#Freund-(saladin-als-freund-des-tempelherrn)">dem</rs> ich bloß nicht will <rs ref="#zum-Schurken-(prädikativ-der-tempelherr)">zum Schurken</rs> werden;</l>
+              <l><rs ref="#zum-Schurken-(prädikativ-der-tempelherr)">Zum undankbaren Schurken</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Allerdings! –</l>
+              <l><pb n="230"/> Zwar, – meint <rs ref="#patriarch">der Patriarch</rs>, – des Dankes sei</l>
+              <l><rs ref="#wir-Menschen">Man</rs> quitt, vor <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> und <rs ref="#wir-Menschen">Menschen</rs> quitt, wenn <rs ref="#wir-Menschen">uns</rs></l>
+              <l>Der Dienst um <rs ref="#wir-Menschen">unsertwillen</rs> nicht geschehen.</l>
+              <l>Und da verlauten wolle, – meint <rs ref="#patriarch">der Patriarch</rs>, –</l>
+              <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)"><l>Daß <rs ref="#tempelherr-bbb">Euch</rs> nur darum <rs ref="#saladin">Saladin</rs> begnadet,</l>
+              <l>Weil <rs ref="#saladin">ihm</rs> in <rs ref="#Angesicht-(des-tempelherrn)"><rs ref="#tempelherr-bbb">Eurer</rs> Mien</rs>', in <rs ref="#Euerm-Wesen-(innerer-charakter,-gemüt-des-tempelherrn)"><rs ref="#tempelherr-bbb">Euerm</rs> Wesen</rs>,</l>
+              <l>So was von <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)"><rs ref="#saladin">seinem</rs> Bruder</rs> eingeleuchtet ...</l></rs>
+            </lg>
+          </sp>
+          <sp who="#tempelherr">
+            <rs ref="#tempelherr-bbb"><speaker>TEMPELHERR.</speaker></rs>
+            <lg>
+              <l>Auch <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)">dieses</rs> weiß <rs ref="#patriarch">der Patriarch</rs>; und doch? –</l>
+              <l>Ah! wäre <rs ref="#das-(der-umstand,-das-grücht,-dass-saladin-den-tempelherrn-verschont-hat-weil-er-seinem-bruder-ähnlich-sieht)">das</rs> gewiß! Ah, <rs ref="#saladin">Saladin</rs>! –</l>
+              <l>Wie? <rs ref="#Natur">die Natur</rs> hätt' auch nur <rs ref="#Einen-Zug---------------Von-mir-(einen-zug-im-gesichtsausdruck-des-tempelherrn)">Einen Zug</l>
+              <l>Von mir</rs> in <rs ref="#deines-Bruders-Form-(äußere-gestalt-erscheinung-saladins-bruder)"><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)"><rs ref="#saladin">deines</rs> Bruders</rs> Form</rs> gebildet:</l>
+              <l>Und <rs ref="#Einen-Zug---------------Von-mir-(einen-zug-im-gesichtsausdruck-des-tempelherrn)">dem</rs> entspräche nichts in <rs ref="#Euerm-Wesen-(innerer-charakter,-gemüt-des-tempelherrn)">meiner Seele</rs>?</l>
+              <l>Was <rs ref="#Einen-Zug---------------Von-mir-(einen-zug-im-gesichtsausdruck-des-tempelherrn)">dem</rs> entspräche, könnt ich unterdrücken,</l>
+              <l>Um <rs ref="#einem-Patriarchen">einem Patriarchen</rs> zu gefallen? –</l>
+              <l><rs ref="#Natur">Natur</rs>, so leugst du nicht! So widerspricht</l>
+              <l><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Sich</rs> <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> in <rs ref="#wir-Menschen"><rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">seinen</rs> Werken</rs> nicht! – Geht <rs ref="#klosterbruder">Bruder</rs>! –</l>
+              <l>Erregt mir <rs ref="#der-Galle-(des-tempelherrn,-als-körperlicher-Ort-der-Stimmungen,-vermutl-in-anlehnung-an-säftelehre)">meine Galle</rs> nicht! – Geht! geht!</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ich geh'; und geh' vergnügter, als ich kam.</l>
+              <l>Verzeihe mir <rs ref="#tempelherr-bbb">der Herr</rs>. <rs ref="#Wir-Klosterleute-(Mönche)">Wir Klosterleute</rs></l>
+              <l>Sind schuldig, <rs ref="#Wir-Klosterleute-(Mönche)">unsern</rs> Obern zu gehorchen.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

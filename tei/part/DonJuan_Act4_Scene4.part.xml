@@ -1,0 +1,356 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Don Juan's Ende</title>
+        <title type="sub">Trauerspiel in fünf Akten</title>
+        <author key="pnd:118550772">Heyse, Paul</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000266</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q56201730</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:q41n.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Paul Heyse: Gesammelte Werke. Berlin: Verlag von Wilhelm Hertz (Bessersche
+              Buchhandlung), 1872–1910.</title>
+            <date type="print" when="1883"/>
+            <date type="premiere" when="1884"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="don_juan" sex="MALE">
+            <persName>Don Juan</persName>
+          </person>
+          <person xml:id="leporello" sex="MALE">
+            <persName>Leporello</persName>
+          </person>
+          <person xml:id="der_alte_fischer" sex="MALE">
+            <persName>Der alte Fischer</persName>
+            <persName type="variant">Der Alte</persName>
+            <persName type="variant">Der Fischer</persName>
+          </person>
+          <personGrp xml:id="prozession" sex="UNKNOWN">
+            <name>Prozession</name>
+          </personGrp>
+          <person xml:id="ghita" sex="FEMALE">
+            <persName>Ghita</persName>
+          </person>
+          <person xml:id="der_moench" sex="MALE">
+            <persName>Der Mönch</persName>
+            <persName type="variant">Der Karthäuser</persName>
+          </person>
+          <person xml:id="erster_strolch" sex="MALE">
+            <persName>Erster Strolch</persName>
+          </person>
+          <person xml:id="zweiter_strolch" sex="MALE">
+            <persName>Zweiter Strolch</persName>
+          </person>
+          <person xml:id="gianotto" sex="MALE">
+            <persName>Gianotto</persName>
+            <persName type="variant">Gianotto's Stimme</persName>
+          </person>
+          <person xml:id="wirth" sex="MALE">
+            <persName>Wirth</persName>
+            <persName type="variant">Salvatore's Stimme</persName>
+            <persName type="variant">Der Wirth</persName>
+          </person>
+          <person xml:id="biondetta" sex="FEMALE">
+            <persName>Biondetta</persName>
+            <persName type="variant">Biondetta's Stimme</persName>
+          </person>
+          <person xml:id="martina" sex="FEMALE">
+            <persName>Martina</persName>
+          </person>
+          <person xml:id="graefin" sex="FEMALE">
+            <persName>Gräfin</persName>
+          </person>
+          <person xml:id="diener" sex="MALE">
+            <persName>Diener</persName>
+            <persName type="variant">Ein Diener</persName>
+          </person>
+          <personGrp xml:id="stimmen" sex="UNKNOWN">
+            <name>Stimmen</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#graefin" passive="#ghita"/>
+            <relation name="parent_of" active="#graefin" passive="#gianotto"/>
+            <relation name="spouses" mutual="#biondetta #wirth"/>
+            <relation name="associated_with" active="#biondetta" passive="#graefin"/>
+            <relation name="associated_with" active="#leporello" passive="#don_juan"/>
+            <relation name="associated_with" active="#diener" passive="#graefin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-11">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Paul Heyse</head>
+        <head>Don Juan's Ende</head>
+        <head>Trauerspiel in fünf Akten</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="276"/> Personen.</head>
+          <castItem>Don Juan.</castItem>
+          <castItem>Gräfin Maria de Luna.</castItem>
+          <castItem>Ghita, ihre Tochter.</castItem>
+          <castItem>Gianotto, ihr Pflegesohn.</castItem>
+          <castItem>Martina, eine alte Dienerin.</castItem>
+          <castItem>Salvatore, Gastwirth in Resina.</castItem>
+          <castItem>Biondetta, seine Verlobte, Kammerjungfer der Gräfin.</castItem>
+          <castItem>Leporello, Don Juan's Diener.</castItem>
+          <castItem>Ein Karthäuser Mönch.</castItem>
+          <castItem>Ein alter Fischer.</castItem>
+          <castItem>Zwei Banditen.</castItem>
+          <castGroup>
+            <castItem>Marchetto, ein junger Bauer</castItem>
+            <castItem>Carlino, ein Knabe,</castItem>
+            <roleDesc>stumme Personen.</roleDesc>
+          </castGroup>
+          <castItem>Ein Diener der Gräfin.</castItem>
+          <castItem>Landvolk. Fischer.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Zeit: Mitte des 14 Jahrhunderts.</p>
+        <p>Ort: Resina, am Fuße des Vesuv.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt.</head>
+        <stage>Zimmer der Gräfin. Thüren rechts, links und in der Mitte. Vorn <rs ref="#ein-Tisch">ein Tisch</rs> und einige
+          Sessel. Ein Kamin.</stage>
+        <div type="scene">
+          <head><pb n="342"/> Vierte Scene.</head>
+          <stage><rs ref="#graefin">Gräfin</rs>. <rs ref="#don_juan">Don Juan</rs>.</stage>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN</speaker></rs>
+            <stage>sehr ernst.</stage>
+            <p>Legt <rs ref="#meine-Zudringlichkeit">meine Zudringlichkeit</rs> nicht einem Mangel an Sitte zur Last, <rs ref="#graefin">edle Gräfin</rs>. <rs ref="#Eine---------------gebieterische-Pflicht-–">Eine
+              gebieterische Pflicht –</rs></p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Welche Stimme! <stage><rs ref="#don_juan">Ihn</rs> mit wachsender Unruhe betrachtend.</stage> <rs ref="#don_juan">Señor –</rs></p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p><rs ref="#Lange-Jahre">Lange Jahre</rs> sind vergangen, <rs ref="#graefin">Doña Maria</rs> –</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>erkennt <rs ref="#don_juan">ihn</rs>, taumelt zurück, hält <rs ref="#graefin">sich</rs> <rs ref="#am-Sessel">am Sessel</rs>.</stage>
+            <p>Ewige Mächte! – <rs ref="#Die-Todten">Die Todten</rs> stehen wieder auf!</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN</speaker></rs>
+            <stage><rs ref="#graefin">ihr</rs> rasch nähertretend, mit <rs ref="#meine-Zudringlichkeit">ehrerbietigem Dringen</rs>.</stage>
+            <p>So betrachtet mich mit dem milden, versöhnlichen Auge, wie <rs ref="#Man">man</rs> auf <rs ref="#ein-Feind">abgeschiedene
+              Feinde</rs> blickt. Bei <rs ref="#der-Liebe,-die-wir-Beide-zu-jener-Engelsseele-gefühlt-(liebe-gräfin-juan-ggü-anna)">der Liebe, <rs ref="#der-Liebe,-die-wir-Beide-zu-jener-Engelsseele-gefühlt-(liebe-gräfin-juan-ggü-anna)">die</rs> <rs ref="#don_juan-/-graefin">wir Beide</rs> zu <rs ref="#seiner---------------geliebten,-unglücklichen-Mutter-(gianottos-mutter-anna)">jener Engelsseele</rs> gefühlt</rs> –</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage><rs ref="#graefin">sich</rs> stolz aufraffend.</stage>
+            <p><rs ref="#don_juan">Ihr</rs> seid'<rs ref="#s-(prädikativ-juan-als-er-selbst)">s</rs>, seid <rs ref="#s-(prädikativ-juan-als-er-selbst)">es</rs> wirklich – und wagt – wagt <rs ref="#hellen-Tag">am hellen Tage</rs>, wo <rs ref="#Ein-Gespenst,-das-ihr-um-Mitternacht---------------eschien">Gespenster</rs> sonst
+              den tiefsten Schatten suchen, vor mein Angesicht zu treten? An <rs ref="#der-Schwelle-dieses---------------Hauses">der Schwelle <rs ref="#im-Haus">dieses
+              Hauses</rs></rs> – hielten da nicht <rs ref="#zwei-Todte-(anna-und-der-vater-der-gräfin)">zwei Todte</rs> Wacht und wiesen <rs ref="#don_juan">Euch</rs> mit drohendem Geisterfinger
+              zurück? Oder hat die Zeit, die so Vieles vermag, <rs ref="#den-gottlosen-Trotz-in-Euch-gegen---------------alles-Heilige">den gottlosen Trotz in <rs ref="#don_juan">Euch</rs> gegen
+              alles Heilige</rs> nicht zu dämpfen vermocht? So soll <rs ref="#den-gottlosen-Trotz-in-Euch-gegen---------------alles-Heilige">er</rs> doch an <rs ref="#meinem-Haß">meinem Haß</rs> zu Schanden
+              werden!</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN</speaker></rs>
+            <stage>ruhig.</stage>
+            <p><rs ref="#graefin">Ihr</rs> habt das beste Recht, mich zu hassen, Gräfin. Auch würden mich <rs ref="#zwei-Todte-(anna-und-der-vater-der-gräfin)">die Todten, <rs ref="#zwei-Todte-(anna-und-der-vater-der-gräfin)">die</rs>
+              zwischen <rs ref="#don_juan-/-graefin">uns</rs> stehn</rs>, mehr noch als <rs ref="#meinem-Haß">dieser Haß</rs> von <rs ref="#der-Schwelle-dieses---------------Hauses"><rs ref="#graefin">Eurer</rs> Schwelle</rs> fern gehalten haben,
+              wenn <rs ref="#Eine---------------gebieterische-Pflicht-–">die Pflicht gegen <rs ref="#ghita-/-gianotto">zwei Lebende</rs></rs> nicht alle Schauer der Erinnerung überwöge.</p>
+            <pb n="343"/>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Zwei Lebende?</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p><rs ref="#ghita"><rs ref="#graefin">Eure</rs> Tochter</rs> – und <rs ref="#gianotto">mein Sohn</rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>zusammenfahrend.</stage>
+            <p>Was wißt <rs ref="#don_juan">Ihr</rs> – wer hat <rs ref="#don_juan">Euch</rs> gesagt –</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>Ich weiß <rs ref="#es-(das-gianotto-juans-sohn-ist)">es</rs>. Was liegt daran, wie ich <rs ref="#es-(das-gianotto-juans-sohn-ist)">es</rs> erfuhr? <rs ref="#graefin">Ihr</rs> habt <rs ref="#gianotto">ihn</rs> auferzogen, <rs ref="#gianotto">ihm</rs> <rs ref="#die---------------Liebe-seiner-Nächsten,-die-er-entbehren-mußte-(anna-juan--ggü-gianotto)">die
+              Liebe seiner Nächsten, <rs ref="#die---------------Liebe-seiner-Nächsten,-die-er-entbehren-mußte-(anna-juan--ggü-gianotto)">die</rs> er entbehren mußte</rs>, hundertfältig ersetzt – ich dank' <rs ref="#graefin">Euch</rs>
+              dafür, <rs ref="#graefin">Doña Maria</rs>. <stage>Neigt <rs ref="#don_juan">sich</rs> tief vor <rs ref="#graefin">ihr</rs>, will <rs ref="#ihre-Hand-(gräfin)"><rs ref="#graefin">ihre</rs> Hand</rs> küssen, <rs ref="#graefin">sie</rs> tritt
+                zurück.</stage></p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Den Dank <rs ref="#don_juan">eines Mörders, eines Frevlers gegen <rs ref="#barmherziger-Gott">Gott</rs> und <rs ref="#barmherziger-Gott">seine</rs> heiligsten Gebote</rs>
+              verbitt' ich.</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>Ich bin nur ein schwacher Christ, <rs ref="#graefin">Gräfin</rs>, doch entsinn' ich mich <rs ref="#des-Gebots,-daß-man---------------seinem-sündigen-Bruder-sieben-mal-siebenzig-mal-vergeben-solle">des Gebots, daß <rs ref="#Man">man</rs>
+              <rs ref="#Man"><rs ref="#Man">seinem</rs> sündigen Bruder</rs> sieben mal siebenzig mal vergeben solle</rs>. <rs ref="#des-Gebots,-daß-man---------------seinem-sündigen-Bruder-sieben-mal-siebenzig-mal-vergeben-solle">Dies</rs> scheint über <rs ref="#graefin">Eure</rs>
+              Kraft zu gehen. Doch werdet <rs ref="#graefin">Ihr</rs> hoffentlich <rs ref="#die-Sünde-des-Vaters-(juans-ggü-anna-und-deren-vater)"><rs ref="#es8">die Sünde <rs ref="#don_juan">des Vaters</rs></rs></rs> nicht an <rs ref="#gianotto">dem Sohne</rs>
+              rächen wollen. Würde <rs ref="#es8">es</rs> doch <rs ref="#ghita"><rs ref="#graefin">Eure</rs> Tochter</rs> mit entgelten.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>bestürzt.</stage>
+            <p><rs ref="#ghita">Meine Tochter</rs> – <rs ref="#don_juan">Ihr</rs> seid <rs ref="#ghita">meiner Tochter</rs> begegnet, <rs ref="#don_juan">Ihr</rs> habt <rs ref="#ghita">ihr</rs> mitgetheilt –? Oh nun
+              versteh' ich <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">Alles – ihre Verstörung – die Zerrüttung <rs ref="#Meine-(gedanken-geist-ghitas)">all ihrer Gedanken</rs> und <rs ref="#die-Harmonie-dieser-zarten-Seele-(ghitas-herzensglück-seelenheil)">Gefühle</rs></rs>
+              –</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>Niemand, als <rs ref="#graefin">Ihr</rs>, in <rs ref="#im-Haus">diesem Hause</rs> weiß, <rs ref="#es9">wer ich bin</rs>. Niemand soll <rs ref="#es9">es</rs> je erfahren,
+              dafern <rs ref="#graefin">Ihr</rs> <rs ref="#meiner-Bitte-(juan-ggü-gräfin)">meiner Bitte</rs> Gehör gebt. Ich werde verschwinden, wie ich kam. <rs ref="#Man">Die Welt</rs> soll
+              fortfahren zu glauben, <rs ref="#don_juan">Don Juan Tenorio</rs> sei vor <rs ref="#Lange-Jahre">zwanzig Jahren</rs> <rs ref="#zur-Hölle">zur Hölle</rs> gefahren.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>mit kalter Verachtung.</stage>
+            <p>Seid überzeugt, daß ich gern jeden Preis zahlte, um <rs ref="#don_juan">Euch</rs> nieder zu <rs ref="#Die-Todten">den Todten</rs> zu
+              werfen. <rs ref="#meiner-Bitte-(juan-ggü-gräfin)">Jene Bitte</rs> also –?</p>
+            <pb n="344"/>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN</speaker></rs>
+            <stage>nach einer Pause.</stage>
+            <p>Vermählt <rs ref="#ghita"><rs ref="#graefin">Eure</rs> Tochter</rs> mit <rs ref="#gianotto">meinem Sohn</rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage><rs ref="#graefin">sich</rs> unwillig abwendend.</stage>
+            <p><rs ref="#don_juan">Ihr</rs> seid älter geworden, Don Juan, aber, wie ich sehe, nicht weiser.</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>Vielleicht habt <rs ref="#graefin">Ihr</rs> <rs ref="#Recht-(haben)">Recht</rs>, Gräfin. Doch kann ich'<rs ref="#s4">s</rs> einmal nicht ändern: <rs ref="#s4">ich liebe
+              <rs ref="#gianotto">diesen Sohn</rs> und fühle mich verantwortlich für <rs ref="#sein-Glück-(gianotto)"><rs ref="#gianotto">sein</rs> Glück</rs></rs>. Ich hab' es leider mit <rs ref="#gianotto">ihm</rs>
+              verschüttet und <rs ref="#sein-Herz-(gianotto)"><rs ref="#gianotto">sein</rs> Herz</rs> mir abwendig gemacht. Nun hab' ich keinen dringenderen
+              Wunsch, keinen festeren Vorsatz, als <rs ref="#sein-Herz-(gianotto)">dieses Herz</rs> mir zurückzugewinnen, indem ich <rs ref="#gianotto">dem
+              trotzigen Knaben</rs>, wie <rs ref="#andere-schwache-Väter">andere schwache Väter</rs>, zu <rs ref="#sein-Glück-(gianotto)"><rs ref="#gianotto">seinem</rs> Herzenswunsch</rs> verhelfe. Und
+              darum, <rs ref="#graefin">Gräfin</rs>, noch einmal: vermählt <rs ref="#gianotto">ihm</rs> <rs ref="#ghita"><rs ref="#graefin">Eure</rs> Tochter</rs> und sagt <rs ref="#gianotto">ihm</rs>, daß
+                <rs ref="#don_juan"><emph>ich</emph>, sein leiblicher Vater</rs>, für <rs ref="#gianotto">ihn</rs> geworben habe.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>kalt.</stage>
+            <p>Und wenn ich'<rs ref="#s-(heirat-ghita-gianotto,-die-erfüllung-von-juans-bitte)">s</rs> wollte, steht <rs ref="#s-(heirat-ghita-gianotto,-die-erfüllung-von-juans-bitte)">es</rs> bei mir? Habt <rs ref="#don_juan">Ihr</rs> <rs ref="#den-Muth-(juan)">den Muth</rs>, bei <rs ref="#Dein-Vater-(ghitas)">meinem Gatten</rs> <rs ref="#meiner-Bitte-(juan-ggü-gräfin)"><rs ref="#don_juan">Eure</rs>
+              Werbung</rs> anzubringen?</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p><rs ref="#den-Muth-(juan)">Am Muth</rs> sollte mir's wohl nicht fehlen. Doch ist <rs ref="#s-(heirat-ghita-gianotto,-die-erfüllung-von-juans-bitte)">die Sache</rs> eilig. Ich glaubte
+              ausgelernt zu haben; <rs ref="#ghita-/-gianotto">diese jungen Leute</rs> haben mich noch einmal in die Schule genommen,
+              mich gelehrt, daß es etwas giebt, <rs ref="#was-ich-für-eine-Fabel-hielt">was ich für eine Fabel hielt</rs>: <rs ref="#was-ich-für-eine-Fabel-hielt"><rs ref="#eine-Leidenschaft-zu-einander-(ghita-gianotto)">eine völlig erwachsene
+              Leidenschaft</rs> in <rs ref="#deinem-Herzen-(ghita)-/-sein-Herz-(gianotto)">zwei reinen Kinderseelen</rs></rs>. <rs ref="#Es2">Es</rs> ist gefährlich, <rs ref="#Es2"><rs ref="#die-Kinder">Kinder</rs> mit scharfen
+              Waffen spielen zu lassen</rs>. <rs ref="#Das2"><rs ref="#die-Kinder">Sie</rs> möchten <rs ref="#die-Kinder">sich</rs> tödtlich damit verwunden</rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p><rs ref="#Das2">Das</rs> verhüte <rs ref="#barmherziger-Gott">der Himmel</rs>! Wenn <rs ref="#don_juan">Ihr</rs> <rs ref="#Recht-(haben)">Recht</rs> hättet – Aber nein, <rs ref="#don_juan">Ihr</rs> kennt nur das Recht
+              der Leidenschaft. <rs ref="#don_juan">Ihr</rs> wißt nicht, daß <rs ref="#eine-gute-Tochter">eine gute Tochter</rs>, um <rs ref="#eine-gute-Tochter">ihre</rs> Eltern nicht zu
+              betrüben, <rs ref="#eine-gute-Tochter">ihr</rs> Herz bezwingen kann. Ich zwar, da ich <rs ref="#gianotto">Juanito</rs> wie <rs ref="#die-Kinder">ein eigenes Kind</rs>
+              liebe, ich würde <rs ref="#es10">es</rs> über mich gewinnen, <rs ref="#es10"><rs ref="#gianotto">dem Sohn <rs ref="#don_juan">des Mannes, <rs ref="#don_juan">der</rs> <rs ref="#die-Sünde-des-Vaters-(juans-ggü-anna-und-deren-vater)">so viel Unheil und
+              Jammer</rs> über<pb n="345"/> uns gebracht</rs></rs>, <rs ref="#ghita">meine Tochter</rs> zu geben</rs>. Aber <rs ref="#Dein-Vater-(ghitas)">mein Gemahl</rs> ist
+              unerschütterlich.</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>So erbitt' ich von <rs ref="#graefin">Euch</rs> nur noch <rs ref="#die-Eine-Gunst">die Eine Gunst</rs>: <rs ref="#die-Eine-Gunst">daß <rs ref="#graefin"><emph>Ihr</emph></rs> <rs ref="#gianotto">dem Knaben</rs>
+              sagt, wer ich bin, <rs ref="#gianotto">ihn</rs> ermahnt, des Spruches zu gedenken: <rs ref="#Man">du</rs> sollst <rs ref="#andere-schwache-Väter"><rs ref="#Man">deinen</rs> Vater</rs>
+              ehren, auf daß es <rs ref="#Man">dir</rs> wohl gehe auf <rs ref="#die-Welt">Erden</rs>.</rs></p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Ich? Ich soll <rs ref="#gianotto">ihm</rs> –? Und warum die heilsame Unwissenheit von <rs ref="#gianotto">ihm</rs> nehmen?</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN.</speaker></rs>
+            <p>Aus einem sehr triftigen Grunde: weil <rs ref="#gianotto">dieser unwissende Sohn</rs> danach lechzt, <rs ref="#seinen---------------Degen"><rs ref="#gianotto">seinen</rs>
+              Degen</rs> in das Blut <rs ref="#don_juan">des eigenen Vaters</rs> zu tauchen, und Vatermord doch immer eine
+              heillose Sache bleibt, selbst wenn sich's nur um einen Vater <emph>meines</emph>
+              Schlages handelt.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Dahin ist's gekommen?</p>
+          </sp>
+          <sp who="#don_juan">
+            <rs ref="#don_juan"><speaker>DON JUAN</speaker></rs>
+            <stage>zuckt die Achseln.</stage>
+            <p>Leider. Auch <rs ref="#Vaterschaft">Vaterschaft</rs> ist <rs ref="#eine-Kunst,-die-gelernt-sein-will-(prädikativ-vaterschaft)">eine Kunst, <rs ref="#eine-Kunst,-die-gelernt-sein-will-(prädikativ-vaterschaft)">die</rs> gelernt sein will</rs>. Ich habe mir <rs ref="#Vaterschaft">das
+              Spiel</rs> verdorben, wie ein hitziger Neuling, und bin zehn Jahre älter darüber geworden.
+              <rs ref="#graefin">Ihr</rs> aber – <rs ref="#graefin">Ihr</rs> habt Macht über <rs ref="#gianotto">ihn</rs> – <rs ref="#graefin">Euch</rs> ist <rs ref="#gianotto">er</rs> so viel schuldig geworden –</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>sinnt <rs ref="#einen-Augenblick">einen Augenblick</rs>, klingelt dann mit <rs ref="#einer-kleinen-Glocke,-die-auf-dem---------------Tische">einer kleinen Glocke, <rs ref="#einer-kleinen-Glocke,-die-auf-dem---------------Tische">die</rs> auf <rs ref="#ein-Tisch">dem
+              Tische</rs></rs> steht. <rs ref="#diener">Ein Diener</rs> tritt ein.</stage>
+            <p>Geht zu <rs ref="#martina">Martina</rs>; fragt, ob <rs ref="#gianotto"><rs ref="#martina">ihr</rs> Sohn</rs> noch nicht zurückgekehrt sei. Ich wünsche <rs ref="#gianotto">ihn</rs>
+              sofort zu sprechen.</p>
+          </sp>
+          <sp who="#diener">
+            <rs ref="#diener"><speaker>DIENER.</speaker></rs>
+            <p><rs ref="#gianotto">Herr Gianotto</rs> kommt eben die Treppe herauf. Ich glaube, <rs ref="#gianotto">er</rs> will zu <rs ref="#graefin">Ew. Gnaden</rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Es ist gut. <stage><rs ref="#diener">Diener</rs> ab.</stage> Tretet <rs ref="#einen-Augenblick">einen Augenblick</rs> dort hinein <stage>Nach
+                rechts deutend.</stage> <rs ref="#don_juan">Ihr</rs> sollt Zeuge dessen sein, was ich mit <pb n="346"/> <rs ref="#gianotto">ihm</rs>
+              reden werde. Sobald <rs ref="#es11">es</rs> <rs ref="#don_juan">Euch</rs> angemessen dünkt, mögt <rs ref="#don_juan">Ihr</rs> <rs ref="#es11">hervortreten</rs>.</p>
+            <stage><rs ref="#don_juan">Don Juan</rs> verneigt <rs ref="#don_juan">sich</rs> tief vor <rs ref="#graefin">ihr</rs>, geht nach rechts ab.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

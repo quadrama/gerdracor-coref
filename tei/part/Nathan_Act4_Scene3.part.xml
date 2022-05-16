@@ -1,0 +1,308 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Aufzug</head>
+        <div type="scene">
+          <head>Dritter Auftritt</head>
+          <stage><rs ref="#Szene-(in-einem-zimmer-des-palasts-saladins)">Szene</rs>: <rs ref="#ein-Zimmer-im-Palaste-des-Saladin">ein Zimmer <rs ref="#sein-Haus-(saladins)">im Palaste</rs> <rs ref="#saladin">des Saladin</rs>, in <rs ref="#ein-Zimmer-im-Palaste-des-Saladin">welches</rs> von Sklaven <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">eine Menge Beutel</rs>
+            getragen, und auf <rs ref="#dem-Boden-(bühnenboden)">dem Boden</rs> neben einander gestellt werden</rs>.</stage>
+          <stage><rs ref="#saladin">Saladin</rs> und bald darauf <rs ref="#sittah-xx">Sittah</rs>.</stage>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker>
+            <stage><rs ref="#saladin">der</rs> dazu kömmt</rs>.</stage>
+            <lg>
+              <l>Nun wahrlich! <rs ref="#die-Beutel-(menge-sämtlichen-gelds-und-waren-die-nathan-saladin-leiht,-wann-es-sich-um-geld-und-wann-um-waren-handelt-ist-nicht-immer-klar))">das</rs> hat noch kein Ende. – Ist</l>
+              <l><rs ref="#die-Beutel-(menge-sämtlichen-gelds-und-waren-die-nathan-saladin-leiht,-wann-es-sich-um-geld-und-wann-um-waren-handelt-ist-nicht-immer-klar))">Des Dings</rs> noch viel zurück?</l>
+            </lg>
+          </sp>
+          <sp who="#ein_sklave">
+            <speaker>EIN SKLAVE.</speaker>
+            <l>Wohl noch <rs ref="#die-Hälfte-(von-nathans-leihgabe,-das-sittah-erhalten-soll)">die Hälfte</rs>.</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#das36">So tragt <rs ref="#die-Hälfte-(von-nathans-leihgabe,-das-sittah-erhalten-soll)">das übrige</rs> zu <rs ref="#sittah-xx">Sittah</rs></rs>. – Und</l>
+              <l>Wo bleibt <rs ref="#derwisch">Al-Hafi</rs>? <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">Das</rs> hier soll sogleich</l>
+              <l><rs ref="#derwisch">Al-Hafi</rs> zu <rs ref="#derwisch">sich</rs> nehmen. – Oder ob</l>
+              <l><rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">Ichs</rs> nicht vielmehr <rs ref="#Sein-Vater-(saladins)">dem Vater</rs> schicke? Hier</l>
+              <l>Fällt mir <rs ref="#eine-Menge-Beutel-(erster-teil-tatsächlich-gelieferter-beutel-leihgeld-von-nathan-an-saladin)">es</rs> doch nur durch die Finger. – Zwar</l>
+              <l><rs ref="#saladin">Man</rs> wird wohl endlich hart; und nun gewiß</l>
+              <l><rs ref="#Solls">Solls</rs> Künste kosten, <rs ref="#Solls">mir viel abzuzwacken</rs>.</l>
+              <l>Bis wenigstens <rs ref="#Die-Gelder-aus---------------Ägypten-(saladins)">die Gelder aus <rs ref="#Ägypten">Ägypten</rs></rs></l>
+              <l><rs ref="#sein-Haus-(saladins)">Zur Stelle</rs> kommen, mag <rs ref="#Den-Armen-(evtl.-die-gleichen-wie-die-bettler,-aber-unklar)">das Armut</rs> sehn</l>
+              <l><rs ref="#Den-Armen-(evtl.-die-gleichen-wie-die-bettler,-aber-unklar)">Wies</rs> fertig wird! – <rs ref="#Die-Spenden-bei-dem-Grabe">Die Spenden bei <rs ref="#des-Auferstandnen-Grab">dem Grabe</rs></rs>,</l>
+              <l>Wenn <rs ref="#Die-Spenden-bei-dem-Grabe">die</rs> nur fortgehn! Wenn <rs ref="#neugier'ge-Pilger">die Christenpilger</rs></l>
+              <l>Mit leeren Händen nur nicht abziehn dürfen!</l>
+              <l>Wenn nur –</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Was soll nun <rs ref="#das36">das</rs>? Was soll <rs ref="#die-Hälfte-(von-nathans-leihgabe,-das-sittah-erhalten-soll)">das Geld</rs></l>
+              <l>Bei mir?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Mach <rs ref="#Die-Posten-(schulden-saladins-ggü-sittah">dich</rs> davon bezahlt; und leg'</l>
+              <l>Auf Vorrat, wenn was übrig bleibt.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Ist <rs ref="#nathan">Nathan</rs></l>
+              <l>Noch mit <rs ref="#tempelherr-bbb">dem Tempelherrn</rs> nicht da?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#nathan">Er</rs> sucht</l>
+              <l><rs ref="#tempelherr-bbb">Ihn</rs> aller Orten.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Sieh doch, was ich hier,</l>
+              <l>Indem mir so mein alt Geschmeide durch</l>
+              <l>Die Hände geht, gefunden.</l>
+            </lg>
+            <stage><rs ref="#saladin">Ihm</rs> <rs ref="#ein-klein-Gemälde">ein klein Gemälde</rs> zeigend.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Ha! <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">mein Bruder</rs>!</l>
+              <l><pb n="301"/> <rs ref="#ein-klein-Gemälde">Das</rs> ist <rs ref="#er-(prädikativ-assad-als-er-selbst)-uuu">er</rs>, ist <rs ref="#er-(prädikativ-assad-als-er-selbst)-uuu">er</rs>! – War <rs ref="#er-(prädikativ-assad-als-er-selbst)-uuu">er</rs>! war <rs ref="#er-(prädikativ-assad-als-er-selbst)-uuu">er</rs>! ah! –</l>
+              <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Ah wackrer lieber Junge</rs>, daß ich dich</l>
+              <l>So früh verlor! Was hätt' ich erst mit <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">dir</rs>,</l>
+              <l>An <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">deiner</rs> Seit' erst unternommen! – <rs ref="#sittah-xx">Sittah</rs>,</l>
+              <l>Laß mir <rs ref="#ein-klein-Gemälde">das Bild</rs>. Auch kenn' <rs ref="#saladin"><rs ref="#ein-klein-Gemälde">ichs</rs></rs> schon: <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">er</rs> gab</l>
+              <l><rs ref="#ein-klein-Gemälde">Es</rs> <rs ref="#deiner-ältern-Schwester,-seiner-Lilla,---------------Die-eines-Morgens-ihn-so-ganz-und-gar---------------Nicht-aus-den-Armen-lassen-wollt'"><rs ref="#sittah-xx">deiner</rs> ältern Schwester, <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seiner</rs> Lilla,</l>
+              <l><rs ref="#deiner-ältern-Schwester,-seiner-Lilla,---------------Die-eines-Morgens-ihn-so-ganz-und-gar---------------Nicht-aus-den-Armen-lassen-wollt'">Die</rs> eines Morgens <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">ihn</rs> so ganz und gar</l>
+              <l>Nicht aus den Armen lassen wollt'</rs>. <rs ref="#Es-(der-tag-morgen-an-dem-assad-verschwand-wolf)">Es</rs> war</l>
+              <l>Der letzte, <rs ref="#Es-(der-tag-morgen-an-dem-assad-verschwand-wolf)">den <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">er</rs> ausritt</rs>. – Ah, ich ließ</l>
+              <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Ihn</rs> reiten, und allein! – Ah, <rs ref="#deiner-ältern-Schwester,-seiner-Lilla,---------------Die-eines-Morgens-ihn-so-ganz-und-gar---------------Nicht-aus-den-Armen-lassen-wollt'">Lilla</rs> starb</l>
+              <l>Vor Gram, und hat <rs ref="#mirs3">mirs</rs> nie vergeben, <rs ref="#mirs3">daß</l>
+              <l>Ich so allein <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">ihn</rs> reiten lassen</rs>. – <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Er</rs></l>
+              <l>Blieb weg!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Der arme Bruder</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Laß nur gut</l>
+              <l>Sein! – Einmal bleiben <rs ref="#wir-Menschen">wir</rs> doch alle weg! –</l>
+              <l>Zudem, – wer weiß? <rs ref="#dem-Tode">Der Tod</rs> ists nicht allein,</l>
+              <l>Der <rs ref="#einem-Jüngling-seiner-Art-(menschen-vom-typ-wolf-assad)">einem Jüngling <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">seiner</rs> Art</rs> das Ziel</l>
+              <l>Verrückt. <rs ref="#einem-Jüngling-seiner-Art-(menschen-vom-typ-wolf-assad)">Er</rs> hat <rs ref="#Ein-Feind">der Feinde</rs> mehr; und oft</l>
+              <l>Erliegt der Stärkste gleich <rs ref="#Jede-Kleinigkeit">dem Schwächsten</rs>. – Nun,</l>
+              <l>Sei wie <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">ihm</rs> sei! – Ich muß <rs ref="#ein-klein-Gemälde">das Bild</rs> doch mit</l>
+              <l><rs ref="#tempelherr-bbb">Dem jungen Tempelherrn</rs> vergleichen; muß</l>
+              <l>Doch sehn, <rs ref="#das37">wie viel mich meine Phantasie</l>
+              <l>Getäuscht</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l>Nur darum bring' <rs ref="#ein-klein-Gemälde">ichs</rs>. Aber gib</l>
+              <l>Doch, gib! Ich will <rs ref="#saladin">dir</rs> <rs ref="#das37">das</rs> wohl sagen; <rs ref="#das37">das</rs></l>
+              <l>Versteht ein weiblich Aug am besten.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage>zu <rs ref="#einem-Türsteher,-der-hereintritt">einem Türsteher, <rs ref="#einem-Türsteher,-der-hereintritt">der</rs> hereintritt</rs>.</stage>
+            <lg>
+              <l>Wer</l>
+              <l>Ist da? – <rs ref="#tempelherr-bbb">der Tempelherr</rs>? – <rs ref="#tempelherr-bbb">Er</rs> komm'!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <lg>
+              <l><rs ref="#saladin-/-tempelherr-bbb">Euch</rs> nicht</l>
+              <l>Zu stören: <rs ref="#tempelherr-bbb">ihn</rs> mit <rs ref="#meiner-Neugier-(sittah)">meiner Neugier</rs> nicht</l>
+              <l>Zu irren –</l>
+            </lg>
+            <stage><rs ref="#sittah-xx">Sie</rs> setzt <rs ref="#sittah-xx">sich</rs> seitwärts auf <rs ref="#einen-Sofa-(im-zimmer-4,3)">einen Sofa</rs> und läßt den Schleier fallen.</stage>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Gut so! gut! – (Und nun <rs ref="#seine-Stimme-(des-tempelherrn)"><rs ref="#tempelherr-bbb">sein</rs> Ton</rs>!</l>
+              <l>Wie <rs ref="#seine-Stimme-(des-tempelherrn)">der</rs> wohl sein wird! – <rs ref="#seiner-Brüder-einem-(saladins-bruder-assad-dem-der-tempelherr-sehr-ähnlich-sieht)">Assads</rs> Ton</l>
+              <l>Schläft auch wohl wo in <rs ref="#meinem-Herzen-(saladins)">meiner Seele</rs> noch!)</l>
+              <pb n="302"/>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,340 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Don Juan's Ende</title>
+        <title type="sub">Trauerspiel in fünf Akten</title>
+        <author key="pnd:118550772">Heyse, Paul</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000266</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q56201730</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:q41n.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Paul Heyse: Gesammelte Werke. Berlin: Verlag von Wilhelm Hertz (Bessersche
+              Buchhandlung), 1872–1910.</title>
+            <date type="print" when="1883"/>
+            <date type="premiere" when="1884"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="don_juan" sex="MALE">
+            <persName>Don Juan</persName>
+          </person>
+          <person xml:id="leporello" sex="MALE">
+            <persName>Leporello</persName>
+          </person>
+          <person xml:id="der_alte_fischer" sex="MALE">
+            <persName>Der alte Fischer</persName>
+            <persName type="variant">Der Alte</persName>
+            <persName type="variant">Der Fischer</persName>
+          </person>
+          <personGrp xml:id="prozession" sex="UNKNOWN">
+            <name>Prozession</name>
+          </personGrp>
+          <person xml:id="ghita" sex="FEMALE">
+            <persName>Ghita</persName>
+          </person>
+          <person xml:id="der_moench" sex="MALE">
+            <persName>Der Mönch</persName>
+            <persName type="variant">Der Karthäuser</persName>
+          </person>
+          <person xml:id="erster_strolch" sex="MALE">
+            <persName>Erster Strolch</persName>
+          </person>
+          <person xml:id="zweiter_strolch" sex="MALE">
+            <persName>Zweiter Strolch</persName>
+          </person>
+          <person xml:id="gianotto" sex="MALE">
+            <persName>Gianotto</persName>
+            <persName type="variant">Gianotto's Stimme</persName>
+          </person>
+          <person xml:id="wirth" sex="MALE">
+            <persName>Wirth</persName>
+            <persName type="variant">Salvatore's Stimme</persName>
+            <persName type="variant">Der Wirth</persName>
+          </person>
+          <person xml:id="biondetta" sex="FEMALE">
+            <persName>Biondetta</persName>
+            <persName type="variant">Biondetta's Stimme</persName>
+          </person>
+          <person xml:id="martina" sex="FEMALE">
+            <persName>Martina</persName>
+          </person>
+          <person xml:id="graefin" sex="FEMALE">
+            <persName>Gräfin</persName>
+          </person>
+          <person xml:id="diener" sex="MALE">
+            <persName>Diener</persName>
+            <persName type="variant">Ein Diener</persName>
+          </person>
+          <personGrp xml:id="stimmen" sex="UNKNOWN">
+            <name>Stimmen</name>
+          </personGrp>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#graefin" passive="#ghita"/>
+            <relation name="parent_of" active="#graefin" passive="#gianotto"/>
+            <relation name="spouses" mutual="#biondetta #wirth"/>
+            <relation name="associated_with" active="#biondetta" passive="#graefin"/>
+            <relation name="associated_with" active="#leporello" passive="#don_juan"/>
+            <relation name="associated_with" active="#diener" passive="#graefin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2019-02-11">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Paul Heyse</head>
+        <head>Don Juan's Ende</head>
+        <head>Trauerspiel in fünf Akten</head>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head><pb n="276"/> Personen.</head>
+          <castItem>Don Juan.</castItem>
+          <castItem>Gräfin Maria de Luna.</castItem>
+          <castItem>Ghita, ihre Tochter.</castItem>
+          <castItem>Gianotto, ihr Pflegesohn.</castItem>
+          <castItem>Martina, eine alte Dienerin.</castItem>
+          <castItem>Salvatore, Gastwirth in Resina.</castItem>
+          <castItem>Biondetta, seine Verlobte, Kammerjungfer der Gräfin.</castItem>
+          <castItem>Leporello, Don Juan's Diener.</castItem>
+          <castItem>Ein Karthäuser Mönch.</castItem>
+          <castItem>Ein alter Fischer.</castItem>
+          <castItem>Zwei Banditen.</castItem>
+          <castGroup>
+            <castItem>Marchetto, ein junger Bauer</castItem>
+            <castItem>Carlino, ein Knabe,</castItem>
+            <roleDesc>stumme Personen.</roleDesc>
+          </castGroup>
+          <castItem>Ein Diener der Gräfin.</castItem>
+          <castItem>Landvolk. Fischer.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Zeit: Mitte des 14 Jahrhunderts.</p>
+        <p>Ort: Resina, am Fuße des Vesuv.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Vierter Akt.</head>
+        <stage>Zimmer der Gräfin. Thüren rechts, links und in der Mitte. Vorn <rs ref="#ein-Tisch">ein Tisch</rs> und einige
+          Sessel. Ein Kamin.</stage>
+        <div type="scene">
+          <head>Zweite Scene.</head>
+          <stage>Vorige. <rs ref="#ghita">Ghita</rs> tritt langsam von links ein, in <rs ref="#den-Kleidern-(ghita)">dem Anzug von gestern</rs> <rs ref="#die-Hände-(ghita)">die Hände</rs>
+            schlaff herabhängend, <rs ref="#großen-stillen-Augen-(ghita)">die Augen</rs> still vor <rs ref="#ghita">sich</rs> hin gekehrt.</stage>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA</speaker></rs>
+            <stage>bleibt nah an der Schwelle stehen, sieht <rs ref="#graefin">die Gräfin</rs> ruhig an, sagt mit müder,
+              tonloser Stimme.</stage>
+            <p>Guten Morgen, <rs ref="#graefin">Mutter</rs>!</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>eilt auf <rs ref="#ghita">sie</rs> zu, schließt <rs ref="#ghita">sie</rs> in <rs ref="#die-Arme-(gräfin)">die Arme</rs>, küßt <rs ref="#ghita">sie</rs> auf die Stirn, was <rs ref="#ghita">sie</rs>
+              regungslos geschehen läßt.</stage>
+            <p><rs ref="#ghita">O mein Kind</rs>, daß ich dich wieder habe! Ich hatte so großes Verlangen nach <rs ref="#ghita">dir</rs>, ich
+              hätte nicht von <rs ref="#ghita">dir</rs> gehen sollen. – Aber <rs ref="#ghita">du</rs> bist blaß. Ist <rs ref="#ghita">dir</rs> nicht wohl?</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Ganz wohl, <rs ref="#graefin">liebe Mutter</rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Komm, setz <rs ref="#ghita">dich</rs> her, <rs ref="#graefin-/-ghita">wir</rs> wollen plaudern. <rs ref="#martina">Martina</rs> soll <rs ref="#ghita">dir</rs> das Frühstück bringen.</p>
+            <pb n="338"/>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA</speaker></rs>
+            <stage>läßt <rs ref="#ghita">sich</rs> willenlos zu einem Sessel führen.</stage>
+            <p>Nein, <rs ref="#graefin">Mutter</rs>, mich hungert nicht. Ich habe nur <rs ref="#Durst">Durst</rs> tiefen, <rs ref="#Durst">unlöschbaren Durst –
+              nach <rs ref="#Stille">Stille</rs> und <rs ref="#Frieden">Frieden</rs></rs>.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>winkt <rs ref="#martina">Martina</rs> mit den Augen, daß <rs ref="#martina">sie</rs> <rs ref="#martina">sich</rs> entfernen soll, setzt <rs ref="#graefin">sich</rs> zu <rs ref="#ghita">Ghita</rs>,
+              nimmt <rs ref="#ghita">ihre</rs> Hand.</stage>
+            <p><rs ref="#Stille">Stille</rs> und <rs ref="#Frieden">Frieden</rs>, <rs ref="#ghita">mein Liebling</rs>? Hast <rs ref="#ghita">du</rs> die hier nicht vollauf gehabt?</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Ja, <rs ref="#graefin">Mutter</rs>, aber es kam <rs ref="#ein-Erdbeben">ein Erdbeben</rs> <rs ref="#die-Nacht">diese Nacht</rs>, hast <rs ref="#graefin">du</rs> <rs ref="#ein-Erdbeben">es</rs> nicht auch gespürt?
+              Freilich, <rs ref="#graefin">du</rs> warst nicht hier.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p><rs ref="#ein-Erdbeben">Ein Erdbeben</rs>?</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA</speaker></rs>
+            <stage>nickt langsam und feierlich, <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">es</rs> überschauert <rs ref="#ghita">sie</rs>.</stage>
+            <p>Ja wohl, und <rs ref="#Etwas-in-mir-(ghitas-liebe-zu-gianotto)">Etwas in mir</rs> ist in Stücke gegangen, <rs ref="#Etwas-in-mir-(ghitas-liebe-zu-gianotto)">Etwas, <rs ref="#Etwas-in-mir-(ghitas-liebe-zu-gianotto)">das</rs> ich für fest gehalten in
+              alle Ewigkeit</rs>. Nun schwankt mir noch immer <rs ref="#der-Boden">der Boden</rs>, wohin ich trete.</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage><rs ref="#ghita">ihr</rs> <rs ref="#offenem-Haar-(ghita)">das Haar</rs> streichelnd.</stage>
+            <p><rs ref="#ghita">Du</rs> hast nicht geschlafen, Ghitina.</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Auch nicht gewacht. Nicht wahr, <rs ref="#graefin">Mutter</rs>, wenn <rs ref="#Man">man</rs> wacht, versteht <rs ref="#Man">man</rs> doch <rs ref="#seine---------------eigenen-Gedanken"><rs ref="#Man">seine</rs>
+              eigenen Gedanken</rs>? <rs ref="#Meine-(gedanken-geist-ghitas)">Meine</rs> sprachen eine fremde Sprache. <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">Es</rs> ist, als hätte ich <rs ref="#einen---------------Spiegel">einen
+              Spiegel</rs> in mir getragen, <rs ref="#einen---------------Spiegel">der</rs> wäre plötzlich zerbrochen, nun ist mir <rs ref="#das-Bild-aller---------------Dinge-(ghitas-bisherige-vorstellung-von-der-welt)">das Bild aller
+              Dinge</rs> zerstückt – ich kann <rs ref="#das-Bild-aller---------------Dinge-(ghitas-bisherige-vorstellung-von-der-welt)">die Scherben</rs> nicht wieder zusammenkitten.</p>
+            <stage>Lehnt <rs ref="#ghita">sich</rs> zurück, schließt <rs ref="#großen-stillen-Augen-(ghita)">die Augen</rs>.</stage>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>nach <rs ref="#einer-Pause,-in-der-sie-sie-kummervoll-betrachtet-hat">einer Pause, in <rs ref="#einer-Pause,-in-der-sie-sie-kummervoll-betrachtet-hat">der</rs> <rs ref="#graefin">sie</rs> <rs ref="#ghita">sie</rs> kummervoll betrachtet hat</rs>.</stage>
+            <p><rs ref="#gianotto">Gianotto</rs> ist gestern wiedergekommen, ganz unerwartet.</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Unerwartet? Nein, <rs ref="#graefin">Mutter</rs>, ich will'<rs ref="#s">s</rs> ehrlich sagen: <rs ref="#s">ich habe <rs ref="#gianotto">ihn</rs> wohl erwartet</rs>. Und
+              doch nicht <rs ref="#gianotto">ihn</rs>: <rs ref="#gianotto">einen Gianotto, <rs ref="#gianotto">der</rs> nie wiederkommt</rs>. Aber warum reden <rs ref="#graefin-/-ghita">wir</rs> davon? <rs ref="#Man">Wir</rs>
+                <pb n="339"/> kennen nicht einmal <rs ref="#Man">uns</rs> selbst, was wissen <rs ref="#Man">wir</rs> von <rs ref="#Man">Andern</rs>? <rs ref="#graefin">Du</rs> bist
+              meine Mutter, nicht wahr? Wunderlich, daß <rs ref="#Meine-(gedanken-geist-ghitas)">der zerbrochene Spiegel</rs> <rs ref="#graefin">dein</rs> Bild noch wie
+              sonst zurückstrahlt!</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage><rs ref="#ghita">sie</rs> an <rs ref="#graefin">sich</rs> ziehend, küßt <rs ref="#ghita">sie</rs>.</stage>
+            <p><rs ref="#ghita">Kind, mein geliebtes einziges Kind</rs>, – nein, sprich nur mit <rs ref="#graefin"><rs ref="#ghita">deiner</rs> Mutter</rs>, vertrau <rs ref="#graefin">ihr</rs>
+              Alles! Was ängstet <rs ref="#ghita">dich</rs>? <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">Eine Schwermuth</rs> liegt über <rs ref="#ghita">dir</rs>, <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">die</rs> nicht zu <rs ref="#deinen-Jahren-(alter-ghita)"><rs ref="#ghita">deinen</rs> Jahren</rs>
+              paßt.</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Und warum nicht, <rs ref="#graefin">Mutter</rs>? Sagt <rs ref="#Man">man</rs> nicht: wer jung viel lacht, wird alt viel weinen?
+              Nun siehst <rs ref="#graefin">du</rs>, <rs ref="#ghita">wer schon in der Jugend sich ausweint</rs> – ich zum Beispiel – ich habe gar
+              keine Thränen mehr, da könnte ich <rs ref="#s2">eine lustige alte Frau werden</rs>; ich möcht'<rs ref="#s2">s</rs> aber
+              nicht. <rs ref="#Es">Es</rs> muß schauderhaft sein, <rs ref="#Es">dran zu denken, daß <rs ref="#Man">man</rs> <rs ref="#Dinge">Dinge</rs> hat überleben können,
+              <rs ref="#Dinge">die –</rs></rs></p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Was für <rs ref="#Dinge">Dinge</rs>, <rs ref="#ghita">mein Herzenskind</rs>?</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Nichts, Nichts! <rs ref="#Dinge">Es</rs> geht auch vorüber. <rs ref="#Dinge">Es</rs> ist schon vorbei.</p>
+            <stage>Steht auf.</stage>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage>erhebt <rs ref="#graefin">sich</rs> gleichfalls.</stage>
+            <p><rs ref="#Dein-Vater-(ghitas)"><rs ref="#ghita">Dein</rs> Vater</rs> wird sehr betrübt sein, <rs ref="#ghita">dich</rs> in <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">dieser Melancholie</rs> zu sehen. <rs ref="#Dein-Vater-(ghitas)">Er</rs> wünscht,
+              daß <rs ref="#ghita">du</rs> mit mir nach <rs ref="#Neapel">Neapel</rs> kommst. <rs ref="#Allen,-die-gut-von-mir-denken">Man</rs> hat überall am Hofe nach <rs ref="#ghita">unserer Tochter</rs>
+              gefragt. Die fürstlichen Herrschaften sind überaus gnädig.</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Geh <rs ref="#graefin">du</rs> allein, Mutter. Grüße <rs ref="#Dein-Vater-(ghitas)">den Vater</rs> und danke <rs ref="#Allen,-die-gut-von-mir-denken">Allen, <rs ref="#Allen,-die-gut-von-mir-denken">die</rs> <rs ref="#gut-von-mir-denken">gut von mir denken</rs></rs>. <rs ref="#gut-von-mir-denken">Es</rs>
+              ist eine große Gnade, <rs ref="#gut-von-mir-denken">sie</rs> wird nicht Allen zu Theil, selbst <rs ref="#denen-(die-verdienen-dass-man-gut-über-sie-denkt)">denen</rs> nicht, <rs ref="#denen-(die-verdienen-dass-man-gut-über-sie-denkt)">die</rs> <rs ref="#gut-von-mir-denken">sie</rs>
+              verdienen. Ist <rs ref="#Dein-Vater-(ghitas)">der Vater</rs> doch wohl? Reitet <rs ref="#Dein-Vater-(ghitas)">er</rs> viel <rs ref="#Dein-Vater-(ghitas)">sein</rs> braunes Pferd?</p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN</speaker></rs>
+            <stage><rs ref="#die-Arme-(gräfin)">den Arm</rs> um <rs ref="#ghita">sie</rs> schlingend.</stage>
+            <p>Ich weiß, <rs ref="#ghita">liebste Tochter</rs>, warum du <rs ref="#ghita">dich</rs> vor <rs ref="#Neapel">Neapel</rs> fürchtest. <rs ref="#ghita">Du</rs> denkst, <rs ref="#es5"><rs ref="#ghita">du</rs> sollest
+              dort mit <rs ref="#Der-Herzog-von-Candia,-der-dich-heimführen---------------soll">dem Herzog</rs> verlobt werden</rs>. Aber obwohl <rs ref="#Dein-Vater-(ghitas)"><rs ref="#ghita">dein</rs> Vater</rs> <rs ref="#es5">es</rs> gewünscht hat – fürchte
+                <pb n="340"/> nicht, daß irgend Etwas wider <rs ref="#ghita">deine</rs> Neigung geschehen werde. Es sind
+              <rs ref="#jüngere-und-schönere-Bewerber">jüngere und schönere Bewerber</rs> dort, und wenn auch von <rs ref="#jüngere-und-schönere-Bewerber">denen</rs> <rs ref="#ghita">dir</rs> keiner gefällt – bei
+              <rs ref="#der-Liebe,-die-dich-unterm-Herzen-trug-(gräfin-ggü-ghita)">der Liebe, <rs ref="#der-Liebe,-die-dich-unterm-Herzen-trug-(gräfin-ggü-ghita)">die</rs> <rs ref="#ghita">dich</rs> <rs ref="#mein-banges-Mutterherz-(gräfin)">unterm Herzen</rs> trug</rs>: <rs ref="#ghita">du</rs> sollst frei sein, <rs ref="#ghita">dir</rs> <rs ref="#ghita">dein</rs> Glück zu wählen
+              nach <rs ref="#deinem-Herzen-(ghita)"><rs ref="#ghita">deinem</rs> Herzen</rs>.</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p><rs ref="#es6"><rs ref="#graefin">O Mutter, du</rs> bist gut</rs>. Ich wußt' <rs ref="#es6">es</rs> wohl. Ich danke <rs ref="#graefin">dir</rs> tausendmal. <rs ref="#diesen-wunderlichen-Worten">Ja, <rs ref="#graefin">Mutter</rs>, frei
+              will ich sein! Wenn <rs ref="#Man">sie alle</rs> mich verkennen und verlästern, ich weiß <rs ref="#es7">es</rs>, <rs ref="#es7"><rs ref="#graefin">Mutter, du</rs>
+              wirst mich verstehen, mir nachfühlen, warum ich die Freiheit <rs ref="#allem-andern-Glück">allem andern Glück</rs>
+              vorgezogen</rs>. Kann <rs ref="#Man">man</rs> denn noch auf <rs ref="#allem-andern-Glück">Glück</rs> hoffen, wenn <rs ref="#der-Boden">die Erde</rs> bebt, wenn <rs ref="#Man">man</rs> keine
+              Stunde sicher ist, daß <rs ref="#der-Boden">sie</rs> <rs ref="#der-Boden">sich</rs> aufthun und Alles verschlingen möchte, woran <rs ref="#Man">wir</rs> <rs ref="#Man">uns</rs>
+              festgeklammert lange, schöne, betrogene Jahre hindurch?</rs></p>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p>Was meinst <rs ref="#ghita">du</rs> nur, Kind, mit <rs ref="#diesen-wunderlichen-Worten">diesen wunderlichen Worten</rs>? Hast <rs ref="#ghita">du</rs> böse Träume
+              gehabt?</p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA.</speaker></rs>
+            <p>Nein, <rs ref="#graefin">Mutter</rs>, aber der Mond schien gar zu hell in <rs ref="#ihrer-Kammer-(ghita)">meine Kammer</rs>, da war mir's, als
+              sähe ich <rs ref="#die-Welt">die Welt</rs> zum ersten Mal, wie <rs ref="#die-Welt">sie</rs> ist, und <rs ref="#das">daß <rs ref="#Abgründe-(emotionale)">Abgründe</rs> in <rs ref="#die-Welt">ihr</rs> liegen, <rs ref="#Abgründe-(emotionale)">die</rs>
+              Nichts ausfüllt, <rs ref="#Abgründe-(emotionale)">die</rs> so unermeßlich breit sind, daß <rs ref="#Man">Menschen, <rs ref="#Man">die</rs> hüben und drüben
+              stehn</rs>, schreien können, so laut <rs ref="#Man">sie</rs> wollen, und <rs ref="#Man">sich</rs> nicht verstehen</rs>. <rs ref="#graefin">O Mutter</rs>, wenn
+              <rs ref="#Man">man</rs> <rs ref="#das">das</rs> erkannt hat, dann ekelt <rs ref="#Man">uns</rs> vor <rs ref="#dem,-was-uns-das-Süßeste-war">dem, <rs ref="#dem,-was-uns-das-Süßeste-war">was</rs> <rs ref="#Man">uns</rs> das Süßeste war</rs>, dann schaudern
+              <rs ref="#Man">wir</rs>, wenn <rs ref="#Man">unsre</rs> eigne Hand zufällig <rs ref="#Man">unsre</rs> Stirn berührt, als griffe <rs ref="#ein-Feind">ein Feind</rs> nach
+              <rs ref="#Man">unserm</rs> Kranz, dann zweifeln <rs ref="#Man">wir</rs> selbst an der Barmherzigkeit <rs ref="#Dessen,-der-unsre---------------geheimsten-Gedanken-kennt">Dessen, <rs ref="#Dessen,-der-unsre---------------geheimsten-Gedanken-kennt">der</rs> <rs ref="#seine---------------eigenen-Gedanken"><rs ref="#Man">unsre</rs>
+              geheimsten Gedanken</rs> kennt</rs> – <rs ref="#graefin">o Mutter</rs> – <rs ref="#graefin">Mutter</rs> – <rs ref="#das">es</rs> ist entsetzlich!</p>
+            <stage>Sinkt an <rs ref="#graefin">ihr</rs> nieder, das Gesicht gegen <rs ref="#graefin">ihren</rs> Schooß gedrückt.</stage>
+          </sp>
+          <sp who="#graefin">
+            <rs ref="#graefin"><speaker>GRÄFIN.</speaker></rs>
+            <p><rs ref="#ghita">Kind – du</rs> zerbrichst mir <rs ref="#mein-banges-Mutterherz-(gräfin)">das Herz</rs> in der Brust! Ich beschwöre <rs ref="#ghita">dich</rs> – <stage>Hebt <rs ref="#ghita">sie</rs>
+                auf.</stage></p>
+          </sp>
+          <sp who="#ghita">
+            <rs ref="#ghita"><speaker>GHITA</speaker></rs>
+            <stage><rs ref="#ghita">sich</rs> fassend.</stage>
+            <p>Vergieb, <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">es</rs> ist vorbei, <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">es</rs> war das letzte Zucken <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">einer tödtlichen Krankheit</rs> – von <rs ref="#es-(gefühl-schauer-kummer-qual-ghitta)">der</rs>
+              ich nun genesen bin. Küsse mich, <pb n="341"/> <rs ref="#graefin">liebe Mutter</rs>, und sage, daß <rs ref="#graefin">du</rs> mir
+              vergiebst, Alles was ich <rs ref="#graefin">dir</rs> jemals – nein, ich war kein böses Kind, aber dennoch, <rs ref="#das2"><rs ref="#graefin-/-ghita">wir</rs>
+              verstanden <rs ref="#graefin-/-ghita">uns</rs> nicht immer</rs>, und <rs ref="#das2">das</rs> machte <rs ref="#graefin">dir</rs> Kummer. <rs ref="#das3">Nun wirst <rs ref="#graefin">du</rs> mich immer besser
+              verstehen</rs>, <rs ref="#das3">das</rs> ist mein Trost, und dafür dank' ich <rs ref="#graefin">dir</rs>. <stage>Hascht <rs ref="#ihre-Hand-(gräfin)"><rs ref="#graefin">ihre</rs> Hand</rs>, küßt
+                <rs ref="#ihre-Hand-(gräfin)">sie</rs> lebhaft.</stage> – Und jetzt – will ich ein wenig ins Freie gehn. – Sei ohne
+              Sorgen, mir wird dann wohler – und folge mir nicht – bitte, bitte! Nie werde ich <rs ref="#graefin">dir</rs>
+              vergessen, daß <rs ref="#graefin">du</rs> mir'<rs ref="#s3">s</rs> gegönnt hast, <rs ref="#s3">ein Glück mir wählen zu dürfen nach <rs ref="#deinem-Herzen-(ghita)">meinem
+              Herzen</rs>!</rs></p>
+            <stage>Geht langsam durch die Thür links ab.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

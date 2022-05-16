@@ -1,0 +1,1543 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Die Büchse der Pandora</title>
+        <title type="sub">Tragödie in drei Aufzügen mit einem Prolog</title>
+        <author key="pnd:118629867">Wedekind, Frank</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000436</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q1211843</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:x3bf.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Frank Wedekind: Werke in drei Bänden. Herausgegeben und eingeleitet von Manfred
+              Hahn, Berlin und Weimar: Aufbau, 1969.</title>
+            <date type="print" when="1902"/>
+            <date type="premiere" when="1904"/>
+            <date type="written" when="1902">1894/1902</date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="der_normale_leser" sex="MALE">
+            <persName>Der normale Leser</persName>
+          </person>
+          <person xml:id="der_ruehrige_verleger" sex="MALE">
+            <persName>Der rührige Verleger</persName>
+          </person>
+          <person xml:id="der_verschaemte_autor" sex="MALE">
+            <persName>Der verschämte Autor</persName>
+          </person>
+          <person xml:id="der_hohe_staatsanwalt" sex="MALE">
+            <persName>Der hohe Staatsanwalt</persName>
+          </person>
+          <person xml:id="rodrigo" sex="MALE">
+            <persName>Rodrigo</persName>
+          </person>
+          <person xml:id="die_geschwitz" sex="FEMALE">
+            <persName>Die Geschwitz</persName>
+          </person>
+          <person xml:id="alwa" sex="MALE">
+            <persName>Alwa</persName>
+          </person>
+          <person xml:id="schigolch" sex="MALE">
+            <persName>Schigolch</persName>
+          </person>
+          <person xml:id="hugenberg" sex="MALE">
+            <persName>Hugenberg</persName>
+          </person>
+          <person xml:id="lulu" sex="FEMALE">
+            <persName>Lulu</persName>
+          </person>
+          <person xml:id="bianetta" sex="FEMALE">
+            <persName>Bianetta</persName>
+          </person>
+          <person xml:id="magelone" sex="FEMALE">
+            <persName>Magelone</persName>
+          </person>
+          <person xml:id="casti-piani" sex="MALE">
+            <persName>Graf Casti-Piani</persName>
+          </person>
+          <person xml:id="kadidja" sex="FEMALE">
+            <persName>Kadidja</persName>
+          </person>
+          <person xml:id="heilmann" sex="MALE">
+            <persName>Journalist Heilmann</persName>
+          </person>
+          <person xml:id="puntschu" sex="MALE">
+            <persName>Puntschu</persName>
+          </person>
+          <person xml:id="ludmilla_steinherz" sex="FEMALE">
+            <persName>Ludmilla Steinherz</persName>
+          </person>
+          <person xml:id="bob" sex="MALE">
+            <persName>Bob</persName>
+          </person>
+          <person xml:id="ein_polizeikommissaer" sex="MALE">
+            <persName>Ein Polizeikommissär</persName>
+          </person>
+          <person xml:id="herr_hunidei" sex="MALE">
+            <persName>Herr Hunidei</persName>
+          </person>
+          <person xml:id="kungu_poti" sex="MALE">
+            <persName>Kungu Poti</persName>
+          </person>
+          <person xml:id="dr_hilti" sex="MALE">
+            <persName>Dr. Hilti</persName>
+          </person>
+          <person xml:id="jack" sex="MALE">
+            <persName>Jack</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="parent_of" active="#magelone" passive="#kadidja"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Tragödie</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2018-12-24">(ff) formalities</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Frank Wedekind</head>
+        <head>Die Büchse der Pandora</head>
+        <head>Tragödie in drei Aufzügen mit einem Prolog</head>
+        <pb n="318"/>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Lulu.</castItem>
+          <castItem>Alwa Schön, Schriftsteller.</castItem>
+          <castItem>Rodrigo Quast, Athlet.</castItem>
+          <castItem>Schigolch.</castItem>
+          <castItem>Alfred Hugenberg, Zögling einer Korrektionsanstalt.</castItem>
+          <castItem>Die Gräfin Geschwitz.</castItem>
+          <castItem>Marquis Casti-Piani.</castItem>
+          <castItem>Bankier Puntschu.</castItem>
+          <castItem>Journalist Heilmann.</castItem>
+          <castItem>Magelone.</castItem>
+          <castItem>Kadidja Di Santa Croce, ihre Tochter.</castItem>
+          <castItem>Bianetta Gazil.</castItem>
+          <castItem>Ludmilla Steinberg.</castItem>
+          <castItem>Bob, Groom.</castItem>
+          <castItem>Ein Polizeikommissär.</castItem>
+          <castItem>Herr Hunidei.</castItem>
+          <castItem>Kungu Poti, kaiserlicher Prinz von Uahubee.</castItem>
+          <castItem>Dr. Hilti, Privatdozent.</castItem>
+          <castItem>Jack.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Der erste Akt spielt in Deutschland, der zweite in Paris, der dritte in London.</p>
+      </set>
+    </front>
+    <body>
+      <div type="prologue">
+        <head>Prolog in der Buchhandlung</head>
+        <castList>
+          <head>Personen.</head>
+          <castItem>Der normale Leser.</castItem>
+          <castItem>Der rührige Verleger.</castItem>
+          <castItem>Der verschämte Autor.</castItem>
+          <castItem>Der hohe Staatsanwalt.</castItem>
+        </castList>
+        <stage>Der Prolog kann in entsprechenden Überkleidern und Kopfbedeckungen von den
+          Darstellern des Rodrigo, des Casti-Piani, des Alwa und des Schigolch gesprochen werden.
+          Rodrigo in hellem Sommerüberzieher und Lodenhütchen, Casti-Piani in Schlafrock und
+          Samtkäppchen, Alwa in Havelock und Schlapphut, Schigolch in Taler und Barett.</stage>
+        <stage>Szenerie: Ein Zwischenvorhang, ein primitives Büchergestell.</stage>
+        <sp who="#der_normale_leser">
+          <rs ref="#der_normale_leser"><speaker>DER NORMALE LESER</speaker></rs>
+          <stage>schwankt herein.</stage>
+          <lg>
+            <l>Ich möchte gern ein Buch bei Ihnen kaufen.</l>
+            <l>Was drin steht, ist mir gänzlich einerlei.</l>
+            <l>Der Mensch lebt, heißt es, nicht allein vom Saufen.</l>
+            <l>Auch wünsch ich dringend, daß es billig sei.</l>
+            <l>Die ältste Tochter will ich zum Gedenken</l>
+            <l>Der ersten Kommunion damit beschenken.</l>
+          </lg>
+        </sp>
+        <sp who="#der_ruehrige_verleger">
+          <rs ref="#der_ruehrige_verleger"><speaker>DER RÜHRIGE VERLEGER.</speaker></rs>
+          <lg>
+            <l>Da kann ich Ihnen warm ein Buch empfehlen,</l>
+            <l>Bei dem das Herz des Menschen höher schlägt.</l>
+            <l>Heut lesen es schon fünf Millionen Seelen,</l>
+            <l>Und morgen wird's von neuem aufgelegt.</l>
+            <l>Für jeden bleibt's ein dauernder Gewinn,</l>
+            <l>Steht doch für niemand etwas Neues drin.</l>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR</speaker></rs>
+          <stage>schleicht herein.</stage>
+          <lg>
+            <l>Ein Buch möcht ich bei Ihnen drucken lassen;</l>
+            <l>Zehn Jahre meines Lebens schrieb ich dran.</l>
+            <l>Das Weltall hofft ich brünstig zu umfassen,</l>
+            <l><pb n="319"/> Und hab's kaum richtig mit dem Weib getan.</l>
+            <l>Was lernend ich dabei als wahr empfand,</l>
+            <l>Hab ich in schlottrig schöne Form gebannt.</l>
+          </lg>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT</speaker></rs>
+          <stage>stürmt herein.</stage>
+          <lg>
+            <l>Ich muß ein Buch bei Ihnen konfiszieren,</l>
+            <l>Vor dem die Haare mir zu Berge stehn.</l>
+            <l>Erst sah den Kerl man alle Scham verlieren,</l>
+            <l>Nun läßt er öffentlich für Geld sich sehn.</l>
+            <l>Drum werden wir ihn nach dem Paragraphen</l>
+            <l>Einhundertvierundachtzig streng bestrafen.</l>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR</speaker></rs>
+          <stage>lächelnd.</stage>
+          <lg>
+            <l>Mich strafen? Nein! Des Schaffens Götterfreuden</l>
+            <l>Raubt mir auch nicht die härtste Strafe mehr.</l>
+            <l>Wer sträubt sich jemals, für sein Kind zu leiden?</l>
+            <l>An solchem Glück läßt dein Beruf dich leer.</l>
+            <l>Mich kannst du foltern, würgen, schinden, henken,</l>
+            <l>Mein Werk wird das an keinem Worte kränken!</l>
+          </lg>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT.</speaker></rs>
+          <lg>
+            <l>Dir schwör ich's zu, daß du mit frechen Witzen</l>
+            <l>Nicht länger der Verdammnis Opfer wirbst.</l>
+            <l>Normale Leser muß ich davor schützen,</l>
+            <l>Daß du sie grinsend bis ins Mark verdirbst.</l>
+            <l>Zwei Jahr Gefängnis sind dein sichrer Lohn;</l>
+            <l>Für Ehrverlust sorgst du ja selber schon.</l>
+          </lg>
+        </sp>
+        <sp who="#der_normale_leser">
+          <rs ref="#der_normale_leser"><speaker>DER NORMALE LESER.</speaker></rs>
+          <lg>
+            <l>Jetzt möcht ich stracks mein Buch bei Ihnen kaufen.</l>
+            <l>Ich finde dies Betragen unerhört.</l>
+            <l>Laß ich die eignen Kinder christlich taufen,</l>
+            <l>Damit mich Hunger umbringt, Durst verzehrt?</l>
+            <l>Wenn ihr die Zänkerei nicht bald beendet,</l>
+            <l>Dann wird das Geld auf Eierpunsch verwendet.</l>
+          </lg>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT</speaker></rs>
+          <stage>schließt ihn in die Arme, worauf der normale Leser in Tränen ausbricht.</stage>
+          <lg>
+            <l>Bejammernswürdiges Opfer! Abgetötet</l>
+            <l>In deinem Busen starb die heilige Scheu.</l>
+            <l>Ward diesem Wicht nur erst sein Maul verlötet,</l>
+            <l>Dann keimen Zucht und Frömmigkeit aufs neu.</l>
+            <l>Zwei Jahr Gefängnis! Ich behaupte dreist,</l>
+            <l>Daß er dann ewig keinen Witz mehr reißt.</l>
+            <pb n="320"/>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR.</speaker></rs>
+          <lg>
+            <l>Wie sollte mich wohl ein Gerichtshof schrecken!</l>
+            <l>Wer weiß, ob mir nicht gar sein Eifer nützt,</l>
+            <l>Die Schwächen meines Schauspiels aufzudecken,</l>
+            <l>So wahr, wie echte Kunst sich selbst beschützt.</l>
+            <l>Ich bin's gewiß: Man kann sich nicht entbrechen,</l>
+            <l>Von jeder Schuld mich freundlich freizusprechen.</l>
+          </lg>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT.</speaker></rs>
+          <lg>
+            <l>Spricht man dich frei – womit uns Gott verschone! –</l>
+            <l>Noch selbigen Tags leg ich Berufung ein.</l>
+            <l>Nicht jeder Richter trägt der Weisheit Krone,</l>
+            <l>Um so verständiger wird ein nächster sein.</l>
+            <l>Und zeigt auch der sich für den Autor sanft,</l>
+            <l>Dein Schauspiel sicherlich wird eingestampft.</l>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR.</speaker></rs>
+          <lg>
+            <l>Dann laß ich es zum zweiten Male drucken,</l>
+            <l>Und zwar in ernsterer, edlerer Gestalt,</l>
+            <l>Nicht mehr im Gaunerwelsch der Mamelucken,</l>
+            <l>Im klarsten Deutsch und ohne Hinterhalt.</l>
+            <l>Ich bin's gewiß: Dann muß es ihm gelingen,</l>
+            <l>Sich unbehelligt selber durchzuringen.</l>
+          </lg>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT.</speaker></rs>
+          <lg>
+            <l>Grundgütiger Galgen! Dann fehlt nichts auf Erden,</l>
+            <l>Als daß dies Stück noch auf die Bühne kommt.</l>
+            <l>Doch vorher soll es so geläutert werden,</l>
+            <l>Daß es dir nicht mehr zur Reklame frommt.</l>
+            <l>Der Weg für deinen gift'gen Höllenkrater</l>
+            <l>Führt über meinen Leichnam zum Theater.</l>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR.</speaker></rs>
+          <lg>
+            <l>Was schiert mich das Theater! Unsere kühne</l>
+            <l>Tagtäglichkeit erreicht's bekanntlich nie.</l>
+            <l>Das menschliche Gehirn sei meine Bühne,</l>
+            <l>Mein Lieblingsregisseur die Phantasie.</l>
+          </lg>
+          <stage>Zum hohen Staatsanwalt.</stage>
+          <lg>
+            <l>Und dir wird nichts Geringres übrigbleiben,</l>
+            <l>Als selbst mir den Prolog dafür zu schreiben.</l>
+          </lg>
+        </sp>
+        <sp who="#der_ruehrige_verleger">
+          <rs ref="#der_ruehrige_verleger"><speaker>DER RÜHRIGE VERLEGER</speaker></rs>
+          <stage>sich zwischen beide drängend.</stage>
+          <lg>
+            <l>Prolog ist herrlich! Druckt ihn eine Zeitung,</l>
+            <l>Dann sind wir schon so gut wie aufgeführt.</l>
+            <l><pb n="321"/> Nun sorg ich hurtig für des Buchs Verbreitung,</l>
+            <l>Prospekte werden schleunigst expediert,</l>
+            <l>Und eh das Publikum noch Platz genommen,</l>
+            <l>Bin ich gewiß, daß keine Krebse kommen.</l>
+          </lg>
+        </sp>
+        <sp who="#der_normale_leser">
+          <rs ref="#der_normale_leser"><speaker>DER NORMALE LESER</speaker></rs>
+          <stage>gleichfalls die Mitte nehmend.</stage>
+          <lg>
+            <l>Dann pflanz ich breit mich in die erste Reihe</l>
+            <l>Mit meinem Freibillett und schnarche laut.</l>
+            <l>Das ahnt kein Mensch, wie ich mich dran erfreue,</l>
+            <l>Wenn so wer Schnitzler oder Shakespeare kaut.</l>
+            <l>Ist's nicht genug, daß christlich ich verzeihe,</l>
+            <l>Und niemand merkt, wie sehr mir davor graut?</l>
+          </lg>
+          <stage>Chorus.</stage>
+        </sp>
+        <sp who="#der_hohe_staatsanwalt">
+          <rs ref="#der_hohe_staatsanwalt"><speaker>DER HOHE STAATSANWALT</speaker></rs>
+          <stage>hält den Arm um den normalen Leser geschlungen.</stage>
+          <lg>
+            <l>So pflegen wir gemeinsam das Gehege</l>
+            <l>Dramatischer Dichtung mit verteilter Kraft.</l>
+          </lg>
+        </sp>
+        <sp who="#der_normale_leser">
+          <rs ref="#der_normale_leser"><speaker>DER NORMALE LESER.</speaker></rs>
+          <lg>
+            <l>Wenn ich auch meinen Wanst am liebsten pflege,</l>
+            <l>Mir fehlt doch nie die große Leidenschaft.</l>
+          </lg>
+        </sp>
+        <sp who="#der_ruehrige_verleger">
+          <rs ref="#der_ruehrige_verleger"><speaker>DER RÜHRIGE VERLEGER</speaker></rs>
+          <stage>hält den Arm um den verschämten Autor geschlungen.</stage>
+          <lg>
+            <l>Ich freue mich, wenn sich die Menschen freuen,</l>
+            <l>Am ehrlichsten am Funkelnagelneuen.</l>
+          </lg>
+        </sp>
+        <sp who="#der_verschaemte_autor">
+          <rs ref="#der_verschaemte_autor"><speaker>DER VERSCHÄMTE AUTOR.</speaker></rs>
+          <lg>
+            <l>Wenn's not tut, geb ich meine Freiheit hin</l>
+            <l>Für dich, o Muse, meine Herrscherin.</l>
+          </lg>
+        </sp>
+      </div>
+      <div type="act">
+        <head><pb n="322"/> <rs ref="#des-Aktes">Erster Aufzug</rs></head>
+        <stage><rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">Prachtvoller Saal in deutscher Renaissance mit schwerem Plafond aus geschnitztem
+          Eichenholz</rs>. Die Wände sind bis zur halben Höhe mit dunklen Holzskulpturen bekleidet;
+          darüber an beiden Seiten verblaßte Gobelins. Nach hinten oben ist <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">der Saal</rs> durch <rs ref="#eine-----------verhängte-Galerie">eine
+          verhängte Galerie</rs> abgeschlossen, von <rs ref="#eine-----------verhängte-Galerie">der</rs> links <rs ref="#eine-monumentale-Treppe">eine monumentale Treppe</rs> bis zur halben
+          Tiefe der Bühne herabführt. In der Mitte unter <rs ref="#eine-----------verhängte-Galerie">der Galerie</rs> befindet <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">sich</rs> <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">die Eingangstür
+          mit gewundenen Säulen und Frontispiz</rs>. An der rechten Seitenwand ein geräumiger hoher
+          Kamin, weiter vorn ein Balkonfenster mit geschlossenen schweren Gardinen; an der linken
+          Seitenwand vor dem Treppenfuß <rs ref="#eine-geschlossene-Portiere">eine geschlossene Portiere</rs>. Vor dem Fußpfeiler des freien
+          Treppengeländers steht <rs ref="#eine-leere-dekorative-Staffelei">eine leere dekorative Staffelei</rs>; links vorn befindet <rs ref="#eine-----------breite-Ottomane">sich</rs> <rs ref="#eine-----------breite-Ottomane">eine
+          breite Ottomane</rs>; in der Mitte des Saales <rs ref="#ein-vierkantiger-Tisch,-um-den-drei-hochlehnige-----------Polstersessel-stehen">ein vierkantiger Tisch, um <rs ref="#ein-vierkantiger-Tisch,-um-den-drei-hochlehnige-----------Polstersessel-stehen">den</rs> drei hochlehnige
+          Polstersessel stehen</rs>. Links vorn <rs ref="#ein-kleiner-Serviertisch">ein kleiner Serviertisch</rs>, daneben <rs ref="#ein-Lehnsessel">ein Lehnsessel</rs>. <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">Der
+          Saal</rs> ist durch eine auf <rs ref="#ein-vierkantiger-Tisch,-um-den-drei-hochlehnige-----------Polstersessel-stehen">dem Mitteltisch</rs> stehende, tiefverschleierte Petroleumlampe matt
+          erhellt. <rs ref="#alwa">Alwa Schön</rs> geht vor <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">der Eingangstür</rs> auf und nieder. Auf <rs ref="#eine-----------breite-Ottomane">der Ottomane</rs> sitzt
+          <rs ref="#rodrigo">Rodrigo</rs>, als <rs ref="#Bedienter-(prädikativ-rodrigo)">Bedienter</rs> gekleidet. Rechts in <rs ref="#ein-Lehnsessel">dem Lehnsessel</rs>, in <rs ref="#schwarzem,-enganliegenden-----------Kleid-(geschwitz)">schwarzem, enganliegenden
+          Kleid</rs>, tief in Kissen gebettet, <rs ref="#einen-Plaid-(decke-geschwitz-lehnsessel)">einen Plaid</rs> über den Knien, sitzt <rs ref="#die_geschwitz">die Gräfin Geschwitz</rs>.
+          Neben <rs ref="#die_geschwitz">ihr</rs> auf <rs ref="#ein-kleiner-Serviertisch">dem Tisch</rs> steht eine Kaffeemaschine und eine Tasse mit <rs ref="#den-Kaffee">schwarzem Kaffee</rs>.
+          Rechts und links vom Zuschauer aus.</stage>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#schigolch">Er</rs> läßt auf <rs ref="#schigolch">sich</rs> warten wie ein Konzertmeister!</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p>Ich beschwöre <rs ref="#rodrigo">Sie</rs>, sprechen <rs ref="#rodrigo">Sie</rs> nicht!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Es soll <rs ref="#einer-(ein-mensch)">einer</rs> die Klappe halten, wenn <rs ref="#einer-(ein-mensch)">er</rs> den Kopf so voll Gedanken hat wie ich! – <rs ref="#Es">Es</rs>
+            will mir ganz und gar nicht einleuchten, <rs ref="#Es">daß <rs ref="#lulu-braut">sie</rs> <rs ref="#lulu-braut">sich</rs> dabei sogar noch zu <rs ref="#ihrem-Vorteil-(lulus-körperlicher,-ein-besseres-aussehen-als-zuvor)"><rs ref="#lulu-braut">ihrem</rs> Vorteil</rs>
+            verändert haben soll</rs>!</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p><rs ref="#lulu-braut">Sie</rs> ist herrlicher anzuschauen als ich <rs ref="#lulu-braut">sie</rs> je gekannt habe!</p>
+          <pb n="323"/>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Behüte mich der Himmel davor, daß ich mein Lebensglück auf <rs ref="#die_geschwitz">Ihre</rs> Geschmacksrichtungen
+            gründe! Wenn <rs ref="#lulu-braut">ihr</rs> <rs ref="#die-Krankheit-(lulus-cholera)">die Krankheit</rs> ebensogut angeschlagen hat wie <rs ref="#die_geschwitz">Ihnen</rs>, dann bin ich
+            pleite! <rs ref="#die_geschwitz">Sie</rs> verlassen <rs ref="#der-------------Isolierbaracke">die Isolierbaracke</rs> wie <rs ref="#eine-verunglückte-Kautschukdame,-die-sich-------------aufs-Kunsthungern-geworfen-hat">eine verunglückte Kautschukdame, <rs ref="#eine-verunglückte-Kautschukdame,-die-sich-------------aufs-Kunsthungern-geworfen-hat">die</rs> <rs ref="#eine-verunglückte-Kautschukdame,-die-sich-------------aufs-Kunsthungern-geworfen-hat">sich</rs>
+            aufs Kunsthungern geworfen hat</rs>. <rs ref="#die_geschwitz">Sie</rs> können <rs ref="#die_geschwitz">sich</rs> kaum mehr die Nase schneuzen. Erst
+            brauchen <rs ref="#die_geschwitz">Sie</rs> eine Viertelstunde, um <rs ref="#die_geschwitz">Ihre</rs> Finger zu sortieren, und dann bedarf <rs ref="#es">es</rs> der
+            größten Vorsicht, <rs ref="#es">damit <rs ref="#die_geschwitz">Sie</rs> die Spitze nicht abbrechen</rs>.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <rs ref="#Das"><p><rs ref="#Was-uns-unter-die-Erde-bringt-(cholera-krankheit-lulu-und-geschwitz)">Was <rs ref="#lulu-braut-/-die_geschwitz">uns</rs> unter die Erde bringt</rs>, gibt <rs ref="#lulu-braut">ihr</rs> Kraft und Gesundheit wieder.</p></rs>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#Das">Das</rs> ist alles schön und gut. Ich werde aber doch vermutlich heute abend noch nicht
+            mitfahren.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p><rs ref="#rodrigo">Sie</rs> wollen <rs ref="#lulu-braut"><rs ref="#rodrigo">Ihre</rs> Braut</rs> am Ende gar allein reisen lassen?</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Erstens fährt doch <rs ref="#schigolch">der Alte</rs> mit, um <rs ref="#lulu-braut">sie</rs> im Ernstfalle zu verteidigen. Meine Begleitung
+            kann <rs ref="#lulu-braut">sie</rs> nur verdächtigen. Und zweitens muß ich hier noch abwarten, bis <rs ref="#meine-Kostüme-(rodrigos,-die-er-in-auftrag-gegeben-hat)">meine Kostüme</rs>
+            fertig sind. – Ich komme immer noch früh genug über <rs ref="#die-Grenze-(die-bald-überquert-wird,-von-deutschland-nach-frankreich)">die Grenze</rs>. Hoffentlich legt <rs ref="#lulu-braut">sie</rs>
+            <rs ref="#lulu-braut">sich</rs> derweil auch noch etwas Embonpoint zu. Dann wird geheiratet, vorausgesetzt, daß ich
+            <rs ref="#lulu-braut">sie</rs> vor <rs ref="#einem-anständigen-Publikum-(textintrinsisch)">einem anständigen Publikum</rs> produzieren kann. Ich liebe an <rs ref="#einer-Frau">einer Frau</rs> das
+            Praktische; welche Theorien <rs ref="#einer-Frau">sich</rs> <rs ref="#einer-Frau">die Weiber</rs> machen, ist mir vollkommen egal. <rs ref="#alwa">Ihnen</rs> nicht
+            auch, Herr Doktor?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich habe nicht gehört, was <rs ref="#rodrigo">Sie</rs> sagten.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich hätte <rs ref="#rodrigo">meine Person</rs> gar nicht in <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">das Komplott</rs> verwickelt, wenn <rs ref="#lulu-braut">sie</rs> mir nicht vor
+            <rs ref="#ihrer-Verurteilung-(lulus-wg-dem-mord-an-dr.-schön)"><rs ref="#lulu-braut">ihrer</rs> Verurteilung</rs> schon immer die Plauze gekitzelt hätte. Wenn <rs ref="#lulu-braut">sie</rs> <rs ref="#lulu-braut">sich</rs> <rs ref="#im-Ausland">im Ausland</rs> nur
+            nicht gleich wieder zuviel Bewegung macht! Am liebsten nähme ich <rs ref="#lulu-braut">sie</rs> auf ein halbes Jahr
+            mit nach <rs ref="#London">London</rs> und ließe <rs ref="#lulu-braut">sie</rs> Plumkakes futtern. In <rs ref="#London">London</rs> geht <rs ref="#einer-(ein-mensch)">man</rs> schon allein durch
+            die Seeluft auf. Außerdem fühlt <rs ref="#einer-(ein-mensch)">man</rs> in <rs ref="#London">London</rs> auch nicht bei jedem Schluck Bier immer
+            gleich die Schicksalshand an der Gurgel.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich frage mich seit acht Tagen, ob <rs ref="#jemand,-der-zu-Zuchthausstrafe-verurteilt-war">sich</rs> <rs ref="#jemand,-der-zu-Zuchthausstrafe-verurteilt-war">jemand, <rs ref="#jemand,-der-zu-Zuchthausstrafe-verurteilt-war">der</rs> zu Zuchthausstrafe verurteilt war</rs>,
+            wohl noch zur Hauptfigur in einem modernen Drama eignen würde.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p>Käme <rs ref="#lulu-braut">der Mensch</rs> nur endlich mal.</p>
+          <pb n="324"/>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich muß hier auch <rs ref="#meine-Requisiten-(rodrigos)">meine Requisiten</rs> noch aus <rs ref="#dem-Pfandleihhaus">dem Pfandleihhaus</rs> auslösen; <rs ref="#meine-Requisiten-(rodrigos)">sechshundert
+            Kilo vom besten Eisen</rs>. Der Transport kostet mich immer dreimal mehr als meine eigene
+            Fahrkarte. Dabei ist <rs ref="#meine-Requisiten-(rodrigos)">die ganze Ausrüstung</rs> keinen Hosenknopf wert. Als ich
+            schweißtriefend damit <rs ref="#dem-Pfandleihhaus">im Pfandhaus</rs> ankam, fragten sie mich, ob <rs ref="#meine-Requisiten-(rodrigos)">die Sachen</rs> auch echt
+            seien. – <rs ref="#meine-Kostüme-(rodrigos,-die-er-in-auftrag-gegeben-hat)">Die Kostüme</rs> hätte ich mir eigentlich richtiger <rs ref="#im-Ausland">im Ausland</rs> anfertigen lassen
+            sollen. <rs ref="#Der-Pariser-(kostümbildner-schneider)">Der Pariser</rs> <rs ref="#zum-Beispiel">zum Beispiel</rs> <rs ref="#das">merkt auf den ersten Blick, wo <rs ref="#einer-(ein-mensch)">man</rs> <rs ref="#einer-(ein-mensch)">seine</rs> Vorzüge hat</rs>.
+            Da dekolletiert <rs ref="#Der-Pariser-(kostümbildner-schneider)">er</rs> tapfer drauflos. Aber <rs ref="#das">das</rs> lernt <rs ref="#das">sich</rs> nicht mit untergeschlagenen
+            Beinen; <rs ref="#das">das</rs> will an klassisch gebildeten Menschen studiert sein. Hier haben <rs ref="#sie-(deutsche-menschen)">sie</rs> eine
+            Angst vor der bloßen Haut wie <rs ref="#im-Ausland">im Auslande</rs> vor den Dynamitbomben. <rs ref="#Vor-zwei-Jahren">Vor zwei Jahren</rs> wurde
+            ich im Alhambra-Theater zu fünfzig Mark Strafe verknallt, wie <rs ref="#sie-(deutsche-menschen)">man</rs> sah, daß ich ein paar
+            Haare auf <rs ref="#der-Brust-(rodrigo)">der Brust</rs> habe, nicht so viel wie zu einer anständigen Zahnbürste nötig sind.
+            Aber der Kultusminister meinte, die kleinen Schulmädchen könnten darüber die Freude am
+            Strümpfestricken verlieren. Seitdem lasse ich mich <rs ref="#jeden-Monat">jeden Monat</rs> einmal rasieren.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wenn ich jetzt nicht <rs ref="#meine-ganze-geistige-Spannkraft-(alwa)">meine ganze geistige Spannkraft</rs> zu <rs ref="#dem-»Weltbeherrscher«">dem »Weltbeherrscher«</rs> nötig
+            hätte, möchte ich <rs ref="#das-Problem-(meint-entweder-die-tatsache-dass-nacktheit-im-theater-nicht-mehr-möglich-ist-oder-ob-verurteilte-noch-hauptrollen-besetzen-sollten">das Problem</rs> wohl auf <rs ref="#das-Problem-(meint-entweder-die-tatsache-dass-nacktheit-im-theater-nicht-mehr-möglich-ist-oder-ob-verurteilte-noch-hauptrollen-besetzen-sollten">seine</rs> Tragfähigkeit erproben. <rs ref="#Das2">Das</rs> ist der Fluch,
+            der auf <rs ref="#unserer-jungen-Literatur"><rs ref="#sie-(deutsche-menschen)">unserer</rs> jungen Literatur</rs> lastet, <rs ref="#Das2">daß wir viel zu literarisch sind</rs>. <rs ref="#">Wir</rs> kennen
+            keine anderen Fragen und Probleme als <rs ref="#solche,-die-unter-Schriftstellern-und-Gelehrten-------------auftauchen-(probleme-und-fragen-mit-denen-sich-gelehrte-und-schriftsteller-befassen)">solche, <rs ref="#solche,-die-unter-Schriftstellern-und-Gelehrten-------------auftauchen-(probleme-und-fragen-mit-denen-sich-gelehrte-und-schriftsteller-befassen)">die</rs> <rs ref="#">unter Schriftstellern und Gelehrten</rs>
+            auftauchen</rs>. <rs ref="#">Unser</rs> Gesichtskreis reicht über die Grenzen <rs ref="#">unserer</rs> Zunftinteressen nicht
+            hinaus. <rs ref="#diesen-Prinzipien">Um wieder auf die Fährte einer großen gewaltigen Kunst zu gelangen, müßten <rs ref="#">wir</rs>
+            <rs ref="#">uns</rs> möglichst viel <rs ref="#unter-Menschen-(ungebildete)">unter Menschen</rs> bewegen, <rs ref="#unter-Menschen-(ungebildete)">die</rs> nie in <rs ref="#unter-Menschen-(ungebildete)">ihrem</rs> Leben ein Buch gelesen
+            haben, <rs ref="#unter-Menschen-(ungebildete)">denen</rs> die einfachsten animalischen Instinkte bei <rs ref="#unter-Menschen-(ungebildete)">ihren</rs> Handlungen maßgebend sind.</rs>
+            In <rs ref="#meinem-›Erdgeist‹">meinem ›Erdgeist‹</rs> habe ich schon aus voller Kraft nach <rs ref="#diesen-Prinzipien">diesen Prinzipien</rs> zu arbeiten
+            gesucht. <rs ref="#lulu-braut">Das Weib, <rs ref="#lulu-braut">das</rs> mir zu der Hauptfigur <rs ref="#meinem-›Erdgeist‹">des Stückes</rs> Modell stehen mußte</rs>, atmet
+            heute <rs ref="#seit-einem-vollen-Jahr-(zeitraum-in-dem-lulu-im-Gefängnis-war)">seit einem vollen Jahr</rs> hinter vergitterten Fenstern. Dafür wurde <rs ref="#meinem-›Erdgeist‹">das Drama</rs>
+            sonderbarerweise allerdings auch nur von <rs ref="#der-freien-literarischen-Gesellschaft">der freien literarischen Gesellschaft</rs> <pb n="325"/> <rs ref="#zur-Aufführung-(erdgeist)">zur Aufführung</rs> gebracht. <rs ref="#Das3">Solange <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">mein Vater</rs> noch lebte, standen <rs ref="#meinen-------------Schöpfungen-(alwas-schriftstellerische-allg)">meinen
+            Schöpfungen</rs> sämtliche Bühnen Deutschlands offen</rs>. <rs ref="#Das3">Das</rs> hat <rs ref="#Das3">sich</rs> gewaltig geändert.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich habe mir <rs ref="#meine-Kostüme-(rodrigos,-die-er-in-auftrag-gegeben-hat)">Trikots im zartesten Blau- Grün</rs> anfertigen lassen. Wenn <rs ref="#meine-Kostüme-(rodrigos,-die-er-in-auftrag-gegeben-hat)">die</rs> <rs ref="#im-Ausland">im Ausland</rs>
+            keinen Sukzeß haben, dann will ich Mausefallen verkaufen. <rs ref="#Die-Schamhöschen">Die Schamhöschen</rs> sind so
+            graziös, daß ich mich <rs ref="#Die-Schamhöschen">damit</rs> auf keine Tischkante setzen kann. Der vorteilhafte Eindruck
+            wird nur durch <rs ref="#meine-fürchterliche-Plauze-(rodrigos-bauch)">meine fürchterliche Plauze</rs> gestört, <rs ref="#meine-fürchterliche-Plauze-(rodrigos-bauch)">die</rs> ich <rs ref="#meiner-tätigen-Mitwirkung-in-------------dieser-großartigen-Verschwörung-(rodrigos-beitrag-zur-befreiung-lulus)">meiner tätigen Mitwirkung in
+            <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">dieser großartigen Verschwörung</rs></rs> zu danken habe. <rs ref="#das2">Bei gesunden Gliedern <rs ref="#drei-Monate-lang-(krankenhausaufenthalt-rodrigos)">drei Monate lang</rs>
+            <rs ref="#im-Krankenhaus">im Krankenhaus</rs> liegen</rs>, <rs ref="#das2">das</rs> muß den heruntergekommensten Landstreicher zum Mastschwein
+            machen. Seit ich heraus bin, futtere ich nichts als Karlsbader Pastillen; Tag und <rs ref="#Nacht-(nachts)">Nacht</rs>
+            habe ich Orchesterprobe in den Gedärmen. Bis ich über <rs ref="#die-Grenze-(die-bald-überquert-wird,-von-deutschland-nach-frankreich)">die Grenze</rs> komme, werde ich so
+            ausgeschwemmt sein, daß ich keinen Flaschenstöpsel mehr hochheben kann.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p><rs ref="#das3">Wie <rs ref="#lulu-braut">ihr</rs> gestern <rs ref="#im-Krankenhaus">im Krankenhaus</rs> <rs ref="#Man-(aufsicht-personal-lulus-im-krankenhaus-isolierbracke)">das Wachtpersonal</rs> aus dem Wege ging</rs>, <rs ref="#das3">das</rs> war ein
+            erquickender Anblick. <rs ref="#Der-Garten">Der Garten</rs> war ausgestorben. In <rs ref="#der-herrlichsten-Mittagssonne">der herrlichsten Mittagssonne</rs>
+            wagten <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">sich</rs> <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">die Rekonvaleszenten</rs> nicht aus den Haustüren. Ganz hinten bei <rs ref="#der-------------Isolierbaracke">der
+            Isolierbaracke</rs> trat <rs ref="#lulu-braut"><emph>sie</emph></rs> unter den Maulbeerbäumen vor und wiegte <rs ref="#lulu-braut">sich</rs> auf
+            dem Kies in <rs ref="#den-Knöcheln-(lulu)">den Knöcheln</rs>. Der Portier hatte <rs ref="#die_geschwitz">mich</rs> wiedererkannt, und <rs ref="#ein-Assistenzarzt,-------------der-mir-im-Korridor-begegnete">ein Assistenzarzt,
+            <rs ref="#ein-Assistenzarzt,-------------der-mir-im-Korridor-begegnete">der</rs> mir im Korridor begegnete</rs>, fuhr zusammen, als hätte <rs ref="#ein-Assistenzarzt,-------------der-mir-im-Korridor-begegnete">ihn</rs> ein Revolverschuß getroffen.
+            <rs ref="#Die-Krankenschwestern">Die Krankenschwestern</rs> huschten in die Säle oder blieben an den Wänden kleben. Als <rs ref="#die_geschwitz">ich</rs>
+            zurückkam, war weder <rs ref="#Der-Garten">im Garten</rs> noch unter dem Portal <rs ref="#einer-(ein-mensch)">eine Seele</rs> zu sehen. <rs ref="#Die-------------Gelegenheit-(zur-flucht-lulus)">Die
+            Gelegenheit</rs> hätte <rs ref="#Die-------------Gelegenheit-(zur-flucht-lulus)">sich</rs> nicht schöner finden können, wenn <rs ref="#schigolch-(lulus-vat…-/-rodrigo-+-2">wir</rs> die verfluchten Pässe
+            gehabt hätten. Und jetzt sagt <rs ref="#rodrigo">der Mensch</rs>, <rs ref="#rodrigo">er</rs> fahre nicht mit!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich verstehe <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">die armen Spitalbrüder</rs>. <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">Der eine</rs> hat einen wehen Fuß, <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">der andere</rs> hat eine
+            geschwollene Backe; da taucht <rs ref="#die_geschwitz">die leibhaftige Todesversicherungsagentin</rs> mitten unter
+            <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">ihnen</rs> auf. In <rs ref="#den-Rittersälen">den Rittersälen</rs>, so heißt <rs ref="#den-Rittersälen">die gesegnete Abteilung, von <rs ref="#den-Rittersälen">der</rs> aus ich <rs ref="#meiner-tätigen-Mitwirkung-in-------------dieser-großartigen-Verschwörung-(rodrigos-beitrag-zur-befreiung-lulus)">meine
+              <pb n="326"/> Spionage</rs> organisierte</rs>, als <rs ref="#die-Kunde">sich</rs> da <rs ref="#die-Kunde">die Kunde</rs> verbreitete, daß <rs ref="#die-------------Schwester-Theophila">die
+            Schwester Theophila</rs> mit <rs ref="#Tod">Tod</rs> abgegangen sei, da war keiner der Kerle im Bett zu halten.
+            <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">Sie</rs> kletterten an den Fenstergittern hinauf, und wenn <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">sie</rs> <rs ref="#die-Rekonvaleszenten-(die-kranken-im-krankenhaus)">ihre</rs> Leiden zentnerweise
+            mitschleppten. Im Leben habe ich kein solches Fluchen gehört.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Erlauben <rs ref="#die_geschwitz">Sie</rs> mir, Fräulein von Geschwitz, noch einmal auf meinen Vorschlag
+            zurückzukommen. <rs ref="#lulu-braut">Die Frau</rs> hat in <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">diesem Zimmer</rs> <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">meinen Vater</rs> erschossen; trotzdem kann ich
+            in <rs ref="#dem-Morde-(lulus-an-dr.-schön)">dem Morde</rs> wie in <rs ref="#der-Strafe-(haftstrafe-lulus-wg-dem-mord-an-dr.-schön)">der Strafe</rs> nichts anderes als <rs ref="#ein-entsetzliches-Unglück-(prädikativ-lulus-mord-an-dr.-schön-und-ihre-haftstrafe)">ein entsetzliches Unglück</rs> sehen, <rs ref="#ein-entsetzliches-Unglück-(prädikativ-lulus-mord-an-dr.-schön-und-ihre-haftstrafe)">das</rs>
+            <rs ref="#lulu-braut">sie</rs> betroffen hat. Ich glaube auch, <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">mein Vater</rs> hätte, wäre <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">er</rs> mit dem Leben
+            davongekommen, <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">seine</rs> Hand nicht vollständig von <rs ref="#lulu-braut">ihr</rs> abgezogen. Ob <rs ref="#die_geschwitz">Ihnen</rs> <rs ref="#Ihr-------------Befreiungsplan-(geschwitz-plan-zum-befreiungsunternehmung-lulus)"><rs ref="#die_geschwitz">Ihr</rs>
+            Befreiungsplan</rs> gelingen wird, scheint mir immer noch zweifelhaft, obschon ich <rs ref="#die_geschwitz">Sie</rs> nicht
+            entmutigen möchte. Aber ich finde keine Worte für <rs ref="#die-Bewunderung,-die-mir-Ihre-------------Aufopferung,-Ihre-Tatkraft,-Ihre-übermenschliche-Todesverachtung-einflößen-(bewunderung-alwa-ggü-geschwitz)">die Bewunderung, <rs ref="#die-Bewunderung,-die-mir-Ihre-------------Aufopferung,-Ihre-Tatkraft,-Ihre-übermenschliche-Todesverachtung-einflößen-(bewunderung-alwa-ggü-geschwitz)">die</rs> mir <rs ref="#die_geschwitz">Ihre</rs>
+            Aufopferung, <rs ref="#die_geschwitz">Ihre</rs> Tatkraft, <rs ref="#die_geschwitz">Ihre</rs> übermenschliche Todesverachtung einflößen</rs>. Ich glaube
+            nicht, daß je <rs ref="#ein-Mann">ein Mann</rs> soviel für <rs ref="#einer-Frau">eine Frau</rs>, geschweige denn für einen Freund <rs ref="#aufs-Spiel-(risiko,-aufs-spiel-setzen)">aufs Spiel</rs>
+            gesetzt hat. Ich weiß nicht, <rs ref="#die_geschwitz">Fräulein von Geschwitz</rs>, wie reich Sie sind; aber die
+            Ausgaben für <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">diese Bewerkstelligungen</rs> müssen <rs ref="#die_geschwitz">Ihre</rs> Vermögensverhältnisse zerrüttet haben.
+            Darf ich <rs ref="#die_geschwitz">Ihnen</rs> <rs ref="#ein-Darlehen-von-zwanzigtausend-Mark-(geld-das-alwa-geschwitz-anbietet)">ein Darlehen von zwanzigtausend Mark</rs> anbieten, <rs ref="#ein-Darlehen-von-zwanzigtausend-Mark-(geld-das-alwa-geschwitz-anbietet)">dessen</rs> Herbeischaffung in
+            <rs ref="#barem-Geld">barem Geld</rs> für mich mit keinerlei Schwierigkeiten verbunden wäre?</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p>Wie <rs ref="#lulu-braut-/-die_geschwitz">wir</rs> gejubelt haben, als <rs ref="#die-------------Schwester-Theophila">die Schwester Theophila</rs> glücklich <emph>tot</emph> war! Von
+            dem Tage an waren <rs ref="#lulu-braut-/-die_geschwitz">wir</rs> ohne Aufsicht. <rs ref="#lulu-braut-/-die_geschwitz">Wir</rs> wechselten nach Belieben die Betten. Ich hatte
+            <rs ref="#sie-(lulu-als-geschwitz)">ihr</rs> meine Frisur gemacht und ahmte in jedem Laut <rs ref="#ihre-Stimme-(lulu)"><rs ref="#lulu-braut">ihre</rs> Stimme</rs> nach. Wenn <rs ref="#der-Professor-(in-der-isolierbaracke,-unklar-wer-gemeint-ist)-">der Professor</rs>
+            kam, redete <rs ref="#der-Professor-(in-der-isolierbaracke,-unklar-wer-gemeint-ist)-">er</rs> <rs ref="#sie-(lulu-als-geschwitz)"><emph>sie</emph></rs> per gnädiges Fräulein an und sagte zu <rs ref="#Ich-(geschwitz-als-lulu)">mir</rs>: »Hier lebt
+            <rs ref="#sich's-(das-leben)"><rs ref="#sich's-(das-leben)">sich's</rs></rs> besser als <rs ref="#im-Gefängnis">im Gefängnis</rs>!« Als <rs ref="#die-------------Schwester-Theophila">die Schwester</rs> plötzlich ausblieb, sahen <rs ref="#lulu-braut-/-die_geschwitz">wir</rs>
+            einander gespannt an; <rs ref="#lulu-braut-/-die_geschwitz">wir</rs> beide waren <rs ref="#fünf-Tage-(seitdem-lulu-und-geschwitz-an-cholera-erkrankt-sind)">fünf Tage</rs> krank; jetzt mußte <rs ref="#es2">es</rs> <rs ref="#es2">sich</rs> entscheiden.
+            Am nächsten Morgen kam <rs ref="#der-Assistenzarzt">der Assistenzarzt</rs>. – »Wie geht es <rs ref="#die-------------Schwester-Theophila">der Schwester Theophila</rs>?« –
+            »Tot.« – <rs ref="#Ich-(geschwitz-als-l…-/-sie-(lulu-als-geschw…">Wir</rs> verständigten <rs ref="#Ich-(geschwitz-als-l…-/-sie-(lulu-als-geschw…">uns</rs> hinter <rs ref="#der-Assistenzarzt">seinem</rs> Rücken, und als <rs ref="#der-Assistenzarzt">er</rs> hinaus war, sanken <rs ref="#lulu-braut-/-die_geschwitz">wir</rs>
+            <rs ref="#lulu-braut-/-die_geschwitz">uns</rs> in die <pb n="327"/> Arme: »<rs ref="#Gott-(evtl-phrase)">Gott</rs> sei <rs ref="#Dank-(lulu-und-geschwitz-ggü-gott,-evtl.-nur-phrase)">Dank</rs>! <rs ref="#Gott-(evtl-phrase)">Gott</rs> sei <rs ref="#Dank-(lulu-und-geschwitz-ggü-gott,-evtl.-nur-phrase)">Dank</rs>! – Welche Mühe <rs ref="#es3">es</rs> kostete,
+            <rs ref="#es3">damit <rs ref="#sie-(lulu-als-geschwitz)">mein Liebling</rs> nicht verriet, wie gesund <rs ref="#sie-(lulu-als-geschwitz)">er</rs> schon war</rs>! – <rs ref="#lulu-braut">Du</rs> hast <rs ref="#der-Strafe-(haftstrafe-lulus-wg-dem-mord-an-dr.-schön)">neun Jahre
+            Gefängnis</rs> vor <rs ref="#lulu-braut">dir</rs>!« rief ich von früh bis spät. – <rs ref="#Man-(aufsicht-personal-lulus-im-krankenhaus-isolierbracke)">Man</rs> läßt <rs ref="#lulu-braut">sie</rs> jetzt wohl keine drei
+            Tage mehr in <rs ref="#der-------------Isolierbaracke">der Isolierbaracke</rs>.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich habe <rs ref="#drei-Monate-lang-(krankenhausaufenthalt-rodrigos)">volle drei Monate</rs> <rs ref="#im-Krankenhaus">im Krankenhaus</rs> gelegen, um <rs ref="#im-Krankenhaus">das Terrain</rs> zu sondieren, nachdem
+            ich mir die Qualitäten zu <rs ref="#das2">einem so ausgedehnten Aufenthalt</rs> auch erst mühsam
+            zusammenhausiert hatte. Jetzt spiele ich hier bei <rs ref="#alwa">Ihnen, Herr Doktor</rs>, <rs ref="#Bedienter-(prädikativ-rodrigo)">den Kammerdiener</rs>,
+            damit keine fremde Bedienung ins Haus kommt. Wo hat je <rs ref="#ein-Bräutigam">ein Bräutigam</rs> mehr für <rs ref="#ein-Bräutigam">seine</rs>
+            Braut getan. Meine Vermögensverhältnisse sind auch zerrüttet.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wenn <rs ref="#es4">es</rs> <rs ref="#rodrigo">Ihnen</rs> gelingt, <rs ref="#es4"><rs ref="#lulu-braut">die Frau</rs> zu einer anständigen Künstlerin auszubilden</rs>, dann haben
+            <rs ref="#rodrigo">Sie</rs> <rs ref="#rodrigo">sich</rs> um <rs ref="#rodrigo">Ihre</rs> Mitwelt verdient gemacht. Mit <rs ref="#dem-Temperament-(charakter-leidenschaft-lulu)">dem Temperament</rs> und der Schönheit, <rs ref="#der-Schönheit-(ausse…-/-dem-Temperament-(cha…-cc">die
+            <rs ref="#lulu-braut">sie</rs> aus dem Innersten <rs ref="#lulu-braut">ihrer</rs> Natur heraus zu geben hat</rs>, kann <rs ref="#lulu-braut">sie</rs> <rs ref="#einem-anständigen-Publikum-(textintrinsisch)">das blasierteste
+            Publikum</rs> in Atem halten. Dabei wäre <rs ref="#der-Schönheit-(ausse…-/-dem-Temperament-(cha…-cc"><rs ref="#lulu-braut">sie</rs></rs> durch die Wiedergabe <rs ref="#dem-Temperament-(charakter-leidenschaft-lulu)">der Leidenschaft</rs> davor
+            geschützt, zum zweitenmal in Wirklichkeit zur Verbrecherin zu werden.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich will <rs ref="#lulu-braut">ihr</rs> <rs ref="#dem-Temperament-(charakter-leidenschaft-lulu)"><rs ref="#lulu-braut">ihre</rs> Zicken</rs> schon austreiben!</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p>Da kommt <rs ref="#schigolch">er</rs>!</p>
+          <stage>Auf <rs ref="#eine-----------verhängte-Galerie">der Galerie</rs> werden Schritte laut; dann teilt <rs ref="#der-Vorhang-über-der-Treppe">sich</rs> <rs ref="#der-Vorhang-über-der-Treppe">der Vorhang über <rs ref="#eine-monumentale-Treppe">der Treppe</rs></rs>,
+            und <rs ref="#schigolch">Schigolch im langen schwarzen Gehrock</rs>, einen weißen Entoutcas in der Rechten, tritt
+            heraus. Während aller drei Akte ist <rs ref="#schigolch">sein</rs> Sprechen von häufigem Gähnen
+            unterbrochen.</stage>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Vermaledeite Finsternis! – Draußen brennt <rs ref="#einer-(ein-mensch)">einem</rs> <rs ref="#der-herrlichsten-Mittagssonne">die Sonne</rs> die Augen aus.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ</speaker></rs>
+          <stage><rs ref="#die_geschwitz">sich</rs> mühsam aus <rs ref="#einen-Plaid-(decke-geschwitz-lehnsessel)">der Decke</rs> wickelnd.</stage>
+          <p>Ich komme schon!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#die_geschwitz">Gräfliche Gnaden</rs> haben seit drei Tagen kein Tageslicht mehr gesehen. Wir leben hier wie
+            in einer Schnupftabaksdose.</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Seit heute früh um neun fahre ich bei allen Lumpensammlern herum. Drei nagelneue
+            Koffer, vollgestopft mit alten Hosen, habe ich über Bremerhaven nach Buenos Aires
+            spediert. Die Beine baumeln mir wie <pb n="328"/> Glockenschwengel am Leib. Das soll von
+            nun an ein anderes Leben wer den!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Wo wollt <rs ref="#schigolch-(lulus-vat…-/-lulu-braut">ihr</rs> denn morgen früh absteigen?</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Hoffentlich nicht gleich wieder <rs ref="#im-Hotel-Ochsenbutter">im Hotel Ochsenbutter</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich kann <rs ref="#schigolch-(lulus-vat…-/-lulu-braut">euch</rs> ein ausgezeichnetes Hotel empfehlen. Ich wohnte dort mit einer
+            Löwenbändigerin. Die Leute sind geborene Berliner.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ</speaker></rs>
+          <stage><rs ref="#die_geschwitz">sich</rs> <rs ref="#ein-Lehnsessel">im Rohrstuhl</rs> aufrichtend.</stage>
+          <p>Helfen <rs ref="#rodrigo">Sie</rs> mir doch!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO</speaker></rs>
+          <stage>eilt herbei und stützt <rs ref="#die_geschwitz">sie</rs>.</stage>
+          <p>Dabei seid <rs ref="#schigolch-(lulus-vat…-/-lulu-braut">ihr</rs> dort sicherer vor <rs ref="#der-Polizei-(polizisten)">der Polizei</rs> als auf dem hohen Turmseil!</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p><rs ref="#rodrigo">Er</rs> will <rs ref="#schigolch">Sie</rs> nämlich heute nachmittag allein mit <rs ref="#lulu-braut">ihr</rs> reisen lassen.</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p><rs ref="#rodrigo">Er</rs> leidet wohl noch an <rs ref="#rodrigo">seinen</rs> Frostbeulen!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Verlangt <rs ref="#schigolch-(lulus-vat…-/-die_geschwitz">ihr</rs> denn von mir, daß ich in meinem neuen Engagement in Schlafrock und
+            Pantoffeln debütiere?</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Hm – <rs ref="#die-------------Schwester-Theophila">die Schwester Theophila</rs> wäre auch nicht so prompt <rs ref="#gen-Himmel-(tod-jenseits)">gen Himmel</rs> gefahren, wenn <rs ref="#die-------------Schwester-Theophila">sie</rs>
+            <rs ref="#die-------------Schwester-Theophila">sich</rs> für <rs ref="#lulu-braut"><rs ref="#schigolch-(lulus-vat…-/-rodrigo-+-2">unsere</rs> Patientin</rs> nicht so liebevoll erwärmt hätte.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Wenn <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">einer</rs> den Honigmond bei <rs ref="#lulu-braut">ihr</rs> abzudienen hat, wird <rs ref="#lulu-braut">sie</rs> <rs ref="#lulu-braut">sich</rs> noch ganz anders <rs ref="#ihrem-Vorteil-(lulus-körperlicher,-ein-besseres-aussehen-als-zuvor)">zur
+            Geltung</rs> bringen. <rs ref="#Es2">Es</rs> kann <rs ref="#lulu-braut">ihr</rs> jedenfalls nicht schaden, <rs ref="#Es2">wenn <rs ref="#lulu-braut">sie</rs> <rs ref="#lulu-braut">sich</rs> vorher noch etwas
+            auslüftet</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA</speaker></rs>
+          <stage><rs ref="#eine-Brieftasche-(alwa)">eine Brieftasche</rs> in der Hand, <rs ref="#die_geschwitz">zur Geschwitz, <rs ref="#die_geschwitz">die</rs> auf eine Stuhllehne gestützt <rs ref="#ein-vierkantiger-Tisch,-um-den-drei-hochlehnige-----------Polstersessel-stehen">am
+            Mitteltisch</rs> steht</rs>.</stage>
+          <p><rs ref="#eine-Brieftasche-(alwa)">Diese Tasche</rs> enthält <rs ref="#zehntausend-Mark-(geld-in-alwas-brieftasche)">zehntausend Mark</rs>.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ.</speaker></rs>
+          <p>Ich danke, nein.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich bitte <rs ref="#die_geschwitz">Sie</rs>, <rs ref="#zehntausend-Mark-(geld-in-alwas-brieftasche)">sie</rs> zu nehmen.</p>
+        </sp>
+        <sp who="#die_geschwitz">
+          <rs ref="#die_geschwitz"><speaker>DIE GESCHWITZ</speaker></rs>
+          <stage>zu <rs ref="#schigolch">Schigolch</rs>.</stage>
+          <p>Kommen <rs ref="#schigolch">Sie</rs> doch endlich!</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Geduld, <rs ref="#die_geschwitz">mein Fräulein</rs>. <rs ref="#Es-(fluchtweg-lulu-aus-dem-krankenhaus-in-den-saal)">Es</rs> ist ja nur <rs ref="#Es-(fluchtweg-lulu-aus-dem-krankenhaus-in-den-saal)">der Katzensprung über die Spitalstraße</rs>. – In fünf
+            Minuten bin ich mit <rs ref="#lulu-braut">ihr</rs> hier.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#schigolch">Sie</rs> bringen <rs ref="#lulu-braut">sie</rs> her?</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Ich bringe <rs ref="#lulu-braut">sie</rs> her. – Oder fürchten <rs ref="#alwa">Sie</rs> für <rs ref="#alwa">Ihre</rs> Gesundheit?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#Das4">Das</rs> sehen <rs ref="#schigolch">Sie</rs> doch, <rs ref="#Das4">daß ich nichts fürchte</rs>.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#alwa">Der Herr Doktor</rs> ist nach dem letzten Drahtbericht auf der Reise nach Konstantinopel
+            begriffen, um <rs ref="#meinem-›Erdgeist‹"><rs ref="#alwa">seinen</rs> »Erdgeist«</rs> von Haremsdamen und Eunuchen vor dem Sultan <rs ref="#zur-Aufführung-(erdgeist)">zur
+            Aufführung</rs> bringen zu lassen.</p>
+          <pb n="329"/>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA</speaker></rs>
+          <stage><rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">die Mitteltür unter <rs ref="#eine-----------verhängte-Galerie">der Galerie</rs></rs> öffnend.</stage>
+          <p><rs ref="#schigolch-(lulus-vat…-/-die_geschwitz">Sie</rs> gehen hier näher.</p>
+          <stage><rs ref="#schigolch">Schigolch</rs> und <rs ref="#die_geschwitz">die Gräfin Geschwitz</rs> verlassen <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">den Saal</rs>. <rs ref="#alwa">Alwa</rs> verschließt <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">die Türe</rs>
+            hinter <rs ref="#schigolch-(lulus-vat…-/-die_geschwitz">ihnen</rs>.</stage>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#das4"><rs ref="#alwa">Sie</rs> wollten <rs ref="#die_geschwitz">der verrückten Rakete</rs> noch <rs ref="#zehntausend-Mark-(ge…-/-ein-Darlehen-von-zwa…">Geld</rs> geben</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Was geht <rs ref="#rodrigo">Sie</rs> <rs ref="#das4">das</rs> an?!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Mich honoriert man wie einen Lampenputzer, obschon ich <rs ref="#Die-Krankenschwestern">sämtliche Schwestern <rs ref="#im-Krankenhaus">im Spital</rs></rs>
+            habe demoralisieren müssen. Dann kamen die Herren Assistenzärzte und <rs ref="#Geheimräte-(im-krankenhaus)">Geheimräte</rs> an die
+            Reihe. Und dann ...</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wollen <rs ref="#rodrigo">Sie</rs> mir im Ernste weismachen, daß <rs ref="#Geheimräte-(im-krankenhaus)">sich</rs> <rs ref="#Geheimräte-(im-krankenhaus)">die Geheimräte</rs> durch <rs ref="#rodrigo">Sie</rs> haben
+            beeinflussen lassen?</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Mit <rs ref="#dem-Gelde,-das-mich-diese-Herren-gekostet-haben-(bestechungsgeld-rodrigos-für-assistenzärzte-und-geheimräte-des-krankenhauses)">dem Gelde, das mich diese Herren gekostet haben</rs>, könnte ich in <rs ref="#Amerika">Amerika</rs> Präsident
+            <rs ref="#Amerika">der Vereinigten Staaten</rs> werden.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#die_geschwitz">Fräulein von Geschwitz</rs> hat <rs ref="#rodrigo">Ihnen</rs> doch <rs ref="#dem-Gelde,-das-mich-diese-Herren-gekostet-haben-(bestechungsgeld-rodrigos-für-assistenzärzte-und-geheimräte-des-krankenhauses)">jeden Pfennig, <rs ref="#dem-Gelde,-das-mich-diese-Herren-gekostet-haben-(bestechungsgeld-rodrigos-für-assistenzärzte-und-geheimräte-des-krankenhauses)">den</rs> <rs ref="#rodrigo">Sie</rs> ausgegeben haben</rs>,
+            zurückerstattet. Soviel ich weiß, beziehen <rs ref="#rodrigo">Sie</rs> außerdem noch ein monatliches Salär von
+            fünfhundert Mark von <rs ref="#die_geschwitz">ihr</rs>. <rs ref="#Es3">Es</rs> fällt <rs ref="#alwa">einem</rs> manchmal ziemlich schwer, <rs ref="#Es3">an <rs ref="#rodrigo">Ihre</rs> Liebe zu <rs ref="#lulu-braut">der
+            unglücklichen Mörderin</rs> zu glauben</rs>. <rs ref="#es5">Wenn ich eben <rs ref="#die_geschwitz">Fräulein von Geschwitz</rs> darum bat, <rs ref="#zehntausend-Mark-(ge…-/-ein-Darlehen-von-zwa…">meine
+            Hilfe</rs> anzunehmen</rs>, so geschah <rs ref="#es5">es</rs> gewiß nicht, um <rs ref="#rodrigo">Ihre</rs> unersättliche Goldgier
+            aufzustacheln. <rs ref="#die-Bewunderung,-die-mir-Ihre-------------Aufopferung,-Ihre-Tatkraft,-Ihre-übermenschliche-Todesverachtung-einflößen-(bewunderung-alwa-ggü-geschwitz)">Die Bewunderung, <rs ref="#die-Bewunderung,-die-mir-Ihre-------------Aufopferung,-Ihre-Tatkraft,-Ihre-übermenschliche-Todesverachtung-einflößen-(bewunderung-alwa-ggü-geschwitz)">die</rs> ich vor <rs ref="#die_geschwitz">Fräulein von Geschwitz</rs> in <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">dieser Sache</rs> hegen
+            gelernt</rs>, empfinde ich <rs ref="#rodrigo">Ihnen</rs> gegenüber noch lange nicht. <rs ref="#Es4">Es</rs> ist mir überhaupt unklar, <rs ref="#Es4">was
+            <rs ref="#rodrigo">Sie</rs> an mich für Ansprüche geltend machen</rs>. Daß <rs ref="#rodrigo">Sie</rs> zufällig bei <rs ref="#dem-Morde-(lulus-an-dr.-schön)">der Ermordung <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">meines
+            Vaters</rs></rs> zugegen waren, hat zwischen <rs ref="#rodrigo">Ihnen</rs> und mir noch nicht die geringsten
+            verwandtschaftlichen Bande geschaffen. Dagegen bin ich fest davon überzeugt, daß <rs ref="#rodrigo">Sie</rs>,
+            wenn <rs ref="#rodrigo">Ihnen</rs> <rs ref="#Ihr-------------Befreiungsplan-(geschwitz-plan-zum-befreiungsunternehmung-lulus)">das heroische Unternehmen <rs ref="#die_geschwitz">der Gräfin Geschwitz</rs></rs> nicht zugute gekommen wäre,
+            heute ohne einen Pfennig irgendwo betrunken im Rinnstein lägen.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Und wissen <rs ref="#alwa">Sie</rs>, was aus <rs ref="#alwa">Ihnen</rs> geworden wäre, wenn <rs ref="#alwa">Sie</rs> <rs ref="#das-Käseblatt,-das-Ihr-Vater-------------redigierte">das Käseblatt, <rs ref="#das-Käseblatt,-das-Ihr-Vater-------------redigierte">das</rs> <rs ref="#mein-Vater-(alwas-vater-dr.-schön)"><rs ref="#alwa">Ihr</rs> Vater</rs>
+            redigierte</rs>, nicht um zwei Millionen veräußert hätten? – <rs ref="#alwa">Sie</rs> hätten <rs ref="#alwa">sich</rs> mit dem
+            ausgemergeltsten Balettmädchen zusammengetan und wären heute Stallknecht im Zirkus
+            Humpelmeier. <pb n="330"/> Was arbeiten <rs ref="#alwa">Sie</rs> denn? – <rs ref="#alwa">Sie</rs> haben <rs ref="#meinem-›Erdgeist‹">ein Schauerdrama</rs>
+            geschrieben, in <rs ref="#meinem-›Erdgeist‹">dem</rs> <rs ref="#die-Waden-meiner-Braut-(evtl-lulus-beine)">die Waden <rs ref="#lulu-braut">meiner Braut</rs></rs> die beiden Hauptfiguren sind und <rs ref="#meinem-›Erdgeist‹">das</rs> kein
+            Hoftheater <rs ref="#zur-Aufführung-(erdgeist)">zur Aufführung</rs> bringt. <rs ref="#alwa">Sie Nachtjacke Sie</rs>! <rs ref="#alwa">Sie Schnodderlumpen</rs>! <rs ref="#das5">Ich habe auf
+            <rs ref="#der-Brust-(rodrigo)">diesem Brustkasten</rs> noch <rs ref="#Vor-zwei-Jahren">vor zwei Jahren</rs> zwei gesattelte Kavalleriepferde balanciert</rs>. Wie
+            <rs ref="#das5">das</rs> jetzt mit <rs ref="#meine-fürchterliche-Plauze-(rodrigos-bauch)">der Plauze</rs> werden soll, ist mir allerdings rätselhaft. <rs ref="#Die-Ausländerinnen">Die Ausländerinnen</rs>
+            bekommen einen schönen Begriff von der deutschen Kunst, wenn <rs ref="#Die-Ausländerinnen">sie</rs> mir bei jedem Kilo
+            Mehrgewicht den Schweiß aus <rs ref="#meine-Kostüme-(rodrigos,-die-er-in-auftrag-gegeben-hat)">den Trikots</rs> perlen sehen. Ich werde den ganzen Zuschauerraum
+            verpesten mit meiner Ausdünstung.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#rodrigo">Sie</rs> sind ein Waschlappen.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Wollte <rs ref="#Gott-(evtl-phrase)">Gott</rs>, <rs ref="#alwa">Sie</rs> hätten recht! Oder wollten <rs ref="#alwa">Sie</rs> mich vielleicht beleidigen? – <rs ref="#das6">Dann
+            setze ich <rs ref="#alwa">Ihnen</rs> die Fußspitze unter die Kinnlade, daß <rs ref="#alwa">Ihnen</rs> <rs ref="#alwa">Ihre</rs> Zunge dort drüben an
+            der Tapete spazierenkriecht.</rs></p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Versuchen <rs ref="#rodrigo">Sie</rs> <rs ref="#das6">das</rs> doch!</p>
+          <stage><rs ref="#das7">Tritte und Stimmen werden von außen hörbar</rs>.</stage>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wer ist <rs ref="#das7">das</rs> ...?</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#alwa">Sie</rs> können <rs ref="#Gott-(evtl-phrase)">Gott</rs> danken, daß ich hier kein Publikum vor mir habe.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wer kann <rs ref="#das7">das</rs> sein?!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#das7">Das</rs> ist meine Geliebte! <rs ref="#seit-einem-vollen-Jahr-(zeitraum-in-dem-lulu-im-Gefängnis-war)">Seit einem vollen Jahre</rs> haben <rs ref="#lulu-braut-/-rodrigo">wir</rs> <rs ref="#lulu-braut-/-rodrigo">uns</rs> jetzt nicht mehr
+            gesehen.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wie wollten denn <rs ref="#schigolch-(lulus-vat…-/-lulu-braut">die</rs> schon zurück sein! – Wer mag da kommen! – Ich erwarte
+            niemanden.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Zum Henker, so schließen <rs ref="#alwa">Sie</rs> doch auf!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Verstecken <rs ref="#rodrigo">Sie</rs> <rs ref="#rodrigo">sich</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich stelle mich hinter <rs ref="#eine-geschlossene-Portiere">die Portiere</rs>. Da habe ich vor einem Jahr auch schon einmal
+            gestanden.</p>
+          <stage><rs ref="#rodrigo">Rodrigo</rs> verschwindet hinter <rs ref="#eine-geschlossene-Portiere">der Portiere links vorn</rs>. <rs ref="#alwa">Alwa</rs> öffnet <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">die Mitteltüre</rs>,
+            worauf <rs ref="#hugenberg">Alfred Hugenberg, den Hut in der Hand</rs>, eintritt.</stage>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Mit wem habe ich ... <rs ref="#hugenberg">Sie</rs>? – Sind <rs ref="#hugenberg">Sie</rs> nicht ...?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#hugenberg">Alfred Hugenberg</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Was wünschen <rs ref="#hugenberg">Sie</rs>?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich komme von Münsterburg. Ich bin heute morgen geflüchtet.</p>
+          <pb n="331"/>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich bin augenleidend. Ich bin gezwungen, die Jalousien geschlossen zu halten.</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich brauche <rs ref="#Ihre-Hilfe-(unterstützung-hilfe-alwa-ggü-hugenberg)"><rs ref="#alwa">Ihre</rs> Hilfe</rs>. <rs ref="#alwa">Sie</rs> werden <rs ref="#Ihre-Hilfe-(unterstützung-hilfe-alwa-ggü-hugenberg)">sie</rs> mir nicht versagen. Ich habe <rs ref="#einen-Plan-(hugenbergs-zur-befreiung)">einen Plan</rs>
+            vorbereitet. – Hört <rs ref="#einer-(ein-mensch)">man</rs> uns?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wovon sprechen <rs ref="#hugenberg">Sie</rs>? – Was für <rs ref="#einen-Plan-(hugenbergs-zur-befreiung)">einen Plan</rs>?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Sind <rs ref="#alwa">Sie</rs> allein?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ja. – Was wollen <rs ref="#hugenberg">Sie</rs> mir mitteilen?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich habe zwei Pläne nacheinander wieder fallenlassen. Was ich <rs ref="#alwa">Ihnen</rs> jetzt sage, ist bis
+            auf jeden möglichen Zwischenfall durchgearbeitet. Wenn ich <rs ref="#barem-Geld">Geld</rs> hätte, würde ich <rs ref="#alwa">Sie</rs>
+            nicht ins Vertrauen ziehen. Ich dachte zuerst lange daran ... Wollen <rs ref="#alwa">Sie</rs> mir nicht
+            erlauben, <rs ref="#alwa">Ihnen</rs> <rs ref="#einen-Plan-(hugenbergs-zur-befreiung)">meinen Entwurf</rs> auseinanderzusetzen?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wollen <rs ref="#hugenberg">Sie</rs> mir bitte sagen, <rs ref="#das8">wovon <rs ref="#hugenberg">Sie</rs> denn eigentlich sprechen</rs>?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <rs ref="#eine-derartige-Unterstellung"><p><rs ref="#lulu-braut">Die Frau</rs> kann <rs ref="#alwa">Ihnen</rs> unmöglich so gleichgültig sein, daß ich <rs ref="#alwa">Ihnen</rs> <rs ref="#das8">das</rs> sagen muß. Was
+              <rs ref="#alwa"><emph>Sie</emph></rs> vor <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">dem Untersuchungsrichter</rs> zu Protokoll gaben, hat <rs ref="#lulu-braut">ihr</rs> mehr genützt
+            als alles, was der Verteidiger sagte.</p></rs>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <rs ref="#Das5"><p>Ich verbitte mir <rs ref="#eine-derartige-Unterstellung">eine derartige Unterstellung</rs>.</p></rs>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#das9"><rs ref="#Das5">Das</rs> sagen <rs ref="#alwa">Sie</rs> so</rs>; <rs ref="#das9">das</rs> verstehe ich natürlich. Aber <rs ref="#alwa">Sie</rs> waren doch <rs ref="#lulu-braut">ihr</rs> bester
+            Entlastungszeuge.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#hugenberg">Sie</rs> waren der! <rs ref="#hugenberg">Sie</rs> sagten, <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">mein Vater</rs> habe <rs ref="#Das6"><rs ref="#lulu-braut">sie</rs> zwingen wollen, <rs ref="#lulu-braut">sich</rs> selbst zu
+            erschießen</rs>.</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#Das6">Das</rs> wollte <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">er</rs> auch. Aber <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">man</rs> glaubte mir nicht; ich wurde nicht vereidigt.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wo kommen <rs ref="#hugenberg">Sie</rs> jetzt her?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Aus <rs ref="#einer-Besserungsanstalt,-aus-der-ich-heute-morgen-ausgebrochen-bin-(hugenberg-als-insasse)">einer Besserungsanstalt, aus <rs ref="#einer-Besserungsanstalt,-aus-der-ich-heute-morgen-ausgebrochen-bin-(hugenberg-als-insasse)">der</rs> ich heute morgen ausgebrochen bin</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Und was beabsichtigen <rs ref="#hugenberg">Sie</rs>?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich erschleiche mir das Vertrauen <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">eines Gefängnisschließers</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wovon wollen <rs ref="#hugenberg">Sie</rs> denn leben?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich wohne bei <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">einem Mädchen, <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">das</rs> <rs ref="#ein-Kind-(von-hugenbergs-vater)-iii">ein Kind</rs> von <rs ref="#meinem-Vater-(hugenbergs)">meinem Vater</rs> hat</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wer ist <rs ref="#meinem-Vater-(hugenbergs)"><rs ref="#hugenberg">Ihr</rs> Vater</rs>?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#meinem-Vater-(hugenbergs)">Er</rs> ist Polizeidirektor. Ich kenne <rs ref="#das-Gefängnis-(lulus)">das Gefängnis</rs>, ohne daß ich jemals drin war; und mich
+            wird, so wie ich jetzt bin, kein Aufseher erkennen. Aber darauf rechne ich gar nicht.
+            Ich weiß <rs ref="#eine-eiserne-Leiter,-von-der-man--vom-ersten-Hof-aus-aufs-Dach-und-------------durch-eine-Dachluke-unter-den-Dachboden-gelangt">eine eiserne Leiter, von <rs ref="#eine-eiserne-Leiter,-von-der-man--vom-ersten-Hof-aus-aufs-Dach-und-------------durch-eine-Dachluke-unter-den-Dachboden-gelangt">der</rs> man <pb n="332"/> <rs ref="#vom-ersten-Hof-(lulus-gefängnis)">vom ersten Hof</rs> aus <rs ref="#aufs-Dach-(lulus-gefängnis)">aufs Dach</rs> und
+            durch eine Dachluke unter <rs ref="#den-Dachboden-(lulus-gefängnis)">den Dachboden</rs> gelangt</rs>. <rs ref="#Vom-Innern-(lulus-gefängnis)">Vom Innern</rs> aus führt kein Weg dorthin.
+            Aber in <rs ref="#Vom-Innern-(lulus-gefängnis)">allen fünf Flügeln</rs> liegen <rs ref="#Bretter-lll">Bretter</rs> und <rs ref="#Latten-lll">Latten</rs> unter <rs ref="#aufs-Dach-(lulus-gefängnis)">den Dächern</rs> und große Haufen
+            Späne. Ich schleppe <rs ref="#Bretter-lll">die Bretter</rs> und <rs ref="#Latten-lll">Latten</rs> an <rs ref="#Vom-Innern-(lulus-gefängnis)">fünf Enden</rs> zusammen und zünde <rs ref="#Bretter-lll-/-Latten-lll">sie</rs> an. Ich
+            habe alle Taschen <rs ref="#voll-Zündmaterial,-wie-es-zum-Feuermachen-gebraucht-wird">voll Zündmaterial, wie <rs ref="#voll-Zündmaterial,-wie-es-zum-Feuermachen-gebraucht-wird">es</rs> zum Feuermachen gebraucht wird</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Dann verbrennen <rs ref="#hugenberg">Sie</rs> doch!</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Natürlich, wenn ich nicht gerettet werde. Aber um in <rs ref="#vom-ersten-Hof-(lulus-gefängnis)">den ersten Hof</rs> zu kommen, muß ich
+            <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">den Schließer</rs> in meiner Gewalt haben, und dazu brauche ich <rs ref="#barem-Geld">Geld</rs>. Nicht <rs ref="#das10">daß ich <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">ihn</rs>
+            bestechen will</rs>; <rs ref="#das10">das</rs> würde nicht gelingen. Ich muß <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">ihm</rs> <rs ref="#zweihundert-Mark-(bestechungsgeld-hugenberg-für-schließer)">das Geld</rs> vorher leihen, damit <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">er</rs>
+            <rs ref="#seine-drei-Kinder-(hugenbergs-schließers)"><rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">seine</rs> drei Kinder</rs> in <rs ref="#die-Sommerfrische">die Sommerfrische</rs> schicken kann. Dann drücke ich mich morgens um
+            vier, wenn die Sträflinge aus geachteten Familien entlassen werden, zur Tür hinein. <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">Er</rs>
+            schließt hinter mir ab. <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">Er</rs> fragt mich, was ich vorhabe; ich bitte <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">ihn</rs>, mich am Abend
+            wieder hinauszulassen. Und eh es hell wird, bin ich unter <rs ref="#den-Dachboden-(lulus-gefängnis)">dem Dachboden</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wie sind <rs ref="#hugenberg">Sie</rs> aus <rs ref="#einer-Besserungsanstalt,-aus-der-ich-heute-morgen-ausgebrochen-bin-(hugenberg-als-insasse)">der Besserungsanstalt</rs> entkommen?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Ich bin zum Fenster hinausgesprungen. Ich brauche <rs ref="#zweihundert-Mark-(bestechungsgeld-hugenberg-für-schließer)">zweihundert Mark</rs>, damit <rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">der Kerl</rs>
+            <rs ref="#seine-drei-Kinder-(hugenbergs-schließers)"><rs ref="#eines-Gefängnisschließers-(in-lulus-gefängnis,-dessen-vertrauen-hugenberg-erschleicht)">seine</rs> Familie</rs> in <rs ref="#die-Sommerfrische">die Sommerfrische</rs> schicken kann.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO</speaker></rs>
+          <stage>aus <rs ref="#eine-geschlossene-Portiere">der Portiere</rs> tretend.</stage>
+          <p>Wünschen <rs ref="#alwa">der Herr Baron</rs> <rs ref="#den-Kaffee">den Kaffee</rs> im Musikzimmer oder auf der Veranda serviert?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Wo kommt <rs ref="#rodrigo">der Mensch</rs> her?! – Aus <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">derselben Türe</rs>! – <rs ref="#rodrigo">Er</rs> sprang aus <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">derselben Türe</rs>
+            heraus!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich habe <rs ref="#rodrigo">ihn</rs> in Dienst genommen. <rs ref="#rodrigo">Er</rs> ist zuverlässig.</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG</speaker></rs>
+          <stage><rs ref="#hugenberg">sich</rs> an die Schläfen greifend.</stage>
+          <p><rs ref="#hugenberg">Ich Dummkopf</rs>! – <rs ref="#hugenberg">Ich Dummkopf</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ja, ja, <rs ref="#rodrigo-/-hugenberg">wir</rs> haben <rs ref="#rodrigo-/-hugenberg">uns</rs> hier schon gesehen! Scheren <rs ref="#hugenberg">Sie</rs> <rs ref="#hugenberg">sich</rs> zu <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat"><rs ref="#hugenberg">Ihrer</rs> Frau Vize-Mama</rs>! <rs ref="#ein-Kind-(von-hugenbergs-vater)-iii"><rs ref="#hugenberg">Ihr</rs>
+            Brüderchen</rs> möchte <rs ref="#ein-Kind-(von-hugenbergs-vater)-iii">seinen</rs> Geschwistern gerne Onkel werden. Machen <rs ref="#hugenberg">Sie</rs> <rs ref="#meinem-Vater-(hugenbergs)"><rs ref="#hugenberg">Ihren</rs> Herrn Papa</rs>
+            zum Großvater <rs ref="#meinem-Vater-(hugenbergs)">seiner</rs> Kinder. <rs ref="#hugenberg">Sie</rs> haben <rs ref="#schigolch-(lulus-vat…-/-rodrigo-+-2">uns</rs> gefehlt! Wenn <rs ref="#hugenberg">Sie</rs> mir in den nächsten
+            vierzehn Tagen noch einmal unter <rs ref="#die-Augen-(rodrigo)">die Augen</rs> kommen, dann schlage ich <rs ref="#hugenberg">Ihnen</rs> <rs ref="#den-Kürbis-(wohl-kopf-hugenberg)">den Kürbis</rs> zu
+            Brei zusammen.</p>
+          <pb n="333"/>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Seien <rs ref="#rodrigo">Sie</rs> doch ruhig!</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#hugenberg">Ich Dummkopf</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Was wollen <rs ref="#hugenberg">Sie</rs> mit <rs ref="#Bretter-lll-/-Latten-lll"><rs ref="#hugenberg">Ihren</rs> Brennmaterialien</rs>! – Wissen <rs ref="#hugenberg">Sie</rs> denn nicht, daß <rs ref="#lulu-braut">die Frau</rs> seit
+            <rs ref="#drei-Wochen">drei Wochen</rs> tot ist?</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Hat man <rs ref="#lulu-braut">ihr</rs> <rs ref="#den-Kopf-(lulu-phys)">den Kopf</rs> abgeschlagen?</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Nein, <rs ref="#den-Kopf-(lulu-phys)"><emph>den</emph></rs> hat <rs ref="#lulu-braut">sie</rs> noch. <rs ref="#Das7"><rs ref="#lulu-braut">Sie</rs> ist an <rs ref="#die-Krankheit-(lulus-cholera)">der Cholera</rs> krepiert.</rs></p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#Das7">Das</rs> ist nicht wahr.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Was wollen <rs ref="#hugenberg">Sie</rs> denn wissen! – Da, lesen <rs ref="#hugenberg">Sie</rs>; hier! <stage>Zieht <rs ref="#ein-Zeitungsblatt">ein Zeitungsblatt</rs>
+              hervor und deutet auf <rs ref="#eine-Notiz">eine Notiz</rs> darin.</stage> <rs ref="#eine-Notiz">»<rs ref="#lulu-braut">Die Mörderin <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">des Dr. Schön</rs></rs> ...«</rs>
+              <stage>Gibt <rs ref="#ein-Zeitungsblatt">das Blatt</rs> an <rs ref="#hugenberg">Hugenberg</rs>.</stage></p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG</speaker></rs>
+          <stage>liest.</stage>
+          <p>»<rs ref="#eine-Notiz"><rs ref="#lulu-braut">Die Mörderin <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">des Dr. Schön</rs></rs></rs> ist <rs ref="#das-Gefängnis-(lulus)">im Gefängnis</rs> auf unbegreifliche Weise an <rs ref="#die-Krankheit-(lulus-cholera)">der Cholera</rs>
+            erkrankt.« – Da steht nicht, daß <rs ref="#lulu-braut">sie</rs> gestorben ist.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Was will <rs ref="#lulu-braut">sie</rs> denn sonst getan haben? <rs ref="#lulu-braut">Sie</rs> liegt seit <rs ref="#drei-Wochen">drei Wochen</rs> auf dem Kirchhof. In
+            der Ecke links hinten, hinter den Müllhaufen, wo <rs ref="#die-kleinen-Kreuze-sind,-an-denen-kein-------------Name-steht">die kleinen Kreuze sind, an <rs ref="#die-kleinen-Kreuze-sind,-an-denen-kein-------------Name-steht">denen</rs> kein
+            Name steht</rs>, da liegt <rs ref="#lulu-braut">sie</rs> unter <rs ref="#dem-ersten-(der-kreuze-ohne-namen-unter-dem-angeblich-lulu-liegt)">dem ersten</rs>. <rs ref="#hugenberg">Sie</rs> erkennen <rs ref="#dem-ersten-(der-kreuze-ohne-namen-unter-dem-angeblich-lulu-liegt)">den Platz</rs> daran, daß kein Gras
+            darauf wächst. Hängen <rs ref="#hugenberg">Sie</rs> einen Blechkranz hin und dann machen <rs ref="#hugenberg">Sie</rs>, daß <rs ref="#hugenberg">Sie</rs> wieder in
+            <rs ref="#einer-Besserungsanstalt,-aus-der-ich-heute-morgen-ausgebrochen-bin-(hugenberg-als-insasse)"><rs ref="#hugenberg">Ihre</rs> Kinderbewahranstalt</rs> kommen, sonst denunziere ich <rs ref="#hugenberg">Sie</rs> <rs ref="#der-Polizei-(polizisten)">der Polizei</rs>. Ich kenne <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">das
+            Frauenzimmer, <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">das</rs> <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">sich</rs> durch <rs ref="#hugenberg">Sie</rs> <rs ref="#einem-Mädchen,-das-ein-Kind-von-meinem-Vater-hat">ihre</rs> Mußestunden versüßt</rs>.</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG</speaker></rs>
+          <stage>zu <rs ref="#alwa">Alwa</rs>.</stage>
+          <p>Ist <rs ref="#es6">es</rs> wahr, <rs ref="#es6">daß <rs ref="#lulu-braut">sie</rs> tot ist</rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#Gott-(evtl-phrase)">Gott</rs> sei Dank, ja! – Ich bitte <rs ref="#hugenberg">Sie</rs>, mich nicht länger in Anspruch zu nehmen. Mein Arzt
+            verbietet mir, Besuche zu empfangen.</p>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p>Meine Zukunft ist so wenig mehr wert! Ich hätte <rs ref="#das-letzte-Bißchen,-das-mir-das-Leben-------------noch-gilt-(wert-von-hugenbergs-leben)">das letzte Bißchen, <rs ref="#das-letzte-Bißchen,-das-mir-das-Leben-------------noch-gilt-(wert-von-hugenbergs-leben)">das</rs> mir das Leben
+            noch gilt</rs>, gerne an <rs ref="#lulu-braut">ihr</rs> Glück hingegeben. Pfeif drein! <rs ref="#in-irgendwelcher-Weise">Auf irgendeine Art</rs> werde ich nun
+            doch wohl zum Teufel gehen!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Wenn <rs ref="#hugenberg">Sie</rs> <rs ref="#hugenberg">sich</rs> unterstehen und mir oder <rs ref="#alwa">dem Herrn Doktor hier</rs> oder <rs ref="#schigolch">meinem ehrenwerten
+            Freund Schigolch</rs> noch <rs ref="#in-irgendwelcher-Weise">in irgendwelcher Weise</rs> zu nahe zu treten, dann verklage ich <rs ref="#hugenberg">Sie</rs>
+            wegen beabsichtigter Brandstifterei. <rs ref="#hugenberg">Ihnen</rs> tun drei Jahre Zuchthaus not, damit <rs ref="#hugenberg">Sie</rs>
+            wissen, wo <rs ref="#Ihre-Finger-(hugenbergs-handeln-einmischen-betätigung)"><rs ref="#hugenberg">Ihre</rs> Finger</rs> nicht hineingehören. – Und jetzt hinaus!</p>
+          <pb n="334"/>
+        </sp>
+        <sp who="#hugenberg">
+          <rs ref="#hugenberg"><speaker>HUGENBERG.</speaker></rs>
+          <p><rs ref="#hugenberg">Ich Dummkopf</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Hinaus!! <stage>Wirft <rs ref="#hugenberg">Hugenberg</rs> <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">zur Tür</rs> hinaus. Nach vorne kommend.</stage> Nimmt mich
+            wunder, daß <rs ref="#alwa">Sie</rs> <rs ref="#hugenberg">dem Lümmel</rs> nicht auch <rs ref="#eine-Brieftasche-(alwa)"><rs ref="#alwa">Ihr</rs> Portemonnaie</rs> <rs ref="#Ihre-Finger-(hugenbergs-handeln-einmischen-betätigung)">zur Verfügung</rs> gestellt haben.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich verbitte mir <rs ref="#rodrigo">Ihre</rs> Unflätigkeiten! <rs ref="#hugenberg">Der Junge</rs> ist im kleinen Finger mehr wert als
+            <rs ref="#rodrigo">Sie</rs>!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich habe an <rs ref="#die_geschwitz">dieser Geschwitz</rs> schon Genossenschaft genug. Soll <rs ref="#lulu-braut">meine Braut</rs> eine
+            Gesellschaft mit beschränkter Haftpflicht werden, dann mag ein anderer vorangehen. Ich
+            gedenke die pompöseste Luftgymnastikerin aus <rs ref="#lulu-braut">ihr</rs> zu machen und setze deshalb gerne mein
+            Leben <rs ref="#aufs-Spiel-(risiko,-aufs-spiel-setzen)">aufs Spiel</rs>. Aber dann bin ich Herr im Hause und bezeichne selber <rs ref="#die-Kavaliere,-------------die-sie-bei-sich-zu-empfangen-hat-(männer-mit-denen-lulu-verkehren-soll)">die Kavaliere,
+            <rs ref="#die-Kavaliere,-------------die-sie-bei-sich-zu-empfangen-hat-(männer-mit-denen-lulu-verkehren-soll)">die</rs> <rs ref="#lulu-braut">sie</rs> bei <rs ref="#lulu-braut">sich</rs> zu empfangen hat</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#hugenberg">Der Junge</rs> hat <rs ref="#das,-was-unserem-Zeitalter-fehlt-(heldenmut)">das, <rs ref="#das,-was-unserem-Zeitalter-fehlt-(heldenmut)">was</rs> <rs ref="#unserem-Zeitalter"><rs ref="#einer-(ein-mensch)">unserem</rs> Zeitalter</rs> fehlt</rs>. <rs ref="#hugenberg">Er</rs> ist eine Heldennatur. <rs ref="#hugenberg">Er</rs> geht
+            deshalb natürlich zugrunde. Erinnern <rs ref="#rodrigo">Sie</rs> <rs ref="#rodrigo">sich</rs>, wie <rs ref="#hugenberg">er</rs> vor <rs ref="#ihrer-Verurteilung-(lulus-wg-dem-mord-an-dr.-schön)">Verkündigung <rs ref="#der-Strafe-(haftstrafe-lulus-wg-dem-mord-an-dr.-schön)">des Urteils</rs></rs> aus
+            der Zeugenbank sprang und <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">dem Vorsitzenden</rs> zurief: »Woher wollen <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">Sie</rs> wissen, was aus
+            <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">Ihnen</rs> geworden wäre, wenn <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">Sie</rs> <rs ref="#dem-Untersuchungsrichter-(lulus-verurteilung)">sich</rs> als zehnjähriges Kind <rs ref="#Nacht-(nachts)">die Nächte</rs> barfuß hätten in den
+            Cafés herumtreiben müssen?!«</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Hätte ich <rs ref="#hugenberg">ihm</rs> nur gleich eine dafür in <rs ref="#den-Kürbis-(wohl-kopf-hugenberg)">die Fresse</rs> hauen können! – Gottlob gibt es
+            <rs ref="#im-Gefängnis">Zuchthäuser, in <rs ref="#im-Gefängnis">denen</rs> man solchem Pack Achtung vor dem Gesetz einflößt</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#hugenberg">Er</rs> wäre <rs ref="#so-einer,-der-mir-in-meinem-»Weltbeherrscher«-Modell-stehen-könnte-(prädikativ-hugenberg)">so einer, <rs ref="#so-einer,-der-mir-in-meinem-»Weltbeherrscher«-Modell-stehen-könnte-(prädikativ-hugenberg)">der</rs> mir in <rs ref="#dem-»Weltbeherrscher«">meinem »Weltbeherrscher«</rs> Modell stehen könnte</rs>. <rs ref="#Das8">Seit
+            zwanzig Jahren bringt <rs ref="#unserer-jungen-Literatur">die Literatur</rs> nichts als Halbmenschen zustande; <rs ref="#Männer,-die-keine-------------Kinder-machen">Männer, <rs ref="#Männer,-die-keine-------------Kinder-machen">die</rs> keine
+            Kinder machen</rs> und <rs ref="#Weiber,-die-keine-gebären-können">Weiber, <rs ref="#Weiber,-die-keine-gebären-können">die</rs> keine gebären können</rs></rs>. <rs ref="#Das8">Das</rs> nennt <rs ref="#Das8">sich</rs> »modernes
+            Problem«.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich habe mir <rs ref="#eine-zwei-Zoll-dicke-Nilpferdpeitsche">eine zwei Zoll dicke Nilpferdpeitsche</rs> bestellt. Wenn <rs ref="#eine-zwei-Zoll-dicke-Nilpferdpeitsche">die</rs> keinen Sukzeß bei
+            <rs ref="#lulu-braut">ihr</rs> hat, dann will ich Kartoffelsuppe im Hirnkasten haben. Sei <rs ref="#es-(mittel-mit-dem-man-weiberfleisch-begegnet)">es</rs> Liebe, seien <rs ref="#es-(mittel-mit-dem-man-weiberfleisch-begegnet)">es</rs>
+            Prügel, danach fragt kein Weiberfleisch; hat <rs ref="#es-(weiberfleisch,-weiblicher-körper)">es</rs> nur Unterhaltung, dann bleibt <rs ref="#es-(weiberfleisch,-weiblicher-körper)">es</rs> stramm
+            und frisch. <rs ref="#lulu-braut">Sie</rs> steht jetzt im zwanzigsten Jahr, war dreimal verheiratet, hat eine
+            kolossale Menge Liebhaber befriedigt, da melden <rs ref="#die-------------Herzensbedürfnisse-(lulus,-seelische)">sich</rs> auch schließlich <rs ref="#die-------------Herzensbedürfnisse-(lulus,-seelische)">die
+            Herzensbedürfnisse</rs>. Aber <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">dem Kerl</rs> müssen die sieben Todsünden auf <pb n="335"/> der
+            Stirn geschrieben stehen, sonst verehrt <rs ref="#lulu-braut">sie</rs> <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">ihn</rs> nicht. Wenn <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">der Mensch</rs> so aussieht, als
+            hätte <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">ihn</rs> ein Hundefänger auf die Straße gespuckt, dann hat <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">er</rs> bei solchen
+            Frauenspersonen keinen Prinzen zu fürchten. Ich miete eine fünfzig Fuß hohe Garage, da
+            wird <rs ref="#lulu-braut">sie</rs> dressiert; und hat <rs ref="#lulu-braut">sie</rs> den ersten Tauchersprung exekutiert, ohne den Hals zu
+            brechen, dann ziehe ich meinen schwarzen Frack an und rühre bis an mein Lebensende
+            keinen Finger mehr. Bei <rs ref="#ihrer-praktischen-Einrichtung-(äußere-erscheinung-körperliche-vorzüge-lulu)"><rs ref="#lulu-braut">ihrer</rs> praktischen Einrichtung</rs> kostet es <rs ref="#lulu-braut">die Frau</rs> nicht halb
+            soviel Mühe, <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)"><rs ref="#lulu-braut">ihren</rs> Mann</rs> zu ernähren, wie umgekehrt. Wenn <rs ref="#lulu-braut">ihr</rs> <rs ref="#dem-Kerl-(den-lulu-lieben-wird,-der-ihe-herzensbedürfnisse-erfüllt,-rodrigo-spricht-wohl-über-sich-selbst)">der Mann</rs> nur die geistige
+            Arbeit besorgt und den Familiensinn nicht in die Binsen gehen läßt.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich habe <rs ref="#einer-(ein-mensch)">die Menschheit</rs> beherrschen und als eingefahrenen Viererzug vor mir im Zügel
+            fahren gelernt aber <rs ref="#hugenberg">der Junge</rs> will mir nicht aus <rs ref="#meine-ganze-geistige-Spannkraft-(alwa)">dem Kopf</rs>. Ich kann bei <rs ref="#hugenberg">diesem
+            Gymnasiasten</rs> wirklich noch Privatunterricht in der Weltverachtung nehmen.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#lulu-braut">Sie</rs> soll sich das Fell getrost mit <rs ref="#barem-Geld">Tausendmarkscheinen</rs> tapezieren lassen! <rs ref="#Den-------------Direktoren">Den
+            Direktoren</rs> zapfe ich <rs ref="#die-Gagen-(für-rodrigos-vorstellungen-mit-lulu)">die Gagen</rs> mit der Zentrifugalpumpe ab. Ich kenne <rs ref="#Den-------------Direktoren">die Bande</rs>.
+            Brauchen <rs ref="#Den-------------Direktoren">sie</rs> <rs ref="#einer-(ein-mensch)">einen</rs> nicht, dann darf <rs ref="#einer-(ein-mensch)">man</rs> <rs ref="#Den-------------Direktoren">ihnen</rs> die Stiefel putzen, und wenn <rs ref="#Den-------------Direktoren">sie</rs> <rs ref="#eine-------------Künstlerin">eine
+            Künstlerin</rs> nötig haben, dann schneiden <rs ref="#Den-------------Direktoren">sie</rs> <rs ref="#eine-------------Künstlerin">sie</rs> mit den verbindlichsten Komplimenten
+            eigenhändig vom lichten Galgen herunter.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>In meinen Verhältnissen habe ich außer <rs ref="#Tod">dem Tod</rs> nichts mehr in dieser Welt zu fürchten –
+            im Reich der Empfindungen bin ich der ärmste Bettler! Aber ich bringe den moralischen
+            Mut nicht mehr auf, meine befestigte Position gegen die Aufregungen des wilden
+            Abenteurerlebens einzutauschen.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p><rs ref="#lulu-braut">Sie</rs> hatte <rs ref="#schigolch">Papa Schigolch</rs> und mich zusammen auf den Strich geschickt, damit <rs ref="#rodrigo-/-schigolch-(lulus-vat…">wir</rs> <rs ref="#lulu-braut">ihr</rs> ein
+            kräftiges Mittel gegen Schlaflosigkeit aufstöbern. <rs ref="#rodrigo-/-schigolch-(lulus-vat…">Jeder</rs> bekam ein Zwanzigmarkstück für
+            Reiseunkosten. Da sehen <rs ref="#rodrigo-/-schigolch-(lulus-vat…">wir</rs> <rs ref="#hugenberg">den Jungen</rs> im Café Nachtlicht sitzen. <rs ref="#hugenberg">Er</rs> saß wie ein
+            Verbrecher auf der Anklagebank. <rs ref="#schigolch">Schigolch</rs> beroch <rs ref="#hugenberg">ihn</rs> von allen Seiten und sagte: »<rs ref="#hugenberg">Der</rs>
+            ist noch Jungfrau.«</p>
+          <stage>Oben auf <rs ref="#eine-----------verhängte-Galerie">der Galerie</rs> werden schleppende Schritte hörbar.</stage>
+          <pb n="336"/>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Da ist <rs ref="#lulu-braut">sie</rs>! – <rs ref="#lulu-braut">Die zukünftige pompöseste Luftgymnastikerin <rs ref="#unserem-Zeitalter">der Jetztzeit</rs></rs>!</p>
+          <stage>Über <rs ref="#eine-monumentale-Treppe">der Treppe</rs> teilt <rs ref="#der-Vorhang-über-der-Treppe">sich</rs> <rs ref="#der-Vorhang-über-der-Treppe">der Vorhang</rs>, und <rs ref="#lulu-braut">Lulu</rs> <rs ref="#schwarzem,-enganliegenden-----------Kleid-(geschwitz)">im schwarzen Kleid</rs> auf <rs ref="#schigolch">Schigolchs</rs>
+            Arm gestützt, schleppt <rs ref="#lulu-braut">sich</rs> langsam <rs ref="#eine-monumentale-Treppe">die Treppe</rs> herunter.</stage>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Hü, <rs ref="#lulu-braut">alter Schimmel</rs>! <rs ref="#schigolch-(lulus-vat…-/-lulu-braut">Wir</rs> müssen heute noch über <rs ref="#die-Grenze-(die-bald-überquert-wird,-von-deutschland-nach-frankreich)">die Grenze</rs>.</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO</speaker></rs>
+          <stage><rs ref="#lulu-braut">Lulu</rs> mit <rs ref="#die-Augen-(rodrigo)">blöden Augen</rs> anglotzend.</stage>
+          <p>Himmel, Tod und Wolkenbruch!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>spricht bis zum Schluß <rs ref="#des-Aktes">des Aktes</rs> alles in <rs ref="#ihre-Stimme-(lulu)">munterstem Ton</rs>.</stage>
+          <p>Langsam! <rs ref="#schigolch">Du</rs> klemmst mir den Arm ein!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Woher nimmst <rs ref="#schigolch">du</rs> die Schamlosigkeit, mit <rs ref="#lulu-braut">einem solchen Wolfsgesicht</rs> aus <rs ref="#das-Gefängnis-(lulus)">dem Gefängnis</rs>
+            auszubrechen?!</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Halt die Schnauze!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Ich laufe nach <rs ref="#der-Polizei-(polizisten)">der Polizei!</rs> Ich mache Anzeige! <rs ref="#das11"><rs ref="#lulu-braut">Diese Vogelscheuche</rs> will <rs ref="#lulu-braut">sich</rs> in Trikots
+            sehen lassen. Da kosten schon die Wattons <rs ref="#die-Gagen-(für-rodrigos-vorstellungen-mit-lulu)">zwei Monatsgagen</rs>. – <rs ref="#lulu-braut">Du</rs> bist <rs ref="#die-perfideste-------------Hochstaplerin,-die-je-im-Hotel-Ochsenbutter-Logis-bezogen-hat-(prädikativ-lulu)">die perfideste
+            Hochstaplerin, <rs ref="#die-perfideste-------------Hochstaplerin,-die-je-im-Hotel-Ochsenbutter-Logis-bezogen-hat-(prädikativ-lulu)">die</rs> je <rs ref="#im-Hotel-Ochsenbutter">im Hotel Ochsenbutter</rs> Logis bezogen hat</rs>!</rs></p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich bitte <rs ref="#rodrigo">Sie</rs>, <rs ref="#lulu-braut">die Frau</rs> nicht zu beschimpfen!</p>
+        </sp>
+        <sp who="#rodrigo">
+          <rs ref="#rodrigo"><speaker>RODRIGO.</speaker></rs>
+          <p>Beschimpfen nennen <rs ref="#alwa">Sie</rs> <rs ref="#das11">das</rs>?! – Ich habe mir <rs ref="#ihrer-praktischen-Einrichtung-(äußere-erscheinung-körperliche-vorzüge-lulu)">dieser abgenagten Knochen</rs> wegen <rs ref="#meine-fürchterliche-Plauze-(rodrigos-bauch)">meinen
+            Wanst</rs> angefressen! Ich bin erwerbsunfähig! Ich will ein Hanswurst sein, wenn ich noch
+            einen Besenstiel hochstemmen kann! Aber mich soll hier auf <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">dem Platze</rs> der Blitz
+            erschlagen, wenn ich mir nicht eine Lebensrente von zehntausend Mark jährlich aus <rs ref="#lulu-braut">Ihren</rs>
+            Betrügereien herausknoble! Das kann ich <rs ref="#alwa">Ihnen</rs> sagen! Glückliche Reise! Ich laufe nach
+            <rs ref="#der-Polizei-(polizisten)">der Polizei</rs>! –</p>
+          <stage>Ab.</stage>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Lauf, lauf!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#rodrigo">Der</rs> wird <rs ref="#rodrigo">sich</rs> hüten!</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p><rs ref="#rodrigo">Den</rs> sind <rs ref="#lulu-braut-/-alwa-+-2">wir</rs> los. – Und jetzt <rs ref="#den-Kaffee">schwarzen Kaffee</rs> für <rs ref="#lulu-braut">die Dame</rs>!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA</speaker></rs>
+          <stage><rs ref="#ein-kleiner-Serviertisch">am Tisch</rs> links vorn.</stage>
+          <p>Hier ist <rs ref="#den-Kaffee">Kaffee</rs>; <rs ref="#einer-(ein-mensch)">man</rs> braucht nur einzuschenken.</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Ich muß noch die Schlafwagenbillette besorgen.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>hell.</stage>
+          <p>O Freiheit! <rs ref="#Gott-(evtl-phrase)">Herr Gott <rs ref="#gen-Himmel-(tod-jenseits)">im Himmel</rs>!</rs></p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>In einer halben Stunde hol ich <rs ref="#lulu-braut">dich</rs>. Abschied feiern <rs ref="#lulu-braut-/-alwa-+-2">wir</rs> im Bahnhofsrestaurant. Ich
+            bestelle <rs ref="#ein-Souper,-das--bis-morgen-früh-vorhält">ein Souper, <rs ref="#ein-Souper,-das--bis-morgen-früh-vorhält">das</rs> <pb n="337"/> bis morgen früh vorhält</rs>. – <rs ref="#Guten-Morgen-(evtl-phrase,-der-morgen-des-heutigen-tages)">Guten Morgen</rs>, <rs ref="#alwa">Herr
+            Doktor</rs>!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#Guten-Morgen-(evtl-phrase,-der-morgen-des-heutigen-tages)">Guten Abend</rs>!</p>
+        </sp>
+        <sp who="#schigolch">
+          <rs ref="#schigolch"><speaker>SCHIGOLCH.</speaker></rs>
+          <p>Angenehme Ruhe! – Danke, ich kenne hier jede Türklinke. Auf Wiedersehen! Viel
+            Vergnügen! –</p>
+          <stage>Durch <rs ref="#die-Eingangstür-----------mit-gewundenen-Säulen-und-Frontispiz">die Mitteltür</rs> ab.</stage>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Ich habe seit <rs ref="#seit-einem-vollen-Jahr-(zeitraum-in-dem-lulu-im-Gefängnis-war)">anderthalb Jahren</rs> kein Zimmer gesehen – Vorhänge, Sessel, Bilder ...</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Willst <rs ref="#lulu-braut">du</rs> nicht trinken?</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Ich habe seit <rs ref="#fünf-Tage-(seitdem-lulu-und-geschwitz-an-cholera-erkrankt-sind)">fünf Tagen</rs> <rs ref="#den-Kaffee">schwarzen Kaffee</rs> genug geschluckt. Hast <rs ref="#alwa">du</rs> keinen Schnaps?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich habe <rs ref="#Elixier-de-Spa">Elixier de Spa</rs>.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#Elixier-de-Spa">Das</rs> erinnert an alte Zeiten. <stage>Sieht <rs ref="#lulu-braut">sich</rs>, während <rs ref="#alwa">Alwa</rs> zwei Gläser füllt, <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">im Saal</rs>
+              um.</stage> Wo ist denn <rs ref="#mein-Bild">mein Bild</rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#mein-Bild">Das</rs> habe ich in <rs ref="#meinem-Zimmer-(alwas)">meinem Zimmer</rs>, damit <rs ref="#einer-(ein-mensch)">man</rs> <rs ref="#mein-Bild">es</rs> hier nicht sieht.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Hol doch <rs ref="#mein-Bild">das Bild</rs> her.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Hast <rs ref="#lulu-braut">du</rs> <rs ref="#lulu-braut">deine</rs> Eitelkeit auch <rs ref="#im-Gefängnis">im Gefängnis</rs> nicht verloren?</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Wie angstvoll <rs ref="#einer-(ein-mensch)">einem</rs> ums Herz wird, wenn <rs ref="#einer-(ein-mensch)">man</rs> monatelang <rs ref="#einer-(ein-mensch)">sich</rs> selbst nicht mehr gesehen
+            hat. Dann bekam ich <rs ref="#eine-nagelneue-Kehrichtschaufel">eine nagelneue Kehrichtschaufel</rs>. Wenn ich morgens um sieben
+            ausfegte, hielt ich <rs ref="#eine-nagelneue-Kehrichtschaufel">sie</rs> mir mit der Rückseite <rs ref="#vors-Gesicht-(lulu)">vors Gesicht</rs>. <rs ref="#eine-nagelneue-Kehrichtschaufel">Das Blech</rs> schmeichelt nicht,
+            aber ich hatte doch meine Freude. – Hol <rs ref="#mein-Bild">das Bild</rs> aus <rs ref="#meinem-Zimmer-(alwas)"><rs ref="#alwa">deinem</rs> Zimmer</rs>. Soll ich
+            mitkommen?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Um <rs ref="#Gott-(evtl-phrase)">Gottes</rs> willen, <rs ref="#lulu-braut">du</rs> mußt <rs ref="#lulu-braut">dich</rs> schonen!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Ich habe mich jetzt lang genug geschont.</p>
+          <stage><rs ref="#alwa">Alwa</rs> geht durch die Türe links ab, um <rs ref="#mein-Bild">das Bild</rs> zu holen.</stage>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>allein.</stage>
+          <p><rs ref="#alwa">Er</rs> ist herzleidend; aber <rs ref="#einer-(ein-mensch)">sich</rs> <rs ref="#seit-einem-vollen-Jahr-(zeitraum-in-dem-lulu-im-Gefängnis-war)">vierzehn Monate</rs> mit der Einbildung plagen müssen ... <rs ref="#alwa">Er</rs>
+            küßt mit Todesbangen, und <rs ref="#seine-beiden-Knie-(alwa)"><rs ref="#alwa">seine</rs> beiden Knie</rs> schlottern, wie bei einem ausgefrorenen
+            Handwerksburschen. In <rs ref="#Gott-(evtl-phrase)">Gottes</rs> Namen! – – Hätte ich in <rs ref="#Prachtvoller-Saal-in-deutscher-Renaissance-mit-schwerem-Plafond-aus-geschnitztem-----------Eichenholz">diesem Zimmer</rs> nur <rs ref="#mein-Vater-(alwas-vater-dr.-schön)"><rs ref="#alwa">seinen</rs> Vater</rs>
+            nicht in den Rücken geschossen!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA</speaker></rs>
+          <stage>kommt zurück mit <rs ref="#mein-Bild"><rs ref="#lulu-braut">Lulus</rs> Bild im Pierrotkostüm</rs>.</stage>
+          <p><rs ref="#mein-Bild">Es</rs> ist ganz verstaubt. Ich hatte <rs ref="#mein-Bild">es</rs> mit der Vorderseite gegen den Kamin gelehnt.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#alwa">Du</rs> hast <rs ref="#mein-Bild">es</rs> nicht angesehen, während ich fort war?</p>
+          <pb n="338"/>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich hatte infolge des Verkaufs <rs ref="#das-Käseblatt,-das-Ihr-Vater-------------redigierte">unserer Zeitung</rs> so viel geschäftliche Dinge zu
+            erledigen. <rs ref="#die_geschwitz">Die Geschwitz</rs> würde <rs ref="#mein-Bild">es</rs> gerne bei <rs ref="#die_geschwitz">sich</rs> in <rs ref="#ihrer-Wohnung-(geschwitz)"><rs ref="#die_geschwitz">ihrer</rs> Wohnung</rs> aufgehängt haben, aber
+            <rs ref="#die_geschwitz">sie</rs> hatte Haussuchungen zu gewärtigen.</p>
+          <stage><rs ref="#alwa">Er</rs> hebt <rs ref="#mein-Bild">das Bild</rs> auf <rs ref="#eine-leere-dekorative-Staffelei">die Staffelei</rs>.</stage>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>froh.</stage>
+          <p>Nun lernt <rs ref="#das-arme-ungeheuer-(unklar-wer-gemeint-ist)">das arme Ungeheuer</rs> das Freudenleben <rs ref="#im-Hotel-Ochsenbutter">im Hotel Ochsenbutter</rs> auch aus <rs ref="#das-arme-ungeheuer-(unklar-wer-gemeint-ist)">eigner
+            Erfahrung</rs> kennen.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich begreife noch jetzt nicht, wie <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">die Ereignisse</rs> eigentlich zusammenhängen.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Oh, <rs ref="#die_geschwitz">die Geschwitz</rs> hat <rs ref="#das-Komplott-(der-befreiungsakt-lulus)">das</rs> sehr klug eingerichtet; ich bewundere <rs ref="#die_geschwitz">ihren</rs> Erfindungsgeist.
+            In <rs ref="#Hamburg">Hamburg</rs> muß diesen Sommer doch die Cholera so furchtbar gewütet haben.
+              <emph>Darauf</emph> gründete <rs ref="#die_geschwitz">sie</rs> <rs ref="#Ihr-------------Befreiungsplan-(geschwitz-plan-zum-befreiungsunternehmung-lulus)"><rs ref="#die_geschwitz">ihren</rs> Plan zu meiner Befreiung.</rs> <rs ref="#die_geschwitz">Sie</rs> nahm hier einen
+            Krankenpflegerinnenkursus, und als <rs ref="#die_geschwitz">sie</rs> die nötigen Zeugnisse hatte, reiste <rs ref="#die_geschwitz">sie</rs> damit
+            nach <rs ref="#Hamburg">Hamburg</rs> und pflegte die Cholerakranken. Bei <rs ref="#der-ersten-Gelegenheit,-die-sich-bot">der ersten Gelegenheit, <rs ref="#der-ersten-Gelegenheit,-die-sich-bot">die</rs> <rs ref="#der-ersten-Gelegenheit,-die-sich-bot">sich</rs> bot</rs>,
+            zog <rs ref="#die_geschwitz">sie</rs> dann <rs ref="#die-Unterkleider-(der-cholerakranken-die-geschwitz-zunächst-trägt-und-dann-mit-lulu-tauscht)">die Unterkleider</rs> an, in <rs ref="#die-Unterkleider-(der-cholerakranken-die-geschwitz-zunächst-trägt-und-dann-mit-lulu-tauscht)">denen</rs> eben eine Kranke gestorben war und <rs ref="#die-Unterkleider-(der-cholerakranken-die-geschwitz-zunächst-trägt-und-dann-mit-lulu-tauscht)">die</rs>
+            eigentlich hätten verbrannt werden müssen. Am selben Morgen reiste <rs ref="#die_geschwitz">sie</rs> noch hierher und
+            kam zu mir <rs ref="#das-Gefängnis-(lulus)">ins Gefängnis</rs>. <rs ref="#Das9">In meiner Zelle, als die Aufseherin draußen war, vertauschten
+            <rs ref="#lulu-braut-/-die_geschwitz">wir</rs> beide dann rasch <rs ref="#lulu-braut-/-die_geschwitz">unsere</rs> Unterkleider</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#Das9">Das</rs> also war <rs ref="#die-Ursache,-weshalb-die-Geschwitz-und-du-am-gleichen-Tage-an-der-Cholera-------------erkrankten-(prädikativ-der-tausch-der-unterkleider-lulu-geschwitz-im-gefängnis)">die Ursache, weshalb <rs ref="#die_geschwitz">die Geschwitz</rs> und <rs ref="#lulu-braut">du</rs> <rs ref="#am-gleichen-Tage-(tag-an-dem-lulu-und-geschwitz-sich-mit-cholera-infizieren)">am gleichen Tage</rs> an <rs ref="#Was-uns-unter-die-Erde-bringt-(cholera-krankheit-lulu-und-geschwitz)">der Cholera</rs>
+            erkrankten</rs>?!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Gewiß! <rs ref="#Das9">Das</rs> war <rs ref="#die-Ursache,-weshalb-die-Geschwitz-und-du-am-gleichen-Tage-an-der-Cholera-------------erkrankten-(prädikativ-der-tausch-der-unterkleider-lulu-geschwitz-im-gefängnis)">der Grund</rs>. – <rs ref="#die_geschwitz">Die Geschwitz</rs> wurde aus <rs ref="#ihrer-Wohnung-(geschwitz)"><rs ref="#die_geschwitz">ihrer</rs> Wohnung</rs> natürlich sofort in
+            <rs ref="#der-------------Isolierbaracke">die Isolierbaracke <rs ref="#im-Krankenhaus">beim Krankenhaus</rs></rs> gebracht. Aber mit mir wußte man auch nirgends
+            anders hin. So lagen <rs ref="#lulu-braut-/-die_geschwitz">wir</rs> in einem Zimmer in <rs ref="#der-------------Isolierbaracke">der Isolierbaracke hinter <rs ref="#im-Krankenhaus">dem Krankenhaus</rs></rs>,
+            und <rs ref="#die_geschwitz">die Geschwitz</rs> bot <rs ref="#am-gleichen-Tage-(tag-an-dem-lulu-und-geschwitz-sich-mit-cholera-infizieren)">vom ersten Tag</rs> an alle <rs ref="#die_geschwitz">ihre</rs> Künste auf, um <rs ref="#lulu-braut-/-die_geschwitz">unsere</rs> Gesichter
+            einander so ähnlich wie möglich zu machen. Vorgestern wurde <rs ref="#die_geschwitz">sie</rs> als geheilt entlassen.
+            Eben kam <rs ref="#die_geschwitz">sie</rs> nun wieder und sagte, <rs ref="#die_geschwitz">sie</rs> habe <rs ref="#die_geschwitz">ihre</rs> Uhr vergessen. Ich zog <rs ref="#schwarzem,-enganliegenden-----------Kleid-(geschwitz)"><rs ref="#die_geschwitz">ihre</rs> Kleider</rs> an,
+            <rs ref="#die_geschwitz">sie</rs> schlüpfte in meinen Gefängniskittel, und dann ging <rs ref="#sie-(lulu-als-geschwitz)">ich</rs> fort.
+              <stage>Vergnügt.</stage> Jetzt liegt <rs ref="#Ich-(geschwitz-als-lulu)">sie</rs> dort drüben als die Mörderin <rs ref="#mein-Vater-(alwas-vater-dr.-schön)">des Dr.
+            Schön</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Mit <rs ref="#mein-Bild">dem Bilde</rs> kannst <rs ref="#lulu-braut">du</rs> <rs ref="#es7">es</rs>, soweit <rs ref="#es7">es</rs> <rs ref="#ihrer-praktischen-Einrichtung-(äußere-erscheinung-körperliche-vorzüge-lulu)">die äußere Erscheinung</rs> betrifft, immer noch
+            aufnehmen.</p>
+          <pb n="339"/>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#vors-Gesicht-(lulu)">Im Gesicht</rs> bin ich etwas schmal, aber sonst habe ich nichts verloren. <rs ref="#einer-(ein-mensch)">Man</rs> wird nur
+            unglaublich nervös <rs ref="#im-Gefängnis">im Gefängnis</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#Das10"><rs ref="#lulu-braut">Du</rs> sahst schrecklich elend aus</rs>, als <rs ref="#lulu-braut">du</rs> hereinkamst.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#Das10">Das</rs> mußte ich, um <rs ref="#lulu-braut-/-alwa-+-2">uns</rs> <rs ref="#rodrigo">den Springfritzen</rs> vom Halse zu schaffen. – Und <rs ref="#alwa">du</rs>, was hast <rs ref="#alwa">du</rs> in
+            <rs ref="#seit-einem-vollen-Jahr-(zeitraum-in-dem-lulu-im-Gefängnis-war)">den anderthalb Jahren</rs> getan?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Ich hatte mit <rs ref="#meinem-›Erdgeist‹">einem Stück, <rs ref="#meinem-›Erdgeist‹">das</rs> ich über <rs ref="#lulu-braut">dich</rs> geschrieben</rs>, einen Achtungserfolg in <rs ref="#der-freien-literarischen-Gesellschaft">der
+            literarischen Gesellschaft</rs>.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Wer ist <rs ref="#dein-Schatz-(unklar,-alwas-schatz,-meint-vermutl-die-schauspielerin-die-im-erdgeist-lulu-spielt)"><rs ref="#alwa">dein</rs> Schatz</rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#dein-Schatz-(unklar,-alwas-schatz,-meint-vermutl-die-schauspielerin-die-im-erdgeist-lulu-spielt)">Eine Schauspielerin, <rs ref="#dein-Schatz-(unklar,-alwas-schatz,-meint-vermutl-die-schauspielerin-die-im-erdgeist-lulu-spielt)">der</rs> ich eine Wohnung in der Karlstraße gemietet habe</rs>.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#das12">Liebt <rs ref="#dein-Schatz-(unklar,-alwas-schatz,-meint-vermutl-die-schauspielerin-die-im-erdgeist-lulu-spielt)">sie</rs> <rs ref="#alwa">dich</rs></rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Wie soll ich <rs ref="#das12">das</rs> wissen! <rs ref="#das13">Ich habe <rs ref="#dein-Schatz-(unklar,-alwas-schatz,-meint-vermutl-die-schauspielerin-die-im-erdgeist-lulu-spielt)">die Frau</rs> seit sechs Wochen nicht gesehen</rs>.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Erträgst <rs ref="#alwa">du</rs> <rs ref="#das13">das</rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Das wirst <rs ref="#lulu-braut">du</rs> nie begreifen. Bei mir besteht die intimste Wechselwirkung zwischen <rs ref="#meiner-------------Sinnlichkeit-(alwa)">meiner
+            Sinnlichkeit</rs> und <rs ref="#meinen-------------Schöpfungen-(alwas-schriftstellerische-allg)">meinem geistigen Schaffen</rs>. So <rs ref="#zum-Beispiel">zum Beispiel</rs> bleibt mir <rs ref="#lulu-braut">dir</rs> gegenüber nur
+            die Wahl, <rs ref="#lulu-braut">dich</rs> künstlerisch zu gestalten oder <rs ref="#lulu-braut">dich</rs> zu lieben.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage><rs ref="#ihre-Stimme-(lulu)">im Märchenton</rs>.</stage>
+          <p>Mir träumte alle paar Nächte einmal, ich sei einem Lustmörder unter die Hände geraten.
+            Komm, gib mir <rs ref="#einen-Kuß-(lulu-und-alwa)">einen Kuß</rs>!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>In <rs ref="#deinen-Augen-(lulu)"><rs ref="#lulu-braut">deinen</rs> Augen</rs> schimmert es, wie der Wasserspiegel in <rs ref="#einem-tiefen-Brunnen,-in-den-man-------------einen-Stein-geworfen-hat">einem tiefen Brunnen, in <rs ref="#einem-tiefen-Brunnen,-in-den-man-------------einen-Stein-geworfen-hat">den</rs> <rs ref="#einer-(ein-mensch)">man</rs>
+            einen Stein geworfen hat</rs>.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Komm!</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA</speaker></rs>
+          <stage>küßt <rs ref="#lulu-braut">sie</rs>.</stage>
+          <p><rs ref="#lulu-braut">Deine</rs> Lippen sind allerdings etwas schmal geworden.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Komm! <stage><rs ref="#lulu-braut">Sie</rs> drängt <rs ref="#alwa">ihn</rs> in einen Sessel und setzt <rs ref="#lulu-braut">sich</rs> <rs ref="#alwa">ihm</rs> <rs ref="#seine-beiden-Knie-(alwa)">aufs Knie</rs>.</stage> Graut
+            <rs ref="#alwa">dir</rs> vor mir? – <rs ref="#die-Gelegenheit"><rs ref="#im-Hotel-Ochsenbutter">Im Hotel Ochsenbutter</rs> bekamen <rs ref="#uns-(wohl-die-frauen-im-ochsenbutter,-inkl.-lulu)">wir</rs> <rs ref="#jeden-Monat">alle vier Wochen</rs> <rs ref="#ein-lauwarmes-Bad">ein lauwarmes Bad</rs></rs>. Die
+            Aufseherinnen benutzten dann <rs ref="#die-Gelegenheit">die Gelegenheit</rs>, um <rs ref="#uns-(wohl-die-frauen-im-ochsenbutter,-inkl.-lulu)">uns</rs>, sobald <rs ref="#uns-(wohl-die-frauen-im-ochsenbutter,-inkl.-lulu)">wir</rs> <rs ref="#ein-lauwarmes-Bad">im Wasser</rs> waren, die
+            Taschen zu durchsuchen. <stage><rs ref="#lulu-braut">Sie</rs> küßt <rs ref="#alwa">ihn</rs> leidenschaftlich.</stage></p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Oh, oh!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#alwa">Du</rs> fürchtest, <rs ref="#alwa">du</rs> könntest, wenn ich fort bin, kein Gedicht mehr über mich machen?</p>
+          <pb n="340"/>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Im Gegenteil, ich werde einen Dithyrambus über <rs ref="#der-Schönheit-(ausse…-/-dem-Temperament-(cha…-cc"><rs ref="#lulu-braut">deine</rs> Herrlichkeit</rs> schreiben.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Ich ärgere mich nur über <rs ref="#das-scheußliche-Schuhwerk,-das-ich-trage-(lulu)">das scheußliche Schuhwerk, <rs ref="#das-scheußliche-Schuhwerk,-das-ich-trage-(lulu)">das</rs> ich trage</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Das beeinträchtigt <rs ref="#der-Schönheit-(ausse…-/-dem-Temperament-(cha…-cc"><rs ref="#lulu-braut">deine</rs> Reize</rs> nicht. Laß <rs ref="#lulu-braut-/-alwa">uns</rs> der Gunst des Augenblickes dankbar
+            sein.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Mir ist heute gar nicht danach zumut. – Erinnerst <rs ref="#alwa">du</rs> <rs ref="#alwa">dich</rs> <rs ref="#des-Kostümballes,-auf-dem-ich-------------als-Knappe-gekleidet-war">des Kostümballes, auf <rs ref="#des-Kostümballes,-auf-dem-ich-------------als-Knappe-gekleidet-war">dem</rs> ich
+            als Knappe gekleidet war</rs>? Wie mir damals <rs ref="#einer-Frau">die beschwipsten Frauen</rs> nachrannten! <rs ref="#die_geschwitz">Die
+            Geschwitz</rs> kroch mir um die Füße herum und bat mich, ich möchte <rs ref="#die_geschwitz">ihr</rs> mit meinen
+            Zeugschuhen ins Gesicht treten.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Komm, <rs ref="#lulu-braut">süßes Herz</rs>!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>in <rs ref="#ihre-Stimme-(lulu)">dem Tone, in <rs ref="#ihre-Stimme-(lulu)">dem</rs> <rs ref="#einer-(ein-mensch)">man</rs> ein unartiges Kind beruhigt</rs>.</stage>
+          <p>Ruhig; ich habe <rs ref="#mein-Vater-(alwas-vater-dr.-schön)"><rs ref="#alwa">deinen</rs> Vater</rs> erschossen.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Deswegen liebe ich <rs ref="#lulu-braut">dich</rs> nicht weniger. <rs ref="#einen-Kuß-(lulu-und-alwa)">Einen Kuß</rs>!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Beug den Kopf zurück.</p>
+          <stage><rs ref="#lulu-braut">Sie</rs> küßt <rs ref="#alwa">ihn</rs> mit Bedacht.</stage>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#lulu-braut">Du</rs> hältst <rs ref="#meiner-------------Sinnlichkeit-(alwa)">meine Seelenglut</rs> durch <rs ref="#der-Schönheit-(ausse…-/-dem-Temperament-(cha…-cc">die geschicktesten Künste</rs> zurück. Dabei atmet <rs ref="#lulu-braut">deine</rs>
+            Brust so keusch. Und trotzdem, wenn <rs ref="#deinen-Augen-(lulu)"><rs ref="#lulu-braut">deine</rs> beiden großen, dunklen Kinderaugen</rs> nicht
+            wären, müßte ich <rs ref="#lulu-braut">dich</rs> für <rs ref="#die-abgefeimteste-Dirne-(prädikativ-lulu)">die abgefeimteste Dirne</rs> halten, <rs ref="#die-abgefeimteste-Dirne-(prädikativ-lulu)">die</rs> je <rs ref="#ein-Mann">einen Mann</rs> ins
+            Verderben gestürzt hat.</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>aufgeräumt.</stage>
+          <p>Wollte <rs ref="#Gott-(evtl-phrase)">Gott</rs>, ich wäre <rs ref="#die-abgefeimteste-Dirne-(prädikativ-lulu)">das</rs>! Komm heute mit über <rs ref="#die-Grenze-(die-bald-überquert-wird,-von-deutschland-nach-frankreich)">die Grenze</rs>. Dann können <rs ref="#lulu-braut-/-alwa">wir</rs> <rs ref="#lulu-braut-/-alwa">uns</rs> sehen,
+            sooft <rs ref="#lulu-braut-/-alwa">wir</rs> wollen, und werden mehr Vergnügen als jetzt aneinander haben.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Durch <rs ref="#schwarzem,-enganliegenden-----------Kleid-(geschwitz)">dieses Kleid</rs> empfinde ich <rs ref="#ihrer-praktischen-Einrichtung-(äußere-erscheinung-körperliche-vorzüge-lulu)"><rs ref="#lulu-braut">deinen</rs> Wuchs</rs> wie eine Symphonie. <rs ref="#den-Knöcheln-(lulu)">Diese schmalen
+            Knöchel, dieses Cantabile</rs>; <rs ref="#die-Waden-meiner-Braut-(evtl-lulus-beine)">dieses entzückende Anschwellen</rs>; und diese Knie, dieses
+            Capriccio; und <rs ref="#das-gewaltige-Andante-der-Wollust-(unklar-evtl-beine-oberschenkel-lulu)">das gewaltige Andante der Wollust</rs>. – Wie friedlich <rs ref="#das-gewaltige-Andante-der-Wollust-(unklar-evtl-beine-oberschenkel-lulu)">sich</rs> <rs ref="#das-gewaltige-Andante-der-Wollust-(unklar-evtl-beine-oberschenkel-lulu)">die beiden
+            schlanken Rivalen</rs> in dem Bewußtsein aneinanderschmiegen, daß keiner <rs ref="#das-gewaltige-Andante-der-Wollust-(unklar-evtl-beine-oberschenkel-lulu)">dem andern</rs> an
+            Schönheit gleichkommt – bis <rs ref="#lulu-braut">die launische Gebieterin</rs> erwacht und <rs ref="#das-gewaltige-Andante-der-Wollust-(unklar-evtl-beine-oberschenkel-lulu)">die beiden Nebenbuhler</rs>
+            wie zwei feindliche Pole auseinanderweichen. Ich werde <rs ref="#lulu-braut">dein</rs> Lob singen, daß <rs ref="#lulu-braut">dir</rs> die
+            Sinne vergehn!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU</speaker></rs>
+          <stage>lustig.</stage>
+          <p><rs ref="#es8">Derweil vergrabe ich meine Hände in <rs ref="#alwa">deinem</rs> Haar</rs>. <stage><rs ref="#lulu-braut">Sie</rs> tut <rs ref="#es8">es</rs>.</stage> Aber hier
+            stört <rs ref="#einer-(ein-mensch)">man</rs> <rs ref="#lulu-braut-/-alwa">uns</rs>.</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#lulu-braut">Du</rs> hast mich um <rs ref="#meine-ganze-geistige-Spannkraft-(alwa)">meinen Verstand</rs> gebracht!</p>
+          <pb n="341"/>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p>Kommst <rs ref="#alwa">du</rs> heute nicht mit?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p><rs ref="#schigolch">Der Alte</rs> fährt doch mit <rs ref="#lulu-braut">dir</rs>!</p>
+        </sp>
+        <sp who="#lulu">
+          <rs ref="#lulu-braut"><speaker>LULU.</speaker></rs>
+          <p><rs ref="#schigolch">Der</rs> kommt nicht mehr zum Vorschein. – Ist das noch <rs ref="#der-Diwan,-auf-dem-sich-dein-Vater-------------verblutet-hat-(prädikativ-wohl-ein-teppich-im-saal)">der Diwan, auf <rs ref="#der-Diwan,-auf-dem-sich-dein-Vater-------------verblutet-hat-(prädikativ-wohl-ein-teppich-im-saal)">dem</rs> sich <rs ref="#mein-Vater-(alwas-vater-dr.-schön)"><rs ref="#alwa">dein</rs> Vater</rs>
+            verblutet hat</rs>?</p>
+        </sp>
+        <sp who="#alwa">
+          <rs ref="#alwa"><speaker>ALWA.</speaker></rs>
+          <p>Schweig – Schweig ...</p>
+          <pb n="342"/>
+        </sp>
+    </body>
+  </text>
+</TEI>
+</#root>

@@ -1,0 +1,295 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Vierter Auftritt</head>
+          <stage><rs ref="#nathan">Nathan</rs> und <rs ref="#klosterbruder">der Klosterbruder</rs>.</stage>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN</speaker></rs>
+            <stage>im Näherkommen.</stage>
+            <l>Habt nochmals, <rs ref="#klosterbruder">guter Bruder</rs>, <rs ref="#tausend-Dank-(nathan-ggü-klosterbruder)">vielen Dank</rs>!</l>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Und <rs ref="#nathan">Ihr</rs> desgleichen!</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Ich? von <rs ref="#klosterbruder">Euch</rs>? wofür?</l>
+              <l>Für <rs ref="#meinen-Eigensinn,-Euch-aufzudringen,---------------Was-Ihr-nicht-braucht-(nathans)">meinen Eigensinn, <rs ref="#klosterbruder">Euch</rs> aufzudringen,</l>
+              <l><rs ref="#Gold-(nathans-als-bezahlung-für-das-gebetsbuch)">Was <rs ref="#klosterbruder">Ihr</rs> nicht braucht</rs></rs>? – Ja, wenn <rs ref="#meinen-Eigensinn,-Euch-aufzudringen,---------------Was-Ihr-nicht-braucht-(nathans)">ihm</rs> Eurer nur</l>
+              <l>Auch nachgegeben hätt'; <rs ref="#klosterbruder">Ihr</rs> mit Gewalt</l>
+              <l>Nicht wolltet reicher sein, als ich.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <rs ref="#ein-Büchelchen-(gebetsbuch-von-wolf-assad-ehemaliger-dienstherr-des-klosterbruders)"><l>Das Buch</l></rs>
+              <l>Gehört ja ohnedem nicht mir; gehört</l>
+              <l>Ja ohnedem <rs ref="#recha">der Tochter</rs>; ist ja so</l>
+              <l><rs ref="#recha">Der Tochter</rs> ganzes väterliches Erbe. –</l>
+              <l>Je nu, <rs ref="#recha">sie</rs> hat ja <rs ref="#nathan">Euch</rs>. – <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Gott</rs> gebe nur,</l>
+              <l>Daß <rs ref="#Gott-(christlich,-dajas,-des-tempelherren,-des-klosterbruders,-des-patriarchen-gott)">Ihr</rs> <rs ref="#es35">es</rs> nie <rs ref="#das44">bereuen</rs> dürft, <rs ref="#es35">so viel</l>
+              <l>Für <rs ref="#recha">sie</rs> getan zu haben</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Kann ich <rs ref="#das44">das</rs>?</l>
+              <l><rs ref="#das44">Das</rs> kann ich nie. Seid unbesorgt!</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Nu, nu!</l>
+              <l><rs ref="#einem-Patriarchen">Die Patriarchen</rs> und <rs ref="#ein-eigentlicher-Tempelherr-(angehöriger-eines-christl-ritterordens)">die Tempelherren</rs> ...</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Vermögen mir <rs ref="#Folgen-(konsequenzen-der-tatsache-dass-nathan-recha-als-jüdin-aufzieht-obwohl-sie-christin-ist)">des Bösen</rs> nie so viel</l>
+              <l>Zu tun, daß irgend was mich reuen könnte:</l>
+              <l>Geschweige, <rs ref="#es35">das</rs>! – Und seid <rs ref="#klosterbruder">Ihr</rs> denn so ganz</l>
+              <l>Versichert, daß ein Tempelherr <rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">es</rs> ist,</l>
+              <l><rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">Der</rs> <rs ref="#patriarch"><rs ref="#klosterbruder">Euern</rs> Patriarchen</rs> hetzt?</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l><rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">Es</rs> kann</l>
+              <l>Beinah kein andrer sein. <rs ref="#tempelherr-bbb">Ein Tempelherr</rs></l>
+              <l>Sprach kurz vorher mit <rs ref="#patriarch">ihm</rs>; und <rs ref="#was-ich-hörte-(das-gespräch-zwischen-dem-patriarch-und-nathan,-das-der-klosterbruder-hörte)">was ich hörte</rs>,</l>
+              <l><rs ref="#was-ich-hörte-(das-gespräch-zwischen-dem-patriarch-und-nathan,-das-der-klosterbruder-hörte)">Das</rs> klang darnach.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Es ist doch aber nur</l>
+              <l><rs ref="#tempelherr-bbb">Ein einziger</rs> itzt in <rs ref="#Jerusalem">Jerusalem</rs>.</l>
+              <l>Und <rs ref="#tempelherr-bbb">diesen</rs> kenn' ich. <rs ref="#tempelherr-bbb">Dieser</rs> ist mein Freund.</l>
+              <l><rs ref="#tempelherr-bbb">Ein junger, edler, offner Mann</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ganz recht;</l>
+              <l><pb n="326"/> <rs ref="#tempelherr-bbb">Der nämliche</rs>! – Doch <rs ref="#das45">was <rs ref="#wir-Menschen">man</rs> ist, und was</l>
+              <l><rs ref="#wir-Menschen">Man</rs> sein muß in <rs ref="#dieser-Welt-(irdische)">der Welt</rs></rs>, <rs ref="#das45">das</rs> paßt ja wohl</l>
+              <l>Nicht immer.</l>
+            </lg>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Leider nicht. – So tue, <rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">wers</l>
+              <l>Auch immer ist</rs>, <rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">sein</rs> Schlimmstes oder Bestes!</l>
+              <l>Mit <rs ref="#ein-Büchelchen-(gebetsbuch-von-wolf-assad-ehemaliger-dienstherr-des-klosterbruders)"><rs ref="#klosterbruder">Euerm</rs> Buche</rs>, Bruder, trotz' ich <rs ref="#es-(derjediger-der-nathan-an-den-patriarchen-verraten-hat)">allen</rs>;</l>
+              <l>Und gehe <rs ref="#graden-Wegs-(von-nathans-haus-zu-saladin)">graden Wegs</rs> damit <rs ref="#saladin">zum Sultan</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <l>Viel Glücks! Ich will <rs ref="#nathan">Euch</rs> denn nur hier verlassen.</l>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Und habt <rs ref="#recha">sie</rs> nicht einmal gesehn? – Kommt ja</l>
+              <l>Doch bald, doch fleißig wieder. – Wenn nur heut</l>
+              <l><rs ref="#patriarch">Der Patriarch</rs> noch nichts erfährt! – Doch was?</l>
+              <l>Sagt <rs ref="#patriarch">ihm</rs> auch heute, was <rs ref="#klosterbruder">Ihr</rs> wollt.</l>
+            </lg>
+          </sp>
+          <sp who="#klosterbruder">
+            <rs ref="#klosterbruder"><speaker>KLOSTERBRUDER.</speaker></rs>
+            <lg>
+              <l>Ich nicht.</l>
+              <l>Lebt wohl!</l>
+            </lg>
+            <stage>Geht ab.</stage>
+          </sp>
+          <sp who="#nathan">
+            <rs ref="#nathan"><speaker>NATHAN.</speaker></rs>
+            <lg>
+              <l>Vergeßt <rs ref="#nathan-/-recha">uns</rs> ja nicht, <rs ref="#klosterbruder">Bruder</rs>! – <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>!</l>
+              <l>Daß ich nicht gleich hier <rs ref="#unter-freiem-Himmel-(irdischer)">unter freiem Himmel</rs></l>
+              <l>Auf <rs ref="#die-Knie'-(nathans)">meine Kniee</rs> sinken kann! Wie <rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz">sich</rs></l>
+              <l><rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz">Der Knoten, <rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz">der</rs> so oft mir bange machte</rs>,</l>
+              <l>Nun von <rs ref="#diesem-Wahne-(das-verhalten-nathans,-als-wäre-die-christliche-recha-eine-jüdin)-zzz">sich</rs> selber löset! – <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">Gott</rs>! wie leicht</l>
+              <l>Mir wird, daß ich nun weiter auf <rs ref="#dieser-Welt-(irdische)">der Welt</rs></l>
+              <l>Nichts zu verbergen habe! daß ich vor</l>
+              <l><rs ref="#wir-Menschen">Den Menschen</rs> nun so frei kann wandeln, als</l>
+              <l>Vor <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">dir, <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">der</rs> <rs ref="#Gott-(jüdisch,-nathans,-rechas-gott,-wenn-recha-von-gott-spricht-ist-das-ambik-markiert-weil-sie-als-christin-geboren-und-von-daja-beeinflusst-ist-aber-von-nathan-jüdisch-bzw-ohne-religion-erzogen-wird)">du</rs> allein <rs ref="#wir-Menschen">den Menschen</rs> nicht</l>
+              <l>Nach <rs ref="#seiner-Art-(des-handelns,-gut-oder-böse)"><rs ref="#wir-Menschen">seinen</rs> Taten</rs> brauchst zu richten, <rs ref="#seiner-Art-(des-handelns,-gut-oder-böse)">die</rs></l>
+              <l>So selten <rs ref="#wir-Menschen">seine</rs> Taten sind, o Gott</rs>! –</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>

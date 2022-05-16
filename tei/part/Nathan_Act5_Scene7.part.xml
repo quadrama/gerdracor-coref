@@ -1,0 +1,337 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nathan der Weise</title>
+        <title type="sub">Ein dramatisches Gedicht in fünf Aufzügen</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/">ger000369</idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q286611</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rkpt.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
+              Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
+              Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1779"/>
+            <date type="premiere" when="1783"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="daja" sex="FEMALE">
+            <persName>Daja</persName>
+          </person>
+          <person xml:id="nathan" sex="MALE">
+            <persName>Nathan</persName>
+          </person>
+          <person xml:id="recha" sex="FEMALE">
+            <persName>Recha</persName>
+          </person>
+          <person xml:id="derwisch" sex="MALE">
+            <persName>Derwisch</persName>
+          </person>
+          <person xml:id="tempelherr" sex="MALE">
+            <persName>Tempelherr</persName>
+          </person>
+          <person xml:id="klosterbruder" sex="MALE">
+            <persName>Klosterbruder</persName>
+          </person>
+          <person xml:id="sittah" sex="FEMALE">
+            <persName>Sittah</persName>
+          </person>
+          <person xml:id="saladin" sex="MALE">
+            <persName>Saladin</persName>
+          </person>
+          <person xml:id="patriarch" sex="MALE">
+            <persName>Patriarch</persName>
+          </person>
+          <person xml:id="ein_sklave" sex="MALE">
+            <persName>Ein Sklave</persName>
+          </person>
+          <person xml:id="ein_mameluck" sex="MALE">
+            <persName>Ein Mameluck</persName>
+          </person>
+          <person xml:id="zweiter_mameluck" sex="MALE">
+            <persName>Zweiter Mameluck</persName>
+          </person>
+          <person xml:id="dritter_mameluck" sex="MALE">
+            <persName>Dritter Mameluck</persName>
+          </person>
+          <person xml:id="mansor" sex="MALE">
+            <persName>Mansor</persName>
+          </person>
+          <listRelation type="personal">
+            <relation name="siblings" mutual="#sittah #saladin"/>
+            <relation name="parent_of" active="#nathan" passive="#recha"/>
+            <relation name="associated_with" active="#daja" passive="#recha"/>
+            <relation name="associated_with" active="#ein_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#zweiter_mameluck" passive="#saladin"/>
+            <relation name="associated_with" active="#dritter_mameluck" passive="#saladin"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2017-01-06">(dlina) file conversion from source</change>
+        <change when="2017-08-04">(ff) structural cleanup</change>
+        <change when="2017-10-16">(ff) add missing speaker tags (thanks to Anastasia Pupynina!);
+          formalities</change>
+        <change when="2017-12-11">(ff) add gender info</change>
+        <change when="2018-06-18">(ff) dissolve 'hi'</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Nathan der Weise</head>
+        <head>Ein dramatisches Gedicht in fünf Aufzügen</head>
+      </div>
+      <div type="Motto">
+        <epigraph>
+          <p>[Motto]</p>
+          <cit>
+            <quote>
+              <p>Introite, nam et heic Dii sunt!</p>
+            </quote>
+            <bibl>APUD GELLIUM</bibl>
+          </cit>
+          <pb n="206"/>
+        </epigraph>
+      </div>
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Sultan Saladin.</castItem>
+          <castItem>Sittah, dessen Schwester.</castItem>
+          <castItem>Nathan, ein reicher Jude in Jerusalem.</castItem>
+          <castItem>Recha, dessen angenommene Tochter.</castItem>
+          <castItem>Daja, eine Christin, aber in dem Hause des Juden, als Gesellschafterin der
+            Recha.</castItem>
+          <castItem>Ein junger Tempelherr.</castItem>
+          <castItem>Ein Derwisch.</castItem>
+          <castItem>Der Patriarch von Jerusalem.</castItem>
+          <castItem>Ein Klosterbruder.</castItem>
+          <castItem>Ein Emir nebst verschiednen Mamelucken des Saladin.</castItem>
+        </castList>
+      </div>
+      <set>
+        <p>Die Szene ist in <rs ref="#Jerusalem">Jerusalem</rs>.</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>Fünfter Aufzug</head>
+        <div type="scene">
+          <head>Siebender Auftritt</head>
+          <stage><rs ref="#saladin">Saladin</rs> und die Vorigen.</stage>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Was gibts hier, <rs ref="#sittah-xx">Sittah</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#recha">Sie</rs> ist von <rs ref="#recha">sich</rs>! <rs ref="#Der-Schöpfer-(Gott-muslimisch,-saladins,-sittahs,-derwischs,-bei-nennungen-des-derwischs-wurde-ambik-markiert-weil-nicht-ganz-klar-ist,-ob-er-als-parse-wirklich-den-gleichen-gott-meint)">Gott</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Wer <rs ref="#ists-(prädikativ-recha)">ists</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#saladin">Du</rs> weißt ja ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#ists-(prädikativ-recha)"><rs ref="#nathan"><rs ref="#saladin-/-sittah">Unsers</rs> Nathans</rs> Tochter</rs>?</l>
+              <l>Was fehlt <rs ref="#recha">ihr</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Komm doch zu <rs ref="#recha">dir, Kind</rs>! – <rs ref="#saladin">Der Sultan</rs> ...</l>
+            <pb n="338"/>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA</speaker></rs>
+            <stage><rs ref="#recha">die</rs> <rs ref="#recha">sich</rs> auf den Knieen zu <rs ref="#Saladins-Füßen"><rs ref="#saladin">Saladins</rs> Füßen</rs> schleppt, <rs ref="#ihr-Haupt-(rechas-kopf)">den Kopf</rs> <rs ref="#dem-Boden-(bühnenboden)">zur Erde</rs>
+              gesenkt.</stage>
+            <lg>
+              <l>Ich steh nicht auf! nicht eher auf! – mag eher</l>
+              <l><rs ref="#saladin">Des Sultans</rs> Antlitz nicht erblicken! – eher</l>
+              <l>Den Abglanz ewiger Gerechtigkeit</l>
+              <l>Und <rs ref="#Güt">Güte</rs> nicht in <rs ref="#sein-Aug'-(saladins-phys)"><rs ref="#saladin">seinen</rs> Augen</rs>, nicht</l>
+              <l>Auf <rs ref="#saladin">seiner</rs> Stirn bewundern ...</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l>Steh ... steh auf!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Eh <rs ref="#saladin">er</rs> mir nicht verspricht ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Komm! ich verspreche ...</l>
+              <l>Sei was es will!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Nicht mehr, nicht weniger,</l>
+              <l>Als <rs ref="#nathan">meinen Vater</rs> mir zu lassen; und</l>
+              <l>Mich <rs ref="#nathan">ihm</rs>! – Noch weiß ich nicht, <rs ref="#Wills2">wer sonst mein Vater</l>
+              <l>Zu sein verlangt; – verlangen kann</rs>. <rs ref="#Wills2">Wills</rs> auch</l>
+              <l>Nicht wissen. Aber macht denn <rs ref="#Blut">nur das Blut</rs></l>
+              <l><rs ref="#den-Vater-(prädikativ-der-durch-das-blut-oder-nicht-durch-das-blut-gemachte-vater)">Den Vater</rs>? <rs ref="#Blut">nur das Blut</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN</speaker></rs>
+            <stage><rs ref="#saladin">der</rs> <rs ref="#recha">sie</rs> aufhebt.</stage>
+            <lg>
+              <l>Ich merke wohl! –</l>
+              <l>Wer war so grausam denn, <rs ref="#recha">dir</rs> selbst – <rs ref="#recha">dir</rs> selbst</l>
+              <l>Dergleichen in <rs ref="#den-Samen-der-Vernunft,---------------Den-er-so-rein-in-meine-Seele-streute-(rechas-logisches-denken-vernunft-weißheit-geist-als-geistiges-erbe-nathans)">den Kopf</rs> zu setzen? Ist</l>
+              <l><rs ref="#was-Ihr-sagt-(die-information-dass-nathan-nicht-rechas-leiblicher-vater-ist,-sondern-christen)-zzz">Es</rs> denn schon völlig ausgemacht? erwiesen?</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <l>Muß wohl! Denn <rs ref="#daja">Daja</rs> will von <rs ref="#meiner-Amm'-(rechas-bevor-sie-zu-nathan-kam)">meiner Amm'</rs></l>
+              <l><rs ref="#was-Ihr-sagt-(die-information-dass-nathan-nicht-rechas-leiblicher-vater-ist,-sondern-christen)-zzz">Es</rs> haben.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <l><rs ref="#meiner-Amm'-(rechas-bevor-sie-zu-nathan-kam)"><rs ref="#recha">Deiner</rs> Amme</rs>!</l>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <lg>
+              <rs ref="#meiner-Amm'-(rechas-bevor-sie-zu-nathan-kam)"><l>Die <rs ref="#was-Ihr-sagt-(die-information-dass-nathan-nicht-rechas-leiblicher-vater-ist,-sondern-christen)-zzz">es</rs> sterbend</l>
+              <l><rs ref="#daja">Ihr</rs> zu vertrauen <rs ref="#meiner-Amm'-(rechas-bevor-sie-zu-nathan-kam)">sich</rs> verbunden fühlte</rs>.</l>
+            </lg>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Gar sterbend! – Nicht auch faselnd schon? – Und <rs ref="#was-Ihr-sagt-(die-information-dass-nathan-nicht-rechas-leiblicher-vater-ist,-sondern-christen)-zzz">wärs</rs></l>
+              <l>Auch wahr! – Ja wohl: <rs ref="#Blut">das Blut</rs>, <rs ref="#Blut">das Blut</rs> allein</l>
+              <l>Macht lange noch <rs ref="#den-Vater-(prädikativ-der-durch-das-blut-oder-nicht-durch-das-blut-gemachte-vater)">den Vater</rs> nicht! macht kaum</l>
+              <l>Den Vater <rs ref="#eines-wilden-Tieres">eines Tieres</rs>! gibt <rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">zum höchsten</rs></l>
+              <l>Das erste Recht, <rs ref="#Den-bessern-Gott-(gott-als-konzept-unabhängig-von-der-religion)">sich</rs> diesen Namen zu</l>
+              <l>Erwerben! – Laß <rs ref="#recha">dir</rs> doch nicht bange sein! –</l>
+              <l>Und weißt <rs ref="#recha">du</rs> was? Sobald <rs ref="#der-Väter-zwei"><rs ref="#Vater">der Väter</rs> zwei</rs></l>
+              <l><rs ref="#der-Väter-zwei">Sich</rs> um <rs ref="#recha">dich</rs> streiten: – laß <rs ref="#der-Väter-zwei">sie</rs> beide; nimm</l>
+              <l><rs ref="#saladin">Den dritten</rs>! – Nimm dann mich zu <rs ref="#deinem-Vater-(prädikativ-saladin-als-vater-rechas)"><rs ref="#saladin">deinem</rs> Vater</rs>!</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>O <rs ref="#tu's">tu's</rs>! o <rs ref="#tu's">tu's</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <rs ref="#tu's"><l>Ich will <rs ref="#deinem-Vater-(prädikativ-saladin-als-vater-rechas)">ein guter Vater,</l>
+              <l>Recht guter Vater</rs> sein!</rs> – Doch halt! mir fällt</l>
+              <l><pb n="339"/> Noch viel was Bessers bei. – Was brauchst <rs ref="#recha">du</rs> denn</l>
+              <l><rs ref="#Vater">Der Väter</rs> überhaupt? Wenn <rs ref="#Vater">sie</rs> nun sterben?</l>
+              <l><rs ref="#Zeiten-(von-zeit-zu-zeit,-manchmal-gelegentlich)">Bei Zeiten</rs> <rs ref="#recha">sich</rs> nach <rs ref="#einem-(ein-mann-in-rechas-alter)">einem</rs> umgesehn,</l>
+              <l><rs ref="#einem-(ein-mann-in-rechas-alter)">Der</rs> mit <rs ref="#recha">uns</rs> um die Wette leben will!</l>
+              <l>Kennst <rs ref="#recha">du</rs> noch keinen? ...</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l>Mach <rs ref="#recha"><rs ref="#Das49">sie</rs></rs> nicht erröten!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#Das49">Das</rs> hab' ich allerdings mir vorgesetzt.</l>
+              <l>Erröten macht die Häßlichen so schön:</l>
+              <l>Und sollte Schöne nicht noch schöner machen? –</l>
+              <l>Ich habe <rs ref="#nathan"><rs ref="#recha">deinen</rs> Vater Nathan</rs>; und</l>
+              <l><rs ref="#einem-(ein-mann-in-rechas-alter)">Noch einen – einen noch</rs> hierher bestellt.</l>
+              <l>Errätst <rs ref="#recha">du</rs> <rs ref="#einem-(ein-mann-in-rechas-alter)">ihn</rs>? – Hierher! <rs ref="#recha">Du</rs> wirst mir doch</l>
+              <l>Erlauben, <rs ref="#sittah-xx">Sittah</rs>?</l>
+            </lg>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH.</speaker></rs>
+            <l><rs ref="#saladin">Bruder</rs>!</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l>Daß <rs ref="#recha">du</rs> ja</l>
+              <l>Vor <rs ref="#einem-(ein-mann-in-rechas-alter)">ihm</rs> recht sehr errötest, liebes Mädchen!</l>
+            </lg>
+          </sp>
+          <sp who="#recha">
+            <rs ref="#recha"><speaker>RECHA.</speaker></rs>
+            <l>Vor wem? erröten? ...</l>
+          </sp>
+          <sp who="#saladin">
+            <rs ref="#saladin"><speaker>SALADIN.</speaker></rs>
+            <lg>
+              <l><rs ref="#recha">Kleine Heuchlerin</rs>!</l>
+              <l>Nun so erblasse lieber! – Wie <rs ref="#recha">du</rs> willst</l>
+              <l>Und kannst! –</l>
+            </lg>
+            <stage><rs ref="#Eine-Sklavin">Eine Sklavin</rs> tritt herein, und nahet <rs ref="#Eine-Sklavin">sich</rs> <rs ref="#sittah-xx">Sittah</rs>.</stage>
+            <l><rs ref="#tempelherr-bbb-/-nathan">Sie</rs> sind doch etwa nicht <rs ref="#es37">schon da</rs>?</l>
+          </sp>
+          <sp who="#sittah">
+            <rs ref="#sittah-xx"><speaker>SITTAH</speaker></rs>
+            <stage><rs ref="#Eine-Sklavin">zur Sklavin</rs>.</stage>
+            <l>Gut! laß <rs ref="#tempelherr-bbb-/-nathan">sie</rs> nur herein. – <rs ref="#tempelherr-bbb-/-nathan">Sie</rs> sind <rs ref="#es37">es</rs>, <rs ref="#saladin">Bruder</rs>!</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+</#root>
