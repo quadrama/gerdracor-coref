@@ -1,3 +1,5 @@
+all: run-pipeline
+
 run-pipeline: create-tei.sh create-conll.sh split_tei.py
 	./create-tei.sh
 	./create-conll.sh
@@ -11,3 +13,5 @@ create-conll: create-conll.sh
 
 split-tei: split_tei.py
 	python3 split_tei.py tei/ tei/part/ --addScenes
+
+.PHONY: all
