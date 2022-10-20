@@ -1,0 +1,858 @@
+<#root><?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../schema/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Emilia Galotti</title>
+        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dlina">DLINA</publisher>
+        <idno type="URL">https://dlina.github.io</idno>
+        <idno type="DLINA-ID">88</idno>
+        <availability>
+          <licence>
+            <ab>CC-BY-4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by/4.0/legalcode">Lizenzvertrag</ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name>TextGrid Repository</name>
+          <idno type="URL">http://www.textgridrep.org/textgrid:rksp.0</idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
+            <date type="print" when="1772"/>
+            <date type="premiere" when="1772"/>
+            <date type="written"/>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="der_prinz" sex="MALE">
+            <persName>DER PRINZ</persName>
+          </person>
+          <person xml:id="der_kammerdiener" sex="MALE">
+            <persName>DER KAMMERDIENER</persName>
+          </person>
+          <person xml:id="conti" sex="MALE">
+            <persName>CONTI</persName>
+          </person>
+          <person xml:id="marinelli" sex="MALE">
+            <persName>MARINELLI</persName>
+          </person>
+          <person xml:id="camillo_rota" sex="MALE">
+            <persName>CAMILLO ROTA</persName>
+          </person>
+          <person xml:id="pirro" sex="MALE">
+            <persName>PIRRO</persName>
+          </person>
+          <person xml:id="angelo" sex="MALE">
+            <persName>ANGELO</persName>
+          </person>
+          <person xml:id="claudia_galotti" sex="FEMALE">
+            <persName>CLAUDIA GALOTTI</persName>
+            <persName xml:id="claudia">CLAUDIA</persName>
+          </person>
+          <person xml:id="emilia" sex="FEMALE">
+            <persName>EMILIA</persName>
+          </person>
+          <person xml:id="appiani" sex="MALE">
+            <persName>APPIANI</persName>
+          </person>
+          <person xml:id="battista" sex="MALE">
+            <persName>BATTISTA</persName>
+          </person>
+          <person xml:id="orsina" sex="FEMALE">
+            <persName>ORSINA</persName>
+          </person>
+          <person xml:id="odoardo_galotti" sex="MALE">
+            <persName>ODOARDO GALOTTI</persName>
+            <persName xml:id="odoardo">ODOARDO</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Trauerspiel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change who="#dlina" when="2017-01-06T17:46:09.786+01:00">file conversion from source</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head>Gotthold Ephraim Lessing</head>
+        <head>Emilia Galotti</head>
+        <head>Ein Trauerspiel in fünf Aufzügen</head>
+        <pb n="128"/>
+      </div>
+    </front>
+    <body>
+      <div>
+        <div>
+          <desc>
+            <title>Personen</title>
+          </desc>
+        </div>
+        <div type="text">
+          <div type="Dramatis_Personae">
+            <castList>
+              <head>Personen.</head>
+              <castGroup>
+                <castItem>Emilia Galotti.</castItem>
+                <castItem>Odoardo,</castItem>
+                <castItem>Claudia Galotti, Eltern der Emilia.</castItem>
+                <castItem>Hettore Gonzaga, Prinz von Guastalla.</castItem>
+                <castItem>Marinelli, Kammerherr des Prinzen.</castItem>
+                <castItem>Camillo Rota, einer von des Prinzen Räten.</castItem>
+                <castItem>Conti, Maler.</castItem>
+                <castItem>Graf Appiani.</castItem>
+                <castItem>Gräfin Orsina.</castItem>
+                <castItem>Angelo, und einige Bediente.</castItem>
+                <pb n="128"/>
+              </castGroup>
+            </castList>
+          </div>
+        </div>
+      </div>
+      <div type="act">
+        <div>
+          <desc>
+            <title>1. Akt</title>
+          </desc>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>1. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Erster Auftritt</head>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>an einem Arbeitstische, <rs ref="#Briefschaften-und-Papiere">voller Briefschaften und Papiere</rs>, <rs ref="#Briefschaften-und-Papiere">deren einige <rs ref="#der_prinz">er</rs> durchläuft</rs>.</hi>
+                </stage>
+                <p> <rs ref="#Briefschaften-und-Papiere">Klagen, nichts als Klagen</rs>! <rs ref="#Briefschaften-und-Papiere">Bittschriften, nichts als Bittschriften</rs>! – <rs ref="#Briefschaften-und-Papiere">Die traurigen Geschäfte</rs>; und man beneidet <rs ref="#uns">uns</rs> noch! – Das glaub' ich; wenn <rs ref="#uns">wir</rs> allen helfen könnten: dann wären <rs ref="#uns">wir</rs> zu beneiden. – <rs ref="#Emilia">Emilia</rs>? <hi>Indem <rs ref="#der_prinz">er</rs> noch <rs ref="#Briefschaften-und-Papiere">eine von den Bittschriften</rs> aufschlägt, und nach <rs ref="#Emilia">dem unterschriebnen Namen</rs> sieht.</hi> <rs ref="#Emilia">Eine Emilia</rs>? – Aber <rs ref="#Emilia-Bruneschi">eine Emilia Bruneschi</rs> – nicht <rs ref="#Emilia-Galotti">Galotti</rs>. Nicht <rs ref="#Emilia-Galotti">Emilia Galotti</rs>! – Was will <rs ref="#Emilia-Bruneschi">sie</rs>, <rs ref="#Emilia-Bruneschi">diese Emilia Bruneschi</rs>? <hi><rs ref="#der_prinz">Er</rs> lieset.</hi> Viel gefodert; sehr viel. – Doch <rs ref="#Emilia-Bruneschi">sie</rs> heißt <rs ref="#Emilia">Emilia</rs>. Gewährt! <hi><rs ref="#der_prinz">Er</rs> unterschreibt und klingelt; worauf <rs ref="#der_kammerdiener">ein Kammerdiener</rs> hereintritt.</hi> Es ist wohl noch keiner von den Räten in dem Vorzimmer?</p>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER.</speaker></rs>
+                <l> Nein.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Ich habe zu früh Tag gemacht. – Der Morgen ist so schön. Ich will ausfahren. <rs ref="#marinelli">Marchese Marinelli</rs> soll mich begleiten. Laßt <rs ref="#marinelli">ihn</rs> rufen. <hi><rs ref="#der_kammerdiener">Der Kammerdiener</rs> geht ab.</hi> – Ich kann doch nicht mehr arbeiten. – Ich war so ruhig, bild' ich mir ein, so ruhig – Auf einmal muß <rs ref="#Emilia-Bruneschi">eine arme Bruneschi</rs>, <rs ref="#Emilia">Emilia</rs> heißen; – weg ist meine Ruhe, und alles! –</p>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER</speaker></rs>
+                <stage>
+                  <hi><rs ref="#der_kammerdiener">welcher wieder herein tritt</rs>.</hi>
+                </stage>
+                <l> Nach <rs ref="#marinelli">dem Marchese</rs> ist geschickt. Und hier, <rs ref="#ein-Brief">ein Brief</rs> von <rs ref="#orsina">der Gräfin Orsina</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#orsina">Der Orsina</rs>? Legt <rs ref="#ein-Brief">ihn</rs> hin.</l>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER.</speaker></rs>
+                <l> <rs ref="#Ihr-Läufer"><rs ref="#orsina">Ihr</rs> Läufer</rs> wartet.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Ich will <rs ref="#die-Antwort">die Antwort</rs> senden; wenn es <rs ref="#die-Antwort">einer</rs> bedarf. – Wo ist <rs ref="#orsina">sie</rs>? In der Stadt? oder auf <rs ref="#orsina">ihrer</rs> Villa?</l>
+                <pb n="129"/>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER.</speaker></rs>
+                <l> <rs ref="#orsina">Sie</rs> ist gestern in die Stadt gekommen.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Desto schlimmer – besser; wollt' ich sagen. So braucht <rs ref="#Ihr-Läufer">der Läufer</rs> um so weniger zu warten. <hi><rs ref="#der_kammerdiener">Der Kammerdiener</rs> geht ab.</hi> <rs ref="#orsina">Meine teure Gräfin!</rs> <hi>Bitter, indem <rs ref="#der_prinz">er</rs> <rs ref="#ein-Brief">den Brief</rs> in die Hand nimmt.</hi> So gut, als gelesen! <hi>Und <rs ref="#ein-Brief">ihn</rs> wieder wegwirft.</hi> – Nun ja; ich habe <rs ref="#orsina">sie</rs> zu lieben geglaubt! Was glaubt man nicht alles? Kann sein, ich habe <rs ref="#orsina">sie</rs> auch wirklich geliebt. Aber – ich habe!</p>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER</speaker></rs>
+                <stage>
+                  <hi><rs ref="#der_kammerdiener">der nochmals herein tritt</rs>.</hi>
+                </stage>
+                <l> <rs ref="#Der-Maler-Conti-will-die-Gnade-haben-–-–"><rs ref="#conti">Der Maler Conti</rs> will die Gnade haben – –</rs></l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#conti">Conti</rs>? Recht wohl; laßt <rs ref="#conti">ihn</rs> herein kommen. – <rs ref="#Der-Maler-Conti-will-die-Gnade-haben-–-–">Das</rs> wird mir andere Gedanken in den Kopf bringen. – <hi>Steht auf.</hi> </p>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>2. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Zweiter Auftritt</head>
+              <stage>
+                <hi><rs ref="#conti">Conti</rs>. <rs ref="#der_prinz">Der Prinz</rs>.</hi>
+              </stage>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Guten Morgen, <rs ref="#conti">Conti</rs>. Wie leben <rs ref="#conti">Sie</rs>? Was macht <rs ref="#Contis-Kunst">die Kunst</rs>?</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> <rs ref="#der_prinz">Prinz</rs>, <rs ref="#die-Kunst-geht-nach-Brot."><rs ref="#die-Kunst-allgemein">die Kunst</rs> geht nach Brot.</rs></l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#die-Kunst-geht-nach-Brot.">Das</rs> muß <rs ref="#die-Kunst-allgemein">sie</rs> nicht; <rs ref="#die-Kunst-geht-nach-Brot.">das</rs> soll <rs ref="#die-Kunst-allgemein">sie</rs> nicht, – in meinem kleinen Gebiete gewiß nicht. – Aber <rs ref="#Künstler">der Künstler</rs> muß auch arbeiten wollen.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> Arbeiten? Das ist <rs ref="#Künstler">seine</rs> Lust. Nur zu viel arbeiten müssen, kann <rs ref="#Künstler">ihn</rs> um <rs ref="#Künstler">den Namen Künstler</rs> bringen.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Ich meine nicht vieles; sondern viel: ein weniges; aber mit Fleiß. – <rs ref="#conti">Sie</rs> kommen doch nicht leer, <rs ref="#conti">Conti</rs>?</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Ich bringe <rs ref="#das-Porträt-von-Orsina">das Porträt</rs>, <rs ref="#das-Porträt-von-Orsina">welches <rs ref="#der_prinz">Sie</rs> mir befohlen haben</rs>, <rs ref="#der_prinz">gnädiger Herr</rs>. Und bringe noch <rs ref="#Emilias-Porträt">eines</rs>, <rs ref="#Emilias-Porträt">welches <rs ref="#der_prinz">Sie</rs> mir nicht befohlen</rs>: aber weil <rs ref="#Emilias-Porträt">es</rs> gesehen zu werden verdienet –</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#das-Porträt-von-Orsina">Jenes</rs> ist? – Kann ich mich doch kaum erinnern –</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> <rs ref="#orsina">Die Gräfin Orsina</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Wahr! – <rs ref="#das-Porträt-von-Orsina">Der Auftrag</rs> ist nur ein wenig von lange her.</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Unsere schönen Damen sind nicht alle Tage zum Malen. <pb n="130"/> <rs ref="#orsina">Die Gräfin</rs> hat, seit drei Monaten, gerade Einmal <rs ref="#orsina">sich</rs> entschließen können, zu sitzen.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Wo sind <rs ref="#die-Stücke">die Stücke</rs>?</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> In dem Vorzimmer: ich hole <rs ref="#die-Stücke">sie</rs>.</l>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>3. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Dritter Auftritt</head>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#das-Porträt-von-Orsina"><rs ref="#orsina">Ihr</rs> Bild</rs>! – mag! – <rs ref="#das-Porträt-von-Orsina"><rs ref="#orsina">Ihr</rs> Bild</rs>, ist <rs ref="#orsina">sie</rs> doch nicht selber. – Und vielleicht find' ich in <rs ref="#das-Porträt-von-Orsina">dem Bilde</rs> wieder, <rs ref="#was-ich-in-der-Person-nicht-mehr-erblicke">was ich in <rs ref="#orsina">der Person</rs> nicht mehr erblicke</rs>. – Ich will <rs ref="#was-ich-in-der-Person-nicht-mehr-erblicke">es</rs> aber nicht wiederfinden. – <rs ref="#conti">Der beschwerliche Maler</rs>! Ich glaube gar, <rs ref="#orsina">sie</rs> hat <rs ref="#conti">ihn</rs> bestochen. – Wär' es auch! Wenn <rs ref="#orsina">ihr</rs> <rs ref="#ein-anderes-Bild">ein anderes Bild</rs>, <rs ref="#ein-anderes-Bild">das mit andern Farben, auf einen andern Grund gemalet ist,</rs> – in meinem Herzen wieder Platz machen will: – Wahrlich, ich glaube, ich wär' es zufrieden. Als ich dort liebte, war ich immer so leicht, so fröhlich, so ausgelassen. – Nun bin ich von allem das Gegenteil. – Doch nein; nein, nein! Behäglicher, oder nicht behäglicher: ich bin so besser.</p>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>4. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Vierter Auftritt</head>
+              <stage>
+                <hi><rs ref="#der_prinz">Der Prinz</rs>. <rs ref="#conti">Conti</rs>, mit <rs ref="#die-Stücke">den Gemälden</rs>, wovon <rs ref="#conti">er</rs> <rs ref="#Emilias-Porträt">das eine</rs> verwandt gegen einen Stuhl lehnet.</hi>
+              </stage>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI</speaker></rs>
+                <stage>
+                  <hi>indem <rs ref="#conti">er</rs> <rs ref="#das-Porträt-von-Orsina">das andere</rs> zurecht stellet.</hi>
+                </stage>
+                <p> Ich bitte, <rs ref="#der_prinz">Prinz</rs>, daß <rs ref="#der_prinz">Sie</rs> die Schranken <rs ref="#Künstler"><rs ref="#Künstler">unserer</rs> <rs ref="#die-Kunst-allgemein">Kunst</rs></rs> erwägen wollen. <rs ref="#Vieles">Vieles</rs> von <rs ref="#Vieles">dem Anzüglichsten der Schönheit</rs> liegt ganz außer den Grenzen <rs ref="#die-Kunst-allgemein">derselben</rs>. – Treten <rs ref="#der_prinz">Sie</rs> so! –</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>nach einer kurzen Betrachtung.</hi>
+                </stage>
+                <p> Vortrefflich, <rs ref="#conti">Conti</rs>; – ganz vortrefflich! – Das gilt <rs ref="#Contis-Kunst"><rs ref="#conti">Ihrer</rs> Kunst</rs>, <rs ref="#conti">Ihrem</rs> Pinsel. – Aber geschmeichelt, <rs ref="#conti">Conti</rs>; ganz unendlich geschmeichelt!</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> <rs ref="#orsina">Das Original</rs> schien dieser Meinung nicht zu sein. Auch ist es in der Tat nicht mehr geschmeichelt, als <rs ref="#Contis-Kunst">die Kunst</rs> schmeicheln muß. <rs ref="#Contis-Kunst">Die Kunst</rs> muß malen, wie sich <rs ref="#die-plastische--Natur">die plastische <pb n="131"/> Natur</rs>, – wenn es <rs ref="#die-plastische--Natur">eine</rs> gibt – <rs ref="#das-Porträt-von-Orsina">das Bild</rs> dachte: ohne <rs ref="#den-Abfall">den Abfall</rs>, <rs ref="#den-Abfall">welchen der widerstrebende Stoff unvermeidlich macht</rs>; ohne <rs ref="#das-Verderb">das Verderb</rs>, <rs ref="#das-Verderb">mit welchem die Zeit dagegen an kämpfet.</rs></p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#Der-denkende-Künstler-ist-noch-eins-so-viel-wert."><rs ref="#Künstler">Der denkende Künstler</rs> ist noch eins so viel wert.</rs> – Aber <rs ref="#orsina">das Original</rs>, sagen <rs ref="#conti">Sie</rs>, fand <rs ref="#Der-denkende-Künstler-ist-noch-eins-so-viel-wert.">dem</rs> ungeachtet –</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Verzeihen <rs ref="#der_prinz">Sie</rs>, <rs ref="#der_prinz">Prinz</rs>. <rs ref="#orsina">Das Original</rs> ist eine Person, die meine Ehrerbietung fodert. Ich habe nichts Nachteiliges von <rs ref="#orsina">ihr</rs> äußern wollen.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> So viel als <rs ref="#conti">Ihnen</rs> beliebt! – Und was sagte <rs ref="#orsina">das Original</rs>?</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> <rs ref="#orsina">Ich</rs> bin zufrieden, sagte <rs ref="#orsina">die Gräfin</rs>, wenn <rs ref="#orsina">ich</rs> nicht häßlicher aussehe.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Nicht häßlicher? – O <rs ref="#orsina">das wahre Original</rs>!</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Und mit <rs ref="#einer-Miene">einer Miene</rs> sagte <rs ref="#orsina">sie</rs> das, – <rs ref="#einer-Miene">von der freilich <rs ref="#das-Porträt-von-Orsina">dieses ihr Bild</rs> keine Spur, keinen Verdacht zeiget</rs>.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Das meint' ich ja; das ist es eben, worin ich die unendliche Schmeichelei finde. – O! ich kenne <rs ref="#einer-Miene">sie</rs>, <rs ref="#einer-Miene">jene stolze höhnische Miene</rs>, <rs ref="#einer-Miene">die auch das Gesicht einer Grazie entstellen würde!</rs> – Ich leugne nicht, daß <rs ref="#ein-schöner-Mund">ein schöner Mund</rs>, <rs ref="#ein-schöner-Mund">der sich ein wenig spöttisch verziehet, nicht selten um so viel schöner ist</rs>. Aber, wohl gemerkt, ein wenig: <rs ref="#einer-Miene">die Verziehung</rs> muß nicht bis <rs ref="#einer-Miene">zur Grimasse</rs> gehen, wie bei <rs ref="#orsina">dieser Gräfin</rs>. Und <rs ref="#Augen">Augen</rs> müssen über den wollüstigen Spötter die Aufsicht führen, – <rs ref="#Augen">Augen</rs>, wie <rs ref="#Augen">sie</rs> <rs ref="#orsina">die gute Gräfin</rs> nun gerade gar nicht hat. Auch nicht einmal hier <rs ref="#das-Porträt-von-Orsina">im Bilde</rs> hat.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> <rs ref="#der_prinz">Gnädiger Herr</rs>, ich bin äußerst betroffen –</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Und worüber? <rs ref="#Alles">Alles</rs>, <rs ref="#Alles">was <rs ref="#die-Kunst-allgemein">die Kunst</rs> aus <rs ref="#den-großen,-hervorragenden,-stieren,-starren-Medusenaugen-der-Gräfin">den großen, hervorragenden, stieren, starren Medusenaugen <rs ref="#orsina">der Gräfin</rs></rs> <rs ref="#Gutes">Gutes</rs> machen kann</rs>, <rs ref="#Gutes">das</rs> haben <rs ref="#conti">Sie</rs>, <rs ref="#conti">Conti</rs>, redlich <rs ref="#den-großen,-hervorragenden,-stieren,-starren-Medusenaugen-der-Gräfin">daraus</rs> gemacht. – Redlich, sag' ich? – Nicht so redlich, wäre redlicher. Denn sagen <rs ref="#conti">Sie</rs> selbst, <rs ref="#conti">Conti</rs>, läßt sich aus <rs ref="#das-Porträt-von-Orsina">diesem Bilde</rs> wohl der Charakter <rs ref="#orsina">der Person</rs> schließen? Und das sollte doch. Stolz haben <rs ref="#conti">Sie</rs> in Würde, Hohn in Lächeln, Ansatz zu trübsinniger Schwärmerei in sanfte Schwermut verwandelt.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI</speaker></rs>
+                <stage>
+                  <hi>etwas ärgerlich.</hi>
+                </stage>
+                <p> Ah, mein <rs ref="#der_prinz">Prinz</rs>, – <rs ref="#Maler">wir Maler</rs> rechnen darauf, daß <rs ref="#das-fertige-Bild">das fertige Bild</rs> <rs ref="#den-Liebhaber">den Liebhaber</rs> noch eben so warm <pb n="132"/> findet, als warm <rs ref="#den-Liebhaber">er</rs> <rs ref="#das-fertige-Bild">es</rs> bestellte. <rs ref="#Maler">Wir</rs> malen mit Augen der Liebe: und Augen der Liebe müßten <rs ref="#Maler">uns</rs> auch nur beurteilen.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Je nun, <rs ref="#conti">Conti</rs>; – warum kamen <rs ref="#conti">Sie</rs> nicht einen Monat früher damit? – Setzen <rs ref="#conti">Sie</rs> weg. – Was ist <rs ref="#Emilias-Porträt">das andere Stück</rs>?</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI</speaker></rs>
+                <stage>
+                  <hi>indem <rs ref="#conti">er</rs> <rs ref="#Emilias-Porträt">es</rs> holt, und noch verkehrt in der Hand hält.</hi>
+                </stage>
+                <l> Auch <rs ref="#Emilias-Porträt">ein weibliches Porträt</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So möcht' ich <rs ref="#Emilias-Porträt">es</rs> bald – lieber gar nicht sehen. Denn dem Ideal hier, <hi>Mit dem Finger auf die Stirne.</hi> – oder vielmehr hier, <hi>Mit dem Finger auf das Herz.</hi> kömmt <rs ref="#Emilias-Porträt">es</rs> doch nicht bei. – Ich wünschte, <rs ref="#conti">Conti</rs>, <rs ref="#Contis-Kunst"><rs ref="#conti">Ihre</rs> Kunst</rs> in andern Vorwürfen zu bewundern.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> <rs ref="#die-Kunst-allgemein">Eine bewundernswürdigere Kunst</rs> gibt es; aber sicherlich keinen bewundernswürdigern Gegenstand, als diesen.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So wett' ich, <rs ref="#conti">Conti</rs>, daß es <rs ref="#conti">des Künstlers</rs> eigene Gebieterin ist. – <hi>Indem <rs ref="#conti">der Maler</rs> <rs ref="#Emilias-Porträt">das Bild</rs> umwendet.</hi> Was seh' ich? <rs ref="#Emilias-Porträt"><rs ref="#conti">Ihr</rs> Werk</rs>, <rs ref="#conti">Conti</rs>? oder <rs ref="#Emilias-Porträt">das Werk meiner Phantasie</rs>? – <rs ref="#Emilia-Galotti">Emilia Galotti</rs>!</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> Wie, <rs ref="#der_prinz">mein Prinz</rs>? <rs ref="#der_prinz">Sie</rs> kennen <rs ref="#Emilia-Galotti">diesen Engel</rs>?</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>indem <rs ref="#der_prinz">er</rs> <rs ref="#der_prinz">sich</rs> zu fassen sucht, aber ohne ein Auge von <rs ref="#Emilias-Porträt">dem Bilde</rs> zu verwenden.</hi>
+                </stage>
+                <p> So halb! – um <rs ref="#Emilia-Galotti">sie</rs> eben wieder zu kennen. – Es ist einige Wochen her, als ich <rs ref="#Emilia-Galotti">sie</rs> mit <rs ref="#claudia-Galotti"><rs ref="#Emilia-Galotti">ihrer</rs> Mutter</rs> in einer Vegghia traf. – Nachher ist <rs ref="#Emilia-Galotti">sie</rs> mir nur an heiligen Stätten wieder vorgekommen, – wo <rs ref="#das-Angaffen">das Angaffen</rs> <rs ref="#das-Angaffen">sich</rs> weniger ziemet. – Auch kenn' ich <rs ref="#odoardo"><rs ref="#Emilia-Galotti">ihren</rs> Vater</rs>. <rs ref="#odoardo">Er</rs> ist mein Freund nicht. <rs ref="#odoardo">Er</rs> war es, <rs ref="#odoardo">der sich meinen Ansprüchen auf Sabionetta am meisten widersetzte.</rs> – <rs ref="#odoardo">Ein alter Degen</rs>; stolz und rauh; sonst bieder und gut! –</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> <rs ref="#odoardo">Der Vater</rs>! Aber hier haben wir <rs ref="#Emilia-Galotti"><rs ref="#odoardo">seine</rs> Tochter</rs>. –</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Bei Gott! wie aus dem Spiegel gestohlen! <hi>Noch immer die Augen auf <rs ref="#Emilias-Porträt">das Bild</rs> geheftet.</hi> O, <rs ref="#conti">Sie</rs> wissen es ja wohl, <rs ref="#conti">Conti</rs>, daß man <rs ref="#Künstler">den Künstler</rs> dann erst recht lobt, wenn man über <rs ref="#Künstler">sein</rs> Werk sein Lob vergißt.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Gleichwohl hat mich <rs ref="#Emilias-Porträt">dieses</rs> noch sehr unzufrieden mit mir gelassen. – Und doch bin ich wiederum sehr zufrieden mit meiner Unzufriedenheit mit mir selbst. – Ha! daß <rs ref="#Künstler">wir</rs> nicht unmittelbar mit den Augen malen! Auf <rs ref="#dem-langen-Wege">dem langen Wege</rs>, <rs ref="#dem-langen-Wege">aus dem Auge durch den Arm in den Pinsel</rs>, wie viel <pb n="133"/> geht da verloren! – Aber, wie ich sage, daß ich <rs ref="#es">es</rs> weiß, <rs ref="#es">was hier verloren gegangen, und wie es verloren gegangen, und warum es verloren gehen müssen</rs>: <rs ref="#es">darauf</rs> bin ich eben so stolz, und stolzer, als ich auf <rs ref="#alles">alles</rs> das bin, <rs ref="#alles">was ich nicht verloren gehen lassen.</rs> Denn aus <rs ref="#es">jenem</rs> erkenne ich, mehr als aus diesem, daß ich wirklich ein großer Maler bin; daß es aber meine Hand nur nicht immer ist. – Oder meinen <rs ref="#der_prinz">Sie</rs>, <rs ref="#der_prinz">Prinz</rs>, daß <rs ref="#Raphael">Raphael</rs> nicht <rs ref="#Raphael">das größte malerische Genie</rs> gewesen wäre, wenn <rs ref="#Raphael">er</rs> unglücklicher Weise ohne Hände wäre geboren worden? Meinen <rs ref="#der_prinz">Sie</rs>, <rs ref="#der_prinz">Prinz</rs>?</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>indem <rs ref="#der_prinz">er</rs> nur eben von <rs ref="#Emilias-Porträt">dem Bilde</rs> wegblickt.</hi>
+                </stage>
+                <l> Was sagen <rs ref="#conti">Sie</rs>, <rs ref="#conti">Conti</rs>? Was wollen <rs ref="#conti">Sie</rs> wissen?</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> O nichts, nichts! – Plauderei! <rs ref="#Emilia-Galotti">Ihre</rs> Seele, merk' ich, war ganz in Ihren Augen. Ich liebe solche Seelen, und solche Augen.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>mit einer erzwungenen Kälte.</hi>
+                </stage>
+                <p> Also, <rs ref="#conti">Conti</rs>, rechnen <rs ref="#conti">Sie</rs> doch wirklich <rs ref="#Emilia-Galotti">Emilia Galotti</rs> mit zu <rs ref="#den-vorzüglichsten-Schönheiten-unserer-Stadt">den vorzüglichsten Schönheiten unserer Stadt</rs>?</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Also? mit? mit zu <rs ref="#den-vorzüglichsten-Schönheiten-unserer-Stadt">den vorzüglichsten</rs>? und <rs ref="#den-vorzüglichsten-Schönheiten-unserer-Stadt">den vorzüglichsten unserer Stadt</rs>? – <rs ref="#der_prinz">Sie</rs> spotten meiner, <rs ref="#der_prinz">Prinz</rs>. Oder <rs ref="#der_prinz">Sie</rs> sahen, die ganze Zeit, eben so wenig, als <rs ref="#der_prinz">Sie</rs> hörten.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Lieber <rs ref="#conti">Conti</rs>, – <hi>Die Augen wieder auf <rs ref="#Emilias-Porträt">das Bild</rs> gerichtet.</hi> wie darf unser einer seinen Augen trauen? Eigentlich weiß doch nur allein <rs ref="#Maler">ein Maler</rs> von der Schönheit zu urteilen.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Und eines jeden Empfindung sollte erst auf den Ausspruch <rs ref="#Maler">eines Malers</rs> warten? – Ins Kloster mit <rs ref="#dem">dem</rs>, <rs ref="#dem">der <rs ref="#es2">es</rs> von uns lernen will,</rs> <rs ref="#es2">was schön ist</rs>! Aber <rs ref="#das">das</rs> muß ich <rs ref="#der_prinz">Ihnen</rs> doch als Maler sagen, mein <rs ref="#der_prinz">Prinz</rs>: <rs ref="#das">eine von den größten Glückseligkeiten meines Lebens ist <rs ref="#es3">es</rs>, <rs ref="#es3">daß <rs ref="#Emilia-Galotti"><rs ref="#Emilia-Galotti">Emilia Galotti</rs></rs> mir gesessen</rs>.</rs> <rs ref="#Dieser-Kopf,-dieses-Antlitz,-diese-Stirn,-diese-Augen,-diese-Nase,-dieser-Mund,-dieses-Kinn,-dieser-Hals,-diese-Brust,-dieser-Wuchs,-dieser-ganze-Bau,-sind,-von-der-Zeit-an,-mein-einziges-Studium-der-weiblichen-Schönheit."><rs ref="#Emilia-Galotti">Dieser</rs> Kopf, <rs ref="#Emilia-Galotti">dieses</rs> Antlitz, <rs ref="#Emilia-Galotti">diese</rs> Stirn, <rs ref="#Emilia-Galotti">diese</rs> Augen, <rs ref="#Emilia-Galotti">diese</rs> Nase, <rs ref="#Emilia-Galotti">dieser</rs> Mund, <rs ref="#Emilia-Galotti">dieses Kinn</rs>, <rs ref="#Emilia-Galotti">dieser</rs> Hals, <rs ref="#Emilia-Galotti">diese</rs> Brust, <rs ref="#Emilia-Galotti">dieser</rs> Wuchs, <rs ref="#Emilia-Galotti">dieser</rs> ganze Bau, sind, von der Zeit an, mein einziges Studium der weiblichen Schönheit.</rs> – <rs ref="#Dieser-Kopf,-dieses-Antlitz,-diese-Stirn,-diese-Augen,-diese-Nase,-dieser-Mund,-dieses-Kinn,-dieser-Hals,-diese-Brust,-dieser-Wuchs,-dieser-ganze-Bau,-sind,-von-der-Zeit-an,-mein-einziges-Studium-der-weiblichen-Schönheit.">Die Schilderei</rs> <rs ref="#Dieser-Kopf,-dieses-Antlitz,-diese-Stirn,-diese-Augen,-diese-Nase,-dieser-Mund,-dieses-Kinn,-dieser-Hals,-diese-Brust,-dieser-Wuchs,-dieser-ganze-Bau,-sind,-von-der-Zeit-an,-mein-einziges-Studium-der-weiblichen-Schönheit.">selbst</rs>, wovor <rs ref="#Emilia-Galotti">sie</rs> gesessen, hat <rs ref="#odoardo"><rs ref="#Emilia-Galotti">ihr</rs> abwesender Vater</rs> bekommen. Aber <rs ref="#Emilias-Porträt">diese Kopie</rs> –</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi><rs ref="#der_prinz">der sich schnell gegen <rs ref="#conti">ihn</rs> kehret</rs>.</hi>
+                </stage>
+                <l> Nun, <rs ref="#conti">Conti</rs>? ist doch nicht schon versagt?</l>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> Ist für <rs ref="#der_prinz">Sie</rs>, <rs ref="#der_prinz">Prinz</rs>; wenn <rs ref="#der_prinz">Sie</rs> Geschmack daran finden.</l>
+                <pb n="134"/>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Geschmack! – <hi>Lächelnd.</hi> <rs ref="#Studium-der-weiblichen-Schönheit">Dieses</rs> <rs ref="#conti">Ihr</rs> <rs ref="#Studium-der-weiblichen-Schönheit">Studium der weiblichen Schönheit</rs>, <rs ref="#conti">Conti</rs>, wie könnt' ich besser tun, als <rs ref="#Studium-der-weiblichen-Schönheit">es</rs> auch zu dem meinigen zu machen? – Dort, <rs ref="#das-Porträt-von-Orsina">jenes Porträt</rs> nehmen <rs ref="#conti">Sie</rs> nur wieder mit, – <rs ref="#einen-Rahmen">einen Rahmen</rs> <rs ref="#einen-Rahmen">darum</rs> zu bestellen.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <l> Wohl!</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So schön, so reich, als <rs ref="#einen-Rahmen">ihn</rs> der Schnitzer nur machen kann. <rs ref="#das-Porträt-von-Orsina">Es</rs> soll in der Galerie aufgestellet werden. – Aber <rs ref="#Emilias-Porträt">dieses</rs>, bleibt hier. Mit einem Studio macht man so viel Umstände nicht: auch läßt man <rs ref="#Emilias-Porträt">das</rs> nicht aufhängen; sondern hat <rs ref="#Emilias-Porträt">es</rs> gern bei der Hand. – Ich danke <rs ref="#conti">Ihnen</rs>, <rs ref="#conti">Conti</rs>; ich danke <rs ref="#conti">Ihnen</rs> recht sehr. – Und wie gesagt: in meinem Gebiete soll <rs ref="#die-Kunst-allgemein">die Kunst</rs> nicht nach Brot gehen; – bis ich selbst keines habe. – Schicken <rs ref="#conti">Sie</rs>, <rs ref="#conti">Conti</rs>, zu meinem Schatzmeister, und lassen <rs ref="#conti">Sie</rs>, auf <rs ref="#conti">Ihre</rs> Quittung, für beide <rs ref="#die-Stücke">Porträte</rs> <rs ref="#conti">sich</rs> bezahlen, – was <rs ref="#conti">Sie</rs> wollen. So viel <rs ref="#conti">Sie</rs> wollen, <rs ref="#conti">Conti</rs>.</p>
+              </sp>
+              <sp who="#conti">
+                <rs ref="#conti"><speaker>CONTI.</speaker></rs>
+                <p> Sollte ich doch nun bald fürchten, <rs ref="#der_prinz">Prinz</rs>, daß <rs ref="#der_prinz">Sie</rs> so, noch etwas anders belohnen wollen, als <rs ref="#Contis-Kunst">die Kunst</rs>.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> O <rs ref="#conti">des eifersüchtigen Künstlers</rs>! Nicht doch! – Hören <rs ref="#conti">Sie</rs>, <rs ref="#conti">Conti</rs>; so viel <rs ref="#conti">Sie</rs> wollen. <hi><rs ref="#conti">Conti</rs> geht ab.</hi> </l>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>5. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Fünfter Auftritt</head>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So viel <rs ref="#conti">er</rs> will! – <hi>Gegen <rs ref="#Emilias-Porträt">das Bild</rs>.</hi> <rs ref="#Emilias-Porträt">Dich</rs> hab' ich für jeden Preis noch zu wohlfeil. – Ah! <rs ref="#Emilias-Porträt">schönes Werk <rs ref="#die-Kunst-allgemein">der Kunst</rs></rs>, ist <rs ref="#es4">es</rs> wahr, <rs ref="#es4">daß ich <rs ref="#Emilias-Porträt">dich</rs> besitze</rs>? – Wer <rs ref="#Emilia-Galotti">dich</rs> auch besäße, <rs ref="#Emilia-Galotti">schönres Meisterstück der Natur!</rs> – Was <rs ref="#claudia-Galotti">Sie</rs> dafür wollen, <rs ref="#claudia-Galotti">ehrliche Mutter</rs>! Was <rs ref="#odoardo">du</rs> willst, <rs ref="#odoardo">alter Murrkopf</rs>! Fodre nur! Fodert nur ! – Am liebsten kauft' ich <rs ref="#Emilia-Galotti">dich</rs>, <rs ref="#Emilia-Galotti">Zauberin</rs>, von <rs ref="#Emilia-Galotti">dir</rs> selbst! – <rs ref="#Emilia-Galotti">Dieses</rs> Auge voll Liebreiz und Bescheidenheit! <rs ref="#Dieser-Mund"><rs ref="#Emilia-Galotti">Dieser</rs> Mund</rs>! und wenn <rs ref="#Dieser-Mund">er</rs> sich zum Reden öffnet! wenn <rs ref="#Dieser-Mund">er</rs> lächelt! <rs ref="#Dieser-Mund"><rs ref="#Emilia-Galotti">Dieser</rs> Mund</rs>! – Ich höre kommen. – Noch bin ich mit <rs ref="#Emilias-Porträt">dir</rs> zu neidisch. <hi>Indem <rs ref="#der_prinz">er</rs> <rs ref="#Emilias-Porträt">das Bild</rs> gegen die Wand kehret.</hi> Es wird <rs ref="#marinelli">Marinelli</rs> sein. Hätt' ich <rs ref="#marinelli">ihn</rs> doch nicht rufen lassen! Was für einen Morgen könnt' ich haben!</p>
+                <pb n="135"/>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>6. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Sechster Auftritt</head>
+              <stage>
+                <hi><rs ref="#marinelli">Marinelli</rs>. <rs ref="#der_prinz">Der Prinz</rs>.</hi>
+              </stage>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> <rs ref="#der_prinz">Gnädiger Herr</rs>, <rs ref="#der_prinz">Sie</rs> werden verzeihen. – Ich war mir eines so frühen Befehls nicht gewärtig.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Ich bekam Lust, auszufahren. <rs ref="#Der-Morgen">Der Morgen</rs> war so schön. – Aber nun ist <rs ref="#Der-Morgen">er</rs> ja wohl verstrichen; und die Lust ist mir vergangen. – <hi>Nach einem kurzen Stillschweigen.</hi> Was haben <rs ref="#marinelli">wir</rs> <rs ref="#Neues">Neues</rs>, <rs ref="#marinelli">Marinelli</rs>?</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> <rs ref="#Neues">Nichts von Belang, das ich wüßte</rs>. – <rs ref="#orsina">Die Gräfin Orsina</rs> ist gestern zur Stadt gekommen.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Hier liegt auch schon <rs ref="#ihr-guter-Morgen"><rs ref="#marinelli">ihr</rs> guter Morgen</rs>, <hi>Auf <rs ref="#ihr-guter-Morgen"><rs ref="#ein-Brief"><rs ref="#orsina">ihren</rs> Brief</rs></rs> zeigend.</hi> oder was <rs ref="#ihr-guter-Morgen">es</rs> sonst sein mag! Ich bin gar nicht neugierig darauf. – <rs ref="#marinelli">Sie</rs> haben <rs ref="#orsina">sie</rs> gesprochen?</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Bin ich, leider, nicht <rs ref="#ihr-Vertrauter">ihr Vertrauter</rs>? – Aber, wenn ich <rs ref="#ihr-Vertrauter">es</rs> wieder von <rs ref="#einer-Dame">einer Dame</rs> werde, <rs ref="#einer-Dame">der <rs ref="#es5">es</rs> einkömmt</rs>, <rs ref="#einer-Dame">Sie</rs> in <rs ref="#es5">gutem Ernste zu lieben</rs>, <rs ref="#der_prinz">Prinz</rs>: so – –</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Nichts verschworen, <rs ref="#marinelli">Marinelli</rs>!</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Ja? In der Tat, <rs ref="#der_prinz">Prinz</rs>? Könnt' es doch kommen? – O! so mag <rs ref="#orsina">die Gräfin</rs> auch so <rs ref="#Unrecht">Unrecht</rs> nicht haben.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Allerdings, sehr <rs ref="#Unrecht">Unrecht</rs>! – <rs ref="#Meine-nahe-Vermählung-mit-der-Prinzessin-von-Massa">Meine nahe Vermählung mit der Prinzessin von Massa</rs>, will durchaus, <rs ref="#daß-ich-alle-dergleichen-Händel-fürs-erste-abbreche">daß ich alle dergleichen Händel fürs erste abbreche</rs>.</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Wenn <rs ref="#daß-ich-alle-dergleichen-Händel-fürs-erste-abbreche">es</rs> nur das wäre: so müßte freilich <rs ref="#orsina">Orsina</rs> <rs ref="#orsina">sich</rs> in <rs ref="#orsina">ihr <rs ref="#Orsinas-Schicksal">Schicksal</rs></rs> eben so wohl zu finden wissen, als <rs ref="#der_prinz">der Prinz</rs> in <rs ref="#seines"><rs ref="#der_prinz">seines</rs></rs>.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#seines">Das unstreitig härter ist</rs>, als <rs ref="#Orsinas-Schicksal"><rs ref="#orsina">ihres</rs>.</rs> Mein Herz wird das Opfer eines <rs ref="#Meine-nahe-Vermählung-mit-der-Prinzessin-von-Massa">elenden Staatsinteresse</rs>. <rs ref="#orsina">Ihres</rs> darf <rs ref="#orsina">sie</rs> nur zurücknehmen; aber nicht wider Willen verschenken.</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Zurücknehmen? Warum zurücknehmen? fragt <rs ref="#orsina">die Gräfin</rs>: wenn <rs ref="#es6">es</rs> weiter nichts, <rs ref="#es6">als <rs ref="#orsina">eine Gemahlin</rs> ist, die <rs ref="#der_prinz">dem Prinzen</rs> nicht die Liebe, sondern die Politik zuführet?</rs> Neben so <rs ref="#eine-Gemahlin">einer Gemahlin</rs> sieht <rs ref="#die-Geliebte">die Geliebte</rs> noch immer <rs ref="#die-Geliebte">ihren</rs> Platz. <rs ref="#Nicht-so-einer-Gemahlin-fürchtet-sie-aufgeopfert-zu-sein,-sondern-–-–">Nicht so <rs ref="#eine-Gemahlin">einer Gemahlin</rs> fürchtet <rs ref="#die-Geliebte">sie</rs> aufgeopfert zu sein, sondern – –</rs></p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Einer neuen Geliebten. – Nun denn? Wollten <rs ref="#marinelli">Sie</rs> mir <rs ref="#Nicht-so-einer-Gemahlin-fürchtet-sie-aufgeopfert-zu-sein,-sondern-–-–">daraus</rs> ein Verbrechen machen, <rs ref="#marinelli">Marinelli</rs>?</l>
+                <pb n="136"/>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Ich? – O! vermengen <rs ref="#der_prinz">Sie</rs> mich ja nicht, <rs ref="#der_prinz">mein Prinz</rs>, mit <rs ref="#orsina">der Närrin</rs>, <rs ref="#orsina">deren Wort ich führe, – aus Mitleid führe.</rs> Denn gestern, wahrlich, hat <rs ref="#orsina">sie</rs> mich sonderbar gerühret. <rs ref="#orsina">Sie</rs> wollte von <rs ref="#orsina">ihrer</rs> Angelegenheit mit <rs ref="#der_prinz">Ihnen</rs> gar nicht sprechen. <rs ref="#orsina">Sie</rs> wollte <rs ref="#orsina">sich</rs> ganz gelassen und kalt stellen. Aber mitten in dem gleichgültigsten Gespräche, entfuhr <rs ref="#orsina">ihr</rs> <rs ref="#eine-Wendung,-eine-Beziehung-über-die-andere">eine Wendung, eine Beziehung über die andere</rs>, <rs ref="#eine-Wendung,-eine-Beziehung-über-die-andere">die <rs ref="#orsina">ihr</rs> gefoltertes Herz verriet</rs>. Mit dem lustigsten Wesen sagte <rs ref="#orsina">sie</rs> die melancholischsten Dinge: und wiederum die lächerlichsten Possen mit der allertraurigsten Miene. <rs ref="#orsina">Sie</rs> hat zu <rs ref="#den-Büchern">den Büchern</rs> <rs ref="#orsina">ihre</rs> Zuflucht genommen; und ich fürchte, <rs ref="#den-Büchern">die</rs> werden ihr den Rest geben.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So wie <rs ref="#marinelli">sie</rs> <rs ref="#orsina">ihrem</rs> armen Verstande auch den ersten Stoß gegeben. – <rs ref="#Aber-was-mich-vornehmlich-mit-von-ihr-entfernt-hat">Aber was mich vornehmlich mit von <rs ref="#orsina">ihr</rs> entfernt hat</rs>, <rs ref="#Aber-was-mich-vornehmlich-mit-von-ihr-entfernt-hat">das</rs> wollen <rs ref="#marinelli">Sie</rs> doch nicht brauchen, <rs ref="#marinelli">Marinelli</rs>, mich wieder zu <rs ref="#orsina">ihr</rs> zurück zu bringen? – <rs ref="#Wenn-sie-aus-Liebe-närrisch-wird">Wenn <rs ref="#orsina">sie</rs> aus Liebe närrisch wird</rs>, so wäre <rs ref="#orsina">sie</rs> <rs ref="#Wenn-sie-aus-Liebe-närrisch-wird">es</rs>, früher oder später, auch ohne Liebe geworden – Und nun, genug von <rs ref="#orsina">ihr</rs>. – Von etwas anderm! – Geht denn gar nichts vor, in der Stadt? –</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> So gut, wie gar nichts. – Denn daß <rs ref="#die-Verbindung-des-Grafen-Appiani">die Verbindung <rs ref="#appiani">des Grafen Appiani</rs></rs> heute vollzogen wird, – ist nicht viel mehr, als gar nichts.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#die-Verbindung-des-Grafen-Appiani">Des <rs ref="#appiani">Grafen Appiani</rs></rs>? und mit wem denn? – Ich soll ja noch hören, daß <rs ref="#appiani">er</rs> versprochen ist.</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> <rs ref="#die-Verbindung-des-Grafen-Appiani">Die Sache</rs> ist sehr geheim gehalten worden. Auch war nicht viel Aufhebens <rs ref="#die-Verbindung-des-Grafen-Appiani">davon</rs> zu machen. – <rs ref="#der_prinz">Sie</rs> werden lachen, <rs ref="#der_prinz">Prinz</rs>. – Aber so geht es <rs ref="#der_prinz"><rs ref="#den-Empfindsamen">den Empfindsamen</rs></rs>! Die Liebe spielet <rs ref="#der_prinz"><rs ref="#den-Empfindsamen">ihnen</rs></rs> immer die schlimmsten Streiche. <rs ref="#Emilia-Galotti">Ein Mädchen</rs> ohne Vermögen und ohne Rang, hat <rs ref="#appiani">ihn</rs> in <rs ref="#Emilia-Galotti">ihre</rs> Schlinge zu ziehen gewußt, – mit ein wenig Larve; aber mit vielem Prunke von Tugend und Gefühl und Witz, – und was weiß ich?</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#Wer">Wer</rs> sich den Eindrücken, die Unschuld und Schönheit auf <rs ref="#Wer">ihn</rs> machen, ohne weitere Rücksicht, so ganz überlassen darf; – ich dächte, <rs ref="#Wer">der wär' eher zu beneiden, als zu belachen.</rs> – Und wie heißt denn <rs ref="#Emilia-Galotti">die Glückliche</rs>? – Denn bei alle dem ist <rs ref="#appiani">Appiani</rs> – ich weiß wohl, daß <rs ref="#marinelli">Sie</rs>, <rs ref="#marinelli">Marinelli</rs>, <rs ref="#appiani">ihn</rs> nicht leiden können; eben so wenig als <rs ref="#appiani">er</rs> <rs ref="#marinelli">Sie</rs> – bei alle dem <pb n="137"/> ist <rs ref="#appiani">er</rs> doch <rs ref="#appiani">ein sehr würdiger junger Mann</rs>, <rs ref="#appiani">ein schöner Mann</rs>, <rs ref="#appiani">ein reicher Mann</rs>, <rs ref="#appiani">ein Mann voller Ehre</rs>. Ich hätte sehr gewünscht, <rs ref="#ihn-mir-verbinden-zu-können"><rs ref="#appiani">ihn</rs> mir verbinden zu können</rs>. Ich werde noch <rs ref="#ihn-mir-verbinden-zu-können">darauf</rs> denken.</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Wenn <rs ref="#die-Verbindung-des-Grafen-Appiani">es</rs> nicht zu spät ist. – Denn so viel ich höre, ist <rs ref="#sein-Plan"><rs ref="#appiani">sein</rs> Plan</rs> gar nicht, <rs ref="#sein-Plan">bei Hofe sein Glück zu machen</rs>. – <rs ref="#Er-will-mit-seiner-Gebieterin-nach-seinen-Tälern-von-Piemont:-–-Gemsen-zu-jagen,-auf-den-Alpen;-und-Murmeltiere-abzurichten."><rs ref="#appiani">Er</rs> will mit <rs ref="#Emilia-Galotti"><rs ref="#appiani">seiner</rs> Gebieterin</rs> nach seinen Tälern von Piemont: – Gemsen zu jagen, auf den Alpen; und Murmeltiere abzurichten.</rs> – Was kann <rs ref="#appiani">er</rs> <rs ref="#Er-will-mit-seiner-Gebieterin-nach-seinen-Tälern-von-Piemont:-–-Gemsen-zu-jagen,-auf-den-Alpen;-und-Murmeltiere-abzurichten.">Beßres</rs> tun? Hier ist es durch <rs ref="#die-Verbindung-des-Grafen-Appiani">das Mißbündnis</rs>, <rs ref="#die-Verbindung-des-Grafen-Appiani">welches <rs ref="#appiani">er</rs> trifft</rs>, mit <rs ref="#appiani">ihm</rs> doch aus. <rs ref="#Der-Zirkel-der-ersten-Häuser-ist-ihm-von-nun-an-verschlossen-–-–">Der Zirkel der ersten Häuser ist ihm von nun an verschlossen – –</rs></p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Mit <rs ref="#euern-ersten-Häusern">euern ersten Häusern</rs>! – <rs ref="#euern-ersten-Häusern">in welchen das Zeremoniell, der Zwang, die Langeweile, und nicht selten die Dürftigkeit herrschet.</rs> – Aber so nennen <rs ref="#marinelli">Sie</rs> mir <rs ref="#Emilia-Galotti">sie</rs> doch, <rs ref="#Emilia-Galotti">der <rs ref="#appiani">er</rs> <rs ref="#Der-Zirkel-der-ersten-Häuser-ist-ihm-von-nun-an-verschlossen-–-–">dieses so große Opfer</rs> bringt.</rs></p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Es ist <rs ref="#Emilia-Galotti">eine gewisse Emilia Galotti</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Wie, <rs ref="#marinelli">Marinelli</rs>? <rs ref="#Emilia-Galotti">eine gewisse</rs> –</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> <rs ref="#Emilia-Galotti">Emilia Galotti.</rs></l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#Emilia-Galotti">Emilia Galotti</rs>? – Nimmermehr!</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Zuverlässig, <rs ref="#der_prinz">gnädiger Herr</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Nein, sag ich; <rs ref="#die-Verbindung-des-Grafen-Appiani">das</rs> ist nicht, <rs ref="#die-Verbindung-des-Grafen-Appiani">das</rs> kann nicht sein. – <rs ref="#marinelli">Sie</rs> irren <rs ref="#marinelli">sich</rs> in <rs ref="#Emilia-Galotti">dem Namen</rs>. – Das Geschlecht der Galotti ist groß. – Eine Galotti kann es sein; aber nicht <rs ref="#Emilia-Galotti">Emilia Galotti</rs>; nicht <rs ref="#Emilia-Galotti">Emilia</rs>!</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> <rs ref="#Emilia-Galotti">Emilia</rs> – <rs ref="#Emilia-Galotti">Emilia Galotti</rs>!</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> So gibt es noch <rs ref="#eine">eine</rs>, <rs ref="#eine">die beide Namen führt</rs>. – <rs ref="#marinelli">Sie</rs> sagten ohnedem, <rs ref="#eine">eine gewisse Emilia Galotti</rs> – <rs ref="#eine">eine gewisse</rs>. Von <rs ref="#Emilia-Galotti">der rechten</rs> könnte nur ein Narr so sprechen –</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> <rs ref="#der_prinz">Sie</rs> sind außer <rs ref="#der_prinz">sich</rs>, <rs ref="#der_prinz">gnädiger Herr</rs>. – Kennen <rs ref="#der_prinz">Sie</rs> denn <rs ref="#Emilia-Galotti">diese Emilia</rs>?</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Ich habe zu fragen, <rs ref="#marinelli">Marinelli</rs>, nicht <rs ref="#marinelli">Er</rs>. – <rs ref="#Emilia-Galotti">Emilia Galotti</rs>? <rs ref="#odoardo"><rs ref="#Emilia-Galotti">Die Tochter</rs> des Obersten Galotti</rs>, bei Sabionetta?</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Eben <rs ref="#Emilia-Galotti">die</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#Emilia-Galotti">Die</rs> hier in Guastalla mit <rs ref="#claudia-Galotti"><rs ref="#Emilia-Galotti">ihrer</rs> Mutter</rs> wohnet?</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Eben <rs ref="#Emilia-Galotti">die</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Unfern der Kirche Allerheiligen?</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Eben <rs ref="#Emilia-Galotti">die</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Mit einem Worte – <hi>Indem <rs ref="#der_prinz">er</rs> nach <rs ref="#Emilias-Porträt">dem Porträte</rs> <pb n="138"/> springt und <rs ref="#Emilias-Porträt">es</rs> <rs ref="#marinelli">dem Marinelli</rs> in die Hand gibt.</hi> Da! – <rs ref="#Emilia-Galotti">Diese</rs>? <rs ref="#Emilia-Galotti">Diese Emilia Galotti</rs>? – Sprich <rs ref="#marinelli">dein</rs> verdammtes »Eben <rs ref="#Emilia-Galotti">die</rs>« noch einmal, und stoß mir den Dolch ins Herz!</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Eben <rs ref="#Emilia-Galotti">die</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#marinelli">Henker!</rs> – <rs ref="#Emilia-Galotti">Diese</rs>? – <rs ref="#Emilia-Galotti">Diese Emilia Galotti</rs> wird heute – –</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> <rs ref="#Emilia-Galotti">Gräfin Appiani</rs>! – <hi>Hier reißt <rs ref="#der_prinz">der Prinz</rs> <rs ref="#marinelli">dem Marinelli</rs> <rs ref="#Emilias-Porträt">das Bild</rs> wieder aus der Hand, und wirft <rs ref="#Emilias-Porträt">es</rs> bei Seite.</hi> <rs ref="#die-Verbindung-des-Grafen-Appiani">Die Trauung</rs> geschieht in der Stille, auf dem Landgute <rs ref="#odoardo">des Vaters</rs> bei Sabionetta. Gegen Mittag fahren <rs ref="#claudia-Galotti">Mutter</rs> und <rs ref="#Emilia-Galotti">Tochter</rs>, <rs ref="#appiani">der Graf</rs> und vielleicht ein paar Freunde dahin ab.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <rs ref="#der_prinz"><hi>der sich voll Verzweiflung in einen Stuhl wirft.</hi></rs>
+                </stage>
+                <l> So bin ich verloren! – So will ich nicht leben!</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Aber was ist <rs ref="#der_prinz">Ihnen</rs>, <rs ref="#der_prinz">gnädiger Herr</rs>?</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ</speaker></rs>
+                <stage>
+                  <hi>der gegen <rs ref="#marinelli">ihn</rs> wieder aufspringt.</hi>
+                </stage>
+                <p> <rs ref="#marinelli">Verräter</rs>! – was mir ist? – <rs ref="#Nun-ja-ich-liebe-sie;-ich-bete-sie-an.">Nun ja ich liebe <rs ref="#Emilia-Galotti">sie</rs>; ich bete <rs ref="#Emilia-Galotti">sie</rs> an.</rs> Mögt <rs ref="#alle">ihr</rs> <rs ref="#Nun-ja-ich-liebe-sie;-ich-bete-sie-an.">es</rs> doch wissen! mögt <rs ref="#alle">ihr</rs> <rs ref="#Nun-ja-ich-liebe-sie;-ich-bete-sie-an.">es</rs> doch längst gewußt haben, <rs ref="#alle">alle</rs> ihr, <rs ref="#alle">denen ich <rs ref="#orsina">der tollen Orsina</rs> schimpfliche Fesseln lieber ewig tragen sollte!</rs> – Nur daß <rs ref="#marinelli">Sie</rs>, <rs ref="#marinelli">Marinelli</rs>, der <rs ref="#marinelli">Sie</rs> so oft mich <rs ref="#Emilia-Galotti">Ihrer innigsten Freundschaft</rs> versicherten – O <rs ref="#ein-Fürst">ein Fürst</rs> hat keinen Freund! kann keinen Freund haben! – <rs ref="#daß-Sie,-Sie,-so-treulos,-so-hämisch-mir-bis-auf-diesen-Augenblick-die-Gefahr-verhöhlen-dürfen,-die-meiner-Liebe-drohte:">daß <rs ref="#marinelli">Sie</rs>, <rs ref="#marinelli">Sie</rs>, so treulos, so hämisch mir bis auf diesen Augenblick <rs ref="#die-Gefahr">die Gefahr</rs> verhöhlen dürfen, <rs ref="#die-Gefahr">die meiner Liebe drohte</rs>:</rs> wenn ich <rs ref="#marinelli">Ihnen</rs> jemals <rs ref="#daß-Sie,-Sie,-so-treulos,-so-hämisch-mir-bis-auf-diesen-Augenblick-die-Gefahr-verhöhlen-dürfen,-die-meiner-Liebe-drohte:">das</rs> vergebe, – so werde mir meiner Sünden keine vergeben!</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Ich weiß kaum Worte zu finden, <rs ref="#der_prinz">Prinz</rs>, – wenn <rs ref="#der_prinz">Sie</rs> mich auch dazu kommen ließen – <rs ref="#der_prinz">Ihnen</rs> mein Erstaunen zu bezeigen. – <rs ref="#der_prinz">Sie</rs> lieben <rs ref="#Emilia-Galotti">Emilia Galotti</rs>? – Schwur dann gegen Schwur: <rs ref="#Wenn-ich-von-dieser-Liebe-das-geringste-gewußt,-das-geringste-vermutet-habe;">Wenn ich von dieser Liebe das geringste gewußt, das geringste vermutet habe;</rs> so möge weder Engel noch Heiliger von mir wissen! – Eben <rs ref="#Wenn-ich-von-dieser-Liebe-das-geringste-gewußt,-das-geringste-vermutet-habe;">das</rs> wollt' ich in <rs ref="#orsina">die Seele der Orsina</rs> schwören. <rs ref="#orsina">Ihr</rs> Verdacht schweift auf einer ganz andern Fährte.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> So verzeihen <rs ref="#marinelli">Sie</rs> mir, <rs ref="#marinelli">Marinelli</rs>; –<hi> Indem <rs ref="#der_prinz">er</rs> sich <rs ref="#der_prinz">ihm</rs> in die Arme wirft.</hi> und betauern <rs ref="#marinelli">Sie</rs> mich.</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Nun da, <rs ref="#der_prinz">Prinz</rs>! Erkennen <rs ref="#der_prinz">Sie</rs> da die Frucht <rs ref="#der_prinz">Ihrer</rs> Zurückhaltung! – <rs ref="#»Fürsten-haben-keinen-Freund!-können-keinen-Freund-haben!«">»<rs ref="#ein-Fürst">Fürsten</rs> haben keinen Freund! können keinen Freund haben!«</rs> – Und die Ursache, wenn <rs ref="#»Fürsten-haben-keinen-Freund!-können-keinen-Freund-haben!«">dem</rs> so <pb n="139"/> ist? – Weil <rs ref="#ein-Fürst">sie</rs> keinen haben wollen. – Heute beehren <rs ref="#ein-Fürst">sie</rs> uns mit <rs ref="#ein-Fürst">ihrem</rs> Vertrauen, teilen uns <rs ref="#ein-Fürst">ihre</rs> geheimsten Wünsche mit, schließen uns <rs ref="#ein-Fürst">ihre</rs> ganze Seele auf: und morgen sind wir ihnen wieder so fremd, als hätten <rs ref="#ein-Fürst">sie</rs> nie ein Wort mit uns gewechselt.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Ach! <rs ref="#marinelli">Marinelli</rs>, wie konnt' ich <rs ref="#marinelli">Ihnen</rs> vertrauen, was ich mir selbst kaum gestehen woll te?</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Und also wohl noch weniger <rs ref="#Emilia-Galotti">der Urheberin <rs ref="#der_prinz">Ihrer</rs> Qual</rs> gestanden haben?</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#Emilia-Galotti">Ihr</rs>? – Alle meine Mühe ist vergebens gewesen, <rs ref="#Emilia-Galotti">sie</rs> ein zweitesmal zu sprechen. –</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Und das erstemal –</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Sprach ich <rs ref="#Emilia-Galotti">sie</rs> – <rs ref="#O,-ich-komme-von-Sinnen!">O, ich komme von Sinnen!</rs> Und ich soll <rs ref="#marinelli">Ihnen</rs> noch lange erzählen? – <rs ref="#marinelli">Sie</rs> sehen mich einen Raub der Wellen: was fragen <rs ref="#marinelli">sie</rs> viel, wie ich <rs ref="#O,-ich-komme-von-Sinnen!">es</rs> geworden? Retten <rs ref="#marinelli">Sie</rs> mich, wenn <rs ref="#marinelli">Sie</rs> können: und fragen <rs ref="#marinelli">Sie</rs> dann.</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Retten? ist da viel zu retten? – Was <rs ref="#der_prinz">Sie</rs> versäumt haben, <rs ref="#der_prinz">gnädiger Herr</rs>, <rs ref="#Emilia-Galotti">der Emilia Galotti</rs> zu bekennen, das bekennen <rs ref="#der_prinz">Sie</rs> nun <rs ref="#Emilia-Galotti">der Gräfin Appiani</rs>. <rs ref="#Waren">Waren</rs>, <rs ref="#Waren">die man aus der ersten Hand nicht haben kann</rs>, kauft man aus der zweiten; – und <rs ref="#Waren">solche Waren</rs> nicht selten aus der zweiten um so viel wohlfeiler.</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Ernsthaft, <rs ref="#marinelli">Marinelli</rs>, ernsthaft, oder –</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Freilich, auch um so viel schlechter –</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> <rs ref="#marinelli">Sie</rs> werden unverschämt!</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <l> Und dazu will <rs ref="#appiani">der Graf</rs> damit aus dem Lande. – Ja, so müßte man auf etwas <rs ref="#anders">anders</rs> denken. –</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Und auf <rs ref="#anders">was</rs>? – <rs ref="#marinelli">Liebster, bester Marinelli</rs>, denken <rs ref="#marinelli">Sie</rs> für mich. Was würden <rs ref="#marinelli">Sie</rs> tun, wenn <rs ref="#marinelli">Sie</rs> an meiner Stelle wären?</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Vor allen Dingen, eine Kleinigkeit als eine Kleinigkeit ansehen; – und mir sagen, daß ich nicht vergebens sein wolle, was ich bin – <rs ref="#der_prinz">Herr</rs>!</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Schmeicheln <rs ref="#marinelli">Sie</rs> mir nicht mit <rs ref="#einer-Gewalt">einer Gewalt</rs>, <rs ref="#einer-Gewalt">von der ich hier keinen Gebrauch absehe</rs>. – Heute sagen <rs ref="#marinelli">Sie</rs>? schon heute?</p>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> Erst heute – soll <rs ref="#die-Verbindung-des-Grafen-Appiani">es</rs> geschehen. Und nur geschehenen Dingen ist nicht zu raten. – <hi>Nach einer kurzen Überlegung.</hi> <pb n="140"/> Wollen <rs ref="#der_prinz">Sie</rs> mir freie Hand lassen, <rs ref="#der_prinz">Prinz</rs>? Wollen <rs ref="#der_prinz">Sie</rs> alles genehmigen, was ich tue?</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Alles, <rs ref="#marinelli">Marinelli</rs>, alles, was <rs ref="#die-Verbindung-des-Grafen-Appiani">diesen Streich</rs> abwenden kann.</l>
+              </sp>
+              <sp who="#marinelli">
+                <rs ref="#marinelli"><speaker>MARINELLI.</speaker></rs>
+                <p> So lassen <rs ref="#der_prinz">Sie</rs> uns keine Zeit verlieren. – Aber bleiben <rs ref="#der_prinz">Sie</rs> nicht in der Stadt. Fahren <rs ref="#der_prinz">Sie</rs> sogleich nach Ihrem Lustschlosse, nach Dosalo. Der Weg nach Sabionetta geht da vorbei. Wenn <rs ref="#den-Grafen-augenblicklich-zu-entfernen">es</rs> mir nicht gelingt, <rs ref="#den-Grafen-augenblicklich-zu-entfernen">den Grafen augenblicklich zu entfernen</rs>: so denk' ich – Doch, doch; ich glaube, <rs ref="#appiani">er</rs> geht in diese Falle gewiß. <rs ref="#der_prinz">Sie</rs> wollen ja, <rs ref="#der_prinz">Prinz</rs>, wegen <rs ref="#der_prinz">Ihrer</rs> Vermählung einen Gesandten nach Massa schicken? Lassen <rs ref="#der_prinz">Sie</rs> <rs ref="#appiani">den Grafen</rs> <rs ref="#appiani">dieser Gesandte</rs> sein; mit dem Bedinge, daß <rs ref="#appiani">er</rs> noch heute abreiset. – Verstehen <rs ref="#der_prinz">Sie</rs>?</p>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Vortrefflich! – Bringen <rs ref="#marinelli">Sie</rs> <rs ref="#appiani">ihn</rs> zu mir heraus. Gehen <rs ref="#marinelli">Sie</rs>, eilen <rs ref="#marinelli">Sie</rs>. Ich werfe mich sogleich in den Wagen. <hi><rs ref="#marinelli">Marinelli</rs> geht ab.</hi> </p>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>7. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Siebenter Auftritt</head>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Sogleich! sogleich! – Wo blieb <rs ref="#Emilias-Porträt">es</rs>? –<hi> Sich nach <rs ref="#Emilias-Porträt">dem Porträte</rs> umsehend.</hi> Auf der Erde? das war zu arg! <hi>Indem <rs ref="#der_prinz">er</rs> <rs ref="#Emilias-Porträt">es</rs> aufhebt.</hi> Doch betrachten? betrachten mag ich <rs ref="#Emilias-Porträt">dich</rs> fürs erste nicht mehr. – Warum sollt' ich mir den Pfeil noch tiefer in die Wunde drücken? <hi>Setzt <rs ref="#Emilias-Porträt">es</rs> bei Seite.</hi> – Geschmachtet, geseufzet hab' ich lange genung, – länger als ich gesollt hätte; aber nichts getan! und über die zärtliche Untätigkeit bei einem Haar' alles verloren! – Und wenn nun doch alles verloren wäre? Wenn <rs ref="#marinelli">Marinelli</rs> nichts ausrichtete? – Warum will ich mich auch auf <rs ref="#marinelli">ihn</rs> allein verlassen? Es fällt mir ein, – um diese Stunde, <hi>Nach der Uhr sehend.</hi> um diese nämliche Stunde pflegt <rs ref="#Emilia-Galotti">das fromme Mädchen</rs> alle Morgen bei den Dominikanern <rs ref="#die-Messe">die Messe</rs> zu hören. – Wie wenn ich <rs ref="#Emilia-Galotti">sie</rs> <rs ref="#die-Messe">da</rs> zu sprechen suchte? – Doch heute, heut' an <rs ref="#die-Verbindung-des-Grafen-Appiani"><rs ref="#Emilia-Galotti">ihrem</rs> Hochzeittage</rs>, – heute werden <rs ref="#Emilia-Galotti">ihr</rs> andere Dinge am Herzen liegen, als <rs ref="#die-Messe">die Messe</rs>. – Indes, wer weiß? – <rs ref="#die-Messe">Es</rs> ist ein <pb n="141"/> Gang. – <hi><rs ref="#der_prinz">Er</rs> klingelt, und indem <rs ref="#der_prinz">er</rs> einige von <rs ref="#Briefschaften-und-Papiere">den Papieren</rs> auf dem Tische hastig zusammen rafft, tritt <rs ref="#der_kammerdiener">der Kammerdiener</rs> herein.</hi> Laßt vorfahren! – Ist noch keiner von den Räten da?</p>
+              </sp>
+              <sp who="#der_kammerdiener">
+                <rs ref="#der_kammerdiener"><speaker>DER KAMMERDIENER.</speaker></rs>
+                <l> <rs ref="#camillo_rota">Camillo Rota</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> <rs ref="#camillo_rota">Er</rs> soll herein kommen. <hi><rs ref="#der_kammerdiener">Der Kammerdiener</rs> geht ab.</hi> Nur aufhalten muß <rs ref="#camillo_rota">er</rs> mich nicht wollen. Dasmal nicht! – Ich stehe gern <rs ref="#camillo_rota">seinen</rs> Bedenklichkeiten ein andermal um so viel länger zu Diensten. – Da war ja noch <rs ref="#die-Bittschrift"><rs ref="#Briefschaften-und-Papiere">die Bittschrift</rs></rs> <rs ref="#Emilia-Bruneschi">einer Emilia Bruneschi</rs> – <hi><rs ref="#die-Bittschrift">Sie</rs> suchend.</hi> <rs ref="#die-Bittschrift">Die</rs> ists. – Aber, <rs ref="#Emilia-Bruneschi">gute Bruneschi</rs>, wo <rs ref="#Emilia-Bruneschi">deine</rs> Vorsprecherin – –</p>
+              </sp>
+            </div>
+          </div>
+        </div>
+        <div type="scene">
+          <div>
+            <desc>
+              <title>8. Auftritt</title>
+            </desc>
+          </div>
+          <div type="text">
+            <div type="h4">
+              <head>Achter Auftritt</head>
+              <stage>
+                <hi><rs ref="#camillo_rota">Camillo Rota</rs>, <rs ref="#Schriften">Schriften</rs> in der Hand. <rs ref="#der_prinz">Der Prinz</rs>.</hi>
+              </stage>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Kommen <rs ref="#camillo_rota">Sie</rs>, <rs ref="#camillo_rota">Rota</rs>, kommen <rs ref="#camillo_rota">Sie</rs>. – Hier ist, was ich diesen Morgen erbrochen. Nicht viel Tröstliches! – <rs ref="#camillo_rota">Sie</rs> werden von selbst sehen, was darauf zu verfügen. – Nehmen <rs ref="#camillo_rota">Sie</rs> nur.</p>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA.</speaker></rs>
+                <l> Gut, <rs ref="#der_prinz">gnädiger Herr</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <p> Noch ist hier <rs ref="#Emilia-Bruneschi">eine Bittschrift</rs> <rs ref="#Emilia-Galotti">einer Emilia Galot</rs> – – <rs ref="#Emilia-Bruneschi">Bruneschi</rs> will ich sagen. – Ich habe meine Bewilligung zwar schon beigeschrieben. Aber doch – die Sache ist keine Kleinigkeit – Lassen <rs ref="#camillo_rota">Sie</rs> die Ausfertigung noch anstehen. – Oder auch nicht anstehen: wie <rs ref="#camillo_rota">Sie</rs> wollen.</p>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA.</speaker></rs>
+                <l> Nicht wie ich will, <rs ref="#der_prinz">gnädiger Herr</rs>.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Was ist sonst? Etwas zu unterschreiben?</l>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA.</speaker></rs>
+                <l> <rs ref="#Schriften">Ein Todesurteil</rs> wäre zu unterschreiben.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Recht gern. – Nur her! geschwind.</l>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA</speaker></rs>
+                <stage>
+                  <hi>stutzig und <rs ref="#der_prinz">den Prinzen</rs> starr ansehend.</hi>
+                </stage>
+                <l> <rs ref="#Schriften">Ein Todesurteil,</rs> sagt' ich.</l>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Ich höre ja wohl. – <rs ref="#die-Verbindung-des-Grafen-Appiani">Es</rs> könnte schon geschehen sein. Ich bin eilig.</l>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA</speaker></rs>
+                <stage>
+                  <hi><rs ref="#camillo_rota">seine</rs> <rs ref="#Schriften">Schriften</rs> nachsehend.</hi>
+                </stage>
+                <p> Nun hab' ich <rs ref="#Schriften">es</rs> doch wohl nicht mitgenommen! – – Verzeihen <rs ref="#der_prinz">Sie</rs>, <rs ref="#der_prinz">gnädiger Herr</rs>. – Es kann Anstand damit haben bis morgen.</p>
+                <pb n="142"/>
+              </sp>
+              <sp who="#der_prinz">
+                <rs ref="#der_prinz"><speaker>DER PRINZ.</speaker></rs>
+                <l> Auch das! – Packen <rs ref="#camillo_rota">Sie</rs> nur zusammen: ich muß fort – Morgen, <rs ref="#camillo_rota">Rota</rs>, ein mehres! <hi>Geht ab.</hi> </l>
+              </sp>
+              <sp who="#camillo_rota">
+                <rs ref="#camillo_rota"><speaker>CAMILLO ROTA</speaker></rs>
+                <stage>
+                  <hi>den Kopf schüttelnd, indem <rs ref="#camillo_rota">er</rs> <rs ref="#Schriften">die Papiere</rs> zu <rs ref="#camillo_rota">sich</rs> nimmt und abgeht.</hi>
+                </stage>
+                <p> Recht gern? – <rs ref="#Schriften">Ein Todesurteil</rs> recht gern? – Ich hätt' <rs ref="#Schriften">es</rs> <rs ref="#der_prinz">ihn</rs> in diesem Augenblicke nicht mögen unterschreiben lassen, und wenn <rs ref="#Schriften">es</rs> den Mörder meines einzigen Sohnes betroffen hätte. – Recht gern! recht gern! – Es geht mir durch die Seele dieses gräßliche Recht gern!</p>
+                <pb n="143"/>
+              </sp>
+            </div>
+          </div>
+        </div>
+    </body>
+  </text>
+</TEI>
+</#root>

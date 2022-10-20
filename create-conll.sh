@@ -8,8 +8,10 @@
 PATHTODRAMANLP=path-to-dramanlp
 INPUTDIRFULLPLAYS=./tei/full
 INPUTDIRPART=./tei/part
+INPUTDIRPARALLEL=./parallel_annotations/tei
 OUTPUTDIR=./conll
 OUTPUTDIRPART=./conll/part
+OUTPUTDIRPARALLEL=./parallel_annotations/conll
 CORPUS=GERDRACOR
 
 # Process full plays
@@ -17,3 +19,6 @@ java -cp $PATHTODRAMANLP  de.unistuttgart.ims.drama.main.TEI2XMI --input $INPUTD
 
 # Process partially annotated plays
 java -cp $PATHTODRAMANLP de.unistuttgart.ims.drama.main.TEI2XMI --input $INPUTDIRPART --conllOutput $OUTPUTDIRPART --parse --skipSpeakerIdentifier --corpus $CORPUS --doCleanup --manualCoreference --createCoreferenceGroups
+
+# Process parallel annotations
+java -cp $PATHTODRAMANLP de.unistuttgart.ims.drama.main.TEI2XMI --input $INPUTDIRPARALLEL --conllOutput $OUTPUTDIRPARALLEL --parse --skipSpeakerIdentifier --corpus $CORPUS --doCleanup --manualCoreference --createCoreferenceGroups

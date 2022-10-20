@@ -6,5 +6,10 @@
 PATHTOCOREFANNOTATOR=path-to-corefannotator
 INPUTDIR=./xmi
 OUTPUTDIR=./tei
+INPUTDIR_PARALLEL=./parallel_annotations/xmi
+OUTPUTDIR_PARALLEL=./parallel_annotations/tei
 
 java -cp $PATHTOCOREFANNOTATOR de.unistuttgart.ims.coref.annotator.tools.ExportMultipleFiles --outputFormat tei --input "$INPUTDIR" --outputDirectory "$OUTPUTDIR"
+
+# Create TEI for parallel annotations
+java -cp $PATHTOCOREFANNOTATOR de.unistuttgart.ims.coref.annotator.tools.ExportMultipleFiles --outputFormat tei --input "$INPUTDIR_PARALLEL" --outputDirectory "$OUTPUTDIR_PARALLEL"
