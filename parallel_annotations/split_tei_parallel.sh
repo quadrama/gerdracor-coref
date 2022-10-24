@@ -44,3 +44,6 @@ mv ./tei/Emilia-LF.xml ./tei/Emilia-LF_Act1.xml
 mv ./tei/Emilia-SE.xml ./tei/Emilia-SE_Act1.xml
 python3 ../split_tei.py ./tei ./tei
 rm ./tei/*[0-9].xml
+rm ./tei/Raeuber-SE.xml
+rm ./tei/Raeuber-AH.xml
+rm ./tei/Raeuber-AS.xml

@@ -1,4 +1,4 @@
-[![release](https://img.shields.io/github/release-pre/quadrama/gerdracor-coref.svg)](https://github.com/quadrama/gerdracor-coref/releases/latest)
+![release](https://img.shields.io/github/release-pre/quadrama/gerdracor-coref.svg)](https://github.com/quadrama/gerdracor-coref/releases/latest)
 [![DOI](https://zenodo.org/badge/223186468.svg)](https://zenodo.org/badge/latestdoi/223186468)
 [![license](https://img.shields.io/badge/license-CC0-blue.svg)](https://github.com/quadrama/gerdracor-coref/blob/gold/LICENSE)
 
@@ -26,7 +26,7 @@ If the full text was annotated, no special marker is applied, e.g. `Sara.xmi`.
 ### Parallel Annotations
 
 In order to make Inter-Annotator agreement studies possible, we carried out parallel annotations of single acts, annotated by distinct annotators.
-These annotations are located in separate branches and the annotator and act is additionally indicated in the filename, e.g. `Sara_AS_Act1`. `gold` annotations are not specially marked in the filename. (ToDo)
+These annotations are located in the folder `parallel_annotations` and the annotator and act is additionally indicated in the filename, e.g. `Sara-AS_Act1.xmi`.
 
 ### Encoding
 
@@ -69,11 +69,12 @@ To reproduce the export of formats included in this corpus, the scripts can be r
 $ sh create-tei.sh
 $ sh create-conll.sh
 $ python3 split_tei.py tei/ tei/part/ --addScenes
+$ sh split_tei_parallel.sh
 ```
 There is also a makefile that runs the entire pipeline for convenience:
 
 ```
-$ make run-pipeline
+$ make all
 ```
 
 ## Organization
@@ -89,9 +90,14 @@ Partial annotations are sorted under the main folder in a subfolder called `part
 $ tree -d
 .
 ├── conll
-│   └── part
+│   └── part
+├── parallel_annotations
+│   ├── conll
+│   ├── tei
+│   └── xmi
 ├── tei
-│   └── part
+│   ├── full
+│   └── part
 └── xmi
 ```
 

@@ -12,6 +12,7 @@ split-tei: split_tei.py
 	python3 split_tei.py tei/ tei/part/ --addScenes
 
 split-tei-parallel: split_tei.py
-	python3 ./parallel_annotations/split_tei_parallel.sh
+	cd ./parallel_annotations && \
+        ./split_tei_parallel.sh
 
 .PHONY: all
